@@ -1,11 +1,19 @@
 {
-    "@context": "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    "@context": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_parametergroup.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/parametergroup.jsonld/"}
+    ],
+    "@id": "",
+    "group": "test",
     "parameter": {
         "scope": "local",
         "quantity": "magnetic field",
         "property": "Anisotropic NMR Shielding",
         "value": {
-            "number": { "@type": "decimal","@value": 3.2},
+            "number": {
+                "@type": "decimal",
+                "@value": 3.2
+            },
             "error": 0.1,
             "errorType": "absolute",
             "sigfigs": 2,

@@ -1,9 +1,9 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/molecularSystem/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/molsystem.jsonld/"}
     ],
-    "@id": "meta",
+    "@id": "",
     "temperature": {
         "@id": "temperature",
         "number": 273.15,

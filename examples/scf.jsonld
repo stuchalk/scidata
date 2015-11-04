@@ -1,9 +1,10 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/compchem/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/scf.jsonld/"}
     ],
     "@id": "",
+    "uid": "stuchalk/example/scf",
     "title": "Glucose vib ele",
     "author": [
         {
@@ -21,7 +22,7 @@
     ],
     "description": "This is a test calculation for glucose",
     "publisher": "Chemical Semantics",
-    "permalink": "http://scidata.io/stuchalk/example/compchem/",
+    "permalink": "http://stuchalk.github.io/scidata/examples/scf.jsonld",
     "scidata": {
         "@id": "data",
         "type": "property value",
@@ -1621,7 +1622,7 @@
                 },
                 {
                     "@id": "datapoint/9",
-                    "scope": "molecule/2",
+                    "scope": "molecule/1",
                     "property": "nmrShieldingAnisotropic",
                     "value": {
                         "@id": "datapoint/9/value",
@@ -15891,7 +15892,7 @@
     "source": {
         "@id": "source",
         "citation": "Provided by Chemical Semantics Inc. http://chemicalsemantics.com",
-        "url": "http://scidata.io/stuchalk/example/compchem/"
+        "url": "http://stuchalk.github.io/scidata/examples/scf.jsonld"
     },
     "rights": {
         "@id": "rights",

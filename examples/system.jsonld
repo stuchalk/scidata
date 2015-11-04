@@ -1,14 +1,14 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
-        {"@base": "http://scidata.io/stuchalk/s00000001"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/system.jsonld/"}
     ],
-    "@id": "system/1",
+    "@id": "",
     "type": "Binary mixture",
     "phase": "liquid",
     "components": [
         {
-            "@id": "system/1/component/1",
+            "@id": "component/1",
             "scope": "compound/1",
             "grade": "MilliQ Grade (18.2 MOhms)",
             "purity": {"value": {
@@ -17,7 +17,7 @@
             }}
         },
         {
-            "@id": "system/1/component/2",
+            "@id": "component/2",
             "scope": "compound/2",
             "grade": "ACS Certified grade",
             "purity": {"value": {

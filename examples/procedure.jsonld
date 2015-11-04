@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/procedure/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/procedure.jsonld/"}
     ],
     "@id": "",
     "title": "pH meter calibration",

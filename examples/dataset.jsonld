@@ -5,7 +5,7 @@
     ],
     "@id": "",
     "source": ["methodology/1"],
-    "scope": ["system/1"]
+    "scope": ["system/1"],
     "datapoint": [
         {
             "@id": "datapoint/1",

@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/resource/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/resource.jsonld/"}
     ],
     "@id": "",
     "type": "instrument",
