@@ -1,10 +1,10 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
         "ss": "http://semanticscience.org/resource/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "sci": "https://chalk.coas.unf.edu/champ/files/schema/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

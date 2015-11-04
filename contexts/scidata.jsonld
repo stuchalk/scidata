@@ -1,11 +1,11 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_methodology.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_dataset.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_csi.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_csi.jsonld",
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "ss": "http://semanticscience.org/resource/",

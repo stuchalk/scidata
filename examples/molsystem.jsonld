@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_molsystem.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
         {"@base": "http://scidata.io/stuchalk/example/molecularSystem/"}
     ],
     "@id": "meta",

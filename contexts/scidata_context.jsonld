@@ -1,13 +1,13 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_system.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_compound.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_chemical.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_molsystem.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_material.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_organism.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_condition.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_computer.jsonld",
-    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_organism.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_condition.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
+    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "context": {

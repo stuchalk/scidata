@@ -1,10 +1,10 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/pH/"}
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/ph.jsonld/"}
     ],
-    "@id": "meta",
-    "uid": "stuchalk/example/pH",
+    "@id": "",
+    "uid": "stuchalk/example/ph",
     "title": "pH of cyanide standard",
     "author": [{
         "@id": "author/1",
@@ -16,10 +16,10 @@
     "description": "Determination of the pH of a 3 ppm cyanide solution after complete reaction",
     "publisher": "Chalk Group, UNF",
     "keywords": "cyanide, pH",
-    "permalink": "http://scidata.io/stuchalk/mea092",
+    "permalink": "http://stuchalk.github.io/scidata/examples/ph.jsonld",
     "related": [
-        "http://scidata.io/stuchalk/prj003",
-        "http://scidata.io/stuchalk/exp021"
+        "http://stuchalk.github.io/scidata/examples/ri.jsonld",
+        "http://stuchalk.github.io/scidata/examples/nmr.jsonld"
     ],
     "toc": {
         "@id": "toc",
