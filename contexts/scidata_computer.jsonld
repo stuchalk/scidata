@@ -5,7 +5,11 @@
         "computer": {
             "@id": "sci:computerHardware",
             "architecture": {"@type": "architecture"},
-            "precision": {"@type": "version"},
+            "cpu": {"@type": "cpu"},
+            "byteorder": {"@type": "byteorder"},
+            "threadspercore": {"@type": "threadspercore"},
+            "corespersocket": {"@type": "corespersocket"},
+            "sockets": {"@type": "sockets"},
             "cache": {"@type": "cache"},
             "ram": {"@type": "ram"},
             "gpu": {"@type": "gpu"}
@@ -14,13 +18,34 @@
             "@id": "sci:architecture",
             "@type": "string"
         },
-        "precision": {
-            "@id": "sci:precision",
+        "cpu": {
+            "@id": "sci:cpu",
+            "opmodes": {"@type": "opmodes"},
+            "count": {"@type": "count"},
+            "speed": {"@type": "speed"},
+            "vendorid": {"@type": "vendorid"},
+            "family": {"@type": "family"},
+            "model": {"@type": "model"},
+            "modelname": {"@type": "modelname"}
+        },
+        "opmodes": {
+            "@id": "sci:cpuOpModes",
+            "@type": "string"
+        },
+        "count": {
+            "@id": "sci:cpuCount",
+            "@type": "integer"
+        },
+        "speed": {
+            "@id": "sci:cpuSpeed",
             "@type": "string"
         },
         "cache": {
-            "@id": "sci:onbaordCache",
-            "@type": "string"
+            "@id": "sci:onboardCache",
+            "l1data": {"@type": "l1datacache"},
+            "l1inst": {"@type": "l1instcache"},
+            "l2": {"@type": "l2cache"},
+            "l3": {"@type": "l3cache"}
         },
         "ram": {
             "@id": "sci:randomAccessMemory",
