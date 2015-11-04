@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_numericvalue.jsonld",
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_unit.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_numericvalue.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
         {"@base": "http://chemsem.com/stuchalk/"}
     ],
     "@id": "value/1",

@@ -1,8 +1,8 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

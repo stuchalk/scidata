@@ -1,6 +1,6 @@
 {"@context": [
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "http://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
@@ -13,10 +13,11 @@
             "type": {"@type": "type"},
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
+            "abbrev": {"@type": "abbrev"},
             "symbol": {"@type": "symbol"},
             "unitinsi": {"@type": "unitinsi"},
             "siunit": {"@type": "siunit"},
-            "conversion": {"@type": "conversion"}
+            "factor": {"@type": "factor"}
         },
         "uid": {
             "@id": "dc:identifier",
@@ -65,18 +66,22 @@
             "@id": "obo:STATO_0000259",
             "@type": "integer"
         },
-        "conversion": {
+        "factor": {
             "@id": "sci:conversionFactor",
             "fromunit": {"@type": "fromunit"},
+            "tounit": {"@type": "tounit"},
             "addend": {"@type": "float"},
             "minuend": {"@type": "minuend"},
             "subtrahend": {"@type": "subtrahend)"},
-            "multiplicand": {"@type": "multiplicand"},
-            "dividend": {"@type": "dividend"},
+            "multiplier": {"@type": "multiplier"},
             "divisor": {"@type": "divisor"},
             "exact": {"@type": "boolean"}
         },
         "fromunit": {
+            "@id": "sci:referenceUnit",
+            "@type": "siunit"
+        },
+        "tounit": {
             "@id": "sci:referenceUnit",
             "@type": "siunit"
         },
@@ -92,12 +97,8 @@
             "@id": "wkt:subtrahend",
             "@type": "float"
         },
-        "multiplicand": {
-            "@id": "wkt:multiplicand",
-            "@type": "float"
-        },
-        "dividend": {
-            "@id": "wkt:dividend",
+        "multiplier": {
+            "@id": "wkt:multiplier",
             "@type": "float"
         },
         "divisor": {

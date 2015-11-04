@@ -1,5 +1,5 @@
 {
-    "@context": "http://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "@context": "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     "parameter": {
         "scope": "local",
         "quantity": "magnetic field",

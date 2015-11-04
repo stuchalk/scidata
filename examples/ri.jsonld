@@ -1,9 +1,9 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/RI/"}
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/ri.jsonld/"}
     ],
-    "uid": "stuchalk/example/RI",
+    "uid": "stuchalk/example/ri",
     "title": "Refractive index",
     "author": [{
         "@id": "author/1",
@@ -11,7 +11,7 @@
     }],
     "description": "Refractive index value extracted from a research publication",
     "date": "2015-04-15T09:50:13-05:00",
-    "permalink": "http://scidata.io/stuchalk/example/ri01",
+    "permalink": "http://stuchalk.github.io/scidata/examples/ri.jsonld",
     "toc": {
         "@id": "toc",
         "sections": [

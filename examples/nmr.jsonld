@@ -1,16 +1,17 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/NMR/"}
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/nmr.jsonld/"}
     ],
     "@id": "meta",
-    "uid": "stuchalk/example/NMR/",
+    "uid": "stuchalk/example/nmr",
     "title": "R-(+)-Limonene (1H NMR)",
     "author": {
         "@id": "author",
         "name": "Bruker BioSpin GmbH"
     },
     "description": "NMR spectrum of (+)-(r)-limonene",
+    "permalink": "http://stuchalk.github.io/scidata/examples/nmr.jsonld",
     "date": "2015-08-17 07:50:46",
     "scidata": {
         "@id": "scidata",

@@ -1,6 +1,6 @@
 {"@context": [
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/"
     },

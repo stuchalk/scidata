@@ -1,7 +1,7 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {

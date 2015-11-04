@@ -1,9 +1,9 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
-        {"@base": "http://osdb.info/s00000001"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/context.jsonld/"}
     ],
-    "@id": "context",
+    "@id": "",
     "discipline": "chemistry",
     "subdiscipline": "analytical chemistry",
     "aspects": [{

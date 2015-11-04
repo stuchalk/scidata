@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_unit.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
         {"@base": "http://scidata.io/stuchalk/example/value/"}
     ],
     "@id": "",

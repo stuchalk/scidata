@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_system.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
         {"@base": "http://scidata.io/stuchalk/s00000001"}
     ],
     "@id": "system/1",
