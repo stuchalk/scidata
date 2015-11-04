@@ -4,6 +4,7 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/unit.jsonld/"}
     ],
     "@id": "",
+    "type": "sci:imperial",
     "name": "Mile per hour",
     "quantity": "speed",
     "abbrev": "mph",

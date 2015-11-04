@@ -1,16 +1,31 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/parameter/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/parameter.jsonld/"}
     ],
     "@id": "",
     "quantity": "magnetic field strength",
     "property": "Anisotropic NMR Shielding",
-    "value": {
-        "@id": "value",
-        "number": 3.2,
-        "error": 0.1,
-        "errorType": "absolute",
-        "unit": "http://purl.obolibrary.org/obo/UO_0000169"
-    }
+    "value": [
+        {
+            "@id": "value/1",
+            "scope": "molecule/1",
+            "property": "nmrShieldingIsotropic",
+            "value": {
+                "@id": "datapoint/8/value",
+                "number": "1.3",
+                "unit": "ppm_Hz"
+            }
+        },
+        {
+            "@id": "value/1",
+            "scope": "molecule/1",
+            "property": "nmrShieldingAnisotropic",
+            "value": {
+                "@id": "datapoint/9/value",
+                "number": "3.2",
+                "unit": "ppm_Hz"
+            }
+        }
+    ]
 }

@@ -214,7 +214,7 @@
     "source": {
         "@id": "source",
         "citation": "Chalk Research Group http://chalk.coas.unf.edu",
-        "url": "http://scidata.io/stuchalk/example/pH"
+        "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
     },
     "rights": {
         "@id": "rights",

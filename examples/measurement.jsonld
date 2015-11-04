@@ -1,77 +1,78 @@
 {
-    "@context": ["http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
-    {"@base": "http://stuchalk.github.io/scidata/examples/measurement.jsonld/"}],
-        "@id": "",
-        "techniqueType": "spectroscopic",
-        "technique": "Nuclear Magnetic Resonance",
-        "instrumentType": "300 MHz NMR",
-        "instrument": "??",
-        "settings": [
-            {
-                "@id": "setting/1",
-                "quantity": "frequency",
-                "property": "Observe Frequency",
-                "value": {
-                    "@id": "setting/1/value",
-                    "number": 300.0318,
-                    "unit": "MHz"
-                }
-            },
-            {
-                "@id": "setting/2",
-                "quantity": "time",
-                "property": "Acquisition Time",
-                "value": {
-                    "@id": "setting/2/value",
-                    "number": 3.42098,
-                    "unit": "s"
-                }
-            },
-            {
-                "@id": "setting/3",
-                "quantity": "count",
-                "property": "Zero Fill",
-                "value": {
-                    "@id": "setting/3/value",
-                    "number": 0
-                }
-            },
-            {
-                "@id": "setting/4",
-                "quantity": "frequency",
-                "property": "Shift Reference",
-                "value": {
-                    "@id": "setting/4/value",
-                    "text": "INTERNAL,  ,16384, -1.874"
-                }
-            },
-            {
-                "@id": "setting/5",
-                "quantity": "isotope",
-                "property": "Observe Nucleus",
-                "value": {
-                    "@id": "setting/5/value",
-                    "text": "1H"
-                }
-            },
-            {
-                "@id": "setting/6",
-                "quantity": "mode of operation",
-                "property": "Acquisition Mode",
-                "value": {
-                    "@id": "setting/6/value",
-                    "text": "Simultaneous"
-                }
-            },
-            {
-                "@id": "setting/7",
-                "quantity": "chemical",
-                "property": "Solvent Name",
-                "value": {
-                    "@id": "setting/7/value",
-                    "text": "Chloroform-d"
-                }
+    "@context": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/measurement.jsonld/"}
+    ],
+    "@id": "",
+    "techniqueType": "spectroscopic",
+    "technique": "Nuclear Magnetic Resonance",
+    "instrumentType": "300 MHz NMR",
+    "instrument": "??",
+    "settings": [
+        {
+            "@id": "setting/1",
+            "quantity": "frequency",
+            "property": "Observe Frequency",
+            "value": {
+                "@id": "setting/1/value",
+                "number": 300.0318,
+                "unit": "MHz"
             }
-        ]
-    }
+        },
+        {
+            "@id": "setting/2",
+            "quantity": "time",
+            "property": "Acquisition Time",
+            "value": {
+                "@id": "setting/2/value",
+                "number": 3.42098,
+                "unit": "s"
+            }
+        },
+        {
+            "@id": "setting/3",
+            "quantity": "count",
+            "property": "Zero Fill",
+            "value": {
+                "@id": "setting/3/value",
+                "number": 0
+            }
+        },
+        {
+            "@id": "setting/4",
+            "quantity": "frequency",
+            "property": "Shift Reference",
+            "value": {
+                "@id": "setting/4/value",
+                "text": "INTERNAL,  ,16384, -1.874"
+            }
+        },
+        {
+            "@id": "setting/5",
+            "quantity": "isotope",
+            "property": "Observe Nucleus",
+            "value": {
+                "@id": "setting/5/value",
+                "text": "1H"
+            }
+        },
+        {
+            "@id": "setting/6",
+            "quantity": "mode of operation",
+            "property": "Acquisition Mode",
+            "value": {
+                "@id": "setting/6/value",
+                "text": "Simultaneous"
+            }
+        },
+        {
+            "@id": "setting/7",
+            "quantity": "chemical",
+            "property": "Solvent Name",
+            "value": {
+                "@id": "setting/7/value",
+                "text": "Chloroform-d"
+            }
+        }
+    ]
 }

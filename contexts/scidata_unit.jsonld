@@ -35,6 +35,10 @@
             "@id": "sci:quantity",
             "@type": "string"
         },
+        "abbrev": {
+            "@id": "sci:abbreviation",
+            "@type": "string"
+        },
         "symbol": {
             "@id": "sci:symbol",
             "@type": "string"
