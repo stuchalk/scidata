@@ -1,0 +1,30 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "paramgroup": {
+            "@id": "sci:paramGroup",
+            "scope": {"@type": "scope"},
+            "group": {"@type": "group"},
+            "values": {"@type": "values"}
+        },
+        "scope": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "group": {
+            "@id": "sci:groupname",
+            "@type": "string"
+        },
+        "values": {
+            "@id": "sci:value",
+            "value": {"@type": "name"},
+            "code": {"@type": "code"},
+            "codeType": {"@type": "codeType"}
+        }
+    }
+]}

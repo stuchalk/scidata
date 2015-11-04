@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_unit.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/value/"}
+    ],
+    "@id": "",
+    "numericValue": {
+        "@id": "numeric/1",
+        "format": "datum",
+        "number": 12.0107,
+        "error": 8.0E-4,
+        "sigfigs": 5,
+        "unit": {"@id": "_:amu"}
+    },
+    "textString": {
+        "@id": "text/1",
+        "text": "Some text value",
+        "format": "plain",
+        "language": "en-US"
+    },
+    "unit": [{
+        "@id": "_:amu",
+        "name": "Atomic mass units",
+        "quantity": "mass",
+        "symbol": "u",
+        "unitinsi": {
+            "@id": "_:amu/unitinsi",
+            "siunit": [{
+                "@id": "_:amu/unit/1",
+                "name": "gram",
+                "prefix": "y",
+                "power": {"numerator": 1}
+            }]
+        },
+        "conversion": {
+            "@id": "_:amu/conversion",
+            "fromunit": "g",
+            "multiplicand": "1.660538921E-27"
+        }
+    }]
+}

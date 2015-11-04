@@ -1,0 +1,43 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "material": {
+            "@id": "sci:measurement",
+            "name": {"@type": "name"},
+            "scope": {"@type": "scope"},
+            "materialType": {"@type": "materialType"},
+            "manufacture": {"@type": "manufacture"},
+            "source": {"@type": "source"},
+            "notes": {"@type": "notes"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "materialType": {
+            "@id": "sci:materialType",
+            "@type": "string"
+        },
+        "composition": {
+            "@id": "sci:composition",
+            "@type": "string"
+        },
+        "manufacture": {
+            "@id": "sci:manufacture",
+            "@type": "string"
+        },
+        "source": {
+            "@id": "sci:source",
+            "@type": "string"
+        },
+        "property": {
+            "@id": "sci:property",
+            "@type": "parameter"
+        }
+    }
+]}

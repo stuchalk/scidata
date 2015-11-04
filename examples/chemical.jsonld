@@ -1,0 +1,34 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_chemical.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/chemical/"}
+    ],
+    "@id": "",
+    "name": "Water",
+    "vendor": "UNF",
+    "grade": "MilliQ Grade (18.2 MOhms)",
+    "purity": [
+        {
+            "@id": "purity/1",
+            "scope": "compound/1",
+            "quantity": "concentration",
+            "property": "Bulk purity",
+            "value": {
+                "@id": "purity/1/value",
+                "number": 99.9999,
+                "unit": "http://purl.obolibrary.org/obo/UO_0000167"
+            }
+        },
+        {
+            "@id": "purity/2",
+            "scope": "compound/2",
+            "quantity": "concentration",
+            "property": "Trace impurity",
+            "value": {
+                "@id": "purity/2/value",
+                "number": 1.23174,
+                "unit": "http://purl.obolibrary.org/obo/UO_0000171"
+            }
+        }
+    ]
+}

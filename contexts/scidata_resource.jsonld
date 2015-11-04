@@ -1,0 +1,43 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "resource": {
+            "@id": "sci:resource",
+            "name": {"@type": "name"},
+            "type": {"@type": "type"},
+            "vendor": {"@type": "vendor"},
+            "catalognumber": {"@type": "catalognumber"},
+            "source": {"@type": "source"},
+            "notes": {"@type": "notes"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "type": {
+            "@id": "sci:resourceType",
+            "@type": "string"
+        },
+        "vendor": {
+            "@id": "obo:sep_00088",
+            "@type": "string"
+        },
+        "catalognumber": {
+            "@id": "obo:sep_0016",
+            "@type": "string"
+        },
+        "source": {
+            "@id": "sci:source",
+            "@type": "string"
+        },
+        "property": {
+            "@id": "sci:resourceProperty",
+            "@type": "parameter"
+        }
+    }
+]}

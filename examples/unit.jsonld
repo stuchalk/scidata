@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "http://chalk.coas.unf.edu/champ/files/contexts/sci_unit.jsonld",
+        {"@base": "http://chemsem.com/stuchalk/061315/1/"}
+    ],
+    "@id": "unit1",
+    "name": "Hephalumps per dingdong",
+    "quantity": "Abstract",
+    "symbol": "hpd",
+    "unitinsi": {
+        "@id": "unit1/SIequivalence",
+        "siunit": [
+            {
+                "@id": "unit1/siunit/1",
+                "name": "mole",
+                "prefix": "k",
+                "power": {
+                    "@id": "unit1/siunit/1/power",
+                    "numerator": 1
+                }
+            },
+            {
+                "@id": "unit1/siunit/2",
+                "name": "second",
+                "prefix": "n",
+                "power": {
+                    "@id": "unit1/siunit/2/power",
+                    "denominator": -2
+                }
+            }
+        ]
+    },
+    "conversion": {
+        "@id": "unit1/conversionFactor",
+        "fromunit": "moles per second",
+        "addend": 1.23,
+        "minuend": 2.34,
+        "subtrahend": 3.45,
+        "multiplicand": 4.56,
+        "dividend": 5.67,
+        "divisor": 6.78,
+        "exact": false
+    }
+}

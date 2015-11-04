@@ -1,0 +1,108 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
+        {"@base": "http://scidata.io/stuchalk/"}
+    ],
+    "@id": "identifier",
+    "uid": "dc:identifier (string)",
+    "title": "dc:title (string)",
+    "author": [{
+        "@id": "author",
+        "name": "foaf:name (string)",
+        "organization": "foaf:organization (string)",
+        "email": "foaf:mbox (string)",
+        "orcid": "dc:identifier (string)"
+    }],
+    "description": "dc:description (string)",
+    "publisher": "dc:publisher (string)",
+    "keywords": "dc:subject (string)",
+    "version": "dc:hasVersion (integer)",
+    "date": "dc:subject (string)",
+    "permalink": "dc:identifier (uri)",
+    "related": ["one or more external links"],
+    "toc": {
+        "@id": "toc",
+        "sections": [
+            "methodology/measurement",
+            "methodology/procedure",
+            "context/condition",
+            "context/substance"
+        ]
+    },
+    "scidata": {
+        "@id": "scidata",
+        "type": "type of data (from enum list e.g. 'property value')",
+        "property": ["list of one to many properties (string)"],
+        "kind": ["list of one to many kinds of data (set list)"],
+        "methodology": {
+            "@id": "methodology",
+            "evaluation": "how data was obtained (from enum list e.g. 'experimental')",
+            "aspects": [
+                {"@id": "measurement"},
+                {"@id": "procedure"},
+                {"@id": "resource"},
+                {"@id": "calculation"},
+                {"@id": "basisset"},
+                {"@id": "software"}
+            ]
+        },
+        "context": {
+            "@id": "context",
+            "discipline": "science area",
+            "subdiscipline": "subdiscipline area",
+            "facets": [
+                {"@id": "organism"},
+                {"@id": "compound"},
+                {"@id": "condition"},
+                {"@id": "molecularsystem"},
+                {"@id": "chemicalsystem"},
+                {"@id": "material"}
+            ]
+        },
+        "dataset": {
+            "@id": "dataset",
+            "type": "type of data (from enum list e.g. 'property value')",
+            "source": "reference to methodology used to obtain data (@id)",
+            "datapoint": [{
+                "@id": "datapoint",
+                "name": "name of point (string)",
+                "scope": "which facet(system,organism) is this measured on (@id)",
+                "quantity": "quantity name or code (string)",
+                "symbol": "common symbol (string)",
+                "exact": "exact value or not (boolean)",
+                "number": 6.022E23,
+                "error": 1.23E26,
+                "unit": "unit of number (string)"
+            }],
+            "dataseries": [{
+                "@id": "dataseries",
+                "name": "name of series (string)",
+                "scope": "which facet(system,organism) is this measured on (@id)",
+                "quantity": "quantity name or code (string)",
+                "symbol": "common symbol (string)",
+                "exact": "exact value or not (boolean)",
+                "number": [
+                    0.1042,
+                    0.1037
+                ],
+                "error": [1.0E-4],
+                "unit": "unit of number (string)"
+            }],
+            "datagroup": [{
+                "@id": "datagroup",
+                "scope": "which facet(system,organism) is this measured on (@id)",
+                "group": "name of the group (string)",
+                "dataSeries": [{}],
+                "dataPoint": [{}]
+            }]
+        }
+    },
+    "source": {
+        "citation": "textual citation (string)",
+        "url": "dc:identifier (uri)"
+    },
+    "rights": {
+        "license": "dc:rights (uri)",
+        "holder": "dc:rightsHolder (string)"
+    }
+}

@@ -1,0 +1,223 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/pH/"}
+    ],
+    "@id": "meta",
+    "uid": "stuchalk/example/pH",
+    "title": "pH of cyanide standard",
+    "author": [{
+        "@id": "author/1",
+        "name": "Stuart Chalk",
+        "organization": "University of North Florida (UNF)",
+        "email": "schalk@unf.edu",
+        "orcid": "0000-0002-0703-7776"
+    }],
+    "description": "Determination of the pH of a 3 ppm cyanide solution after complete reaction",
+    "publisher": "Chalk Group, UNF",
+    "keywords": "cyanide, pH",
+    "permalink": "http://scidata.io/stuchalk/mea092",
+    "related": [
+        "http://scidata.io/stuchalk/prj003",
+        "http://scidata.io/stuchalk/exp021"
+    ],
+    "toc": {
+        "@id": "toc",
+        "sections": [
+            "methodology/measurement/1",
+            "methodology/procedure/1",
+            "context/solution/1",
+            "context/compound/1",
+            "context/compound/2",
+            "context/compound/3",
+            "context/compound/4",
+            "context/compound/5",
+            "context/compound/6",
+            "context/condition/1"
+        ]
+    },
+    "scidata": {
+        "@id": "scidata",
+        "type": "property value",
+        "property": ["pH"],
+        "kind": ["single reading"],
+        "methodology": {
+            "@id": "methodology",
+            "evaluation": "experimental",
+            "aspects": [
+                {
+                    "@id": "measurement/1",
+                    "scope": "resource/1",
+                    "techniqueType": "ion-selective electrode",
+                    "technique": "pH electrode",
+                    "instrumentType": "Temperature compensated pH electrode",
+                    "settings": [{
+                        "@id": "setting/1",
+                        "quantity": "instrument feature",
+                        "property": "Temperature compensation",
+                        "textstr": {
+                            "@id": "setting/1/value",
+                            "text": "true"
+                        }
+                    }]
+                },
+                {
+                    "@id": "resource/1",
+                    "type": "instrument",
+                    "name": "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode",
+                    "vendor": "Fisher Scientific",
+                    "catalognumber": "13-620-530A"
+                },
+                {
+                    "@id": "procedure/1",
+                    "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken"
+                }
+            ]
+        },
+        "context": {
+            "@id": "context",
+            "discipline": "chemistry",
+            "subdiscipline": "analytical chemistry",
+            "facets": [
+                {
+                    "@id": "solution/1",
+                    "title": "3 ppm cyanide standard solution",
+                    "component": [
+                        {
+                            "@id": "solution/1/component/1",
+                            "scope": "compound/1",
+                            "role": "analyte",
+                            "properties": {
+                                "@id": "solution/1/component/1/property/1",
+                                "quantity": "moles of substance per volume",
+                                "property": "Concentration",
+                                "value": {
+                                    "@id": "solution/1/component/1/property/1/value",
+                                    "number": 2.99,
+                                    "unit": "ppm (w/v)"
+                                }
+                            }
+                        },
+                        {
+                            "@id": "solution/1/component/2",
+                            "scope": "compound/2",
+                            "role": "reagent"
+                        },
+                        {
+                            "@id": "solution/1/component/3",
+                            "scope": "compound/3",
+                            "role": "reagent"
+                        },
+                        {
+                            "@id": "solution/1/component/4",
+                            "scope": "compound/4",
+                            "role": "buffer"
+                        },
+                        {
+                            "@id": "solution/1/component/5",
+                            "scope": "compound/5",
+                            "role": "solvent"
+                        },
+                        {
+                            "@id": "solution/1/component/6",
+                            "scope": "compound/6",
+                            "role": "solvent"
+                        }
+                    ],
+                    "volume": {
+                        "@id": "solution/1/volume",
+                        "value": {
+                            "@id": "solution/1/volume/value",
+                            "number": 100,
+                            "unit": "mL"
+                        }
+                    }
+                },
+                {
+                    "@id": "compound/1",
+                    "name": "cyanide ion",
+                    "inchi": "InChI=1S/CN/c1-2/q-1",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:17514"
+                },
+                {
+                    "@id": "compound/2",
+                    "name": "phenolphthlin",
+                    "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:34915"
+                },
+                {
+                    "@id": "compound/3",
+                    "name": "copper(II) ion",
+                    "inchi": "InChI=1S/Cu/q+2",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:29036"
+                },
+                {
+                    "@id": "compound/4",
+                    "name": "tetraborate ion",
+                    "inchi": "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:38889"
+                },
+                {
+                    "@id": "compound/5",
+                    "name": "ethanol",
+                    "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:16236"
+                },
+                {
+                    "@id": "compound/6",
+                    "name": "water",
+                    "inchi": "InChI=1S/H2O/h1H2",
+                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
+                },
+                {
+                    "@id": "condition/1",
+                    "source": "measurement/1",
+                    "scope": "solution/1",
+                    "quantity": "temperature",
+                    "property": "Solution temperature",
+                    "value": {
+                        "@id": "condition/1/value",
+                        "number": "22.8",
+                        "unit": "°C"
+                    }
+                }
+            ]
+        },
+        "dataset": {
+            "@id": "dataset",
+            "source": "measurement/1",
+            "scope": "solution/1",
+            "datapoint": [
+                {
+                    "@id": "datapoint/1",
+                    "quantity": "p-function negative log of value",
+                    "property": "pH",
+                    "value": {
+                        "@id": "datapoint/1/value",
+                        "number": "10.03"
+                    }
+                },
+                {
+                    "@id": "datapoint/2",
+                    "quantity": "annotation",
+                    "property": "Observation",
+                    "string": {
+                        "@id": "datapoint/2/value",
+                        "text": "The solution was clear, no reagent precipiation was observed.",
+                        "format": "plain",
+                        "language": "en-us"
+                    }
+                }
+            ]
+        }
+    },
+    "source": {
+        "@id": "source",
+        "citation": "Chalk Research Group http://chalk.coas.unf.edu",
+        "url": "http://scidata.io/stuchalk/example/pH"
+    },
+    "rights": {
+        "@id": "rights",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    }
+}

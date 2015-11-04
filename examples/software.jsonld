@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://chalk.coas.unf.edu/champ/files/contexts/sci_software.jsonld",
+        {"@base": "http://chemsem.com/stuchalk/061315/1/"}
+    ],
+    "@id": "software/1",
+    "name": "HyperChem",
+    "version": "9.0",
+    "os": "Windows 8",
+    "developer": "Chemical Semantics Inc.",
+    "input": "Here is the input file contents...",
+    "output": "Here is the output file contents..."
+}

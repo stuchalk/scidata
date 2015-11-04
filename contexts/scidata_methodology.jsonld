@@ -1,0 +1,54 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_measurement.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_resource.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_procedure.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_calculation.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_basisset.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_software.jsonld",
+    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "methodology": {
+            "@id": "sci:methodology",
+            "evaluation": {"@type": "evaluation"},
+            "aspects": {"@type": "aspects"}
+        },
+        "aspects": {
+            "@id": "sci:methodologyAspect",
+            "measurement": {"@type": "measurement"},
+            "resource": {"@type": "resource"},
+            "procedure": {"@type": "procedure"},
+            "calculation": {"@type": "calculation"},
+            "basisset": {"@type": "basisset"},
+            "software": {"@type": "software"}
+        },
+        "evaluation": {
+            "@id": "sci:evaluationMethod",
+            "@type": "string"
+        },
+        "measurement": {
+            "@id": "sci:measurement",
+            "@type": "measurement"
+        },
+        "resource": {
+            "@id": "sci:resource",
+            "@type": "resource"
+        },
+        "procedure": {
+            "@id": "sci:procedure",
+            "@type": "procedure"
+        },
+        "calculation": {
+            "@id": "sci:calculation",
+            "@type": "calculation"
+        },
+        "basisset": {
+            "@id": "sci:basisSet",
+            "@type": "basisset"
+        },
+        "software": {
+            "@id": "sci:software",
+            "@type": "software"
+        }
+    }
+]}

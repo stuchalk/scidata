@@ -1,0 +1,37 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_chemical.jsonld",
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "system": {
+            "@id": "sci:chemicalSystem",
+            "name": {"@type": "name"},
+            "systemType": {"@type": "systemType"},
+            "phase": {"@type": "phase"},
+            "components": {"@type": "components"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "systemType": {
+            "@id": "sci:systemType",
+            "@type": "string"
+        },
+        "grade": {
+            "@id": "sci:grade",
+            "@type": "string"
+        },
+        "phase": {
+            "@id": "sci:phase",
+            "@type": "string"
+        },
+        "components": {
+            "@id": "sci:components",
+            "@type": "chemical"
+        }
+    }
+]}

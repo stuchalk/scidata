@@ -1,0 +1,72 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_system.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_compound.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_chemical.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_molsystem.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_material.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_organism.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_condition.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_computer.jsonld",
+    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "context": {
+            "@id": "sci:context",
+            "discipline": {"@type": "discipline"},
+            "subdiscipline": {"@type": "subdiscipline"},
+            "aspects": {"@type": "aspects"}
+        },
+        "facets": {
+            "@id": "sci:contextFacet",
+            "chemicalsystem": {"@type": "chemicalsystem"},
+            "solution": {"@type": "chemicalsystem"},
+            "molecularsystem": {"@type": "molecularsystem"},
+            "chemical": {"@type": "chemical"},
+            "compound": {"@type": "compound"},
+            "material": {"@type": "material"},
+            "organism": {"@type": "organism"},
+            "condition": {"@type": "condition"},
+            "computer": {"@type": "computer"}
+        },
+        "discipline": {
+            "@id": "sci:discipline",
+            "@type": "string"
+        },
+        "subdiscipline": {
+            "@id": "sci:subdiscipline",
+            "@type": "string"
+        },
+        "chemicalsystem": {
+            "@id": "sci:chemicalSystem",
+            "@type": "system"
+        },
+        "molecularsystem": {
+            "@id": "sci:molecularSystem",
+            "@type": "molSystem"
+        },
+        "chemical": {
+            "@id": "sci:chemical",
+            "@type": "chemical"
+        },
+        "compound": {
+            "@id": "sci:compound",
+            "@type": "compound"
+        },
+        "material": {
+            "@id": "sci:material",
+            "@type": "material"
+        },
+        "organism": {
+            "@id": "sci:organism",
+            "@type": "organism"
+        },
+        "condition": {
+            "@id": "sci:condition",
+            "@type": "condition"
+        },
+        "computer": {
+            "@id": "sci:computer",
+            "@type": "computer"
+        }
+    }
+]}

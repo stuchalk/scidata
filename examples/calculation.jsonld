@@ -1,0 +1,16 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_calculation.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/calculation/"}
+    ],
+    "@id": "",
+    "approach": "quantum mechanics",
+    "calculations": [{
+        "@id": "calculation/1",
+        "class": "ab initio",
+        "calcType": "scf",
+        "referenceState": "single",
+        "determinant": "single",
+        "spin": "cs:UHF"
+    }]
+}
