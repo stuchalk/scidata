@@ -1,0 +1,68 @@
+{"@context": [
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "numericValue": {
+            "@id": "sci:numericValue",
+            "uid": {"@type": "uid"},
+            "format": {"@type": "dataFormat"},
+            "number": {"@type": "number"},
+            "sigfigs": {"@type": "sigfigs"},
+            "error": {"@type": "error"},
+            "errorType": {"@type": "errorType"},
+            "unit": {"@type": "unit"}
+        },
+        "textString": {
+            "@id": "sci:textString",
+            "uid": {"@type": "uid"},
+            "text": {"@type": "text"},
+            "format": {"@type": "textFormat"},
+            "language": {"@type": "language"}
+        },
+        "uid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "dataFormat": {
+            "@id": "sci:dataFormat",
+            "@type": "string"
+        },
+        "number": {
+            "@id": "sci:numberValue",
+            "@type": "double",
+            "@container": "@list"
+        },
+        "sigfigs": {
+            "@id": "sci:sigfigs",
+            "@type": "integer"
+        },
+        "error": {
+            "@id": "sci:error",
+            "@type": "string",
+            "@container": "@list"
+        },
+        "errorType": {
+            "@id": "sci:errorType",
+            "@type": "string"
+        },
+        "unit": {
+            "@id": "sci:unit",
+            "@type": "@id"
+        },
+        "text": {
+            "@id": "sci:textValue",
+            "@type": "string"
+        },
+        "textFormat": {
+            "@id": "sci:textFormat",
+            "@type": "string"
+        },
+        "language": {
+            "@id": "dc:language",
+            "@type": "string"
+        }
+    }
+]}

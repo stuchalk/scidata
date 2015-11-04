@@ -1,0 +1,74 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "dataset": {
+            "@id": "sci:dataset",
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "parameters": {"@type": "parameter"},
+            "datagroup": {"@type": "datagroup"},
+            "dataseries": {"@type": "dataseries"},
+            "datapoint": {"@type": "datapoint"},
+            "group": {"@type": "group"},
+            "values": {"@type": "values"}
+        },
+        "source": {
+            "@id": "sci:datasource",
+            "@type": "@id"
+        },
+        "scope": {
+            "@id": "sci:hasScope",
+            "@type": "@id"
+        },
+        "datagroup": {
+            "@id": "sci:datagroup",
+            "name": {"@type": "name"},
+            "attributes": {"@type": "attributes"},
+            "datagroup": {"@type": "datagroup"},
+            "dataseries": {"@type": "dataseries"},
+            "datapoint": {"@type": "datapoint"}
+        },
+        "dataseries": {
+            "@id": "sci:dataseries",
+            "name": {"@type": "name"},
+            "type": {"@type": "seriesType"},
+            "axis": {"@type": "axis"},
+            "label": {"@type": "label"},
+            "attributes": {"@type": "attributes"},
+            "value": {"@type": "parameter"}
+        },
+        "datapoint": {
+            "@id": "sci:datapoint",
+            "@type": "parameter"
+        },
+        "attributes": {
+            "@id": "sci:dataAttributes",
+            "@type": "parameter"
+        },
+        "seriesType": {
+            "@id": "sci:dataseriesType",
+            "@type": "parameter"
+        },
+        "axis": {
+            "@id": "sci:plotAxis",
+            "@type": "string"
+        },
+        "label": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "parameter": {
+            "@id": "sci:hasParameter",
+            "@type": "parameter"
+        },
+        "values": {
+            "@id": "sci:hasValue",
+            "@type": "parameter"
+        }
+    }
+]}

@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
+        {"@base": "http://osdb.info/s00000001"}
+    ],
+    "@id": "context",
+    "discipline": "chemistry",
+    "subdiscipline": "analytical chemistry",
+    "aspects": [{
+        "@id": "system",
+        "name": "R-(-)-Carvone and Chloroform-d",
+        "description": "Solution prepared for 1H NMR analysis",
+        "type": "single phase liquid",
+        "components": [
+            {
+                "@id": "substance/1",
+                "name": "(R)(-) CARVONE",
+                "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
+            },
+            {
+                "@id": "substance/2",
+                "name": "Chloroform-d",
+                "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
+            }
+        ]
+    }]
+}

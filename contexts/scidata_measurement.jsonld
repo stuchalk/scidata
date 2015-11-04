@@ -1,0 +1,40 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "measurement": {
+            "@id": "sci:measurement",
+            "techniqueType": {"@type": "techniqueType"},
+            "technique": {"@type": "technique"},
+            "instrumentType": {"@type": "instrumentType"},
+            "instrument": {"@type": "instrument"},
+            "vendor": {"@type": "vendor"},
+            "settings": {"@type": "settings"}
+        },
+        "techniqueType": {
+            "@id": "sci:techniqueType",
+            "@type": "string"
+        },
+        "technique": {
+            "@id": "sci:technique",
+            "@type": "string"
+        },
+        "instrumentType": {
+            "@id": "sci:instrumentType",
+            "@type": "string"
+        },
+        "instrument": {
+            "@id": "sci:instrument",
+            "@type": "string"
+        },
+        "vendor": {
+            "@id": "sci:vendor",
+            "@type": "string"
+        },
+        "settings": {
+            "@id": "sci:instrumentSetting",
+            "@type": "parameter"
+        }
+    }
+]}

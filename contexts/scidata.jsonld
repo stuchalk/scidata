@@ -1,0 +1,145 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_methodology.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_dataset.jsonld",
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_csi.jsonld",
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ss": "http://semanticscience.org/resource/",
+        "dc": "http://purl.org/dc/terms/",
+        "schema": "http://schema.org/",
+        "bse": "http://purl.oclc.org/NET/EMSL/BSE"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "uid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "title": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "author": {
+            "@id": "dc:creator",
+            "name": {"@type": "type"},
+            "organization": {"@type": "property"},
+            "email": {"@type": "email"},
+            "orcid": {"@type": "orcid"}
+        },
+        "name": {
+            "@id": "foaf:name",
+            "@type": "string"
+        },
+        "organization": {
+            "@id": "foaf:organization",
+            "@type": "string"
+        },
+        "publisher": {
+            "@id": "dc:publisher",
+            "@type": "string"
+        },
+        "email": {
+            "@id": "foaf:mbox",
+            "@type": "string"
+        },
+        "orcid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "description": {
+            "@id": "dc:description",
+            "@type": "string"
+        },
+        "version": {
+            "@id": "obo:IAO_0000129",
+            "@type": "string"
+        },
+        "keywords": {
+            "@id": "dc:keyword",
+            "@type": "string"
+        },
+        "date": {
+            "@id": "dc:created",
+            "@type": "dateTime"
+        },
+        "permalink": {
+            "@id": "schema:url",
+            "@type": "anyURI"
+        },
+        "related": {
+            "@id": "dc:related",
+            "@type": "anyURI"
+        },
+        "toc": {
+            "@id": "dc:tableOfContents ",
+            "sections": {"@type": "type"}
+        },
+        "sections": {
+            "@id": "dc:hasPart",
+            "@type": "@id"
+        },
+        "scidata": {
+            "@id": "sci:scientificData",
+            "type": {"@type": "type"},
+            "property": {"@type": "property"},
+            "kind": {"@type": "kind"},
+            "methodology": {"@type": "methodology"},
+            "context": {"@type": "context"},
+            "dataset": {"@type": "dataset"}
+        },
+        "type": {
+            "@id": "sci:dataType",
+            "@type": "string"
+        },
+        "property": {
+            "@id": "sci:physicalProperty",
+            "@type": "string"
+        },
+        "kind": {
+            "@id": "sci:dataKind",
+            "@type": "string"
+        },
+        "methodology": {
+            "@id": "sci:methodology",
+            "@type": "methodology"
+        },
+        "context": {
+            "@id": "sci:context",
+            "@type": "context"
+        },
+        "dataset": {
+            "@id": "sci:dataset",
+            "@type": "dataset"
+        },
+        "source": {
+            "@id": "dc:source",
+            "citation": {"@type": "citation"},
+            "url": {"@type": "url"},
+            "doi": {"@type": "doi"}
+        },
+        "citation": {
+            "@id": "dc:bibliographicCitation",
+            "@type": "string"
+        },
+        "url": {
+            "@id": "schema:url",
+            "@type": "anyURI"
+        },
+        "doi": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "rights": {
+            "@id": "dc:accessRights",
+            "license": {"@type": "license"}
+        },
+        "license": {
+            "@id": "dc:license",
+            "@type": "string"
+        }
+    }
+]}

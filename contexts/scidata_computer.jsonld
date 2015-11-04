@@ -1,0 +1,34 @@
+{"@context": [
+    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "computer": {
+            "@id": "sci:computerHardware",
+            "architecture": {"@type": "architecture"},
+            "precision": {"@type": "version"},
+            "cache": {"@type": "cache"},
+            "ram": {"@type": "ram"},
+            "gpu": {"@type": "gpu"}
+        },
+        "architecture": {
+            "@id": "sci:architecture",
+            "@type": "string"
+        },
+        "precision": {
+            "@id": "sci:precision",
+            "@type": "string"
+        },
+        "cache": {
+            "@id": "sci:onbaordCache",
+            "@type": "string"
+        },
+        "ram": {
+            "@id": "sci:randomAccessMemory",
+            "@type": "string"
+        },
+        "gpu": {
+            "@id": "sci:graphicsProcessor",
+            "@type": "string"
+        }
+    }
+]}

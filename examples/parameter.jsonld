@@ -1,0 +1,16 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/parameter/"}
+    ],
+    "@id": "",
+    "quantity": "magnetic field strength",
+    "property": "Anisotropic NMR Shielding",
+    "value": {
+        "@id": "value",
+        "number": 3.2,
+        "error": 0.1,
+        "errorType": "absolute",
+        "unit": "http://purl.obolibrary.org/obo/UO_0000169"
+    }
+}

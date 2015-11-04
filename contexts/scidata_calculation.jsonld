@@ -1,0 +1,49 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {"gc": "http://purl.org/gc/"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "calculation": {
+            "@id": "sci:calculation",
+            "approach": {"@type": "approach"},
+            "calculations": {"@type": "calculations"}
+        },
+        "approach": {
+            "@id": "gc:calculationApproach",
+            "@type": "string"
+        },
+        "calculations": {
+            "@id": "gc:calculationStep",
+            "class": {"@type": "class"},
+            "calcType": {"@type": "calcType"},
+            "referenceState": {"@type": "referenceState"},
+            "determinant": {"@type": "determinant"},
+            "spin": {"@type": "spin"},
+            "submethod": {"@type": "submethod"}
+        },
+        "class": {
+            "@id": "gc:calculationClass",
+            "@type": "string"
+        },
+        "calcType": {
+            "@id": "gc:calculationType",
+            "@type": "string"
+        },
+        "referenceState": {
+            "@id": "gc:referenceState",
+            "@type": "string"
+        },
+        "determinant": {
+            "@id": "gc:determinant",
+            "@type": "string"
+        },
+        "spin": {
+            "@id": "gc:spin",
+            "@type": "string"
+        },
+        "submethod": {
+            "@id": "gc:submethod",
+            "@type": "@id"
+        }
+    }
+]}

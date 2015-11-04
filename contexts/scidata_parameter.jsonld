@@ -1,0 +1,54 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "parameter": {
+            "@id": "sci:parameter",
+            "scope": {"@type": "scope"},
+            "name": {"@type": "name"},
+            "quantity": {"@type": "quantity"},
+            "property": {"@type": "property"},
+            "parameters": {"@type": "parameter"},
+            "value": {"@type": "value"},
+            "textstr": {"@type": "textstr"}
+        },
+        "scope": {
+            "@id": "sci:hasScope",
+            "@type": "@id"
+        },
+        "quantity": {
+            "@id": "sci:isQuantity",
+            "@type": "string"
+        },
+        "property": {
+            "@id": "sci:isProperty",
+            "name": {"@type": "name"},
+            "code": {"@type": "code"},
+            "codeType": {"@type": "codeType"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "code": {
+            "@id": "sci:hasPropertyCode",
+            "@type": "string"
+        },
+        "codeType": {
+            "@id": "sci:hasPropertyCodeType",
+            "@type": "string"
+        },
+        "value": {
+            "@id": "sci:hasParameterValue",
+            "@type": "numericValue"
+        },
+        "textstr": {
+            "@id": "sci:hasParameterValue",
+            "@type": "textString"
+        }
+    }
+]}

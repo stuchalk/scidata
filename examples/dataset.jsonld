@@ -1,0 +1,423 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_results.jsonld",
+        {"@base": "http://chemsem.com/test/"}
+    ],
+    "@id": "results",
+    "source": ["methodology/1"],
+    "dataPoint": [
+        {
+            "@id": "result/datapoint/1",
+            "scope": "molSys/s1",
+            "quantity": "energy",
+            "property": "SCF electronic energy",
+            "value": {
+                "@id": "result/datapoint/1/value",
+                "number": -83.872391,
+                "unit": "hartree"
+            }
+        },
+        {
+            "@id": "result/datapoint/2",
+            "scope": "molSys/s1",
+            "quantity": "energy",
+            "property": "Nuclear repulsion energy",
+            "value": {
+                "@id": "result/datapoint/2/value",
+                "number": 8.906489874,
+                "unit": "hartree"
+            }
+        },
+        {
+            "@id": "result/datapoint/3",
+            "scope": "molSys/s1",
+            "quantity": "energy",
+            "property": "Total potential energy",
+            "value": {
+                "@id": "result/datapoint/3/value",
+                "number": -74.96590122,
+                "unit": "hartree"
+            }
+        },
+        {
+            "@id": "result/datapoint/4",
+            "scope": "molSys/s1",
+            "quantity": "change in energy per length",
+            "property": "RMS Gradient",
+            "value": {
+                "@id": "result/datapoint/4/value",
+                "number": 0,
+                "unit": "kCalories_per_angstrom"
+            }
+        },
+        {
+            "@id": "result/datapoint/5",
+            "scope": "molSys/s1/m1/a1",
+            "quantity": "charge",
+            "property": "Mulliken charge",
+            "value": {
+                "@id": "result/datapoint/5/value",
+                "number": 3.2,
+                "unit": "electronUnit"
+            }
+        },
+        {
+            "@id": "result/datapoint/6",
+            "scope": "molSys/s1/m1/a1",
+            "quantity": "charge",
+            "property": "Mulliken charge",
+            "value": {
+                "@id": "result/datapoint/6/value",
+                "number": 3.2,
+                "unit": "electronUnit"
+            }
+        },
+        {
+            "@id": "result/datapoint/7",
+            "scope": "molSys/s1/m1/a1",
+            "quantity": "charge",
+            "property": "Mulliken charge",
+            "value": {
+                "@id": "result/datapoint/7/value",
+                "number": 3.2,
+                "unit": "electronUnit"
+            }
+        }
+    ],
+    "dataGroup": [
+        {
+            "@id": "result/datagroup/1",
+            "scope": "molSys/s1",
+            "name": "Vibrational Analysis",
+            "attributes": [{
+                "@id": "result/datagroup/1/attribute/1",
+                "quantity": "count",
+                "property": "Number of vibrations",
+                "value": {
+                    "@id": "result/datagroup/1/attribute/1/value",
+                    "number": "3"
+                }
+            }],
+            "dataSeries": [
+                {
+                    "@id": "result/datagroup/1/dataseries/1",
+                    "quantity": "frequency",
+                    "property": "Vibrational mode frequency",
+                    "value": {
+                        "@id": "result/datagroup/1/dataseries/1/value",
+                        "number": [
+                            3.97,
+                            0.99,
+                            0,
+                            0,
+                            1.36,
+                            3.53,
+                            2170.04,
+                            4140,
+                            4391.07
+                        ],
+                        "unit": "cm-1"
+                    }
+                },
+                {
+                    "@id": "result/datagroup/1/dataseries/2",
+                    "quantity": "transmittance",
+                    "property": "Infrared intensities",
+                    "value": {
+                        "@id": "result/datagroup/1/dataseries/2/value",
+                        "number": [
+                            1.12589,
+                            1.64016,
+                            6.00353,
+                            6.00352,
+                            1.96424,
+                            1.00782,
+                            1.07849,
+                            1.04909,
+                            1.07736
+                        ],
+                        "unit": "km_per_mol"
+                    }
+                },
+                {
+                    "@id": "result/datagroup/1/dataseries/3",
+                    "quantity": "spacial symmetry",
+                    "property": "Normal mode symmetry",
+                    "values": [{
+                        "@id": "result/datagroup/1/dataseries/3/value",
+                        "text": [
+                            "B1",
+                            "B2",
+                            "B1",
+                            "A1",
+                            "B2",
+                            "A2",
+                            "A1",
+                            "A1",
+                            "B2"
+                        ]
+                    }]
+                }
+            ]
+        },
+        {
+            "@id": "result/datagroup/2",
+            "quantity": "patterned motion",
+            "name": "Normal modes",
+            "attributes": [{
+                "@id": "result/datagroup/2/attribute/1",
+                "quantity": "count",
+                "property": "Number of modes",
+                "value": {
+                    "@id": "result/datagroup/2/attribute/1/value",
+                    "number": "9"
+                }
+            }],
+            "dataSeries": [
+                {
+                    "@id": "result/datagroup/2/dataseries/1",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/1/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/1/attribute/1/value",
+                            "text": "1"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/1/value",
+                        "number": [
+                            -0.08364742,
+                            -0.08364742,
+                            0,
+                            -4.471E-5,
+                            -4.471E-5,
+                            0,
+                            -4.471E-5,
+                            -4.471E-5,
+                            0
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/2",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/2/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/2/attribute/1/value",
+                            "text": "2"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/2/value",
+                        "number": [
+                            0,
+                            0,
+                            0.1603881,
+                            0.2356331,
+                            0.2356331,
+                            0.4322953,
+                            0.2356332,
+                            0.2356332,
+                            0.4322953
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/3",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/3/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/3/attribute/1/value",
+                            "text": "3"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/3/value",
+                        "number": [
+                            0.2356332,
+                            0.2356332,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0.4474981,
+                            0.4474981,
+                            0
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/4",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/4/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/4/attribute/1/value",
+                            "text": "4"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/4/value",
+                        "number": [
+                            4.471E-5,
+                            4.471E-5,
+                            0,
+                            2,
+                            2,
+                            -4.0E-8,
+                            3,
+                            3,
+                            4.0E-8
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/5",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/5/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/5/attribute/1/value",
+                            "text": "5"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/5/value",
+                        "number": [
+                            0,
+                            0,
+                            0.1802469,
+                            0.1802469,
+                            0.1802469,
+                            -0.195069,
+                            -0.195069,
+                            -0.195069,
+                            -0.195069
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/6",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/6/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/6/attribute/1/value",
+                            "text": "6"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/6/value",
+                        "number": [
+                            0,
+                            0,
+                            0,
+                            0.05123274,
+                            0.05123274,
+                            0,
+                            -0.4065503,
+                            -0.4065503,
+                            0
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/7",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/7/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/7/attribute/1/value",
+                            "text": "7"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/7/value",
+                        "number": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            -0.4314068,
+                            0.436757,
+                            0.436757,
+                            0.4314068
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/set/8",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/8/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/8/attribute/1/value",
+                            "text": "8"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/8/value",
+                        "number": [
+                            0,
+                            0,
+                            0,
+                            2,
+                            2,
+                            -0.5567819,
+                            3,
+                            3,
+                            0.5567819
+                        ]
+                    }]
+                },
+                {
+                    "@id": "result/datagroup/2/dataseries/9",
+                    "property": "Normal mode",
+                    "attributes": [{
+                        "@id": "result/datagroup/2/dataseries/9/attribute/1",
+                        "quantity": "unique identifier",
+                        "property": "Mode number",
+                        "value": {
+                            "@id": "result/datagroup/2/dataseries/9/attribute/1/value",
+                            "text": "9"
+                        }
+                    }],
+                    "values": [{
+                        "@id": "result/datagroup/2/dataseries/9/value",
+                        "number": [
+                            0,
+                            0,
+                            -0.06562472,
+                            -0.06562472,
+                            -0.06562472,
+                            0.5207559,
+                            0.5207559,
+                            0.5207559,
+                            0.5207559
+                        ]
+                    }]
+                }
+            ]
+        }
+    ]
+}

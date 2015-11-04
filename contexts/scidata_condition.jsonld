@@ -1,0 +1,11 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "condition": {
+            "@id": "sci:condition",
+            "@type": "parameter"
+        }
+    }
+]}

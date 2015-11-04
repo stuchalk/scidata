@@ -1,0 +1,112 @@
+{"@context": [
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dc": "http://purl.org/dc/terms/",
+        "wkt": "http://en.wiktionary.org/wiki/",
+        "gc": "http://purl.org/gc/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "unit": {
+            "@id": "sci:scientificUnit",
+            "type": {"@type": "type"},
+            "name": {"@type": "name"},
+            "quantity": {"@type": "quantity"},
+            "symbol": {"@type": "symbol"},
+            "unitinsi": {"@type": "unitinsi"},
+            "siunit": {"@type": "siunit"},
+            "conversion": {"@type": "conversion"}
+        },
+        "uid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "type": {
+            "@id": "gc:unitType",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "quantity": {
+            "@id": "sci:quantity",
+            "@type": "string"
+        },
+        "symbol": {
+            "@id": "sci:symbol",
+            "@type": "string"
+        },
+        "unitinsi": {
+            "@id": "sci:equivalentSIunit",
+            "siunit": {"@type": "siunit"}
+        },
+        "siunit": {
+            "@id": "sci:siunit",
+            "type": {"@type": "name"},
+            "prefix": {"@type": "prefix"},
+            "power": {"@type": "power"}
+        },
+        "prefix": {
+            "@id": "sci:prefix",
+            "@type": "string"
+        },
+        "power": {
+            "@id": "sci:power",
+            "numerator": {"@type": "numerator"},
+            "denominator": {"@type": "denominator"}
+        },
+        "numerator": {
+            "@id": "obo:STATO_0000101",
+            "@type": "integer"
+        },
+        "denominator": {
+            "@id": "obo:STATO_0000259",
+            "@type": "integer"
+        },
+        "conversion": {
+            "@id": "sci:conversionFactor",
+            "fromunit": {"@type": "fromunit"},
+            "addend": {"@type": "float"},
+            "minuend": {"@type": "minuend"},
+            "subtrahend": {"@type": "subtrahend)"},
+            "multiplicand": {"@type": "multiplicand"},
+            "dividend": {"@type": "dividend"},
+            "divisor": {"@type": "divisor"},
+            "exact": {"@type": "boolean"}
+        },
+        "fromunit": {
+            "@id": "sci:referenceUnit",
+            "@type": "siunit"
+        },
+        "addend": {
+            "@id": "wkt:addend",
+            "@type": "float"
+        },
+        "minuend": {
+            "@id": "wkt:minuend",
+            "@type": "float"
+        },
+        "subtrahend": {
+            "@id": "wkt:subtrahend",
+            "@type": "float"
+        },
+        "multiplicand": {
+            "@id": "wkt:multiplicand",
+            "@type": "float"
+        },
+        "dividend": {
+            "@id": "wkt:dividend",
+            "@type": "float"
+        },
+        "divisor": {
+            "@id": "wkt:divisor",
+            "@type": "float"
+        },
+        "exact": {
+            "@id": "wkt:exact",
+            "@type": "exact"
+        }
+    }
+]}

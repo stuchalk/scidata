@@ -1,0 +1,43 @@
+{"@context": [
+    {
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/",
+        "obo": "http://purl.obolibrary.org/obo/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "software": {
+            "@id": "sci:software",
+            "name": {"@type": "name"},
+            "version": {"@type": "version"},
+            "os": {"@type": "os"},
+            "developer": {"@type": "developer"},
+            "input": {"@type": "input"},
+            "output": {"@type": "output"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "version": {
+            "@id": "obo:IAO_0000129",
+            "@type": "string"
+        },
+        "os": {
+            "@id": "sci:operatingSystem",
+            "@type": "string"
+        },
+        "developer": {
+            "@id": "sci:developer",
+            "@type": "string"
+        },
+        "input": {
+            "@id": "sci:calcInputFile",
+            "@type": "string"
+        },
+        "output": {
+            "@id": "sci:calcOutputFile",
+            "@type": "string"
+        }
+    }
+]}

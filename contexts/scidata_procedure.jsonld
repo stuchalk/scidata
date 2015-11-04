@@ -1,0 +1,52 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "procedure": {
+            "@id": "sci:measurement",
+            "title": {"@type": "title"},
+            "scope": {"@type": "scope"},
+            "procType": {"@type": "procType"},
+            "sequence": {"@type": "sequence"},
+            "notes": {"@type": "notes"}
+        },
+        "scope": {
+            "@id": "sci:scope",
+            "@type": "string"
+        },
+        "procType": {
+            "@id": "sci:procedureType",
+            "@type": "string"
+        },
+        "sequence": {
+            "@id": "sci:procedureSequence",
+            "title": {"@type": "title"},
+            "steps": {"@type": "steps"}
+        },
+        "title": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "steps": {
+            "@id": "sci:procedureStep",
+            "step": {"@type": "step"},
+            "instruction": {"@type": "instruction"}
+        },
+        "step": {
+            "@id": "sci:procedureStepNumber",
+            "@type": "string"
+        },
+        "instruction": {
+            "@id": "sci:procedureStepInstruction",
+            "@type": "string"
+        },
+        "notes": {
+            "@id": "sci:procedureNote",
+            "@type": "string"
+        }
+    }
+]}

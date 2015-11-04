@@ -1,0 +1,15 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_compound.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/chemical/"}
+    ],
+    "@id": "",
+    "name": "Water",
+    "iupacname": "Oxidane",
+    "inchi": "InChI=1S/H2O/h1H2",
+    "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+    "smiles": "O",
+    "formula": "H2O",
+    "molweight": "18.0153",
+    "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
+}

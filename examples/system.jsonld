@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_system.jsonld",
+        {"@base": "http://scidata.io/stuchalk/s00000001"}
+    ],
+    "@id": "system/1",
+    "type": "Binary mixture",
+    "phase": "liquid",
+    "components": [
+        {
+            "@id": "system/1/component/1",
+            "scope": "compound/1",
+            "grade": "MilliQ Grade (18.2 MOhms)",
+            "purity": {"value": {
+                "number": 99.9999,
+                "unit": "%(w/w)"
+            }}
+        },
+        {
+            "@id": "system/1/component/2",
+            "scope": "compound/2",
+            "grade": "ACS Certified grade",
+            "purity": {"value": {
+                "number": 9.99,
+                "unit": "%(w/w)"
+            }}
+        }
+    ]
+}

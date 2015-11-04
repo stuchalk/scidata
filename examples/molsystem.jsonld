@@ -1,0 +1,197 @@
+{
+    "@context": [
+        "https://chalk.coas.unf.edu/champ/files/contexts/sci_molsystem.jsonld",
+        {"@base": "http://scidata.io/stuchalk/example/molecularSystem/"}
+    ],
+    "@id": "meta",
+    "temperature": {
+        "@id": "temperature",
+        "number": 273.15,
+        "unit": "K"
+    },
+    "charge": {
+        "@id": "charge",
+        "number": 0,
+        "unit": "C"
+    },
+    "multiplicity": {
+        "@id": "multiplicity",
+        "number": 1
+    },
+    "space": {
+        "@id": "space",
+        "spaceType": "cartesian",
+        "points": [
+            "point/1",
+            "point/2",
+            "point/3"
+        ]
+    },
+    "point": [
+        {
+            "@id": "point/1",
+            "x": {
+                "@id": "point/1/x",
+                "number": 0,
+                "unit": "angstrom"
+            },
+            "y": {
+                "@id": "point/1/y",
+                "number": 0,
+                "unit": "angstrom"
+            },
+            "z": {
+                "@id": "point/1/z",
+                "number": 0.03719146,
+                "unit": "angstrom"
+            },
+            "tenant": "molecule/1/atom/1"
+        },
+        {
+            "@id": "point/2",
+            "x": {
+                "@id": "point/2/x",
+                "number": 0,
+                "unit": "angstrom"
+            },
+            "y": {
+                "@id": "point/2/y",
+                "number": -0.7580816,
+                "unit": "angstrom"
+            },
+            "z": {
+                "@id": "point/2/z",
+                "number": -0.5986095,
+                "unit": "angstrom"
+            },
+            "tenant": "molecule/1/atom/2"
+        },
+        {
+            "@id": "point/3",
+            "x": {
+                "@id": "point/3/x",
+                "number": 0,
+                "unit": "angstrom"
+            },
+            "y": {
+                "@id": "point/3/y",
+                "number": 0.7580816,
+                "unit": "angstrom"
+            },
+            "z": {
+                "@id": "point/3/z",
+                "number": -0.5986095,
+                "unit": "angstrom"
+            },
+            "tenant": "molecule/1/atom/3"
+        }
+    ],
+    "molecule": [{
+        "@id": "molecule/1",
+        "label": "Water",
+        "inchiKey": "UGFAIRIUMAVXCW-UHFFFAOYSA-N",
+        "atomCount": {
+            "@id": "molecule/1/atomCount",
+            "value": 3
+        },
+        "atoms": [
+            "molecule/1/atom/1",
+            "molecule/1/atom/2",
+            "molecule/1/atom/3"
+        ],
+        "bonds": [
+            "molecule/1/bond/1",
+            "molecule/1/bond/2"
+        ],
+        "atom": [
+            {
+                "@id": "molecule/1/atom/1",
+                "name": "Oxygen atom",
+                "label": "Atom: O",
+                "element": "obo:CHEBI_25805",
+                "atomMass": {
+                    "@id": "molecule/1/atom/1/atomMass",
+                    "number": 15.999,
+                    "unit": "amu"
+                },
+                "formalAtomCharge": {
+                    "@id": "molecule/1/atom/1/formalAtomCharge",
+                    "number": 0,
+                    "unit": "C"
+                },
+                "calculatedAtomCharge": {
+                    "@id": "molecule/1/atom/1/calculatedAtomCharge",
+                    "number": -0.33053,
+                    "unit": "C"
+                },
+                "basisSet": "basisset/1"
+            },
+            {
+                "@id": "molecule/1/atom/2",
+                "name": "Hydrogen #1",
+                "label": "Atom: H",
+                "element": "obo:CHEBI_49637",
+                "atomMass": {
+                    "@id": "molecule/1/atom/2/atomMass",
+                    "number": 1.008,
+                    "unit": "amu"
+                },
+                "formalAtomCharge": {
+                    "@id": "molecule/1/atom/2/formalAtomCharge",
+                    "number": 0,
+                    "unit": "C"
+                },
+                "calculatedAtomCharge": {
+                    "@id": "molecule/1/atom/2/calculatedAtomCharge",
+                    "number": 0.165265,
+                    "unit": "C"
+                },
+                "basisSet": "basisset/1"
+            },
+            {
+                "@id": "molecule/1/atom/3",
+                "name": "Hydrogen #2",
+                "label": "Atom: H",
+                "element": "obo:CHEBI_49637",
+                "atomMass": {
+                    "@id": "molecule/1/atom/3/atomMass",
+                    "number": 1.008,
+                    "unit": "amu"
+                },
+                "formalAtomCharge": {
+                    "@id": "molecule/1/atom/3/formalAtomCharge",
+                    "number": 0,
+                    "unit": "C"
+                },
+                "calculatedAtomCharge": {
+                    "@id": "molecule/1/atom/3/calculatedAtomCharge",
+                    "number": 0.165265,
+                    "unit": "C"
+                },
+                "basisSet": "basisset/1"
+            }
+        ],
+        "bond": [
+            {
+                "@id": "molecule/1/bond/1",
+                "label": "Bond: a1-a2",
+                "bondType": "CovalentBond",
+                "order": 1,
+                "atoms": [
+                    "molecule/1/atom/1",
+                    "molecule/1/atom/2"
+                ]
+            },
+            {
+                "@id": "molecule/1/bond/2",
+                "label": "Bond: a1-a3",
+                "bondType": "CovalentBond",
+                "order": 1,
+                "atoms": [
+                    "molecule/1/atom/1",
+                    "molecule/1/atom/3"
+                ]
+            }
+        ]
+    }]
+}

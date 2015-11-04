@@ -1,0 +1,59 @@
+{"@context": [
+    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "ss": "http://semanticscience.org/resource/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sci": "https://chalk.coas.unf.edu/champ/files/schema/scidata.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "chemical": {
+            "@id": "sci:chemical",
+            "name": {"@type": "name"},
+            "scope": {"@type": "scope"},
+            "vendor": {"@type": "vendor"},
+            "catalognumber": {"@type": "catalognumber"},
+            "lotnumber": {"@type": "lotnumber"},
+            "role": {"@type": "role"},
+            "grade": {"@type": "grade"},
+            "purity": {"@type": "purity"}
+        },
+        "uid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "scope": {
+            "@id": "sci:scope",
+            "@type": "string"
+        },
+        "vendor": {
+            "@id": "obo:sep_00088",
+            "@type": "string"
+        },
+        "catalognumber": {
+            "@id": "obo:sep_0016",
+            "@type": "string"
+        },
+        "lotnumber": {
+            "@id": "obo:sep_0015",
+            "@type": "string"
+        },
+        "role": {
+            "@id": "sci:role",
+            "@type": "string"
+        },
+        "grade": {
+            "@id": "sci:grade",
+            "@type": "string"
+        },
+        "purity": {
+            "@id": "sci:purity",
+            "@type": "parameter"
+        }
+    }
+]}
