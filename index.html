@@ -1,1 +1,60 @@
-<h2>Linked Scientific Data</h2>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+	<head>
+		<title>SciData - A Scientific Data Model</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<base href="http://stuchalk.github.io/scidata/" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="scidata.css" type="text/css" />
+	</head>
+	<body>
+		<h1>SciData - A Scientific Data Model</h1>
+		<p>SciData is is a data model for scientific data that provides a framework for organizing and
+			annotating both the data and metadata from scientific experiments, calculations, and theories.</p>
+		<h2>SciData Context Documents</h2>
+		<p>Importing context documents in JSON-LD files allows you to use the context for multiple documents.  This is the same way that XML (and JSON) schema work except the context is not defining rules of what the content of the JSON values can be, rather assigning semantic meaning to the values.</p>
+		<p>Below is a list of the current context files developed for the scientific data model.  Examples of each of these can be found on the examples page.</p>
+		<ul>
+			<li><a href="contexts/scidata.jsonld"
+				>scidata</a> - Top level JSON-LD context (JSON object) that you need to include in each of your scidata documents</li>
+			<li>JSON-LD Contexts for the main parts of the framework
+				<ul>
+					<li><a href="contexts/scidata_methodology.jsonld"
+						>scidata_methodology</a> - object for all the methodology aspects</li>
+					<li><a href="contexts/scidata_context.jsonld"
+						>scidata_context</a> - object for all the context facets</li>
+					<li><a href="contexts/scidata_dataset.jsonld"
+						>scidata_dataset</a> - object for all the data</li>
+				</ul>
+			</li>
+			<li>Example JSON-LD Contexts for 'Aspects' of Methodology
+				<ul>
+					<li>For Experimental Data
+						<ul>
+							<li><a href="contexts/scidata_measurement.jsonld"
+								>scidata_measurement</a> - object for measurement metadata</li>
+							<li><a href="contexts/scidata_resource.jsonld"
+								>scidata_resource</a> - object for laboratory resource metadata</li>
+							<li><a href="contexts/scidata_procedure.jsonld"
+								>scidata_procedure</a> - object for procedural metadata</li></ul>
+					</li>
+				</ul>
+				<ul>
+					<li>For Computational Data
+						<ul>
+							<li><a href="contexts/scidata_calculation.jsonld"
+								>scidata_calculation</a> - object for measurement metadata</li>
+							<li><a href="contexts/scidata_basisset.jsonld"
+								>resource</a> - object for laboratory resource metadata</li>
+							<li><a href="contexts/scidata_resource.jsonld"
+								>procedure</a> - object for procedural metadata</li></ul>
+					</li>
+				</ul></li>
+			<li><a href="scidata.jsonld">scidata_basisset.jsonld - </a></li>
+			<li><a href="scidata.jsonld">scidata.jsonld - </a></li>
+			<li><a href="scidata.jsonld">scidata.jsonld - </a></li>
+			<li><a href="scidata.jsonld">scidata.jsonld - </a></li>
+			<li><a href="scidata.jsonld">scidata.jsonld - </a></li>
+			<li><a href="scidata.jsonld">scidata.jsonld - </a></li>
+		</ul>
+	</body>
+</html>
