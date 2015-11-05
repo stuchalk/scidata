@@ -21,10 +21,10 @@
     "sockets": 1,
     "cache": {
         "@id": "cache",
-        "l1data": "32K",
-        "l1inst": "32K",
-        "l2": "256K",
-        "l3": "10240K"
+        "l1datacache": "32K",
+        "l1instcache": "32K",
+        "l2cache": "256K",
+        "l3cache": "10240K"
     },
     "ram": "4 GB"
 }
