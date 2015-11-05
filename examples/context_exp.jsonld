@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/context.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/context_exp.jsonld/"}
     ],
     "@id": "",
     "discipline": "chemistry",
