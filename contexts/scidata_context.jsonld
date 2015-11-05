@@ -2,10 +2,10 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_organism.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_condition.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
     {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
@@ -14,18 +14,18 @@
             "@id": "sci:context",
             "discipline": {"@type": "discipline"},
             "subdiscipline": {"@type": "subdiscipline"},
-            "aspects": {"@type": "aspects"}
+            "facets": {"@type": "facets"}
         },
         "facets": {
             "@id": "sci:contextFacet",
-            "chemicalsystem": {"@type": "chemicalsystem"},
+            "system": {"@type": "chemicalsystem"},
             "solution": {"@type": "chemicalsystem"},
-            "molecularsystem": {"@type": "molecularsystem"},
             "chemical": {"@type": "chemical"},
             "compound": {"@type": "compound"},
             "material": {"@type": "material"},
             "organism": {"@type": "organism"},
             "condition": {"@type": "condition"},
+            "molsystem": {"@type": "molecularsystem"},
             "computer": {"@type": "computer"}
         },
         "discipline": {

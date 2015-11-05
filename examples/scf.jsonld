@@ -48,14 +48,6 @@
                     "name": "HyperChem",
                     "input": "...",
                     "output": "..."
-                },
-                {
-                    "@id": "computer",
-                    "architecture": "architecture",
-                    "precision": "64bit",
-                    "cache": "cache",
-                    "ram": "ram",
-                    "gpu": "gpu"
                 }
             ]
         },
@@ -63,1472 +55,1500 @@
             "@id": "context",
             "discipline": "chemistry",
             "subdiscipline": "computational chemistry",
-            "aspects": [{
-                "@id": "molsystem/1",
-                "temperature": {
-                    "@id": "molsystem/1/temperature",
-                    "number": 0,
-                    "unit": "K"
-                },
-                "charge": {
-                    "@id": "molsystem/1/charge",
-                    "number": 0,
-                    "unit": "C"
-                },
-                "multiplicity": {
-                    "@id": "molsystem/1/multiplicity",
-                    "number": 1
-                },
-                "space": {
-                    "@id": "molsystem/1/space",
-                    "type": "cartesian",
-                    "points": [
-                        "molsystem/1/point/1",
-                        "molsystem/1/point/2",
-                        "molsystem/1/point/3",
-                        "molsystem/1/point/4",
-                        "molsystem/1/point/5",
-                        "molsystem/1/point/6",
-                        "molsystem/1/point/7",
-                        "molsystem/1/point/8",
-                        "molsystem/1/point/9",
-                        "molsystem/1/point/10",
-                        "molsystem/1/point/11",
-                        "molsystem/1/point/12",
-                        "molsystem/1/point/13",
-                        "molsystem/1/point/14",
-                        "molsystem/1/point/15",
-                        "molsystem/1/point/16",
-                        "molsystem/1/point/17",
-                        "molsystem/1/point/18",
-                        "molsystem/1/point/19",
-                        "molsystem/1/point/20",
-                        "molsystem/1/point/21",
-                        "molsystem/1/point/22",
-                        "molsystem/1/point/23",
-                        "molsystem/1/point/24",
-                        "molsystem/1/point/25",
-                        "molsystem/1/point/26"
+            "aspects": [
+                {
+                    "@id": "molsystem/1",
+                    "temperature": {
+                        "@id": "molsystem/1/temperature",
+                        "number": 0,
+                        "unit": "K"
+                    },
+                    "charge": {
+                        "@id": "molsystem/1/charge",
+                        "number": 0,
+                        "unit": "C"
+                    },
+                    "multiplicity": {
+                        "@id": "molsystem/1/multiplicity",
+                        "number": 1
+                    },
+                    "space": {
+                        "@id": "molsystem/1/space",
+                        "type": "cartesian",
+                        "points": [
+                            "molsystem/1/point/1",
+                            "molsystem/1/point/2",
+                            "molsystem/1/point/3",
+                            "molsystem/1/point/4",
+                            "molsystem/1/point/5",
+                            "molsystem/1/point/6",
+                            "molsystem/1/point/7",
+                            "molsystem/1/point/8",
+                            "molsystem/1/point/9",
+                            "molsystem/1/point/10",
+                            "molsystem/1/point/11",
+                            "molsystem/1/point/12",
+                            "molsystem/1/point/13",
+                            "molsystem/1/point/14",
+                            "molsystem/1/point/15",
+                            "molsystem/1/point/16",
+                            "molsystem/1/point/17",
+                            "molsystem/1/point/18",
+                            "molsystem/1/point/19",
+                            "molsystem/1/point/20",
+                            "molsystem/1/point/21",
+                            "molsystem/1/point/22",
+                            "molsystem/1/point/23",
+                            "molsystem/1/point/24",
+                            "molsystem/1/point/25",
+                            "molsystem/1/point/26"
+                        ]
+                    },
+                    "point": [
+                        {
+                            "@id": "molsystem/1/point/1",
+                            "x": {
+                                "@id": "molsystem/1/point/1/x",
+                                "number": -1.75017,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/1/y",
+                                "number": -0.4402108,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/1/z",
+                                "number": 0.4117317,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/2",
+                            "x": {
+                                "@id": "molsystem/1/point/2/x",
+                                "number": -1.749992,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/2/y",
+                                "number": 1.095521,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/2/z",
+                                "number": 0.4162618,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/3",
+                            "x": {
+                                "@id": "molsystem/1/point/3/x",
+                                "number": -0.3097623,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/3/y",
+                                "number": 1.61362,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/3/z",
+                                "number": 0.2825174,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/4",
+                            "x": {
+                                "@id": "molsystem/1/point/4/x",
+                                "number": 0.3455429,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/4/y",
+                                "number": 1.034,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/4/z",
+                                "number": -0.9774616,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/5",
+                            "x": {
+                                "@id": "molsystem/1/point/5/x",
+                                "number": 0.1950337,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/5/y",
+                                "number": -0.4963563,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/5/z",
+                                "number": -1.006632,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/6",
+                            "x": {
+                                "@id": "molsystem/1/point/6/x",
+                                "number": -1.11947,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/6/y",
+                                "number": -0.9495575,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/6/z",
+                                "number": -0.7686137,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/7",
+                            "x": {
+                                "@id": "molsystem/1/point/7/x",
+                                "number": -3.179152,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/7/y",
+                                "number": -0.9923627,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/7/z",
+                                "number": 0.3818221,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/8",
+                            "x": {
+                                "@id": "molsystem/1/point/8/x",
+                                "number": -3.851898,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/8/y",
+                                "number": -0.6726854,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/8/z",
+                                "number": -0.8160191,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/9",
+                            "x": {
+                                "@id": "molsystem/1/point/9/x",
+                                "number": -2.301149,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/9/y",
+                                "number": 1.499485,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/9/z",
+                                "number": 1.658047,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/10",
+                            "x": {
+                                "@id": "molsystem/1/point/10/x",
+                                "number": -0.3917128,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/10/y",
+                                "number": 3.027078,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/10/z",
+                                "number": 0.2096924,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/11",
+                            "x": {
+                                "@id": "molsystem/1/point/11/x",
+                                "number": 1.703114,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/11/y",
+                                "number": 1.41421,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/11/z",
+                                "number": -1.049229,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/12",
+                            "x": {
+                                "@id": "molsystem/1/point/12/x",
+                                "number": 0.9968047,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/12/y",
+                                "number": -1.027873,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/12/z",
+                                "number": 0.02272284,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/13",
+                            "x": {
+                                "@id": "molsystem/1/point/13/x",
+                                "number": -1.201659,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/13/y",
+                                "number": -0.8211135,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/13/z",
+                                "number": 1.315954,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/14",
+                            "x": {
+                                "@id": "molsystem/1/point/14/x",
+                                "number": -2.382084,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/14/y",
+                                "number": 1.483683,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/14/z",
+                                "number": -0.4303264,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/15",
+                            "x": {
+                                "@id": "molsystem/1/point/15/x",
+                                "number": 0.2888928,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/15/y",
+                                "number": 1.319548,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/15/z",
+                                "number": 1.190758,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/16",
+                            "x": {
+                                "@id": "molsystem/1/point/16/x",
+                                "number": -0.1282424,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/16/y",
+                                "number": 1.473714,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/16/z",
+                                "number": -1.899944,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/17",
+                            "x": {
+                                "@id": "molsystem/1/point/17/x",
+                                "number": 0.4675513,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/17/y",
+                                "number": -0.9194908,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/17/z",
+                                "number": -2.015321,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/18",
+                            "x": {
+                                "@id": "molsystem/1/point/18/x",
+                                "number": -3.151184,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/18/y",
+                                "number": -2.104732,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/18/z",
+                                "number": 0.5260509,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/19",
+                            "x": {
+                                "@id": "molsystem/1/point/19/x",
+                                "number": -3.776079,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/19/y",
+                                "number": -0.5017962,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/19/z",
+                                "number": 1.197616,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/20",
+                            "x": {
+                                "@id": "molsystem/1/point/20/x",
+                                "number": -3.326934,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/20/y",
+                                "number": -1.031658,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/20/z",
+                                "number": -1.542973,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/21",
+                            "x": {
+                                "@id": "molsystem/1/point/21/x",
+                                "number": -2.258385,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/21/y",
+                                "number": 2.465353,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/21/z",
+                                "number": 1.670316,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/22",
+                            "x": {
+                                "@id": "molsystem/1/point/22/x",
+                                "number": 0.4851893,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/22/y",
+                                "number": 3.342704,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/22/z",
+                                "number": -0.0477265,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/23",
+                            "x": {
+                                "@id": "molsystem/1/point/23/x",
+                                "number": 2.174076,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/23/y",
+                                "number": 0.9467025,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/23/z",
+                                "number": -0.3447715,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/24",
+                            "x": {
+                                "@id": "molsystem/1/point/24/x",
+                                "number": 0.8901675,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/24/y",
+                                "number": -1.987217,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/24/z",
+                                "number": 0.01091064,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/25",
+                            "x": {
+                                "@id": "molsystem/1/point/25/x",
+                                "number": -1.75017,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/25/y",
+                                "number": -0.4402108,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/25/z",
+                                "number": 0.4117317,
+                                "unit": "angstrom"
+                            }
+                        },
+                        {
+                            "@id": "molsystem/1/point/26",
+                            "x": {
+                                "@id": "molsystem/1/point/26/x",
+                                "number": -1.749992,
+                                "unit": "angstrom"
+                            },
+                            "y": {
+                                "@id": "molsystem/1/point/26/y",
+                                "number": 1.095521,
+                                "unit": "angstrom"
+                            },
+                            "z": {
+                                "@id": "molsystem/1/point/26/z",
+                                "number": 0.4162618,
+                                "unit": "angstrom"
+                            }
+                        }
+                    ],
+                    "molecule": [
+                        {
+                            "@id": "molsystem/1/molecule/1",
+                            "inchiKey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
+                            "atomCount": {
+                                "@id": "molsystem/1/molecule/1/atomCount",
+                                "number": 24
+                            },
+                            "atoms": [
+                                "molsystem/1/molecule/1/atom/1",
+                                "molsystem/1/molecule/1/atom/2",
+                                "molsystem/1/molecule/1/atom/3",
+                                "molsystem/1/molecule/1/atom/4",
+                                "molsystem/1/molecule/1/atom/5",
+                                "molsystem/1/molecule/1/atom/6",
+                                "molsystem/1/molecule/1/atom/7",
+                                "molsystem/1/molecule/1/atom/8",
+                                "molsystem/1/molecule/1/atom/9",
+                                "molsystem/1/molecule/1/atom/10",
+                                "molsystem/1/molecule/1/atom/11",
+                                "molsystem/1/molecule/1/atom/12",
+                                "molsystem/1/molecule/1/atom/13",
+                                "molsystem/1/molecule/1/atom/14",
+                                "molsystem/1/molecule/1/atom/15",
+                                "molsystem/1/molecule/1/atom/16",
+                                "molsystem/1/molecule/1/atom/17",
+                                "molsystem/1/molecule/1/atom/18",
+                                "molsystem/1/molecule/1/atom/19",
+                                "molsystem/1/molecule/1/atom/20",
+                                "molsystem/1/molecule/1/atom/21",
+                                "molsystem/1/molecule/1/atom/22",
+                                "molsystem/1/molecule/1/atom/23",
+                                "molsystem/1/molecule/1/atom/24"
+                            ],
+                            "bonds": [
+                                "molsystem/1/molecule/1/bond/1",
+                                "molsystem/1/molecule/1/bond/2",
+                                "molsystem/1/molecule/1/bond/3",
+                                "molsystem/1/molecule/1/bond/4",
+                                "molsystem/1/molecule/1/bond/5",
+                                "molsystem/1/molecule/1/bond/6",
+                                "molsystem/1/molecule/1/bond/7",
+                                "molsystem/1/molecule/1/bond/8",
+                                "molsystem/1/molecule/1/bond/9",
+                                "molsystem/1/molecule/1/bond/10",
+                                "molsystem/1/molecule/1/bond/11",
+                                "molsystem/1/molecule/1/bond/12",
+                                "molsystem/1/molecule/1/bond/13",
+                                "molsystem/1/molecule/1/bond/14",
+                                "molsystem/1/molecule/1/bond/15",
+                                "molsystem/1/molecule/1/bond/16",
+                                "molsystem/1/molecule/1/bond/17",
+                                "molsystem/1/molecule/1/bond/18",
+                                "molsystem/1/molecule/1/bond/19",
+                                "molsystem/1/molecule/1/bond/20",
+                                "molsystem/1/molecule/1/bond/21",
+                                "molsystem/1/molecule/1/bond/22",
+                                "molsystem/1/molecule/1/bond/23",
+                                "molsystem/1/molecule/1/bond/24"
+                            ],
+                            "atom": [
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/1",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/1/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/1/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/1/calculatedAtomCharge",
+                                        "number": -0.006536661,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/2",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/2/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/2/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/2/calculatedAtomCharge",
+                                        "number": 0.01667125,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/3",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/3/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/3/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/3/calculatedAtomCharge",
+                                        "number": -0.03722168,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/4",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/4/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/4/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/4/calculatedAtomCharge",
+                                        "number": -0.01513748,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/5",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/5/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/5/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/5/calculatedAtomCharge",
+                                        "number": 0.1254367,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/6",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/6/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/6/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/6/calculatedAtomCharge",
+                                        "number": -0.3128225,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/7",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/7/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/7/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/7/calculatedAtomCharge",
+                                        "number": -0.01083829,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/8",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/8/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/8/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/8/calculatedAtomCharge",
+                                        "number": -0.3222021,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/9",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/9/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/9/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/9/calculatedAtomCharge",
+                                        "number": -0.32308,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/10",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/10/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/10/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/10/calculatedAtomCharge",
+                                        "number": -0.3312914,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/11",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/11/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/11/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/11/calculatedAtomCharge",
+                                        "number": -0.3192864,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/12",
+                                    "name": "Oxygen",
+                                    "element": "obo:CHEBI_25805",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/12/atomMass",
+                                        "number": 15.999,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/12/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/12/calculatedAtomCharge",
+                                        "number": -0.3628553,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/13",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/13/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/13/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/13/calculatedAtomCharge",
+                                        "number": 0.1103455,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/14",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/14/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/14/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/14/calculatedAtomCharge",
+                                        "number": 0.1121005,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/15",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/15/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/15/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/15/calculatedAtomCharge",
+                                        "number": 0.1035608,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/16",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/16/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/16/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/16/calculatedAtomCharge",
+                                        "number": 0.1413285,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/17",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/17/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/17/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/17/calculatedAtomCharge",
+                                        "number": 0.124636,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/18",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/18/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/18/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/18/calculatedAtomCharge",
+                                        "number": 0.07243846,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/19",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/19/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/19/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/19/calculatedAtomCharge",
+                                        "number": 0.1321895,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/20",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/20/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/20/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/20/calculatedAtomCharge",
+                                        "number": 0.2085786,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/21",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/21/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/21/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/21/calculatedAtomCharge",
+                                        "number": 0.2247598,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/22",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/22/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/22/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/22/calculatedAtomCharge",
+                                        "number": 0.2212835,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/23",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/23/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/23/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/23/calculatedAtomCharge",
+                                        "number": 0.2210585,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/atom/24",
+                                    "name": "Hydrogen",
+                                    "element": "obo:CHEBI_49637",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/1/atom/24/atomMass",
+                                        "number": 1.008,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/24/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/1/atom/24/calculatedAtomCharge",
+                                        "number": 0.2268844,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                }
+                            ],
+                            "bond": [
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/1",
+                                    "label": "Bond: a1-a2",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a1",
+                                        "molsystem/1/molecule/1/atom/a2"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/2",
+                                    "label": "Bond: a1-a6",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a1",
+                                        "molsystem/1/molecule/1/atom/a6"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/3",
+                                    "label": "Bond: a1-a7",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a1",
+                                        "molsystem/1/molecule/1/atom/a7"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/4",
+                                    "label": "Bond: a1-a13",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a1",
+                                        "molsystem/1/molecule/1/atom/a13"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/5",
+                                    "label": "Bond: a2-a3",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a2",
+                                        "molsystem/1/molecule/1/atom/a3"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/6",
+                                    "label": "Bond: a2-a9",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a2",
+                                        "molsystem/1/molecule/1/atom/a9"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/7",
+                                    "label": "Bond: a2-a14",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a2",
+                                        "molsystem/1/molecule/1/atom/a14"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/8",
+                                    "label": "Bond: a3-a4",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a3",
+                                        "molsystem/1/molecule/1/atom/a4"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/9",
+                                    "label": "Bond: a3-a10",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a3",
+                                        "molsystem/1/molecule/1/atom/a10"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/10",
+                                    "label": "Bond: a3-a15",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a3",
+                                        "molsystem/1/molecule/1/atom/a15"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/11",
+                                    "label": "Bond: a4-a5",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a4",
+                                        "molsystem/1/molecule/1/atom/a5"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/12",
+                                    "label": "Bond: a4-a11",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a4",
+                                        "molsystem/1/molecule/1/atom/a11"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/13",
+                                    "label": "Bond: a4-a16",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a4",
+                                        "molsystem/1/molecule/1/atom/a16"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/14",
+                                    "label": "Bond: a5-a6",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a5",
+                                        "molsystem/1/molecule/1/atom/a6"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/15",
+                                    "label": "Bond: a5-a12",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a5",
+                                        "molsystem/1/molecule/1/atom/a12"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/16",
+                                    "label": "Bond: a5-a17",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a5",
+                                        "molsystem/1/molecule/1/atom/a17"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/17",
+                                    "label": "Bond: a7-a8",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a7",
+                                        "molsystem/1/molecule/1/atom/a8"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/18",
+                                    "label": "Bond: a7-a18",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a7",
+                                        "molsystem/1/molecule/1/atom/a18"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/19",
+                                    "label": "Bond: a7-a19",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a7",
+                                        "molsystem/1/molecule/1/atom/a19"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/20",
+                                    "label": "Bond: a8-a20",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a8",
+                                        "molsystem/1/molecule/1/atom/a20"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/21",
+                                    "label": "Bond: a9-a21",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a9",
+                                        "molsystem/1/molecule/1/atom/a21"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/22",
+                                    "label": "Bond: a10-a22",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a10",
+                                        "molsystem/1/molecule/1/atom/a22"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/23",
+                                    "label": "Bond: a11-a23",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a11",
+                                        "molsystem/1/molecule/1/atom/a23"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/1/bond/24",
+                                    "label": "Bond: a12-a24",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/1/atom/a12",
+                                        "molsystem/1/molecule/1/atom/a24"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "@id": "molsystem/1/molecule/2",
+                            "inchiKey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
+                            "atomCount": {
+                                "@id": "molsystem/1/molecule/2/atomCount",
+                                "number": 2
+                            },
+                            "atoms": [
+                                "molsystem/1/molecule/2/atom/1",
+                                "molsystem/1/molecule/2/atom/2"
+                            ],
+                            "bonds": [
+                                "molsystem/1/molecule/2/bond/1",
+                                "molsystem/1/molecule/2/bond/2",
+                                "molsystem/1/molecule/2/bond/3",
+                                "molsystem/1/molecule/2/bond/4",
+                                "molsystem/1/molecule/2/bond/5",
+                                "molsystem/1/molecule/2/bond/6",
+                                "molsystem/1/molecule/2/bond/7"
+                            ],
+                            "atom": [
+                                {
+                                    "@id": "molsystem/1/molecule/2/atom/1",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/2/atom/1/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/2/atom/1/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/2/atom/1/calculatedAtomCharge",
+                                        "number": -0.006536661,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/atom/2",
+                                    "name": "Carbon",
+                                    "element": "obo:CHEBI_27594",
+                                    "atomMass": {
+                                        "@id": "molsystem/1/molecule/2/atom/2/atomMass",
+                                        "number": 12.011,
+                                        "unit": "amu"
+                                    },
+                                    "formalAtomCharge": {
+                                        "@id": "molsystem/1/molecule/2/atom/2/formalAtomCharge",
+                                        "number": 0,
+                                        "unit": "C"
+                                    },
+                                    "calculatedAtomCharge": {
+                                        "@id": "molsystem/1/molecule/2/atom/2/calculatedAtomCharge",
+                                        "number": 0.01667125,
+                                        "unit": "C"
+                                    },
+                                    "basisSet": "None"
+                                }
+                            ],
+                            "bond": [
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/1",
+                                    "label": "Bond: a1-a2",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a1",
+                                        "molsystem/1/molecule/2/atom/a2"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/2",
+                                    "label": "Bond: a1-a6",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a1",
+                                        "molsystem/1/molecule/2/atom/a6"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/3",
+                                    "label": "Bond: a1-a7",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a1",
+                                        "molsystem/1/molecule/2/atom/a7"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/4",
+                                    "label": "Bond: a1-a13",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a1",
+                                        "molsystem/1/molecule/2/atom/a13"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/5",
+                                    "label": "Bond: a2-a3",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a2",
+                                        "molsystem/1/molecule/2/atom/a3"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/6",
+                                    "label": "Bond: a2-a9",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a2",
+                                        "molsystem/1/molecule/2/atom/a9"
+                                    ]
+                                },
+                                {
+                                    "@id": "molsystem/1/molecule/2/bond/7",
+                                    "label": "Bond: a2-a14",
+                                    "bondType": "CovalentBond",
+                                    "bondOrder": 1,
+                                    "atoms": [
+                                        "molsystem/1/molecule/2/atom/a2",
+                                        "molsystem/1/molecule/2/atom/a14"
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 },
-                "point": [
-                    {
-                        "@id": "molsystem/1/point/1",
-                        "x": {
-                            "@id": "molsystem/1/point/1/x",
-                            "number": -1.75017,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/1/y",
-                            "number": -0.4402108,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/1/z",
-                            "number": 0.4117317,
-                            "unit": "angstrom"
-                        }
+                {
+                    "@id": "computer",
+                    "architecture": "x86_64",
+                    "cpu": {
+                        "@id": "cpu",
+                        "opmodes": "32-bit, 64-bit",
+                        "count": 8,
+                        "speed": "1201.621 MHz",
+                        "vendorid": "GenuineIntel",
+                        "family": "6",
+                        "model": "63",
+                        "modelname": "Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz"
                     },
-                    {
-                        "@id": "molsystem/1/point/2",
-                        "x": {
-                            "@id": "molsystem/1/point/2/x",
-                            "number": -1.749992,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/2/y",
-                            "number": 1.095521,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/2/z",
-                            "number": 0.4162618,
-                            "unit": "angstrom"
-                        }
+                    "byteorder": "Little Endian",
+                    "threadspercore": 2,
+                    "corespersocket": 4,
+                    "sockets": 1,
+                    "cache": {
+                        "@id": "cache",
+                        "l1datacache": "32K",
+                        "l1instcache": "32K",
+                        "l2cache": "256K",
+                        "l3cache": "10240K"
                     },
-                    {
-                        "@id": "molsystem/1/point/3",
-                        "x": {
-                            "@id": "molsystem/1/point/3/x",
-                            "number": -0.3097623,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/3/y",
-                            "number": 1.61362,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/3/z",
-                            "number": 0.2825174,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/4",
-                        "x": {
-                            "@id": "molsystem/1/point/4/x",
-                            "number": 0.3455429,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/4/y",
-                            "number": 1.034,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/4/z",
-                            "number": -0.9774616,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/5",
-                        "x": {
-                            "@id": "molsystem/1/point/5/x",
-                            "number": 0.1950337,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/5/y",
-                            "number": -0.4963563,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/5/z",
-                            "number": -1.006632,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/6",
-                        "x": {
-                            "@id": "molsystem/1/point/6/x",
-                            "number": -1.11947,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/6/y",
-                            "number": -0.9495575,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/6/z",
-                            "number": -0.7686137,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/7",
-                        "x": {
-                            "@id": "molsystem/1/point/7/x",
-                            "number": -3.179152,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/7/y",
-                            "number": -0.9923627,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/7/z",
-                            "number": 0.3818221,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/8",
-                        "x": {
-                            "@id": "molsystem/1/point/8/x",
-                            "number": -3.851898,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/8/y",
-                            "number": -0.6726854,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/8/z",
-                            "number": -0.8160191,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/9",
-                        "x": {
-                            "@id": "molsystem/1/point/9/x",
-                            "number": -2.301149,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/9/y",
-                            "number": 1.499485,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/9/z",
-                            "number": 1.658047,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/10",
-                        "x": {
-                            "@id": "molsystem/1/point/10/x",
-                            "number": -0.3917128,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/10/y",
-                            "number": 3.027078,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/10/z",
-                            "number": 0.2096924,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/11",
-                        "x": {
-                            "@id": "molsystem/1/point/11/x",
-                            "number": 1.703114,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/11/y",
-                            "number": 1.41421,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/11/z",
-                            "number": -1.049229,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/12",
-                        "x": {
-                            "@id": "molsystem/1/point/12/x",
-                            "number": 0.9968047,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/12/y",
-                            "number": -1.027873,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/12/z",
-                            "number": 0.02272284,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/13",
-                        "x": {
-                            "@id": "molsystem/1/point/13/x",
-                            "number": -1.201659,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/13/y",
-                            "number": -0.8211135,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/13/z",
-                            "number": 1.315954,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/14",
-                        "x": {
-                            "@id": "molsystem/1/point/14/x",
-                            "number": -2.382084,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/14/y",
-                            "number": 1.483683,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/14/z",
-                            "number": -0.4303264,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/15",
-                        "x": {
-                            "@id": "molsystem/1/point/15/x",
-                            "number": 0.2888928,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/15/y",
-                            "number": 1.319548,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/15/z",
-                            "number": 1.190758,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/16",
-                        "x": {
-                            "@id": "molsystem/1/point/16/x",
-                            "number": -0.1282424,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/16/y",
-                            "number": 1.473714,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/16/z",
-                            "number": -1.899944,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/17",
-                        "x": {
-                            "@id": "molsystem/1/point/17/x",
-                            "number": 0.4675513,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/17/y",
-                            "number": -0.9194908,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/17/z",
-                            "number": -2.015321,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/18",
-                        "x": {
-                            "@id": "molsystem/1/point/18/x",
-                            "number": -3.151184,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/18/y",
-                            "number": -2.104732,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/18/z",
-                            "number": 0.5260509,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/19",
-                        "x": {
-                            "@id": "molsystem/1/point/19/x",
-                            "number": -3.776079,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/19/y",
-                            "number": -0.5017962,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/19/z",
-                            "number": 1.197616,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/20",
-                        "x": {
-                            "@id": "molsystem/1/point/20/x",
-                            "number": -3.326934,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/20/y",
-                            "number": -1.031658,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/20/z",
-                            "number": -1.542973,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/21",
-                        "x": {
-                            "@id": "molsystem/1/point/21/x",
-                            "number": -2.258385,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/21/y",
-                            "number": 2.465353,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/21/z",
-                            "number": 1.670316,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/22",
-                        "x": {
-                            "@id": "molsystem/1/point/22/x",
-                            "number": 0.4851893,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/22/y",
-                            "number": 3.342704,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/22/z",
-                            "number": -0.0477265,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/23",
-                        "x": {
-                            "@id": "molsystem/1/point/23/x",
-                            "number": 2.174076,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/23/y",
-                            "number": 0.9467025,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/23/z",
-                            "number": -0.3447715,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/24",
-                        "x": {
-                            "@id": "molsystem/1/point/24/x",
-                            "number": 0.8901675,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/24/y",
-                            "number": -1.987217,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/24/z",
-                            "number": 0.01091064,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/25",
-                        "x": {
-                            "@id": "molsystem/1/point/25/x",
-                            "number": -1.75017,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/25/y",
-                            "number": -0.4402108,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/25/z",
-                            "number": 0.4117317,
-                            "unit": "angstrom"
-                        }
-                    },
-                    {
-                        "@id": "molsystem/1/point/26",
-                        "x": {
-                            "@id": "molsystem/1/point/26/x",
-                            "number": -1.749992,
-                            "unit": "angstrom"
-                        },
-                        "y": {
-                            "@id": "molsystem/1/point/26/y",
-                            "number": 1.095521,
-                            "unit": "angstrom"
-                        },
-                        "z": {
-                            "@id": "molsystem/1/point/26/z",
-                            "number": 0.4162618,
-                            "unit": "angstrom"
-                        }
-                    }
-                ],
-                "molecule": [
-                    {
-                        "@id": "molsystem/1/molecule/1",
-                        "inchiKey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
-                        "atomCount": {
-                            "@id": "molsystem/1/molecule/1/atomCount",
-                            "number": 24
-                        },
-                        "atoms": [
-                            "molsystem/1/molecule/1/atom/1",
-                            "molsystem/1/molecule/1/atom/2",
-                            "molsystem/1/molecule/1/atom/3",
-                            "molsystem/1/molecule/1/atom/4",
-                            "molsystem/1/molecule/1/atom/5",
-                            "molsystem/1/molecule/1/atom/6",
-                            "molsystem/1/molecule/1/atom/7",
-                            "molsystem/1/molecule/1/atom/8",
-                            "molsystem/1/molecule/1/atom/9",
-                            "molsystem/1/molecule/1/atom/10",
-                            "molsystem/1/molecule/1/atom/11",
-                            "molsystem/1/molecule/1/atom/12",
-                            "molsystem/1/molecule/1/atom/13",
-                            "molsystem/1/molecule/1/atom/14",
-                            "molsystem/1/molecule/1/atom/15",
-                            "molsystem/1/molecule/1/atom/16",
-                            "molsystem/1/molecule/1/atom/17",
-                            "molsystem/1/molecule/1/atom/18",
-                            "molsystem/1/molecule/1/atom/19",
-                            "molsystem/1/molecule/1/atom/20",
-                            "molsystem/1/molecule/1/atom/21",
-                            "molsystem/1/molecule/1/atom/22",
-                            "molsystem/1/molecule/1/atom/23",
-                            "molsystem/1/molecule/1/atom/24"
-                        ],
-                        "bonds": [
-                            "molsystem/1/molecule/1/bond/1",
-                            "molsystem/1/molecule/1/bond/2",
-                            "molsystem/1/molecule/1/bond/3",
-                            "molsystem/1/molecule/1/bond/4",
-                            "molsystem/1/molecule/1/bond/5",
-                            "molsystem/1/molecule/1/bond/6",
-                            "molsystem/1/molecule/1/bond/7",
-                            "molsystem/1/molecule/1/bond/8",
-                            "molsystem/1/molecule/1/bond/9",
-                            "molsystem/1/molecule/1/bond/10",
-                            "molsystem/1/molecule/1/bond/11",
-                            "molsystem/1/molecule/1/bond/12",
-                            "molsystem/1/molecule/1/bond/13",
-                            "molsystem/1/molecule/1/bond/14",
-                            "molsystem/1/molecule/1/bond/15",
-                            "molsystem/1/molecule/1/bond/16",
-                            "molsystem/1/molecule/1/bond/17",
-                            "molsystem/1/molecule/1/bond/18",
-                            "molsystem/1/molecule/1/bond/19",
-                            "molsystem/1/molecule/1/bond/20",
-                            "molsystem/1/molecule/1/bond/21",
-                            "molsystem/1/molecule/1/bond/22",
-                            "molsystem/1/molecule/1/bond/23",
-                            "molsystem/1/molecule/1/bond/24"
-                        ],
-                        "atom": [
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/1",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/1/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/1/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/1/calculatedAtomCharge",
-                                    "number": -0.006536661,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/2",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/2/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/2/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/2/calculatedAtomCharge",
-                                    "number": 0.01667125,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/3",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/3/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/3/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/3/calculatedAtomCharge",
-                                    "number": -0.03722168,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/4",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/4/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/4/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/4/calculatedAtomCharge",
-                                    "number": -0.01513748,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/5",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/5/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/5/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/5/calculatedAtomCharge",
-                                    "number": 0.1254367,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/6",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/6/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/6/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/6/calculatedAtomCharge",
-                                    "number": -0.3128225,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/7",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/7/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/7/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/7/calculatedAtomCharge",
-                                    "number": -0.01083829,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/8",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/8/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/8/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/8/calculatedAtomCharge",
-                                    "number": -0.3222021,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/9",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/9/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/9/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/9/calculatedAtomCharge",
-                                    "number": -0.32308,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/10",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/10/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/10/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/10/calculatedAtomCharge",
-                                    "number": -0.3312914,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/11",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/11/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/11/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/11/calculatedAtomCharge",
-                                    "number": -0.3192864,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/12",
-                                "name": "Oxygen",
-                                "element": "obo:CHEBI_25805",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/12/atomMass",
-                                    "number": 15.999,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/12/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/12/calculatedAtomCharge",
-                                    "number": -0.3628553,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/13",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/13/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/13/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/13/calculatedAtomCharge",
-                                    "number": 0.1103455,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/14",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/14/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/14/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/14/calculatedAtomCharge",
-                                    "number": 0.1121005,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/15",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/15/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/15/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/15/calculatedAtomCharge",
-                                    "number": 0.1035608,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/16",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/16/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/16/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/16/calculatedAtomCharge",
-                                    "number": 0.1413285,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/17",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/17/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/17/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/17/calculatedAtomCharge",
-                                    "number": 0.124636,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/18",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/18/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/18/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/18/calculatedAtomCharge",
-                                    "number": 0.07243846,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/19",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/19/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/19/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/19/calculatedAtomCharge",
-                                    "number": 0.1321895,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/20",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/20/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/20/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/20/calculatedAtomCharge",
-                                    "number": 0.2085786,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/21",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/21/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/21/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/21/calculatedAtomCharge",
-                                    "number": 0.2247598,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/22",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/22/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/22/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/22/calculatedAtomCharge",
-                                    "number": 0.2212835,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/23",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/23/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/23/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/23/calculatedAtomCharge",
-                                    "number": 0.2210585,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/atom/24",
-                                "name": "Hydrogen",
-                                "element": "obo:CHEBI_49637",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/1/atom/24/atomMass",
-                                    "number": 1.008,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/24/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/1/atom/24/calculatedAtomCharge",
-                                    "number": 0.2268844,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            }
-                        ],
-                        "bond": [
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/1",
-                                "label": "Bond: a1-a2",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a1",
-                                    "molsystem/1/molecule/1/atom/a2"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/2",
-                                "label": "Bond: a1-a6",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a1",
-                                    "molsystem/1/molecule/1/atom/a6"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/3",
-                                "label": "Bond: a1-a7",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a1",
-                                    "molsystem/1/molecule/1/atom/a7"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/4",
-                                "label": "Bond: a1-a13",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a1",
-                                    "molsystem/1/molecule/1/atom/a13"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/5",
-                                "label": "Bond: a2-a3",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a2",
-                                    "molsystem/1/molecule/1/atom/a3"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/6",
-                                "label": "Bond: a2-a9",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a2",
-                                    "molsystem/1/molecule/1/atom/a9"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/7",
-                                "label": "Bond: a2-a14",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a2",
-                                    "molsystem/1/molecule/1/atom/a14"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/8",
-                                "label": "Bond: a3-a4",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a3",
-                                    "molsystem/1/molecule/1/atom/a4"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/9",
-                                "label": "Bond: a3-a10",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a3",
-                                    "molsystem/1/molecule/1/atom/a10"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/10",
-                                "label": "Bond: a3-a15",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a3",
-                                    "molsystem/1/molecule/1/atom/a15"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/11",
-                                "label": "Bond: a4-a5",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a4",
-                                    "molsystem/1/molecule/1/atom/a5"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/12",
-                                "label": "Bond: a4-a11",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a4",
-                                    "molsystem/1/molecule/1/atom/a11"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/13",
-                                "label": "Bond: a4-a16",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a4",
-                                    "molsystem/1/molecule/1/atom/a16"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/14",
-                                "label": "Bond: a5-a6",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a5",
-                                    "molsystem/1/molecule/1/atom/a6"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/15",
-                                "label": "Bond: a5-a12",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a5",
-                                    "molsystem/1/molecule/1/atom/a12"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/16",
-                                "label": "Bond: a5-a17",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a5",
-                                    "molsystem/1/molecule/1/atom/a17"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/17",
-                                "label": "Bond: a7-a8",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a7",
-                                    "molsystem/1/molecule/1/atom/a8"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/18",
-                                "label": "Bond: a7-a18",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a7",
-                                    "molsystem/1/molecule/1/atom/a18"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/19",
-                                "label": "Bond: a7-a19",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a7",
-                                    "molsystem/1/molecule/1/atom/a19"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/20",
-                                "label": "Bond: a8-a20",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a8",
-                                    "molsystem/1/molecule/1/atom/a20"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/21",
-                                "label": "Bond: a9-a21",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a9",
-                                    "molsystem/1/molecule/1/atom/a21"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/22",
-                                "label": "Bond: a10-a22",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a10",
-                                    "molsystem/1/molecule/1/atom/a22"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/23",
-                                "label": "Bond: a11-a23",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a11",
-                                    "molsystem/1/molecule/1/atom/a23"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/1/bond/24",
-                                "label": "Bond: a12-a24",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/1/atom/a12",
-                                    "molsystem/1/molecule/1/atom/a24"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "@id": "molsystem/1/molecule/2",
-                        "inchiKey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
-                        "atomCount": {
-                            "@id": "molsystem/1/molecule/2/atomCount",
-                            "number": 2
-                        },
-                        "atoms": [
-                            "molsystem/1/molecule/2/atom/1",
-                            "molsystem/1/molecule/2/atom/2"
-                        ],
-                        "bonds": [
-                            "molsystem/1/molecule/2/bond/1",
-                            "molsystem/1/molecule/2/bond/2",
-                            "molsystem/1/molecule/2/bond/3",
-                            "molsystem/1/molecule/2/bond/4",
-                            "molsystem/1/molecule/2/bond/5",
-                            "molsystem/1/molecule/2/bond/6",
-                            "molsystem/1/molecule/2/bond/7"
-                        ],
-                        "atom": [
-                            {
-                                "@id": "molsystem/1/molecule/2/atom/1",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/2/atom/1/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/2/atom/1/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/2/atom/1/calculatedAtomCharge",
-                                    "number": -0.006536661,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/atom/2",
-                                "name": "Carbon",
-                                "element": "obo:CHEBI_27594",
-                                "atomMass": {
-                                    "@id": "molsystem/1/molecule/2/atom/2/atomMass",
-                                    "number": 12.011,
-                                    "unit": "amu"
-                                },
-                                "formalAtomCharge": {
-                                    "@id": "molsystem/1/molecule/2/atom/2/formalAtomCharge",
-                                    "number": 0,
-                                    "unit": "C"
-                                },
-                                "calculatedAtomCharge": {
-                                    "@id": "molsystem/1/molecule/2/atom/2/calculatedAtomCharge",
-                                    "number": 0.01667125,
-                                    "unit": "C"
-                                },
-                                "basisSet": "None"
-                            }
-                        ],
-                        "bond": [
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/1",
-                                "label": "Bond: a1-a2",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a1",
-                                    "molsystem/1/molecule/2/atom/a2"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/2",
-                                "label": "Bond: a1-a6",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a1",
-                                    "molsystem/1/molecule/2/atom/a6"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/3",
-                                "label": "Bond: a1-a7",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a1",
-                                    "molsystem/1/molecule/2/atom/a7"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/4",
-                                "label": "Bond: a1-a13",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a1",
-                                    "molsystem/1/molecule/2/atom/a13"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/5",
-                                "label": "Bond: a2-a3",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a2",
-                                    "molsystem/1/molecule/2/atom/a3"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/6",
-                                "label": "Bond: a2-a9",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a2",
-                                    "molsystem/1/molecule/2/atom/a9"
-                                ]
-                            },
-                            {
-                                "@id": "molsystem/1/molecule/2/bond/7",
-                                "label": "Bond: a2-a14",
-                                "bondType": "CovalentBond",
-                                "bondOrder": 1,
-                                "atoms": [
-                                    "molsystem/1/molecule/2/atom/a2",
-                                    "molsystem/1/molecule/2/atom/a14"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }]
+                    "ram": "4 GB"
+                }
+            ]
         },
         "dataset": {
             "@id": "dataset",
