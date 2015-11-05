@@ -1,0 +1,27 @@
+{
+    "@context": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/context.jsonld/"}
+    ],
+    "@id": "",
+    "discipline": "chemistry",
+    "subdiscipline": "analytical chemistry",
+    "aspects": [{
+        "@id": "system",
+        "name": "R-(-)-Carvone and Chloroform-d",
+        "description": "Solution prepared for 1H NMR analysis",
+        "type": "single phase liquid",
+        "components": [
+            {
+                "@id": "substance/1",
+                "name": "(R)(-) CARVONE",
+                "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
+            },
+            {
+                "@id": "substance/2",
+                "name": "Chloroform-d",
+                "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
+            }
+        ]
+    }]
+}
