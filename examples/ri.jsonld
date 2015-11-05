@@ -10,7 +10,7 @@
         "name": "Stuart Chalk"
     }],
     "description": "Refractive index value extracted from a research publication",
-    "date": "2015-04-15T09:50:13-05:00",
+    "starttime": "2015-04-15T09:50:13-05:00",
     "permalink": "http://stuchalk.github.io/scidata/examples/ri.jsonld",
     "toc": {
         "@id": "toc",
