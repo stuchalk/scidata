@@ -38,9 +38,9 @@
     },
     "scidata": {
         "@id": "scidata",
-        "type": "property value",
+        "type": ["property value"],
         "property": ["pH"],
-        "kind": ["single reading"],
+        "kind": ["datapoint"],
         "methodology": {
             "@id": "methodology",
             "evaluation": "experimental",

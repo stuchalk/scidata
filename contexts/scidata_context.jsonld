@@ -12,8 +12,8 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "context": {
             "@id": "sci:context",
-            "discipline": {"@type": "discipline"},
-            "subdiscipline": {"@type": "subdiscipline"},
+            "discipline": {"@type": "scientificDiscipline"},
+            "subdiscipline": {"@type": "scientificSubdiscipline"},
             "facets": {"@type": "facets"}
         },
         "facets": {
