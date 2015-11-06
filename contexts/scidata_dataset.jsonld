@@ -8,26 +8,18 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dataset": {
             "@id": "sci:dataset",
+            "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "parameters": {"@type": "parameter"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
-            "datapoint": {"@type": "datapoint"},
-            "group": {"@type": "group"},
-            "values": {"@type": "values"}
-        },
-        "source": {
-            "@id": "sci:datasource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
+            "datapoint": {"@type": "datapoint"}
         },
         "datagroup": {
             "@id": "sci:datagroup",
-            "name": {"@type": "name"},
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "attributes": {"@type": "attributes"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
@@ -35,12 +27,27 @@
         },
         "dataseries": {
             "@id": "sci:dataseries",
-            "name": {"@type": "name"},
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
             "label": {"@type": "label"},
             "attributes": {"@type": "attributes"},
-            "value": {"@type": "parameter"}
+            "values": {"@type": "parameter"},
+            "strings": {"@type": "parameter"}
+        },
+        "source": {
+            "@id": "sci:datasource",
+            "@type": "@id"
+        },
+        "scope": {
+            "@id": "sci:datascope",
+            "@type": "@id"
+        },
+        "dataname": {
+            "@id": "sci:dataname",
+            "@type": "parameter"
         },
         "datapoint": {
             "@id": "sci:datapoint",
@@ -63,11 +70,15 @@
             "@type": "string"
         },
         "parameter": {
-            "@id": "sci:hasParameter",
+            "@id": "sci:parameter",
             "@type": "parameter"
         },
         "values": {
-            "@id": "sci:hasValue",
+            "@id": "sci:numericValueArray",
+            "@type": "parameter"
+        },
+        "strings": {
+            "@id": "sci:textStringArray",
             "@type": "parameter"
         }
     }

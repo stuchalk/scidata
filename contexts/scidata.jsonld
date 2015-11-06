@@ -31,7 +31,7 @@
             "orcid": {"@type": "orcid"}
         },
         "name": {
-            "@id": "foaf:name",
+            "@id": "obo:IAO_0000302",
             "@type": "string"
         },
         "organization": {
@@ -59,7 +59,7 @@
             "@type": "string"
         },
         "keywords": {
-            "@id": "dc:keyword",
+            "@id": "dc:subject",
             "@type": "string"
         },
         "starttime": {
@@ -84,9 +84,9 @@
         },
         "toc": {
             "@id": "dc:tableOfContents ",
-            "sections": {"@type": "type"}
+            "section": {"@type": "type"}
         },
-        "sections": {
+        "section": {
             "@id": "dc:hasPart",
             "@type": "@id"
         },
@@ -108,7 +108,7 @@
             "@type": "string"
         },
         "kind": {
-            "@id": "sci:dataKind",
+            "@id": "sci:dataFormat",
             "@type": "string"
         },
         "methodology": {

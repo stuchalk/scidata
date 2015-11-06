@@ -25,7 +25,7 @@
             "@type": "string"
         },
         "property": {
-            "@id": "sci:isProperty",
+            "@id": "sci:physicalProperty",
             "name": {"@type": "name"},
             "code": {"@type": "code"},
             "codeType": {"@type": "codeType"}
@@ -35,19 +35,19 @@
             "@type": "string"
         },
         "code": {
-            "@id": "sci:hasPropertyCode",
+            "@id": "sci:propertyCode",
             "@type": "string"
         },
         "codeType": {
-            "@id": "sci:hasPropertyCodeType",
+            "@id": "sci:propertyCodeType",
             "@type": "string"
         },
         "value": {
-            "@id": "sci:hasParameterValue",
+            "@id": "sci:numericValue",
             "@type": "numericValue"
         },
         "textstr": {
-            "@id": "sci:hasParameterValue",
+            "@id": "sci:textString",
             "@type": "textString"
         }
     }

@@ -104,7 +104,7 @@
                     "@id": "datagroup/1/dataseries/1",
                     "quantity": "frequency",
                     "property": "Vibrational mode frequency",
-                    "value": {
+                    "values": {
                         "@id": "datagroup/1/dataseries/1/value",
                         "number": [
                             3.97,
@@ -124,7 +124,7 @@
                     "@id": "datagroup/1/dataseries/2",
                     "quantity": "transmittance",
                     "property": "Infrared intensities",
-                    "value": {
+                    "values": {
                         "@id": "datagroup/1/dataseries/2/value",
                         "number": [
                             1.12589,
