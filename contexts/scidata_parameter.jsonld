@@ -8,20 +8,34 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "parameter": {
             "@id": "sci:parameter",
+            "source": {"@type": "source"},
             "scope": {"@type": "scope"},
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
-            "parameters": {"@type": "parameter"},
             "value": {"@type": "value"},
-            "textstr": {"@type": "textstr"}
+            "text": {"@type": "text"}
+        },
+        "parameterArray": {
+            "@id": "sci:parameterArray",
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "name": {"@type": "name"},
+            "quantity": {"@type": "quantity"},
+            "property": {"@type": "property"},
+            "valueArray": {"@type": "valueArray"},
+            "textArray": {"@type": "textArray"}
+        },
+        "source": {
+            "@id": "sci:datasource",
+            "@type": "@id"
         },
         "scope": {
-            "@id": "sci:hasScope",
+            "@id": "sci:datascope",
             "@type": "@id"
         },
         "quantity": {
-            "@id": "sci:isQuantity",
+            "@id": "sci:physicalQuantity",
             "@type": "string"
         },
         "property": {
@@ -46,8 +60,16 @@
             "@id": "sci:numericValue",
             "@type": "numericValue"
         },
-        "textstr": {
+        "text": {
             "@id": "sci:textString",
+            "@type": "textString"
+        },
+        "valueArray": {
+            "@id": "sci:numericValueArray",
+            "@type": "numericValue"
+        },
+        "textArray": {
+            "@id": "sci:textStringArray",
             "@type": "textString"
         }
     }

@@ -5,28 +5,28 @@
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "numericValue": {
+        "numericvalue": {
             "@id": "sci:numericValue",
             "uid": {"@type": "uid"},
-            "format": {"@type": "dataFormat"},
+            "format": {"@type": "dataformat"},
             "number": {"@type": "number"},
             "sigfigs": {"@type": "sigfigs"},
             "error": {"@type": "error"},
             "errorType": {"@type": "errorType"},
             "unit": {"@type": "unit"}
         },
-        "textString": {
+        "textstring": {
             "@id": "sci:textString",
             "uid": {"@type": "uid"},
             "text": {"@type": "text"},
-            "format": {"@type": "textFormat"},
+            "format": {"@type": "textformat"},
             "language": {"@type": "language"}
         },
         "uid": {
             "@id": "dc:identifier",
             "@type": "string"
         },
-        "dataFormat": {
+        "dataformat": {
             "@id": "sci:dataFormat",
             "@type": "string"
         },
@@ -56,7 +56,7 @@
             "@id": "sci:textValue",
             "@type": "string"
         },
-        "textFormat": {
+        "textformat": {
             "@id": "sci:textFormat",
             "@type": "string"
         },

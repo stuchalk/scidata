@@ -8,7 +8,7 @@
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
-        "ss": "http://semanticscience.org/resource/",
+        "bibo": "http://purl.obolibrary.org/obo/bibo/",
         "dc": "http://purl.org/dc/terms/",
         "schema": "http://schema.org/",
         "bse": "http://purl.oclc.org/NET/EMSL/BSE"
@@ -16,7 +16,7 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "uid": {
-            "@id": "dc:identifier",
+            "@id": "sci:uid",
             "@type": "string"
         },
         "title": {
@@ -67,15 +67,15 @@
             "@type": "dateTime"
         },
         "endtime": {
-            "@id": "obi:OBI_0001508",
+            "@id": "obo:OBI_0001508",
             "@type": "dateTime"
         },
         "duration": {
-            "@id": "obi:PATO_0001309",
+            "@id": "obo:PATO_0001309",
             "@type": "duration"
         },
         "permalink": {
-            "@id": "schema:url",
+            "@id": "sci:permalink",
             "@type": "anyURI"
         },
         "related": {
@@ -138,7 +138,7 @@
             "@type": "anyURI"
         },
         "doi": {
-            "@id": "dc:identifier",
+            "@id": "bibo:doi",
             "@type": "string"
         },
         "rights": {

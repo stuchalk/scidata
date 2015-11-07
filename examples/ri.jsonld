@@ -20,7 +20,8 @@
             "context/compound/1",
             "context/compound/2",
             "context/condition/1",
-            "context/condition/2"
+            "context/condition/2",
+            "dataset/datapoint/1"
         ]
     },
     "scidata": {
