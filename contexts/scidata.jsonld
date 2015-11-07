@@ -84,9 +84,9 @@
         },
         "toc": {
             "@id": "dc:tableOfContents ",
-            "sections": {"@type": "section"}
+            "sections": {"@type": "sections"}
         },
-        "section": {
+        "sections": {
             "@id": "dc:hasPart",
             "@type": "@id"
         },
