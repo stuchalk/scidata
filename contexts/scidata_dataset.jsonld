@@ -8,6 +8,7 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dataset": {
             "@id": "sci:dataset",
+            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -17,6 +18,7 @@
         },
         "datagroup": {
             "@id": "sci:datagroup",
+            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -27,6 +29,7 @@
         },
         "dataseries": {
             "@id": "sci:dataseries",
+            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -34,8 +37,7 @@
             "axis": {"@type": "axis"},
             "label": {"@type": "label"},
             "attributes": {"@type": "attributes"},
-            "values": {"@type": "parameter"},
-            "strings": {"@type": "parameter"}
+            "parameter": {"@type": "parameterArray"}
         },
         "source": {
             "@id": "sci:datasource",
@@ -54,31 +56,23 @@
             "@type": "parameter"
         },
         "attributes": {
-            "@id": "sci:dataAttributes",
+            "@id": "sci:dataattributes",
             "@type": "parameter"
         },
         "seriesType": {
-            "@id": "sci:dataseriesType",
+            "@id": "sci:dataseriestype",
             "@type": "parameter"
         },
         "axis": {
-            "@id": "sci:plotAxis",
+            "@id": "sci:axistype",
             "@type": "string"
         },
         "label": {
-            "@id": "dc:title",
+            "@id": "sci:axislabel",
             "@type": "string"
         },
-        "parameter": {
-            "@id": "sci:parameter",
-            "@type": "parameter"
-        },
-        "values": {
-            "@id": "sci:numericValueArray",
-            "@type": "parameter"
-        },
-        "strings": {
-            "@id": "sci:textStringArray",
+        "parameterArray": {
+            "@id": "sci:parameterArray",
             "@type": "parameter"
         }
     }
