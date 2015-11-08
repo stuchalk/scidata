@@ -64,8 +64,7 @@
         },
         "error": {
             "@id": "sci:error",
-            "@type": "double",
-            "@container": "@list"
+            "@type": "double"
         },
         "errorarray": {
             "@id": "sci:errorArray",
