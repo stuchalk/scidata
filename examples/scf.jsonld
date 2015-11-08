@@ -661,7 +661,7 @@
                                         "number": -0.006536661,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/2",
@@ -682,7 +682,7 @@
                                         "number": 0.01667125,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/3",
@@ -703,7 +703,7 @@
                                         "number": -0.03722168,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/4",
@@ -724,7 +724,7 @@
                                         "number": -0.01513748,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/5",
@@ -745,7 +745,7 @@
                                         "number": 0.1254367,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/6",
@@ -766,7 +766,7 @@
                                         "number": -0.3128225,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/7",
@@ -787,7 +787,7 @@
                                         "number": -0.01083829,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/8",
@@ -808,7 +808,7 @@
                                         "number": -0.3222021,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/9",
@@ -829,7 +829,7 @@
                                         "number": -0.32308,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/10",
@@ -850,7 +850,7 @@
                                         "number": -0.3312914,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/11",
@@ -871,7 +871,7 @@
                                         "number": -0.3192864,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/12",
@@ -892,7 +892,7 @@
                                         "number": -0.3628553,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/13",
@@ -913,7 +913,7 @@
                                         "number": 0.1103455,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/14",
@@ -934,7 +934,7 @@
                                         "number": 0.1121005,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/15",
@@ -955,7 +955,7 @@
                                         "number": 0.1035608,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/16",
@@ -976,7 +976,7 @@
                                         "number": 0.1413285,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/17",
@@ -997,7 +997,7 @@
                                         "number": 0.124636,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/18",
@@ -1018,7 +1018,7 @@
                                         "number": 0.07243846,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/19",
@@ -1039,7 +1039,7 @@
                                         "number": 0.1321895,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/20",
@@ -1060,7 +1060,7 @@
                                         "number": 0.2085786,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/21",
@@ -1081,7 +1081,7 @@
                                         "number": 0.2247598,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/22",
@@ -1102,7 +1102,7 @@
                                         "number": 0.2212835,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/23",
@@ -1123,7 +1123,7 @@
                                         "number": 0.2210585,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/24",
@@ -1144,7 +1144,7 @@
                                         "number": 0.2268844,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 }
                             ],
                             "bond": [
@@ -1430,7 +1430,7 @@
                                         "number": -0.006536661,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 },
                                 {
                                     "@id": "molsystem/1/molecule/2/atom/2",
@@ -1451,7 +1451,7 @@
                                         "number": 0.01667125,
                                         "unit": "C"
                                     },
-                                    "basisSet": "None"
+                                    "basisset": "Default"
                                 }
                             ],
                             "bond": [

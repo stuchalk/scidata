@@ -55,7 +55,7 @@
                         "@id": "setting/1",
                         "quantity": "instrument feature",
                         "property": "Temperature compensation",
-                        "textstr": {
+                        "text": {
                             "@id": "setting/1/value",
                             "text": "true"
                         }

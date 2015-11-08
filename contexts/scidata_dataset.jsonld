@@ -70,10 +70,6 @@
         "label": {
             "@id": "sci:axislabel",
             "@type": "string"
-        },
-        "parameterArray": {
-            "@id": "sci:parameterArray",
-            "@type": "parameter"
         }
     }
 ]}
