@@ -29,7 +29,7 @@
     },
     "textstringarray": {
         "@id": "text/2",
-        "text": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
+        "textarray": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
         "format": "plain",
         "language": "en-US"
     },
