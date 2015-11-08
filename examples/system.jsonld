@@ -11,19 +11,25 @@
             "@id": "component/1",
             "scope": "compound/1",
             "grade": "MilliQ Grade (18.2 MOhms)",
-            "purity": {"value": {
-                "number": 99.9999,
-                "unit": "%(w/w)"
-            }}
+            "purity": {
+                "@id": "component/1/purity",
+                "value": {
+                    "number": 99.9999,
+                    "unit": "%(w/w)"
+                }
+            }
         },
         {
             "@id": "component/2",
             "scope": "compound/2",
             "grade": "ACS Certified grade",
-            "purity": {"value": {
-                "number": 9.99,
-                "unit": "%(w/w)"
-            }}
+            "purity": {
+                "@id": "component/2/purity",
+                "value": {
+                    "number": 9.99,
+                    "unit": "%(w/w)"
+                }
+            }
         }
     ]
 }

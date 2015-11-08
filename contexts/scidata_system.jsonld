@@ -9,24 +9,20 @@
         "system": {
             "@id": "sci:chemicalSystem",
             "name": {"@type": "name"},
-            "systemType": {"@type": "systemType"},
-            "phase": {"@type": "phase"},
+            "systemtype": {"@type": "systemtype"},
+            "systemphase": {"@type": "systemphase"},
             "components": {"@type": "components"}
         },
         "name": {
             "@id": "dc:title",
             "@type": "string"
         },
-        "systemType": {
+        "systemtype": {
             "@id": "sci:systemType",
             "@type": "string"
         },
-        "grade": {
-            "@id": "sci:grade",
-            "@type": "string"
-        },
-        "phase": {
-            "@id": "sci:phase",
+        "systemphase": {
+            "@id": "sci:phaseOfMatter",
             "@type": "string"
         },
         "components": {
