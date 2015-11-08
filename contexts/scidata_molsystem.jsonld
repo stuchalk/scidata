@@ -170,7 +170,7 @@
             "@type": "string"
         },
         "type": {
-            "@id": "CHEBI:24433",
+            "@id": "obo:CHEBI_24433",
             "@type": "@id"
         },
         "bondType": {

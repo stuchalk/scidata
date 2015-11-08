@@ -6,11 +6,12 @@
     "@id": "",
     "discipline": "chemistry",
     "subdiscipline": "analytical chemistry",
-    "aspects": [{
+    "facets": [{
         "@id": "system",
         "name": "R-(-)-Carvone and Chloroform-d",
         "description": "Solution prepared for 1H NMR analysis",
-        "type": "single phase liquid",
+        "systemtype": "binary mixture",
+        "systemphase": "single phase liquid",
         "components": [
             {
                 "@id": "substance/1",

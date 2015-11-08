@@ -3,8 +3,7 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_csi.jsonld",
-    {
+     {
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
