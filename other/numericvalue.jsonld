@@ -31,7 +31,7 @@
             "@id": "amu/factor",
             "fromunit": "g",
             "tounit": "amu",
-            "multiplicand": "1.660538921E-27"
+            "multiplier": "1.660538921E-27"
         }
     }]
 }

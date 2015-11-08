@@ -98,6 +98,14 @@
         "language": {
             "@id": "dc:language",
             "@type": "string"
+        },
+        "value": {
+            "@id": "sci:numericValue",
+            "@type": "numericvalue"
+        },
+        "valuearray": {
+            "@id": "sci:numericValueArray",
+            "@type": "numericvaluearray"
         }
     }
 ]}
