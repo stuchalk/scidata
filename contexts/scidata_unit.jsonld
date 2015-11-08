@@ -82,11 +82,11 @@
             "exact": {"@type": "boolean"}
         },
         "fromunit": {
-            "@id": "sci:referenceUnit",
+            "@id": "sci:scientificUnit",
             "@type": "siunit"
         },
         "tounit": {
-            "@id": "sci:referenceUnit",
+            "@id": "sci:scientificUnit",
             "@type": "siunit"
         },
         "addend": {
