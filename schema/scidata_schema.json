@@ -81,7 +81,7 @@
                 "quantity": "quantity name or code (string)",
                 "symbol": "common symbol (string)",
                 "exact": "exact value or not (boolean)",
-                "number": [
+                "numberarry": [
                     0.1042,
                     0.1037
                 ],
@@ -92,8 +92,8 @@
                 "@id": "datagroup",
                 "scope": "which facet(system,organism) is this measured on (@id)",
                 "group": "name of the group (string)",
-                "dataSeries": [{}],
-                "dataPoint": [{}]
+                "dataseries": [{}],
+                "datapoint": [{}]
             }]
         }
     },
