@@ -13,8 +13,8 @@
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
-            "value": {"@type": "value"},
-            "text": {"@type": "text"}
+            "value": {"@type": "numericvalue"},
+            "text": {"@type": "textstring"}
         },
         "parameterArray": {
             "@id": "sci:parameterArray",
@@ -23,8 +23,8 @@
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
-            "valueArray": {"@type": "valueArray"},
-            "textArray": {"@type": "textArray"}
+            "valueArray": {"@type": "numericvaluearray"},
+            "textArray": {"@type": "textstringarray"}
         },
         "source": {
             "@id": "sci:datasource",
@@ -55,22 +55,6 @@
         "codeType": {
             "@id": "sci:propertyCodeType",
             "@type": "string"
-        },
-        "value": {
-            "@id": "sci:numericValue",
-            "@type": "numericValue"
-        },
-        "text": {
-            "@id": "sci:textString",
-            "@type": "textString"
-        },
-        "valueArray": {
-            "@id": "sci:numericValueArray",
-            "@type": "numericValue"
-        },
-        "textArray": {
-            "@id": "sci:textStringArray",
-            "@type": "textString"
         }
     }
 ]}
