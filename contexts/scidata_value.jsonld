@@ -8,12 +8,24 @@
         "numericvalue": {
             "@id": "sci:numericValue",
             "uid": {"@type": "uid"},
-            "format": {"@type": "dataformat"},
+            "format": {"@type": "numericformat"},
             "number": {"@type": "number"},
             "sigfigs": {"@type": "sigfigs"},
             "error": {"@type": "error"},
             "errorType": {"@type": "errorType"},
-            "unit": {"@type": "unit"}
+            "unit": {"@type": "unit"},
+            "unitref": {"@type": "unitref"}
+        },
+        "numericvaluearray": {
+            "@id": "sci:numericValueArray",
+            "uid": {"@type": "uid"},
+            "format": {"@type": "numericformat"},
+            "numberarray": {"@type": "numberarray"},
+            "sigfigs": {"@type": "sigfigs"},
+            "errorarray": {"@type": "errorarray"},
+            "errortype": {"@type": "errortype"},
+            "unit": {"@type": "unit"},
+            "unitref": {"@type": "unitref"}
         },
         "textstring": {
             "@id": "sci:textString",
@@ -22,16 +34,27 @@
             "format": {"@type": "textformat"},
             "language": {"@type": "language"}
         },
+        "textstringarray": {
+            "@id": "sci:textStringArray",
+            "uid": {"@type": "uid"},
+            "textarray": {"@type": "textarray"},
+            "format": {"@type": "textformat"},
+            "language": {"@type": "language"}
+        },
         "uid": {
             "@id": "dc:identifier",
             "@type": "string"
         },
-        "dataformat": {
-            "@id": "sci:dataFormat",
+        "numericformat": {
+            "@id": "sci:numericFormat",
             "@type": "string"
         },
         "number": {
-            "@id": "sci:numberValue",
+            "@id": "sci:number",
+            "@type": "double"
+        },
+        "numberarray": {
+            "@id": "sci:numberArray",
             "@type": "double",
             "@container": "@list"
         },
@@ -44,16 +67,29 @@
             "@type": "double",
             "@container": "@list"
         },
-        "errorType": {
+        "errorarray": {
+            "@id": "sci:errorArray",
+            "@type": "double",
+            "@container": "@list"
+        },
+        "errortype": {
             "@id": "sci:errorType",
             "@type": "string"
         },
         "unit": {
             "@id": "sci:unit",
+            "@type": "string"
+        },
+        "unitref": {
+            "@id": "sci:unitReference",
             "@type": "@id"
         },
         "text": {
-            "@id": "sci:textValue",
+            "@id": "sci:text",
+            "@type": "string"
+        },
+        "textarray": {
+            "@id": "sci:textArray",
             "@type": "string"
         },
         "textformat": {
