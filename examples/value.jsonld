@@ -11,7 +11,7 @@
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unitref": {"@id": "_:amu"}
+        "unitref": {"@id": "amu"}
     },
     "numericvaluearray": {
         "@id": "numeric/2",
@@ -34,21 +34,21 @@
         "language": "en-US"
     },
     "unit": [{
-        "@id": "_:amu",
+        "@id": "amu",
         "name": "Atomic mass units",
         "quantity": "mass",
         "symbol": "u",
         "unitinsi": {
-            "@id": "_:amu/unitinsi",
+            "@id": "amu/unitinsi",
             "siunit": [{
-                "@id": "_:amu/unit/1",
+                "@id": "amu/unit/1",
                 "name": "gram",
                 "prefix": "y",
                 "power": {"numerator": 1}
             }]
         },
         "conversion": {
-            "@id": "_:amu/conversion",
+            "@id": "amu/conversion",
             "fromunit": "g",
             "multiplicand": "1.660538921E-27"
         }
