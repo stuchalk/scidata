@@ -23,6 +23,27 @@
     "description": "This is a test calculation for glucose",
     "publisher": "Chemical Semantics",
     "permalink": "http://stuchalk.github.io/scidata/examples/scf.jsonld",
+    "toc": {
+        "@id": "toc",
+        "sections": [
+            "methodology/calculation/1",
+            "methodology/software",
+            "context/molsystem/1",
+            "context/computer",
+            "dataset/datapoint/1",
+            "dataset/datapoint/2",
+            "dataset/datapoint/3",
+            "dataset/datapoint/4",
+            "dataset/datapoint/5",
+            "dataset/datapoint/6",
+            "dataset/datapoint/7",
+            "dataset/datapoint/8",
+            "dataset/datapoint/9",
+            "dataset/datagroup/1",
+            "dataset/datagroup/2",
+            "dataset/datagroup/3"
+        ]
+    },
     "scidata": {
         "@id": "data",
         "type": ["property value"],
