@@ -289,7 +289,7 @@
                             "valuearray": {
                                 "@id": "datagroup/1/dataseries/1/parameter/valuearray",
                                 "datatype": "decimal",
-                                "number": [
+                                "numberarray": [
                                     4184,
                                     4183.70768546,
                                     4183.41537092,
@@ -16734,7 +16734,7 @@
                             "valuearray": {
                                 "@id": "datagroup/1/dataseries/2/parameter/valuearray",
                                 "datatype": "decimal",
-                                "number": [
+                                "numberarray": [
                                     448.1,
                                     360.2,
                                     415.6,

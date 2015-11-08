@@ -9,7 +9,7 @@
     "property": "Potential energy change",
     "valuearray": {
         "@id": "datagroup/3/dataseries/1/parameter/valuearray",
-        "number": [
+        "numberarray": [
             172.282,
             165.2401,
             163.7147,

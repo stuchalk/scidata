@@ -127,7 +127,7 @@
                         "property": "Potential energy",
                         "valuearray": {
                             "@id": "datagroup/1/dataseries/1/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 -42.03963,
                                 -39.1883,
                                 -39.07387,
@@ -219,7 +219,7 @@
                         "property": "Number of electrons",
                         "valuearray": {
                             "@id": "datagroup/1/dataseries/3/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 2,
                                 2,
                                 2,
@@ -293,7 +293,7 @@
                         "property": "Potential energy",
                         "valuearray": {
                             "@id": "datagroup/1/dataseries/4/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 -42.03963,
                                 -39.1883,
                                 -39.07387,
@@ -385,7 +385,7 @@
                         "property": "Number of electrons",
                         "valuearray": {
                             "@id": "datagroup/1/dataseries/6/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 2,
                                 2,
                                 2,
@@ -466,7 +466,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/1/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2801185,
                                         0.04363899,
                                         0.01829233,
@@ -541,7 +541,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/2/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1498471,
                                         -0.01971674,
                                         0.06409438,
@@ -616,7 +616,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/3/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2197684,
                                         -0.05945466,
                                         0.03079681,
@@ -691,7 +691,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/4/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.01845417,
                                         -0.06847905,
                                         -0.04200964,
@@ -766,7 +766,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/5/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.01975755,
                                         -0.03833851,
                                         0.05168801,
@@ -841,7 +841,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/6/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1467379,
                                         -0.07083722,
                                         0.0170585,
@@ -916,7 +916,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/7/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2914156,
                                         -0.04940722,
                                         0.1039002,
@@ -991,7 +991,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/8/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.3615396,
                                         -0.08150777,
                                         -0.06328796,
@@ -1066,7 +1066,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/9/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.08213158,
                                         0.1542402,
                                         0.1037145,
@@ -1141,7 +1141,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/10/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.06439899,
                                         0.007850728,
                                         0.2161951,
@@ -1216,7 +1216,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/11/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.3033426,
                                         -0.1277909,
                                         -0.0140438,
@@ -1291,7 +1291,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/12/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1972351,
                                         -0.1223756,
                                         0.1367461,
@@ -1366,7 +1366,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/13/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1289578,
                                         -0.03672959,
                                         -0.05082614,
@@ -1441,7 +1441,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/14/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1280552,
                                         0.03937238,
                                         0.1637012,
@@ -1516,7 +1516,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/15/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.0874273,
                                         -0.03523616,
                                         -0.04441708,
@@ -1591,7 +1591,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/16/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0679601,
                                         0.229042,
                                         0.0294448,
@@ -1666,7 +1666,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/17/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.05583247,
                                         0.06443523,
                                         0.04086931,
@@ -1741,7 +1741,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/18/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07713024,
                                         -0.1069199,
                                         0.06827062,
@@ -1816,7 +1816,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/19/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.06421346,
                                         -0.1490591,
                                         0.0447744,
@@ -1891,7 +1891,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/20/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.03621512,
                                         -0.1981484,
                                         0.2178715,
@@ -1966,7 +1966,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/21/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0401745,
                                         -0.05043479,
                                         -0.05744866,
@@ -2041,7 +2041,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/22/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03827593,
                                         2.380686E-4,
                                         0.0646881,
@@ -2116,7 +2116,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/23/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02280474,
                                         -0.05622058,
                                         0.1793615,
@@ -2191,7 +2191,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/24/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.03337613,
                                         -0.1794346,
                                         -0.1288125,
@@ -2266,7 +2266,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/25/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1057345,
                                         -0.1651246,
                                         -0.07910365,
@@ -2341,7 +2341,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/26/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02070562,
                                         0.04105188,
                                         0.02534739,
@@ -2416,7 +2416,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/27/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02583043,
                                         0.05058878,
                                         -0.0853594,
@@ -2491,7 +2491,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/28/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02934903,
                                         0.002539471,
                                         0.2397439,
@@ -2566,7 +2566,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/29/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07493225,
                                         -0.1280565,
                                         0.08899423,
@@ -2641,7 +2641,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/30/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.0145376,
                                         -0.09728961,
                                         -0.1345003,
@@ -2716,7 +2716,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/31/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03400257,
                                         0.2308688,
                                         0.06470609,
@@ -2791,7 +2791,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/32/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02786402,
                                         0.03250436,
                                         -0.01812953,
@@ -2866,7 +2866,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/33/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02885799,
                                         -0.1830965,
                                         0.1841976,
@@ -2941,7 +2941,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/34/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -7.999849E-4,
                                         -0.0370154,
                                         -0.1450798,
@@ -3016,7 +3016,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/35/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0663511,
                                         -0.2430689,
                                         -0.2166649,
@@ -3091,7 +3091,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/36/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.001797145,
                                         -0.1433769,
                                         0.1040346,
@@ -3166,7 +3166,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/37/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2132098,
                                         0.1315122,
                                         -0.1670007,
@@ -3241,7 +3241,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/38/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.04410331,
                                         0.0342934,
                                         -0.0171857,
@@ -3316,7 +3316,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/39/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1396742,
                                         0.1942453,
                                         -0.197576,
@@ -3391,7 +3391,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/40/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.008915436,
                                         0.09927663,
                                         0.1377637,
@@ -3466,7 +3466,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/41/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2328375,
                                         0.05529558,
                                         0.3377533,
@@ -3541,7 +3541,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/42/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0103154,
                                         0.04781597,
                                         -0.1376232,
@@ -3616,7 +3616,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/43/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.002341473,
                                         -0.1392168,
                                         -0.2584098,
@@ -3691,7 +3691,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/44/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1867977,
                                         -0.1916481,
                                         -0.1165926,
@@ -3766,7 +3766,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/45/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.109764,
                                         -0.2623673,
                                         -0.1282781,
@@ -3841,7 +3841,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/46/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.2910953,
                                         -0.06310058,
                                         0.1078288,
@@ -3916,7 +3916,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/47/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1226367,
                                         0.3392459,
                                         0.0128351,
@@ -3991,7 +3991,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/48/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.09920613,
                                         -0.1899633,
                                         0.02967381,
@@ -4066,7 +4066,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/49/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1694637,
                                         -0.07785686,
                                         0.1301429,
@@ -4141,7 +4141,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/50/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02671107,
                                         0.1198416,
                                         0.09563525,
@@ -4216,7 +4216,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/51/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.05449344,
                                         -0.255337,
                                         0.08846997,
@@ -4291,7 +4291,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/52/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1734546,
                                         0.07295465,
                                         -0.2377673,
@@ -4366,7 +4366,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/53/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.05486801,
                                         -0.265873,
                                         0.06456004,
@@ -4441,7 +4441,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/54/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07132361,
                                         -0.03721668,
                                         -0.2251209,
@@ -4516,7 +4516,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/55/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.1133375,
                                         0.02637186,
                                         -0.1679825,
@@ -4591,7 +4591,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/56/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.07034028,
                                         -0.06153454,
                                         0.09880872,
@@ -4666,7 +4666,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/57/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.08620106,
                                         0.003987271,
                                         -0.06391961,
@@ -4741,7 +4741,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/58/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.06687807,
                                         -0.0394883,
                                         0.1041514,
@@ -4816,7 +4816,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/59/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02712228,
                                         0.01065505,
                                         -0.1043981,
@@ -4891,7 +4891,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/a/dataseries/60/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03924062,
                                         0.01486383,
                                         0.04077074,
@@ -4972,7 +4972,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/1/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2801185,
                                         0.04363899,
                                         0.01829233,
@@ -5047,7 +5047,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/2/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1498471,
                                         -0.01971674,
                                         0.06409438,
@@ -5122,7 +5122,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/3/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2197684,
                                         -0.05945466,
                                         0.03079681,
@@ -5197,7 +5197,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/4/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.01845417,
                                         -0.06847905,
                                         -0.04200964,
@@ -5272,7 +5272,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/5/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.01975755,
                                         -0.03833851,
                                         0.05168801,
@@ -5347,7 +5347,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/6/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1467379,
                                         -0.07083722,
                                         0.0170585,
@@ -5422,7 +5422,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/7/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2914156,
                                         -0.04940722,
                                         0.1039002,
@@ -5497,7 +5497,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/8/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.3615396,
                                         -0.08150777,
                                         -0.06328796,
@@ -5572,7 +5572,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/9/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.08213158,
                                         0.1542402,
                                         0.1037145,
@@ -5647,7 +5647,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/10/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.06439899,
                                         0.007850728,
                                         0.2161951,
@@ -5722,7 +5722,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/11/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.3033426,
                                         -0.1277909,
                                         -0.0140438,
@@ -5797,7 +5797,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/12/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1972351,
                                         -0.1223756,
                                         0.1367461,
@@ -5872,7 +5872,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/13/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1289578,
                                         -0.03672959,
                                         -0.05082614,
@@ -5947,7 +5947,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/14/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1280552,
                                         0.03937238,
                                         0.1637012,
@@ -6022,7 +6022,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/15/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.0874273,
                                         -0.03523616,
                                         -0.04441708,
@@ -6097,7 +6097,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/16/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0679601,
                                         0.229042,
                                         0.0294448,
@@ -6172,7 +6172,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/17/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.05583247,
                                         0.06443523,
                                         0.04086931,
@@ -6247,7 +6247,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/18/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07713024,
                                         -0.1069199,
                                         0.06827062,
@@ -6322,7 +6322,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/19/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.06421346,
                                         -0.1490591,
                                         0.0447744,
@@ -6397,7 +6397,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/20/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.03621512,
                                         -0.1981484,
                                         0.2178715,
@@ -6472,7 +6472,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/21/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0401745,
                                         -0.05043479,
                                         -0.05744866,
@@ -6547,7 +6547,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/22/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03827593,
                                         2.380686E-4,
                                         0.0646881,
@@ -6622,7 +6622,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/23/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02280474,
                                         -0.05622058,
                                         0.1793615,
@@ -6697,7 +6697,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/24/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.03337613,
                                         -0.1794346,
                                         -0.1288125,
@@ -6772,7 +6772,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/25/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1057345,
                                         -0.1651246,
                                         -0.07910365,
@@ -6847,7 +6847,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/26/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02070562,
                                         0.04105188,
                                         0.02534739,
@@ -6922,7 +6922,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/27/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02583043,
                                         0.05058878,
                                         -0.0853594,
@@ -6997,7 +6997,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/28/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02934903,
                                         0.002539471,
                                         0.2397439,
@@ -7072,7 +7072,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/29/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07493225,
                                         -0.1280565,
                                         0.08899423,
@@ -7147,7 +7147,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/30/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.0145376,
                                         -0.09728961,
                                         -0.1345003,
@@ -7222,7 +7222,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/31/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03400257,
                                         0.2308688,
                                         0.06470609,
@@ -7297,7 +7297,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/32/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02786402,
                                         0.03250436,
                                         -0.01812953,
@@ -7372,7 +7372,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/33/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.02885799,
                                         -0.1830965,
                                         0.1841976,
@@ -7447,7 +7447,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/34/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -7.999849E-4,
                                         -0.0370154,
                                         -0.1450798,
@@ -7522,7 +7522,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/35/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0663511,
                                         -0.2430689,
                                         -0.2166649,
@@ -7597,7 +7597,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/36/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.001797145,
                                         -0.1433769,
                                         0.1040346,
@@ -7672,7 +7672,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/37/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2132098,
                                         0.1315122,
                                         -0.1670007,
@@ -7747,7 +7747,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/38/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.04410331,
                                         0.0342934,
                                         -0.0171857,
@@ -7822,7 +7822,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/39/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1396742,
                                         0.1942453,
                                         -0.197576,
@@ -7897,7 +7897,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/40/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.008915436,
                                         0.09927663,
                                         0.1377637,
@@ -7972,7 +7972,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/41/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.2328375,
                                         0.05529558,
                                         0.3377533,
@@ -8047,7 +8047,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/42/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.0103154,
                                         0.04781597,
                                         -0.1376232,
@@ -8122,7 +8122,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/43/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.002341473,
                                         -0.1392168,
                                         -0.2584098,
@@ -8197,7 +8197,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/44/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1867977,
                                         -0.1916481,
                                         -0.1165926,
@@ -8272,7 +8272,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/45/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.109764,
                                         -0.2623673,
                                         -0.1282781,
@@ -8347,7 +8347,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/46/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.2910953,
                                         -0.06310058,
                                         0.1078288,
@@ -8422,7 +8422,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/47/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1226367,
                                         0.3392459,
                                         0.0128351,
@@ -8497,7 +8497,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/48/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.09920613,
                                         -0.1899633,
                                         0.02967381,
@@ -8572,7 +8572,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/49/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1694637,
                                         -0.07785686,
                                         0.1301429,
@@ -8647,7 +8647,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/50/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02671107,
                                         0.1198416,
                                         0.09563525,
@@ -8722,7 +8722,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/51/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.05449344,
                                         -0.255337,
                                         0.08846997,
@@ -8797,7 +8797,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/52/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.1734546,
                                         0.07295465,
                                         -0.2377673,
@@ -8872,7 +8872,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/53/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.05486801,
                                         -0.265873,
                                         0.06456004,
@@ -8947,7 +8947,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/54/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.07132361,
                                         -0.03721668,
                                         -0.2251209,
@@ -9022,7 +9022,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/55/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.1133375,
                                         0.02637186,
                                         -0.1679825,
@@ -9097,7 +9097,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/56/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.07034028,
                                         -0.06153454,
                                         0.09880872,
@@ -9172,7 +9172,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/57/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         0.08620106,
                                         0.003987271,
                                         -0.06391961,
@@ -9247,7 +9247,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/58/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.06687807,
                                         -0.0394883,
                                         0.1041514,
@@ -9322,7 +9322,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/59/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.02712228,
                                         0.01065505,
                                         -0.1043981,
@@ -9397,7 +9397,7 @@
                                 "property": "Basisset contributions",
                                 "valuearray": {
                                     "@id": "datagroup/1/datagroup/b/dataseries/60/parameter/valuearray",
-                                    "number": [
+                                    "numberarray": [
                                         -0.03924062,
                                         0.01486383,
                                         0.04077074,
@@ -9489,7 +9489,7 @@
                         "property": "Wavenumber",
                         "valuearray": {
                             "@id": "datagroup/2/dataseries/1/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 61.30263,
                                 73.18917,
                                 94.04661,
@@ -9587,7 +9587,7 @@
                         "property": "Fractional radiative power",
                         "valuearray": {
                             "@id": "datagroup/2/dataseries/3/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 "0.09552881",
                                 "0.2359948",
                                 "0.6225479",
@@ -9672,7 +9672,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/1/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.04152523,
                                     0.07805878,
                                     -0.04150457,
@@ -9758,7 +9758,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/2/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.07343067,
                                     -0.08337165,
                                     -0.05936964,
@@ -9844,7 +9844,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/3/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.03064178,
                                     -0.04900946,
                                     0.007022638,
@@ -9930,7 +9930,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/4/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.009044389,
                                     0.01462216,
                                     -0.2088055,
@@ -10016,7 +10016,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/5/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.17539,
                                     -0.04666445,
                                     0.1041482,
@@ -10102,7 +10102,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/6/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.05185059,
                                     -0.09899239,
                                     0.07507869,
@@ -10188,7 +10188,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/7/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.08291887,
                                     -0.08368978,
                                     -0.1180352,
@@ -10274,7 +10274,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/8/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.06368709,
                                     0.01382203,
                                     0.01073972,
@@ -10360,7 +10360,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/9/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.01694696,
                                     -0.06942784,
                                     0.01559351,
@@ -10446,7 +10446,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/10/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.009540295,
                                     0.02004582,
                                     -0.006107187,
@@ -10532,7 +10532,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/11/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.004307513,
                                     -0.08261338,
                                     0.006215054,
@@ -10618,7 +10618,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/12/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.01099714,
                                     -0.02234804,
                                     -0.0013477,
@@ -10704,7 +10704,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/13/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.04146282,
                                     -0.1970535,
                                     0.1413238,
@@ -10790,7 +10790,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/14/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.03608213,
                                     0.02472711,
                                     4.008323E-5,
@@ -10876,7 +10876,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/15/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.003393202,
                                     0.08789206,
                                     -0.0175555,
@@ -10962,7 +10962,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/16/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.006894042,
                                     -0.1347044,
                                     0.06870843,
@@ -11048,7 +11048,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/17/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1637483,
                                     0.02056157,
                                     0.219961,
@@ -11134,7 +11134,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/18/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.170592,
                                     0.2295177,
                                     -0.03077026,
@@ -11220,7 +11220,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/19/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1489876,
                                     -0.2756365,
                                     0.1576883,
@@ -11306,7 +11306,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/20/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.03609249,
                                     0.1550466,
                                     0.0962367,
@@ -11392,7 +11392,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/21/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1280994,
                                     0.03315078,
                                     0.2003346,
@@ -11478,7 +11478,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/22/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.3067446,
                                     0.0548684,
                                     -0.2843103,
@@ -11564,7 +11564,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/23/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1012841,
                                     0.009506204,
                                     -0.05461915,
@@ -11650,7 +11650,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/24/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.0331814,
                                     0.1216539,
                                     0.05680153,
@@ -11736,7 +11736,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/25/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1310061,
                                     0.04675035,
                                     -0.1898048,
@@ -11822,7 +11822,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/26/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.2915056,
                                     0.09600437,
                                     -0.3564435,
@@ -11908,7 +11908,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/27/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.05228343,
                                     -0.1068572,
                                     -0.131351,
@@ -11994,7 +11994,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/28/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.04260928,
                                     -0.283154,
                                     0.1780983,
@@ -12080,7 +12080,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/29/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.09986359,
                                     -0.02426781,
                                     -0.004595039,
@@ -12166,7 +12166,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/30/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1282766,
                                     -0.09354757,
                                     -0.2150287,
@@ -12252,7 +12252,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/31/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1124885,
                                     0.1970514,
                                     -0.154694,
@@ -12338,7 +12338,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/32/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.08529964,
                                     0.2032496,
                                     0.08583383,
@@ -12424,7 +12424,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/33/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1313344,
                                     -0.0459146,
                                     0.1067366,
@@ -12510,7 +12510,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/34/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.0878423,
                                     -0.04214547,
                                     -0.09525964,
@@ -12596,7 +12596,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/35/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.01014629,
                                     0.01433649,
                                     -0.008716819,
@@ -12682,7 +12682,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/36/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.06523113,
                                     -0.01444287,
                                     -0.01711936,
@@ -12768,7 +12768,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/37/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1318538,
                                     -0.1059927,
                                     -0.02432147,
@@ -12854,7 +12854,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/38/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.04482662,
                                     0.3113826,
                                     0.04893553,
@@ -12940,7 +12940,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/39/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.08101499,
                                     0.1560465,
                                     0.02677157,
@@ -13026,7 +13026,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/40/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.2920948,
                                     0.03490103,
                                     0.1037403,
@@ -13112,7 +13112,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/41/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.213304,
                                     0.01280683,
                                     -0.0137197,
@@ -13198,7 +13198,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/42/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.4806111,
                                     0.2865017,
                                     -0.114443,
@@ -13284,7 +13284,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/43/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.01274833,
                                     0.1101338,
                                     0.06393023,
@@ -13370,7 +13370,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/44/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.07011241,
                                     -0.1580186,
                                     -0.2423158,
@@ -13456,7 +13456,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/45/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.07099282,
                                     -0.1896057,
                                     -0.1253193,
@@ -13542,7 +13542,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/46/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1657347,
                                     -0.1830832,
                                     -0.05017163,
@@ -13628,7 +13628,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/47/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.1309772,
                                     -0.1331142,
                                     -0.1310138,
@@ -13714,7 +13714,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/48/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.02239197,
                                     -0.007068867,
                                     0.07406293,
@@ -13800,7 +13800,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/49/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.09678317,
                                     -0.2233939,
                                     -0.3214279,
@@ -13886,7 +13886,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/50/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.005764989,
                                     -0.05210777,
                                     -0.06781016,
@@ -13972,7 +13972,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/51/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.02045774,
                                     -0.02534657,
                                     0.0293495,
@@ -14058,7 +14058,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/52/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.06039496,
                                     -0.006604393,
                                     -0.001625365,
@@ -14144,7 +14144,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/53/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.06619595,
                                     -0.1894721,
                                     0.01597882,
@@ -14230,7 +14230,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/54/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.001754999,
                                     -0.005111335,
                                     -0.01515377,
@@ -14316,7 +14316,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/55/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.01882106,
                                     0.00773567,
                                     -0.0315039,
@@ -14402,7 +14402,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/56/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.06168442,
                                     0.03453083,
                                     -0.1018879,
@@ -14488,7 +14488,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/57/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.001858305,
                                     -0.008194773,
                                     -0.00326631,
@@ -14574,7 +14574,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/58/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -0.1030496,
                                     0.07562481,
                                     -0.1624887,
@@ -14660,7 +14660,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/59/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.004517333,
                                     -0.005714234,
                                     0.01423567,
@@ -14746,7 +14746,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/60/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.02125411,
                                     -0.01493024,
                                     0.02837082,
@@ -14832,7 +14832,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/61/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     0.01369448,
                                     0.008366674,
                                     -0.007557422,
@@ -14918,7 +14918,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/62/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     1.803749E-5,
                                     1.443691E-4,
                                     -4.093715E-5,
@@ -15004,7 +15004,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/63/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     5.650491E-4,
                                     -3.439262E-4,
                                     -4.65886E-4,
@@ -15090,7 +15090,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/64/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     7.846955E-4,
                                     -0.001776733,
                                     -0.002019064,
@@ -15176,7 +15176,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/65/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     -6.560909E-4,
                                     -2.398954E-4,
                                     1.47296E-4,
@@ -15262,7 +15262,7 @@
                             "property": "Harmonic oscillation",
                             "valuearray": {
                                 "@id": "datagroup/2/datagroup/a/dataseries/66/parameter/valuearray",
-                                "number": [
+                                "numberarray": [
                                     3.239292E-4,
                                     -4.511142E-4,
                                     -4.830623E-4,
@@ -15394,7 +15394,7 @@
                         "property": "Potential energy change",
                         "valuearray": {
                             "@id": "datagroup/3/dataseries/1/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 172.282,
                                 165.2401,
                                 163.7147,
@@ -15427,7 +15427,7 @@
                         "property": "Probability",
                         "valuearray": {
                             "@id": "datagroup/3/dataseries/2/parameter/valuearray",
-                            "number": [
+                            "numberarray": [
                                 3.571417E-29,
                                 6.534709E-29,
                                 0.09828415,
