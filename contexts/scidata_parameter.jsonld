@@ -13,6 +13,7 @@
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
+            "propertyref": {"@type": "propertyref"},
             "value": {"@type": "numericvalue"},
             "text": {"@type": "textstring"}
         },
@@ -23,6 +24,7 @@
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
+            "propertyref": {"@type": "propertyref"},
             "valuearray": {"@type": "numericvaluearray"},
             "textarray": {"@type": "textstringarray"}
         },
@@ -34,27 +36,21 @@
             "@id": "sci:datascope",
             "@type": "@id"
         },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
         "quantity": {
             "@id": "sci:physicalQuantity",
             "@type": "string"
         },
         "property": {
             "@id": "sci:physicalProperty",
-            "name": {"@type": "name"},
-            "code": {"@type": "code"},
-            "codeType": {"@type": "codeType"}
-        },
-        "name": {
-            "@id": "dc:title",
             "@type": "string"
         },
-        "code": {
-            "@id": "sci:propertyCode",
-            "@type": "string"
-        },
-        "codeType": {
-            "@id": "sci:propertyCodeType",
-            "@type": "string"
+        "propertyref": {
+            "@id": "sci:physicalPropertyReference",
+            "@type": "@id"
         }
     }
 ]}
