@@ -32,7 +32,7 @@
             }
         ],
         "factor": {
-            "@id": "conversionFactor",
+            "@id": "SIconversionFactor",
             "fromunit": "mile per hour",
             "tounit": "meter per second",
             "multiplier": 1609.34,
@@ -41,7 +41,7 @@
         }
     },
     "factor": {
-        "@id": "conversionFactor",
+        "@id": "mph/to/kph/conversionFactor",
         "fromunit": "mile per hour",
         "tounit": "kilometer per hour",
         "multiplier": 1.60934,
