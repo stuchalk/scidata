@@ -23,8 +23,8 @@
             "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
-            "valueArray": {"@type": "numericvaluearray"},
-            "textArray": {"@type": "textstringarray"}
+            "valuearray": {"@type": "numericvaluearray"},
+            "textarray": {"@type": "textstringarray"}
         },
         "source": {
             "@id": "sci:datasource",
