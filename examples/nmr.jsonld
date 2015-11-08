@@ -100,7 +100,7 @@
             "@id": "context",
             "discipline": "chemistry",
             "subdiscipline": "analytical chemistry",
-            "aspects": [
+            "facets": [
                 {
                     "@id": "system/1",
                     "name": "(+)-(r)-limonene and Chloroform-d",
@@ -280,15 +280,15 @@
                 "dataseries": [
                     {
                         "@id": "datagroup/1/dataseries/1",
-                        "name": "Radiofrequency (Hz)",
+                        "name": "Excitation frequency (Hz)",
                         "axis": "independent",
                         "parameter": {
                             "@id": "datagroup/1/dataseries/1/parameter",
                             "quantity": "frequency",
                             "property": "Radiofrequency",
-                            "values": {
-                                "@id": "datagroup/1/dataseries/1/parameter/values",
-                                "format": "array",
+                            "valuearray": {
+                                "@id": "datagroup/1/dataseries/1/parameter/valuearray",
+                                "datatype": "decimal",
                                 "number": [
                                     4184,
                                     4183.70768546,
@@ -16731,9 +16731,9 @@
                             "@id": "datagroup/1/dataseries/2/parameter",
                             "quantity": "count",
                             "property": "Detector Signal",
-                            "values": {
-                                "@id": "datagroup/1/dataseries/2/parameter/values",
-                                "format": "array",
+                            "valuearray": {
+                                "@id": "datagroup/1/dataseries/2/parameter/valuearray",
+                                "datatype": "decimal",
                                 "number": [
                                     448.1,
                                     360.2,
@@ -33173,8 +33173,8 @@
     },
     "source": {
         "@id": "source",
-        "citation": "The Open Spectral Database - http://osdb.oinfo",
-        "url": "http://osdb.oinfo/json/s000000022"
+        "citation": "The Open Spectral Database - http://osdb.info",
+        "url": "http://osdb.info/json/s000000022"
     },
     "rights": {
         "@id": "rights",
