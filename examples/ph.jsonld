@@ -33,7 +33,9 @@
             "context/compound/4",
             "context/compound/5",
             "context/compound/6",
-            "context/condition/1"
+            "context/condition/1",
+            "dataset/datapoint/1",
+            "dataset/datapoint/2"
         ]
     },
     "scidata": {

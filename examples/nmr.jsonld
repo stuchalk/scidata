@@ -13,6 +13,17 @@
     "description": "NMR spectrum of (+)-(r)-limonene",
     "permalink": "http://stuchalk.github.io/scidata/examples/nmr.jsonld",
     "starttime": "2015-08-17T07:50:46-05:00",
+    "toc": {
+        "@id": "toc",
+        "sections": [
+            "methodology/measurement/1",
+            "methodology/procedure/1",
+            "context/system/1",
+            "context/compound/1",
+            "context/compound/2",
+            "dataset/datagroup/1"
+        ]
+    },
     "scidata": {
         "@id": "scidata",
         "type": "property value",
