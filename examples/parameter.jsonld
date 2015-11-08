@@ -4,28 +4,12 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/parameter.jsonld/"}
     ],
     "@id": "",
+    "scope": "molecule/1",
     "quantity": "magnetic field strength",
     "property": "Anisotropic NMR Shielding",
-    "value": [
-        {
-            "@id": "value/1",
-            "scope": "molecule/1",
-            "property": "nmrShieldingIsotropic",
-            "value": {
-                "@id": "datapoint/8/value",
-                "number": "1.3",
-                "unit": "ppm_Hz"
-            }
-        },
-        {
-            "@id": "value/1",
-            "scope": "molecule/1",
-            "property": "nmrShieldingAnisotropic",
-            "value": {
-                "@id": "datapoint/9/value",
-                "number": "3.2",
-                "unit": "ppm_Hz"
-            }
-        }
-    ]
+    "value": {
+        "@id": "value",
+        "number": "3.2",
+        "unit": "ppm_Hz"
+    }
 }
