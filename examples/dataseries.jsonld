@@ -12,8 +12,8 @@
         "property": "Detector Signal",
         "values": {
             "@id": "parameter/1/values",
-            "format": "array",
-            "number": [
+            "datatype": "decimal",
+            "numberarray": [
                 448.1,
                 360.2,
                 415.6,

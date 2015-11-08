@@ -7,7 +7,7 @@
     "@id": "",
     "numericvalue": {
         "@id": "numeric/1",
-        "format": "datum",
+        "datatype": "decimal",
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
@@ -15,7 +15,7 @@
     },
     "numericvaluearray": {
         "@id": "numeric/2",
-        "format": "replicate data",
+        "datatype": "decimal",
         "numberarray": [0.9994,0.09990,0.9989],
         "error": 1E-4,
         "sigfigs": 4,
@@ -24,13 +24,13 @@
     "textstring": {
         "@id": "text/1",
         "text": "Simultaneous",
-        "format": "plain",
+        "texttype": "plain",
         "language": "en-US"
     },
     "textstringarray": {
         "@id": "text/2",
         "textarray": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
-        "format": "plain",
+        "texttype": "plain",
         "language": "en-US"
     },
     "unit": [{

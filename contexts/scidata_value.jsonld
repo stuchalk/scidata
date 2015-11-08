@@ -8,7 +8,7 @@
         "numericvalue": {
             "@id": "sci:numericValue",
             "uid": {"@type": "uid"},
-            "format": {"@type": "numericformat"},
+            "datatype": {"@type": "datatype"},
             "number": {"@type": "number"},
             "sigfigs": {"@type": "sigfigs"},
             "error": {"@type": "error"},
@@ -19,7 +19,7 @@
         "numericvaluearray": {
             "@id": "sci:numericValueArray",
             "uid": {"@type": "uid"},
-            "format": {"@type": "numericformat"},
+            "datatype": {"@type": "datatype"},
             "numberarray": {"@type": "numberarray"},
             "sigfigs": {"@type": "sigfigs"},
             "errorarray": {"@type": "errorarray"},
@@ -31,22 +31,22 @@
             "@id": "sci:textString",
             "uid": {"@type": "uid"},
             "text": {"@type": "text"},
-            "format": {"@type": "textformat"},
+            "texttype": {"@type": "texttype"},
             "language": {"@type": "language"}
         },
         "textstringarray": {
             "@id": "sci:textStringArray",
             "uid": {"@type": "uid"},
             "textarray": {"@type": "textarray"},
-            "format": {"@type": "textformat"},
+            "texttype": {"@type": "texttype"},
             "language": {"@type": "language"}
         },
         "uid": {
             "@id": "dc:identifier",
             "@type": "string"
         },
-        "numericformat": {
-            "@id": "sci:numericFormat",
+        "datatype": {
+            "@id": "sci:numericDatatype",
             "@type": "string"
         },
         "number": {
@@ -91,8 +91,8 @@
             "@id": "sci:textArray",
             "@type": "string"
         },
-        "textformat": {
-            "@id": "sci:textFormat",
+        "texttype": {
+            "@id": "sci:textType",
             "@type": "string"
         },
         "language": {

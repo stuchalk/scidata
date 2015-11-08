@@ -204,7 +204,7 @@
                     "string": {
                         "@id": "datapoint/2/value",
                         "text": "The solution was clear, no reagent precipiation was observed.",
-                        "format": "plain",
+                        "texttype": "plain",
                         "language": "en-us"
                     }
                 }
