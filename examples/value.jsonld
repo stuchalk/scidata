@@ -5,17 +5,31 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld/"}
     ],
     "@id": "",
-    "numericValue": {
+    "numericvalue": {
         "@id": "numeric/1",
         "format": "datum",
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unit": {"@id": "_:amu"}
+        "unitref": {"@id": "_:amu"}
     },
-    "textString": {
+    "numericvaluearray": {
+        "@id": "numeric/2",
+        "format": "replicate data",
+        "number": [0.9994,0.09990,0.9989],
+        "error": 1E-4,
+        "sigfigs": 4,
+        "unit": "g"
+    },
+    "textstring": {
         "@id": "text/1",
-        "text": "Some text value",
+        "text": "Simultaneous",
+        "format": "plain",
+        "language": "en-US"
+    },
+    "textstringarray": {
+        "@id": "text/2",
+        "text": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
         "format": "plain",
         "language": "en-US"
     },
