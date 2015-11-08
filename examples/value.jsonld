@@ -50,7 +50,7 @@
         "conversion": {
             "@id": "amu/conversion",
             "fromunit": "g",
-            "multiplicand": "1.660538921E-27"
+            "multiplier": "1.660538921E-27"
         }
     }]
 }

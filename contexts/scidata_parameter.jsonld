@@ -14,7 +14,7 @@
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
             "propertyref": {"@type": "propertyref"},
-            "value": {"@type": "numericvalue"},
+            "value": {"@type": "value"},
             "text": {"@type": "textstring"}
         },
         "parameterArray": {
@@ -25,7 +25,7 @@
             "quantity": {"@type": "quantity"},
             "property": {"@type": "property"},
             "propertyref": {"@type": "propertyref"},
-            "valuearray": {"@type": "numericvaluearray"},
+            "valuearray": {"@type": "valuearray"},
             "textarray": {"@type": "textstringarray"}
         },
         "source": {
