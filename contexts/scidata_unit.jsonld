@@ -48,11 +48,11 @@
             "@type": "@id"
         },
         "quantity": {
-            "@id": "sci:physicalQuantity",
+            "@id": "sci:quantity",
             "@type": "string"
         },
         "quantityref": {
-            "@id": "sci:physicalQuantity",
+            "@id": "sci:quantity",
             "@type": "@id"
         },
         "abbrev": {

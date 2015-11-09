@@ -20,7 +20,7 @@
             "@type": "string"
         },
         "type": {
-            "@id": "sci:resourceType",
+            "@id": "res:resourceType",
             "@type": "string"
         },
         "vendor": {
@@ -32,11 +32,11 @@
             "@type": "string"
         },
         "source": {
-            "@id": "sci:source",
+            "@id": "res:resourceSource",
             "@type": "string"
         },
         "property": {
-            "@id": "sci:resourceProperty",
+            "@id": "res:resourceProperty",
             "@type": "parameter"
         }
     }

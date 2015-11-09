@@ -11,7 +11,7 @@
     "unit": {"@id": "unit/amu"},
     "units": [{
         "@id": "amu",
-        "type": "sci:siderived",
+        "unitsystemref": "sci:siderived",
         "name": "Atomic mass units",
         "quantity": "mass",
         "symbol": "u",

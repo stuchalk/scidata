@@ -6,7 +6,7 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "computer": {
-            "@id": "sci:computerHardware",
+            "@id": "sci:computer",
             "architecture": {"@type": "architecture"},
             "cpu": {"@type": "cpu"},
             "byteorder": {"@type": "byteorder"},

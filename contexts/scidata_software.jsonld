@@ -1,6 +1,7 @@
 {"@context": [
     {
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sw": "http://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/"
     },
@@ -24,19 +25,19 @@
             "@type": "string"
         },
         "os": {
-            "@id": "sci:operatingSystem",
+            "@id": "sw:operatingSystem",
             "@type": "string"
         },
         "developer": {
-            "@id": "sci:developer",
+            "@id": "sw:developer",
             "@type": "string"
         },
         "input": {
-            "@id": "sci:calcInputFile",
+            "@id": "sw:calcInputFile",
             "@type": "string"
         },
         "output": {
-            "@id": "sci:calcOutputFile",
+            "@id": "sw:calcOutputFile",
             "@type": "string"
         }
     }
