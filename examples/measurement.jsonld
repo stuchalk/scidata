@@ -16,7 +16,7 @@
             "value": {
                 "@id": "setting/1/value",
                 "number": 300.0318,
-                "unit": "MHz"
+                "unitstr": "MHz"
             }
         },
         {
@@ -26,7 +26,7 @@
             "value": {
                 "@id": "setting/2/value",
                 "number": 3.42098,
-                "unit": "s"
+                "unitstr": "s"
             }
         },
         {

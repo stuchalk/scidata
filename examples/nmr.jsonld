@@ -46,7 +46,7 @@
                         "value": {
                             "@id": "setting/1/value",
                             "number": "300.03180",
-                            "unit": "MHz"
+                            "unitstr": "MHz"
                         }
                     },
                     {
@@ -56,7 +56,7 @@
                         "value": {
                             "@id": "setting/2/value",
                             "number": "3.42098",
-                            "unit": "s"
+                            "unitstr": "s"
                         }
                     },
                     {
@@ -198,7 +198,7 @@
                         "value": {
                             "@id": "attribute/2/value",
                             "number": "4184.02539063",
-                            "unit": "Hz"
+                            "unitstr": "Hz"
                         }
                     },
                     {
@@ -208,7 +208,7 @@
                         "value": {
                             "@id": "attribute/3/value",
                             "number": "-604.9543457",
-                            "unit": "Hz"
+                            "unitstr": "Hz"
                         }
                     },
                     {
@@ -218,7 +218,7 @@
                         "value": {
                             "@id": "attribute/4/value",
                             "number": "4184.02539063",
-                            "unit": "Hz"
+                            "unitstr": "Hz"
                         }
                     },
                     {
@@ -228,7 +228,7 @@
                         "value": {
                             "@id": "attribute/5/value",
                             "number": "-604.9543457",
-                            "unit": "Hz"
+                            "unitstr": "Hz"
                         }
                     },
                     {
@@ -274,7 +274,7 @@
                         "value": {
                             "@id": "attribute/10/value",
                             "number": "448.125",
-                            "unit": ""
+                            "unitstr": ""
                         }
                     },
                     {
@@ -284,7 +284,7 @@
                         "value": {
                             "@id": "attribute/11/value",
                             "number": "-0.29231454",
-                            "unit": "Hz"
+                            "unitstr": "Hz"
                         }
                     }
                 ],
@@ -16730,7 +16730,7 @@
                                     -617.55863404,
                                     -617.85094858
                                 ],
-                                "unit": "Hz"
+                                "unitstr": "Hz"
                             }
                         }
                     },

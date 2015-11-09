@@ -19,7 +19,7 @@
         "numberarray": [0.9994,0.09990,0.9989],
         "error": 1E-4,
         "sigfigs": 4,
-        "unit": "g"
+        "unitstr": "g"
     },
     "textstring": {
         "@id": "text/1",

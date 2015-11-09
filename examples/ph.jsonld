@@ -96,7 +96,7 @@
                                 "value": {
                                     "@id": "solution/1/component/1/property/1/value",
                                     "number": 2.99,
-                                    "unit": "ppm (w/v)"
+                                    "unitstr": "ppm (w/v)"
                                 }
                             }
                         },
@@ -131,7 +131,7 @@
                         "value": {
                             "@id": "solution/1/volume/value",
                             "number": 100,
-                            "unit": "mL"
+                            "unitstr": "mL"
                         }
                     }
                 },
@@ -180,7 +180,7 @@
                     "value": {
                         "@id": "condition/1/value",
                         "number": "22.8",
-                        "unit": "°C"
+                        "unitstr": "°C"
                     }
                 }
             ]
