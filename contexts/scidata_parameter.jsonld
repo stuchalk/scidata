@@ -8,10 +8,12 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "parameter": {
             "@id": "sci:parameter",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
             "property": {"@type": "property"},
             "propertyref": {"@type": "propertyref"},
             "value": {"@type": "value"},
@@ -19,10 +21,12 @@
         },
         "parameterArray": {
             "@id": "sci:parameterArray",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "name": {"@type": "name"},
             "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
             "property": {"@type": "property"},
             "propertyref": {"@type": "propertyref"},
             "valuearray": {"@type": "valuearray"},
@@ -38,10 +42,6 @@
         },
         "name": {
             "@id": "dc:title",
-            "@type": "string"
-        },
-        "quantity": {
-            "@id": "sci:physicalQuantity",
             "@type": "string"
         },
         "property": {

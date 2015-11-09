@@ -11,7 +11,7 @@
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unitref": {"@id": "amu"}
+        "unitref": "unit/amu"
     },
     "numericvaluearray": {
         "@id": "numeric/2",
@@ -34,7 +34,7 @@
         "language": "en-US"
     },
     "unit": [{
-        "@id": "amu",
+        "@id": "unit/amu",
         "name": "Atomic mass units",
         "quantity": "mass",
         "symbol": "u",

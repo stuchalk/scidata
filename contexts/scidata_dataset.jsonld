@@ -12,6 +12,7 @@
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
+            "attribute": {"@type": "attribute"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
             "datapoint": {"@type": "datapoint"}
