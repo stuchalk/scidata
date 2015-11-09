@@ -2,6 +2,7 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
     {
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sys": "http://stuchalk.github.io/scidata/ontology/scidata_system.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {
@@ -18,15 +19,15 @@
             "@type": "string"
         },
         "systemtype": {
-            "@id": "sci:systemType",
+            "@id": "sys:systemType",
             "@type": "string"
         },
         "systemphase": {
-            "@id": "sci:phaseOfMatter",
+            "@id": "sys:phaseOfMatter",
             "@type": "string"
         },
         "components": {
-            "@id": "sci:components",
+            "@id": "sys:components",
             "@type": "chemical"
         }
     }

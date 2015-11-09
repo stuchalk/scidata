@@ -1,14 +1,14 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "material": {
-            "@id": "sci:measurement",
+            "@id": "sci:material",
             "name": {"@type": "name"},
             "scope": {"@type": "scope"},
             "materialType": {"@type": "materialType"},

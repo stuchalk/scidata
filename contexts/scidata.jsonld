@@ -103,7 +103,7 @@
             "@type": "string"
         },
         "property": {
-            "@id": "sci:physicalProperty",
+            "@id": "sci:property",
             "@type": "string"
         },
         "kind": {

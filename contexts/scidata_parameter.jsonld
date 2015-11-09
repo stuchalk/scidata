@@ -33,11 +33,11 @@
             "textarray": {"@type": "textstringarray"}
         },
         "source": {
-            "@id": "sci:datasource",
+            "@id": "sci:dataSource",
             "@type": "@id"
         },
         "scope": {
-            "@id": "sci:datascope",
+            "@id": "sci:dataScope",
             "@type": "@id"
         },
         "name": {
@@ -45,11 +45,11 @@
             "@type": "string"
         },
         "property": {
-            "@id": "sci:physicalProperty",
+            "@id": "sci:property",
             "@type": "string"
         },
         "propertyref": {
-            "@id": "sci:physicalPropertyReference",
+            "@id": "sci:property",
             "@type": "@id"
         }
     }
