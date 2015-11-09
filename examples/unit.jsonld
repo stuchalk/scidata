@@ -4,8 +4,8 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/unit.jsonld/"}
     ],
     "@id": "",
-    "type": "sci:imperial",
     "name": "Mile per hour",
+    "unitsystemref": "sci:imperial",
     "quantity": "speed",
     "abbrev": "mph",
     "symbol": "mile hr-1",
@@ -16,23 +16,17 @@
                 "@id": "siunit/1",
                 "name": "meter",
                 "prefix": "1",
-                "power": {
-                    "@id": "siunit/1/power",
-                    "numerator": 1
-                }
+                "power": 1
             },
             {
                 "@id": "siunit/2",
                 "name": "second",
                 "prefix": "1",
-                "power": {
-                    "@id": "siunit/2/power",
-                    "number": -1
-                }
+                "power": -1
             }
         ],
         "factor": {
-            "@id": "SIconversionFactor",
+            "@id": "mph/to/mps/conversionFactor",
             "fromunit": "mile per hour",
             "tounit": "meter per second",
             "multiplier": 1609.34,

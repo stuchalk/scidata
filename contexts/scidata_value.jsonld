@@ -1,4 +1,5 @@
 {"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
     {
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/"
@@ -14,6 +15,7 @@
             "error": {"@type": "error"},
             "errorType": {"@type": "errorType"},
             "unit": {"@type": "unit"},
+            "unitstr": {"@type": "unitstr"},
             "unitref": {"@type": "unitref"}
         },
         "numericvaluearray": {
@@ -25,6 +27,7 @@
             "errorarray": {"@type": "errorarray"},
             "errortype": {"@type": "errortype"},
             "unit": {"@type": "unit"},
+            "unitstr": {"@type": "unitstr"},
             "unitref": {"@type": "unitref"}
         },
         "textstring": {
@@ -74,14 +77,6 @@
         "errortype": {
             "@id": "sci:errorType",
             "@type": "string"
-        },
-        "unit": {
-            "@id": "sci:unit",
-            "@type": "string"
-        },
-        "unitref": {
-            "@id": "sci:unitReference",
-            "@type": "@id"
         },
         "text": {
             "@id": "sci:text",
