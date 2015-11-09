@@ -17,7 +17,7 @@
             "error": 0.1,
             "errorType": "absolute",
             "sigfigs": 2,
-            "unit": "http://purl.obolibrary.org/obo/UO_0000169"
+            "unitref": "http://purl.obolibrary.org/obo/UO_0000169"
         }
     }
 }

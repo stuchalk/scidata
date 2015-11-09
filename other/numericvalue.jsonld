@@ -8,8 +8,7 @@
     "number": 12.0107,
     "error": 8.0E-4,
     "sigfigs": 5,
-    "unit": {"@id": "unit/amu"},
-    "units": [{
+    "unit": [{
         "@id": "amu",
         "unitsystemref": "sci:siderived",
         "name": "Atomic mass units",
@@ -22,13 +21,13 @@
                 "name": "gram",
                 "prefix": "y",
                 "power": {
-                    "@id": "amu/siunit/1/power",
+                    "@id": "unit/amu/siunit/1/power",
                     "numerator": 1
                 }
             }]
         },
         "factor": {
-            "@id": "amu/factor",
+            "@id": "g/to/amu/factor",
             "fromunit": "g",
             "tounit": "amu",
             "multiplier": "1.660538921E-27"

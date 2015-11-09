@@ -15,7 +15,7 @@
                 "@id": "component/1/purity",
                 "value": {
                     "number": 99.9999,
-                    "unit": "%(w/w)"
+                    "unitstr": "%(w/w)"
                 }
             }
         },
@@ -27,7 +27,7 @@
                 "@id": "component/2/purity",
                 "value": {
                     "number": 9.99,
-                    "unit": "%(w/w)"
+                    "unitstr": "%(w/w)"
                 }
             }
         }

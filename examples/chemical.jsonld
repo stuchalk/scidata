@@ -16,7 +16,7 @@
             "value": {
                 "@id": "purity/1/value",
                 "number": 99.9999,
-                "unit": "http://purl.obolibrary.org/obo/UO_0000167"
+                "unitref": "http://purl.obolibrary.org/obo/UO_0000167"
             }
         },
         {
@@ -27,7 +27,7 @@
             "value": {
                 "@id": "purity/2/value",
                 "number": 1.23174,
-                "unit": "http://purl.obolibrary.org/obo/UO_0000171"
+                "unitref": "http://purl.obolibrary.org/obo/UO_0000171"
             }
         }
     ]
