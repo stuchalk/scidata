@@ -1,0 +1,2934 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://stuchalk.github.io/scidata/ontology/scidata.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://stuchalk.github.io/scidata/ontology/scidata.owl">
+    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="cite" IRI="http://purl.org/spar/datacite/"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Prefix name="cheminf" IRI="http://semanticscience.org/resource/"/>
+    <Prefix name="bfo11snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
+    <Prefix name="bfo11span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2015-11-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Scientific Data Model Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stuart Chalk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to http://stuchalk.github.io/scidata.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWL-DL</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_37577"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000129"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000302"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0001508"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0400107"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0001309"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:sep_00056"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:accessRights"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:license"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:source"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:subject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:doi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cite:orcid"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cheminf:SIO_000999"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#axisLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#axisType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#basisSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemicalSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contextFacet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conversionFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataScope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSeriesType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endtime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#equivalentThings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#errorArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#errorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#methodology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#methodologyAspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#molecularSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numberArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numericDatatype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numericValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numericValueArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameterArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#permalink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificSubdiscipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siPrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siUnitEquivalent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sigfigs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#starttime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textString"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textStringArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitAbbreviation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitSymbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:maker"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:mbox"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/URL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#imperial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#siderived"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasRelatedSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:CHEBI_37577"/>
+        <Class IRI="#compound"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:OBI_0001508"/>
+        <Class IRI="#endtime"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:OBI_0001508"/>
+        <Class IRI="#starttime"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="obo:sep_00056"/>
+        <Class IRI="#unitOfMeasure"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="foaf:maker"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dc:identifier"/>
+        <Class abbreviatedIRI="bibo:doi"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="dc:identifier"/>
+        <Class IRI="#uid"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#permalink"/>
+        <Class IRI="https://schema.org/URL"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_37577"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000129"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0000302"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0001508"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0400107"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:PATO_0001309"/>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:sep_00056"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:accessRights"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:description"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:hasPart"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:identifier"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:license"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:source"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:subject"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:tableOfContents"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dc:title"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bibo:doi"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cite:orcid"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cheminf:SIO_000999"/>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#axisLabel"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#axisType"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#basisSet"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#calculation"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chemical"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chemicalSystem"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compound"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#condition"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#context"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contextFacet"/>
+        <Class IRI="#context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conversionFactor"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataAttribute"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataFormat"/>
+        <Class IRI="#scientificData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataGroup"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataName"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataPoint"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataScope"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataSeries"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataSeriesType"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataSource"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataType"/>
+        <Class IRI="#scientificData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dataset"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#endtime"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#error"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#errorArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#errorType"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#evaluation"/>
+        <Class IRI="#methodology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#material"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#measurement"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metadata"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#methodology"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#methodologyAspect"/>
+        <Class IRI="#methodology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#molecularSystem"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#number"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#numberArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#numericDatatype"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#numericValue"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#numericValueArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parameter"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parameterArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#permalink"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#property"/>
+        <Class IRI="#scientificData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#resource"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scientificData"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scientificDiscipline"/>
+        <Class IRI="#context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scientificSubdiscipline"/>
+        <Class IRI="#context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siPrefix"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siUnit"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siUnitEquivalent"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sigfigs"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#software"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#starttime"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#text"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#textArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#textString"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#textStringArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#textType"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#uid"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitAbbreviation"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitOfMeasure"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitPower"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitReference"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitSymbol"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unitSystem"/>
+        <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Agent"/>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:maker"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:mbox"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:organization"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/URL"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:CHEBI_37577</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI_37577</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_37577</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical compound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBI_0000142</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Information content entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <AbbreviatedIRI>obo:iao</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">term editor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">definition source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">IAO_0000129</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:IAO_0000302</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">General, descriptive information that characterises a chemical analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:IAO_0000302</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">IAO_0000302</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000302</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0001508</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sampling time measurement datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:OBI_0100026</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:OBI_0100026</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBI_0100026</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0100026</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:OBI_0400107</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A solid state device used to sequentially execute instructions.  In scientific research such a computer may be used to perform calculations on chemical(s) represented as molecular systems in order to estimate physical properties of the chemical(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:OBI_0400107</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:OBI_0400107</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:PATO_0001309</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The length of time over which the data was collected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>obo:PATO_0001309</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PATO_0001309</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:PATO_0001309</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:sep_00056</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sep_00056</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:sep_00056</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Examples of a Contributor include a person, an 
+            organisation, or a service.  Typically, the name of a 
+            Contributor should be used to indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An entity responsible for making contributions to the
+            content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/contributor</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coverage will typically include spatial location (a place name
+            or geographic coordinates), temporal period (a period label,
+            date, or date range) or jurisdiction (such as a named
+            administrative entity).
+            Recommended best practice is to select a value from a
+            controlled vocabulary (for example, the Thesaurus of Geographic
+            Names [TGN]) and that, where appropriate, named places or time
+            periods be used in preference to numeric identifiers such as
+            sets of coordinates or date ranges.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The extent or scope of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/coverage</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Examples of a Creator include a person, an organisation,
+            or a service.  Typically, the name of a Creator should 
+            be used to indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An entity primarily responsible for making the content 
+            of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Typically, Date will be associated with the creation or
+            availability of the resource.  Recommended best practice
+            for encoding the date value is defined in a profile of
+            ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A date associated with an event in the life cycle of the
+            resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/date</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description may include but is not limited to: an abstract,
+            table of contents, reference to a graphical representation
+            of content or a free-text account of the content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An account of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/description</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Typically, Format may include the media-type or dimensions of
+            the resource. Format may be used to determine the software,
+            hardware or other equipment needed to display or operate the
+            resource. Examples of dimensions include size and duration.
+            Recommended best practice is to select a value from a
+            controlled vocabulary (for example, the list of Internet Media
+            Types [MIME] defining computer media formats).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The physical or digital manifestation of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/format</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recommended best practice is to identify the resource by means
+            of a string or number conforming to a formal identification
+            system.
+            Example formal identification systems include the Uniform
+            Resource Identifier (URI) (including the Uniform Resource
+            Locator (URL)), the Digital Object Identifier (DOI) and the
+            International Standard Book Number (ISBN).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recommended best practice is to use RFC 3066 [RFC3066],
+            which, in conjunction with ISO 639 [ISO639], defines two-
+            and three-letter primary language tags with optional
+            subtags.  Examples include &quot;en&quot; or &quot;eng&quot; for English,
+            &quot;akk&quot; for Akkadian, and &quot;en-GB&quot; for English used in the
+            United Kingdom.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A language of the intellectual content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/language</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Examples of a Publisher include a person, an organisation,
+            or a service.
+            Typically, the name of a Publisher should be used to
+            indicate the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An entity responsible for making the resource available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/publisher</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+            Recommended best practice is to reference the resource by means
+            of a string or number conforming to a formal identification
+            system.
+        </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A reference to a related resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+            Typically, a Rights element will contain a rights 
+            management statement for the resource, or reference 
+            a service providing such information. Rights information 
+            often encompasses Intellectual Property Rights (IPR), 
+            Copyright, and various Property Rights. 
+            If the Rights element is absent, no assumptions can be made 
+            about the status of these and other rights with respect to 
+            the resource.
+        </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information about rights held in and over the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rights Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rights Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Typically, a Subject will be expressed as keywords,
+            key phrases or classification codes that describe a topic
+            of the resource.  Recommended best practice is to select 
+            a value from a controlled vocabulary or formal 
+            classification scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The topic of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject and Keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/subject</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subject and Keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">
+            Typically, a Title will be a name by which the resource is
+            formally known.
+        </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A name given to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type includes terms describing general categories, functions,
+            genres, or aggregation levels for content. Recommended best
+            practice is to select a value from a controlled vocabulary
+            (for example, the DCMI Type Vocabulary [DCMITYPE]). To 
+            describe the physical or digital manifestation of the 
+            resource, use the Format element.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The nature or genre of the content of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/type</IRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Information about who can access the resource or an indication of its security status.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">accessRights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A bibliographic reference for a resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">bibliographicCitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">citation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The person (one of the persons) that authored the scientific data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A uri pointing to a section of the scientific data report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">section</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A legal document giving official permission to do something with the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">license</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">license</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The present resource may be derived from the Source resource
+            in whole or in part.  Recommended best practice is to reference
+            the resource by means of a string or number conforming to a
+            formal identification system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A reference to a resource from which the present resource is derived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <IRI>http://purl.org/dc/elements/1.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A word or phrase that indicates a subject that is pertinent to the scientific data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A list of uris that point to the main parts of the scientific data report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">tableOfContents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">table of contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The title of a scientific data report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>bibo:doi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The digital object identifier - a unique identifer for digital assests.  See http://doi.og</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bibo:doi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">doi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bibo:doi</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">doi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>cite:orcid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The Open Researcher and Contributor Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>cite:orcid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">orcid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cite:orcid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">orcid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <AbbreviatedIRI>cheminf:SIO_000999</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A procedure is a process that attempts to achieve one or more objectives by following an established set of actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>cheminf:SIO_000999</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SIO_000999</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cheminf:SIO_000999</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#axisLabel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The title given to an axis on a graph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#axisLabel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">axisLabel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#axisLabel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">axis label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#axisType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Wether a dataseries in the independent or dependent axis of a chart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#axisType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">axisType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#axisType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">axis type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#basisSet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A set of functions (called basis functions) which are combined in linear combinations (generally as part of a quantum chemical calculation) to create molecular orbitals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#basisSet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Basis_set_%28chemistry%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#basisSet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">basisSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#basisSet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">basis set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#calculation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Computational chemistry calculation run to estimate one or properties of a molecular system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#calculation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#calculation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+        <IRI>#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">manufactured chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#chemicalSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#chemicalSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemicalSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#chemicalSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#compound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Get the gold book definition of this...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#compound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">compound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#compound</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">compound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The value of a property that, in part, characterizes the nature of the material under study in a scientific study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#context</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metadata describing the systems, organisms, or material under study and the conditions (properties) under which the study was conducted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#context</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#context</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#contextFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the chemical system (mixture), material, chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#contextFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">contextFacet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contextFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">facet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#conversionFactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A numeric multiplier used to convert a value in one unit of measure into another of the same quanity.  Fo instance, the conversion factor for converting distance in miles to distances in meters is 1609.344.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#conversionFactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">conversionFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#conversionFactor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">conversion factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataAttribute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metadata that describes summary data about a dataset, datagroup, or series.  This might include the number of points in an array, max and/or min values, or the number of dataseries in a datagroup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataAttribute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataAttribute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataFormat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The format(s) of data that are present in the report. Examples include: datapoint, dataseries, datagroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataFormat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataFormat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataGroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A data group is a logical aggregation of data from a specific process, experiment, study etc.  There are no restrictions on the type of data that can be part of the group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>#dataGroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataGroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataGroup</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The name given to characterize a data group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#dataPoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An individual data value from a scientific study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataPoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataPoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataPoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataScope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The internally (context facet) or externally referenced (uri) scope that the dataset, datagroup, dataseries, or datapoint in the report applies to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataScope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataScope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataScope</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data scope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#dataSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A set of data that is logical related to one another and for which presentation as an array is appropriate.  Examples are spectra, time series experiments, chromatograms, kinetics experiment data, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataSeries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataSeriesType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Textual description of the type of information represented in a dataseries.  This might be spectrum, chromatogram, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataSeriesType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataSeriesType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataSeriesType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data series type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The internally (methodology aspect) or externally referenced (uri) source of the dataset, datagroup, dataseries, or datapoint in the report.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataSource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dataType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A broad classification of the type(s) of data that are included in the this report.  Examples would include: property value, assay result, spectrum, physical constant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">data type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#dataset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A collection of the data obtained in the course of the scientific study.  While it is common that a dataset contain data of only type, this definition is broader and does not put any conditions that restrict the data that can be part of a dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#dataset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#endtime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The time point when collection of data stops</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#endtime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">endtime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endtime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">end time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#equivalentThings</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Other ontological definitions of terms that are equivalent to terms in the ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>#equivalentThings</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#equivalentThings</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">equivalentThings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#equivalentThings</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Equivalent things</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#error</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The amount of uncertainty in a numeric value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#error</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#error</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#errorArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of error values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#errorArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">errorArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#errorArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">error array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#errorType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The type (context) of an error value.  Errors can be relative or absolute, based off of calculations, or measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#errorType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">errorType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#errorType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">error type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#evaluation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process by which the scientific data was arrived at.  Allowed values are: experimental, calculation, theoretical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#evaluation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evaluation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#imperial</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A scale of units of measure used in the UK (British Imperial) and throughout the British Empire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#imperial</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">imperial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#imperial</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">imperial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#material</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Material is define as a chemical substance that has been synthesized with a view to a particular property or set of properties.  Typically the material is process by a manufacturing process that affords one or more chemical reactions such that the structure/composition of the material must be subsequent determined.  This designation is not meant for simple mixtures of chemicals (see chemical system).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#material</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#material</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#measurement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process used to measure a number or characteristic of an object or event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#measurement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#measurement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measurement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#metadata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metadata that generally characterizes/annotates the provenance, authority, and attribution of scientific data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>#metadata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#metadata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#metadata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Information about the methods/resources/procedures employed in the study the scientific concept(s) of the experiment(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">methodology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodology</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">methodology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#methodologyAspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different facets of scientific research that characterize the methodology by which the data was collected. This might include: the measurement setup, resources used, and procedures followed for experimentation; the input, basisset, and software used for calculations. There are no constraints on the number or organization of metadata in aspects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#methodologyAspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">methodologyAspect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodologyAspect</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">aspect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#molecularSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A definition of an atom system used as a starting point for computational chemistry calcualtions.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#molecularSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">molecularSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#molecularSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">molecular system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#number</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A numeric value without unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#number</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#number</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#numberArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of numeric values without a unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#numberArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numberArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numberArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">number array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#numericDatatype</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The formal type of a number value, usually one from a list such as integer, decimal, float, complex, or double</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#numericDatatype</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numericDatatype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numericDatatype</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numeric datatype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#numericValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A numeric number with a unit indicating the magnitude of some property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#numericValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numericValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numericValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numeric value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#numericValueArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of numeric numbers with a unit indicating the magnitude of some property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#numericValueArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numericValueArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numericValueArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">numeric value array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#parameter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A characteristic, feature, or measurable factor that can help in defining a particular system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#parameter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#parameter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#parameterArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of values for a characteristic, feature, or measurable factor that can help in defining a particular system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#parameterArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#parameterArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">parameterArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameterArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">parameter array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#permalink</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A url that will always resolve to this resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#permalink</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">permalink</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#permalink</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">permalink</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any property that can be characterized or measured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#quantity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A quantity is a measure of how much something there is, i.e. can be counted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#quantity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#resource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A material thing that was used in the context of performing scientific research.  This could include instruments, apparati, equipment, glassware, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#resource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#resource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#scientificData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Data collected during the course of a scientific experiment, calculation, study or theoretical analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#scientificData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientificData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scientificData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientific data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#scientificDiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The scientific area of study that the data comes from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#scientificDiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientificDiscipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scientificDiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientific discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#scientificSubdiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The sub area of study that the data was collected in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#scientificSubdiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientificSubdiscipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scientificSubdiscipline</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scientific subdiscipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#siPrefix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A letter used to representing a multiplier (increment in powers of three) for numeric values to make it easier to write extremely large or small numbers.  For example the SI prefix &apos;m&apos; stands for &apos;milli&apos; and represents the factor &apos;1 x 10-3&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#siPrefix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">siPrefix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siPrefix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SI prefix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#siUnit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">One of the seven base units in the International System of Units (SI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#siUnit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">siUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siUnit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SI unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#siUnitEquivalent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivlent SI unit of kg m2 s-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#siUnitEquivalent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">siUnitEquivalent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siUnitEquivalent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SI unit equivalent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#siderived</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">siderived</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siderived</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">siderived</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#sigfigs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The number (integer) of digits in a numeric value that are significant (known with certainty) plus one uncertain digit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#sigfigs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sigfigs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sigfigs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">significant figures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#software</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#software</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#starttime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The time point when either i) data is collected (ie. the end point is the same), or ii) the collection of data is started</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#starttime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">starttime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#starttime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">start time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#text</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The textual value of a parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#text</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#text</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#textArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of textual values of a parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#textArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">textArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#textArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#textString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A string of alphanumeric characters defining a textual based value for a parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#textString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">textString</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#textString</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#textStringArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An array of strings of alphanumeric characters defining a textual based set of values for a parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#textStringArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">textStringArray</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#textStringArray</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text string array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#textType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The type text in a string.  This can be plain text or a text-based encoding of information such as JSON, XML, CSV etc...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#textType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">textType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#textType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">text type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#uid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A unique identifier for a scientific data report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#uid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#uid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">uid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitAbbreviation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">In this context this is a representation of the abbreviation of a scientific unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitAbbreviation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitAbbreviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitAbbreviation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit abbreviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitOfMeasure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A unit for representing the scale that a quantity is being reported in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitOfMeasure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitOfMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitOfMeasure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitPower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The mathematical power of a unit used in presentation of a numeric value.  Are can be presente, for instance, in meters squared or m^2.  The power of the unit is 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitPower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitPower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitPower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A URI pointing to the definition of a unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitReference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitReference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitSymbol</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Symbol commoly used to represent a scientific unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitSymbol</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitSymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitSymbol</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#unitSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A system of measurement is a collection of units of measurement and rules relating them to each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#unitSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/System_of_measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#unitSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unitSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitSystem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
+        <IRI>http://www.geneontology.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Dependent Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Generically dependent continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Independent Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Occurrent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualEntity</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Processual Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SpatiotemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Spatiotemporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Spatiotemporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConnectedTemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Connected temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TemporalInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Temporal interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Temporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The email address of the author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mbox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Information describing the entity that employs the author of this research data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Uniform resource locator - a http based link to a page of information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">url</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
