@@ -43,15 +43,15 @@
             "@type": "string"
         },
         "vendorid": {
-            "@id": "sci:cpuVendorID",
+            "@id": "comp:cpuVendorID",
             "@type": "string"
         },
         "family": {
-            "@id": "sci:cpuFamily",
+            "@id": "comp:cpuFamily",
             "@type": "string"
         },
         "model": {
-            "@id": "sci:cpuModelNumber",
+            "@id": "comp:cpuModelNumber",
             "@type": "string"
         },
         "modelname": {

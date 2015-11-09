@@ -1,5 +1,6 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
@@ -11,7 +12,7 @@
             "name": {"@type": "name"},
             "scope": {"@type": "scope"},
             "materialType": {"@type": "materialType"},
-            "manufacture": {"@type": "manufacture"},
+            "manufactured": {"@type": "manufactured"},
             "source": {"@type": "source"},
             "notes": {"@type": "notes"}
         },
@@ -20,23 +21,23 @@
             "@type": "string"
         },
         "materialType": {
-            "@id": "sci:materialType",
+            "@id": "mat:materialType",
             "@type": "string"
         },
         "composition": {
-            "@id": "sci:composition",
+            "@id": "mat:composition",
             "@type": "string"
         },
         "manufacture": {
-            "@id": "sci:manufacture",
+            "@id": "mat:manufactured",
             "@type": "string"
         },
         "source": {
-            "@id": "sci:source",
+            "@id": "mat:source",
             "@type": "string"
         },
         "property": {
-            "@id": "sci:property",
+            "@id": "mat:property",
             "@type": "parameter"
         }
     }

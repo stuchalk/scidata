@@ -17,7 +17,7 @@
             "facets": {"@type": "facets"}
         },
         "facets": {
-            "@id": "sci:contextFacet",
+            "@id": "sci:facet",
             "system": {"@type": "chemicalsystem"},
             "solution": {"@type": "chemicalsystem"},
             "chemical": {"@type": "chemical"},
