@@ -33,7 +33,7 @@
         "methodology": {
             "@id": "methodology",
             "evaluation": "experimental,extracted",
-            "aspects": [{
+            "aspects": [{"measurement": {
                 "@id": "measurement/1",
                 "techniqueType": "spectroscopic",
                 "technique": "light refraction",
@@ -48,14 +48,14 @@
                         "unit": "nm"
                     }
                 }]
-            }]
+            }}]
         },
         "context": {
             "@id": "context",
             "discipline": "chemistry",
             "subdiscipline": "physical chemistry",
             "facets": [
-                {
+                {"system": {
                     "@id": "system/1",
                     "type": "Binary mixture",
                     "phase": "liquid",
@@ -87,41 +87,45 @@
                             }
                         }
                     ]
-                },
-                {
-                    "@id": "compound/1",
-                    "name": "Water",
-                    "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N"
-                },
-                {
-                    "@id": "compound/2",
-                    "name": "Hydrogen chloride",
-                    "inchikey": "VEXZGXHMUGYJMC-UHFFFAOYSA-N"
-                },
-                {
-                    "@id": "condition/1",
-                    "source": "measurement/1",
-                    "scope": "system/1",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/1/value",
-                        "number": 20,
-                        "unit": "°C"
+                }},
+                {"compound": [
+                    {
+                        "@id": "compound/1",
+                        "name": "Water",
+                        "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N"
+                    },
+                    {
+                        "@id": "compound/2",
+                        "name": "Hydrogen chloride",
+                        "inchikey": "VEXZGXHMUGYJMC-UHFFFAOYSA-N"
                     }
-                },
-                {
-                    "@id": "condition/2",
-                    "source": "measurement/1",
-                    "scope": "system/1",
-                    "quantity": "Relative fractional amount",
-                    "property": "Mass fraction",
-                    "value": {
-                        "@id": "condition/2/value",
-                        "number": 0.043043,
-                        "unit": "g/g"
+                ]},
+                {"condition": [
+                    {
+                        "@id": "condition/1",
+                        "source": "measurement/1",
+                        "scope": "system/1",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/1/value",
+                            "number": 20,
+                            "unit": "°C"
+                        }
+                    },
+                    {
+                        "@id": "condition/2",
+                        "source": "measurement/1",
+                        "scope": "system/1",
+                        "quantity": "Relative fractional amount",
+                        "property": "Mass fraction",
+                        "value": {
+                            "@id": "condition/2/value",
+                            "number": 0.043043,
+                            "unit": "g/g"
+                        }
                     }
-                }
+                ]}
             ]
         },
         "dataset": {

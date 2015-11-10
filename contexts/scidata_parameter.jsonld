@@ -17,7 +17,7 @@
             "property": {"@type": "property"},
             "propertyref": {"@type": "propertyref"},
             "value": {"@type": "value"},
-            "text": {"@type": "textstring"}
+            "textstring": {"@type": "textstring"}
         },
         "parameterArray": {
             "@id": "sci:parameterArray",
