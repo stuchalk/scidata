@@ -57,8 +57,8 @@
             "facets": [
                 {"system": {
                     "@id": "system/1",
-                    "type": "Binary mixture",
-                    "phase": "liquid",
+                    "systemtype": "Binary mixture",
+                    "systemphase": "liquid",
                     "components": [
                         {
                             "@id": "system/1/component/1",

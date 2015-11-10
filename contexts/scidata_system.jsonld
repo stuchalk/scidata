@@ -12,7 +12,7 @@
             "name": {"@type": "name"},
             "systemtype": {"@type": "systemtype"},
             "systemphase": {"@type": "systemphase"},
-            "component": {"@type": "component"}
+            "components": {"@type": "components"}
         },
         "name": {
             "@id": "dc:title",
@@ -26,7 +26,7 @@
             "@id": "sys:phaseOfMatter",
             "@type": "string"
         },
-        "component": {
+        "components": {
             "@id": "sys:component",
             "@type": "chemical"
         }
