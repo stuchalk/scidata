@@ -32,7 +32,7 @@
         "methodology": {
             "@id": "methodology",
             "evaluation": "experimental",
-            "aspects": [{
+            "aspects": [{"measurement": [{
                 "@id": "measurement/1",
                 "techniqueType": "spectroscopic",
                 "technique": "Nuclear Magnetic Resonance",
@@ -105,14 +105,14 @@
                         }
                     }
                 ]
-            }]
+            }]}]
         },
         "context": {
             "@id": "context",
             "discipline": "chemistry",
             "subdiscipline": "analytical chemistry",
             "facets": [
-                {
+                {"system": [{
                     "@id": "system/1",
                     "name": "(+)-(r)-limonene and Chloroform-d",
                     "description": "A mixture of two organic compounds",
@@ -127,25 +127,27 @@
                             "scope": "compound/2"
                         }
                     ]
-                },
-                {
-                    "@id": "compound/1",
-                    "name": "(+)-(r)-limonene",
-                    "formula": "C10H16",
-                    "molweight": "136.234",
-                    "inchi": "InChI=1S/C10H16/c1-8(2)10-6-4-9(3)5-7-10/h4,10H,1,5-7H2,2-3H3/t10-/m0/s1",
-                    "inchikey": "XMGQYMWWDOXHJM-JTQLQIEISA-N",
-                    "iupacname": "(4R)-1-methyl-4-prop-1-en-2-ylcyclohexene"
-                },
-                {
-                    "@id": "compound/2",
-                    "name": "Chloroform-d",
-                    "formula": "CHCl3",
-                    "molweight": "120.384",
-                    "inchi": "InChI=1S/CHCl3/c2-1(3)4/h1H/i1D",
-                    "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N",
-                    "iupacname": "trichloro(deuterio)methane"
-                }
+                }]},
+                {"compound": [
+                    {
+                        "@id": "compound/1",
+                        "name": "(+)-(r)-limonene",
+                        "formula": "C10H16",
+                        "molweight": "136.234",
+                        "inchi": "InChI=1S/C10H16/c1-8(2)10-6-4-9(3)5-7-10/h4,10H,1,5-7H2,2-3H3/t10-/m0/s1",
+                        "inchikey": "XMGQYMWWDOXHJM-JTQLQIEISA-N",
+                        "iupacname": "(4R)-1-methyl-4-prop-1-en-2-ylcyclohexene"
+                    },
+                    {"compound": {
+                        "@id": "compound/2",
+                        "name": "Chloroform-d",
+                        "formula": "CHCl3",
+                        "molweight": "120.384",
+                        "inchi": "InChI=1S/CHCl3/c2-1(3)4/h1H/i1D",
+                        "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N",
+                        "iupacname": "trichloro(deuterio)methane"
+                    }}
+                ]}
             ]
         },
         "dataset": {
@@ -155,32 +157,6 @@
             "datagroup": {
                 "@id": "datagroup/1",
                 "type": "spectrum",
-                "format": "(x++(y..y))",
-                "level": "processed",
-                "origin": [
-                    {"filename": "nmr.jdx"},
-                    {"filetype": "jcamp"},
-                    {"version": "5.00"},
-                    {"date": "2007-11-05T17:25:52-05:00"},
-                    {"owner": "ochem"},
-                    {"asdfType": "SQZPAC"},
-                    {"fileComments": {
-                        "ldr_title": "Begin of the data block",
-                        "ldr_jcampdx": "ACD/SpecManager v 12.01",
-                        "ldr_end": "End of the data block"
-                    }},
-                    {"conversionErrors": {
-                        "LDRS": {"E12": "No data format in file (defaulting to FIX)"},
-                        "DECOMPRESS": {
-                            "E08": "(Set 1) NOTE: Compression format detected as SQZPAC",
-                            "E35": "(Set 1, line 1067) Mismatch in X values (missing data?) (DIFF: 0.014536379662898) -582.48465988:-582.40000000",
-                            "E12": "(Set 1) NPOINTS (16384) does not match points found (16428)",
-                            "E25": "(Set 1) FIRSTY (448.125) does not match first Y point (448.1)",
-                            "E24": "(Set 1) FIRSTX (4184.02539063) does not match actual first x point (4184.00000000)",
-                            "E29": "(Set 1) MINY (-8613.37500000) does not match point found (-8613.4)"
-                        }
-                    }}
-                ],
                 "attribute": [
                     {
                         "@id": "attribute/1",

@@ -60,7 +60,7 @@
             "@id": "methodology",
             "evaluation": "calculated",
             "aspects": [
-                {
+                {"calculation": [{
                     "@id": "calculation",
                     "approach": "quantum mechanics",
                     "calculations": [{
@@ -70,13 +70,13 @@
                         "determinant": "single",
                         "spin": "cs:UHF"
                     }]
-                },
-                {
+                }]},
+                {"software": [{
                     "@id": "software",
                     "name": "HyperChem",
                     "input": "...",
                     "output": "..."
-                }
+                }]}
             ]
         },
         "context": {
@@ -84,7 +84,7 @@
             "discipline": "chemistry",
             "subdiscipline": "computational chemistry",
             "aspects": [
-                {
+                {"molsystem": [{
                     "@id": "molsystem/1",
                     "temperature": {
                         "@id": "molsystem/1/temperature",
@@ -1549,8 +1549,8 @@
                             ]
                         }
                     ]
-                },
-                {
+                }]},
+                {"computer": [{
                     "@id": "computer",
                     "architecture": "x86_64",
                     "cpu": {
@@ -1575,7 +1575,7 @@
                         "l3cache": "10240K"
                     },
                     "ram": "4 GB"
-                }
+                }]}
             ]
         },
         "dataset": {
