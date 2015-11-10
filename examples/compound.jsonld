@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/chemical.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/chemical.jsonld#"}
     ],
     "@id": "",
     "name": "Water",

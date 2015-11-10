@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_parametergroup.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/parametergroup.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/parametergroup.jsonld#"}
     ],
     "@id": "",
     "group": "test",

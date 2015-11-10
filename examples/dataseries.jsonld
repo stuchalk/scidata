@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/dataseries.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/dataseries.jsonld#"}
     ],
     "@id": "",
     "label": "Signal (Arbitrary Units)",

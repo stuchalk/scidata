@@ -2,7 +2,7 @@
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
         "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/numericvalue.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/numericvalue.jsonld#"}
     ],
     "@id": "",
     "number": 12.0107,

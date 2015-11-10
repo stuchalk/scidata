@@ -19,7 +19,7 @@
         "facets": {
             "@id": "sci:facet",
             "system": {"@type": "chemicalsystem"},
-            "solution": {"@type": "chemicalsystem"},
+            "solution": {"@type": "solution"},
             "chemical": {"@type": "chemical"},
             "compound": {"@type": "compound"},
             "material": {"@type": "material"},
@@ -35,6 +35,10 @@
         "subdiscipline": {
             "@id": "sci:subdiscipline",
             "@type": "string"
+        },
+        "solution": {
+            "@id": "sci:chemicalSystem",
+            "@type": "system"
         },
         "chemicalsystem": {
             "@id": "sci:chemicalSystem",

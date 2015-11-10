@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/ri.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/ri.jsonld#"}
     ],
     "@id": "",
     "uid": "stuchalk/example/ri",
