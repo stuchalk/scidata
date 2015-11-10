@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/calculation.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/calculation.jsonld#"}
     ],
     "@id": "",
     "approach": "quantum mechanics",

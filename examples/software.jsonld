@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/software.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/software.jsonld#"}
     ],
     "@id": "",
     "name": "HyperChem",

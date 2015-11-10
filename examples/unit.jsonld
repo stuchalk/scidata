@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/unit.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/unit.jsonld#"}
     ],
     "@id": "",
     "name": "Mile per hour",

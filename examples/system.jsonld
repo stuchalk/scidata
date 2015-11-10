@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/system.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/system.jsonld#"}
     ],
     "@id": "",
     "type": "Binary mixture",

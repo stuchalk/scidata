@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/measurement.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/measurement.jsonld#"}
     ],
     "@id": "",
     "techniqueType": "spectroscopic",

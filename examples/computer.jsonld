@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/computer.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/computer.jsonld#"}
     ],
     "@id": "",
     "architecture": "x86_64",
