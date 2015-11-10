@@ -6,7 +6,7 @@
     "@id": "",
     "discipline": "chemistry",
     "subdiscipline": "analytical chemistry",
-    "facets": [{
+    "facets": [{"system": {
         "@id": "system",
         "name": "R-(-)-Carvone and Chloroform-d",
         "description": "Solution prepared for 1H NMR analysis",
@@ -24,5 +24,5 @@
                 "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
             }
         ]
-    }]
+    }}]
 }
