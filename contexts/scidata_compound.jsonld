@@ -27,6 +27,10 @@
             "@id": "ss:CHEMINF_000107",
             "@type": "string"
         },
+        "synonyms": {
+            "@id": "ss:SIO_000122",
+            "@type": "string"
+        },
         "inchi": {
             "@id": "ss:CHEMINF_000058",
             "@type": "string"
