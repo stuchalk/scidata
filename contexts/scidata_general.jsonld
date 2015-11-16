@@ -1,0 +1,21 @@
+{"@context": [
+    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "ss": "http://semanticscience.org/resource/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "chem": "http://stuchalk.github.io/scidata/ontology/scidata_chemical.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "url": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "updated": {
+            "@id": "dc:date",
+            "@type": "dateTime"
+        }
+    }
+]}
