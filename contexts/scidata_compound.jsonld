@@ -50,6 +50,10 @@
         "chebi": {
             "@id": "edam:data_1174",
             "@type": "@id"
+        },
+        "casrn": {
+            "@id": "edam:data_3102",
+            "@type": "string"
         }
     }
 ]}
