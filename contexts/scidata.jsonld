@@ -15,7 +15,7 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "uid": {
-            "@id": "sci:uid",
+            "@id": "dc:identifier",
             "@type": "string"
         },
         "title": {
@@ -37,10 +37,6 @@
             "@id": "foaf:organization",
             "@type": "string"
         },
-        "publisher": {
-            "@id": "dc:publisher",
-            "@type": "string"
-        },
         "email": {
             "@id": "foaf:mbox",
             "@type": "string"
@@ -51,6 +47,10 @@
         },
         "description": {
             "@id": "dc:description",
+            "@type": "string"
+        },
+        "publisher": {
+            "@id": "dc:publisher",
             "@type": "string"
         },
         "version": {
@@ -74,7 +74,7 @@
             "@type": "duration"
         },
         "permalink": {
-            "@id": "sci:permalink",
+            "@id": "schema:url",
             "@type": "anyURI"
         },
         "related": {
@@ -82,7 +82,7 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "dc:tableOfContents ",
+            "@id": "dc:tableOfContents",
             "sections": {"@type": "sections"}
         },
         "sections": {
@@ -111,15 +111,15 @@
             "@type": "string"
         },
         "methodology": {
-            "@id": "sci:methodology",
+            "@id": "sci:hasMethodology",
             "@type": "methodology"
         },
         "context": {
-            "@id": "sci:context",
+            "@id": "sci:hasContext",
             "@type": "context"
         },
         "dataset": {
-            "@id": "sci:dataset",
+            "@id": "sci:hasDataset",
             "@type": "dataset"
         },
         "source": {

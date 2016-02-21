@@ -27,27 +27,27 @@
             "@type": "string"
         },
         "measurement": {
-            "@id": "sci:measurement",
+            "@id": "sci:hasMeasurement",
             "@type": "measurement"
         },
         "resource": {
-            "@id": "sci:resource",
+            "@id": "sci:hasResource",
             "@type": "resource"
         },
         "procedure": {
-            "@id": "sci:procedure",
+            "@id": "sci:hasProcedure",
             "@type": "procedure"
         },
         "calculation": {
-            "@id": "sci:calculation",
+            "@id": "sci:hasCalculation",
             "@type": "calculation"
         },
         "basisset": {
-            "@id": "sci:basisSet",
+            "@id": "sci:hasBasisSet",
             "@type": "basisset"
         },
         "software": {
-            "@id": "sci:software",
+            "@id": "sci:hasSoftware",
             "@type": "software"
         }
     }
