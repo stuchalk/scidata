@@ -1,10 +1,10 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/scidata.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/pH/"}
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/ph.jsonld#"}
     ],
-    "@id": "meta",
-    "uid": "stuchalk/example/pH",
+    "@id": "",
+    "uid": "scidata/example/ph",
     "title": "pH of cyanide standard",
     "author": [{
         "@id": "author/1",
@@ -14,12 +14,18 @@
         "orcid": "0000-0002-0703-7776"
     }],
     "description": "Determination of the pH of a 3 ppm cyanide solution after complete reaction",
-    "publisher": "Chalk Group, UNF",
-    "keywords": "cyanide, pH",
-    "permalink": "http://scidata.io/stuchalk/mea092",
+    "publisher": "Chalk Group, Department of Chemistry, University of North Florida",
+    "version": 1,
+    "keywords": [
+        "Cyanide",
+        "pH",
+        "Example Data"
+    ],
+    "permalink": "http://stuchalk.github.io/scidata/examples/ph.jsonld",
     "related": [
-        "http://scidata.io/stuchalk/prj003",
-        "http://scidata.io/stuchalk/exp021"
+        "http://stuchalk.github.io/scidata/examples/ri.jsonld",
+        "http://stuchalk.github.io/scidata/examples/nmr.jsonld",
+        "http://stuchalk.github.io/scidata/examples/scf.jsonld"
     ],
     "toc": {
         "@id": "toc",
@@ -33,19 +39,21 @@
             "context/compound/4",
             "context/compound/5",
             "context/compound/6",
-            "context/condition/1"
+            "context/condition/1",
+            "dataset/datapoint/1",
+            "dataset/datapoint/2"
         ]
     },
     "scidata": {
         "@id": "scidata",
-        "type": "property value",
+        "type": ["property value"],
         "property": ["pH"],
-        "kind": ["single reading"],
+        "kind": ["datapoint"],
         "methodology": {
             "@id": "methodology",
             "evaluation": "experimental",
             "aspects": [
-                {
+                {"measurement": {
                     "@id": "measurement/1",
                     "scope": "resource/1",
                     "techniqueType": "ion-selective electrode",
@@ -55,23 +63,23 @@
                         "@id": "setting/1",
                         "quantity": "instrument feature",
                         "property": "Temperature compensation",
-                        "textstr": {
+                        "text": {
                             "@id": "setting/1/value",
                             "text": "true"
                         }
                     }]
-                },
-                {
+                }},
+                {"resource": {
                     "@id": "resource/1",
                     "type": "instrument",
                     "name": "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode",
                     "vendor": "Fisher Scientific",
                     "catalognumber": "13-620-530A"
-                },
-                {
+                }},
+                {"procedure": {
                     "@id": "procedure/1",
                     "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken"
-                }
+                }}
             ]
         },
         "context": {
@@ -79,7 +87,7 @@
             "discipline": "chemistry",
             "subdiscipline": "analytical chemistry",
             "facets": [
-                {
+                {"solution": [{
                     "@id": "solution/1",
                     "title": "3 ppm cyanide standard solution",
                     "component": [
@@ -94,7 +102,7 @@
                                 "value": {
                                     "@id": "solution/1/component/1/property/1/value",
                                     "number": 2.99,
-                                    "unit": "ppm (w/v)"
+                                    "unitstr": "ppm (w/v)"
                                 }
                             }
                         },
@@ -126,50 +134,55 @@
                     ],
                     "volume": {
                         "@id": "solution/1/volume",
+                        "quantity": "volume",
+                        "property": "Volume of solution",
                         "value": {
                             "@id": "solution/1/volume/value",
+                            "datatype": "decimal",
                             "number": 100,
-                            "unit": "mL"
+                            "unitstr": "mL"
                         }
                     }
-                },
-                {
-                    "@id": "compound/1",
-                    "name": "cyanide ion",
-                    "inchi": "InChI=1S/CN/c1-2/q-1",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:17514"
-                },
-                {
-                    "@id": "compound/2",
-                    "name": "phenolphthlin",
-                    "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:34915"
-                },
-                {
-                    "@id": "compound/3",
-                    "name": "copper(II) ion",
-                    "inchi": "InChI=1S/Cu/q+2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:29036"
-                },
-                {
-                    "@id": "compound/4",
-                    "name": "tetraborate ion",
-                    "inchi": "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:38889"
-                },
-                {
-                    "@id": "compound/5",
-                    "name": "ethanol",
-                    "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:16236"
-                },
-                {
-                    "@id": "compound/6",
-                    "name": "water",
-                    "inchi": "InChI=1S/H2O/h1H2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
-                },
-                {
+                }]},
+                {"compound": [
+                    {
+                        "@id": "compound/1",
+                        "name": "cyanide ion",
+                        "inchi": "InChI=1S/CN/c1-2/q-1",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:17514"
+                    },
+                    {
+                        "@id": "compound/2",
+                        "name": "phenolphthlin",
+                        "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:34915"
+                    },
+                    {
+                        "@id": "compound/3",
+                        "name": "copper(II) ion",
+                        "inchi": "InChI=1S/Cu/q+2",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:29036"
+                    },
+                    {
+                        "@id": "compound/4",
+                        "name": "tetraborate ion",
+                        "inchi": "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:38889"
+                    },
+                    {
+                        "@id": "compound/5",
+                        "name": "ethanol",
+                        "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:16236"
+                    },
+                    {
+                        "@id": "compound/6",
+                        "name": "water",
+                        "inchi": "InChI=1S/H2O/h1H2",
+                        "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
+                    }
+                ]},
+                {"condition": [{
                     "@id": "condition/1",
                     "source": "measurement/1",
                     "scope": "solution/1",
@@ -178,9 +191,9 @@
                     "value": {
                         "@id": "condition/1/value",
                         "number": "22.8",
-                        "unit": "°C"
+                        "unitstr": "°C"
                     }
-                }
+                }]}
             ]
         },
         "dataset": {
@@ -201,10 +214,10 @@
                     "@id": "datapoint/2",
                     "quantity": "annotation",
                     "property": "Observation",
-                    "string": {
+                    "textstring": {
                         "@id": "datapoint/2/value",
                         "text": "The solution was clear, no reagent precipiation was observed.",
-                        "format": "plain",
+                        "texttype": "plain",
                         "language": "en-us"
                     }
                 }
@@ -214,7 +227,7 @@
     "source": {
         "@id": "source",
         "citation": "Chalk Research Group http://chalk.coas.unf.edu",
-        "url": "http://scidata.io/stuchalk/example/pH"
+        "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
     },
     "rights": {
         "@id": "rights",

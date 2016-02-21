@@ -1,17 +1,18 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "material": {
-            "@id": "sci:measurement",
+            "@id": "sci:material",
             "name": {"@type": "name"},
             "scope": {"@type": "scope"},
             "materialType": {"@type": "materialType"},
-            "manufacture": {"@type": "manufacture"},
+            "manufactured": {"@type": "manufactured"},
             "source": {"@type": "source"},
             "notes": {"@type": "notes"}
         },
@@ -20,23 +21,23 @@
             "@type": "string"
         },
         "materialType": {
-            "@id": "sci:materialType",
+            "@id": "mat:materialType",
             "@type": "string"
         },
         "composition": {
-            "@id": "sci:composition",
+            "@id": "mat:composition",
             "@type": "string"
         },
         "manufacture": {
-            "@id": "sci:manufacture",
+            "@id": "mat:manufactured",
             "@type": "string"
         },
         "source": {
-            "@id": "sci:source",
+            "@id": "mat:source",
             "@type": "string"
         },
         "property": {
-            "@id": "sci:property",
+            "@id": "mat:property",
             "@type": "parameter"
         }
     }

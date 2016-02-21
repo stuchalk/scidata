@@ -1,11 +1,11 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_measurement.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_resource.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_procedure.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_calculation.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_basisset.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_software.jsonld",
-    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
+    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "methodology": {
@@ -27,27 +27,27 @@
             "@type": "string"
         },
         "measurement": {
-            "@id": "sci:measurement",
+            "@id": "sci:hasMeasurement",
             "@type": "measurement"
         },
         "resource": {
-            "@id": "sci:resource",
+            "@id": "sci:hasResource",
             "@type": "resource"
         },
         "procedure": {
-            "@id": "sci:procedure",
+            "@id": "sci:hasProcedure",
             "@type": "procedure"
         },
         "calculation": {
-            "@id": "sci:calculation",
+            "@id": "sci:hasCalculation",
             "@type": "calculation"
         },
         "basisset": {
-            "@id": "sci:basisSet",
+            "@id": "sci:hasBasisSet",
             "@type": "basisset"
         },
         "software": {
-            "@id": "sci:software",
+            "@id": "sci:hasSoftware",
             "@type": "software"
         }
     }

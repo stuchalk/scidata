@@ -1,14 +1,13 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_methodology.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_dataset.jsonld",
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_csi.jsonld",
-    {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
+     {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
-        "ss": "http://semanticscience.org/resource/",
+        "bibo": "http://purl.obolibrary.org/obo/bibo/",
         "dc": "http://purl.org/dc/terms/",
         "schema": "http://schema.org/",
         "bse": "http://purl.oclc.org/NET/EMSL/BSE"
@@ -31,15 +30,11 @@
             "orcid": {"@type": "orcid"}
         },
         "name": {
-            "@id": "foaf:name",
+            "@id": "obo:IAO_0000302",
             "@type": "string"
         },
         "organization": {
             "@id": "foaf:organization",
-            "@type": "string"
-        },
-        "publisher": {
-            "@id": "dc:publisher",
             "@type": "string"
         },
         "email": {
@@ -54,17 +49,29 @@
             "@id": "dc:description",
             "@type": "string"
         },
+        "publisher": {
+            "@id": "dc:publisher",
+            "@type": "string"
+        },
         "version": {
             "@id": "obo:IAO_0000129",
             "@type": "string"
         },
         "keywords": {
-            "@id": "dc:keyword",
+            "@id": "dc:subject",
             "@type": "string"
         },
-        "date": {
-            "@id": "dc:created",
+        "starttime": {
+            "@id": "obi:OBI_0001508",
             "@type": "dateTime"
+        },
+        "endtime": {
+            "@id": "obo:OBI_0001508",
+            "@type": "dateTime"
+        },
+        "duration": {
+            "@id": "obo:PATO_0001309",
+            "@type": "duration"
         },
         "permalink": {
             "@id": "schema:url",
@@ -75,8 +82,8 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "dc:tableOfContents ",
-            "sections": {"@type": "type"}
+            "@id": "dc:tableOfContents",
+            "sections": {"@type": "sections"}
         },
         "sections": {
             "@id": "dc:hasPart",
@@ -96,23 +103,23 @@
             "@type": "string"
         },
         "property": {
-            "@id": "sci:physicalProperty",
+            "@id": "sci:property",
             "@type": "string"
         },
         "kind": {
-            "@id": "sci:dataKind",
+            "@id": "sci:dataFormat",
             "@type": "string"
         },
         "methodology": {
-            "@id": "sci:methodology",
+            "@id": "sci:hasMethodology",
             "@type": "methodology"
         },
         "context": {
-            "@id": "sci:context",
+            "@id": "sci:hasContext",
             "@type": "context"
         },
         "dataset": {
-            "@id": "sci:dataset",
+            "@id": "sci:hasDataset",
             "@type": "dataset"
         },
         "source": {
@@ -130,7 +137,7 @@
             "@type": "anyURI"
         },
         "doi": {
-            "@id": "dc:identifier",
+            "@id": "bibo:doi",
             "@type": "string"
         },
         "rights": {

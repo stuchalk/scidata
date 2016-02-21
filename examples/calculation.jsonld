@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_calculation.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/calculation/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/calculation.jsonld#"}
     ],
     "@id": "",
     "approach": "quantum mechanics",

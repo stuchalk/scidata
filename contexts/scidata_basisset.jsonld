@@ -6,7 +6,7 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "basisSet": {
-            "@id": "gc:basisSet",
+            "@id": "sci:basisSet",
             "title": {"@type": "title"},
             "description": {"@type": "description"},
             "format": {"@type": "format"},

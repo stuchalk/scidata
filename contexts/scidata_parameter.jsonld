@@ -1,54 +1,56 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "parameter": {
             "@id": "sci:parameter",
-            "scope": {"@type": "scope"},
+            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
             "property": {"@type": "property"},
-            "parameters": {"@type": "parameter"},
+            "propertyref": {"@type": "propertyref"},
             "value": {"@type": "value"},
-            "textstr": {"@type": "textstr"}
+            "textstring": {"@type": "textstring"}
         },
-        "scope": {
-            "@id": "sci:hasScope",
+        "parameterArray": {
+            "@id": "sci:parameterArray",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
+            "property": {"@type": "property"},
+            "propertyref": {"@type": "propertyref"},
+            "valuearray": {"@type": "valuearray"},
+            "textarray": {"@type": "textstringarray"}
+        },
+        "source": {
+            "@id": "sci:dataSource",
             "@type": "@id"
         },
-        "quantity": {
-            "@id": "sci:isQuantity",
-            "@type": "string"
-        },
-        "property": {
-            "@id": "sci:isProperty",
-            "name": {"@type": "name"},
-            "code": {"@type": "code"},
-            "codeType": {"@type": "codeType"}
+        "scope": {
+            "@id": "sci:dataScope",
+            "@type": "@id"
         },
         "name": {
             "@id": "dc:title",
             "@type": "string"
         },
-        "code": {
-            "@id": "sci:hasPropertyCode",
+        "property": {
+            "@id": "sci:property",
             "@type": "string"
         },
-        "codeType": {
-            "@id": "sci:hasPropertyCodeType",
-            "@type": "string"
-        },
-        "value": {
-            "@id": "sci:hasParameterValue",
-            "@type": "numericValue"
-        },
-        "textstr": {
-            "@id": "sci:hasParameterValue",
-            "@type": "textString"
+        "propertyref": {
+            "@id": "sci:property",
+            "@type": "@id"
         }
     }
 ]}

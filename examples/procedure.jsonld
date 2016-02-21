@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_procedure.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/procedure/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/procedure.jsonld#"}
     ],
     "@id": "",
     "title": "pH meter calibration",

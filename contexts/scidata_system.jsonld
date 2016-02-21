@@ -1,7 +1,8 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_chemical.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sys": "http://stuchalk.github.io/scidata/ontology/scidata_system.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {
@@ -9,28 +10,24 @@
         "system": {
             "@id": "sci:chemicalSystem",
             "name": {"@type": "name"},
-            "systemType": {"@type": "systemType"},
-            "phase": {"@type": "phase"},
+            "systemtype": {"@type": "systemtype"},
+            "systemphase": {"@type": "systemphase"},
             "components": {"@type": "components"}
         },
         "name": {
             "@id": "dc:title",
             "@type": "string"
         },
-        "systemType": {
-            "@id": "sci:systemType",
+        "systemtype": {
+            "@id": "sys:systemType",
             "@type": "string"
         },
-        "grade": {
-            "@id": "sci:grade",
-            "@type": "string"
-        },
-        "phase": {
-            "@id": "sci:phase",
+        "systemphase": {
+            "@id": "sys:phaseOfMatter",
             "@type": "string"
         },
         "components": {
-            "@id": "sci:components",
+            "@id": "sys:component",
             "@type": "chemical"
         }
     }

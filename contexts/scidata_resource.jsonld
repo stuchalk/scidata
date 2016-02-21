@@ -1,8 +1,8 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
@@ -20,7 +20,7 @@
             "@type": "string"
         },
         "type": {
-            "@id": "sci:resourceType",
+            "@id": "res:resourceType",
             "@type": "string"
         },
         "vendor": {
@@ -32,11 +32,11 @@
             "@type": "string"
         },
         "source": {
-            "@id": "sci:source",
+            "@id": "res:resourceSource",
             "@type": "string"
         },
         "property": {
-            "@id": "sci:resourceProperty",
+            "@id": "res:resourceProperty",
             "@type": "parameter"
         }
     }

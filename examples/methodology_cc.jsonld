@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_methodology.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/ccmethodology/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/methodology_cc.jsonld#"}
     ],
     "@id": "",
     "evaluation": "calculation",
@@ -22,7 +22,7 @@
             "spin": "UHF"
         },
         {
-            "@id": "basisset",
+            "@id": "basisset/1",
             "title": "3-21G",
             "description": "A test BSE basis set",
             "format": "gaussian94",

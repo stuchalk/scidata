@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_resource.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/resource/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/resource.jsonld#"}
     ],
     "@id": "",
     "type": "instrument",

@@ -1,33 +1,104 @@
 {"@context": [
-    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "comp": "http://stuchalk.github.io/scidata/ontology/computer.owl#"
+    },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "computer": {
-            "@id": "sci:computerHardware",
+            "@id": "sci:computer",
             "architecture": {"@type": "architecture"},
-            "precision": {"@type": "version"},
+            "cpu": {"@type": "cpu"},
+            "byteorder": {"@type": "byteorder"},
+            "threadspercore": {"@type": "threadspercore"},
+            "corespersocket": {"@type": "corespersocket"},
+            "sockets": {"@type": "sockets"},
             "cache": {"@type": "cache"},
-            "ram": {"@type": "ram"},
-            "gpu": {"@type": "gpu"}
+            "ram": {"@type": "ram"}
         },
         "architecture": {
-            "@id": "sci:architecture",
+            "@id": "comp:architecture",
             "@type": "string"
         },
-        "precision": {
-            "@id": "sci:precision",
+        "cpu": {
+            "@id": "comp:centralProcessingUnit",
+            "opmodes": {"@type": "opmodes"},
+            "count": {"@type": "count"},
+            "speed": {"@type": "speed"},
+            "vendorid": {"@type": "vendorid"},
+            "family": {"@type": "family"},
+            "model": {"@type": "model"},
+            "modelname": {"@type": "modelname"}
+        },
+        "opmodes": {
+            "@id": "comp:cpuOpModes",
+            "@type": "string"
+        },
+        "count": {
+            "@id": "comp:cpuCount",
+            "@type": "integer"
+        },
+        "speed": {
+            "@id": "comp:cpuSpeed",
+            "@type": "string"
+        },
+        "vendorid": {
+            "@id": "comp:cpuVendorID",
+            "@type": "string"
+        },
+        "family": {
+            "@id": "comp:cpuFamily",
+            "@type": "string"
+        },
+        "model": {
+            "@id": "comp:cpuModelNumber",
+            "@type": "string"
+        },
+        "modelname": {
+            "@id": "comp:cpuModelName",
+            "@type": "string"
+        },
+        "byteorder": {
+            "@id": "comp:byteOrder",
+            "@type": "string"
+        },
+        "threadspercore": {
+            "@id": "comp:threadsPerCore",
+            "@type": "string"
+        },
+        "corespersocket": {
+            "@id": "comp:coresPerSocket",
+            "@type": "string"
+        },
+        "sockets": {
+            "@id": "comp:sockets",
             "@type": "string"
         },
         "cache": {
-            "@id": "sci:onbaordCache",
+            "@id": "comp:onboardCache",
+            "l1data": {"@type": "l1datacache"},
+            "l1inst": {"@type": "l1instcache"},
+            "l2": {"@type": "l2cache"},
+            "l3": {"@type": "l3cache"}
+        },
+        "l1datacache": {
+            "@id": "comp:cacheL1Data",
+            "@type": "string"
+        },
+        "l1instcache": {
+            "@id": "comp:cacheL1Instruction",
+            "@type": "string"
+        },
+        "l2cache": {
+            "@id": "comp:cacheL2",
+            "@type": "string"
+        },
+        "l3cache": {
+            "@id": "comp:cacheL3",
             "@type": "string"
         },
         "ram": {
-            "@id": "sci:randomAccessMemory",
-            "@type": "string"
-        },
-        "gpu": {
-            "@id": "sci:graphicsProcessor",
+            "@id": "comp:randomAccessMemory",
             "@type": "string"
         }
     }

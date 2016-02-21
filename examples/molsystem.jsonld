@@ -1,18 +1,18 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_molsystem.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/molecularSystem/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/molsystem.jsonld#"}
     ],
-    "@id": "meta",
+    "@id": "",
     "temperature": {
         "@id": "temperature",
         "number": 273.15,
-        "unit": "K"
+        "unitstr": "K"
     },
     "charge": {
         "@id": "charge",
         "number": 0,
-        "unit": "C"
+        "unitstr": "C"
     },
     "multiplicity": {
         "@id": "multiplicity",
@@ -33,17 +33,17 @@
             "x": {
                 "@id": "point/1/x",
                 "number": 0,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "y": {
                 "@id": "point/1/y",
                 "number": 0,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "z": {
                 "@id": "point/1/z",
                 "number": 0.03719146,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "tenant": "molecule/1/atom/1"
         },
@@ -52,17 +52,17 @@
             "x": {
                 "@id": "point/2/x",
                 "number": 0,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "y": {
                 "@id": "point/2/y",
                 "number": -0.7580816,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "z": {
                 "@id": "point/2/z",
                 "number": -0.5986095,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "tenant": "molecule/1/atom/2"
         },
@@ -71,17 +71,17 @@
             "x": {
                 "@id": "point/3/x",
                 "number": 0,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "y": {
                 "@id": "point/3/y",
                 "number": 0.7580816,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "z": {
                 "@id": "point/3/z",
                 "number": -0.5986095,
-                "unit": "angstrom"
+                "unitstr": "angstrom"
             },
             "tenant": "molecule/1/atom/3"
         }
@@ -112,17 +112,17 @@
                 "atomMass": {
                     "@id": "molecule/1/atom/1/atomMass",
                     "number": 15.999,
-                    "unit": "amu"
+                    "unitstr": "amu"
                 },
                 "formalAtomCharge": {
                     "@id": "molecule/1/atom/1/formalAtomCharge",
                     "number": 0,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "calculatedAtomCharge": {
                     "@id": "molecule/1/atom/1/calculatedAtomCharge",
                     "number": -0.33053,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "basisSet": "basisset/1"
             },
@@ -134,17 +134,17 @@
                 "atomMass": {
                     "@id": "molecule/1/atom/2/atomMass",
                     "number": 1.008,
-                    "unit": "amu"
+                    "unitstr": "amu"
                 },
                 "formalAtomCharge": {
                     "@id": "molecule/1/atom/2/formalAtomCharge",
                     "number": 0,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "calculatedAtomCharge": {
                     "@id": "molecule/1/atom/2/calculatedAtomCharge",
                     "number": 0.165265,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "basisSet": "basisset/1"
             },
@@ -156,17 +156,17 @@
                 "atomMass": {
                     "@id": "molecule/1/atom/3/atomMass",
                     "number": 1.008,
-                    "unit": "amu"
+                    "unitstr": "amu"
                 },
                 "formalAtomCharge": {
                     "@id": "molecule/1/atom/3/formalAtomCharge",
                     "number": 0,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "calculatedAtomCharge": {
                     "@id": "molecule/1/atom/3/calculatedAtomCharge",
                     "number": 0.165265,
-                    "unit": "C"
+                    "unitstr": "C"
                 },
                 "basisSet": "basisset/1"
             }

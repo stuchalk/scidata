@@ -1,16 +1,17 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_context.jsonld",
-        {"@base": "http://osdb.info/s00000001"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_context.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/context_exp.jsonld#"}
     ],
-    "@id": "context",
+    "@id": "",
     "discipline": "chemistry",
     "subdiscipline": "analytical chemistry",
-    "aspects": [{
+    "facets": [{"system": {
         "@id": "system",
         "name": "R-(-)-Carvone and Chloroform-d",
         "description": "Solution prepared for 1H NMR analysis",
-        "type": "single phase liquid",
+        "systemtype": "binary mixture",
+        "systemphase": "single phase liquid",
         "components": [
             {
                 "@id": "substance/1",
@@ -23,5 +24,5 @@
                 "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
             }
         ]
-    }]
+    }}]
 }

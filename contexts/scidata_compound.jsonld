@@ -1,10 +1,10 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
         "ss": "http://semanticscience.org/resource/",
         "edam": "http://edamontology.org/",
-        "sci": "https://chalk.coas.unf.edu/champ/files/schema/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
@@ -25,6 +25,10 @@
         },
         "iupacname": {
             "@id": "ss:CHEMINF_000107",
+            "@type": "string"
+        },
+        "synonyms": {
+            "@id": "ss:SIO_000122",
             "@type": "string"
         },
         "inchi": {
@@ -50,6 +54,10 @@
         "chebi": {
             "@id": "edam:data_1174",
             "@type": "@id"
+        },
+        "casrn": {
+            "@id": "edam:data_3102",
+            "@type": "string"
         }
     }
 ]}

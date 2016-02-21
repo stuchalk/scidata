@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_basisset.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/basisset/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/basisset.jsonld#"}
     ],
     "@id": "",
     "title": "3-21G",

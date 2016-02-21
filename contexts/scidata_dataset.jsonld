@@ -1,74 +1,76 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dataset": {
             "@id": "sci:dataset",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "parameters": {"@type": "parameter"},
+            "attribute": {"@type": "attribute"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
-            "datapoint": {"@type": "datapoint"},
-            "group": {"@type": "group"},
-            "values": {"@type": "values"}
-        },
-        "source": {
-            "@id": "sci:datasource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
+            "datapoint": {"@type": "datapoint"}
         },
         "datagroup": {
-            "@id": "sci:datagroup",
-            "name": {"@type": "name"},
-            "attributes": {"@type": "attributes"},
+            "@id": "sci:dataGroup",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "attribute": {"@type": "attribute"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
             "datapoint": {"@type": "datapoint"}
         },
         "dataseries": {
-            "@id": "sci:dataseries",
-            "name": {"@type": "name"},
+            "@id": "sci:dataSeries",
+            "uid": {"@type": "uid"},
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
             "label": {"@type": "label"},
-            "attributes": {"@type": "attributes"},
-            "value": {"@type": "parameter"}
+            "attribute": {"@type": "attribute"},
+            "parameter": {"@type": "parameterArray"}
         },
-        "datapoint": {
-            "@id": "sci:datapoint",
+        "source": {
+            "@id": "sci:dataSource",
+            "@type": "@id"
+        },
+        "scope": {
+            "@id": "sci:dataScope",
+            "@type": "@id"
+        },
+        "dataname": {
+            "@id": "sci:dataName",
             "@type": "parameter"
         },
-        "attributes": {
-            "@id": "sci:dataAttributes",
+        "datapoint": {
+            "@id": "sci:dataPoint",
+            "@type": "parameter"
+        },
+        "attribute": {
+            "@id": "sci:dataAttribute",
             "@type": "parameter"
         },
         "seriesType": {
-            "@id": "sci:dataseriesType",
+            "@id": "sci:dataSeriesType",
             "@type": "parameter"
         },
         "axis": {
-            "@id": "sci:plotAxis",
+            "@id": "sci:axisType",
             "@type": "string"
         },
         "label": {
-            "@id": "dc:title",
+            "@id": "sci:axisLabel",
             "@type": "string"
-        },
-        "parameter": {
-            "@id": "sci:hasParameter",
-            "@type": "parameter"
-        },
-        "values": {
-            "@id": "sci:hasValue",
-            "@type": "parameter"
         }
     }
 ]}

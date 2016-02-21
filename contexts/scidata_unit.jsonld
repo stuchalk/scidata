@@ -1,83 +1,116 @@
 {"@context": [
     {
-        "sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "http://purl.org/dc/terms/",
-        "wkt": "http://en.wiktionary.org/wiki/",
-        "gc": "http://purl.org/gc/"
+        "wkt": "http://en.wiktionary.org/wiki/"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "unit": {
-            "@id": "sci:scientificUnit",
-            "type": {"@type": "type"},
+            "@id": "sci:unitOfMeasure",
             "name": {"@type": "name"},
+            "unitsystem": {"@type": "unitsystem"},
+            "unitsystemref": {"@type": "unitsystemref"},
             "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
+            "abbrev": {"@type": "abbrev"},
             "symbol": {"@type": "symbol"},
             "unitinsi": {"@type": "unitinsi"},
             "siunit": {"@type": "siunit"},
-            "conversion": {"@type": "conversion"}
+            "siunitstr": {"@type": "siunitstr"},
+            "siunitref": {"@type": "siunitref"},
+            "factor": {"@type": "factor"},
+            "factorref": {"@type": "factorref"}
+        },
+        "unitstr": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "string"
+        },
+        "unitref": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "@id"
         },
         "uid": {
             "@id": "dc:identifier",
             "@type": "string"
         },
-        "type": {
-            "@id": "gc:unitType",
-            "@type": "@id"
-        },
         "name": {
             "@id": "dc:title",
             "@type": "string"
+        },
+        "unitsystem": {
+            "@id": "sci:unitSystem",
+            "@type": "string"
+        },
+        "unitsystemref": {
+            "@id": "sci:unitSystem",
+            "@type": "@id"
         },
         "quantity": {
             "@id": "sci:quantity",
             "@type": "string"
         },
+        "quantityref": {
+            "@id": "sci:quantity",
+            "@type": "@id"
+        },
+        "abbrev": {
+            "@id": "sci:unitAbbreviation",
+            "@type": "string"
+        },
         "symbol": {
-            "@id": "sci:symbol",
+            "@id": "sci:unitSymbol",
             "@type": "string"
         },
         "unitinsi": {
-            "@id": "sci:equivalentSIunit",
+            "@id": "sci:siUnitEquivalent",
             "siunit": {"@type": "siunit"}
         },
         "siunit": {
-            "@id": "sci:siunit",
-            "type": {"@type": "name"},
+            "@id": "sci:siUnit",
+            "name": {"@type": "name"},
             "prefix": {"@type": "prefix"},
             "power": {"@type": "power"}
         },
+        "siunitstr": {
+            "@id": "sci:siUnit",
+            "type": "string"
+        },
+        "siunitref": {
+            "@id": "sci:siUnit",
+            "type": "@id"
+        },
         "prefix": {
-            "@id": "sci:prefix",
+            "@id": "sci:siPrefix",
             "@type": "string"
         },
         "power": {
-            "@id": "sci:power",
-            "numerator": {"@type": "numerator"},
-            "denominator": {"@type": "denominator"}
+            "@id": "sci:unitPower",
+            "$type": "integer"
         },
-        "numerator": {
-            "@id": "obo:STATO_0000101",
-            "@type": "integer"
-        },
-        "denominator": {
-            "@id": "obo:STATO_0000259",
-            "@type": "integer"
-        },
-        "conversion": {
+        "factor": {
             "@id": "sci:conversionFactor",
             "fromunit": {"@type": "fromunit"},
-            "addend": {"@type": "float"},
+            "tounit": {"@type": "tounit"},
+            "addend": {"@type": "addend"},
             "minuend": {"@type": "minuend"},
-            "subtrahend": {"@type": "subtrahend)"},
-            "multiplicand": {"@type": "multiplicand"},
+            "subtrahend": {"@type": "subtrahend"},
+            "multiplier": {"@type": "multiplier"},
             "dividend": {"@type": "dividend"},
             "divisor": {"@type": "divisor"},
-            "exact": {"@type": "boolean"}
+            "exact": {"@type": "exact"}
+        },
+        "factorref": {
+            "@id": "sci:conversionFactor",
+            "type": "@id"
         },
         "fromunit": {
-            "@id": "sci:referenceUnit",
+            "@id": "sci:unitOfMeasure",
+            "@type": "unitref"
+        },
+        "tounit": {
+            "@id": "sci:unitOfMeasure",
             "@type": "siunit"
         },
         "addend": {
@@ -92,8 +125,8 @@
             "@id": "wkt:subtrahend",
             "@type": "float"
         },
-        "multiplicand": {
-            "@id": "wkt:multiplicand",
+        "multiplier": {
+            "@id": "wkt:multiplier",
             "@type": "float"
         },
         "dividend": {
@@ -106,7 +139,7 @@
         },
         "exact": {
             "@id": "wkt:exact",
-            "@type": "exact"
+            "@type": "boolean"
         }
     }
 ]}

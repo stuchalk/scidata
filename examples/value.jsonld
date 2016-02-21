@@ -1,42 +1,56 @@
 {
     "@context": [
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_value.jsonld",
-        "https://chalk.coas.unf.edu/champ/files/contexts/sci_unit.jsonld",
-        {"@base": "http://scidata.io/stuchalk/example/value/"}
+        "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld#"}
     ],
     "@id": "",
-    "numericValue": {
+    "numericvalue": {
         "@id": "numeric/1",
-        "format": "datum",
+        "datatype": "decimal",
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unit": {"@id": "_:amu"}
+        "unitref": "unit/amu"
     },
-    "textString": {
+    "numericvaluearray": {
+        "@id": "numeric/2",
+        "datatype": "decimal",
+        "numberarray": [0.9994,0.09990,0.9989],
+        "error": 1E-4,
+        "sigfigs": 4,
+        "unitstr": "g"
+    },
+    "textstring": {
         "@id": "text/1",
-        "text": "Some text value",
-        "format": "plain",
+        "text": "Simultaneous",
+        "texttype": "plain",
+        "language": "en-US"
+    },
+    "textstringarray": {
+        "@id": "text/2",
+        "textarray": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
+        "texttype": "plain",
         "language": "en-US"
     },
     "unit": [{
-        "@id": "_:amu",
+        "@id": "unit/amu",
         "name": "Atomic mass units",
         "quantity": "mass",
         "symbol": "u",
         "unitinsi": {
-            "@id": "_:amu/unitinsi",
+            "@id": "amu/unitinsi",
             "siunit": [{
-                "@id": "_:amu/unit/1",
+                "@id": "amu/unit/1",
                 "name": "gram",
                 "prefix": "y",
                 "power": {"numerator": 1}
             }]
         },
         "conversion": {
-            "@id": "_:amu/conversion",
+            "@id": "amu/conversion",
             "fromunit": "g",
-            "multiplicand": "1.660538921E-27"
+            "multiplier": "1.660538921E-27"
         }
     }]
 }

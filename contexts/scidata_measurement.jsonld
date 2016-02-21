@@ -1,6 +1,9 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
-    {"sci": "https://chalk.coas.unf.edu/champ/files/ontology/scidata.owl#"},
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "meas": "http://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#"
+    },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "measurement": {
@@ -13,27 +16,27 @@
             "settings": {"@type": "settings"}
         },
         "techniqueType": {
-            "@id": "sci:techniqueType",
+            "@id": "meas:techniqueType",
             "@type": "string"
         },
         "technique": {
-            "@id": "sci:technique",
+            "@id": "meas:technique",
             "@type": "string"
         },
         "instrumentType": {
-            "@id": "sci:instrumentType",
+            "@id": "meas:instrumentType",
             "@type": "string"
         },
         "instrument": {
-            "@id": "sci:instrument",
+            "@id": "meas:instrument",
             "@type": "string"
         },
         "vendor": {
-            "@id": "sci:vendor",
+            "@id": "meas:vendor",
             "@type": "string"
         },
         "settings": {
-            "@id": "sci:instrumentSetting",
+            "@id": "meas:hasInstrumentSetting",
             "@type": "parameter"
         }
     }

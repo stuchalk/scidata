@@ -1,5 +1,5 @@
 {"@context": [
-    "https://chalk.coas.unf.edu/champ/files/contexts/sci_parameter.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "gc": "http://purl.org/gc/",
         "dc": "http://purl.org/dc/terms/",
@@ -11,8 +11,6 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "molsystem": {
             "@id": "gc:MolecularSystem",
-            "label": {"@type": "label"},
-            "type": {"@type": "type"},
             "temperature": {"@type": "temperature"},
             "charge": {"@type": "charge"},
             "multiplicity": {"@type": "multiplicity"},
@@ -34,22 +32,11 @@
             "@id": "gc:hasSystemMultiplicity",
             "@type": "parameter"
         },
-        "space": {
-            "@id": "gc:Space",
-            "type": {"@type": "spaceType"},
-            "points": {"@type": "points"}
-        },
         "molecule": {
             "@id": "gc:Molecule",
-            "label": {"@type": "label"},
             "atomCount": {"@type": "atomCount"},
             "inchiKey": {"@type": "inchiKey"},
-            "type": {"@type": "type"},
-            "chains": {"@type": "chains"},
-            "residues": {"@type": "residues"},
-            "groups": {"@type": "groups"},
-            "atoms": {"@type": "atoms"},
-            "bonds": {"@type": "bonds"}
+            "atoms": {"@type": "atoms"}
         },
         "atomCount": {
             "@id": "gc:hasNumberOfAtoms",
@@ -170,7 +157,7 @@
             "@type": "string"
         },
         "type": {
-            "@id": "CHEBI:24433",
+            "@id": "obo:CHEBI_24433",
             "@type": "@id"
         },
         "bondType": {
