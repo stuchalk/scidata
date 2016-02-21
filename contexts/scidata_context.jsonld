@@ -17,7 +17,7 @@
             "facets": {"@type": "facets"}
         },
         "facets": {
-            "@id": "sci:facet",
+            "@id": "sci:hasFacet",
             "system": {"@type": "chemicalsystem"},
             "solution": {"@type": "solution"},
             "chemical": {"@type": "chemical"},
@@ -37,39 +37,39 @@
             "@type": "string"
         },
         "solution": {
-            "@id": "sci:chemicalSystem",
+            "@id": "sci:hasChemicalSystem",
             "@type": "system"
         },
         "chemicalsystem": {
-            "@id": "sci:chemicalSystem",
+            "@id": "sci:hasChemicalSystem",
             "@type": "system"
         },
         "molecularsystem": {
-            "@id": "sci:molecularSystem",
+            "@id": "sci:hasMolecularSystem",
             "@type": "molSystem"
         },
         "chemical": {
-            "@id": "sci:chemical",
+            "@id": "sci:hasChemical",
             "@type": "chemical"
         },
         "compound": {
-            "@id": "sci:compound",
+            "@id": "sci:hasCompound",
             "@type": "compound"
         },
         "material": {
-            "@id": "sci:material",
+            "@id": "sci:hasMaterial",
             "@type": "material"
         },
         "organism": {
-            "@id": "sci:organism",
+            "@id": "sci:hasOrganism",
             "@type": "organism"
         },
         "condition": {
-            "@id": "sci:condition",
+            "@id": "sci:hasCondition",
             "@type": "condition"
         },
         "computer": {
-            "@id": "sci:computer",
+            "@id": "sci:hasComputer",
             "@type": "computer"
         }
     }

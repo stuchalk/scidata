@@ -18,7 +18,7 @@
             "datapoint": {"@type": "datapoint"}
         },
         "datagroup": {
-            "@id": "sci:dataGroup",
+            "@id": "sci:hasDataGroup",
             "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
@@ -29,7 +29,7 @@
             "datapoint": {"@type": "datapoint"}
         },
         "dataseries": {
-            "@id": "sci:dataSeries",
+            "@id": "sci:hasDataSeries",
             "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
@@ -37,8 +37,8 @@
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
             "label": {"@type": "label"},
-            "attribute": {"@type": "attribute"},
-            "parameter": {"@type": "parameterArray"}
+            "attributes": {"@type": "attribute"},
+            "parameters": {"@type": "parameters"}
         },
         "source": {
             "@id": "sci:dataSource",
@@ -53,12 +53,16 @@
             "@type": "parameter"
         },
         "datapoint": {
-            "@id": "sci:dataPoint",
+            "@id": "sci:hasDataPoint",
             "@type": "parameter"
         },
-        "attribute": {
-            "@id": "sci:dataAttribute",
+        "attributes": {
+            "@id": "sci:hasDataAttributes",
             "@type": "parameter"
+        },
+        "parameters": {
+            "@id": "sci:hasDataParamters",
+            "@type": "parameterArray"
         },
         "seriesType": {
             "@id": "sci:dataSeriesType",
