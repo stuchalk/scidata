@@ -1,0 +1,34 @@
+{"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mix": "http://stuchalk.github.io/scidata/ontology/scidata_mixture.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "mixture": {
+            "@id": "sci:mixture",
+            "name": {"@type": "name"},
+            "mixturetype": {"@type": "mixturetype"},
+            "mixturephase": {"@type": "mixturephase"},
+            "components": {"@type": "components"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "mixturetype": {
+            "@id": "mix:type",
+            "@type": "string"
+        },
+        "mixturephase": {
+            "@id": "mix:phase",
+            "@type": "string"
+        },
+        "components": {
+            "@id": "mix:component",
+            "@type": "chemical"
+        }
+    }
+]}
