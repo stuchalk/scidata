@@ -44,6 +44,14 @@
             "@id": "dc:title",
             "@type": "string"
         },
+        "quantity": {
+            "@id": "sci:quantity",
+            "@type": "string"
+        },
+        "quantityref": {
+            "@id": "sci:quantity",
+            "@type": "@id"
+        },
         "property": {
             "@id": "sci:property",
             "@type": "string"

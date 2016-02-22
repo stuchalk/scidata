@@ -1,34 +1,71 @@
 {"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
-    {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "sys": "http://stuchalk.github.io/scidata/ontology/scidata_system.owl#",
-        "dc": "http://purl.org/dc/terms/"
-    },
+    "http://stuchalk.github.io/scidata/contexts/scidata_mixture.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_organism.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_condition.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
+    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "system": {
-            "@id": "sci:chemicalSystem",
-            "name": {"@type": "name"},
-            "systemtype": {"@type": "systemtype"},
-            "systemphase": {"@type": "systemphase"},
-            "components": {"@type": "components"}
+        "context": {
+            "@id": "sci:context",
+            "discipline": {"@type": "scientificDiscipline"},
+            "subdiscipline": {"@type": "scientificSubdiscipline"},
+            "facets": {"@type": "facets"}
         },
-        "name": {
-            "@id": "dc:title",
+        "facets": {
+            "@id": "sci:hasFacet",
+            "compound": {"@type": "compound"},
+            "chemical": {"@type": "chemical"},
+            "mixture": {"@type": "mixture"},
+            "material": {"@type": "material"},
+            "organism": {"@type": "organism"},
+            "condition": {"@type": "condition"},
+            "molsystem": {"@type": "molecularsystem"},
+            "computer": {"@type": "computer"}
+        },
+        "discipline": {
+            "@id": "sci:discipline",
             "@type": "string"
         },
-        "systemtype": {
-            "@id": "sys:systemType",
+        "subdiscipline": {
+            "@id": "sci:subdiscipline",
             "@type": "string"
         },
-        "systemphase": {
-            "@id": "sys:phaseOfMatter",
-            "@type": "string"
+        "mixture": {
+            "@id": "sci:hasMixture",
+            "@type": "system"
         },
-        "components": {
-            "@id": "sys:component",
+        "molecularsystem": {
+            "@id": "sci:hasMolecularSystem",
+            "@type": "molSystem"
+        },
+        "chemical": {
+            "@id": "sci:hasChemical",
             "@type": "chemical"
+        },
+        "compound": {
+            "@id": "sci:hasCompound",
+            "@type": "compound"
+        },
+        "material": {
+            "@id": "sci:hasMaterial",
+            "@type": "material"
+        },
+        "organism": {
+            "@id": "sci:hasOrganism",
+            "@type": "organism"
+        },
+        "condition": {
+            "@id": "sci:hasCondition",
+            "@type": "condition"
+        },
+        "computer": {
+            "@id": "sci:hasComputer",
+            "@type": "computer"
         }
     }
 ]}

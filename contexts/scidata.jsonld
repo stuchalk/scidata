@@ -23,7 +23,7 @@
             "@type": "string"
         },
         "author": {
-            "@id": "dc:creator",
+            "@id": "sci:hasAuthor",
             "name": {"@type": "type"},
             "organization": {"@type": "property"},
             "email": {"@type": "email"},
@@ -82,7 +82,7 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "dc:tableOfContents",
+            "@id": "sci:hasToc",
             "sections": {"@type": "sections"}
         },
         "sections": {
@@ -95,7 +95,7 @@
             "property": {"@type": "property"},
             "kind": {"@type": "kind"},
             "methodology": {"@type": "methodology"},
-            "context": {"@type": "context"},
+            "system": {"@type": "system"},
             "dataset": {"@type": "dataset"}
         },
         "type": {
@@ -114,8 +114,8 @@
             "@id": "sci:hasMethodology",
             "@type": "methodology"
         },
-        "context": {
-            "@id": "sci:hasContext",
+        "system": {
+            "@id": "sci:hasSystem",
             "@type": "context"
         },
         "dataset": {
@@ -123,7 +123,7 @@
             "@type": "dataset"
         },
         "source": {
-            "@id": "dc:source",
+            "@id": "sci:hasSource",
             "citation": {"@type": "citation"},
             "url": {"@type": "url"},
             "doi": {"@type": "doi"}
@@ -141,7 +141,7 @@
             "@type": "string"
         },
         "rights": {
-            "@id": "dc:accessRights",
+            "@id": "sci:hasRights",
             "license": {"@type": "license"}
         },
         "license": {

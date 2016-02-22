@@ -19,7 +19,8 @@
             "lotnumber": {"@type": "lotnumber"},
             "role": {"@type": "role"},
             "grade": {"@type": "grade"},
-            "purity": {"@type": "purity"}
+            "purity": {"@type": "purity"},
+            "phase": {"@type": "phase"}
         },
         "uid": {
             "@id": "dc:identifier",
@@ -47,7 +48,7 @@
         },
         "role": {
             "@id": "chem:role",
-            "@type": "string"
+            "@type": "@id"
         },
         "grade": {
             "@id": "chem:grade",
@@ -55,6 +56,10 @@
         },
         "purity": {
             "@id": "chem:purity",
+            "@type": "parameter"
+        },
+        "phase": {
+            "@id": "chem:phase",
             "@type": "parameter"
         }
     }

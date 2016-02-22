@@ -84,7 +84,8 @@
         },
         "textarray": {
             "@id": "sci:textArray",
-            "@type": "string"
+            "@type": "string",
+            "@container": "@list"
         },
         "texttype": {
             "@id": "sci:textType",
