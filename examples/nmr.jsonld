@@ -27,16 +27,23 @@
         "http://stuchalk.github.io/scidata/examples/ph.jsonld",
         "http://stuchalk.github.io/scidata/examples/scf.jsonld"
     ],
-    "toc": [
-        "methodology/measurement/1",
-        "methodology/procedure/1",
-        "system/mixture/1",
-        "system/compound/1",
-        "system/compound/2",
-        "dataset/datagroup/1",
-        "dataset/dataseries/1",
-        "dataset/dataseries/2"
-    ],
+    "toc": {
+        "@id": "toc",
+        "@type": "dc:tableOfContents",
+        "sections": [
+            "methodology",
+            "system",
+            "dataset",
+            "measurement/1",
+            "procedure/1",
+            "mixture/1",
+            "compound/1",
+            "compound/2",
+            "datagroup/1",
+            "dataseries/1",
+            "dataseries/2"
+        ]
+    },
     "scidata": {
         "@id": "scidata",
         "@type": "sci:scidata",
@@ -62,6 +69,7 @@
                         "property": "Observe Frequency",
                         "value": {
                             "@id": "setting/1/value",
+                            "@type": "sci:value",
                             "number": "300.03180",
                             "unitref": "qudt:MegaHertz"
                         }
@@ -73,6 +81,7 @@
                         "property": "Acquisition Time",
                         "value": {
                             "@id": "setting/2/value",
+                            "@type": "sci:value",
                             "number": "3.42098",
                             "unitref": "qudt:Second"
                         }
@@ -84,6 +93,7 @@
                         "property": "Zero Fill",
                         "value": {
                             "@id": "setting/3/value",
+                            "@type": "sci:value",
                             "number": "0"
                         }
                     },
@@ -255,6 +265,7 @@
                         "property": "Maximum Y-axis Value",
                         "value": {
                             "@id": "attribute/6/value",
+                            "@type": "sci:value",
                             "number": "27493798"
                         }
                     },

@@ -14,14 +14,14 @@
         },
         "calculations": {
             "@id": "gc:calculationStep",
-            "class": {"@type": "class"},
+            "calcclass": {"@type": "calcclass"},
             "calcType": {"@type": "calcType"},
             "referenceState": {"@type": "referenceState"},
             "determinant": {"@type": "determinant"},
             "spin": {"@type": "spin"},
             "submethod": {"@type": "submethod"}
         },
-        "class": {
+        "calcclass": {
             "@id": "gc:calculationClass",
             "@type": "string"
         },
