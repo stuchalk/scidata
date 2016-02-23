@@ -10,14 +10,14 @@
     {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "context": {
-            "@id": "sci:context",
+        "system": {
+            "@id": "sci:system",
             "discipline": {"@type": "scientificDiscipline"},
             "subdiscipline": {"@type": "scientificSubdiscipline"},
             "facets": {"@type": "facets"}
         },
         "facets": {
-            "@id": "sci:hasFacet",
+            "@id": "sci:facet",
             "compound": {"@type": "compound"},
             "chemical": {"@type": "chemical"},
             "mixture": {"@type": "mixture"},

@@ -13,14 +13,14 @@
         "chemical": {
             "@id": "sci:chemical",
             "name": {"@type": "name"},
-            "scope": {"@type": "scope"},
+            "source": {"@type": "source"},
             "vendor": {"@type": "vendor"},
             "catalognumber": {"@type": "catalognumber"},
             "lotnumber": {"@type": "lotnumber"},
             "role": {"@type": "role"},
             "grade": {"@type": "grade"},
-            "purity": {"@type": "purity"},
-            "phase": {"@type": "phase"}
+            "phase": {"@type": "phase"},
+            "properties": {"@type": "properties"}
         },
         "uid": {
             "@id": "dc:identifier",
@@ -30,9 +30,9 @@
             "@id": "dc:title",
             "@type": "string"
         },
-        "scope": {
-            "@id": "sci:scope",
-            "@type": "string"
+        "source": {
+            "@id": "sci:source",
+            "@type": "@id"
         },
         "vendor": {
             "@id": "obo:sep_00088",
@@ -54,12 +54,12 @@
             "@id": "chem:grade",
             "@type": "string"
         },
-        "purity": {
-            "@id": "chem:purity",
-            "@type": "parameter"
-        },
         "phase": {
             "@id": "chem:phase",
+            "@type": "parameter"
+        },
+        "properties": {
+            "@id": "sci:propertyValue",
             "@type": "parameter"
         }
     }

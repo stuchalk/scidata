@@ -50,7 +50,7 @@
         },
         "datatype": {
             "@id": "sci:numericDatatype",
-            "@type": "string"
+            "@type": "@id"
         },
         "number": {
             "@id": "sci:number",

@@ -1,6 +1,12 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {
+            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "dc": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
         {"@base": "http://stuchalk.github.io/scidata/examples/ri/"}
     ],
     "@id": "metadata",
@@ -8,6 +14,7 @@
     "title": "Refractive index",
     "author": [{
         "@id": "author/1",
+        "@type": "dc:creator",
         "name": "Stuart Chalk",
         "organization": "University of North Florida",
         "email": "schalk@unf.edu",
@@ -27,141 +34,168 @@
         "http://stuchalk.github.io/scidata/examples/ph.jsonld",
         "http://stuchalk.github.io/scidata/examples/scf.jsonld"
     ],
-    "toc": {
-        "@id": "toc",
-        "sections": [
-            "methodology/measurement/1",
-            "context/system/1",
-            "context/compound/1",
-            "context/compound/2",
-            "context/condition/1",
-            "context/condition/2",
-            "dataset/datapoint/1"
-        ]
-    },
+    "toc": [
+        "methodology/measurement/1",
+        "system/mixture/1",
+        "system/compound/1",
+        "system/compound/2",
+        "system/condition/1",
+        "system/condition/2",
+        "dataset/datapoint/1"
+    ],
     "scidata": {
         "@id": "scidata",
+        "@type": "sci:scidata",
         "type": "property value",
         "property": ["Refractive index"],
         "kind": ["single reading"],
         "methodology": {
             "@id": "methodology",
-            "evaluation": "experimental,extracted",
+            "@type": "sci:methodology",
+            "evaluation": [
+                "experimental",
+                "extracted"
+            ],
             "aspects": [{
-                "@id": "measurement/1",
-                "@type": "measurement",
+                "@id": "measurement/1/",
+                "@type": "sci:measurement",
                 "techniqueType": "spectroscopic",
                 "technique": "light refraction",
                 "instrumentType": "Refractometer",
                 "settings": [{
                     "@id": "setting/1",
+                    "@type": "sci:setting",
                     "quantity": "length",
                     "property": "Wavelength of light",
                     "value": {
                         "@id": "setting/1/value",
+                        "@type": "sci:value",
                         "number": 589,
                         "unit": "nm"
                     }
                 }]
             }]
         },
-        "context": {
-            "@id": "context",
+        "system": {
+            "@id": "system",
+            "@type": "sci:system",
             "discipline": "chemistry",
             "subdiscipline": "physical chemistry",
             "facets": [
                 {
-                    "@id": "system/1",
-                    "@type": "system",
+                    "@id": "mixture/1",
+                    "@type": "sci:solution",
                     "systemtype": "Binary mixture",
                     "systemphase": "liquid",
                     "components": [
                         {
-                            "@id": "system/1/component/1",
-                            "scope": "compound/1",
+                            "@id": "mixture/1/component/1",
+                            "@type": "sci:chemical",
+                            "name": "Ultrapure Water",
+                            "source": "compound/1",
                             "grade": "MilliQ Grade (18.2 MOhms)",
-                            "purity": {
-                                "@id": "system/1/component/1/purity",
+                            "properties": [{
+                                "@id": "mixture/1/component/1/purity",
+                                "@type": "sci:purity",
                                 "value": {
-                                    "@id": "system/1/component/1/purity/value",
+                                    "@id": "mixture/1/component/1/purity/value",
+                                    "@type": "sci:value",
                                     "number": 99.9999,
-                                    "unit": "%(w/w)"
+                                    "unit": "unit:PercentWeightWeight"
                                 }
-                            }
+                            }]
                         },
                         {
-                            "@id": "system/1/component/2",
+                            "@id": "mixture/1/component/2",
+                            "@type": "sci:chemical",
+                            "name": "Hydrochloric acid",
                             "scope": "compound/2",
                             "grade": "ACS Certified grade",
-                            "purity": {
-                                "@id": "system/1/component/2/purity",
+                            "properties": [{
+                                "@id": "mixture/1/component/2/purity",
+                                "@type": "sci:purity",
                                 "value": {
-                                    "@id": "system/1/component/2/purity/value",
+                                    "@id": "mixture/1/component/2/purity/value",
+                                    "@type": "sci:value",
                                     "number": 9.99,
-                                    "unit": "%(w/w)"
+                                    "unit": "unit:PercentWeightWeight"
                                 }
-                            }
+                            }]
                         }
                     ]
                 },
                 {
                     "@id": "compound/1",
+                    "@type": "sci:compound",
                     "name": "Water",
                     "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N"
                 },
                 {
                     "@id": "compound/2",
+                    "@type": "sci:compound",
                     "name": "Hydrogen chloride",
                     "inchikey": "VEXZGXHMUGYJMC-UHFFFAOYSA-N"
                 },
                 {
                     "@id": "condition/1",
+                    "@type": "sci:condition",
                     "source": "measurement/1",
-                    "scope": "system/1",
+                    "scope": "mixture/1",
                     "quantity": "temperature",
                     "property": "System temperature",
                     "value": {
                         "@id": "condition/1/value",
+                        "@type": "sci:value",
                         "number": 20,
-                        "unit": "°C"
+                        "unit": "unit:DegreeCelcius"
                     }
                 },
                 {
                     "@id": "condition/2",
+                    "@type": "sci:condition",
                     "source": "measurement/1",
-                    "scope": "system/1",
+                    "scope": "mixture/1",
                     "quantity": "Relative fractional amount",
                     "property": "Mass fraction",
                     "value": {
                         "@id": "condition/2/value",
+                        "@type": "sci:value",
                         "number": 0.043043,
-                        "unit": "g/g"
+                        "unit": "unit:GramPerGram"
                     }
                 }
             ]
         },
         "dataset": {
             "@id": "dataset",
+            "@type": "sci:dataset",
             "source": "measurement/1",
-            "scope": "system/1",
+            "scope": "mixture/1",
             "datapoint": [{
                 "@id": "datapoint/1",
+                "@type": "sci:datapoint",
                 "quantity": "refraction",
                 "property": "Index of refraction",
                 "value": {
                     "@id": "datapoint/1/value",
-                    "number": 1.33987
+                    "@type": "sci:value",
+                    "number": {
+                        "@value": 1.33987,
+                        "@type": "xsd:decimal"
+                    }
                 }
             }]
         }
     },
     "source": {
         "@id": "source",
-        "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1",
-        "url": ""
+        "@type": "dc:source",
+        "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
     },
     "rights": {
         "@id": "rights",
+        "@type": "dc:rights",
+        "holder": "Chalk Group, Department of Chemistry, University of North Florida",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/"
     }
 }

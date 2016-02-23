@@ -1,20 +1,30 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/scf.jsonld#"}
+        {
+            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "gc": "http://purl.org/gc/",
+            "dc": "http://purl.org/dc/terms/",
+            "obo": "http://purl.obolibrary.org/obo/",
+        	"xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {"@base": "http://stuchalk.github.io/scidata/examples/scf/"}
     ],
-    "@id": "",
-    "uid": "stuchalk/example/scf",
+    "@id": "metadata",
+    "uid": "scidata/example/scf",
     "title": "Glucose vib ele",
     "author": [
         {
             "@id": "author/1",
+            "@type": "dc:creator",
             "name": "Neil Ostlund",
             "organization": "Chemical Semantics",
             "email": "ostlund@hyper.com"
         },
         {
             "@id": "author/2",
+            "@type": "dc:creator",
             "name": "Stuart Chalk",
             "organization": "UNF",
             "email": "schalk@unf.edu"
@@ -23,29 +33,27 @@
     "description": "This is a test calculation for glucose",
     "publisher": "Chemical Semantics",
     "permalink": "http://stuchalk.github.io/scidata/examples/scf.jsonld",
-    "toc": {
-        "@id": "toc",
-        "sections": [
-            "methodology/calculation/1",
-            "methodology/software",
-            "context/molsystem/1",
-            "context/computer",
-            "dataset/datapoint/1",
-            "dataset/datapoint/2",
-            "dataset/datapoint/3",
-            "dataset/datapoint/4",
-            "dataset/datapoint/5",
-            "dataset/datapoint/6",
-            "dataset/datapoint/7",
-            "dataset/datapoint/8",
-            "dataset/datapoint/9",
-            "dataset/datagroup/1",
-            "dataset/datagroup/2",
-            "dataset/datagroup/3"
-        ]
-    },
+    "toc": [
+        "methodology/calculation/1",
+        "methodology/software",
+        "system/molsystem/1",
+        "system/computer",
+        "dataset/datapoint/1",
+        "dataset/datapoint/2",
+        "dataset/datapoint/3",
+        "dataset/datapoint/4",
+        "dataset/datapoint/5",
+        "dataset/datapoint/6",
+        "dataset/datapoint/7",
+        "dataset/datapoint/8",
+        "dataset/datapoint/9",
+        "dataset/datagroup/1",
+        "dataset/datagroup/2",
+        "dataset/datagroup/3"
+    ],
     "scidata": {
-        "@id": "data",
+        "@id": "scidata",
+        "@type": "sci:scidata",
         "type": ["property value"],
         "property": [
             "orbital energy",
@@ -58,50 +66,56 @@
         ],
         "methodology": {
             "@id": "methodology",
+            "@type": "sci:methodology",
             "evaluation": "calculated",
             "aspects": [
-                {"calculation": [{
-                    "@id": "calculation",
+                {
+                    "@id": "calculation/1",
+                    "@type": "sci:calculation",
                     "approach": "quantum mechanics",
-                    "calculations": [{
-                        "@id": "calculation/1",
-                        "class": "ab initio",
-                        "calcType": "scf",
-                        "determinant": "single",
-                        "spin": "cs:UHF"
-                    }]
-                }]},
-                {"software": [{
+                    "class": "ab initio",
+                    "calcType": "scf",
+                    "determinant": "single",
+                    "spin": "cs:UHF"
+                },
+                {
                     "@id": "software",
+                    "@type": "sci:software",
                     "name": "HyperChem",
                     "input": "...",
                     "output": "..."
-                }]}
+                }
             ]
         },
-        "context": {
-            "@id": "context",
+        "system": {
+            "@id": "system",
+            "@type": "sci:system",
             "discipline": "chemistry",
             "subdiscipline": "computational chemistry",
             "aspects": [
-                {"molsystem": [{
+                {
                     "@id": "molsystem/1",
+                    "@type": "sci:molecularSystem",
                     "temperature": {
                         "@id": "molsystem/1/temperature",
+                        "@type": "sci:temperature",
                         "number": 0,
-                        "unitstr": "K"
+                        "unit": "unit:Kelvin"
                     },
                     "charge": {
                         "@id": "molsystem/1/charge",
+                        "@type": "sci:charge",
                         "number": 0,
-                        "unitstr": "C"
+                        "unit": "unit:Coulomb"
                     },
                     "multiplicity": {
                         "@id": "molsystem/1/multiplicity",
+                        "@type": "sci:multiplicity",
                         "number": 1
                     },
                     "space": {
                         "@id": "molsystem/1/space",
+                        "@type": "sci:space",
                         "type": "cartesian",
                         "points": [
                             "molsystem/1/point/1",
@@ -135,479 +149,585 @@
                     "point": [
                         {
                             "@id": "molsystem/1/point/1",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/1/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.75017,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/1/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.4402108,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/1/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.4117317,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/2",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/2/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.749992,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/2/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.095521,
-                                "unitstr": "angstrom"
+                                "unit": "angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/2/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.4162618,
-                                "unitstr": "angstrom"
+                                "unit": "angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/3",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/3/x",
+                                "@type": "sci:xcoord",
                                 "number": -0.3097623,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/3/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.61362,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/3/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.2825174,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/4",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/4/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.3455429,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/4/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.034,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/4/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.9774616,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/5",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/5/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.1950337,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/5/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.4963563,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/5/z",
+                                "@type": "sci:zcoord",
                                 "number": -1.006632,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/6",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/6/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.11947,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/6/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.9495575,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/6/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.7686137,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/7",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/7/x",
+                                "@type": "sci:xcoord",
                                 "number": -3.179152,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/7/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.9923627,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/7/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.3818221,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/8",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/8/x",
+                                "@type": "sci:xcoord",
                                 "number": -3.851898,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/8/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.6726854,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/8/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.8160191,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/9",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/9/x",
+                                "@type": "sci:xcoord",
                                 "number": -2.301149,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/9/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.499485,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/9/z",
+                                "@type": "sci:zcoord",
                                 "number": 1.658047,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/10",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/10/x",
+                                "@type": "sci:xcoord",
                                 "number": -0.3917128,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/10/y",
+                                "@type": "sci:ycoord",
                                 "number": 3.027078,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/10/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.2096924,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/11",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/11/x",
+                                "@type": "sci:xcoord",
                                 "number": 1.703114,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/11/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.41421,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/11/z",
+                                "@type": "sci:xcoord",
                                 "number": -1.049229,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/12",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/12/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.9968047,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/12/y",
+                                "@type": "sci:ycoord",
                                 "number": -1.027873,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/12/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.02272284,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/13",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/13/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.201659,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/13/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.8211135,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/13/z",
+                                "@type": "sci:zcoord",
                                 "number": 1.315954,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/14",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/14/x",
+                                "@type": "sci:xcoord",
                                 "number": -2.382084,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/14/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.483683,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/14/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.4303264,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/15",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/15/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.2888928,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/15/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.319548,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/15/z",
+                                "@type": "sci:zcoord",
                                 "number": 1.190758,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/16",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/16/x",
+                                "@type": "sci:xcoord",
                                 "number": -0.1282424,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/16/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.473714,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/16/z",
+                                "@type": "sci:zcoord",
                                 "number": -1.899944,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/17",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/17/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.4675513,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/17/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.9194908,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/17/z",
+                                "@type": "sci:zcoord",
                                 "number": -2.015321,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/18",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/18/x",
+                                "@type": "sci:xcoord",
                                 "number": -3.151184,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/18/y",
+                                "@type": "sci:ycoord",
                                 "number": -2.104732,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/18/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.5260509,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/19",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/19/x",
+                                "@type": "sci:xcoord",
                                 "number": -3.776079,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/19/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.5017962,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/19/z",
+                                "@type": "sci:zcoord",
                                 "number": 1.197616,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/20",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/20/x",
+                                "@type": "sci:xcoord",
                                 "number": -3.326934,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/20/y",
+                                "@type": "sci:ycoord",
                                 "number": -1.031658,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/20/z",
+                                "@type": "sci:ycoord",
                                 "number": -1.542973,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/21",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/21/x",
+                                "@type": "sci:xcoord",
                                 "number": -2.258385,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/21/y",
+                                "@type": "sci:ycoord",
                                 "number": 2.465353,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/21/z",
+                                "@type": "sci:zcoord",
                                 "number": 1.670316,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/22",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/22/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.4851893,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/22/y",
+                                "@type": "sci:ycoord",
                                 "number": 3.342704,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/22/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.0477265,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/23",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/23/x",
+                                "@type": "sci:xcoord",
                                 "number": 2.174076,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/23/y",
+                                "@type": "sci:ycoord",
                                 "number": 0.9467025,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/23/z",
+                                "@type": "sci:zcoord",
                                 "number": -0.3447715,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/24",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/24/x",
+                                "@type": "sci:xcoord",
                                 "number": 0.8901675,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/24/y",
+                                "@type": "sci:ycoord",
                                 "number": -1.987217,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/24/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.01091064,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/25",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/25/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.75017,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/25/y",
+                                "@type": "sci:ycoord",
                                 "number": -0.4402108,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/25/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.4117317,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         },
                         {
                             "@id": "molsystem/1/point/26",
+                            "@type": "sci:point",
                             "x": {
                                 "@id": "molsystem/1/point/26/x",
+                                "@type": "sci:xcoord",
                                 "number": -1.749992,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "y": {
                                 "@id": "molsystem/1/point/26/y",
+                                "@type": "sci:ycoord",
                                 "number": 1.095521,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             },
                             "z": {
                                 "@id": "molsystem/1/point/26/z",
+                                "@type": "sci:zcoord",
                                 "number": 0.4162618,
-                                "unitstr": "angstrom"
+                                "unit": "unit:Angstrom"
                             }
                         }
                     ],
                     "molecule": [
                         {
                             "@id": "molsystem/1/molecule/1",
+                            "@type": "sci:molecule",
                             "inchiKey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
                             "atomCount": {
                                 "@id": "molsystem/1/molecule/1/atomCount",
+                                "@type": "sci:atomCount",
                                 "number": 24
                             },
                             "atoms": [
@@ -665,22 +785,26 @@
                             "atom": [
                                 {
                                     "@id": "molsystem/1/molecule/1/atom/1",
+                                    "@type": "sci:atom",
                                     "name": "Carbon",
                                     "element": "obo:CHEBI_27594",
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/1/atomMass",
+                                        "@type": "sci:atomicMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unit": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/1/formalAtomCharge",
+                                        "@type": "sci:formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "C"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/1/calculatedAtomCharge",
+                                        "@type": "sci:calculatedAtomCharge",
                                         "number": -0.006536661,
-                                        "unitstr": "C"
+                                        "unit": "C"
                                     },
                                     "basisset": "Default"
                                 },
@@ -691,17 +815,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/2/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/2/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/2/calculatedAtomCharge",
                                         "number": 0.01667125,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -712,17 +836,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/3/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/3/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/3/calculatedAtomCharge",
                                         "number": -0.03722168,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -733,17 +857,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/4/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/4/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/4/calculatedAtomCharge",
                                         "number": -0.01513748,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -754,17 +878,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/5/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/5/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/5/calculatedAtomCharge",
                                         "number": 0.1254367,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -775,17 +899,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/6/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/6/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/6/calculatedAtomCharge",
                                         "number": -0.3128225,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -796,17 +920,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/7/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/7/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/7/calculatedAtomCharge",
                                         "number": -0.01083829,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -817,17 +941,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/8/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/8/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/8/calculatedAtomCharge",
                                         "number": -0.3222021,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -838,17 +962,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/9/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/9/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/9/calculatedAtomCharge",
                                         "number": -0.32308,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -859,17 +983,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/10/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/10/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/10/calculatedAtomCharge",
                                         "number": -0.3312914,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -880,17 +1004,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/11/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/11/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/11/calculatedAtomCharge",
                                         "number": -0.3192864,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -901,17 +1025,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/12/atomMass",
                                         "number": 15.999,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/12/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/12/calculatedAtomCharge",
                                         "number": -0.3628553,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -922,17 +1046,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/13/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/13/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/13/calculatedAtomCharge",
                                         "number": 0.1103455,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -943,17 +1067,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/14/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/14/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/14/calculatedAtomCharge",
                                         "number": 0.1121005,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -964,17 +1088,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/15/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/15/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/15/calculatedAtomCharge",
                                         "number": 0.1035608,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -985,17 +1109,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/16/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/16/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/16/calculatedAtomCharge",
                                         "number": 0.1413285,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1006,17 +1130,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/17/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/17/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/17/calculatedAtomCharge",
                                         "number": 0.124636,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1027,17 +1151,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/18/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/18/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/18/calculatedAtomCharge",
                                         "number": 0.07243846,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1048,17 +1172,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/19/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/19/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/19/calculatedAtomCharge",
                                         "number": 0.1321895,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1069,17 +1193,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/20/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/20/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/20/calculatedAtomCharge",
                                         "number": 0.2085786,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1090,17 +1214,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/21/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/21/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/21/calculatedAtomCharge",
                                         "number": 0.2247598,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1111,17 +1235,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/22/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/22/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/22/calculatedAtomCharge",
                                         "number": 0.2212835,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1132,17 +1256,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/23/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/23/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/23/calculatedAtomCharge",
                                         "number": 0.2210585,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1153,17 +1277,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/1/atom/24/atomMass",
                                         "number": 1.008,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/24/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/1/atom/24/calculatedAtomCharge",
                                         "number": 0.2268844,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 }
@@ -1439,17 +1563,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/2/atom/1/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/2/atom/1/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/2/atom/1/calculatedAtomCharge",
                                         "number": -0.006536661,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 },
@@ -1460,17 +1584,17 @@
                                     "atomMass": {
                                         "@id": "molsystem/1/molecule/2/atom/2/atomMass",
                                         "number": 12.011,
-                                        "unitstr": "amu"
+                                        "unitstr": "unit:UnifedAtomicMassUnit"
                                     },
                                     "formalAtomCharge": {
                                         "@id": "molsystem/1/molecule/2/atom/2/formalAtomCharge",
                                         "number": 0,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "calculatedAtomCharge": {
                                         "@id": "molsystem/1/molecule/2/atom/2/calculatedAtomCharge",
                                         "number": 0.01667125,
-                                        "unitstr": "C"
+                                        "unit": "unit:Coulomb"
                                     },
                                     "basisset": "Default"
                                 }
@@ -1549,7 +1673,7 @@
                             ]
                         }
                     ]
-                }]},
+                },
                 {"computer": [{
                     "@id": "computer",
                     "architecture": "x86_64",

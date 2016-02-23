@@ -33,8 +33,8 @@
             "@type": "string"
         },
         "source": {
-            "@id": "mat:source",
-            "@type": "string"
+            "@id": "sci:source",
+            "@type": "@id"
         },
         "property": {
             "@id": "mat:property",

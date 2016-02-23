@@ -10,7 +10,9 @@
         "bibo": "http://purl.obolibrary.org/obo/bibo/",
         "dc": "http://purl.org/dc/terms/",
         "schema": "http://schema.org/",
-        "bse": "http://purl.oclc.org/NET/EMSL/BSE"
+        "bse": "http://purl.oclc.org/NET/EMSL/BSE",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
@@ -82,11 +84,7 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "sci:hasToc",
-            "sections": {"@type": "sections"}
-        },
-        "sections": {
-            "@id": "dc:hasPart",
+            "@id": "dc:tableOfContents",
             "@type": "@id"
         },
         "scidata": {
@@ -142,11 +140,16 @@
         },
         "rights": {
             "@id": "sci:hasRights",
+            "holder": {"@type": "holder"},
             "license": {"@type": "license"}
+        },
+        "holder": {
+            "@id": "dc:rightsHolder",
+            "@type": "string"
         },
         "license": {
             "@id": "dc:license",
-            "@type": "string"
+            "@type": "anyURI"
         }
     }
 ]}

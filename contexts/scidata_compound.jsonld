@@ -11,6 +11,7 @@
         "compound": {
             "@id": "sci:compound",
             "name": {"@type": "name"},
+            "source": {"@type": "source"},
             "iupacname": {"@type": "iupacname"},
             "inchi": {"@type": "inchi"},
             "inchikey": {"@type": "inchikey"},
@@ -22,6 +23,10 @@
         "name": {
             "@id": "dc:title",
             "@type": "string"
+        },
+        "source": {
+            "@id": "sci:source",
+            "@type": "@id"
         },
         "iupacname": {
             "@id": "ss:CHEMINF_000107",

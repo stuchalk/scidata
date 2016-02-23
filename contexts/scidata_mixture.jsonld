@@ -10,13 +10,19 @@
         "mixture": {
             "@id": "sci:mixture",
             "name": {"@type": "name"},
-            "mixturetype": {"@type": "mixturetype"},
-            "mixturephase": {"@type": "mixturephase"},
-            "components": {"@type": "components"}
+            "source": {"@type": "source"},
+            "type": {"@type": "mixturetype"},
+            "phase": {"@type": "mixturephase"},
+            "components": {"@type": "components"},
+            "properties": {"@type": "properties"}
         },
         "name": {
             "@id": "dc:title",
             "@type": "string"
+        },
+        "source": {
+            "@id": "sci:source",
+            "@type": "@id"
         },
         "mixturetype": {
             "@id": "mix:type",
@@ -29,6 +35,10 @@
         "components": {
             "@id": "mix:component",
             "@type": "chemical"
+        },
+        "properties": {
+            "@id": "sci:propertyValue",
+            "@type": "parameter"
         }
     }
 ]}
