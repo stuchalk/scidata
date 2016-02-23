@@ -41,11 +41,11 @@
             "parameters": {"@type": "parameters"}
         },
         "source": {
-            "@id": "sci:dataSource",
+            "@id": "sci:hasSource",
             "@type": "@id"
         },
         "scope": {
-            "@id": "sci:dataScope",
+            "@id": "sci:hasScope",
             "@type": "@id"
         },
         "dataname": {
