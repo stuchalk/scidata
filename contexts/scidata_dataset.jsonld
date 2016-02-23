@@ -36,7 +36,7 @@
             "scope": {"@type": "scope"},
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
-            "label": {"@type": "label"},
+            "axisLabel": {"@type": "axisLabel"},
             "attributes": {"@type": "attribute"},
             "parameters": {"@type": "parameters"}
         },
@@ -64,7 +64,7 @@
             "@id": "sci:axisType",
             "@type": "string"
         },
-        "label": {
+        "axisLabel": {
             "@id": "sci:axisLabel",
             "@type": "string"
         }

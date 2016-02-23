@@ -1,7 +1,8 @@
 {"@context": [
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
@@ -36,6 +37,10 @@
         "role": {
             "@id": "sci:role",
             "@type": "@id"
+        },
+        "label": {
+            "@id": "rdfs:label",
+            "@type": "string"
         }
     }
 ]}

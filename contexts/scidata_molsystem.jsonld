@@ -144,14 +144,6 @@
             "@id": "obo:CHEBI_33250",
             "@type": "@id"
         },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
-        "label": {
-            "@id": "rdfs:label",
-            "@type": "string"
-        },
         "inchiKey": {
             "@id": "ss:CHEMINF_000059",
             "@type": "string"
