@@ -1,8 +1,6 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
-        "dc": "http://purl.org/dc/terms/",
-        "ss": "http://semanticscience.org/resource/",
         "edam": "http://edamontology.org/",
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
     },
@@ -10,8 +8,10 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "compound": {
             "@id": "sci:compound",
+            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "iupacname": {"@type": "iupacname"},
             "inchi": {"@type": "inchi"},
             "inchikey": {"@type": "inchikey"},
@@ -19,14 +19,6 @@
             "formula": {"@type": "formula"},
             "molweight": {"@type": "molweight"},
             "chebi": {"@type": "chebi"}
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
-        "source": {
-            "@id": "sci:source",
-            "@type": "@id"
         },
         "iupacname": {
             "@id": "ss:CHEMINF_000107",

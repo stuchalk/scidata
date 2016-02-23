@@ -7,17 +7,13 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "resource": {
-            "@id": "sci:resource",
+            "@id": "sci:hasResource",
             "name": {"@type": "name"},
             "type": {"@type": "type"},
             "vendor": {"@type": "vendor"},
             "catalognumber": {"@type": "catalognumber"},
-            "source": {"@type": "source"},
+            "origin": {"@type": "resourceOrigin"},
             "notes": {"@type": "notes"}
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
         },
         "type": {
             "@id": "res:resourceType",
@@ -31,8 +27,8 @@
             "@id": "obo:sep_0016",
             "@type": "string"
         },
-        "source": {
-            "@id": "res:resourceSource",
+        "resourceOrigin": {
+            "@id": "res:resourceOrigin",
             "@type": "string"
         },
         "property": {

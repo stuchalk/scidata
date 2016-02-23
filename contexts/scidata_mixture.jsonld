@@ -21,7 +21,11 @@
             "@type": "string"
         },
         "source": {
-            "@id": "sci:source",
+            "@id": "sci:hasSource",
+            "@type": "@id"
+        },
+        "scope": {
+            "@id": "sci:hasScope",
             "@type": "@id"
         },
         "mixturetype": {

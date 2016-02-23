@@ -65,7 +65,6 @@
             ],
             "aspects": [{
                 "@id": "measurement/1",
-                "@type": "sci:measurement",
                 "techniqueType": "spectroscopic",
                 "technique": "light refraction",
                 "instrumentType": "Refractometer",
@@ -194,8 +193,8 @@
             }]
         }
     },
-    "source": {
-        "@id": "source",
+    "reference": {
+        "@id": "reference",
         "@type": "dc:source",
         "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
     },

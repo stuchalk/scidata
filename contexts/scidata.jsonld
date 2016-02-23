@@ -1,4 +1,5 @@
 {"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
@@ -92,7 +93,7 @@
             "@type": "@id"
         },
         "scidata": {
-            "@id": "sci:scientificData",
+            "@id": "sci:hasScientificData",
             "type": {"@type": "type"},
             "property": {"@type": "property"},
             "kind": {"@type": "kind"},
@@ -124,7 +125,7 @@
             "@id": "sci:hasDataset",
             "@type": "dataset"
         },
-        "source": {
+        "reference": {
             "@id": "sci:hasSource",
             "citation": {"@type": "citation"},
             "url": {"@type": "url"},

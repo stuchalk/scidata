@@ -14,7 +14,7 @@
             "aspects": {"@type": "aspects"}
         },
         "aspects": {
-            "@id": "sci:methodologyAspect",
+            "@id": "sci:hasMethodologyAspect",
             "measurement": {"@type": "measurement"},
             "resource": {"@type": "resource"},
             "procedure": {"@type": "procedure"},

@@ -11,8 +11,10 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "chemical": {
             "@id": "sci:chemical",
+            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "vendor": {"@type": "vendor"},
             "catalognumber": {"@type": "catalognumber"},
             "lotnumber": {"@type": "lotnumber"},
@@ -20,18 +22,6 @@
             "grade": {"@type": "grade"},
             "phase": {"@type": "phase"},
             "properties": {"@type": "properties"}
-        },
-        "uid": {
-            "@id": "dc:identifier",
-            "@type": "string"
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
-        "source": {
-            "@id": "sci:source",
-            "@type": "@id"
         },
         "vendor": {
             "@id": "obo:sep_00088",

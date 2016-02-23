@@ -9,6 +9,7 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "unit": {
             "@id": "sci:unitOfMeasure",
+            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "unitsystem": {"@type": "unitsystem"},
             "unitsystemref": {"@type": "unitsystemref"},
@@ -30,14 +31,6 @@
         "unitref": {
             "@id": "sci:unitOfMeasure",
             "@type": "@id"
-        },
-        "uid": {
-            "@id": "dc:identifier",
-            "@type": "string"
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
         },
         "unitsystem": {
             "@id": "sci:unitSystem",

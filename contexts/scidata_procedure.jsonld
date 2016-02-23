@@ -10,14 +10,11 @@
         "procedure": {
             "@id": "sci:procedure",
             "title": {"@type": "title"},
+            "source": {"@type": "source"},
             "scope": {"@type": "scope"},
             "procType": {"@type": "procType"},
             "sequence": {"@type": "sequence"},
             "notes": {"@type": "notes"}
-        },
-        "scope": {
-            "@id": "sci:scope",
-            "@type": "string"
         },
         "procType": {
             "@id": "proc:procedureType",
@@ -27,10 +24,6 @@
             "@id": "proc:procedureSequence",
             "title": {"@type": "title"},
             "steps": {"@type": "steps"}
-        },
-        "title": {
-            "@id": "dc:title",
-            "@type": "string"
         },
         "steps": {
             "@id": "proc:procedureStep",

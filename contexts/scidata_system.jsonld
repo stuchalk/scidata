@@ -17,7 +17,7 @@
             "facets": {"@type": "facets"}
         },
         "facets": {
-            "@id": "sci:facet",
+            "@id": "sci:hasFacet",
             "compound": {"@type": "compound"},
             "chemical": {"@type": "chemical"},
             "mixture": {"@type": "mixture"},
@@ -35,14 +35,6 @@
             "@id": "sci:subdiscipline",
             "@type": "string"
         },
-        "mixture": {
-            "@id": "sci:hasMixture",
-            "@type": "system"
-        },
-        "molecularsystem": {
-            "@id": "sci:hasMolecularSystem",
-            "@type": "molSystem"
-        },
         "chemical": {
             "@id": "sci:hasChemical",
             "@type": "chemical"
@@ -50,6 +42,10 @@
         "compound": {
             "@id": "sci:hasCompound",
             "@type": "compound"
+        },
+        "mixture": {
+            "@id": "sci:hasMixture",
+            "@type": "system"
         },
         "material": {
             "@id": "sci:hasMaterial",
@@ -62,6 +58,10 @@
         "condition": {
             "@id": "sci:hasCondition",
             "@type": "condition"
+        },
+        "molecularsystem": {
+            "@id": "sci:hasMolecularSystem",
+            "@type": "molSystem"
         },
         "computer": {
             "@id": "sci:hasComputer",

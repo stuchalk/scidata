@@ -7,7 +7,7 @@
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "measurement": {
-            "@id": "sci:measurement",
+            "@type": "sci:measurement",
             "techniqueType": {"@type": "techniqueType"},
             "technique": {"@type": "technique"},
             "instrumentType": {"@type": "instrumentType"},

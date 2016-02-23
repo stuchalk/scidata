@@ -10,15 +10,12 @@
         "material": {
             "@id": "sci:material",
             "name": {"@type": "name"},
+            "source": {"@type": "source"},
             "scope": {"@type": "scope"},
             "materialType": {"@type": "materialType"},
             "manufactured": {"@type": "manufactured"},
-            "source": {"@type": "source"},
+            "origin": {"@type": "origin"},
             "notes": {"@type": "notes"}
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
         },
         "materialType": {
             "@id": "mat:materialType",
@@ -28,13 +25,13 @@
             "@id": "mat:composition",
             "@type": "string"
         },
-        "manufacture": {
+        "manufactured": {
             "@id": "mat:manufactured",
             "@type": "string"
         },
-        "source": {
-            "@id": "sci:source",
-            "@type": "@id"
+        "origin": {
+            "@id": "sci:origin",
+            "@type": "string"
         },
         "property": {
             "@id": "mat:property",
