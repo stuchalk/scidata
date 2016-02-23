@@ -28,6 +28,14 @@
         "scope": {
             "@id": "sci:hasScope",
             "@type": "@id"
+        },
+        "phase": {
+            "@id": "sci:phaseOfMatter",
+            "@type": "string"
+        },
+        "role": {
+            "@id": "sci:role",
+            "@type": "@id"
         }
     }
 ]}

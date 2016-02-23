@@ -12,8 +12,8 @@
             "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "type": {"@type": "mixturetype"},
-            "phase": {"@type": "mixturephase"},
+            "type": {"@type": "mixtype"},
+            "phase": {"@type": "phase"},
             "components": {"@type": "components"},
             "properties": {"@type": "properties"}
         },
@@ -21,12 +21,8 @@
             "@id": "dc:title",
             "@type": "string"
         },
-        "mixturetype": {
+        "mixtype": {
             "@id": "mix:type",
-            "@type": "string"
-        },
-        "mixturephase": {
-            "@id": "mix:phase",
             "@type": "string"
         },
         "components": {

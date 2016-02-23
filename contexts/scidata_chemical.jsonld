@@ -35,16 +35,8 @@
             "@id": "obo:sep_0015",
             "@type": "string"
         },
-        "role": {
-            "@id": "chem:role",
-            "@type": "@id"
-        },
         "grade": {
             "@id": "chem:grade",
-            "@type": "string"
-        },
-        "phase": {
-            "@id": "chem:phase",
             "@type": "string"
         },
         "properties": {
