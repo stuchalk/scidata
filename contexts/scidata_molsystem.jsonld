@@ -33,7 +33,7 @@
             "@type": "parameter"
         },
         "molecule": {
-            "@id": "gc:Molecule",
+            "@id": "gc:hasMolecule",
             "atomCount": {"@type": "atomCount"},
             "inchiKey": {"@type": "inchiKey"},
             "atoms": {"@type": "atoms"}
@@ -43,7 +43,7 @@
             "@type": "parameter"
         },
         "chain": {
-            "@id": "gc:Chain",
+            "@id": "gc:hasChain",
             "label": {"@type": "label"},
             "type": {"@type": "type"},
             "residues": {"@type": "residues"},
@@ -52,7 +52,7 @@
             "bonds": {"@type": "bonds"}
         },
         "residue": {
-            "@id": "gc:Residue",
+            "@id": "gc:hasResidue",
             "label": {"@type": "label"},
             "type": {"@type": "type"},
             "groups": {"@type": "groups"},
@@ -60,21 +60,21 @@
             "bonds": {"@type": "bonds"}
         },
         "selection": {
-            "@id": "gc:Selection",
+            "@id": "gc:hasSelection",
             "label": {"@type": "label"},
             "type": {"@type": "type"},
             "atoms": {"@type": "atoms"},
             "bonds": {"@type": "bonds"}
         },
         "group": {
-            "@id": "gc:Group",
+            "@id": "gc:hasGroup",
             "label": {"@type": "label"},
             "type": {"@type": "uri"},
             "atoms": {"@type": "atoms"},
             "bonds": {"@type": "bonds"}
         },
         "bond": {
-            "@id": "gc:ChemicalBond",
+            "@id": "gc:hasChemicalBond",
             "label": {"@type": "label"},
             "bondType": {"@type": "bondType"},
             "bondOrder": {"@type": "bondOrder"},
@@ -83,7 +83,7 @@
             "donor": {"@type": "atoms"}
         },
         "atom": {
-            "@id": "gc:Atom",
+            "@id": "gc:hasAtom",
             "name": {"@type": "name"},
             "label": {"@type": "label"},
             "element": {"@type": "element"},
