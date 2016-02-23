@@ -12,7 +12,7 @@
         "schema": "http://schema.org/",
         "bse": "http://purl.oclc.org/NET/EMSL/BSE",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"
+        "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

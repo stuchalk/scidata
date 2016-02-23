@@ -3,7 +3,7 @@
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
             "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
@@ -71,7 +71,7 @@
                         "@id": "setting/1/value",
                         "@type": "sci:value",
                         "number": 589,
-                        "unit": "nm"
+                        "unit": "qudt:Nanometer"
                     }
                 }]
             }]
@@ -95,13 +95,13 @@
                             "source": "compound/1",
                             "grade": "MilliQ Grade (18.2 MOhms)",
                             "properties": [{
-                                "@id": "mixture/1/component/1/purity",
+                                "@id": "mixture/1/component/1/property/1",
                                 "@type": "sci:purity",
                                 "value": {
-                                    "@id": "mixture/1/component/1/purity/value",
+                                    "@id": "mixture/1/component/1/property/1/value",
                                     "@type": "sci:value",
                                     "number": 99.9999,
-                                    "unit": "unit:PercentWeightWeight"
+                                    "unit": "qudt:PercentWeightWeight"
                                 }
                             }]
                         },
@@ -112,13 +112,13 @@
                             "scope": "compound/2",
                             "grade": "ACS Certified grade",
                             "properties": [{
-                                "@id": "mixture/1/component/2/purity",
+                                "@id": "mixture/1/component/2/property/1",
                                 "@type": "sci:purity",
                                 "value": {
-                                    "@id": "mixture/1/component/2/purity/value",
+                                    "@id": "mixture/1/component/2/property/1/value",
                                     "@type": "sci:value",
                                     "number": 9.99,
-                                    "unit": "unit:PercentWeightWeight"
+                                    "unit": "qudt:PercentWeightWeight"
                                 }
                             }]
                         }
@@ -147,7 +147,7 @@
                         "@id": "condition/1/value",
                         "@type": "sci:value",
                         "number": 20,
-                        "unit": "unit:DegreeCelcius"
+                        "unit": "qudt:DegreeCelcius"
                     }
                 },
                 {
@@ -161,7 +161,7 @@
                         "@id": "condition/2/value",
                         "@type": "sci:value",
                         "number": 0.043043,
-                        "unit": "unit:GramPerGram"
+                        "unit": "qudt:GramPerGram"
                     }
                 }
             ]

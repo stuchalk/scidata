@@ -3,7 +3,7 @@
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
             "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "unit": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
