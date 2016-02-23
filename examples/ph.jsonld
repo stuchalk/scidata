@@ -114,13 +114,13 @@
                             "properties": [{
                                 "@id": "mixture/1/component/1/property/1",
                                 "@type": "sci:property",
-                                "quantity": "moles of substance per volume",
-                                "property": "Concentration",
+                                "quantity": "mass of substance per volume",
+                                "property": "Concentration (w/v)",
                                 "value": {
                                     "@id": "mixture/1/component/1/property/1/value",
                                     "@type": "sci:value",
                                     "number": 2.99,
-                                    "unitstr": "ppm (w/v)"
+                                    "unit": "qudt:PpmWeightVolume"
                                 }
                             }]
                         },

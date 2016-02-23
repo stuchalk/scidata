@@ -3,7 +3,6 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
     {
         "dc": "http://purl.org/dc/terms/",
-        "ss": "http://semanticscience.org/resource/",
         "obo": "http://purl.obolibrary.org/obo/",
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "chem": "http://stuchalk.github.io/scidata/ontology/scidata_chemical.owl#"

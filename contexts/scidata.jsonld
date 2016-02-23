@@ -84,7 +84,11 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "dc:tableOfContents",
+            "@id": "sci:hasTableOfContents",
+            "sections": {"@type": "sections"}
+        },
+        "sections": {
+        	"@id": "dc:hasPart",
             "@type": "@id"
         },
         "scidata": {
