@@ -45,7 +45,7 @@
         },
         "phase": {
             "@id": "chem:phase",
-            "@type": "parameter"
+            "@type": "string"
         },
         "properties": {
             "@id": "sci:propertyValue",

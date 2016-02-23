@@ -1,13 +1,10 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "meas": "http://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#"
-    },
+    {"meas": "http://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "measurement": {
-            "@type": "sci:measurement",
+            "@id": "meas:measurement",
             "techniqueType": {"@type": "techniqueType"},
             "technique": {"@type": "technique"},
             "instrumentType": {"@type": "instrumentType"},

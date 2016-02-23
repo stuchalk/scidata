@@ -11,7 +11,7 @@
         },
         {"@base": "http://stuchalk.github.io/scidata/examples/scf/"}
     ],
-    "@id": "metadata",
+    "@id": "",
     "uid": "scidata/example/scf",
     "title": "Glucose vib ele",
     "author": [

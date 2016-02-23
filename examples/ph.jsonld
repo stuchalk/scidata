@@ -4,12 +4,13 @@
         {
             "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "http://stuchalk.github.io/scidata/examples/ph/"}
     ],
-    "@id": "metadata",
+    "@id": "",
     "uid": "scidata/example/ph",
     "title": "pH of cyanide standard",
     "author": [{
@@ -34,20 +35,27 @@
         "http://stuchalk.github.io/scidata/examples/nmr.jsonld",
         "http://stuchalk.github.io/scidata/examples/scf.jsonld"
     ],
-    "toc": [
-        "methodology/measurement/1",
-        "methodology/procedure/1",
-        "system/mixture/1",
-        "system/compound/1",
-        "system/compound/2",
-        "system/compound/3",
-        "system/compound/4",
-        "system/compound/5",
-        "system/compound/6",
-        "system/condition/1",
-        "dataset/datapoint/1",
-        "dataset/datapoint/2"
-    ],
+    "toc": {
+        "@id": "toc",
+        "@type": "dc:tableOfContents",
+        "sections": [
+            "methodology",
+            "system",
+            "dataset",
+            "measurement/1",
+            "procedure/1",
+            "mixture/1",
+            "compound/1",
+            "compound/2",
+            "compound/3",
+            "compound/4",
+            "compound/5",
+            "compound/6",
+            "condition/1",
+            "datapoint/1",
+            "datapoint/2"
+        ]
+    },
     "scidata": {
         "@id": "scidata",
         "@type": "sci:scidata",
@@ -105,12 +113,12 @@
                     "title": "3 ppm cyanide standard solution",
                     "type": "solution",
                     "phase": "liquid",
-                    "component": [
+                    "components": [
                         {
                             "@id": "mixture/1/component/1",
-                            "@type": "sci:component",
+                            "@type": "sci:chemical",
                             "source": "compound/1",
-                            "role": "analyte",
+                            "role": "sci:analyte",
                             "properties": [{
                                 "@id": "mixture/1/component/1/property/1",
                                 "@type": "sci:property",
@@ -126,33 +134,33 @@
                         },
                         {
                             "@id": "mixture/1/component/2",
-                            "@type": "sci:component",
+                            "@type": "sci:chemical",
                             "source": "compound/2",
-                            "role": "reagent"
+                            "role": "sci:reagent"
                         },
                         {
-                            "@id": "solution/1/component/3",
-                            "@type": "sci:component",
+                            "@id": "mixture/1/component/3",
+                            "@type": "sci:chemical",
                             "source": "compound/3",
-                            "role": "reagent"
+                            "role": "sci:reagent"
                         },
                         {
-                            "@id": "solution/1/component/4",
-                            "@type": "sci:component",
+                            "@id": "mixture/1/component/4",
+                            "@type": "sci:chemical",
                             "source": "compound/4",
-                            "role": "buffer"
+                            "role": "sci:buffer"
                         },
                         {
-                            "@id": "solution/1/component/5",
-                            "@type": "sci:component",
+                            "@id": "mixture/1/component/5",
+                            "@type": "sci:chemical",
                             "source": "compound/5",
-                            "role": "solvent"
+                            "role": "sci:solvent"
                         },
                         {
                             "@id": "mixture/1/component/6",
-                            "@type": "sci:component",
+                            "@type": "sci:chemical",
                             "source": "compound/6",
-                            "role": "solvent"
+                            "role": "sci:solvent"
                         }
                     ],
                     "properties": [{
@@ -164,7 +172,7 @@
                             "@id": "mixture/1/property/1/value",
                             "@type": "sci:value",
                             "number": 100,
-                            "unitstr": "unit:MilliLiter"
+                            "unitref": "qudt:MilliLiter"
                         }
                     }]
                 },
@@ -173,42 +181,42 @@
                     "@type": "sci:compound",
                     "name": "cyanide ion",
                     "inchi": "InChI=1S/CN/c1-2/q-1",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:17514"
+                    "chebi": "obo:CHEBI_17514"
                 },
                 {
                     "@id": "compound/2",
                     "@type": "sci:compound",
                     "name": "phenolphthlin",
                     "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:34915"
+                    "chebi": "obo:CHEBI_34915"
                 },
                 {
                     "@id": "compound/3",
                     "@type": "sci:compound",
                     "name": "copper(II) ion",
                     "inchi": "InChI=1S/Cu/q+2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:29036"
+                    "chebi": "obo:CHEBI_29036"
                 },
                 {
                     "@id": "compound/4",
                     "@type": "sci:compound",
                     "name": "tetraborate ion",
                     "inchi": "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:38889"
+                    "chebi": "obo:CHEBI_38889"
                 },
                 {
                     "@id": "compound/5",
                     "@type": "sci:compound",
                     "name": "ethanol",
                     "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:16236"
+                    "chebi": "obo:CHEBI_16236"
                 },
                 {
                     "@id": "compound/6",
                     "@type": "sci:compound",
                     "name": "water",
                     "inchi": "InChI=1S/H2O/h1H2",
-                    "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
+                    "chebi": "obo:CHEBI_15377"
                 },
                 {
                     "@id": "condition/1",
@@ -221,7 +229,7 @@
                         "@id": "condition/1/value",
                         "@type": "sci:value",
                         "number": "22.8",
-                        "unitstr": "unit:DegreeCelcius"
+                        "unitref": "qudt:DegreeCelcius"
                     }
                 }
             ]
@@ -245,12 +253,13 @@
                 },
                 {
                     "@id": "datapoint/2",
+                    "@type": "sci:datapoint",
                     "quantity": "annotation",
                     "property": "Observation",
                     "textstring": {
                         "@id": "datapoint/2/value",
                         "@type": "sci:textvalue",
-                        "text": "The solution was clear, no reagent precipiation was observed.",
+                        "text": "The solution was clear, no reagent precipitation was observed.",
                         "texttype": "plain",
                         "language": "en-us"
                     }
@@ -258,13 +267,15 @@
             ]
         }
     },
-    "source": {
-        "@id": "source",
+    "reference": {
+        "@id": "reference",
+        "@type": "dc:source",
         "citation": "Chalk Research Group http://chalk.coas.unf.edu",
         "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
     },
     "rights": {
         "@id": "rights",
+        "@type": "dc:rights",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/"
     }
 }

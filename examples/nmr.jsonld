@@ -10,7 +10,7 @@
         },
         {"@base": "http://stuchalk.github.io/scidata/examples/nmr/"}
     ],
-    "@id": "metadata",
+    "@id": "",
     "uid": "stuchalk/example/nmr",
     "title": "R-(+)-Limonene (1H NMR)",
     "author": {
