@@ -78,7 +78,7 @@
                         "@id": "setting/1/value",
                         "@type": "sci:value",
                         "number": 589,
-                        "unit": "qudt:Nanometer"
+                        "unitref": "qudt:Nanometer"
                     }
                 }]
             }]
@@ -92,8 +92,8 @@
                 {
                     "@id": "mixture/1",
                     "@type": "sci:solution",
-                    "systemtype": "Binary mixture",
-                    "systemphase": "liquid",
+                    "type": "Binary mixture",
+                    "phase": "liquid",
                     "components": [
                         {
                             "@id": "mixture/1/component/1",
@@ -108,7 +108,7 @@
                                     "@id": "mixture/1/component/1/property/1/value",
                                     "@type": "sci:value",
                                     "number": 99.9999,
-                                    "unit": "qudt:PercentWeightWeight"
+                                    "unitref": "qudt:PercentWeightWeight"
                                 }
                             }]
                         },
@@ -116,7 +116,7 @@
                             "@id": "mixture/1/component/2",
                             "@type": "sci:chemical",
                             "name": "Hydrochloric acid",
-                            "scope": "compound/2",
+                            "source": "compound/2",
                             "grade": "ACS Certified grade",
                             "properties": [{
                                 "@id": "mixture/1/component/2/property/1",
@@ -125,7 +125,7 @@
                                     "@id": "mixture/1/component/2/property/1/value",
                                     "@type": "sci:value",
                                     "number": 9.99,
-                                    "unit": "qudt:PercentWeightWeight"
+                                    "unitref": "qudt:PercentWeightWeight"
                                 }
                             }]
                         }
@@ -154,7 +154,7 @@
                         "@id": "condition/1/value",
                         "@type": "sci:value",
                         "number": 20,
-                        "unit": "qudt:DegreeCelcius"
+                        "unitref": "qudt:DegreeCelcius"
                     }
                 },
                 {
@@ -168,7 +168,7 @@
                         "@id": "condition/2/value",
                         "@type": "sci:value",
                         "number": 0.043043,
-                        "unit": "qudt:GramPerGram"
+                        "unitref": "qudt:GramPerGram"
                     }
                 }
             ]

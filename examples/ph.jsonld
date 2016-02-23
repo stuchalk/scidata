@@ -120,7 +120,7 @@
                                     "@id": "mixture/1/component/1/property/1/value",
                                     "@type": "sci:value",
                                     "number": 2.99,
-                                    "unit": "qudt:PpmWeightVolume"
+                                    "unitref": "qudt:PpmWeightVolume"
                                 }
                             }]
                         },
@@ -214,7 +214,7 @@
                     "@id": "condition/1",
                     "@type": "sci:condition",
                     "source": "measurement/1",
-                    "scope": "solution/1",
+                    "scope": "mixture/1",
                     "quantity": "temperature",
                     "property": "Solution temperature",
                     "value": {

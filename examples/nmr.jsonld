@@ -63,7 +63,7 @@
                         "value": {
                             "@id": "setting/1/value",
                             "number": "300.03180",
-                            "unitstr": "MHz"
+                            "unitref": "qudt:MegaHertz"
                         }
                     },
                     {
@@ -74,7 +74,7 @@
                         "value": {
                             "@id": "setting/2/value",
                             "number": "3.42098",
-                            "unitstr": "s"
+                            "unitref": "qudt:Second"
                         }
                     },
                     {
@@ -209,7 +209,7 @@
                             "@id": "attribute/2/value",
                             "@type": "sci:value",
                             "number": "4184.02539063",
-                            "unitstr": "unit:Hertz"
+                            "unitref": "qudt:Hertz"
                         }
                     },
                     {
@@ -221,7 +221,7 @@
                             "@id": "attribute/3/value",
                             "@type": "sci:value",
                             "number": "-604.9543457",
-                            "unit": "unit:Hertz"
+                            "unitref": "qudt:Hertz"
                         }
                     },
                     {
@@ -233,7 +233,7 @@
                             "@id": "attribute/4/value",
                             "@type": "sci:value",
                             "number": "4184.02539063",
-                            "unit": "unit:Hertz"
+                            "unitref": "qudt:Hertz"
                         }
                     },
                     {
@@ -245,7 +245,7 @@
                             "@id": "attribute/5/value",
                             "@type": "sci:value",
                             "number": "-604.9543457",
-                            "unit": "unit:Hertz"
+                            "unitref": "qudt:Hertz"
                         }
                     },
                     {
@@ -311,7 +311,7 @@
                             "@id": "attribute/11/value",
                             "@type": "sci:value",
                             "number": "-0.29231454",
-                            "unit": "unit:Hertz"
+                            "unitref": "qudt:Hertz"
                         }
                     }
                 ],
@@ -16765,7 +16765,7 @@
                                 -617.55863404,
                                 -617.85094858
                             ],
-                            "unitstr": "Hz"
+                            "unitref": "qudt:Hertz"
                         }
                     }
                 },
