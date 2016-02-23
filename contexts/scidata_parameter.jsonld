@@ -32,18 +32,6 @@
             "valuearray": {"@type": "valuearray"},
             "textarray": {"@type": "textstringarray"}
         },
-        "source": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
-        },
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
         "quantity": {
             "@id": "sci:quantity",
             "@type": "string"

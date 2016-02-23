@@ -40,14 +40,6 @@
             "attributes": {"@type": "attribute"},
             "parameters": {"@type": "parameters"}
         },
-        "source": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
-        },
         "dataname": {
             "@id": "sci:dataName",
             "@type": "parameter"

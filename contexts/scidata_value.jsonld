@@ -44,10 +44,6 @@
             "texttype": {"@type": "texttype"},
             "language": {"@type": "language"}
         },
-        "uid": {
-            "@id": "dc:identifier",
-            "@type": "string"
-        },
         "datatype": {
             "@id": "sci:numericDatatype",
             "@type": "@id"

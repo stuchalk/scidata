@@ -11,6 +11,7 @@
             "@id": "sci:mixture",
             "name": {"@type": "name"},
             "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
             "type": {"@type": "mixturetype"},
             "phase": {"@type": "mixturephase"},
             "components": {"@type": "components"},
@@ -19,14 +20,6 @@
         "name": {
             "@id": "dc:title",
             "@type": "string"
-        },
-        "source": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
         },
         "mixturetype": {
             "@id": "mix:type",
