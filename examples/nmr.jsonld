@@ -46,7 +46,7 @@
     },
     "scidata": {
         "@id": "scidata",
-        "@type": "sci:scidata",
+        "@type": "sci:scientificData",
         "type": "property value",
         "property": ["Nuclear Magnetic Resonance"],
         "kind": ["spectrum"],
@@ -343,7 +343,7 @@
                         "quantity": "frequency",
                         "property": "Radiofrequency",
                         "valuearray": {
-                            "@id": "datagroup/1/dataseries/1/parameter/valuearray",
+                            "@id": "dataseries/1/parameter/valuearray",
                             "@type": "sci:valuearray",
                             "datatype": "decimal",
                             "numberarray": [
@@ -16791,7 +16791,7 @@
                         "quantity": "Voltage",
                         "property": "Free Induction Decay",
                         "valuearray": {
-                            "@id": "datagroup/1/dataseries/2/parameter/valuearray",
+                            "@id": "dataseries/2/parameter/valuearray",
                             "@type": "sci:valuearray",
                             "datatype": "decimal",
                             "numberarray": [
@@ -33230,14 +33230,15 @@
             ]
         }
     },
-    "source": {
-        "@id": "source",
+    "reference": {
+        "@id": "reference",
         "@type": "dc:source",
         "citation": "SpectraSchool Spectra Dataset, Royal Society of Chemistry",
         "url": "http://www.rsc.org/learn-chemistry/collections/spectroscopy"
     },
     "rights": {
         "@id": "rights",
+        "@type": "dc:rights",
         "holder": "Chalk Group, Department of Chemistry, University of North Florida",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/"
     }

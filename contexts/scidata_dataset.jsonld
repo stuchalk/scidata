@@ -12,7 +12,7 @@
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "attribute": {"@type": "attribute"},
+            "attributes": {"@type": "attributes"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
             "datapoint": {"@type": "datapoint"}
@@ -23,7 +23,7 @@
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
-            "attribute": {"@type": "attribute"},
+            "attributes": {"@type": "attributes"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
             "datapoint": {"@type": "datapoint"}
@@ -37,7 +37,7 @@
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
             "axisLabel": {"@type": "axisLabel"},
-            "attributes": {"@type": "attribute"},
+            "attributes": {"@type": "attributes"},
             "parameters": {"@type": "parameters"}
         },
         "dataname": {
