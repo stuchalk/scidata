@@ -46,6 +46,21 @@
         },
         "datapoint": {
             "@id": "sci:hasDataPoint",
+            "uid": {"@type": "uid"},
+            "conditions": {"@type": "conditions"},
+            "settings": {"@type": "settings"},
+            "data": {"@type": "data"}
+        },
+        "conditions": {
+            "@id": "sci:hasCondition",
+            "@type": "@id"
+        },
+        "settings": {
+            "@id": "sci:hasSetting",
+            "@type": "id"
+        },
+        "data": {
+            "@id": "sci:hasData",
             "@type": "parameter"
         },
         "attributes": {
@@ -53,7 +68,7 @@
             "@type": "parameter"
         },
         "parameters": {
-            "@id": "sci:hasDataParamters",
+            "@id": "sci:hasDataParameters",
             "@type": "parameterArray"
         },
         "seriesType": {
