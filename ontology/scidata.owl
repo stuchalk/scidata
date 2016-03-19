@@ -41,12 +41,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to http://stuchalk.github.io/scidata.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWL-DL</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWL-DL</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -144,9 +144,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#condition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#context"/>
     </Declaration>
     <Declaration>
         <Class IRI="#contextFacet"/>
@@ -248,6 +245,9 @@
         <Class IRI="#permalink"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#procedure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#property"/>
     </Declaration>
     <Declaration>
@@ -282,6 +282,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#starttime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#system"/>
     </Declaration>
     <Declaration>
         <Class IRI="#text"/>
@@ -366,6 +369,39 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://schema.org/URL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatagroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatapoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataseries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFacet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMethodology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTOC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#imperial"/>
@@ -596,12 +632,8 @@
         <Class IRI="#contextFacet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#context"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#contextFacet"/>
-        <Class IRI="#context"/>
+        <Class IRI="#system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conversionFactor"/>
@@ -728,6 +760,10 @@
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#procedure"/>
+        <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#property"/>
         <Class IRI="#scientificData"/>
     </SubClassOf>
@@ -745,11 +781,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#scientificDiscipline"/>
-        <Class IRI="#context"/>
+        <Class IRI="#system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#scientificSubdiscipline"/>
-        <Class IRI="#context"/>
+        <Class IRI="#system"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#siPrefix"/>
@@ -774,6 +810,10 @@
     <SubClassOf>
         <Class IRI="#starttime"/>
         <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#system"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#text"/>
@@ -883,6 +923,94 @@
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
         <Class abbreviatedIRI="bfo11snap:Occurrent"/>
     </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAspect"/>
+        <Class IRI="#methodology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDatagroup"/>
+        <Class IRI="#dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDatapoint"/>
+        <Class IRI="#dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataseries"/>
+        <Class IRI="#dataSeries"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataseries"/>
+        <Class IRI="#dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataset"/>
+        <Class IRI="#scientificData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFacet"/>
+        <Class IRI="#system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMethodology"/>
+        <Class IRI="#scientificData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSystem"/>
+        <Class IRI="#scientificData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAspect"/>
+        <Class IRI="#methodologyAspect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDatagroup"/>
+        <Class IRI="#dataGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDatapoint"/>
+        <Class IRI="#dataPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataset"/>
+        <Class IRI="#dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFacet"/>
+        <Class IRI="#contextFacet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMethodology"/>
+        <Class IRI="#methodology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRights"/>
+        <Class abbreviatedIRI="dc:accessRights"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class abbreviatedIRI="dc:source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSystem"/>
+        <Class IRI="#system"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTOC"/>
+        <Class abbreviatedIRI="dc:tableOfContents"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasDataset"/>
+        <ObjectProperty IRI="#hasMethodology"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasDataset"/>
+        <ObjectProperty IRI="#hasSystem"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasMethodology"/>
+        <ObjectProperty IRI="#hasSystem"/>
+    </DisjointObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
         <AbbreviatedIRI>obo:CHEBI_37577</AbbreviatedIRI>
@@ -1777,21 +1905,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#context</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metadata describing the systems, organisms, or material under study and the conditions (properties) under which the study was conducted</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#context</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">context</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#context</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">context</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#contextFacet</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the chemical system (mixture), material, chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
@@ -2338,6 +2451,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#procedure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A list steps describing how to perform as specific task or tasks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#procedure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#procedure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#property</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any property that can be characterized or measured</Literal>
     </AnnotationAssertion>
@@ -2520,6 +2648,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#starttime</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">start time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#system</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Metadata describing the system(s) that the scientific study is is focused on.  Can be molecular or chemical systems, organisms, or materials and the conditions (properties) under which the study was conducted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#system</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#system</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
