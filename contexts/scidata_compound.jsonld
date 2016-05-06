@@ -2,7 +2,8 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "edam": "http://edamontology.org/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
