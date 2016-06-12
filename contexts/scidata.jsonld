@@ -120,7 +120,7 @@
         },
         "system": {
             "@id": "sci:hasSystem",
-            "@type": "context"
+            "@type": "system"
         },
         "dataset": {
             "@id": "sci:hasDataset",
