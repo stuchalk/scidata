@@ -138,7 +138,7 @@
         },
         "url": {
             "@id": "schema:url",
-            "@type": "anyURI"
+            "@type": "@id"
         },
         "doi": {
             "@id": "bibo:doi",
