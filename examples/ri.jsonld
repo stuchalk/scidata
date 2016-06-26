@@ -10,7 +10,7 @@
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        {"@base": "http://stuchalk.github.io/scidata/examples/ri/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/ri.jsonld/"}
     ],
     "@id": "",
     "uid": "scidata/examples/ri",
@@ -45,7 +45,7 @@
             "system/",
             "dataset/",
             "measurement/1/",
-            "mixture/1/",
+            "substance/1/",
             "compound/1/",
             "compound/2/",
             "condition/1/",
@@ -54,7 +54,7 @@
         ]
     },
     "scidata": {
-        "@id": "scidata",
+        "@id": "scidata/",
         "@type": "sci:scidata",
         "type": "property value",
         "property": ["Refractive index"],
@@ -94,15 +94,17 @@
             "facets": [
                 {
                     "@id": "substance/1/",
-                    "@type": "sub:homogeneousSolution",
-                    "type": "Binary mixture",
-                    "phase": "liquid",
+                    "@type": "sub:substance",
+                    "aggregation": "sub:aq",
+                    "mixtype": ["sub:homogeneousSolution","sub:binaryMixture"],
+                    "phase": "sub:liquid",
                     "components": [
                         {
                             "@id": "substance/1/component/1/",
                             "@type": "sci:chemical",
                             "name": "Ultrapure Water",
                             "source": "compound/1/",
+                            "role": "chm:solvent",
                             "grade": "MilliQ Grade (18.2 MOhms)",
                             "properties": [{
                                 "@id": "substance/1/component/1/property/1/",
@@ -110,7 +112,7 @@
                                 "value": {
                                     "@id": "substance/1/component/1/property/1/value/",
                                     "@type": "sci:value",
-                                    "number": 99.9999,
+                                    "number": 90.01,
                                     "unitref": "qudt:PercentWeightWeight"
                                 }
                             }]
@@ -120,6 +122,7 @@
                             "@type": "sci:chemical",
                             "name": "Hydrochloric acid",
                             "source": "compound/2/",
+                            "role": "chm:solute",
                             "grade": "ACS Certified grade",
                             "properties": [{
                                 "@id": "mixture/1/component/2/property/1/",
@@ -148,11 +151,12 @@
                 },
                 {
                     "@id": "condition/1/",
-                    "@type": "prop:temperature",
+                    "@type": "sci:condition",
                     "source": "measurement/1/",
-                    "scope": "chemicalsystem/1/",
+                    "scope": "substance/1/",
                     "quantity": "temperature",
                     "property": "System temperature",
+                    "propertyref": "prop:temperature",
                     "value": {
                         "@id": "condition/1/value/",
                         "@type": "sci:value",
@@ -162,11 +166,12 @@
                 },
                 {
                     "@id": "condition/2/",
-                    "@type": "prop:massFraction",
+                    "@type": "sci:condition",
                     "source": "measurement/1/",
                     "scope": "chemicalsystem/1/",
                     "quantity": "Relative fractional amount",
                     "property": "Mass fraction",
+                    "propertyref": "prop:massFraction",
                     "value": {
                         "@id": "condition/2/value/",
                         "@type": "sci:value",
@@ -183,9 +188,10 @@
             "scope": "chemicalsystem/1/",
             "datapoint": [{
                 "@id": "datapoint/1/",
-                "@type": "prop:indexOfRefraction",
+                "@type": "sci:datapoint",
                 "quantity": "refraction",
                 "property": "Index of refraction",
+                "propertyref": "prop:indexOfRefraction",
                 "conditions": [
                     "condition/1/",
                     "condition/2/"

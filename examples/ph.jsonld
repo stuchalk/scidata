@@ -3,18 +3,21 @@
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
             "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sub": "http://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
+            "chm": "http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+            "prop": "http://stuchalk.github.io/scidata/ontology/property/property.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        {"@base": "http://stuchalk.github.io/scidata/examples/ph/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/ph.jsonld/"}
     ],
     "@id": "",
     "uid": "scidata/example/ph",
     "title": "pH of cyanide standard",
     "author": [{
-        "@id": "author/1",
+        "@id": "author/1/",
         "@type": "dc:creator",
         "name": "Stuart Chalk",
         "organization": "University of North Florida (UNF)",
@@ -39,55 +42,55 @@
         "@id": "toc",
         "@type": "dc:tableOfContents",
         "sections": [
-            "methodology",
-            "system",
-            "dataset",
-            "measurement/1",
-            "procedure/1",
-            "mixture/1",
-            "compound/1",
-            "compound/2",
-            "compound/3",
-            "compound/4",
-            "compound/5",
-            "compound/6",
-            "condition/1",
-            "datapoint/1",
-            "datapoint/2"
+            "methodology/",
+            "system/",
+            "dataset/",
+            "measurement/1/",
+            "procedure/1/",
+            "substance/1/",
+            "compound/1/",
+            "compound/2/",
+            "compound/3/",
+            "compound/4/",
+            "compound/5/",
+            "compound/6/",
+            "condition/1/",
+            "datapoint/1/",
+            "datapoint/2/"
         ]
     },
     "scidata": {
-        "@id": "scidata",
+        "@id": "scidata/",
         "@type": "sci:scidata",
         "type": ["property value"],
         "property": ["pH"],
         "kind": ["datapoint"],
         "methodology": {
-            "@id": "methodology",
+            "@id": "methodology/",
             "@type": "sci:methodology",
             "evaluation": ["experimental"],
             "aspects": [
                 {
-                    "@id": "measurement/1",
+                    "@id": "measurement/1/",
                     "@type": "sci:measurement",
-                    "scope": "resource/1",
+                    "scope": "resource/1/",
                     "techniqueType": "ion-selective electrode",
                     "technique": "pH electrode",
                     "instrumentType": "Temperature compensated pH electrode",
                     "settings": [{
-                        "@id": "setting/1",
+                        "@id": "setting/1/",
                         "@type": "sci:setting",
                         "quantity": "instrument feature",
                         "property": "Temperature compensation",
                         "text": {
-                            "@id": "setting/1/value",
+                            "@id": "setting/1/value/",
                             "@type": "sci:textvalue",
                             "text": "true"
                         }
                     }]
                 },
                 {
-                    "@id": "resource/1",
+                    "@id": "resource/1/",
                     "@type": "sci:resource",
                     "type": "instrument",
                     "name": "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode",
@@ -95,37 +98,38 @@
                     "catalognumber": "13-620-530A"
                 },
                 {
-                    "@id": "procedure/1",
+                    "@id": "procedure/1/",
                     "@type": "sci:procedure",
                     "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken"
                 }
             ]
         },
         "system": {
-            "@id": "system",
+            "@id": "system/",
             "@type": "sci:system",
             "discipline": "chemistry",
             "subdiscipline": "analytical chemistry",
             "facets": [
                 {
-                    "@id": "mixture/1",
-                    "@type": "sci:mixture",
+                    "@id": "substance/1/",
+                    "@type": "sub:substance",
                     "title": "3 ppm cyanide standard solution",
-                    "type": "solution",
-                    "phase": "liquid",
+                    "aggregation": "sub:aq",
+                    "mixtype": "sub:homogeneousSolution",
+                    "phase": "sub:liquid",
                     "components": [
                         {
-                            "@id": "mixture/1/component/1",
+                            "@id": "substance/1/component/1/",
                             "@type": "sci:chemical",
-                            "source": "compound/1",
-                            "role": "sci:analyte",
+                            "source": "compound/1/",
+                            "role": "chm:analyte",
                             "properties": [{
-                                "@id": "mixture/1/component/1/property/1",
-                                "@type": "sci:property",
+                                "@id": "substance/1/component/1/property/1/",
+                                "@type": "prop:concentrationMassVolume",
                                 "quantity": "mass of substance per volume",
                                 "property": "Concentration (w/v)",
                                 "value": {
-                                    "@id": "mixture/1/component/1/property/1/value",
+                                    "@id": "substance/1/component/1/property/1/value/",
                                     "@type": "sci:value",
                                     "number": 2.99,
                                     "unitref": "qudt:PpmWeightVolume"
@@ -133,34 +137,34 @@
                             }]
                         },
                         {
-                            "@id": "mixture/1/component/2",
+                            "@id": "substance/1/component/2/",
                             "@type": "sci:chemical",
-                            "source": "compound/2",
-                            "role": "sci:reagent"
+                            "source": "compound/2/",
+                            "role": "chm:reagent"
                         },
                         {
-                            "@id": "mixture/1/component/3",
+                            "@id": "substance/1/component/3/",
                             "@type": "sci:chemical",
-                            "source": "compound/3",
-                            "role": "sci:reagent"
+                            "source": "compound/3/",
+                            "role": "chm:reagent"
                         },
                         {
-                            "@id": "mixture/1/component/4",
+                            "@id": "substance/1/component/4/",
                             "@type": "sci:chemical",
-                            "source": "compound/4",
-                            "role": "sci:buffer"
+                            "source": "compound/4/",
+                            "role": "chm:buffer"
                         },
                         {
-                            "@id": "mixture/1/component/5",
+                            "@id": "substance/1/component/5/",
                             "@type": "sci:chemical",
-                            "source": "compound/5",
-                            "role": "sci:solvent"
+                            "source": "compound/5/",
+                            "role": "chm:solvent"
                         },
                         {
-                            "@id": "mixture/1/component/6",
+                            "@id": "substance/1/component/6/",
                             "@type": "sci:chemical",
-                            "source": "compound/6",
-                            "role": "sci:solvent"
+                            "source": "compound/6/",
+                            "role": "chm:solvent"
                         }
                     ],
                     "properties": [{
@@ -221,10 +225,11 @@
                 {
                     "@id": "condition/1",
                     "@type": "sci:condition",
-                    "source": "measurement/1",
-                    "scope": "mixture/1",
+                    "source": "measurement/1/",
+                    "scope": "substance/1/",
                     "quantity": "temperature",
                     "property": "Solution temperature",
+                    "propertyref": "prop:temperature",
                     "value": {
                         "@id": "condition/1/value",
                         "@type": "sci:value",
@@ -241,23 +246,24 @@
             "scope": "solution/1",
             "datapoint": [
                 {
-                    "@id": "datapoint/1",
+                    "@id": "datapoint/1/",
                     "@type": "sci:datapoint",
                     "quantity": "p-function negative log of value",
                     "property": "pH",
+                    "propertyref": "prop:pH",
                     "value": {
-                        "@id": "datapoint/1/value",
+                        "@id": "datapoint/1/value/",
                         "@type": "sci:value",
                         "number": "10.03"
                     }
                 },
                 {
-                    "@id": "datapoint/2",
+                    "@id": "datapoint/2/",
                     "@type": "sci:datapoint",
                     "quantity": "annotation",
                     "property": "Observation",
                     "textstring": {
-                        "@id": "datapoint/2/value",
+                        "@id": "datapoint/2/value/",
                         "@type": "sci:textvalue",
                         "text": "The solution was clear, no reagent precipitation was observed.",
                         "texttype": "plain",
