@@ -37,7 +37,7 @@
         },
         "role": {
             "@id": "obo:BFO_0000023",
-            "@type": "string"
+            "@type": "@id"
         },
         "grade": {
             "@id": "chm:grade",

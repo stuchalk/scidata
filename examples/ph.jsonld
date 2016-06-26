@@ -168,12 +168,12 @@
                         }
                     ],
                     "properties": [{
-                        "@id": "mixture/1/property/1",
-                        "@type": "sci:volume",
+                        "@id": "mixture/1/property/1/",
+                        "@type": "prop:volume",
                         "quantity": "volume",
                         "property": "Volume of solution",
                         "value": {
-                            "@id": "mixture/1/property/1/value",
+                            "@id": "mixture/1/property/1/value/",
                             "@type": "sci:value",
                             "number": 100,
                             "unitref": "qudt:MilliLiter"

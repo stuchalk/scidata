@@ -168,7 +168,7 @@
                     "@id": "condition/2/",
                     "@type": "sci:condition",
                     "source": "measurement/1/",
-                    "scope": "chemicalsystem/1/",
+                    "scope": "substance/1/",
                     "quantity": "Relative fractional amount",
                     "property": "Mass fraction",
                     "propertyref": "prop:massFraction",
@@ -185,7 +185,7 @@
             "@id": "dataset/",
             "@type": "sci:dataset",
             "source": "measurement/1/",
-            "scope": "chemicalsystem/1/",
+            "scope": "substance/1/",
             "datapoint": [{
                 "@id": "datapoint/1/",
                 "@type": "sci:datapoint",

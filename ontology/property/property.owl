@@ -31,13 +31,10 @@
         <NamedIndividual IRI="#solid"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#gas"/>
+        <NamedIndividual IRI="#liquid"/>
     </Declaration>
     <Declaration>
         <Class IRI="#temperature"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#liquid"/>
     </Declaration>
     <Declaration>
         <Class IRI="#massFraction"/>
@@ -46,16 +43,22 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Class IRI="#pH"/>
     </Declaration>
     <Declaration>
         <Class IRI="#concentrationMassVolume"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#pH"/>
+        <Class abbreviatedIRI="sci:propertyValue"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <NamedIndividual IRI="#gas"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#volume"/>
     </Declaration>
     <Declaration>
         <Class IRI="#indexOfRefraction"/>
@@ -81,6 +84,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#temperature"/>
+        <Class abbreviatedIRI="sci:propertyValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#volume"/>
         <Class abbreviatedIRI="sci:propertyValue"/>
     </SubClassOf>
     <DifferentIndividuals>
@@ -209,6 +216,16 @@ where a(H^+) is the activity of hydrogen ion (hydrogen 1+) in aqueous solution, 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#temperature</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#volume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The three dimensional amount of space occupied by an amount of matter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#volume</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">volume</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
