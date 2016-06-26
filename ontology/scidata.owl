@@ -1,479 +1,483 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://stuchalk.github.io/scidata/ontology/scidata.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://stuchalk.github.io/scidata/ontology/scidata.owl">
-    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl"/>
+    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="chm" IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sub" IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="cite" IRI="http://purl.org/spar/datacite/"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="prop" IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Prefix name="cheminf" IRI="http://semanticscience.org/resource/"/>
     <Prefix name="bfo11snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
     <Prefix name="bfo11span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2015-11-05</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Scientific Data Model Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stuart Chalk</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to http://stuchalk.github.io/scidata.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2015-11-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stuart Chalk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWL-DL</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI="obo:CHEBI_37577"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000129"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000302"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0001508"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0100026"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0400107"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0001309"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:sep_00056"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:accessRights"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:bibliographicCitation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:creator"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:description"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:hasPart"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:identifier"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:license"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:source"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:subject"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:tableOfContents"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dc:title"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bibo:doi"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cite:orcid"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cheminf:SIO_000999"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#axisLabel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#axisType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#basisSet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#calculation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#chemical"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#chemicalSystem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#compound"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#condition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#contextFacet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#conversionFactor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataAttribute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataFormat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataName"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataPoint"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataScope"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataSeries"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataSeriesType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataSource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dataset"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#endtime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#equivalentThings"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#error"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#errorArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#errorType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#evaluation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#material"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#measurement"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#metadata"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#methodology"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#methodologyAspect"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#molecularSystem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#number"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#numberArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#numericDatatype"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#numericValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#numericValueArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#parameter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#parameterArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#permalink"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#procedure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#property"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#quantity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#resource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#scientificData"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#scientificDiscipline"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#scientificSubdiscipline"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#siPrefix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#siUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#siUnitEquivalent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sigfigs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#software"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#starttime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#system"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#text"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#textArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#textString"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#textStringArray"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#textType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#uid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitAbbreviation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitOfMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitPower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitReference"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitSymbol"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unitSystem"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:Continuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:maker"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:mbox"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://schema.org/URL"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAspect"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDatagroup"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDatapoint"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDataseries"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDataset"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFacet"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMethodology"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasRights"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSource"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSystem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTOC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#imperial"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#siderived"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Class IRI="#scientificData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siPrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000129"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/URL"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+        <Class IRI="#numericValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTOC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificSubdiscipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#starttime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:PATO_0001309"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numberArray"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:mbox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMethodology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#axisType"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:license"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:sep_00056"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:maker"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#errorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#permalink"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#endtime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textString"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#errorArray"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#uid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataseries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameterArray"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataScope"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#siderived"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#equivalentThings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#condition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textStringArray"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0001508"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_37577"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitSymbol"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitPower"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#axisLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitAbbreviation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientificDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contextFacet"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cheminf:SIO_000999"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0400107"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numericDatatype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sigfigs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#basisSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#methodologyAspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatapoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatagroup"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000302"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#molecularSystem"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siUnitEquivalent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboowl:hasRelatedSynonym"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <Class abbreviatedIRI="cite:orcid"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#resource"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#methodology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numericValueArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conversionFactor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#measurement"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataSeriesType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRights"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFacet"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:doi"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#imperial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unitReference"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dc:accessRights"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="obo:CHEBI_37577"/>
@@ -600,6 +604,14 @@
         <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
+        <Class IRI="#contextFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class IRI="#scientificData"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#axisLabel"/>
         <Class IRI="#dataset"/>
     </SubClassOf>
@@ -614,14 +626,6 @@
     <SubClassOf>
         <Class IRI="#calculation"/>
         <Class IRI="#methodologyAspect"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#chemical"/>
-        <Class IRI="#contextFacet"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#chemicalSystem"/>
-        <Class IRI="#contextFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#compound"/>
@@ -764,10 +768,6 @@
         <Class IRI="#methodologyAspect"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#property"/>
-        <Class IRI="#scientificData"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#quantity"/>
         <Class IRI="#unitOfMeasure"/>
     </SubClassOf>
@@ -862,6 +862,10 @@
     <SubClassOf>
         <Class IRI="#unitSystem"/>
         <Class IRI="#unitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
+        <Class IRI="#contextFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
@@ -1341,7 +1345,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Identifier</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resource Identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1377,6 +1381,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/dc/elements/1.1/language</IRI>
         <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/license</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">License</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -1468,6 +1477,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/dc/elements/1.1/rights</IRI>
         <Literal xml:lang="en-us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rights Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -1776,6 +1790,41 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">manufactured chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any property that can be characterized or measured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#axisLabel</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The title given to an axis on a graph</Literal>
     </AnnotationAssertion>
@@ -1841,41 +1890,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#chemical</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
-        <IRI>#chemical</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">manufactured chemical</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#chemical</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#chemical</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#chemicalSystem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#chemicalSystem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemicalSystem</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#chemicalSystem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#compound</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Get the gold book definition of this...</Literal>
     </AnnotationAssertion>
@@ -1907,7 +1921,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#contextFacet</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the chemical system (mixture), material, chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2466,21 +2480,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#property</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any property that can be characterized or measured</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#property</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#property</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#quantity</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A quantity is a measure of how much something there is, i.e. can be counted</Literal>
     </AnnotationAssertion>
@@ -2850,6 +2849,46 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">unit system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. Physical properties such as density, refractive index, electric conductivity, melting point etc. characterize the chemical substance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Also: A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>http://dx.doi.org/10.1351/goldbook.C01039</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:hasExactSynonym</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has Exact Synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:hasRelatedSynonym</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has related synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
         <IRI>http://www.geneontology.org/</IRI>
@@ -3073,5 +3112,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 

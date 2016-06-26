@@ -126,14 +126,19 @@
             "@id": "sci:hasDataset",
             "@type": "dataset"
         },
-        "reference": {
+        "source": {
             "@id": "sci:hasSource",
             "citation": {"@type": "citation"},
+            "reftype": {"@type": "reftype"},
             "url": {"@type": "url"},
             "doi": {"@type": "doi"}
         },
         "citation": {
             "@id": "dc:bibliographicCitation",
+            "@type": "string"
+        },
+        "reftype": {
+            "@id": "dc:type",
             "@type": "string"
         },
         "url": {

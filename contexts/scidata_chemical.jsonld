@@ -5,7 +5,7 @@
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "chem": "http://stuchalk.github.io/scidata/ontology/scidata_chemical.owl#"
+        "chm": "http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
@@ -35,8 +35,16 @@
             "@id": "obo:sep_0015",
             "@type": "string"
         },
+        "role": {
+            "@id": "obo:BFO_0000023",
+            "@type": "string"
+        },
         "grade": {
-            "@id": "chem:grade",
+            "@id": "chm:grade",
+            "@type": "string"
+        },
+        "phase": {
+            "@id": "sub:phase",
             "@type": "string"
         },
         "properties": {

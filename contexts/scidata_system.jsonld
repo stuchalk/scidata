@@ -20,7 +20,7 @@
             "@id": "sci:hasFacet",
             "compound": {"@type": "compound"},
             "chemical": {"@type": "chemical"},
-            "mixture": {"@type": "mixture"},
+            "chemicalsystem": {"@type": "mixture"},
             "material": {"@type": "material"},
             "organism": {"@type": "organism"},
             "condition": {"@type": "condition"},
