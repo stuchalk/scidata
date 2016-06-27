@@ -39,7 +39,7 @@
         },
         "spin": {
             "@id": "gc:spin",
-            "@type": "string"
+            "@type": "@id"
         },
         "submethod": {
             "@id": "gc:submethod",
