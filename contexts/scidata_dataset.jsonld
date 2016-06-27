@@ -28,6 +28,10 @@
             "dataseries": {"@type": "dataseries"},
             "datapoint": {"@type": "datapoint"}
         },
+        "datagroups": {
+            "@id": "sci:hasDataGroup",
+            "@type": "@id"
+        },
         "dataseries": {
             "@id": "sci:hasDataSeries",
             "uid": {"@type": "uid"},
@@ -40,6 +44,10 @@
             "attributes": {"@type": "attributes"},
             "parameters": {"@type": "parameters"}
         },
+        "dataserieses": {
+            "@id": "sci:hasDataSeries",
+            "@type": "@id"
+        },
         "dataname": {
             "@id": "sci:dataName",
             "@type": "parameter"
@@ -50,6 +58,10 @@
             "conditions": {"@type": "conditions"},
             "settings": {"@type": "settings"},
             "data": {"@type": "data"}
+        },
+        "datapoints": {
+            "@id": "sci:hasDataPoint",
+            "@type": "@id"
         },
         "conditions": {
             "@id": "sci:hasCondition",
