@@ -17768,12 +17768,12 @@
             ]
         }
     },
-    "source": {
-        "@id": "source",
+    "references": [{
+        "@id": "reference/1/",
         "@type": "dc:source",
         "citation": "Provided by Chemical Semantics Inc. http://chemicalsemantics.com",
         "url": "http://stuchalk.github.io/scidata/examples/scf.jsonld"
-    },
+    }],
     "rights": {
         "@id": "rights",
         "@type": "dc:rights",

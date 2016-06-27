@@ -273,12 +273,12 @@
             ]
         }
     },
-    "reference": {
-        "@id": "reference",
+    "references": [{
+        "@id": "reference/1/",
         "@type": "dc:source",
         "citation": "Chalk Research Group http://chalk.coas.unf.edu",
         "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
-    },
+    }],
     "rights": {
         "@id": "rights",
         "@type": "dc:rights",

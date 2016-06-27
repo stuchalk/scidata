@@ -207,11 +207,11 @@
             }]
         }
     },
-    "source": {
-        "@id": "source",
+    "references": [{
+        "@id": "reference/1/",
         "@type": "dc:source",
         "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
-    },
+    }],
     "rights": {
         "@id": "rights",
         "@type": "dc:rights",

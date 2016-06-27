@@ -126,7 +126,7 @@
             "@id": "sci:hasDataset",
             "@type": "dataset"
         },
-        "source": {
+        "references": {
             "@id": "sci:hasSource",
             "citation": {"@type": "citation"},
             "reftype": {"@type": "reftype"},
