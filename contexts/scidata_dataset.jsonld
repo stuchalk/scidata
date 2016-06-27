@@ -82,7 +82,7 @@
         "reference": {
             "@id": "sci:hasSource",
             "@type": "@id"
-        ,
+        },
         "attributes": {
             "@id": "sci:hasDataAttributes",
             "@type": "parameter"
