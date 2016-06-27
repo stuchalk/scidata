@@ -1,7 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/basisset.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/sections/basisset.jsonld/"}
     ],
     "@id": "",
     "title": "3-21G",

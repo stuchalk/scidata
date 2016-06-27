@@ -1,7 +1,8 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/chemical.jsonld#"}
+        {"obo": "http://purl.obolibrary.org/obo/"},
+        {"@base": "http://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"}
     ],
     "@id": "",
     "name": "Water",
@@ -11,5 +12,5 @@
     "smiles": "O",
     "formula": "H2O",
     "molweight": "18.0153",
-    "chebi": "http://purl.obolibrary.org/obo/CHEBI:15377"
+    "chebi": "obo:CHEBI_15377"
 }

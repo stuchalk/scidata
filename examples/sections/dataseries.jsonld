@@ -1,17 +1,18 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/dataseries.jsonld#"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/sections/dataseries.jsonld/"}
     ],
     "@id": "",
+    "@type": "sci:dependent",
     "label": "Signal (Arbitrary Units)",
-    "axis": "dependent",
+    "axis": "y-axis",
     "parameter": {
-        "@id": "parameter/1",
+        "@id": "parameter/1/",
         "quantity": "count",
         "property": "Detector Signal",
         "values": {
-            "@id": "parameter/1/values",
+            "@id": "parameter/1/values/",
             "datatype": "decimal",
             "numberarray": [
                 448.1,

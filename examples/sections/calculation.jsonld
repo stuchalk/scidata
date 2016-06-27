@@ -2,7 +2,7 @@
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
         {"gc": "http://purl.org/gc/"},
-        {"@base": "http://stuchalk.github.io/scidata/examples/calculation.jsonld/"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/sections/calculation.jsonld/"}
     ],
     "@id": "",
     "approach": "quantum mechanics",

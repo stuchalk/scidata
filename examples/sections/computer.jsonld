@@ -1,12 +1,12 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/computer.jsonld#"}
+        {"@base": "http://stuchalk.github.io/scidata/examples/sections/computer.jsonld/"}
     ],
     "@id": "",
     "architecture": "x86_64",
     "cpu": {
-        "@id": "cpu",
+        "@id": "cpu/1/",
         "opmodes": "32-bit, 64-bit",
         "count": 8,
         "speed": "1201.621 MHz",
@@ -20,7 +20,7 @@
     "corespersocket": 4,
     "sockets": 1,
     "cache": {
-        "@id": "cache",
+        "@id": "cache/1/",
         "l1datacache": "32K",
         "l1instcache": "32K",
         "l2cache": "256K",
