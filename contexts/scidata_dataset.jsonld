@@ -12,6 +12,7 @@
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
+            "reference": {"@type": "reference"},
             "attributes": {"@type": "attributes"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
@@ -23,6 +24,7 @@
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
+            "reference": {"@type": "reference"},
             "attributes": {"@type": "attributes"},
             "datagroup": {"@type": "datagroup"},
             "dataseries": {"@type": "dataseries"},
@@ -41,6 +43,7 @@
             "type": {"@type": "seriesType"},
             "axis": {"@type": "axis"},
             "axisLabel": {"@type": "axisLabel"},
+            "reference": {"@type": "reference"},
             "attributes": {"@type": "attributes"},
             "parameters": {"@type": "parameters"}
         },
@@ -55,6 +58,7 @@
         "datapoint": {
             "@id": "sci:hasDataPoint",
             "uid": {"@type": "uid"},
+            "reference": {"@type": "reference"},
             "conditions": {"@type": "conditions"},
             "settings": {"@type": "settings"},
             "data": {"@type": "data"}
@@ -75,6 +79,10 @@
             "@id": "sci:hasData",
             "@type": "parameter"
         },
+        "reference": {
+            "@id": "sci:hasSource",
+            "@type": "@id"
+        ,
         "attributes": {
             "@id": "sci:hasDataAttributes",
             "@type": "parameter"
