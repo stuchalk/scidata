@@ -294,9 +294,6 @@
         <Class abbreviatedIRI="foaf:Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#contextFacet"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="cheminf:SIO_000999"/>
     </Declaration>
     <Declaration>
@@ -327,10 +324,10 @@
         <Class IRI="#textArray"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#dependent"/>
+        <Class IRI="#dataAttribute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dataAttribute"/>
+        <NamedIndividual IRI="#dependent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDatagroup"/>
@@ -339,19 +336,22 @@
         <Class abbreviatedIRI="obo:IAO_0000302"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasSystemFacet"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#molecularSystem"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#independent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#systemFacet"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
         <Class IRI="#siUnitEquivalent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAspect"/>
     </Declaration>
     <Declaration>
         <Class IRI="#text"/>
@@ -444,9 +444,6 @@
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFacet"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="foaf:organization"/>
     </Declaration>
     <Declaration>
@@ -454,6 +451,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#dataFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMethodologyAspect"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSource"/>
@@ -539,11 +539,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0100026"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0400107"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0001309"/>
@@ -611,7 +611,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
@@ -635,15 +635,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#compound"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#condition"/>
-        <Class IRI="#contextFacet"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#contextFacet"/>
-        <Class IRI="#system"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conversionFactor"/>
@@ -715,7 +711,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#material"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#measurement"/>
@@ -735,7 +731,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#molecularSystem"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#number"/>
@@ -822,6 +818,10 @@
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#systemFacet"/>
+        <Class IRI="#system"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#text"/>
         <Class IRI="#dataset"/>
     </SubClassOf>
@@ -871,7 +871,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
-        <Class IRI="#contextFacet"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
@@ -942,10 +942,6 @@
         <NamedIndividual IRI="#independent"/>
     </ClassAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAspect"/>
-        <Class IRI="#methodology"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataset"/>
     </ObjectPropertyDomain>
@@ -966,21 +962,21 @@
         <Class IRI="#scientificData"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFacet"/>
-        <Class IRI="#system"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMethodology"/>
         <Class IRI="#scientificData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMethodologyAspect"/>
+        <Class IRI="#methodology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSystem"/>
         <Class IRI="#scientificData"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAspect"/>
-        <Class IRI="#methodologyAspect"/>
-    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSystemFacet"/>
+        <Class IRI="#system"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataGroup"/>
@@ -994,12 +990,12 @@
         <Class IRI="#dataset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFacet"/>
-        <Class IRI="#contextFacet"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMethodology"/>
         <Class IRI="#methodology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMethodologyAspect"/>
+        <Class IRI="#methodologyAspect"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRights"/>
@@ -1012,6 +1008,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSystem"/>
         <Class IRI="#system"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSystemFacet"/>
+        <Class IRI="#systemFacet"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTOC"/>
@@ -1934,21 +1934,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#contextFacet</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#contextFacet</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">contextFacet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#contextFacet</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">facet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#conversionFactor</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A numeric multiplier used to convert a value in one unit of measure into another of the same quanity.  Fo instance, the conversion factor for converting distance in miles to distances in meters is 1609.344.</Literal>
     </AnnotationAssertion>
@@ -2696,6 +2681,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#system</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#systemFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#systemFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">contextFacet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#systemFacet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">system facet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>

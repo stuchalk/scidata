@@ -339,7 +339,7 @@
                         }
                     }
                 ],
-                "dataseries": [
+                "dataserieses": [
                     "dataseries/1/",
                     "dataseries/2/"
                 ]

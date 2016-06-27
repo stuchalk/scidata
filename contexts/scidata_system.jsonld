@@ -17,7 +17,7 @@
             "facets": {"@type": "facets"}
         },
         "facets": {
-            "@id": "sci:hasFacet",
+            "@id": "sci:hasSystemFacet",
             "compound": {"@type": "compound"},
             "chemical": {"@type": "chemical"},
             "chemicalsystem": {"@type": "mixture"},
