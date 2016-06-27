@@ -1,0 +1,30 @@
+{
+    "@context": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
+        {"@base": "http://stuchalk.github.io/scidata/examples/computer.jsonld#"}
+    ],
+    "@id": "",
+    "architecture": "x86_64",
+    "cpu": {
+        "@id": "cpu",
+        "opmodes": "32-bit, 64-bit",
+        "count": 8,
+        "speed": "1201.621 MHz",
+        "vendorid": "GenuineIntel",
+        "family": "6",
+        "model": "63",
+        "modelname": "Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz"
+    },
+    "byteorder": "Little Endian",
+    "threadspercore": 2,
+    "corespersocket": 4,
+    "sockets": 1,
+    "cache": {
+        "@id": "cache",
+        "l1datacache": "32K",
+        "l1instcache": "32K",
+        "l2cache": "256K",
+        "l3cache": "10240K"
+    },
+    "ram": "4 GB"
+}
