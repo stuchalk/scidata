@@ -61,7 +61,7 @@
     },
     "scidata": {
         "@id": "scidata/",
-        "@type": "sci:scidata",
+        "@type": "sci:scientificData",
         "type": ["property value"],
         "property": ["pH"],
         "kind": ["datapoint"],
@@ -72,10 +72,10 @@
             "aspects": [
                 {
                     "@id": "measurement/1/",
-                    "@type": "sci:measurement",
+                    "@type": "cao:CAO_000152",
                     "scope": "resource/1/",
-                    "techniqueType": "ion-selective electrode",
-                    "technique": "pH electrode",
+                    "techniqueType": "cao:electrochemistry",
+                    "technique": "cao:potentiometry",
                     "instrumentType": "Temperature compensated pH electrode",
                     "settings": [{
                         "@id": "setting/1/",

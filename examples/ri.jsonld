@@ -13,7 +13,7 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/ri.jsonld/"}
     ],
     "@id": "",
-    "uid": "scidata/examples/ri",
+    "uid": "scidata/example/ri",
     "title": "Hydrochloric acid refractive index",
     "author": [{
         "@id": "author/1/",
@@ -55,7 +55,7 @@
     },
     "scidata": {
         "@id": "scidata/",
-        "@type": "sci:scidata",
+        "@type": "sci:scientificData",
         "type": "property value",
         "property": ["Refractive index"],
         "kind": ["single reading"],
@@ -68,8 +68,8 @@
             ],
             "aspects": [{
                 "@id": "measurement/1/",
-                "@type": "sci:measurement",
-                "techniqueType": "spectroscopic",
+                "@type": "cao:CAO_000152",
+                "techniqueType": "cao:spectroscopy",
                 "technique": "light refraction",
                 "instrumentType": "Refractometer",
                 "settings": [{

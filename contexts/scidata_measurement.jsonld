@@ -1,10 +1,13 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    {"meas": "http://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#"},
+    {
+        "cao": "http://champ-project.org/images/ontology/cao.owl#",
+        "obo": "http://purl.obolibrary.org/obo/"
+    },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "measurement": {
-            "@id": "meas:measurement",
+            "@id": "cao:CAO_000152",
             "techniqueType": {"@type": "techniqueType"},
             "technique": {"@type": "technique"},
             "instrumentType": {"@type": "instrumentType"},
@@ -13,27 +16,27 @@
             "settings": {"@type": "settings"}
         },
         "techniqueType": {
-            "@id": "meas:techniqueType",
-            "@type": "string"
+            "@id": "cao:CAO_000218",
+            "@type": "@id"
         },
         "technique": {
-            "@id": "meas:technique",
-            "@type": "string"
+            "@id": "cao:CAO_000011",
+            "@type": "@id"
         },
         "instrumentType": {
-            "@id": "meas:instrumentType",
+            "@id": "cao:CAO_000137",
             "@type": "string"
         },
         "instrument": {
-            "@id": "meas:instrument",
+            "@id": "cao:CAO_000048",
             "@type": "string"
         },
         "vendor": {
-            "@id": "meas:vendor",
+            "@id": "obo:sep_00088",
             "@type": "string"
         },
         "settings": {
-            "@id": "meas:hasInstrumentSetting",
+            "@id": "obo:IAO_0000140",
             "@type": "parameter"
         }
     }

@@ -111,10 +111,10 @@
         <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTOC"/>
+        <Class IRI="#scientificSubdiscipline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#scientificSubdiscipline"/>
+        <ObjectProperty IRI="#hasTOC"/>
     </Declaration>
     <Declaration>
         <Class IRI="#number"/>
@@ -144,10 +144,10 @@
         <Class IRI="#quantity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:mbox"/>
+        <ObjectProperty IRI="#hasMethodology"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMethodology"/>
+        <Class abbreviatedIRI="foaf:mbox"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataName"/>
@@ -156,16 +156,16 @@
         <Class IRI="#evaluation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#axisType"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDataset"/>
+        <Class IRI="#axisType"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dc:license"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataset"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:sep_00056"/>
@@ -222,10 +222,10 @@
         <Class IRI="#dataScope"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#siderived"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
+        <NamedIndividual IRI="#siderived"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
@@ -312,19 +312,22 @@
         <Class IRI="#sigfigs"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#basisSet"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#unitSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#methodologyAspect"/>
+        <Class IRI="#basisSet"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDatapoint"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#methodologyAspect"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#textArray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dependent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataAttribute"/>
@@ -339,6 +342,9 @@
         <Class IRI="#molecularSystem"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#independent"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
@@ -351,10 +357,10 @@
         <Class IRI="#text"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+        <Class abbreviatedIRI="dc:bibliographicCitation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboowl:hasRelatedSynonym"/>
@@ -369,10 +375,10 @@
         <Class IRI="#software"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#resource"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <Class IRI="#resource"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
@@ -462,10 +468,10 @@
         <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dataType"/>
+        <NamedIndividual IRI="#imperial"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#imperial"/>
+        <Class IRI="#dataType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataset"/>
@@ -927,6 +933,14 @@
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
         <Class abbreviatedIRI="bfo11snap:Occurrent"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#axisType"/>
+        <NamedIndividual IRI="#dependent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#axisType"/>
+        <NamedIndividual IRI="#independent"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAspect"/>
         <Class IRI="#methodology"/>
@@ -2119,6 +2133,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#dependent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The axis where a dependent varibale is plotted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dependent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dependent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#endtime</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The time point when collection of data stops</Literal>
@@ -2227,6 +2251,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#imperial</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">imperial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#independent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The axis where an independent variable is plotted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#independent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">independent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
