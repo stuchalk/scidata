@@ -117,19 +117,19 @@
                     "aggregation": "sub:aq",
                     "mixtype": "sub:homogeneousSolution",
                     "phase": "sub:liquid",
-                    "components": [
+                    "constituents": [
                         {
-                            "@id": "substance/1/component/1/",
+                            "@id": "substance/1/constituent/1/",
                             "@type": "sci:chemical",
                             "source": "compound/1/",
                             "role": "chm:analyte",
                             "properties": [{
-                                "@id": "substance/1/component/1/property/1/",
+                                "@id": "substance/1/constituent/1/property/1/",
                                 "@type": "prop:concentrationMassVolume",
                                 "quantity": "mass of substance per volume",
                                 "property": "Concentration (w/v)",
                                 "value": {
-                                    "@id": "substance/1/component/1/property/1/value/",
+                                    "@id": "substance/1/constituent/1/property/1/value/",
                                     "@type": "sci:value",
                                     "number": 2.99,
                                     "unitref": "qudt:PpmWeightVolume"
@@ -137,31 +137,31 @@
                             }]
                         },
                         {
-                            "@id": "substance/1/component/2/",
+                            "@id": "substance/1/constituent/2/",
                             "@type": "sci:chemical",
                             "source": "compound/2/",
                             "role": "chm:reagent"
                         },
                         {
-                            "@id": "substance/1/component/3/",
+                            "@id": "substance/1/constituent/3/",
                             "@type": "sci:chemical",
                             "source": "compound/3/",
                             "role": "chm:reagent"
                         },
                         {
-                            "@id": "substance/1/component/4/",
+                            "@id": "substance/1/constituent/4/",
                             "@type": "sci:chemical",
                             "source": "compound/4/",
                             "role": "chm:buffer"
                         },
                         {
-                            "@id": "substance/1/component/5/",
+                            "@id": "substance/1/constituent/5/",
                             "@type": "sci:chemical",
                             "source": "compound/5/",
                             "role": "chm:solvent"
                         },
                         {
-                            "@id": "substance/1/component/6/",
+                            "@id": "substance/1/constituent/6/",
                             "@type": "sci:chemical",
                             "source": "compound/6/",
                             "role": "chm:solvent"

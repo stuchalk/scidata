@@ -29,6 +29,12 @@
         <NamedIndividual IRI="#ads"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasConstituent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubstance"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
@@ -38,13 +44,19 @@
         <Class IRI="#stateOfAggregation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#f"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#quaternaryMixture"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStateOfAggregation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#gas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMixtureType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#cr"/>
@@ -56,10 +68,10 @@
         <NamedIndividual IRI="#s"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <NamedIndividual IRI="#heterogeneousSolution"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#heterogeneousSolution"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
     </Declaration>
     <Declaration>
         <Class IRI="#substance"/>
@@ -68,7 +80,7 @@
         <NamedIndividual IRI="#lc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#component"/>
+        <ObjectProperty IRI="#hasPhase"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mon"/>
@@ -95,10 +107,10 @@
         <NamedIndividual IRI="#vit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#am"/>
+        <NamedIndividual IRI="#n"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#n"/>
+        <NamedIndividual IRI="#am"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ternaryMixture"/>
@@ -110,19 +122,25 @@
         <NamedIndividual IRI="#l"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#constituent"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#aq"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#solid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binaryMixture"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#pol"/>
     </Declaration>
     <Declaration>
         <Class IRI="#mixtureType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#binaryMixture"/>
     </Declaration>
     <ClassAssertion>
         <Class IRI="#stateOfAggregation"/>
@@ -326,13 +344,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#component</IRI>
+        <IRI>#constituent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reference to a part of the chemical substance.  E.g. delineation of the chemical substances in a mixture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#component</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">component</Literal>
+        <IRI>#constituent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">constituent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -373,6 +391,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#gas</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasConstituent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has constituent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMixtureType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has mixture type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhase</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasProperty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStateOfAggregation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has state of aggregation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubstance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

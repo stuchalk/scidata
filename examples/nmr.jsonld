@@ -165,15 +165,15 @@
                         "sub:binaryMixture"
                     ],
                     "phase": "sub:liquid",
-                    "components": [
+                    "constituents": [
                         {
-                            "@id": "substance/1/component/1/",
+                            "@id": "substance/1/constituent/1/",
                             "@type": "sci:chemical",
                             "scope": "compound/1/",
                             "role": "chm:solute"
                         },
                         {
-                            "@id": "substance/1/component/2/",
+                            "@id": "substance/1/constituent/2/",
                             "@type": "sci:chemical",
                             "scope": "compound/2/",
                             "role": "chm:solvent"

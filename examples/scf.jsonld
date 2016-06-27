@@ -99,7 +99,7 @@
             "@type": "sci:system",
             "discipline": "chemistry",
             "subdiscipline": "computational chemistry",
-            "aspects": [
+            "facets": [
                 {
                     "@id": "molsystem/1/",
                     "@type": "sci:molecularSystem",

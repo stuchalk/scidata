@@ -98,19 +98,19 @@
                     "aggregation": "sub:aq",
                     "mixtype": ["sub:homogeneousSolution","sub:binaryMixture"],
                     "phase": "sub:liquid",
-                    "components": [
+                    "constituents": [
                         {
-                            "@id": "substance/1/component/1/",
+                            "@id": "substance/1/constituent/1/",
                             "@type": "sci:chemical",
                             "name": "Ultrapure Water",
                             "source": "compound/1/",
                             "role": "chm:solvent",
                             "grade": "MilliQ Grade (18.2 MOhms)",
                             "properties": [{
-                                "@id": "substance/1/component/1/property/1/",
+                                "@id": "substance/1/constituent/1/property/1/",
                                 "@type": "sci:purity",
                                 "value": {
-                                    "@id": "substance/1/component/1/property/1/value/",
+                                    "@id": "substance/1/constituent/1/property/1/value/",
                                     "@type": "sci:value",
                                     "number": 90.01,
                                     "unitref": "qudt:PercentWeightWeight"
@@ -118,17 +118,17 @@
                             }]
                         },
                         {
-                            "@id": "substance/1/component/2/",
+                            "@id": "substance/1/constituent/2/",
                             "@type": "sci:chemical",
                             "name": "Hydrochloric acid",
                             "source": "compound/2/",
                             "role": "chm:solute",
                             "grade": "ACS Certified grade",
                             "properties": [{
-                                "@id": "mixture/1/component/2/property/1/",
+                                "@id": "mixture/1/constituent/2/property/1/",
                                 "@type": "sci:purity",
                                 "value": {
-                                    "@id": "mixture/1/component/2/property/1/value/",
+                                    "@id": "mixture/1/constituent/2/property/1/value/",
                                     "@type": "sci:value",
                                     "number": 9.99,
                                     "unitref": "qudt:PercentWeightWeight"
