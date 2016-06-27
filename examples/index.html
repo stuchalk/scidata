@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+    <head>
+        <title>SciData - A Scientific Data Model</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="http://stuchalk.github.io/scidata/" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="scidata.css" type="text/css" />
+    </head>
+    <body style="padding: 0 20px;width: 1024px;">
+        <div style="float: left;width: 530px;">
+            <h1>SciData - Examples</h1>
+            <p>Below are a list of the context files developed for the scientific data model, with examples. Readers
+                wanting to see how the JSON-LD files convert to RDF should go to the <a
+                    href="http://json-ld.org/playground/index.html" target="_blank">JSON-LD Playground</a>. NOTE: JSON
+                can be best viewed using Firefox and the JSONView extension.</p>
+            
+            <h2>SciData Translations of Data from Common Websites</h2>
+            <ul>
+                <li><a href="examples/cif/1000118.jsonld">Crystallographic Information Framework (CIF) File</a> - 
+                    <a href="http://www.crystallography.net/cod/1000118.cif@130149" target="_blank">Original File</a> 
+                    <a href="examples/cif/cif.xsl" target="_blank">XSLT Converter</a></li>
+                <li><a href="examples/ddb/ddb.jsonld">Dortmund Data Bank (DDB) Data Page</a> - 
+                    <a href="http://www.ddbst.com/en/EED/PCP/SFT_C3.php" target="_blank">Original Page (HTML needed cleanup)</a>
+                    <a href="examples/ddb/ddb.xsl" target="_blank">XSLT Converter</a></li>
+                <li><a href="examples/pubchem/AID_243494_full.jsonld">PubChem PUGREST Download (XML)</a> - 
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/243494/" target="_blank">Original File</a>
+                    <a href="examples/pubchem/pubchem.xsl" target="_blank">XSLT Converter</a></li>
+            </ul>
+            <h2>SciData Example Data Documents</h2>
+            <ul>
+                <li><a href="examples/nmr.jsonld">NMR Spectrum</a></li>
+                <li><a href="examples/ph.jsonld">pH Measurement</a></li>
+                <li><a href="examples/ri.jsonld">Refractive Index Value from the Literature</a></li>
+                <li><a href="examples/scf.jsonld">SCF Calculation</a></li>
+            </ul>
+            <h2>Examples of Methodology, System, Dataset, Parameter, Value and Unit Sections</h2>
+            <ul>
+                <li><a href="examples/methodology_cc.jsonld">computational methodology aspects</a> OR <a
+                        href="examples/methodology_exp.jsonld">experimental methodology aspects</a></li>
+                <li><a href="examples/system_cc.jsonld">computational system facets</a> OR <a
+                        href="examples/system_exp.jsonld">experimental system facets</a></li>
+                <li><a href="examples/dataset.jsonld">data (includes datagroup,dataseries, datapoint</a></li>
+                <li><a href="examples/parameter.jsonld">generic parameter or array of parameter values</a></li>
+                <li><a href="examples/value.jsonld">a value (numeric or text) or array of values</a></li>
+                <li><a href="examples/unit.jsonld">representation or referencing scientific units</a></li>
+            </ul>
+            <h2>Examples of Methodology Aspects</h2>
+            <h3>For Experimental Data</h3>
+            <ul>
+                <li><a href="examples/sections/measurement.jsonld">measurement metadata</a></li>
+                <li><a href="examples/sections/procedure.jsonld">procedural metadata</a></li>
+                <li><a href="examples/sections/resource.jsonld">laboratory resource</a></li>
+            </ul>
+            <h3>For Computational Data</h3>
+            <ul>
+                <li><a href="examples/sections/basisset.jsonld">basis set metadata</a></li>
+                <li><a href="examples/sections/calculation.jsonld">calculation metadata</a></li>
+                <li><a href="examples/sections/software.jsonld">computational software metadata</a></li>
+            </ul>
+            <h2>Examples of System Facets</h2>
+            <h3>For Experimental Data</h3>
+            <ul>
+                <li><a href="examples/sections/chemical.jsonld">chemical (manufactured) metadata</a></li>
+                <li><a href="examples/sections/compound.jsonld">compound metadata</a></li>
+                <li><a href="examples/sections/condition.jsonld">experimental conditions metadata</a></li>
+                <li><a href="examples/sections/material.jsonld">materials metadata</a></li>
+                <li><a href="examples/sections/organism.jsonld">organism metadata</a></li>
+                <li><a href="examples/sections/substance.jsonld">substance (mixture)metadata</a></li>
+            </ul>
+            <h3>For Computational Data</h3>
+            <ul>
+                <li><a href="examples/sections/computer.jsonld">computer processing metadata</a></li>
+                <li><a href="examples/sections/molsystem.jsonld">molecular system metadata</a>)</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+        <p><b>Contact: <a href="mailto:schalk@unf.edu">Stuart J. Chalk</a>, Associate Professor, University of North
+                Florida</b></p>
+    </body>
+</html>
