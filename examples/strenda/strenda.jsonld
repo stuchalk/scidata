@@ -1,0 +1,57 @@
+{
+    "@context": "http://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+    "uid": "STRENDA_ID",
+    "title": "STRENDA data",
+    "author": [{
+        "@type": "dc:creator",
+        "name": "Stuart Chalk"
+    }],
+    "description": "Example of how STRENDA data might be mapped to the SDM",
+    "toc": {
+        "sections": [
+            "enzyme (1A)",
+            "preparation (1A)",
+            "assay conditions (1A)",
+            "activity data (1A)",
+            "methodology (1A)",
+            "metrics (1B)",
+            "inhibition data (1B)",
+            "activation data (1B)"
+        ]
+    },
+    "scidata": {
+        "@type": "sci:scidata",
+        "type": ["property value"],
+        "property": ["reaction rate"],
+        "kind": ["time based array"],
+        "methodology": {
+            "@type": "sci:methodology",
+            "evaluation": "experiment",
+            "aspects": [
+                {"@type": "preparation (1A)"},
+                {"@type": "methodology (1A)"}
+            ]
+        },
+        "system": {
+            "@type": "sci:system",
+            "discipline": "biology",
+            "subdiscipline": "enzymology",
+            "facets": [
+                {"@type": "enzyme (1A)"},
+                {"@type": "assay conditions (1A)"},
+                {"@type": "metrics (1B)"},
+                {"@type": "substrate (1A)"}
+            ]
+        },
+        "dataset": {
+            "@type": "sci:dataset",
+            "name": "STRENDA dataset",
+            "datagroup": [
+                {"@type": "activity data (1A)"},
+                {"@type": "inhibition data (1B)"},
+                {"@type": "activation data (1B)"}
+            ]
+        }
+    }
+}
+

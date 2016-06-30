@@ -1,6 +1,7 @@
 {
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"dc": "http://purl.org/dc/terms/" },
         {"@base": "http://stuchalk.github.io/scidata/"}
     ],
     "@id": "identifier",

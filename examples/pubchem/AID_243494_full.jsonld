@@ -1,0 +1,134 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {
+            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
+            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "dc": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {"@base": "http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/"}
+    ],
+    "@id": "",
+    "uid": "scidata:example:pubchem:243494",
+    "title": "Percent inhibition against AMPK at 10 uM using 100 uM ATP",
+    "description": "Title: (1H-imidazo[4,5-c]pyridin-2-yl)-1,2,5-oxadiazol-3-ylamine derivatives: further optimisation as highly potent and selective MSK-1-inhibitors.  Abstract: The novel imidazo[4,5-c]pyridine 1,2,5-oxadiazol-3-yl template affords an excellent start point for identification of inhibitors of a number of protein kinases. Here we report on its optimisation for mitogen and stress-activated protein kinase-1 (MSK-1) inhibitory activity, and selectivity over other kinases. ",
+    "publisher": "ChEMBL",
+    "version": 10,
+    "keywords": ["bioassay"],
+    "permalink": "http://stuchalk.github.io/scidata/example/pubchem/AID_243494_full.jsonld",
+    "related": [
+        "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/243494",
+        "http://www.ncbi.nlm.nih.gov/pubmed/15955699",
+        "http://www.ncbi.nlm.nih.gov/protein/254763436",
+        "http://www.uniprot.org/taxonomy/9606",
+        "http://www.ebi.ac.uk/chembldb/",
+        "http://www.ebi.ac.uk/chembldb/index.php/assay/inspect/307588"
+    ],
+    "scidata": {
+        "@id": "scidata/",
+        "@type": "sci:scientificData",
+        "methodology": {
+            "@id": "methodology/",
+            "@type": "sci:methodology",
+            "aspects": [{
+                "@id": "assay/1/",
+                "url": "http://www.ncbi.nlm.nih.gov/pubmed/15955699",
+                "type": {
+                    "@value": "Binding",
+                    "@type": "dc:type"
+                },
+                "source": "Scientific Literature",
+                "target": "Target is a single protein chain"
+            }]
+        },
+        "system": {
+            "@id": "system/",
+            "@type": "sci:methodology",
+            "facets": [
+                {
+                    "@id": "target/1/",
+                    "@type": "tgt:target",
+                    "name": "RecName: Full=5'-AMP-activated protein kinase catalytic subunit alpha-1; Short=AMPK subunit alpha-1; AltName: Full=Acetyl-CoA carboxylase kinase; Short=ACACA kinase; AltName: Full=Hydroxymethylglutaryl-CoA reductase kinase; Short=HMGCR kinase; AltName: Full=Tau-protein kinase PRKAA1",
+                    "url": "http://www.ncbi.nlm.nih.gov/protein/254763436",
+                    "type": {
+                        "@value": "protein",
+                        "@type": "dc:type"
+                    },
+                    "organism": "organism/1/"
+                },
+                {
+                    "@id": "organism/1/",
+                    "@type": "sci:organism",
+                    "url": "http://www.uniprot.org/taxonomy/9606",
+                    "name": "Homo sapiens"
+                },
+                {
+                    "@id": "substance/1/",
+                    "@type": "sci:substance",
+                    "url": "http://pubchem.ncbi.nlm.nih.gov/substance/103456750"
+                }
+            ]
+        },
+        "dataset": {
+            "@id": "dataset/",
+            "@type": "sci:dataset",
+            "datagroup": [{
+                "@id": "datagroup/1/",
+                "@type": "sci:datagroup",
+                "scope": "substance/1/",
+                "outcome": "unspecified",
+                "datapoint": [
+                    {
+                        "@id": "datagroup/1/datapoint/1/",
+                        "@type": "sci:datapoint",
+                        "quantity": "descriptor",
+                        "property": "Inhibition qualifier",
+                        "value": {
+                            "@id": "datagroup/1/datapoint/1/value",
+                            "@type": "sci:value",
+                            "text": "="
+                        }
+                    },
+                    {
+                        "@id": "datagroup/1/datapoint/2/",
+                        "@type": "sci:datapoint",
+                        "quantity": "descriptor",
+                        "property": "Inhibition activity comment",
+                        "value": {
+                            "@id": "datagroup/1/datapoint/2/value",
+                            "@type": "sci:value",
+                            "text": ""
+                        }
+                    },
+                    {
+                        "@id": "datagroup/1/datapoint/3/",
+                        "@type": "sci:datapoint",
+                        "quantity": "descriptor",
+                        "property": "Inhibition published value",
+                        "value": {
+                            "@id": "datagroup/1/datapoint/3/value",
+                            "@type": "sci:value",
+                            "number": 59,
+                            "unit": "%"
+                        }
+                    },
+                    {
+                        "@id": "datagroup/1/datapoint/4/",
+                        "@type": "sci:datapoint",
+                        "quantity": "descriptor",
+                        "property": "Inhibition standard value",
+                        "value": {
+                            "@id": "datagroup/1/datapoint/4/value",
+                            "@type": "sci:value",
+                            "number": 59,
+                            "unit": "%"
+                        }
+                    }
+                ]
+            }]
+        }
+    }
+}

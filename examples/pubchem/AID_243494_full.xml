@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<PC-AssaySubmit xmlns="http://www.ncbi.nlm.nih.gov" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:schemaLocation="http://www.ncbi.nlm.nih.gov ftp://ftp.ncbi.nlm.nih.gov/pubchem/specifications/pubchem.xsd">
+    <PC-AssaySubmit_assay>
+        <PC-AssaySubmit_assay_descr>
+            <PC-AssayDescription>
+                <PC-AssayDescription_aid>
+                    <PC-ID>
+                        <PC-ID_id>243494</PC-ID_id>
+                        <PC-ID_version>3</PC-ID_version>
+                    </PC-ID>
+                </PC-AssayDescription_aid>
+                <PC-AssayDescription_aid-source>
+                    <PC-Source>
+                        <PC-Source_db>
+                            <PC-DBTracking>
+                                <PC-DBTracking_name>ChEMBL</PC-DBTracking_name>
+                                <PC-DBTracking_source-id>
+                                    <Object-id>
+                                        <Object-id_str>307588</Object-id_str>
+                                    </Object-id>
+                                </PC-DBTracking_source-id>
+                            </PC-DBTracking>
+                        </PC-Source_db>
+                    </PC-Source>
+                </PC-AssayDescription_aid-source>
+                <PC-AssayDescription_name>Percent inhibition against AMPK at 10 uM using 100 uM ATP</PC-AssayDescription_name>
+                <PC-AssayDescription_description>
+                    <PC-AssayDescription_description_E>Title: (1H-imidazo[4,5-c]pyridin-2-yl)-1,2,5-oxadiazol-3-ylamine derivatives: further optimisation as highly potent and selective MSK-1-inhibitors.</PC-AssayDescription_description_E>
+                    <PC-AssayDescription_description_E/>
+                    <PC-AssayDescription_description_E>Abstract: The novel imidazo[4,5-c]pyridine 1,2,5-oxadiazol-3-yl template affords an excellent start point for identification of inhibitors of a number of protein kinases. Here we report on its optimisation for mitogen and stress-activated protein kinase-1 (MSK-1) inhibitory activity, and selectivity over other kinases.</PC-AssayDescription_description_E>
+                    <PC-AssayDescription_description_E/>
+                </PC-AssayDescription_description>
+                <PC-AssayDescription_xref>
+                    <PC-AnnotatedXRef>
+                        <PC-AnnotatedXRef_xref>
+                            <PC-XRefData>
+                                <PC-XRefData_pmid>15955699</PC-XRefData_pmid>
+                            </PC-XRefData>
+                        </PC-AnnotatedXRef_xref>
+                        <PC-AnnotatedXRef_type value="pcit">1</PC-AnnotatedXRef_type>
+                    </PC-AnnotatedXRef>
+                    <PC-AnnotatedXRef>
+                        <PC-AnnotatedXRef_xref>
+                            <PC-XRefData>
+                                <PC-XRefData_protein-gi>254763436</PC-XRefData_protein-gi>
+                            </PC-XRefData>
+                        </PC-AnnotatedXRef_xref>
+                    </PC-AnnotatedXRef>
+                    <PC-AnnotatedXRef>
+                        <PC-AnnotatedXRef_xref>
+                            <PC-XRefData>
+                                <PC-XRefData_taxonomy>9606</PC-XRefData_taxonomy>
+                            </PC-XRefData>
+                        </PC-AnnotatedXRef_xref>
+                        <PC-AnnotatedXRef_comment> Organism:Homo sapiens</PC-AnnotatedXRef_comment>
+                    </PC-AnnotatedXRef>
+                    <PC-AnnotatedXRef>
+                        <PC-AnnotatedXRef_xref>
+                            <PC-XRefData>
+                                <PC-XRefData_dburl>http://www.ebi.ac.uk/chembldb/</PC-XRefData_dburl>
+                            </PC-XRefData>
+                        </PC-AnnotatedXRef_xref>
+                    </PC-AnnotatedXRef>
+                    <PC-AnnotatedXRef>
+                        <PC-AnnotatedXRef_xref>
+                            <PC-XRefData>
+                                <PC-XRefData_asurl>http://www.ebi.ac.uk/chembldb/index.php/assay/inspect/307588</PC-XRefData_asurl>
+                            </PC-XRefData>
+                        </PC-AnnotatedXRef_xref>
+                    </PC-AnnotatedXRef>
+                </PC-AssayDescription_xref>
+                <PC-AssayDescription_results>
+                    <PC-ResultType>
+                        <PC-ResultType_tid>1</PC-ResultType_tid>
+                        <PC-ResultType_name>Inhibition activity comment</PC-ResultType_name>
+                        <PC-ResultType_description>
+                            <PC-ResultType_description_E>Inhibition activity comment</PC-ResultType_description_E>
+                        </PC-ResultType_description>
+                        <PC-ResultType_type value="string">4</PC-ResultType_type>
+                    </PC-ResultType>
+                    <PC-ResultType>
+                        <PC-ResultType_tid>2</PC-ResultType_tid>
+                        <PC-ResultType_name>Inhibition standard flag</PC-ResultType_name>
+                        <PC-ResultType_description>
+                            <PC-ResultType_description_E>Inhibition standard flag</PC-ResultType_description_E>
+                        </PC-ResultType_description>
+                        <PC-ResultType_type value="int">2</PC-ResultType_type>
+                    </PC-ResultType>
+                    <PC-ResultType>
+                        <PC-ResultType_tid>3</PC-ResultType_tid>
+                        <PC-ResultType_name>Inhibition qualifier</PC-ResultType_name>
+                        <PC-ResultType_description>
+                            <PC-ResultType_description_E>Inhibition qualifier</PC-ResultType_description_E>
+                        </PC-ResultType_description>
+                        <PC-ResultType_type value="string">4</PC-ResultType_type>
+                    </PC-ResultType>
+                    <PC-ResultType>
+                        <PC-ResultType_tid>4</PC-ResultType_tid>
+                        <PC-ResultType_name>Inhibition published value</PC-ResultType_name>
+                        <PC-ResultType_description>
+                            <PC-ResultType_description_E>Inhibition published value</PC-ResultType_description_E>
+                        </PC-ResultType_description>
+                        <PC-ResultType_type value="float">1</PC-ResultType_type>
+                        <PC-ResultType_sunit>%</PC-ResultType_sunit>
+                    </PC-ResultType>
+                    <PC-ResultType>
+                        <PC-ResultType_tid>5</PC-ResultType_tid>
+                        <PC-ResultType_name>Inhibition standard value</PC-ResultType_name>
+                        <PC-ResultType_description>
+                            <PC-ResultType_description_E>Inhibition standard value</PC-ResultType_description_E>
+                        </PC-ResultType_description>
+                        <PC-ResultType_type value="float">1</PC-ResultType_type>
+                        <PC-ResultType_sunit>%</PC-ResultType_sunit>
+                    </PC-ResultType>
+                </PC-AssayDescription_results>
+                <PC-AssayDescription_revision>10</PC-AssayDescription_revision>
+                <PC-AssayDescription_target>
+                    <PC-AssayTargetInfo>
+                        <PC-AssayTargetInfo_name>RecName: Full=5&apos;-AMP-activated protein kinase catalytic subunit alpha-1; Short=AMPK subunit alpha-1; AltName: Full=Acetyl-CoA carboxylase kinase; Short=ACACA kinase; AltName: Full=Hydroxymethylglutaryl-CoA reductase kinase; Short=HMGCR kinase; AltName: Full=Tau-protein kinase PRKAA1</PC-AssayTargetInfo_name>
+                        <PC-AssayTargetInfo_mol-id>254763436</PC-AssayTargetInfo_mol-id>
+                        <PC-AssayTargetInfo_molecule-type value="protein">1</PC-AssayTargetInfo_molecule-type>
+                        <PC-AssayTargetInfo_organism>
+                            <BioSource>
+                                <BioSource_org>
+                                    <Org-ref>
+                                        <Org-ref_db>
+                                            <Dbtag>
+                                                <Dbtag_db>taxon</Dbtag_db>
+                                                <Dbtag_tag>
+                                                    <Object-id>
+                                                        <Object-id_id>9606</Object-id_id>
+                                                    </Object-id>
+                                                </Dbtag_tag>
+                                            </Dbtag>
+                                        </Org-ref_db>
+                                        <Org-ref_orgname>
+                                            <OrgName>
+                                                <OrgName_name>
+                                                    <OrgName_name_binomial>
+                                                        <BinomialOrgName>
+                                                            <BinomialOrgName_genus>Homo sapiens</BinomialOrgName_genus>
+                                                        </BinomialOrgName>
+                                                    </OrgName_name_binomial>
+                                                </OrgName_name>
+                                            </OrgName>
+                                        </Org-ref_orgname>
+                                    </Org-ref>
+                                </BioSource_org>
+                            </BioSource>
+                        </PC-AssayTargetInfo_organism>
+                        <PC-AssayTargetInfo_descr>5&apos;-AMP-activated protein kinase catalytic subunit alpha-1</PC-AssayTargetInfo_descr>
+                        <PC-AssayTargetInfo_comment>
+                            <PC-AssayTargetInfo_comment_E>ChEMBL Target ID: 11364</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Protein Accession: Q13131</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Confidence: Direct single protein target assigned</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Gene Name: AMPK1;PRKAA1</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Pref Name: AMP-activated protein kinase, alpha-1 subunit</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Synonyms: 5&apos;-AMP-activated protein kinase catalytic subunit alpha-1;ACACA kinase;Acetyl-CoA carboxylase kinase;AMPK subunit alpha-1;HMGCR kinase;Hydroxymethylglutaryl-CoA reductase kinase;Tau-protein kinase PRKAA1</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Db Source: SWISS-PROT</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Db Version: 2015_12</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>ChEMBL Target Type: Target is a single protein chain</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Relationship Type: Direct protein target assigned</PC-AssayTargetInfo_comment_E>
+                            <PC-AssayTargetInfo_comment_E>Target Classification: enzyme  kinase  protein kinase  camk  camkl  ampk</PC-AssayTargetInfo_comment_E>
+                        </PC-AssayTargetInfo_comment>
+                    </PC-AssayTargetInfo>
+                </PC-AssayDescription_target>
+                <PC-AssayDescription_project-category value="literature-extracted">7</PC-AssayDescription_project-category>
+                <PC-AssayDescription_assay-group>
+                    <PC-AssayDescription_assay-group_E>PMID: 15955699</PC-AssayDescription_assay-group_E>
+                </PC-AssayDescription_assay-group>
+                <PC-AssayDescription_categorized-comment>
+                    <PC-CategorizedComment>
+                        <PC-CategorizedComment_title>Assay Type</PC-CategorizedComment_title>
+                        <PC-CategorizedComment_comment>
+                            <PC-CategorizedComment_comment_E>Binding</PC-CategorizedComment_comment_E>
+                        </PC-CategorizedComment_comment>
+                    </PC-CategorizedComment>
+                    <PC-CategorizedComment>
+                        <PC-CategorizedComment_title>Assay Data Source</PC-CategorizedComment_title>
+                        <PC-CategorizedComment_comment>
+                            <PC-CategorizedComment_comment_E>Scientific Literature</PC-CategorizedComment_comment_E>
+                        </PC-CategorizedComment_comment>
+                    </PC-CategorizedComment>
+                    <PC-CategorizedComment>
+                        <PC-CategorizedComment_title>Target Type</PC-CategorizedComment_title>
+                        <PC-CategorizedComment_comment>
+                            <PC-CategorizedComment_comment_E>Target is a single protein chain</PC-CategorizedComment_comment_E>
+                        </PC-CategorizedComment_comment>
+                    </PC-CategorizedComment>
+                </PC-AssayDescription_categorized-comment>
+            </PC-AssayDescription>
+        </PC-AssaySubmit_assay_descr>
+    </PC-AssaySubmit_assay>
+    <PC-AssaySubmit_data>
+        <PC-AssayResults>
+            <PC-AssayResults_sid>103456750</PC-AssayResults_sid>
+            <PC-AssayResults_outcome value="unspecified">4</PC-AssayResults_outcome>
+            <PC-AssayResults_data>
+                <PC-AssayData>
+                    <PC-AssayData_tid>3</PC-AssayData_tid>
+                    <PC-AssayData_value>
+                        <PC-AssayData_value_sval>=</PC-AssayData_value_sval>
+                    </PC-AssayData_value>
+                </PC-AssayData>
+                <PC-AssayData>
+                    <PC-AssayData_tid>1</PC-AssayData_tid>
+                    <PC-AssayData_value>
+                        <PC-AssayData_value_sval/>
+                    </PC-AssayData_value>
+                </PC-AssayData>
+                <PC-AssayData>
+                    <PC-AssayData_tid>4</PC-AssayData_tid>
+                    <PC-AssayData_value>
+                        <PC-AssayData_value_fval>59</PC-AssayData_value_fval>
+                    </PC-AssayData_value>
+                </PC-AssayData>
+                <PC-AssayData>
+                    <PC-AssayData_tid>5</PC-AssayData_tid>
+                    <PC-AssayData_value>
+                        <PC-AssayData_value_fval>59</PC-AssayData_value_fval>
+                    </PC-AssayData_value>
+                </PC-AssayData>
+            </PC-AssayResults_data>
+            <PC-AssayResults_date>
+                <Date>
+                    <Date_std>
+                        <Date-std>
+                            <Date-std_year>2016</Date-std_year>
+                            <Date-std_month>5</Date-std_month>
+                            <Date-std_day>22</Date-std_day>
+                        </Date-std>
+                    </Date_std>
+                </Date>
+            </PC-AssayResults_date>
+        </PC-AssayResults>
+    </PC-AssaySubmit_data>
+</PC-AssaySubmit>
