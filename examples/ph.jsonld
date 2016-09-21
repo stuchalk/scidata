@@ -223,15 +223,15 @@
                     "chebi": "obo:CHEBI_15377"
                 },
                 {
-                    "@id": "condition/1",
+                    "@id": "condition/1/",
                     "@type": "sci:condition",
                     "source": "measurement/1/",
                     "scope": "substance/1/",
                     "quantity": "temperature",
-                    "property": "Solution temperature",
+                    "property": "Temperature of the experiment",
                     "propertyref": "prop:temperature",
                     "value": {
-                        "@id": "condition/1/value",
+                        "@id": "condition/1/value/",
                         "@type": "sci:value",
                         "number": "22.8",
                         "unitref": "qudt:DegreeCelcius"
@@ -240,10 +240,10 @@
             ]
         },
         "dataset": {
-            "@id": "dataset",
+            "@id": "dataset/",
             "@type": "sci:dataset",
-            "source": "measurement/1",
-            "scope": "solution/1",
+            "source": "measurement/1/",
+            "scope": "substance/1/",
             "datapoint": [
                 {
                     "@id": "datapoint/1/",
@@ -251,7 +251,8 @@
                     "quantity": "p-function negative log of value",
                     "property": "pH",
                     "propertyref": "prop:pH",
-                    "value": {
+                    "conditions": ["condition/1/"],
+            		"value": {
                         "@id": "datapoint/1/value/",
                         "@type": "sci:value",
                         "number": "10.03"

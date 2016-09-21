@@ -44,6 +44,7 @@
             "axis": {"@type": "axis"},
             "axisLabel": {"@type": "axisLabel"},
             "reference": {"@type": "reference"},
+            "conditions": {"@type": "conditions"},
             "attributes": {"@type": "attributes"},
             "parameters": {"@type": "parameters"}
         },
