@@ -1,98 +1,142 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<html>
     <head>
         <title>SciData - A Scientific Data Model</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <base href="http://stuchalk.github.io/scidata/" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="scidata.css" type="text/css" />
+        <!-- Latest compiled and minified CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    	<!-- Optional theme -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    	<!-- Latest compiled and minified JavaScript -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    	<style>
+    		.list-group-item {
+    			padding: 3px 10px
+			}
+			ul {
+				padding-left: 25px;
+			}
+    	</style>
     </head>
-    <body style="padding: 0 20px;width: 1024px;">
-        <div style="float: left;width: 500px;">
-            <h1>SciData - A Scientific Data Model</h1>
-            <p style="text-align: justify;">SciData is is a data model (shown right) for scientific data that provides a
-                framework for organizing both the data and metadata from scientific experiments, calculations, and
-                theories.</p>
-            <h2>SciData JSON-LD Context Documents</h2>
-            <p style="text-align: justify;">Importing context documents in JSON-LD files allows their use in multiple
-                documents. This is the same way that XML (and JSON) schema work except the context is not defining rules
-                of what the content of the JSON values can be, rather the assignment of semantic meaning to the values.
-                A list of example files is <a href="examples/index.html">here</a> and includes data from PubChem, the
-                Dortmund Data Bank (DDB), and a Crystallography Information Framework (CIF) file.</p>
-            <ul>
-                <li>SciData Framework JSON-LD Contexts<ul>
-                        <li><a href="contexts/scidata.jsonld">scidata</a> - Top level JSON-LD context for each scidata
-                            document</li>
-                        <li><a href="contexts/scidata_methodology.jsonld">scidata_methodology</a> - methodology
-                            aspects</li>
-                        <li><a href="contexts/scidata_system.jsonld">scidata_system</a> - system facets</li>
-                        <li><a href="contexts/scidata_dataset.jsonld">scidata_dataset</a> - data (includes
-                            datagroup,dataseries, datapoint</li>
-                        <li><a href="contexts/scidata_parameter.jsonld">scidata_parameter</a> - generic parameter or
-                            array of parameter values</li>
-                        <li><a href="contexts/scidata_value.jsonld">scidata_value</a> - a value (numeric or text) or
-                            array of values</li>
-                        <li><a href="contexts/scidata_unit.jsonld">scidata_unit</a> - representation or referencing
-                            scientific units</li>
-                    </ul>
-                </li>
-                <li>Example JSON-LD Contexts for 'Aspects' of Methodology<ul>
-                        <li>For Experimental Data <ul>
-                                <li><a href="contexts/scidata_measurement.jsonld">scidata_measurement</a> - object for
-                                    measurement metadata</li>
-                                <li><a href="contexts/scidata_procedure.jsonld">scidata_procedure</a> - object for
-                                    procedural metadata</li>
-                                <li><a href="contexts/scidata_resource.jsonld">scidata_resource</a> - object for
-                                    laboratory resource metadata </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>For Computational Data <ul>
-                                <li><a href="contexts/scidata_basisset.jsonld">scidata_basisset</a> - object for basis
-                                    set metadata (<a href="examples/sections/basisset.jsonld">example</a>)</li>
-                                <li><a href="contexts/scidata_calculation.jsonld">scidata_calculation</a> - object for
-                                	calculation metadata (<a href="examples/sections/calculation.jsonld">example</a>)</li>
-                                <li><a href="contexts/scidata_software.jsonld">scidata_software</a> - object for
-                                	computational software metadata (<a href="examples/sections/software.jsonld"
-                                    >example</a>)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Example JSON-LD Contexts for 'Facets' of the System <ul>
-                        <li>For Experimental Data <ul>
-                                <li><a href="contexts/scidata_chemical.jsonld">scidata_chemical</a> - object for
-                                    (manufactured) chemical metadata</li>
-                                <li><a href="contexts/scidata_compound.jsonld">scidata_compound</a> - object for
-                                    compound metadata</li>
-                                <li><a href="contexts/scidata_condition.jsonld">scidata_condition</a> - object for
-                                    (experimental) conditions metadata</li>
-                                <li><a href="contexts/scidata_material.jsonld">scidata_material</a> - object for
-                                    materials metadata</li>
-                                <li><a href="contexts/scidata_organism.jsonld">scidata_organism</a> - object for
-                                    organism metadata</li>
-                                <li><a href="contexts/scidata_system.jsonld">scidata_system</a> - object for chemical
-                                    system (mixture) metadata</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>For Computational Data <ul>
-                                <li><a href="contexts/scidata_computer.jsonld">scidata_computer</a> - object for
-                                    computer processing metadata</li>
-                                <li><a href="contexts/scidata_molsystem.jsonld">scidata_molsystem</a> - object for
-                                    molecular system metadata</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div style="float: right;width: 504px;margin-top: 20px;">
-            <img src="images/scidata_framework.png" style="width: 480px;box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);" />
-        </div>
-        <div style="clear: both;"></div>
-        <p><b>Contact: <a href="mailto:schalk@unf.edu">Stuart J. Chalk</a>, Associate Professor, University of North
-                Florida</b></p>
+    <body>
+    	<div class="container theme-showcase" role="main">
+    		<div class="well text-justify" style="padding-top: 5px;margin-top: 20px;">
+    		<h3>SciData - A Scientific Data Model </h3> SciData is an data model for scientific data (JSON-LD implementation shown right) that provides a
+    		ontologically defined framework for organizing both the data and metadata from scientific experiments, calculations, and theories. 
+    		Data from any science discipline can be contained in the framework using existing semantic definition of data elements (via ontologies) 
+    		<i class="pull-right">Open science, open data, open code, open concept - it's all about the data!</i>
+    		</div>
+    		<div class="row">
+        		<div class="col-sm-6">
+        			<h4 style="margin-top: 0;">SciData JSON-LD Context Documents</h4>
+            		<p style="text-align: justify;">Importing context documents in JSON-LD files allows their use in multiple
+                	documents. This is the same way that XML (and JSON) schema work except the context is not defining rules
+                	of what the content of the JSON values can be, rather the assignment of semantic meaning to the values.
+                	A list of example files is <a href="examples/index.html">here</a> and includes data from PubChem, the
+                	Dortmund Data Bank (DDB), and a Crystallography Information Framework (CIF) file.</p>
+        			<div class="panel panel-info">
+        				<div class="panel-heading">
+        					<h3 class="panel-title">SciData Framework JSON-LD Contexts</h3>
+        				</div>
+        				<div class="list-group">
+        					<a class="list-group-item" href="contexts/scidata.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata</b> - Top level JSON-LD context for each scidata document</a>
+        					<a class="list-group-item" href="contexts/scidata_methodology.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_methodology</b> - Methodology aspects</a>
+        					<a class="list-group-item" href="contexts/scidata_system.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_system</b> - System facets</a>
+        					<a class="list-group-item" href="contexts/scidata_dataset.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_dataset</b> - Dataset (includes datagroup, dataseries, datapoint)</a>
+        					<a class="list-group-item" href="contexts/scidata_parameter.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_parameter</b> - Generic parameter or array of parameter values</a>
+        					<a class="list-group-item" href="contexts/scidata_value.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_value</b> - A value (numeric or text) or array of values</a>
+        					<a class="list-group-item" href="contexts/scidata_unit.jsonld"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> <b>scidata_unit</b> - Representation or referencing of scientific units</a>
+        				</div>
+        			</div>
+        			<div class="panel panel-success">
+        					<div class="panel-heading">
+        						<h3 class="panel-title">Example JSON-LD Contexts for 'Aspects' of Methodology</h3>
+        					</div>
+        					<div class="panel-body" style="padding: 5px;">
+        						<ul>
+        							<li>For Experimental Data <ul>
+        								<li><a href="contexts/scidata_measurement.jsonld">scidata_measurement</a> - object for
+        									measurement metadata</li>
+        								<li><a href="contexts/scidata_procedure.jsonld">scidata_procedure</a> - object for
+        									procedural metadata</li>
+        								<li><a href="contexts/scidata_resource.jsonld">scidata_resource</a> - object for
+        									laboratory resource metadata </li>
+        							</ul>
+        							</li>
+        						</ul>
+        						<ul>
+        							<li>For Computational Data <ul>
+        								<li><a href="contexts/scidata_basisset.jsonld">scidata_basisset</a> - object for basis
+        									set metadata (<a href="examples/sections/basisset.jsonld">example</a>)</li>
+        								<li><a href="contexts/scidata_calculation.jsonld">scidata_calculation</a> - object for
+        									calculation metadata (<a href="examples/sections/calculation.jsonld">example</a>)</li>
+        								<li><a href="contexts/scidata_software.jsonld">scidata_software</a> - object for
+        									computational software metadata (<a href="examples/sections/software.jsonld"
+        										>example</a>)</li>
+        							</ul>
+        							</li>
+        						</ul>
+        					</div>
+        			</div>
+        			<div class="panel panel-warning">
+        				<div class="panel-heading">
+        					<h3 class="panel-title">Example JSON-LD Contexts for 'Facets' of the System</h3>
+        				</div>
+        				<div class="panel-body" style="padding: 5px;">
+        					<ul>
+        						<li>For Experimental Data <ul>
+        							<li><a href="contexts/scidata_chemical.jsonld">scidata_chemical</a> - object for
+        								(manufactured) chemical metadata</li>
+        							<li><a href="contexts/scidata_compound.jsonld">scidata_compound</a> - object for
+        								compound metadata</li>
+        							<li><a href="contexts/scidata_condition.jsonld">scidata_condition</a> - object for
+        								(experimental) conditions metadata</li>
+        							<li><a href="contexts/scidata_material.jsonld">scidata_material</a> - object for
+        								materials metadata</li>
+        							<li><a href="contexts/scidata_organism.jsonld">scidata_organism</a> - object for
+        								organism metadata</li>
+        							<li><a href="contexts/scidata_system.jsonld">scidata_system</a> - object for chemical
+        								system (mixture) metadata</li>
+        						</ul>
+        						</li>
+        					</ul>
+        					<ul>
+        						<li>For Computational Data <ul>
+        							<li><a href="contexts/scidata_computer.jsonld">scidata_computer</a> - object for
+        								computer processing metadata</li>
+        							<li><a href="contexts/scidata_molsystem.jsonld">scidata_molsystem</a> - object for
+        								molecular system metadata</li>
+        						</ul>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+            	</div>
+                <div class="col-sm-6">
+    				<div>
+            		<img src="images/scidata_framework.png" class="img-responsive center-block" />
+        			</div>
+                	<div class="well text-justify" style="padding-top: 5px;margin-top: 20px;">
+                		<div class="col-md-6">
+                			<img src="images/stuchalk.jpg" class="thumbnail"/>
+                		</div>
+                		<div class="col-md-6" style="padding-right: 10px;">
+                			<p>Stuart Chalk<br />
+                				Department of Chemistry<br />
+                				University of North Florida<br />
+                				Phone: 1-904-620-1938<br />
+                				Email: <a href="mailto:schalk@unf.edu">schalk@unf.edu</a><br />
+                				ORCID: <a href="http://orcid.org/0000-0002-0703-7776" target="_blank">0000-0002-0703-7776</a>
+                			</p>
+                			<a href="http://www.linkedin.com/in/stuchalk" target="_blank">
+                				<img src="images/btn_viewmy_160x25.png" alt="View Stuart Chalk's profile on LinkedIn" height="25" width="160"/>
+                			</a>
+                		</div>
+                	</div>
+    			</div>
+    		</div>
+    	</div>
     </body>
 </html>
