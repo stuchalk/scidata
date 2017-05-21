@@ -24,8 +24,10 @@
     "related": ["http://www.ddbst.com/en/EED/PCP/SFT_C3.php"],
     "scidata": {
         "@id": "scidata/",
+        "@type": "sci:scientificData",
         "system": {
             "@id": "system/",
+            "@type": "sci:system",
             "facets": [
                 {
                     "@id": "compound/1/",
@@ -240,7 +242,7 @@
                 {
                     "@id": "datagroup/1/",
                     "@type": "sci:datagroup",
-                    "reference": "source/6/",
+                    "reference": "reference/6/",
                     "datapoints": [
                         "datapoint/3/",
                         "datapoint/19/",
@@ -253,7 +255,7 @@
                 {
                     "@id": "datagroup/2/",
                     "@type": "sci:datagroup",
-                    "reference": "source/1/",
+                    "reference": "reference/1/",
                     "datapoints": [
                         "datapoint/5/",
                         "datapoint/11/",
@@ -263,7 +265,7 @@
                 {
                     "@id": "datagroup/3/",
                     "@type": "sci:datagroup",
-                    "reference": "source/2/",
+                    "reference": "reference/2/",
                     "datapoints": [
                         "datapoint/7/",
                         "datapoint/15/",
@@ -274,13 +276,13 @@
                 {
                     "@id": "datagroup/4/",
                     "@type": "sci:datagroup",
-                    "reference": "source/4/",
+                    "reference": "reference/4/",
                     "datapoints": ["datapoint/9/"]
                 },
                 {
                     "@id": "datagroup/5/",
                     "@type": "sci:datagroup",
-                    "reference": "source/3/",
+                    "reference": "reference/3/",
                     "datapoints": [
                         "datapoint/13/",
                         "datapoint/33/"

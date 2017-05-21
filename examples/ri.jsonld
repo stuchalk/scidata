@@ -96,7 +96,10 @@
                     "@id": "substance/1/",
                     "@type": "sub:substance",
                     "aggregation": "sub:aq",
-                    "mixtype": ["sub:homogeneousSolution","sub:binaryMixture"],
+                    "mixtype": [
+                        "sub:homogeneousSolution",
+                        "sub:binaryMixture"
+                    ],
                     "phase": "sub:liquid",
                     "constituents": [
                         {

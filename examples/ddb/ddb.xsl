@@ -131,7 +131,7 @@
 					<xsl:variable name="refid" select="."/>
 					"@id": "datagroup/<xsl:value-of select="position()"/>/",
 					"@type": "sci:datagroup",
-					"reference": "source/<xsl:value-of select="$refid"/>/",
+					"reference": "reference/<xsl:value-of select="$refid"/>/",
 					"datapoints": [
 						<xsl:for-each select="$data/tr/td[3][../td[5]=$refid]">
 							"datapoint/<xsl:value-of select="count(../preceding-sibling::node())"/>/"
