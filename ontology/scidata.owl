@@ -102,6 +102,9 @@
         <Class IRI="#numericValue"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#datum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#system"/>
     </Declaration>
     <Declaration>
@@ -688,6 +691,10 @@
     <SubClassOf>
         <Class IRI="#dataset"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#datum"/>
+        <Class IRI="#dataset"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#endtime"/>
@@ -2015,7 +2022,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#dataPoint</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An individual data value from a scientific study</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An individual data point from a scientific study.  This is interpreted as the aggregation of a measured data value (datum) and the conditions under which the measurement was made.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2116,6 +2123,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#dataset</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#datum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An individual measured value with a unit (if appropriate)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#datum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#datum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">datum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
