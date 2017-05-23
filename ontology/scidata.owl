@@ -126,6 +126,9 @@
         <Class IRI="#textType"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#component"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#starttime"/>
     </Declaration>
     <Declaration>
@@ -635,6 +638,10 @@
     <SubClassOf>
         <Class IRI="#calculation"/>
         <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#component"/>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#compound"/>
@@ -1908,6 +1915,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#calculation</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Representation of a discrete chemical as part of chemical substance (mixture)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>

@@ -2,6 +2,7 @@
     "@context": [
         "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
         "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {"qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"},
         {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld#"}
     ],
     "@id": "",
@@ -11,15 +12,19 @@
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unitref": "unit/amu"
+        "unit": "unit/amu"
     },
     "numericvaluearray": {
         "@id": "numeric/2",
         "datatype": "decimal",
-        "numberarray": [0.9994,0.09990,0.9989],
-        "error": 1E-4,
+        "numberarray": [
+            0.9994,
+            0.09990,
+            0.9989
+        ],
+        "error": 1.0E-4,
         "sigfigs": 4,
-        "unitstr": "g"
+        "unitref": "qudt:g"
     },
     "textstring": {
         "@id": "text/1",
@@ -29,7 +34,11 @@
     },
     "textstringarray": {
         "@id": "text/2",
-        "textarray": ["Begin of the data block","ACD/SpecManager v 12.01","End of the data block"],
+        "textarray": [
+            "Begin of the data block",
+            "ACD/SpecManager v 12.01",
+            "End of the data block"
+        ],
         "texttype": "plain",
         "language": "en-US"
     },

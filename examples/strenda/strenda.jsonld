@@ -7,18 +7,17 @@
         "name": "Stuart Chalk"
     }],
     "description": "Example of how STRENDA data might be mapped to the SDM",
-    "toc": {
-        "sections": [
-            "enzyme (1A)",
-            "preparation (1A)",
-            "assay conditions (1A)",
-            "activity data (1A)",
-            "methodology (1A)",
-            "metrics (1B)",
-            "inhibition data (1B)",
-            "activation data (1B)"
-        ]
-    },
+    "keywords": ["STRENDA Level 1A","STRENDA Level 2A"],
+    "toc": {"sections": [
+        "enzyme (1A)",
+        "preparation (1A)",
+        "assay conditions (1A)",
+        "activity data (1A)",
+        "methodology (1A)",
+        "metrics (1B)",
+        "inhibition data (1B)",
+        "activation data (1B)"
+    ]},
     "scidata": {
         "@type": "sci:scidata",
         "type": ["property value"],
@@ -52,6 +51,13 @@
                 {"@type": "activation data (1B)"}
             ]
         }
-    }
+    },
+    "source": [{
+        "@id": "source/1/",
+        "citation": "'STRENDA Guideline Level 1A', Beilstein Institute, https://dx.doi.org/10.3762/strenda.17"
+    },
+    {
+        "@id": "source/2/",
+        "citation": "'STRENDA Guideline Level 1B', Beilstein Institute, https://dx.doi.org/10.3762/strenda.27"
+    }]
 }
-

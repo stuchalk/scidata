@@ -252,7 +252,7 @@
                     "property": "pH",
                     "propertyref": "prop:pH",
                     "conditions": ["condition/1/"],
-            		"value": {
+                    "value": {
                         "@id": "datapoint/1/value/",
                         "@type": "sci:value",
                         "number": "10.03"
