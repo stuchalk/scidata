@@ -1,5 +1,4 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "cao": "http://champ-project.org/images/ontology/cao.owl#",
         "obo": "http://purl.obolibrary.org/obo/"

@@ -1,5 +1,4 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
     {
         "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
         "dc": "http://purl.org/dc/terms/"

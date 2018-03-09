@@ -35,6 +35,7 @@
             "@type": "sci:methodology",
             "aspects": [{
                 "@id": "assay/1/",
+                "@type": "",
                 "url": "http://www.ncbi.nlm.nih.gov/pubmed/15955699",
                 "type": {
                     "@value": "Binding",
@@ -50,25 +51,30 @@
             "facets": [
                 {
                     "@id": "target/1/",
-                    "@type": "tgt:target",
+                    "@type": "obo:MI_0502",
                     "name": "RecName: Full=5'-AMP-activated protein kinase catalytic subunit alpha-1; Short=AMPK subunit alpha-1; AltName: Full=Acetyl-CoA carboxylase kinase; Short=ACACA kinase; AltName: Full=Hydroxymethylglutaryl-CoA reductase kinase; Short=HMGCR kinase; AltName: Full=Tau-protein kinase PRKAA1",
-                    "url": "http://www.ncbi.nlm.nih.gov/protein/254763436",
-                    "type": {
-                        "@value": "protein",
-                        "@type": "dc:type"
-                    },
+                    "type": "http://www.ncbi.nlm.nih.gov/protein/254763436",
                     "organism": "organism/1/"
                 },
                 {
                     "@id": "organism/1/",
-                    "@type": "sci:organism",
-                    "url": "http://www.uniprot.org/taxonomy/9606",
+                    "@type": "obo:OBI_0100026",
+                    "type": "http://www.uniprot.org/taxonomy/9606",
                     "name": "Homo sapiens"
                 },
                 {
                     "@id": "substance/1/",
-                    "@type": "sci:substance",
-                    "url": "http://pubchem.ncbi.nlm.nih.gov/substance/103456750"
+                    "@type": "obo:NCIT_C45306",
+                    "type": "http://pubchem.ncbi.nlm.nih.gov/substance/103456750",
+                    "chemical": "compound/1/"
+                },
+                {
+                    "@id": "compound/1/",
+                    "@type": "obo:NCIT_C45306",
+                    "type": "https://pubchem.ncbi.nlm.nih.gov/compound/23646578",
+                    "name": "4-(1-ethylimidazo[4,5-c]pyridin-2-yl)-1,2,5-oxadiazol-3-amine",
+                    "inchikey": "UGHABJRZQKZAHP-UHFFFAOYSA-N",
+                    "smiles": "CCN1C2=C(C=NC=C2)N=C1C3=NON=C3N"
                 }
             ]
         },

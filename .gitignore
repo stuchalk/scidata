@@ -3,3 +3,13 @@
 /other
 /.idea
 /ontology/catalog-v001.xml
+/github_token.txt
+.DS_Store
+contexts/.DS_Store
+contexts/aspects/
+contexts/facets/
+contexts/scidata_sample.jsonld
+examples/.DS_Store
+examples/Self contained/
+examples/ph_min.jsonld
+ontology/.DS_Store

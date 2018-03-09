@@ -1,5 +1,4 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "gc": "http://purl.org/gc/",
         "dc": "http://purl.org/dc/terms/",

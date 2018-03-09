@@ -2,6 +2,7 @@
     "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_substance.jsonld",
+    "http://stuchalk.github.io/scidata/contexts/scidata_sample.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_target.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
     "http://stuchalk.github.io/scidata/contexts/scidata_organism.jsonld",
@@ -22,6 +23,7 @@
             "compound": {"@type": "compound"},
             "chemical": {"@type": "chemical"},
             "substance": {"@type": "substance"},
+            "sample": {"@type": "sample"},
             "material": {"@type": "material"},
             "organism": {"@type": "organism"},
             "condition": {"@type": "condition"},
@@ -48,6 +50,10 @@
         "substance": {
             "@id": "sci:hasSubstance",
             "@type": "system"
+        },
+        "sample": {
+            "@id": "sci:isSample",
+            "@type": "sample"
         },
         "material": {
             "@id": "sci:hasMaterial",
