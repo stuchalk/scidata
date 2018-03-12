@@ -8,7 +8,6 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "numericvalue": {
             "@id": "sci:numericValue",
-            "uid": {"@type": "uid"},
             "datatype": {"@type": "datatype"},
             "number": {"@type": "number"},
             "sigfigs": {"@type": "sigfigs"},
@@ -20,7 +19,6 @@
         },
         "numericvaluearray": {
             "@id": "sci:numericValueArray",
-            "uid": {"@type": "uid"},
             "datatype": {"@type": "datatype"},
             "numberarray": {"@type": "numberarray"},
             "sigfigs": {"@type": "sigfigs"},
@@ -32,14 +30,12 @@
         },
         "textstring": {
             "@id": "sci:textString",
-            "uid": {"@type": "uid"},
             "text": {"@type": "text"},
             "texttype": {"@type": "texttype"},
             "language": {"@type": "language"}
         },
         "textstringarray": {
             "@id": "sci:textStringArray",
-            "uid": {"@type": "uid"},
             "textarray": {"@type": "textarray"},
             "texttype": {"@type": "texttype"},
             "language": {"@type": "language"}

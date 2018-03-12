@@ -6,10 +6,6 @@
     },
     {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "uid": {
-            "@id": "dc:identifier",
-            "@type": "string"
-        },
         "name": {
             "@id": "dc:title",
             "@type": "string"

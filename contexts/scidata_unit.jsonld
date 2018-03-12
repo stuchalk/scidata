@@ -9,7 +9,6 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "unit": {
             "@id": "sci:unitOfMeasure",
-            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "unitsystem": {"@type": "unitsystem"},
             "unitsystemref": {"@type": "unitsystemref"},

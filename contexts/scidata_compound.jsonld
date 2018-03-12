@@ -8,7 +8,6 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "compound": {
             "@id": "sci:compound",
-            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},

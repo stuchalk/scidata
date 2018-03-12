@@ -8,7 +8,6 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "parameter": {
             "@id": "sci:parameter",
-            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -21,7 +20,6 @@
         },
         "parameterArray": {
             "@id": "sci:parameterArray",
-            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},

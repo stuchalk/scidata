@@ -7,7 +7,6 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dataset": {
             "@id": "sci:dataset",
-            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -19,7 +18,6 @@
         },
         "datagroup": {
             "@id": "sci:hasDataGroup",
-            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -35,7 +33,6 @@
         },
         "dataseries": {
             "@id": "sci:hasDataSeries",
-            "uid": {"@type": "uid"},
             "name": {"@type": "dataname"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},
@@ -57,7 +54,6 @@
         },
         "datapoint": {
             "@id": "sci:hasDataPoint",
-            "uid": {"@type": "uid"},
             "reference": {"@type": "reference"},
             "conditions": {"@type": "conditions"},
             "settings": {"@type": "settings"},

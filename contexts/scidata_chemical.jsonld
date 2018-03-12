@@ -9,7 +9,6 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "chemical": {
             "@id": "sci:chemical",
-            "uid": {"@type": "uid"},
             "name": {"@type": "name"},
             "source": {"@type": "source"},
             "scope": {"@type": "scope"},

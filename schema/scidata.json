@@ -3,7 +3,6 @@
     "title": "Scientific Data Schema",
     "description": "JSON schema for scientific data",
     "required": [
-        "uid",
         "author",
         "description",
         "version",
@@ -12,7 +11,6 @@
         "scidata"
     ],
     "properties": {
-        "uid": {"type": "string"},
         "author": {"type": "string"},
         "description": {"type": "string"},
         "version": {"type": "string"},
