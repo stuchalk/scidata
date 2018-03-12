@@ -13,3 +13,4 @@ examples/.DS_Store
 examples/Self contained/
 examples/ph_min.jsonld
 ontology/.DS_Store
+!/contexts/scidata_sample.jsonld
