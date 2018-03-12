@@ -1,10 +1,10 @@
 {"@context": [
     {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "dc": "http://purl.org/dc/terms/"
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "https://purl.org/dc/terms/"
     },
     {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dataset": {
             "@id": "sci:dataset",
             "uid": {"@type": "uid"},

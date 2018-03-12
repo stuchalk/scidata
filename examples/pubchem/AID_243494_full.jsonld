@@ -2,12 +2,11 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
-            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "http://purl.org/dc/terms/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "dc": "https://purl.org/dc/terms/",
+            "xsd": "https://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/"}
     ],

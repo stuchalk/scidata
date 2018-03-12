@@ -1,11 +1,11 @@
 {"@context": [
     {
-        "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "dc": "https://purl.org/dc/terms/",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "rdfs": "https://www.w3.org/2000/01/rdf-schema#"
     },
     {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "uid": {
             "@id": "dc:identifier",
             "@type": "string"

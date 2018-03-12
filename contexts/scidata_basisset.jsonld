@@ -1,10 +1,10 @@
 {"@context": [
     {
-        "gc": "http://purl.org/gc/",
-        "dc": "http://purl.org/dc/terms/"
+        "gc": "https://purl.org/gc/",
+        "dc": "https://purl.org/dc/terms/"
     },
     {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "basisSet": {
             "@id": "sci:basisSet",
             "title": {"@type": "title"},

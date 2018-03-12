@@ -1,7 +1,7 @@
 {"@context": [
-    {"gc": "http://purl.org/gc/"},
+    {"gc": "https://purl.org/gc/"},
     {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "calculation": {
             "@id": "sci:calculation",
             "approach": {"@type": "approach"},

@@ -1,23 +1,23 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
     {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "bibo": "http://purl.obolibrary.org/obo/bibo/",
-        "dc": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "dc": "https://purl.org/dc/terms/",
+        "schema": "https://schema.org/",
         "bse": "http://purl.oclc.org/NET/EMSL/BSE",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "xsd": "https://www.w3.org/2001/XMLSchema#",
         "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
         "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#"
     },
     {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "title": {
             "@id": "dc:title",
             "@type": "string"
