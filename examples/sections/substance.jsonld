@@ -1,7 +1,11 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
+<<<<<<< Updated upstream
         {"@base": "https://stuchalk.github.io/scidata/examples/system.jsonld#"}
+=======
+        {"@base": "https://stuchalk.github.io/scidata/examples/substance/"}
+>>>>>>> Stashed changes
     ],
     "@id": "",
     "type": "Binary mixture",
