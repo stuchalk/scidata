@@ -1,0 +1,50 @@
+{"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "parameter": {
+            "@id": "sci:parameter",
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
+            "property": {"@type": "property"},
+            "propertyref": {"@type": "propertyref"},
+            "value": {"@type": "value"},
+            "textstring": {"@type": "textstring"}
+        },
+        "parameterArray": {
+            "@id": "sci:parameterArray",
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "quantity": {"@type": "quantity"},
+            "quantityref": {"@type": "quantityref"},
+            "property": {"@type": "property"},
+            "propertyref": {"@type": "propertyref"},
+            "valuearray": {"@type": "valuearray"},
+            "textarray": {"@type": "textstringarray"}
+        },
+        "quantity": {
+            "@id": "sci:quantity",
+            "@type": "string"
+        },
+        "quantityref": {
+            "@id": "sci:quantity",
+            "@type": "@id"
+        },
+        "property": {
+            "@id": "sci:property",
+            "@type": "string"
+        },
+        "propertyref": {
+            "@id": "sci:property",
+            "@type": "@id"
+        }
+    }
+]}

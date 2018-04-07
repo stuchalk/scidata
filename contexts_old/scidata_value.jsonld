@@ -1,0 +1,99 @@
+{"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "numericvalue": {
+            "@id": "sci:numericValue",
+            "datatype": {"@type": "datatype"},
+            "number": {"@type": "number"},
+            "sigfigs": {"@type": "sigfigs"},
+            "error": {"@type": "error"},
+            "errorType": {"@type": "errorType"},
+            "unit": {"@type": "unit"},
+            "unitstr": {"@type": "unitstr"},
+            "unitref": {"@type": "unitref"}
+        },
+        "numericvaluearray": {
+            "@id": "sci:numericValueArray",
+            "datatype": {"@type": "datatype"},
+            "numberarray": {"@type": "numberarray"},
+            "sigfigs": {"@type": "sigfigs"},
+            "errorarray": {"@type": "errorarray"},
+            "errortype": {"@type": "errortype"},
+            "unit": {"@type": "unit"},
+            "unitstr": {"@type": "unitstr"},
+            "unitref": {"@type": "unitref"}
+        },
+        "textstring": {
+            "@id": "sci:textString",
+            "text": {"@type": "text"},
+            "texttype": {"@type": "texttype"},
+            "language": {"@type": "language"}
+        },
+        "textstringarray": {
+            "@id": "sci:textStringArray",
+            "textarray": {"@type": "textarray"},
+            "texttype": {"@type": "texttype"},
+            "language": {"@type": "language"}
+        },
+        "datatype": {
+            "@id": "sci:numericDatatype",
+            "@type": "@id"
+        },
+        "number": {
+            "@id": "sci:number",
+            "@type": "double"
+        },
+        "numberarray": {
+            "@id": "sci:numberArray",
+            "@type": "double",
+            "@container": "@list"
+        },
+        "sigfigs": {
+            "@id": "sci:sigfigs",
+            "@type": "integer"
+        },
+        "error": {
+            "@id": "sci:error",
+            "@type": "double"
+        },
+        "errorarray": {
+            "@id": "sci:errorArray",
+            "@type": "double",
+            "@container": "@list"
+        },
+        "errortype": {
+            "@id": "sci:errorType",
+            "@type": "string"
+        },
+        "text": {
+            "@id": "sci:text",
+            "@type": "string"
+        },
+        "textarray": {
+            "@id": "sci:textArray",
+            "@type": "string",
+            "@container": "@list"
+        },
+        "texttype": {
+            "@id": "sci:textType",
+            "@type": "string"
+        },
+        "language": {
+            "@id": "dc:language",
+            "@type": "string"
+        },
+        "value": {
+            "@id": "sci:numericValue",
+            "@type": "numericvalue"
+        },
+        "valuearray": {
+            "@id": "sci:numericValueArray",
+            "@type": "numericvaluearray"
+        }
+    }
+]}

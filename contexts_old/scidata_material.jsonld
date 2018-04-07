@@ -1,0 +1,40 @@
+{"@context": [
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "material": {
+            "@id": "sci:material",
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "materialType": {"@type": "materialType"},
+            "manufactured": {"@type": "manufactured"},
+            "origin": {"@type": "origin"},
+            "notes": {"@type": "notes"}
+        },
+        "materialType": {
+            "@id": "mat:materialType",
+            "@type": "string"
+        },
+        "composition": {
+            "@id": "mat:composition",
+            "@type": "string"
+        },
+        "manufactured": {
+            "@id": "mat:manufactured",
+            "@type": "string"
+        },
+        "origin": {
+            "@id": "sci:origin",
+            "@type": "string"
+        },
+        "property": {
+            "@id": "mat:property",
+            "@type": "parameter"
+        }
+    }
+]}

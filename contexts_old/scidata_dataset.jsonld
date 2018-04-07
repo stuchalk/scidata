@@ -1,0 +1,103 @@
+{"@context": [
+    {
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "dataset": {
+            "@id": "sci:dataset",
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "reference": {"@type": "reference"},
+            "attributes": {"@type": "attributes"},
+            "datagroup": {"@type": "datagroup"},
+            "dataseries": {"@type": "dataseries"},
+            "datapoint": {"@type": "datapoint"}
+        },
+        "datagroup": {
+            "@id": "sci:hasDataGroup",
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "reference": {"@type": "reference"},
+            "attributes": {"@type": "attributes"},
+            "datagroup": {"@type": "datagroup"},
+            "dataseries": {"@type": "dataseries"},
+            "datapoint": {"@type": "datapoint"}
+        },
+        "datagroups": {
+            "@id": "sci:hasDataGroup",
+            "@type": "@id"
+        },
+        "dataseries": {
+            "@id": "sci:hasDataSeries",
+            "name": {"@type": "dataname"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "type": {"@type": "seriesType"},
+            "axis": {"@type": "axis"},
+            "axisLabel": {"@type": "axisLabel"},
+            "reference": {"@type": "reference"},
+            "conditions": {"@type": "conditions"},
+            "attributes": {"@type": "attributes"},
+            "parameters": {"@type": "parameters"}
+        },
+        "dataserieses": {
+            "@id": "sci:hasDataSeries",
+            "@type": "@id"
+        },
+        "dataname": {
+            "@id": "sci:dataName",
+            "@type": "parameter"
+        },
+        "datapoint": {
+            "@id": "sci:hasDataPoint",
+            "reference": {"@type": "reference"},
+            "conditions": {"@type": "conditions"},
+            "settings": {"@type": "settings"},
+            "data": {"@type": "data"}
+        },
+        "datapoints": {
+            "@id": "sci:hasDataPoint",
+            "@type": "@id"
+        },
+        "conditions": {
+            "@id": "sci:hasCondition",
+            "@type": "@id"
+        },
+        "settings": {
+            "@id": "sci:hasSetting",
+            "@type": "id"
+        },
+        "data": {
+            "@id": "sci:hasData",
+            "@type": "parameter"
+        },
+        "reference": {
+            "@id": "sci:hasSource",
+            "@type": "@id"
+        },
+        "attributes": {
+            "@id": "sci:hasDataAttributes",
+            "@type": "parameter"
+        },
+        "parameters": {
+            "@id": "sci:hasDataParameters",
+            "@type": "parameterArray"
+        },
+        "seriesType": {
+            "@id": "sci:dataSeriesType",
+            "@type": "parameter"
+        },
+        "axis": {
+            "@id": "sci:axisType",
+            "@type": "string"
+        },
+        "axisLabel": {
+            "@id": "sci:axisLabel",
+            "@type": "string"
+        }
+    }
+]}

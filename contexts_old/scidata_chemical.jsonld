@@ -1,0 +1,52 @@
+{"@context": [
+    {
+        "dc": "http://purl.org/dc/terms/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "chm": "http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "chemical": {
+            "@id": "sci:chemical",
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "vendor": {"@type": "vendor"},
+            "catalognumber": {"@type": "catalognumber"},
+            "lotnumber": {"@type": "lotnumber"},
+            "role": {"@type": "role"},
+            "grade": {"@type": "grade"},
+            "phase": {"@type": "phase"},
+            "properties": {"@type": "properties"}
+        },
+        "vendor": {
+            "@id": "obo:sep_00088",
+            "@type": "string"
+        },
+        "catalognumber": {
+            "@id": "obo:sep_0016",
+            "@type": "string"
+        },
+        "lotnumber": {
+            "@id": "obo:sep_0015",
+            "@type": "string"
+        },
+        "role": {
+            "@id": "obo:BFO_0000023",
+            "@type": "@id"
+        },
+        "grade": {
+            "@id": "chm:grade",
+            "@type": "string"
+        },
+        "phase": {
+            "@id": "sub:phase",
+            "@type": "string"
+        },
+        "properties": {
+            "@id": "sci:propertyValue",
+            "@type": "parameter"
+        }
+    }
+]}

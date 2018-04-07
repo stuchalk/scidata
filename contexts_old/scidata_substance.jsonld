@@ -1,0 +1,45 @@
+{"@context": [
+    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
+    {
+        "sub": "http://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
+        "dc": "http://purl.org/dc/terms/"
+    },
+    {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "substance": {
+            "@id": "sub:substance",
+            "name": {"@type": "name"},
+            "source": {"@type": "source"},
+            "scope": {"@type": "scope"},
+            "aggregation": {"@type": "aggregation"},
+            "mixtype": {"@type": "mixtype"},
+            "phase": {"@type": "phase"},
+            "components": {"@type": "components"},
+            "properties": {"@type": "properties"}
+        },
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "aggregation": {
+            "@id": "sub:hasStateOfAggregation",
+            "@type": "@id"
+        },
+        "mixtype": {
+            "@id": "sub:hasMixtureType",
+            "@type": "@id"
+        },
+        "phase": {
+            "@id": "sub:hasPhase",
+            "@type": "@id"
+        },
+        "constituents": {
+            "@id": "sub:hasConstituent",
+            "@type": "chemical"
+        },
+        "properties": {
+            "@id": "sub:hasProperty",
+            "@type": "parameter"
+        }
+    }
+]}
