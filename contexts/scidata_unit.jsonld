@@ -63,7 +63,7 @@
     "factor": {"@id": "sci:conversionFactor"},
     "factorref": {
         "@id": "sci:conversionFactor",
-        "type": "@id"
+        "@type": "@id"
     },
     "fromunit": {
         "@id": "sci:unitOfMeasure",
