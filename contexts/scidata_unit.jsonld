@@ -58,7 +58,7 @@
     },
     "power": {
         "@id": "sci:unitPower",
-        "$type": "integer"
+        "@type": "integer"
     },
     "factor": {"@id": "sci:conversionFactor"},
     "factorref": {
