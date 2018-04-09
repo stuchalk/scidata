@@ -46,11 +46,11 @@
    },
     "siunitstr": {
         "@id": "sci:siUnit",
-        "type": "string"
+        "@type": "string"
     },
     "siunitref": {
         "@id": "sci:siUnit",
-        "type": "@id"
+        "@type": "@id"
     },
     "prefix": {
         "@id": "sci:siPrefix",
