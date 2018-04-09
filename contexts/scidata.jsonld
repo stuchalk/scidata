@@ -78,8 +78,7 @@
             "@type": "anyURI"
         },
         "toc": {
-            "@id": "sci:hasTableOfContents",
-            "sections": {"@type": "sections"}
+            "@id": "sci:hasTableOfContents"
         },
         "sections": {
             "@id": "dc:hasPart",
