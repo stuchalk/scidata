@@ -5,19 +5,17 @@
     "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
     {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
         "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "bibo": "http://purl.obolibrary.org/obo/bibo/",
-        "dc": "https://purl.org/dc/terms/",
         "schema": "https://schema.org/",
         "bse": "http://purl.oclc.org/NET/EMSL/BSE",
         "xsd": "https://www.w3.org/2001/XMLSchema#",
         "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
-        "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#"
-    },
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
         "title": {
             "@id": "dc:title",
             "@type": "string"
@@ -26,13 +24,7 @@
             "@id": "dc:isPartOf",
             "@type": "string"
         },
-        "author": {
-            "@id": "sci:hasAuthor",
-            "name": {"@type": "type"},
-            "organization": {"@type": "property"},
-            "email": {"@type": "email"},
-            "orcid": {"@type": "orcid"}
-        },
+        "author": {"@id": "sci:hasAuthor"},
         "name": {
             "@id": "obo:IAO_0000302",
             "@type": "string"
@@ -93,15 +85,7 @@
             "@id": "dc:hasPart",
             "@type": "@id"
         },
-        "scidata": {
-            "@id": "sci:hasScientificData",
-            "type": {"@type": "type"},
-            "property": {"@type": "property"},
-            "kind": {"@type": "kind"},
-            "methodology": {"@type": "methodology"},
-            "system": {"@type": "system"},
-            "dataset": {"@type": "dataset"}
-        },
+        "scidata": {"@id": "sci:hasScientificData"},
         "type": {
             "@id": "sci:dataType",
             "@type": "string"
@@ -126,13 +110,7 @@
             "@id": "sci:hasDataset",
             "@type": "dataset"
         },
-        "sources": {
-            "@id": "sci:hasSource",
-            "citation": {"@type": "citation"},
-            "reftype": {"@type": "reftype"},
-            "url": {"@type": "url"},
-            "doi": {"@type": "doi"}
-        },
+        "sources": {"@id": "sci:hasSource"},
         "citation": {
             "@id": "dc:bibliographicCitation",
             "@type": "string"
@@ -149,11 +127,7 @@
             "@id": "bibo:doi",
             "@type": "string"
         },
-        "rights": {
-            "@id": "sci:hasRights",
-            "holder": {"@type": "holder"},
-            "license": {"@type": "license"}
-        },
+        "rights": {"@id": "sci:hasRights"},
         "holder": {
             "@id": "dc:rightsHolder",
             "@type": "string"

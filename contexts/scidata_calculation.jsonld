@@ -1,48 +1,35 @@
-{"@context": [
-    {"gc": "https://purl.org/gc/"},
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "calculation": {
-            "@id": "sci:calculation",
-            "approach": {"@type": "approach"},
-            "calculations": {"@type": "calculations"}
-        },
-        "approach": {
-            "@id": "gc:calculationApproach",
-            "@type": "string"
-        },
-        "calculations": {
-            "@id": "gc:calculationStep",
-            "calcclass": {"@type": "calcclass"},
-            "calcType": {"@type": "calcType"},
-            "referenceState": {"@type": "referenceState"},
-            "determinant": {"@type": "determinant"},
-            "spin": {"@type": "spin"},
-            "submethod": {"@type": "submethod"}
-        },
-        "calcclass": {
-            "@id": "gc:calculationClass",
-            "@type": "string"
-        },
-        "calcType": {
-            "@id": "gc:calculationType",
-            "@type": "string"
-        },
-        "referenceState": {
-            "@id": "gc:referenceState",
-            "@type": "string"
-        },
-        "determinant": {
-            "@id": "gc:determinant",
-            "@type": "string"
-        },
-        "spin": {
-            "@id": "gc:spin",
-            "@type": "@id"
-        },
-        "submethod": {
-            "@id": "gc:submethod",
-            "@type": "@id"
-        }
+{"@context": {
+    "@vocab": "https://www.w3.org/2001/XMLSchema#",
+    "gc": "https://purl.org/gc/",
+    "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "calculation": {"@id": "sci:calculation"},
+    "approach": {
+        "@id": "gc:calculationApproach",
+        "@type": "string"
+    },
+    "calculations": {"@id": "gc:calculationStep"},
+    "calcclass": {
+        "@id": "gc:calculationClass",
+        "@type": "string"
+    },
+    "calcType": {
+        "@id": "gc:calculationType",
+        "@type": "string"
+    },
+    "referenceState": {
+        "@id": "gc:referenceState",
+        "@type": "string"
+    },
+    "determinant": {
+        "@id": "gc:determinant",
+        "@type": "string"
+    },
+    "spin": {
+        "@id": "gc:spin",
+        "@type": "@id"
+    },
+    "submethod": {
+        "@id": "gc:submethod",
+        "@type": "@id"
     }
-]}
+}}

@@ -1,10 +1,11 @@
 {"@context": [
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "condition": {
             "@id": "sci:condition",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         }
     }
 ]}

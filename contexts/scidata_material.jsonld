@@ -1,21 +1,11 @@
 {"@context": [
-    {
-        "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#"
-    },
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "material": {
-            "@id": "sci:material",
-            "name": {"@type": "name"},
-            "source": {"@type": "source"},
-            "scope": {"@type": "scope"},
-            "materialType": {"@type": "materialType"},
-            "manufactured": {"@type": "manufactured"},
-            "origin": {"@type": "origin"},
-            "notes": {"@type": "notes"}
-        },
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#",
+        "material": {"@id": "sci:material"},
         "materialType": {
             "@id": "mat:materialType",
             "@type": "string"
@@ -34,7 +24,7 @@
         },
         "property": {
             "@id": "mat:property",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         }
     }
 ]}

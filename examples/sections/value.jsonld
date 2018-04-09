@@ -19,7 +19,7 @@
         "datatype": "decimal",
         "numberarray": [
             0.9994,
-            0.09990,
+            0.0999,
             0.9989
         ],
         "error": 1.0E-4,

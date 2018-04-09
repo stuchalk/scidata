@@ -1,19 +1,11 @@
 {"@context": [
-    {
-        "cao": "http://champ-project.org/images/ontology/cao.owl#",
-        "obo": "http://purl.obolibrary.org/obo/"
-    },
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "measurement": {
-            "@id": "cao:CAO_000152",
-            "techniqueType": {"@type": "techniqueType"},
-            "technique": {"@type": "technique"},
-            "instrumentType": {"@type": "instrumentType"},
-            "instrument": {"@type": "instrument"},
-            "vendor": {"@type": "vendor"},
-            "settings": {"@type": "settings"}
-        },
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "cao": "http://champ-project.org/images/ontology/cao.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "measurement": {"@id": "cao:CAO_000152"},
         "techniqueType": {
             "@id": "cao:CAO_000218",
             "@type": "@id"
@@ -36,7 +28,7 @@
         },
         "settings": {
             "@id": "obo:IAO_0000140",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         }
     }
 ]}

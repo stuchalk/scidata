@@ -1,35 +1,11 @@
 {"@context": [
     "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
     {
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "dc": "https://purl.org/dc/terms/"
-    },
-    {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "parameter": {
-            "@id": "sci:parameter",
-            "name": {"@type": "name"},
-            "source": {"@type": "source"},
-            "scope": {"@type": "scope"},
-            "quantity": {"@type": "quantity"},
-            "quantityref": {"@type": "quantityref"},
-            "property": {"@type": "property"},
-            "propertyref": {"@type": "propertyref"},
-            "value": {"@type": "value"},
-            "textstring": {"@type": "textstring"}
-        },
-        "parameterArray": {
-            "@id": "sci:parameterArray",
-            "name": {"@type": "name"},
-            "source": {"@type": "source"},
-            "scope": {"@type": "scope"},
-            "quantity": {"@type": "quantity"},
-            "quantityref": {"@type": "quantityref"},
-            "property": {"@type": "property"},
-            "propertyref": {"@type": "propertyref"},
-            "valuearray": {"@type": "valuearray"},
-            "textarray": {"@type": "textstringarray"}
-        },
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "https://purl.org/dc/terms/",
+        "parameter": {"@id": "sci:parameter"},
+        "parameterArray": {"@id": "sci:parameterArray"},
         "quantity": {
             "@id": "sci:quantity",
             "@type": "string"
@@ -45,6 +21,10 @@
         "propertyref": {
             "@id": "sci:property",
             "@type": "@id"
+        },
+        "value": {
+            "@id": "sci:hasValue",
+            "@type": "sci:value"
         }
     }
 ]}

@@ -1,25 +1,12 @@
 {"@context": [
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#"
-    },
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "chemical": {
-            "@id": "sci:chemical",
-            "name": {"@type": "name"},
-            "source": {"@type": "source"},
-            "scope": {"@type": "scope"},
-            "vendor": {"@type": "vendor"},
-            "catalognumber": {"@type": "catalognumber"},
-            "lotnumber": {"@type": "lotnumber"},
-            "role": {"@type": "role"},
-            "grade": {"@type": "grade"},
-            "phase": {"@type": "phase"},
-            "properties": {"@type": "properties"}
-        },
+        "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+        "chemical": {"@id": "sci:chemical"},
         "vendor": {
             "@id": "obo:sep_00088",
             "@type": "string"
@@ -46,7 +33,7 @@
         },
         "properties": {
             "@id": "sci:propertyValue",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         }
     }
 ]}

@@ -1,42 +1,38 @@
-{"@context": [
-    {
-        "dc": "https://purl.org/dc/terms/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "rdfs": "https://www.w3.org/2000/01/rdf-schema#"
+{"@context": {
+    "@vocab": "https://www.w3.org/2001/XMLSchema#",
+    "dc": "https://purl.org/dc/terms/",
+    "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
+    "name": {
+        "@id": "dc:title",
+        "@type": "string"
     },
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "name": {
-            "@id": "dc:title",
-            "@type": "string"
-        },
-        "url": {
-            "@id": "dc:identifier",
-            "@type": "AnyURI"
-        },
-        "updated": {
-            "@id": "dc:date",
-            "@type": "dateTime"
-        },
-        "source": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "scope": {
-            "@id": "sci:hasScope",
-            "@type": "@id"
-        },
-        "phase": {
-            "@id": "sci:phaseOfMatter",
-            "@type": "string"
-        },
-        "role": {
-            "@id": "sci:role",
-            "@type": "@id"
-        },
-        "label": {
-            "@id": "rdfs:label",
-            "@type": "string"
-        }
+    "url": {
+        "@id": "dc:identifier",
+        "@type": "AnyURI"
+    },
+    "updated": {
+        "@id": "dc:date",
+        "@type": "dateTime"
+    },
+    "source": {
+        "@id": "sci:hasSource",
+        "@type": "@id"
+    },
+    "scope": {
+        "@id": "sci:hasScope",
+        "@type": "@id"
+    },
+    "phase": {
+        "@id": "sci:phaseOfMatter",
+        "@type": "string"
+    },
+    "role": {
+        "@id": "sci:role",
+        "@type": "@id"
+    },
+    "label": {
+        "@id": "rdfs:label",
+        "@type": "string"
     }
-]}
+}}

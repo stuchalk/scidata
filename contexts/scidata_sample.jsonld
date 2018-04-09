@@ -1,0 +1,18 @@
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "cao": "http://champ-project.org/images/ontology/cao.owl#",
+    "dc": "http://purl.org/dc/terms/",
+    "substance": {"@id": "cao:CAO_000189"},
+    "identifier": {
+        "@id": "dc:identifier",
+        "@type": "string"
+    },
+    "source": {
+        "@id": "dc:hasSource",
+        "@type": "@id"
+    },
+    "preparation": {
+        "@id": "cao:CAO_000042",
+        "@type": "@id"
+    }
+}}

@@ -1,45 +1,25 @@
-{"@context": [
-    {
-        "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "proc": "http://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#"
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/terms/",
+    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "proc": "http://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#",
+    "procedure": {"@id": "sci:procedure"},
+    "procType": {
+        "@id": "proc:procedureType",
+        "@type": "string"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "procedure": {
-            "@id": "sci:procedure",
-            "title": {"@type": "title"},
-            "source": {"@type": "source"},
-            "scope": {"@type": "scope"},
-            "procType": {"@type": "procType"},
-            "sequence": {"@type": "sequence"},
-            "notes": {"@type": "notes"}
-        },
-        "procType": {
-            "@id": "proc:procedureType",
-            "@type": "string"
-        },
-        "sequence": {
-            "@id": "proc:procedureSequence",
-            "title": {"@type": "title"},
-            "steps": {"@type": "steps"}
-        },
-        "steps": {
-            "@id": "proc:procedureStep",
-            "step": {"@type": "step"},
-            "instruction": {"@type": "instruction"}
-        },
-        "step": {
-            "@id": "proc:procedureStepNumber",
-            "@type": "string"
-        },
-        "instruction": {
-            "@id": "proc:procedureStepInstruction",
-            "@type": "string"
-        },
-        "notes": {
-            "@id": "proc:procedureNote",
-            "@type": "string"
-        }
+    "sequence": {"@id": "proc:procedureSequence"},
+    "steps": {"@id": "proc:procedureStep"},
+    "step": {
+        "@id": "proc:procedureStepNumber",
+        "@type": "string"
+    },
+    "instruction": {
+        "@id": "proc:procedureStepInstruction",
+        "@type": "string"
+    },
+    "notes": {
+        "@id": "proc:procedureNote",
+        "@type": "string"
     }
-]}
+}}

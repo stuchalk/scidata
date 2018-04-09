@@ -1,45 +1,13 @@
 {"@context": [
     "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
     {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "dc": "http://purl.org/dc/terms/"
-    },
-    {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "numericvalue": {
-            "@id": "sci:numericValue",
-            "datatype": {"@type": "datatype"},
-            "number": {"@type": "number"},
-            "sigfigs": {"@type": "sigfigs"},
-            "error": {"@type": "error"},
-            "errorType": {"@type": "errorType"},
-            "unit": {"@type": "unit"},
-            "unitstr": {"@type": "unitstr"},
-            "unitref": {"@type": "unitref"}
-        },
-        "numericvaluearray": {
-            "@id": "sci:numericValueArray",
-            "datatype": {"@type": "datatype"},
-            "numberarray": {"@type": "numberarray"},
-            "sigfigs": {"@type": "sigfigs"},
-            "errorarray": {"@type": "errorarray"},
-            "errortype": {"@type": "errortype"},
-            "unit": {"@type": "unit"},
-            "unitstr": {"@type": "unitstr"},
-            "unitref": {"@type": "unitref"}
-        },
-        "textstring": {
-            "@id": "sci:textString",
-            "text": {"@type": "text"},
-            "texttype": {"@type": "texttype"},
-            "language": {"@type": "language"}
-        },
-        "textstringarray": {
-            "@id": "sci:textStringArray",
-            "textarray": {"@type": "textarray"},
-            "texttype": {"@type": "texttype"},
-            "language": {"@type": "language"}
-        },
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "numericvalue": {"@id": "sci:numericValue"},
+        "numericvaluearray": {"@id": "sci:numericValueArray"},
+        "textstring": {"@id": "sci:textString"},
+        "textstringarray": {"@id": "sci:textStringArray"},
         "datatype": {
             "@id": "sci:numericDatatype",
             "@type": "@id"
@@ -89,11 +57,11 @@
         },
         "value": {
             "@id": "sci:numericValue",
-            "@type": "numericvalue"
+            "@type": "sci:isValue"
         },
         "valuearray": {
             "@id": "sci:numericValueArray",
-            "@type": "numericvaluearray"
+            "@type": "sci:isValueArray"
         }
     }
 ]}

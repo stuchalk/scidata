@@ -1,52 +1,38 @@
-{"@context": [
-    {
-        "dc": "http://purl.org/dc/terms/",
-        "obo": "http://purl.obolibrary.org/obo/"
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "organism": {"@id": "obo:OBI_0100026"},
+    "description": {
+        "@id": "dc:description",
+        "@type": "string"
     },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "organism": {
-            "@id": "obo:OBI_0100026",
-            "description": {"@type": "description"},
-            "kingdom": {"@type": "kingdom"},
-            "phylum": {"@type": "phylum"},
-            "class": {"@type": "class"},
-            "order": {"@type": "order"},
-            "family": {"@type": "family"},
-            "genus": {"@type": "genus"},
-            "species": {"@type": "species"}
-        },
-        "description": {
-            "@id": "dc:description",
-            "@type": "string"
-        },
-        "kingdom": {
-            "@id": "obo:NCBITaxon_kingdom",
-            "@type": "string"
-        },
-        "phylum": {
-            "@id": "obo:NCBITaxon_phylum",
-            "@type": "string"
-        },
-        "class": {
-            "@id": "obo:NCBITaxon_class",
-            "@type": "string"
-        },
-        "order": {
-            "@id": "obo:NCBITaxon_order",
-            "@type": "string"
-        },
-        "family": {
-            "@id": "obo:NCBITaxon_family",
-            "@type": "string"
-        },
-        "genus": {
-            "@id": "obo:NCBITaxon_genus",
-            "@type": "string"
-        },
-        "species": {
-            "@id": "obo:NCBITaxon_species",
-            "@type": "string"
-        }
+    "kingdom": {
+        "@id": "obo:NCBITaxon_kingdom",
+        "@type": "string"
+    },
+    "phylum": {
+        "@id": "obo:NCBITaxon_phylum",
+        "@type": "string"
+    },
+    "class": {
+        "@id": "obo:NCBITaxon_class",
+        "@type": "string"
+    },
+    "order": {
+        "@id": "obo:NCBITaxon_order",
+        "@type": "string"
+    },
+    "family": {
+        "@id": "obo:NCBITaxon_family",
+        "@type": "string"
+    },
+    "genus": {
+        "@id": "obo:NCBITaxon_genus",
+        "@type": "string"
+    },
+    "species": {
+        "@id": "obo:NCBITaxon_species",
+        "@type": "string"
     }
-]}
+}}

@@ -5,50 +5,38 @@
     "https://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
-    {"sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "methodology": {
-            "@id": "sci:methodology",
-            "evaluation": {"@type": "evaluation"},
-            "aspects": {"@type": "aspects"}
-        },
-        "aspects": {
-            "@id": "sci:hasMethodologyAspect",
-            "measurement": {"@type": "measurement"},
-            "resource": {"@type": "resource"},
-            "procedure": {"@type": "procedure"},
-            "calculation": {"@type": "calculation"},
-            "basisset": {"@type": "basisset"},
-            "software": {"@type": "software"}
-        },
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "methodology": {"@id": "sci:methodology"},
         "evaluation": {
             "@id": "sci:evaluationMethod",
             "@type": "string"
         },
+        "aspects": {"@id": "sci:hasMethodologyAspect"},
         "measurement": {
             "@id": "sci:hasMeasurement",
-            "@type": "measurement"
+            "@type": "sci:aspect"
         },
         "resource": {
             "@id": "sci:hasResource",
-            "@type": "resource"
+            "@type": "sci:aspect"
         },
         "procedure": {
             "@id": "sci:hasProcedure",
-            "@type": "procedure"
+            "@type": "sci:aspect"
         },
         "calculation": {
             "@id": "sci:hasCalculation",
-            "@type": "calculation"
+            "@type": "sci:aspect"
         },
         "basisset": {
             "@id": "sci:hasBasisSet",
-            "@type": "basisset"
+            "@type": "sci:aspect"
         },
         "software": {
             "@id": "sci:hasSoftware",
-            "@type": "software"
+            "@type": "sci:aspect"
         }
     }
 ]}

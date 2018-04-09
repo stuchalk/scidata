@@ -9,28 +9,10 @@
     "https://stuchalk.github.io/scidata/contexts/scidata_condition.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
-    {"sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "system": {
-            "@id": "sci:system",
-            "discipline": {"@type": "scientificDiscipline"},
-            "subdiscipline": {"@type": "scientificSubdiscipline"},
-            "facets": {"@type": "facets"}
-        },
-        "facets": {
-            "@id": "sci:hasSystemFacet",
-            "compound": {"@type": "compound"},
-            "chemical": {"@type": "chemical"},
-            "substance": {"@type": "substance"},
-            "sample": {"@type": "sample"},
-            "material": {"@type": "material"},
-            "organism": {"@type": "organism"},
-            "condition": {"@type": "condition"},
-            "molsystem": {"@type": "molecularsystem"},
-            "chmsystem": {"@type": "chemicalsystem"},
-            "computer": {"@type": "computer"}
-        },
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "system": {"@id": "sci:system"},
         "discipline": {
             "@id": "sci:discipline",
             "@type": "string"
@@ -39,45 +21,46 @@
             "@id": "sci:subdiscipline",
             "@type": "string"
         },
+        "facets": {"@id": "sci:hasSystemFacet"},
         "chemical": {
             "@id": "sci:hasChemical",
-            "@type": "chemical"
+            "@type": "sci:facet"
         },
         "compound": {
             "@id": "sci:hasCompound",
-            "@type": "compound"
+            "@type": "sci:facet"
         },
         "substance": {
             "@id": "sci:hasSubstance",
-            "@type": "system"
+            "@type": "sci:facet"
         },
         "sample": {
             "@id": "sci:isSample",
-            "@type": "sample"
+            "@type": "sci:facet"
         },
         "material": {
             "@id": "sci:hasMaterial",
-            "@type": "material"
+            "@type": "sci:facet"
         },
         "organism": {
             "@id": "sci:hasOrganism",
-            "@type": "organism"
+            "@type": "sci:facet"
         },
         "condition": {
             "@id": "sci:hasCondition",
-            "@type": "condition"
+            "@type": "sci:facet"
         },
         "molecularsystem": {
             "@id": "sci:hasMolecularSystem",
-            "@type": "molSystem"
+            "@type": "sci:facet"
         },
         "chemicalsystem": {
             "@id": "sci:hasChemicalSystem",
-            "@type": "molSystem"
+            "@type": "sci:facet"
         },
         "computer": {
             "@id": "sci:hasComputer",
-            "@type": "computer"
+            "@type": "sci:facet"
         }
     }
 ]}

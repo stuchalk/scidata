@@ -1,107 +1,48 @@
 {"@context": [
+    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "gc": "http://purl.org/gc/",
         "dc": "http://purl.org/dc/terms/",
         "ss": "http://semanticscience.org/resource/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
-    },
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "molsystem": {
-            "@id": "gc:MolecularSystem",
-            "temperature": {"@type": "temperature"},
-            "charge": {"@type": "charge"},
-            "multiplicity": {"@type": "multiplicity"},
-            "molecules": {"@type": "molecules"},
-            "chains": {"@type": "chains"},
-            "residues": {"@type": "residues"},
-            "groups": {"@type": "groups"},
-            "atoms": {"@type": "atoms"}
-        },
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "molsystem": {"@id": "gc:MolecularSystem"},
         "temperature": {
             "@id": "gc:hasSystemTemperature",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "charge": {
             "@id": "gc:hasSystemCharge",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "multiplicity": {
             "@id": "gc:hasSystemMultiplicity",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
-        "molecule": {
-            "@id": "gc:hasMolecule",
-            "atomCount": {"@type": "atomCount"},
-            "inchiKey": {"@type": "inchiKey"},
-            "atoms": {"@type": "atoms"}
-        },
+        "molecule": {"@id": "gc:hasMolecule"},
         "atomCount": {
             "@id": "gc:hasNumberOfAtoms",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
-        "chain": {
-            "@id": "gc:hasChain",
-            "label": {"@type": "label"},
-            "type": {"@type": "type"},
-            "residues": {"@type": "residues"},
-            "groups": {"@type": "groups"},
-            "atoms": {"@type": "atoms"},
-            "bonds": {"@type": "bonds"}
-        },
-        "residue": {
-            "@id": "gc:hasResidue",
-            "label": {"@type": "label"},
-            "type": {"@type": "type"},
-            "groups": {"@type": "groups"},
-            "atoms": {"@type": "atoms"},
-            "bonds": {"@type": "bonds"}
-        },
-        "selection": {
-            "@id": "gc:hasSelection",
-            "label": {"@type": "label"},
-            "type": {"@type": "type"},
-            "atoms": {"@type": "atoms"},
-            "bonds": {"@type": "bonds"}
-        },
-        "group": {
-            "@id": "gc:hasGroup",
-            "label": {"@type": "label"},
-            "type": {"@type": "uri"},
-            "atoms": {"@type": "atoms"},
-            "bonds": {"@type": "bonds"}
-        },
-        "bond": {
-            "@id": "gc:hasChemicalBond",
-            "label": {"@type": "label"},
-            "bondType": {"@type": "bondType"},
-            "bondOrder": {"@type": "bondOrder"},
-            "bonds": {"@type": "bonds"},
-            "atoms": {"@type": "atoms"},
-            "donor": {"@type": "atoms"}
-        },
-        "atom": {
-            "@id": "gc:hasAtom",
-            "name": {"@type": "name"},
-            "label": {"@type": "label"},
-            "element": {"@type": "element"},
-            "atomMass": {"@type": "atomMass"},
-            "formalAtomCharge": {"@type": "formalAtomCharge"},
-            "calculatedAtomCharge": {"@type": "calculatedAtomCharge"},
-            "basisSet": {"@type": "basisSet"}
-        },
+        "chain": {"@id": "gc:hasChain"},
+        "residue": {"@id": "gc:hasResidue"},
+        "selection": {"@id": "gc:hasSelection"},
+        "group": {"@id": "gc:hasGroup"},
+        "bond": {"@id": "gc:hasChemicalBond"},
+        "atom": {"@id": "gc:hasAtom"},
         "atomMass": {
             "@id": "gc:hasAtomMass",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "formalAtomCharge": {
             "@id": "gc:hasFormalAtomCharge",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "calculatedAtomCharge": {
             "@id": "gc:hasCalculatedAtomCharge",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "basisSet": {
             "@id": "gc:hasBasisSet",
@@ -163,24 +104,18 @@
             "@id": "gc:hasCoordinates",
             "@type": "@id"
         },
-        "point": {
-            "@id": "gc:hasPoint",
-            "x": {"@type": "x"},
-            "y": {"@type": "y"},
-            "z": {"@type": "z"},
-            "tenant": {"@type": "tenant"}
-        },
+        "point": {"@id": "gc:hasPoint"},
         "x": {
             "@id": "ss:SIO_000400",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "y": {
             "@id": "ss:SIO_000401",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "z": {
             "@id": "ss:SIO_000402",
-            "@type": "parameter"
+            "@type": "sci:parameter"
         },
         "tenant": {
             "@id": "gc:hasTenant",
