@@ -1,9 +1,14 @@
 {"@context": {
     "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "edam": "http://edamontology.org/",
+    "dc": "https://purl.org/dc/terms/",
     "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "edam": "http://edamontology.org/",
     "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
     "compound": {"@id": "sci:compound"},
+    "name": {
+        "@id": "dc:title",
+        "@type": "string"
+    },
     "iupacname": {
         "@id": "ss:CHEMINF_000107",
         "@type": "string"
