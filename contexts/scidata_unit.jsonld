@@ -39,14 +39,11 @@
     },
     "unitinsi": {
         "@id": "sci:siUnitEquivalent",
-        "siunit": {"@type": "siunit"}
+        "@type": "sic:siUnit"
     },
     "siunit": {
-        "@id": "sci:siUnit",
-        "name": {"@type": "name"},
-        "prefix": {"@type": "prefix"},
-        "power": {"@type": "power"}
-    },
+        "@id": "sci:siUnit"
+   },
     "siunitstr": {
         "@id": "sci:siUnit",
         "type": "string"
