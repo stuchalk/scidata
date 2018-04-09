@@ -33,9 +33,7 @@
         "@type": "string"
     },
     "contractions": {
-        "@id": "gc:basisSetContractions",
-        "shell": {"@type": "shell"},
-        "matrix": {"@type": "matrix"}
+        "@id": "gc:basisSetContractions"
     },
     "shell": {
         "@id": "gc:orbitalShell",
