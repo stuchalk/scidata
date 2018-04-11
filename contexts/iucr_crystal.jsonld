@@ -1,0 +1,44 @@
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "cifcore": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/",
+    "exptl_crystal_description": {
+        "@id": "cifcore:exptl_crystal_description.html",
+        "@type": "string"
+    },
+    "exptl_crystal_colour": {
+        "@id": "cifcore:exptl_crystal_colour.html",
+        "@type": "string"
+    },
+    "exptl_crystal_size_max": {
+        "@id": "cifcore:exptl_crystal_size_max.html",
+        "@type": "decimal"
+    },
+    "exptl_crystal_size_mid": {
+        "@id": "cifcore:exptl_crystal_size_mid.html",
+        "@type": "decimal"
+    },
+    "exptl_crystal_size_min": {
+        "@id": "cifcore:exptl_crystal_size_min.html",
+        "@type": "decimal"
+    },
+    "exptl_crystal_density_meas": {
+        "@id": "cifcore:exptl_crystal_density_meas.html",
+        "@type": "string"
+    },
+    "exptl_crystal_density_diffrn": {
+        "@id": "cifcore:exptl_crystal_density_diffrn.html",
+        "@type": "decimal"
+    },
+    "exptl_crystal_F_000": {
+        "@id": "cifcore:exptl_crystal_F_000.html",
+        "@type": "decimal"
+    },
+    "exptl_absorpt_coefficient_mue": {
+        "@id": "cifcore:exptl_absorpt_coefficient_mu.html",
+        "@type": "decimal"
+    },
+    "exptl_absorpt_correction_type": {
+        "@id": "cifcore:exptl_absorpt_correction_type.html",
+        "@type": "string"
+    }
+}}
