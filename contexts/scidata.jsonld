@@ -26,7 +26,15 @@
         },
         "author": {"@id": "sci:hasAuthor"},
         "name": {
-            "@id": "obo:IAO_0000302",
+            "@id": "obo:IAO_0000590",
+            "@type": "string"
+        },
+        "firstname": {
+            "@id": "obo:IAO_0020016",
+            "@type": "string"
+        },
+        "lastname": {
+            "@id": "obo:IAO_0020017",
             "@type": "string"
         },
         "organization": {
@@ -38,7 +46,7 @@
             "@type": "string"
         },
         "orcid": {
-            "@id": "dc:identifier",
+            "@id": "obo:IAO_0000302",
             "@type": "string"
         },
         "description": {
@@ -77,9 +85,7 @@
             "@id": "dc:related",
             "@type": "anyURI"
         },
-        "toc": {
-            "@id": "sci:hasTableOfContents"
-        },
+        "toc": {"@id": "sci:hasTableOfContents"},
         "sections": {
             "@id": "dc:hasPart",
             "@type": "@id"
