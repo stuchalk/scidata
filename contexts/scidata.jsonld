@@ -26,8 +26,7 @@
         },
         "author": {"@id": "sci:hasAuthor"},
         "name": {
-            "@id": "obo:IAO_0000590",
-            "@type": "string"
+            "@id": "obo:IAO_0000590"
         },
         "firstname": {
             "@id": "obo:IAO_0020016",
