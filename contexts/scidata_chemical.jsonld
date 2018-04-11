@@ -34,6 +34,33 @@
         "properties": {
             "@id": "sci:propertyValue",
             "@type": "sci:parameter"
+        },
+        "source": {
+            "@id": "sci:hasSource",
+            "@type": "@id"
+        },
+        "acquired": {
+            "@id": "sci:acquiredFrom",
+            "@type": "string"
+        },
+        "purity": {
+            "@id": "sci:purity",
+            "@type": "sci:parameter"
+        },
+        "steps": {
+            "@id": "sci:purificationStep"
+        },
+        "part": {
+            "@id": "sci:propertyValue",
+            "@type": "string"
+        },
+        "analysis": {
+            "@id": "sci:analysisMethod",
+            "@type": "string"
+        },
+        "purification": {
+            "@id": "sci:purificationMethod",
+            "@type": "string"
         }
     }
 ]}
