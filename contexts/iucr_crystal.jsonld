@@ -33,7 +33,7 @@
         "@id": "cifcore:exptl_crystal_F_000.html",
         "@type": "decimal"
     },
-    "exptl_absorpt_coefficient_mue": {
+    "exptl_absorpt_coefficient_mu": {
         "@id": "cifcore:exptl_absorpt_coefficient_mu.html",
         "@type": "decimal"
     },
