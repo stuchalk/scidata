@@ -16,6 +16,10 @@
         "xsd": "https://www.w3.org/2001/XMLSchema#",
         "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
         "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+        "uid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
         "title": {
             "@id": "dc:title",
             "@type": "string"
