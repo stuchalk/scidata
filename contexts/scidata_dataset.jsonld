@@ -1,11 +1,9 @@
 {"@context": [
     "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     {
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "dc": "https://purl.org/dc/terms/"
-    },
-    {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "https://purl.org/dc/terms/",
         "dataset": {"@id": "sci:dataset"},
         "datagroup": {"@id": "sci:hasDataGroup"},
         "datagroups": {
