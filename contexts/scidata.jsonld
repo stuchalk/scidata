@@ -1,6 +1,5 @@
 {"@context": [
     "https://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
-    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
     "https://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
