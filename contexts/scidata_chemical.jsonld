@@ -1,66 +1,61 @@
-{"@context": [
-    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dc": "https://purl.org/dc/terms/",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
-        "chemical": {"@id": "sci:chemical"},
-        "vendor": {
-            "@id": "obo:sep_00088",
-            "@type": "string"
-        },
-        "catalognumber": {
-            "@id": "obo:sep_0016",
-            "@type": "string"
-        },
-        "lotnumber": {
-            "@id": "obo:sep_0015",
-            "@type": "string"
-        },
-        "role": {
-            "@id": "obo:BFO_0000023",
-            "@type": "@id"
-        },
-        "grade": {
-            "@id": "chm:grade",
-            "@type": "string"
-        },
-        "phase": {
-            "@id": "sub:phase",
-            "@type": "string"
-        },
-        "properties": {
-            "@id": "sci:propertyValue",
-            "@type": "sci:parameter"
-        },
-        "source": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "acquired": {
-            "@id": "sci:acquiredFrom",
-            "@type": "string"
-        },
-        "purity": {
-            "@id": "sci:purity",
-            "@type": "sci:parameter"
-        },
-        "steps": {
-            "@id": "sci:purificationStep"
-        },
-        "part": {
-            "@id": "sci:propertyValue",
-            "@type": "string"
-        },
-        "analysis": {
-            "@id": "sci:analysisMethod",
-            "@type": "string"
-        },
-        "purification": {
-            "@id": "sci:purificationMethod",
-            "@type": "string"
-        }
+{"@context": [{
+    "@vocab": "https://www.w3.org/2001/XMLSchema#",
+    "dc": "https://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+    "chemical": {"@id": "sci:chemical"},
+    "vendor": {
+        "@id": "obo:sep_00088",
+        "@type": "string"
+    },
+    "catalognumber": {
+        "@id": "obo:sep_0016",
+        "@type": "string"
+    },
+    "lotnumber": {
+        "@id": "obo:sep_0015",
+        "@type": "string"
+    },
+    "role": {
+        "@id": "obo:BFO_0000023",
+        "@type": "@id"
+    },
+    "grade": {
+        "@id": "chm:grade",
+        "@type": "string"
+    },
+    "phase": {
+        "@id": "sub:phase",
+        "@type": "string"
+    },
+    "properties": {
+        "@id": "sci:propertyValue",
+        "@type": "sci:parameter"
+    },
+    "source": {
+        "@id": "sci:hasSource",
+        "@type": "@id"
+    },
+    "acquired": {
+        "@id": "sci:acquiredFrom",
+        "@type": "string"
+    },
+    "purity": {
+        "@id": "sci:purity",
+        "@type": "sci:parameter"
+    },
+    "steps": {"@id": "sci:purificationStep"},
+    "part": {
+        "@id": "sci:propertyValue",
+        "@type": "string"
+    },
+    "analysis": {
+        "@id": "sci:analysisMethod",
+        "@type": "string"
+    },
+    "purification": {
+        "@id": "sci:purificationMethod",
+        "@type": "string"
     }
-]}
+}]}

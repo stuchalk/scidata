@@ -1,125 +1,122 @@
-{"@context": [
-    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "gc": "http://purl.org/gc/",
-        "dc": "http://purl.org/dc/terms/",
-        "ss": "http://semanticscience.org/resource/",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "molsystem": {"@id": "gc:MolecularSystem"},
-        "temperature": {
-            "@id": "gc:hasSystemTemperature",
-            "@type": "sci:parameter"
-        },
-        "charge": {
-            "@id": "gc:hasSystemCharge",
-            "@type": "sci:parameter"
-        },
-        "multiplicity": {
-            "@id": "gc:hasSystemMultiplicity",
-            "@type": "sci:parameter"
-        },
-        "molecule": {"@id": "gc:hasMolecule"},
-        "atomCount": {
-            "@id": "gc:hasNumberOfAtoms",
-            "@type": "sci:parameter"
-        },
-        "chain": {"@id": "gc:hasChain"},
-        "residue": {"@id": "gc:hasResidue"},
-        "selection": {"@id": "gc:hasSelection"},
-        "group": {"@id": "gc:hasGroup"},
-        "bond": {"@id": "gc:hasChemicalBond"},
-        "atom": {"@id": "gc:hasAtom"},
-        "atomMass": {
-            "@id": "gc:hasAtomMass",
-            "@type": "sci:parameter"
-        },
-        "formalAtomCharge": {
-            "@id": "gc:hasFormalAtomCharge",
-            "@type": "sci:parameter"
-        },
-        "calculatedAtomCharge": {
-            "@id": "gc:hasCalculatedAtomCharge",
-            "@type": "sci:parameter"
-        },
-        "basisSet": {
-            "@id": "gc:hasBasisSet",
-            "@type": "@id"
-        },
-        "molecules": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "chains": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "residues": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "selections": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "groups": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "bonds": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "atoms": {
-            "@id": "gc:hasPart",
-            "@type": "@id"
-        },
-        "spaceType": {
-            "@id": "gc:hasSpaceType",
-            "@type": "string"
-        },
-        "element": {
-            "@id": "obo:CHEBI_33250",
-            "@type": "@id"
-        },
-        "inchiKey": {
-            "@id": "ss:CHEMINF_000059",
-            "@type": "string"
-        },
-        "type": {
-            "@id": "obo:CHEBI_24433",
-            "@type": "@id"
-        },
-        "bondType": {
-            "@id": "gc:hasBondType",
-            "@type": "string"
-        },
-        "bondOrder": {
-            "@id": "gc:hasBondOrder",
-            "@type": "decimal"
-        },
-        "points": {
-            "@id": "gc:hasCoordinates",
-            "@type": "@id"
-        },
-        "point": {"@id": "gc:hasPoint"},
-        "x": {
-            "@id": "ss:SIO_000400",
-            "@type": "sci:parameter"
-        },
-        "y": {
-            "@id": "ss:SIO_000401",
-            "@type": "sci:parameter"
-        },
-        "z": {
-            "@id": "ss:SIO_000402",
-            "@type": "sci:parameter"
-        },
-        "tenant": {
-            "@id": "gc:hasTenant",
-            "@type": "@id"
-        }
+{"@context": [{
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "gc": "http://purl.org/gc/",
+    "dc": "http://purl.org/dc/terms/",
+    "ss": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+    "molsystem": {"@id": "gc:MolecularSystem"},
+    "temperature": {
+        "@id": "gc:hasSystemTemperature",
+        "@type": "sci:parameter"
+    },
+    "charge": {
+        "@id": "gc:hasSystemCharge",
+        "@type": "sci:parameter"
+    },
+    "multiplicity": {
+        "@id": "gc:hasSystemMultiplicity",
+        "@type": "sci:parameter"
+    },
+    "molecule": {"@id": "gc:hasMolecule"},
+    "atomCount": {
+        "@id": "gc:hasNumberOfAtoms",
+        "@type": "sci:parameter"
+    },
+    "chain": {"@id": "gc:hasChain"},
+    "residue": {"@id": "gc:hasResidue"},
+    "selection": {"@id": "gc:hasSelection"},
+    "group": {"@id": "gc:hasGroup"},
+    "bond": {"@id": "gc:hasChemicalBond"},
+    "atom": {"@id": "gc:hasAtom"},
+    "atomMass": {
+        "@id": "gc:hasAtomMass",
+        "@type": "sci:parameter"
+    },
+    "formalAtomCharge": {
+        "@id": "gc:hasFormalAtomCharge",
+        "@type": "sci:parameter"
+    },
+    "calculatedAtomCharge": {
+        "@id": "gc:hasCalculatedAtomCharge",
+        "@type": "sci:parameter"
+    },
+    "basisSet": {
+        "@id": "gc:hasBasisSet",
+        "@type": "@id"
+    },
+    "molecules": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "chains": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "residues": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "selections": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "groups": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "bonds": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "atoms": {
+        "@id": "gc:hasPart",
+        "@type": "@id"
+    },
+    "spaceType": {
+        "@id": "gc:hasSpaceType",
+        "@type": "string"
+    },
+    "element": {
+        "@id": "obo:CHEBI_33250",
+        "@type": "@id"
+    },
+    "inchiKey": {
+        "@id": "ss:CHEMINF_000059",
+        "@type": "string"
+    },
+    "type": {
+        "@id": "obo:CHEBI_24433",
+        "@type": "@id"
+    },
+    "bondType": {
+        "@id": "gc:hasBondType",
+        "@type": "string"
+    },
+    "bondOrder": {
+        "@id": "gc:hasBondOrder",
+        "@type": "decimal"
+    },
+    "points": {
+        "@id": "gc:hasCoordinates",
+        "@type": "@id"
+    },
+    "point": {"@id": "gc:hasPoint"},
+    "x": {
+        "@id": "ss:SIO_000400",
+        "@type": "sci:parameter"
+    },
+    "y": {
+        "@id": "ss:SIO_000401",
+        "@type": "sci:parameter"
+    },
+    "z": {
+        "@id": "ss:SIO_000402",
+        "@type": "sci:parameter"
+    },
+    "tenant": {
+        "@id": "gc:hasTenant",
+        "@type": "@id"
     }
-]}
+}]}
