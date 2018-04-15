@@ -1,17 +1,17 @@
 {"@context": {
     "@vocab": "http://www.w3.org/2001/XMLSchema#",
     "dc": "https://purl.org/dc/terms/",
-    "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+    "obo": "http://purl.obolibrary.org/obo/",
     "name": {
         "@id": "dc:title",
         "@type": "string"
     },
-    "smiles": {
-        "@id": "ss:CHEMINF_000018",
+    "type": {
+        "@id": "dc:type",
         "@type": "string"
     },
     "chemblid": {
-        "@id": "ss:CHEMINF_000412",
+        "@id": " obo:MI_1348",
         "@type": "@id"
     }
 }}

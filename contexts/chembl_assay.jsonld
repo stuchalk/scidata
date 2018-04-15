@@ -1,0 +1,25 @@
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "https://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "description": {
+        "@id": "dc:description",
+        "@type": "string"
+    },
+    "source": {
+        "@id": "dc:source",
+        "@type": "string"
+    },
+    "type": {
+        "@id": "dc:type",
+        "@type": "string"
+    },
+    "organism": {
+        "@id": "obo:OBI_0100026",
+        "@type": "@id"
+    },
+    "chemblid": {
+        "@id": " dc:identifier",
+        "@type": "@id"
+    }
+}}

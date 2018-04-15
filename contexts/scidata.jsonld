@@ -86,7 +86,7 @@
             "@type": "anyURI"
         },
         "toc": {"@id": "sci:hasTableOfContents"},
-        "sections": {
+        "section": {
             "@id": "dc:hasPart",
             "@type": "@id"
         },
