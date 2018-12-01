@@ -293,8 +293,8 @@
                 {
                     "@id": "datapoint/1/",
                     "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
+                    "quantity": "force per length",
+                    "property": "surface tension",
                     "conditions": ["condition/1/"],
                     "value": {
                         "@id": "datapoint/1/value/",

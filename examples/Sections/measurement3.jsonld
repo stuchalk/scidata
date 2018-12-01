@@ -1,0 +1,123 @@
+{
+    "@context": {
+        "measurement": {
+            "@id": "cao:CAO_000152",
+            "@type": "measurement"
+        },
+        "techniqueType": {
+            "@id": "cao:CAO_000218",
+            "@type": "@id"
+        },
+        "technique": {
+            "@id": "cao:CAO_000011",
+            "@type": "@id"
+        },
+        "instrumentType": {
+            "@id": "cao:CAO_000137",
+            "@type": "xsd:string"
+        },
+        "instrument": {
+            "@id": "cao:CAO_000048",
+            "@type": "xsd:string"
+        },
+        "vendor": {
+            "@id": "obo:sep_00088",
+            "@type": "xsd:string"
+        },
+        "settings": {
+            "@id": "obo:IAO_0000140",
+            "@type": "parameter"
+        },
+        "cao": "http://champ-project.org/images/ontology/cao.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "@base": "http://stuchalk.github.io/scidata/examples/sections/measurement/"
+    },
+    "@id": "",
+    "techniqueType": "cao:spectroscopy",
+    "technique": "cao:NMR",
+    "instrumentType": "300 MHz NMR",
+    "instrument": "??",
+    "settings": [
+        {
+            "@id": "setting/1/",
+            "@type": "setting",
+            "quantity": "frequency",
+            "property": "Observe Frequency",
+            "value": {
+                "@id": "setting/1/value/",
+                "@type": "value",
+                "number": 300.0318,
+                "unitstr": "MHz"
+            }
+        },
+        {
+            "@id": "setting/2/",
+            "@type": "setting",
+            "quantity": "time",
+            "property": "Acquisition Time",
+            "value": {
+                "@id": "setting/2/value/",
+                "@type": "value",
+                "number": 3.42098,
+                "unitstr": "s"
+            }
+        },
+        {
+            "@id": "setting/3/",
+            "@type": "setting",
+            "quantity": "count",
+            "property": "Zero Fill",
+            "value": {
+                "@id": "setting/3/value/",
+                "@type": "value",
+                "number": 0
+            }
+        },
+        {
+            "@id": "setting/4/",
+            "@type": "setting",
+            "quantity": "frequency",
+            "property": "Shift Reference",
+            "value": {
+                "@id": "setting/4/value/",
+                "@type": "value",
+                "text": "INTERNAL,  ,16384, -1.874"
+            }
+        },
+        {
+            "@id": "setting/5/",
+            "@type": "setting",
+            "quantity": "isotope",
+            "property": "Observe Nucleus",
+            "value": {
+                "@id": "setting/5/value/",
+                "@type": "value",
+                "text": "1H"
+            }
+        },
+        {
+            "@id": "setting/6/",
+            "@type": "setting",
+            "quantity": "mode of operation",
+            "property": "Acquisition Mode",
+            "value": {
+                "@id": "setting/6/value/",
+                "@type": "value",
+                "text": "Simultaneous"
+            }
+        },
+        {
+            "@id": "setting/7/",
+            "@type": "setting",
+            "quantity": "chemical",
+            "property": "Solvent Name",
+            "value": {
+                "@id": "setting/7/value/",
+                "@type": "value",
+                "text": "Chloroform-d"
+            }
+        }
+    ]
+}

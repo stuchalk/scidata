@@ -9,6 +9,7 @@
     "components": [
         {
             "@id": "component/1/",
+            "@type": "sci:component",
             "scope": "compound/1/",
             "grade": "MilliQ Grade (18.2 MOhms)",
             "purity": {
@@ -21,6 +22,7 @@
         },
         {
             "@id": "component/2/",
+            "@type": "sci:component",
             "scope": "compound/2/",
             "grade": "ACS Certified grade",
             "purity": {

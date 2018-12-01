@@ -15,14 +15,16 @@
     "@id": "",
     "uid": "scidata/example/ri",
     "title": "Hydrochloric acid refractive index",
-    "author": [{
-        "@id": "author/1/",
-        "@type": "dc:creator",
-        "name": "Stuart Chalk",
-        "organization": "University of North Florida",
-        "email": "schalk@unf.edu",
-        "orcid": "0000-0002-0703-7776"
-    }],
+    "author": [
+        {
+            "@id": "author/1/",
+            "@type": "dc:creator",
+            "name": "Stuart Chalk",
+            "organization": "University of North Florida",
+            "email": "schalk@unf.edu",
+            "orcid": "0000-0002-0703-7776"
+        }
+    ],
     "description": "Refractive index value extracted from a research publication",
     "publisher": "Chalk Group, Department of Chemistry, University of North Florida",
     "version": 1,
@@ -66,25 +68,29 @@
                 "experimental",
                 "extracted"
             ],
-            "aspects": [{
-                "@id": "measurement/1/",
-                "@type": "cao:CAO_000152",
-                "techniqueType": "cao:spectroscopy",
-                "technique": "light refraction",
-                "instrumentType": "Refractometer",
-                "settings": [{
-                    "@id": "setting/1/",
-                    "@type": "sci:setting",
-                    "quantity": "length",
-                    "property": "Wavelength of light",
-                    "value": {
-                        "@id": "setting/1/value/",
-                        "@type": "sci:value",
-                        "number": 589,
-                        "unitref": "qudt:Nanometer"
-                    }
-                }]
-            }]
+            "aspects": [
+                {
+                    "@id": "measurement/1/",
+                    "@type": "cao:CAO_000152",
+                    "techniqueType": "cao:spectroscopy",
+                    "technique": "light refraction",
+                    "instrumentType": "Refractometer",
+                    "settings": [
+                        {
+                            "@id": "setting/1/",
+                            "@type": "sci:setting",
+                            "quantity": "length",
+                            "property": "Wavelength of light",
+                            "value": {
+                                "@id": "setting/1/value/",
+                                "@type": "sci:value",
+                                "number": 589,
+                                "unitref": "qudt:Nanometer"
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         "system": {
             "@id": "system/",
@@ -109,16 +115,18 @@
                             "source": "compound/1/",
                             "role": "chm:solvent",
                             "grade": "MilliQ Grade (18.2 MOhms)",
-                            "properties": [{
-                                "@id": "substance/1/constituent/1/property/1/",
-                                "@type": "sci:purity",
-                                "value": {
-                                    "@id": "substance/1/constituent/1/property/1/value/",
-                                    "@type": "sci:value",
-                                    "number": 90.01,
-                                    "unitref": "qudt:PercentWeightWeight"
+                            "properties": [
+                                {
+                                    "@id": "substance/1/constituent/1/property/1/",
+                                    "@type": "sci:purity",
+                                    "value": {
+                                        "@id": "substance/1/constituent/1/property/1/value/",
+                                        "@type": "sci:value",
+                                        "number": 90.01,
+                                        "unitref": "qudt:PercentWeightWeight"
+                                    }
                                 }
-                            }]
+                            ]
                         },
                         {
                             "@id": "substance/1/constituent/2/",
@@ -127,16 +135,18 @@
                             "source": "compound/2/",
                             "role": "chm:solute",
                             "grade": "ACS Certified grade",
-                            "properties": [{
-                                "@id": "mixture/1/constituent/2/property/1/",
-                                "@type": "sci:purity",
-                                "value": {
-                                    "@id": "mixture/1/constituent/2/property/1/value/",
-                                    "@type": "sci:value",
-                                    "number": 9.99,
-                                    "unitref": "qudt:PercentWeightWeight"
+                            "properties": [
+                                {
+                                    "@id": "mixture/1/constituent/2/property/1/",
+                                    "@type": "sci:purity",
+                                    "value": {
+                                        "@id": "mixture/1/constituent/2/property/1/value/",
+                                        "@type": "sci:value",
+                                        "number": 9.99,
+                                        "unitref": "qudt:PercentWeightWeight"
+                                    }
                                 }
-                            }]
+                            ]
                         }
                     ]
                 },
@@ -189,31 +199,35 @@
             "@type": "sci:dataset",
             "source": "measurement/1/",
             "scope": "substance/1/",
-            "datapoint": [{
-                "@id": "datapoint/1/",
-                "@type": "sci:datapoint",
-                "quantity": "refraction",
-                "propertyref": "prop:indexOfRefraction",
-                "conditions": [
-                    "condition/1/",
-                    "condition/2/"
-                ],
-                "value": {
-                    "@id": "datapoint/1/value/",
-                    "@type": "sci:value",
-                    "number": {
-                        "@value": 1.33987,
-                        "@type": "xsd:decimal"
+            "datapoint": [
+                {
+                    "@id": "datapoint/1/",
+                    "@type": "sci:datapoint",
+                    "quantity": "refraction",
+                    "propertyref": "prop:indexOfRefraction",
+                    "conditions": [
+                        "condition/1/",
+                        "condition/2/"
+                    ],
+                    "value": {
+                        "@id": "datapoint/1/value/",
+                        "@type": "sci:value",
+                        "number": {
+                            "@value": 1.33987,
+                            "@type": "xsd:decimal"
+                        }
                     }
                 }
-            }]
+            ]
         }
     },
-    "references": [{
-        "@id": "reference/1/",
-        "@type": "dc:source",
-        "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
-    }],
+    "sources": [
+        {
+            "@id": "reference/1/",
+            "@type": "dc:source",
+            "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
+        }
+    ],
     "rights": {
         "@id": "rights",
         "@type": "dc:rights",

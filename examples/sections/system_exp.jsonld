@@ -6,23 +6,26 @@
     "@id": "",
     "discipline": "chemistry",
     "subdiscipline": "analytical chemistry",
-    "facets": [{"system": {
-        "@id": "system",
+    "facets": [{
+        "@id": "system/",
+        "@type": ["sci:facet","sci:system"],
         "name": "R-(-)-Carvone and Chloroform-d",
         "description": "Solution prepared for 1H NMR analysis",
         "systemtype": "binary mixture",
         "systemphase": "single phase liquid",
-        "components": [
+        "constituents": [
             {
-                "@id": "substance/1",
-                "name": "(R)(-) CARVONE",
+                "@id": "substance/1/",
+                "@type": ["sci:constituent"],
+        		"name": "(R)(-) CARVONE",
                 "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
             },
             {
-                "@id": "substance/2",
-                "name": "Chloroform-d",
+                "@id": "substance/2/",
+                "@type": ["sci:constituent"],
+        		"name": "Chloroform-d",
                 "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
             }
         ]
-    }}]
+    }]
 }

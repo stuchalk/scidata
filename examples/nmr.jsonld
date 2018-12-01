@@ -8,6 +8,7 @@
             "prop": "http://stuchalk.github.io/scidata/ontology/property/property.owl#",
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
@@ -65,8 +66,8 @@
             "aspects": [{
                 "@id": "measurement/1/",
                 "@type": "cao:CAO_000152",
-                "techniqueType": "cao:spectroscopy",
-                "technique": "cao:NMR",
+                "techniqueType": "obo:CHMO_0000228",
+                "technique": "obo:CHMO_0000591",
                 "instrumentType": "300 MHz NMR",
                 "instrument": "??",
                 "settings": [

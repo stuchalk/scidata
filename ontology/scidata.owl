@@ -144,6 +144,9 @@
         <Class IRI="#numberArray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#element"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
     </Declaration>
     <Declaration>
@@ -151,6 +154,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMethodology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chemical_element"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:mbox"/>
@@ -520,6 +526,10 @@
         <Class IRI="#uid"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#chemical_element"/>
+        <Class IRI="#element"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#permalink"/>
         <Class IRI="https://schema.org/URL"/>
     </EquivalentClasses>
@@ -640,6 +650,10 @@
         <Class IRI="#methodologyAspect"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#chemical_element"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#component"/>
         <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
     </SubClassOf>
@@ -702,6 +716,10 @@
     <SubClassOf>
         <Class IRI="#datum"/>
         <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#element"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#endtime"/>
@@ -1046,7 +1064,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
         <AbbreviatedIRI>obo:CHEBI_37577</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI_37577</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NCIT_C43366</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1917,6 +1935,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calculation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#chemical_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SIO_010037</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#chemical_element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chemical element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#component</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Representation of a discrete chemical as part of chemical substance (mixture)</Literal>
@@ -1934,7 +1962,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#compound</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Get the gold book definition of this...</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A chemical compound is a chemical substance formed by the covalent bonding of two or more atoms of two or more different elements, e.g. CO2, NO3-</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2170,6 +2198,27 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#dependent</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dependent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1) A species of atoms; all atoms with the same number of protons in the atomic nucleus.
+2) A pure chemical substance composed of atoms with the same number of protons in the atomic nucleus. Sometimes this concept is called the elementary substance as distinct from the chemical element as defined under 1, but mostly the term chemical element is used for both concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://doi.org/10.1351/goldbook.C01022</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">element</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -2729,7 +2778,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#systemFacet</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical condiations under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical conditions under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -3190,5 +3239,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

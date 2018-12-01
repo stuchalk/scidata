@@ -1,0 +1,8 @@
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "https://purl.org/dc/terms/",
+    "name": {
+        "@id": "dc:title",
+        "@type": "string"
+    }
+}}

@@ -1,48 +1,51 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "dc": "https://purl.org/dc/terms/",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "edam": "http://edamontology.org/",
-    "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
-    "compound": {"@id": "sci:compound"},
-    "name": {
-        "@id": "dc:title",
-        "@type": "string"
-    },
-    "iupacname": {
-        "@id": "ss:CHEMINF_000107",
-        "@type": "string"
-    },
-    "synonyms": {
-        "@id": "ss:SIO_000122",
-        "@type": "string"
-    },
-    "inchi": {
-        "@id": "ss:CHEMINF_000058",
-        "@type": "string"
-    },
-    "inchikey": {
-        "@id": "ss:CHEMINF_000059",
-        "@type": "string"
-    },
-    "smiles": {
-        "@id": "ss:CHEMINF_000018",
-        "@type": "string"
-    },
-    "formula": {
-        "@id": "ss:CHEMINF_000042",
-        "@type": "string"
-    },
-    "molweight": {
-        "@id": "ss:CHEMINF_000088",
-        "@type": "float"
-    },
-    "chebi": {
-        "@id": "edam:data_1174",
-        "@type": "@id"
-    },
-    "casrn": {
-        "@id": "edam:data_3102",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "edam": "http://edamontology.org/",
+        "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+        "compound": {"@id": "sci:compound"},
+        "element": {"@id": "sci:element"},
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "iupacname": {
+            "@id": "ss:CHEMINF_000107",
+            "@type": "string"
+        },
+        "synonyms": {
+            "@id": "ss:SIO_000122",
+            "@type": "string"
+        },
+        "inchi": {
+            "@id": "ss:CHEMINF_000058",
+            "@type": "string"
+        },
+        "inchikey": {
+            "@id": "ss:CHEMINF_000059",
+            "@type": "string"
+        },
+        "smiles": {
+            "@id": "ss:CHEMINF_000018",
+            "@type": "string"
+        },
+        "formula": {
+            "@id": "ss:CHEMINF_000042",
+            "@type": "string"
+        },
+        "molweight": {
+            "@id": "ss:CHEMINF_000088",
+            "@type": "float"
+        },
+        "chebi": {
+            "@id": "edam:data_1174",
+            "@type": "@id"
+        },
+        "casrn": {
+            "@id": "edam:data_3102",
+            "@type": "string"
+        }
     }
-}}
+}
