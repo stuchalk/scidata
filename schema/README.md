@@ -1,6 +1,6 @@
 # SciData Schema
 
-JSON schema applied to the SDM is currently in an evaluation phase.  This means we are trying to work out if this is possible and if it is what does it get us.
+JSON schema applied to the SDM is currently in an evaluation phase.  This means we are trying to work out if this is possible and if it is, what does it get us.
 
 Thoughts?
 
