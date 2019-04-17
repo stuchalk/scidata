@@ -57,7 +57,13 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#chemicalSystem"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#metadata"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvaluation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
@@ -66,16 +72,16 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#scientificData"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#compound"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
     </Declaration>
     <Declaration>
         <Class IRI="#error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compound"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataGroup"/>
@@ -102,6 +108,9 @@
         <Class IRI="#numericValue"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasReport"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#datum"/>
     </Declaration>
     <Declaration>
@@ -114,10 +123,10 @@
         <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#scientificSubdiscipline"/>
+        <ObjectProperty IRI="#hasTOC"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTOC"/>
+        <Class IRI="#scientificSubdiscipline"/>
     </Declaration>
     <Declaration>
         <Class IRI="#number"/>
@@ -156,10 +165,10 @@
         <ObjectProperty IRI="#hasMethodology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#chemical_element"/>
+        <Class abbreviatedIRI="foaf:mbox"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:mbox"/>
+        <Class IRI="#chemical_element"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataName"/>
@@ -168,10 +177,10 @@
         <Class IRI="#evaluation"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <Class IRI="#axisType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#axisType"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dc:license"/>
@@ -231,19 +240,19 @@
         <ObjectProperty IRI="#hasSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dataScope"/>
+        <NamedIndividual IRI="#siderived"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Organization"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#siderived"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+        <Class IRI="#dataScope"/>
     </Declaration>
     <Declaration>
         <Class IRI="#unitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -300,7 +309,13 @@
         <Class IRI="#scientificDiscipline"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#componentOf"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentNumber"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Agent"/>
@@ -321,10 +336,13 @@
         <Class IRI="#sigfigs"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#basisSet"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#unitSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#basisSet"/>
+        <Class IRI="#methodologyAspect"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDatapoint"/>
@@ -366,16 +384,19 @@
         <Class IRI="#siUnitEquivalent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#text"/>
+        <ObjectProperty IRI="#hasChemicalSystem"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+        <Class IRI="#text"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dc:bibliographicCitation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="oboowl:hasRelatedSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cite:orcid"/>
@@ -393,13 +414,13 @@
         <Class IRI="#resource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataSeries"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
@@ -411,10 +432,10 @@
         <Class IRI="#numericValueArray"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#conversionFactor"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Class IRI="#conversionFactor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
@@ -456,10 +477,10 @@
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:organization"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+        <Class abbreviatedIRI="foaf:organization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataFormat"/>
@@ -468,22 +489,22 @@
         <ObjectProperty IRI="#hasMethodologyAspect"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSource"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bibo:doi"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <ObjectProperty IRI="#hasSource"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#imperial"/>
+        <Class IRI="#dataType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dataType"/>
+        <NamedIndividual IRI="#imperial"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dataset"/>
@@ -650,12 +671,16 @@
         <Class IRI="#methodologyAspect"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#chemicalSystem"/>
+        <Class IRI="#systemFacet"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#chemical_element"/>
         <Class IRI="#equivalentThings"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#component"/>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
+        <Class IRI="#chemicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#compound"/>
@@ -973,6 +998,10 @@
         <Class IRI="#axisType"/>
         <NamedIndividual IRI="#independent"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isComponentNumber"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataset"/>
@@ -1009,6 +1038,18 @@
         <ObjectProperty IRI="#hasSystemFacet"/>
         <Class IRI="#system"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComponentNumber"/>
+        <Class IRI="#component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#componentOf"/>
+        <Class IRI="#chemicalSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChemicalSystem"/>
+        <Class IRI="#chemicalSystem"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataGroup"/>
@@ -1933,6 +1974,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#calculation</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#chemicalSystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A mixture of two or more chemical entities that can be treated as a distinct material that has intrinsic properties separate from the characteristics of the invidividual components that make up the mixture.  It is assumed that such as chemical system is not changing with time and therefore it implies no chemical reactions are taking place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#chemicalSystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chemical system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
