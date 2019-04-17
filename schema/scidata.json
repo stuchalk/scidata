@@ -174,11 +174,11 @@
         },
         "value": {
             "description": "A numeric value with or without unit",
-            "$ref": "http://chalk.coas.unf.edu/champ/files/schema/value.json#measuredValue"
+            "$ref": "http://stuchalk.github.io/scidata/schema/value.json#measuredValue"
         },
         "parameter": {
             "description": "A measured quantity with its numeric value",
-            "$ref": "http://chalk.coas.unf.edu/champ/files/schema/parameter.json#parameter"
+            "$ref": "http://stuchalk.github.io/scidata/schema/parameter.json#parameter"
         },
         "substance": {
             "description": "A chemical compound",

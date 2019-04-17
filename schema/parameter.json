@@ -3,44 +3,54 @@
     "title": "Parameter Schema",
     "description": "JSON schema for a scientific parameter",
     "required": ["parameter"],
-    "properties": {"parameter": {
-        "type": "object",
-        "required": ["property"],
-        "oneOf": [
-            {"required": ["value"]},
-            {"required": ["text"]}
-        ],
-        "properties": {
-            "property": {
-                "description": "The property that the parameter is about",
-                "type": "object",
-                "oneOf": [
-                    {"required": ["name"]},
-                    {"required": ["code"]}
-                ],
-                "properties": {
-                    "name": {
-                        "description": "The name of the measured property",
-                        "type": "string"
-                    },
-                    "code": {
-                        "description": "A unique code identifying a property in a system of properties",
-                        "type": "string"
-                    },
-                    "codeType": {
-                        "description": "The system of properties the property code comes from",
-                        "type": "string"
-                    }
+    "properties": {
+        "parameter": {
+            "type": "object",
+            "required": ["property"],
+            "oneOf": [
+                {
+                    "required": ["value"]
+                },
+                {
+                    "required": ["text"]
                 }
-            },
-            "value": {
-                "description": "A numeric value with or without unit",
-                "$ref": "http://chalk.coas.unf.edu/champ/files/schema/value.json#measuredValue"
-            },
-            "text": {
-                "description": "A string value",
-                "type": "string"
+            ],
+            "properties": {
+                "property": {
+                    "description": "The property that the parameter is about",
+                    "type": "object",
+                    "oneOf": [
+                        {
+                            "required": ["name"]
+                        },
+                        {
+                            "required": ["code"]
+                        }
+                    ],
+                    "properties": {
+                        "name": {
+                            "description": "The name of the measured property",
+                            "type": "string"
+                        },
+                        "code": {
+                            "description": "A unique code identifying a property in a system of properties",
+                            "type": "string"
+                        },
+                        "codeType": {
+                            "description": "The system of properties the property code comes from",
+                            "type": "string"
+                        }
+                    }
+                },
+                "value": {
+                    "description": "A numeric value with or without unit",
+                    "$ref": "http://stuchalk.github.io/scidata/schema/value.json#measuredValue"
+                },
+                "text": {
+                    "description": "A string value",
+                    "type": "string"
+                }
             }
         }
-    }}
+    }
 }

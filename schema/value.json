@@ -3,52 +3,59 @@
     "title": "Datum Schema",
     "description": "JSON schema for a scientific data point",
     "required": ["measuredValue"],
-    "properties": {"measuredValue": {
-        "type": "object",
-        "required": [
-            "significand",
-            "exponent"
-        ],
-        "properties": {
-            "significand": {
-                "description": "In scientific notation the significand (or mantissa) is the part of a number in scientific notation that represents the significant digits",
-                "type": "number"
-            },
-            "exponent": {
-                "description": "In scientific notation the exponent is the part of a number in scientific notation that represents the magnitude of a numeric value",
-                "type": "integer"
-            },
-            "accuracy": {
-                "description": "An integer that represents the number of significant digits in the numeric value.  This is used specifically state the number of sigfigs as the representation in the significand may have omitted trailing zeros that are still significant.",
-                "type": "integer",
-                "minimum": 1
-            },
-            "error": {
-                "description": "The value of the error in the numeric value scaled to the same magnitude (exponent) of the value.",
-                "type": "number"
-            },
-            "errorType": {
-                "description": "An indication of the type of error the error value reports.",
-                "type": "string",
-                "enum": [
-                    "absolute",
-                    "%RSD",
-                    "CI"
-                ]
-            },
-            "exact": {
-                "description": "Definition of a number as exact (infinite significant figures) or not",
-                "type": "boolean"
-            },
-            "unit": {
-            	"description": "Unit of measurement of the physical quanitity",
-            	"type": "string"
-            },
-            "unitType": {
-            	"description": "The system in which the unit is defined",
-            	"type": "string",
-           		"enum": ["SI","CGS","Imperial","UnitsML"]
+    "properties": {
+        "measuredValue": {
+            "type": "object",
+            "required": [
+                "significand",
+                "exponent"
+            ],
+            "properties": {
+                "significand": {
+                    "description": "In scientific notation the significand (or mantissa) is the part of a number in scientific notation that represents the significant digits",
+                    "type": "number"
+                },
+                "exponent": {
+                    "description": "In scientific notation the exponent is the part of a number in scientific notation that represents the magnitude of a numeric value",
+                    "type": "integer"
+                },
+                "accuracy": {
+                    "description": "An integer that represents the number of significant digits in the numeric value.  This is used specifically state the number of sigfigs as the representation in the significand may have omitted trailing zeros that are still significant.",
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "error": {
+                    "description": "The value of the error in the numeric value scaled to the same magnitude (exponent) of the value.",
+                    "type": "number"
+                },
+                "errorType": {
+                    "description": "An indication of the type of error the error value reports.",
+                    "type": "string",
+                    "enum": [
+                        "absolute",
+                        "%RSD",
+                        "CI"
+                    ]
+                },
+                "exact": {
+                    "description": "Definition of a number as exact (infinite significant figures) or not",
+                    "type": "boolean"
+                },
+                "unit": {
+                    "description": "Unit of measurement of the physical quanitity",
+                    "type": "string"
+                },
+                "unitType": {
+                    "description": "The system in which the unit is defined",
+                    "type": "string",
+                    "enum": [
+                        "SI",
+                        "CGS",
+                        "Imperial",
+                        "UnitsML"
+                    ]
+                }
             }
         }
-    }}
+    }
 }
