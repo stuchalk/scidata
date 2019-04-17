@@ -12,5 +12,6 @@ contexts/scidata_sample.jsonld
 examples/.DS_Store
 examples/Self contained/
 examples/ph_min.jsonld
+examples/remove?
 ontology/.DS_Store
 !/contexts/scidata_sample.jsonld
