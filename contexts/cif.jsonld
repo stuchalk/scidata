@@ -1,0 +1,72 @@
+{"@context": {
+    "@vocab": "http://www.w3.org/2001/XMLSchema#",
+    "cif": "http://www.iucr.org/cif",
+    "diffrn_ambient_temperature": {
+        "@id": "cif:DiffractionAmbientTemperature",
+        "@type": "decimal"
+    },
+    "diffrn_radiation_probe": {
+        "@id": "cif:DiffractionRadiationProbe",
+        "@type": "string"
+    },
+    "chemical_name_common": {
+        "@id": "cif:ChemicalCommonName",
+        "@type": "string"
+    },
+    "chemical_formula_moiety": {
+        "@id": "cif:ChemicalFormulaMoiety",
+        "@type": "decimal"
+    },
+    "chemical_name_systematic": {
+        "@id": "cif:ChemicalSystematicName",
+        "@type": "string"
+    },
+    "chemical_absolute_configuration": {
+        "@id": "cif:ChemicalAbsoluteConfiguration",
+        "@type": "string"
+    },
+    "site": {
+        "@id": "cif:AtomSiteData",
+        "@type": "string"
+    },
+    "atom_label": {
+        "@id": "cif:AtomSiteLabel",
+        "@type": "string"
+    },
+    "atom_symbol": {
+        "@id": "cif:AtomSiteSymbol",
+        "@type": "string"
+    },
+    "cell_length_a": {
+        "@id": "cif:CellLengthA",
+        "@type": "string"
+    },
+    "cell_length_b": {
+        "@id": "cif:CellLengthB",
+        "@type": "string"
+    },
+    "cell_length_c": {
+        "@id": "cif:CellLengthC",
+        "@type": "string"
+    },
+    "cell_angle_alpha": {
+        "@id": "cif:CellAngleAlpha",
+        "@type": "string"
+    },
+    "cell_angle_beta": {
+        "@id": "cif:CellAngleBeta",
+        "@type": "string"
+    },
+    "cell_angle_gamma": {
+        "@id": "cif:CellAngleGamma",
+        "@type": "string"
+    },
+    "cell_volume": {
+        "@id": "cif:CellVolue",
+        "@type": "string"
+    },
+    "cell_formula_units_Z": {
+        "@id": "cif:CellFormulaUnitsZ",
+        "@type": "string"
+    }
+}}
