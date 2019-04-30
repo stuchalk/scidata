@@ -62,7 +62,7 @@
         "@type": "string"
     },
     "cell_volume": {
-        "@id": "cif:CellVolue",
+        "@id": "cif:CellVolume",
         "@type": "string"
     },
     "cell_formula_units_Z": {
