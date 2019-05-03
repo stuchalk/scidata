@@ -6,6 +6,7 @@
   "definitions": {
     "siUnit_def": {
       "type": "object",
+      "$id": "#siUnit_def",
       "properties": {
         "@id":    { "type": "string" },
         "name":   { "type": "string" },
@@ -16,6 +17,7 @@
     },
     "conversionFactor_def": {
       "type": "object",
+      "$id": "#conversionFactor_def",
       "properties": {
         "@id":        { "type": "string" },
         "fromunit":   { "type": "string" },
@@ -68,14 +70,14 @@
       "type": "object",
       "properties": {
         "@id": { "type": "string" },
-        "factor": { "$ref": "#/definitions/conversionFactor_def" },
+        "factor": { "$ref": "#conversionFactor_def" },
         "siunit": {
           "type": "array",
-          "items": { "$ref": "#/definitions/siUnit_def" }
+          "items": { "$ref": "#siUnit_def" }
           }
         }
     },
-    "siunit": { "$ref": "#/definitions/siUnit_def" },
+    "siunit": { "$ref": "#siUnit_def" },
     "siunitstr": { "type": "string" },
     "siunitref": {
       "type": "string",
@@ -83,7 +85,7 @@
     },
     "prefix": { "type": "string" },
     "power":  { "type": "integer" },
-    "factor": { "$ref": "#/definitions/conversionFactor_def" },
+    "factor": { "$ref": "#conversionFactor_def" },
     "factorref": {
       "type": "string",
       "format": "uri-reference"
