@@ -39,7 +39,7 @@
     },
     "unitinsi": {
         "@id": "sci:siUnitEquivalent",
-        "@type": "sic:siUnit"
+        "@type": "sci:siUnit"
     },
     "siunit": {
         "@id": "sci:siUnit"

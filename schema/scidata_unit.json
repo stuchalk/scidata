@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Unit Schema",
+  "description": "JSON schema for a scientific unit of measure",
+
+  "definitions": {
+    "siUnit_def": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "name":   { "type": "string" },
+        "prefix": { "type": "string" },
+        "power":  { "type": "integer" }
+      }
+          
+    },
+    "conversionFactor_def": {
+      "type": "object",
+      "properties": {
+        "@id":        { "type": "string" },
+        "fromunit":   { "type": "string" },
+        "tounit":     { "type": "string" },
+        "addend":     { "type": "number" },
+        "minuend":    { "type": "number" },
+        "subtrahend": { "type": "number" },
+        "multiplier": { "type": "number" },
+        "dividend":   { "type": "number" },
+        "divisor":    { "type": "number" },
+        "exact":      { "type": "boolean" }
+      }
+    }
+
+  },
+
+  "type": "object",
+
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
+    },
+    "@id": { 
+      "type": "string",
+      "default": ""
+     },
+    "unitstr": { "type": "string" },
+    "unitref": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "name": { "type": "string" },
+    "unitsystem": { "type": "string" },
+    "unitsystemref": {
+      "type": "string",
+      "format": "uri-reference",
+      "enum": ["sci:imperial"]      
+    },
+    "quantity": { "type": "string" },
+    "quantityref": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "abbrev": { "type": "string" },
+    "symbol": { "type": "string" },
+    "unitinsi": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "factor": { "$ref": "#/definitions/conversionFactor_def" },
+        "siunit": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/siUnit_def" }
+          }
+        }
+    },
+    "siunit": { "$ref": "#/definitions/siUnit_def" },
+    "siunitstr": { "type": "string" },
+    "siunitref": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "prefix": { "type": "string" },
+    "power":  { "type": "integer" },
+    "factor": { "$ref": "#/definitions/conversionFactor_def" },
+    "factorref": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "fromunit":   { "type": "string" },
+    "tounit":     { "type": "string" },
+    "addend":     { "type": "number" },
+    "minuend":    { "type": "number" },
+    "subtrahend": { "type": "number" },
+    "multiplier": { "type": "number" },
+    "dividend":   { "type": "number" },
+    "divisor":    { "type": "number" },
+    "exact":      { "type": "boolean" }
+  }
+}
+
