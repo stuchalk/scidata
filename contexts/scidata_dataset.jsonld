@@ -1,64 +1,66 @@
-{"@context": [
-    "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-    {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "dc": "https://purl.org/dc/terms/",
-        "dataset": {"@id": "sci:dataset"},
-        "datagroup": {"@id": "sci:hasDataGroup"},
-        "datagroups": {
-            "@id": "sci:hasDataGroup",
-            "@type": "@id"
-        },
-        "dataseries": {"@id": "sci:hasDataSeries"},
-        "dataserieses": {
-            "@id": "sci:hasDataSeries",
-            "@type": "@id"
-        },
-        "dataname": {
-            "@id": "sci:dataName",
-            "@type": "sci:parameter"
-        },
-        "datapoint": {"@id": "sci:hasDataPoint"},
-        "datapoints": {
-            "@id": "sci:hasDataPoint",
-            "@type": "@id"
-        },
-        "conditions": {
-            "@id": "sci:hasCondition",
-            "@type": "@id"
-        },
-        "settings": {
-            "@id": "sci:hasSetting",
-            "@type": "id"
-        },
-        "data": {
-            "@id": "sci:hasData",
-            "@type": "parameter"
-        },
-        "reference": {
-            "@id": "sci:hasSource",
-            "@type": "@id"
-        },
-        "attributes": {
-            "@id": "sci:hasDataAttributes",
-            "@type": "sci:parameter"
-        },
-        "parameters": {
-            "@id": "sci:hasDataParameters",
-            "@type": "sci:parameterArray"
-        },
-        "seriesType": {
-            "@id": "sci:dataSeriesType",
-            "@type": "sci:parameter"
-        },
-        "axis": {
-            "@id": "sci:axisType",
-            "@type": "string"
-        },
-        "axisLabel": {
-            "@id": "sci:axisLabel",
-            "@type": "string"
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "dc": "https://purl.org/dc/terms/",
+            "dataset": {"@id": "sci:dataset"},
+            "datagroup": {"@id": "sci:hasDataGroup"},
+            "datagroups": {
+                "@id": "sci:hasDataGroup",
+                "@type": "@id"
+            },
+            "dataseries": {"@id": "sci:hasDataSeries"},
+            "dataserieses": {
+                "@id": "sci:hasDataSeries",
+                "@type": "@id"
+            },
+            "dataname": {
+                "@id": "sci:dataName",
+                "@type": "sci:parameter"
+            },
+            "datapoint": {"@id": "sci:hasDataPoint"},
+            "datapoints": {
+                "@id": "sci:hasDataPoint",
+                "@type": "@id"
+            },
+            "conditions": {
+                "@id": "sci:hasCondition",
+                "@type": "@id"
+            },
+            "settings": {
+                "@id": "sci:hasSetting",
+                "@type": "id"
+            },
+            "data": {
+                "@id": "sci:hasData",
+                "@type": "parameter"
+            },
+            "reference": {
+                "@id": "sci:hasSource",
+                "@type": "@id"
+            },
+            "attributes": {
+                "@id": "sci:hasDataAttributes",
+                "@type": "sci:parameter"
+            },
+            "parameters": {
+                "@id": "sci:hasDataParameters",
+                "@type": "sci:parameterArray"
+            },
+            "seriesType": {
+                "@id": "sci:dataSeriesType",
+                "@type": "sci:parameter"
+            },
+            "axis": {
+                "@id": "sci:axisType",
+                "@type": "string"
+            },
+            "axisLabel": {
+                "@id": "sci:axisLabel",
+                "@type": "string"
+            }
         }
-    }
-]}
+    ]
+}

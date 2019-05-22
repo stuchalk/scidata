@@ -1,67 +1,69 @@
-{"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
-    {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "numericvalue": {"@id": "sci:numericValue"},
-        "numericvaluearray": {"@id": "sci:numericValueArray"},
-        "textstring": {"@id": "sci:textString"},
-        "textstringarray": {"@id": "sci:textStringArray"},
-        "datatype": {
-            "@id": "sci:numericDatatype",
-            "@type": "@id"
-        },
-        "number": {
-            "@id": "sci:number",
-            "@type": "double"
-        },
-        "numberarray": {
-            "@id": "sci:numberArray",
-            "@type": "double",
-            "@container": "@list"
-        },
-        "sigfigs": {
-            "@id": "sci:sigfigs",
-            "@type": "integer"
-        },
-        "error": {
-            "@id": "sci:error",
-            "@type": "double"
-        },
-        "errorarray": {
-            "@id": "sci:errorArray",
-            "@type": "double",
-            "@container": "@list"
-        },
-        "errortype": {
-            "@id": "sci:errorType",
-            "@type": "string"
-        },
-        "text": {
-            "@id": "sci:text",
-            "@type": "string"
-        },
-        "textarray": {
-            "@id": "sci:textArray",
-            "@type": "string",
-            "@container": "@list"
-        },
-        "texttype": {
-            "@id": "sci:textType",
-            "@type": "string"
-        },
-        "language": {
-            "@id": "dc:language",
-            "@type": "string"
-        },
-        "value": {
-            "@id": "sci:numericValue",
-            "@type": "sci:isValue"
-        },
-        "valuearray": {
-            "@id": "sci:numericValueArray",
-            "@type": "sci:isValueArray"
+{
+    "@context": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {
+            "@vocab": "http://www.w3.org/2001/XMLSchema#",
+            "dc": "http://purl.org/dc/terms/",
+            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "numericvalue": {"@id": "sci:numericValue"},
+            "numericvaluearray": {"@id": "sci:numericValueArray"},
+            "textstring": {"@id": "sci:textString"},
+            "textstringarray": {"@id": "sci:textStringArray"},
+            "datatype": {
+                "@id": "sci:numericDatatype",
+                "@type": "@id"
+            },
+            "number": {
+                "@id": "sci:number",
+                "@type": "double"
+            },
+            "numberarray": {
+                "@id": "sci:numberArray",
+                "@type": "double",
+                "@container": "@list"
+            },
+            "sigfigs": {
+                "@id": "sci:sigfigs",
+                "@type": "integer"
+            },
+            "error": {
+                "@id": "sci:error",
+                "@type": "double"
+            },
+            "errorarray": {
+                "@id": "sci:errorArray",
+                "@type": "double",
+                "@container": "@list"
+            },
+            "errortype": {
+                "@id": "sci:errorType",
+                "@type": "string"
+            },
+            "text": {
+                "@id": "sci:text",
+                "@type": "string"
+            },
+            "textarray": {
+                "@id": "sci:textArray",
+                "@type": "string",
+                "@container": "@list"
+            },
+            "texttype": {
+                "@id": "sci:textType",
+                "@type": "string"
+            },
+            "language": {
+                "@id": "dc:language",
+                "@type": "string"
+            },
+            "value": {
+                "@id": "sci:numericValue",
+                "@type": "sci:isValue"
+            },
+            "valuearray": {
+                "@id": "sci:numericValueArray",
+                "@type": "sci:isValueArray"
+            }
         }
-    }
-]}
+    ]
+}

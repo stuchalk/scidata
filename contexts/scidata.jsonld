@@ -29,7 +29,10 @@
                 "@type": "string"
             },
             "author": {"@id": "sci:hasAuthor"},
-            "name": {"@id": "obo:IAO_0000590"},
+            "name": {
+                "@id": "obo:IAO_0000590",
+                "@type": "string"
+            },
             "firstname": {
                 "@id": "obo:IAO_0020016",
                 "@type": "string"
