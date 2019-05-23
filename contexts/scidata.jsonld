@@ -93,9 +93,12 @@
                 "@id": "dc:related",
                 "@type": "anyURI"
             },
-            "toc": {"@id": "sci:hasTableOfContents"},
-            "section": {
-                "@id": "dc:hasPart",
+            "identifiers": {
+            	"@id": "dc:references",
+                "@type": "@id"
+            },
+            "toc": {
+                "@id": "sci:hasPart",
                 "@type": "@id"
             },
             "scidata": {"@id": "sci:hasScientificData"},
