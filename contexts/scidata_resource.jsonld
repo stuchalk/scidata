@@ -1,24 +1,26 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "dc": "http://purl.org/dc/terms/",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "res": "http://stuchalk.github.io/scidata/ontology/resource/resource.owl",
-    "resource": {"@id": "sci:hasResource"},
-    "type": {
-        "@id": "dc:type",
-        "@type": "string"
-    },
-    "vendor": {
-        "@id": "obo:sep_00088",
-        "@type": "string"
-    },
-    "catalognumber": {
-        "@id": "obo:sep_0016",
-        "@type": "string"
-    },
-    "resourceOrigin": {
-        "@id": "dc:origin",
-        "@type": "string"
-    },
-    "property": {"@id": "res:resourceProperty"}
-}}
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "res": "http://stuchalk.github.io/scidata/ontology/resource/resource.owl",
+        "resource": {"@id": "sci:hasResource"},
+        "type": {
+            "@id": "dc:type",
+            "@type": "string"
+        },
+        "vendor": {
+            "@id": "obo:sep_00088",
+            "@type": "string"
+        },
+        "catalognumber": {
+            "@id": "obo:sep_0016",
+            "@type": "string"
+        },
+        "resourceOrigin": {
+            "@id": "dc:origin",
+            "@type": "string"
+        },
+        "property": {"@id": "res:resourceProperty"}
+    }
+}

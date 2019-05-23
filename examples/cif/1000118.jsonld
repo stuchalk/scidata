@@ -6,321 +6,361 @@
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "dc": "http://purl.org/dc/terms/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "cod": "http://www.crystallography.net/cod/"
         },
-        {"@base": "http://www.crystallography.net/cod/1000118.cif/"}
+        {"@base": "http://www.crystallography.net/cod/1000118/"}
     ],
-    "@id": "",
-    "uid": "scidata:example:cif:1000118",
-    "title": "Ab initio crystal structure determination of V O (H2 P O2) .(H2 O) fromX-ray and neutron powder diffraction data. A monodimensionalvanadium(IV) hypophosphite",
-    "description": "Crystallographic Information File of Oxovanadium bis(dihydrogenphosphate(I)) hydrate",
-    "publisher": "Crystallography Open Database (COD)",
-    "author": [
-        {
-            "@id": "author/1/",
-            "@type": "dc:creator",
-            "name": "Le Bail, A"
-        },
-        {
-            "@id": "author/2/",
-            "@type": "dc:creator",
-            "name": "Marcos, M D"
-        },
-        {
-            "@id": "author/3/",
-            "@type": "dc:creator",
-            "name": "Amoros, P"
-        }
-    ],
-    "version": 130149,
-    "keywords": [
-        "CIF File",
-        "Crystal Structure"
-    ],
-    "permalink": "http://stuchalk.github.io/scidata/example/cif.1000118.jsonld",
-    "related": ["http://www.crystallography.net/cod/1000118.html"],
-    "scidata": {
-        "@id": "scidata/",
-        "system": {
-            "@id": "system/",
-            "aspects": [
-                {
-                    "@id": "chemical/1/",
-                    "@type": "sci:chemical",
-                    "chemical_name_systematic": "Oxovanadium bis(dihydrogenphosphate(I)) hydrate",
-                    "chemical_formula_structural": "(V O) (H2 P O2)2 (H2 O)",
-                    "chemical_formula_sum": "H6 O6 P2 V"
-                },
-                {
-                    "@id": "chemicalsystem/1/",
-                    "@type": "sci:chemicalsystem",
-                    "atoms": [
-                        {
-                            "@id": "atom/1/",
-                            "source": "chemical/1/",
-                            "atom_type_symbol": "V4+",
-                            "atom_type_oxidation_number": "4.000"
-                        },
-                        {
-                            "@id": "atom/2/",
-                            "source": "chemical/1/",
-                            "atom_type_symbol": "P1+",
-                            "atom_type_oxidation_number": "1.000"
-                        },
-                        {
-                            "@id": "atom/3/",
-                            "source": "chemical/1/",
-                            "atom_type_symbol": "O2-",
-                            "atom_type_oxidation_number": "-2.000"
-                        },
-                        {
-                            "@id": "atom/4/",
-                            "source": "chemical/1/",
-                            "atom_type_symbol": "H1+",
-                            "atom_type_oxidation_number": "1.000"
-                        }
-                    ]
-                }
-            ]
-        },
-        "dataset": {
-            "@id": "dataset/1/",
-            "datagroup": [
-                {
-                    "@id": "datagroup/1/",
-                    "@type": "sci:datagroup",
-                    "name": "space group",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Cspace_group.html",
-                    "datapoints": ["datapoint/1/"]
-                },
-                {
-                    "@id": "datagroup/2/",
-                    "@type": "sci:datagroup",
-                    "name": "symmetry",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Csymmetry.html",
-                    "datapoints": [
-                        "datapoint/2/",
-                        "datapoint/3/",
-                        "datapoint/4/",
-                        "datapoint/5/",
-                        "datapoint/6/"
-                    ]
-                },
-                {
-                    "@id": "datagroup/3/",
-                    "@type": "sci:datagroup",
-                    "name": "cell",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ccell.html",
-                    "datapoints": [
-                        "datapoint/7/",
-                        "datapoint/8/",
-                        "datapoint/9/",
-                        "datapoint/10/",
-                        "datapoint/11/",
-                        "datapoint/12/",
-                        "datapoint/13/",
-                        "datapoint/14/"
-                    ]
-                }
-            ],
-            "datapoint": [
-                {
-                    "@id": "datapoint/1/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html",
-                    "quantity": "space group descriptor",
-                    "property": "space_group_IT_number",
-                    "value": {
-                        "@id": "datapoint/1/value/",
-                        "@type": "sci:value",
-                        "text": "15"
-                    }
-                },
-                {
-                    "@id": "datapoint/2/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_cell_setting.html",
-                    "quantity": "symmetry descriptor",
-                    "property": "symmetry_cell_setting",
-                    "value": {
-                        "@id": "datapoint/2/value/",
-                        "@type": "sci:value",
-                        "text": "monoclinic"
-                    }
-                },
-                {
-                    "@id": "datapoint/3/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_Int_Tables_number.html",
-                    "quantity": "symmetry descriptor",
-                    "property": "symmetry_Int_Tables_number",
-                    "value": {
-                        "@id": "datapoint/3/value/",
-                        "@type": "sci:value",
-                        "text": "15"
-                    }
-                },
-                {
-                    "@id": "datapoint/4/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_Hall.html",
-                    "quantity": "symmetry descriptor",
-                    "property": "symmetry_space_group_name_Hall",
-                    "value": {
-                        "@id": "datapoint/4/value/",
-                        "@type": "sci:value",
-                        "text": "-C 2yc"
-                    }
-                },
-                {
-                    "@id": "datapoint/5/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_H-M.html",
-                    "quantity": "symmetry descriptor",
-                    "property": "symmetry_space_group_name_H-M",
-                    "value": {
-                        "@id": "datapoint/5/value/",
-                        "@type": "sci:value",
-                        "text": "C 1 2/c 1"
-                    }
-                },
-                {
-                    "@id": "datapoint/6/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_equiv_pos_as_xyz.html",
-                    "quantity": "symmetry descriptor",
-                    "property": "symmetry_equiv_pos_as_xyz",
-                    "valuearray": {
-                        "@id": "datapoint/6/valuearray/",
-                        "@type": "sci:valuearray",
-                        "textarray": [
-                            "x,y,z",
-                            "-x,y,1/2-z",
-                            "-x,-y,-z",
-                            "x,-y,1/2+z",
-                            "1/2+x,1/2+y,z",
-                            "1/2-x,1/2+y,1/2-z",
-                            "1/2-x,1/2-y,-z",
-                            "1/2+x,1/2-y,1/2+z"
+    "@id": "https://chalk.coas.unf.edu/cssi/5/",
+    "@graph": {
+        "@id": "cod:1000118/",
+        "@type": "SciDataFramework",
+        "uid": "cod1000118",
+        "title": "Ab initio crystal structure determination of V O (H2 P O2) .(H2 O) fromX-ray and neutron powder diffraction data. A monodimensionalvanadium(IV) hypophosphite",
+        "description": "Crystallographic Information File of Oxovanadium bis(dihydrogenphosphate(I)) hydrate",
+        "publisher": "Crystallography Open Database (COD)",
+        "author": [
+            {
+                "@id": "author/1/",
+                "@type": "dc:creator",
+                "name": "Le Bail, A"
+            },
+            {
+                "@id": "author/2/",
+                "@type": "dc:creator",
+                "name": "Marcos, M D"
+            },
+            {
+                "@id": "author/3/",
+                "@type": "dc:creator",
+                "name": "Amoros, P"
+            }
+        ],
+        "version": 130149,
+        "keywords": [
+            "CIF File",
+            "Crystal Structure"
+        ],
+        "permalink": "http://stuchalk.github.io/scidata/example/1000118.jsonld",
+        "related": ["http://www.crystallography.net/cod/1000118.html"],
+        "toc": [
+            "system/1/",
+            "substance/1/",
+            "crystal/1/",
+            "dataset/1/",
+            "datagroup/1/",
+            "datagroup/2/",
+            "datagroup/3/"
+        ],
+        "scidata": {
+            "@id": "scidata/",
+            "@type": "sci:scientificData",
+            "methodology": [],
+            "system": {
+                "@id": "system/1/",
+                "@type": "sci:system",
+                "discipline": "chemistry",
+                "subdiscipline": "crystallography",
+                "aspects": [
+                    {
+                        "@id": "substance/1/",
+                        "@type": "sci:compound",
+                        "chemical_name_systematic": "Oxovanadium bis(dihydrogenphosphate(I)) hydrate",
+                        "chemical_formula_structural": "(V O) (H2 P O2)2 (H2 O)",
+                        "chemical_formula_sum": "H6 O6 P2 V"
+                    },
+                    {
+                        "@id": "crystal/1/",
+                        "@type": "sci:chemicalsystem",
+                        "atoms": [
+                            {
+                                "@id": "atom/1/",
+                                "@type": "cid:atomType",
+                                "source": "substance/1/",
+                                "atom_type_symbol": "V4+",
+                                "atom_type_oxidation_number": "4.000"
+                            },
+                            {
+                                "@id": "atom/2/",
+                                "@type": "cid:atomType",
+                                "source": "substance/1/",
+                                "atom_type_symbol": "P1+",
+                                "atom_type_oxidation_number": "1.000"
+                            },
+                            {
+                                "@id": "atom/3/",
+                                "@type": "cid:atomType",
+                                "source": "substance/1/",
+                                "atom_type_symbol": "O2-",
+                                "atom_type_oxidation_number": "-2.000"
+                            },
+                            {
+                                "@id": "atom/4/",
+                                "@type": "cid:atomType",
+                                "source": "substance/1/",
+                                "atom_type_symbol": "H1+",
+                                "atom_type_oxidation_number": "1.000"
+                            }
                         ]
                     }
-                },
-                {
-                    "@id": "datapoint/7/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
-                    "quantity": "plain angle",
-                    "property": "cell_angle_alpha",
-                    "value": {
-                        "@id": "datapoint/7/value/",
-                        "@type": "sci:value",
-                        "number": 90,
-                        "unitref": "qudt:DegreeAngle"
+                ]
+            },
+            "dataset": {
+                "@id": "dataset/1/",
+                "@type": "sci:dataset",
+                "scope": "crystal/1/",
+                "datagroup": [
+                    {
+                        "@id": "datagroup/1/",
+                        "@type": "sci:datagroup",
+                        "name": "space group",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Cspace_group.html",
+                        "datapoints": ["datapoint/1/"]
+                    },
+                    {
+                        "@id": "datagroup/2/",
+                        "@type": "sci:datagroup",
+                        "name": "symmetry",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Csymmetry.html",
+                        "datapoints": [
+                            "datapoint/2/",
+                            "datapoint/3/",
+                            "datapoint/4/",
+                            "datapoint/5/",
+                            "datapoint/6/"
+                        ]
+                    },
+                    {
+                        "@id": "datagroup/3/",
+                        "@type": "sci:datagroup",
+                        "name": "cell",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ccell.html",
+                        "datapoints": [
+                            "datapoint/7/",
+                            "datapoint/8/",
+                            "datapoint/9/",
+                            "datapoint/10/",
+                            "datapoint/11/",
+                            "datapoint/12/",
+                            "datapoint/13/",
+                            "datapoint/14/"
+                        ]
                     }
-                },
-                {
-                    "@id": "datapoint/8/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
-                    "quantity": "plain angle",
-                    "property": "cell_angle_beta",
-                    "value": {
-                        "@id": "datapoint/8/value/",
-                        "@type": "sci:value",
-                        "number": 121.83,
-                        "error": 0.002,
-                        "unitref": "qudt:DegreeAngle"
+                ],
+                "datapoint": [
+                    {
+                        "@id": "datapoint/1/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html",
+                        "quantity": "space group descriptor",
+                        "property": "space_group_IT_number",
+                        "value": {
+                            "@id": "datapoint/1/value/",
+                            "@type": "sci:textvalue",
+                            "text": "15"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/2/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_cell_setting.html",
+                        "quantity": "symmetry descriptor",
+                        "property": "symmetry_cell_setting",
+                        "value": {
+                            "@id": "datapoint/2/value/",
+                            "@type": "sci:textvalue",
+                            "text": "monoclinic"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/3/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_Int_Tables_number.html",
+                        "quantity": "symmetry descriptor",
+                        "property": "symmetry_Int_Tables_number",
+                        "value": {
+                            "@id": "datapoint/3/value/",
+                            "@type": "sci:textvalue",
+                            "text": "15"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/4/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_Hall.html",
+                        "quantity": "symmetry descriptor",
+                        "property": "symmetry_space_group_name_Hall",
+                        "value": {
+                            "@id": "datapoint/4/value/",
+                            "@type": "sci:textvalue",
+                            "text": "-C 2yc"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/5/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_H-M.html",
+                        "quantity": "symmetry descriptor",
+                        "property": "symmetry_space_group_name_H-M",
+                        "value": {
+                            "@id": "datapoint/5/value/",
+                            "@type": "sci:textvalue",
+                            "text": "C 1 2/c 1"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/6/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_equiv_pos_as_xyz.html",
+                        "quantity": "symmetry descriptor",
+                        "property": "symmetry_equiv_pos_as_xyz",
+                        "valuearray": {
+                            "@id": "datapoint/6/valuearray/",
+                            "@type": "sci:textvaluearray",
+                            "textarray": [
+                                "x,y,z",
+                                "-x,y,1/2-z",
+                                "-x,-y,-z",
+                                "x,-y,1/2+z",
+                                "1/2+x,1/2+y,z",
+                                "1/2-x,1/2+y,1/2-z",
+                                "1/2-x,1/2-y,-z",
+                                "1/2+x,1/2-y,1/2+z"
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "datapoint/7/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
+                        "quantity": "plane angle",
+                        "property": "cell_angle_alpha",
+                        "value": {
+                            "@id": "datapoint/7/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 90,
+                            "unitref": "qudt:DegreeAngle"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/8/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
+                        "quantity": "plane angle",
+                        "property": "cell_angle_beta",
+                        "value": {
+                            "@id": "datapoint/8/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 121.83,
+                            "error": 0.002,
+                            "unitref": "qudt:DegreeAngle"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/9/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
+                        "quantity": "plane angle",
+                        "property": "cell_angle_gamma",
+                        "value": {
+                            "@id": "datapoint/9/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 90,
+                            "unitref": "qudt:DegreeAngle"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/10/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_formula_units_Z.html",
+                        "quantity": "count",
+                        "property": "cell_formula_units_Z",
+                        "value": {
+                            "@id": "datapoint/10/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 4
+                        }
+                    },
+                    {
+                        "@id": "datapoint/11/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
+                        "quantity": "length",
+                        "property": "cell_length_a",
+                        "value": {
+                            "@id": "datapoint/11/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 12.046,
+                            "error": 3.0E-4,
+                            "unitref": "qudt:Angstrom"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/12/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
+                        "quantity": "length",
+                        "property": "cell_length_b",
+                        "value": {
+                            "@id": "datapoint/12/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 8.147,
+                            "error": 1.0E-4,
+                            "unitref": "qudt:Angstrom"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/13/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
+                        "quantity": "length",
+                        "property": "cell_length_c",
+                        "value": {
+                            "@id": "datapoint/13/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 7.548,
+                            "error": 2.0E-4,
+                            "unitref": "qudt:Angstrom"
+                        }
+                    },
+                    {
+                        "@id": "datapoint/14/",
+                        "@type": "sci:datapoint",
+                        "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_volume.html",
+                        "quantity": "volume",
+                        "property": "cell_volume",
+                        "value": {
+                            "@id": "datapoint/14/value/",
+                            "@type": "sci:numericvalue",
+                            "number": 629.4,
+                            "unitref": "qudt:CubicAngstrom"
+                        }
                     }
-                },
-                {
-                    "@id": "datapoint/9/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
-                    "quantity": "plain angle",
-                    "property": "cell_angle_gamma",
-                    "value": {
-                        "@id": "datapoint/9/value/",
-                        "@type": "sci:value",
-                        "number": 90,
-                        "unitref": "qudt:DegreeAngle"
-                    }
-                },
-                {
-                    "@id": "datapoint/10/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_formula_units_Z.html",
-                    "quantity": "count",
-                    "property": "cell_formula_units_Z",
-                    "value": {
-                        "@id": "datapoint/10/value/",
-                        "@type": "sci:value",
-                        "number": 4
-                    }
-                },
-                {
-                    "@id": "datapoint/11/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
-                    "quantity": "length",
-                    "property": "cell_length_a",
-                    "value": {
-                        "@id": "datapoint/11/value/",
-                        "@type": "sci:value",
-                        "number": 12.046,
-                        "error": 3.0E-4,
-                        "unitref": "qudt:Angstrom"
-                    }
-                },
-                {
-                    "@id": "datapoint/12/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
-                    "quantity": "length",
-                    "property": "cell_length_b",
-                    "value": {
-                        "@id": "datapoint/12/value/",
-                        "@type": "sci:value",
-                        "number": 8.147,
-                        "error": 1.0E-4,
-                        "unitref": "qudt:Angstrom"
-                    }
-                },
-                {
-                    "@id": "datapoint/13/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
-                    "quantity": "length",
-                    "property": "cell_length_c",
-                    "value": {
-                        "@id": "datapoint/13/value/",
-                        "@type": "sci:value",
-                        "number": 7.548,
-                        "error": 2.0E-4,
-                        "unitref": "qudt:Angstrom"
-                    }
-                },
-                {
-                    "@id": "datapoint/14/",
-                    "@type": "sci:datapoint",
-                    "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_volume.html",
-                    "quantity": "length",
-                    "property": "cell_volume",
-                    "value": {
-                        "@id": "datapoint/14/value/",
-                        "@type": "sci:value",
-                        "number": 629.4,
-                        "unitref": "qudt:CubicAngstrom"
-                    }
-                }
-            ]
+                ]
+            }
+        },
+        "sources": [
+            {
+                "@id": "source/1/",
+                "@type": "dc:source",
+                "citation": "Crystallography Open Database, CIF file 1000118",
+                "reftype": "url",
+                "url": "http://www.crystallography.net/cod/1000118.html"
+            },
+            {
+                "@id": "source/2/",
+                "@type": "dc:source",
+                "citation": "Inorganic Chemistry 1994 Vol 33 2607-2613",
+                "reftype": "journal article",
+                "doi": "10.1021/ic00090a021",
+                "url": "http://dx.doi.org/10.1021/ic00090a021"
+            }
+        ],
+        "rights": {
+            "@id": "rights/1/",
+            "@type": "dc:rights",
+            "holder": "Crystallography Open Database",
+            "license": ""
         }
-    },
-    "references": [{
-        "@id": "reference/1/",
-        "@type": "dc:source",
-        "citation": "Inorganic Chemistry 1994 Vol 33 2607-2613",
-        "reftype": "journal article",
-        "doi": "10.1021/ic00090a021",
-        "url": "http://dx.doi.org/10.1021/ic00090a021"
-    }]
+    }
 }
