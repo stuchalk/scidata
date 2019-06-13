@@ -1,104 +1,104 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "obo": "http://purl.obolibrary.org/obo/",
-    "dc": "http://purl.org/dc/terms/",
-    "wkt": "http://en.wiktionary.org/wiki/",
-    "unit": {"@id": "sci:unitOfMeasure"},
-    "unitstr": {
-        "@id": "sci:unitOfMeasure",
-        "@type": "string"
-    },
-    "unitref": {
-        "@id": "sci:unitOfMeasure",
-        "@type": "@id"
-    },
-    "unitsystem": {
-        "@id": "sci:unitSystem",
-        "@type": "string"
-    },
-    "unitsystemref": {
-        "@id": "sci:unitSystem",
-        "@type": "@id"
-    },
-    "quantity": {
-        "@id": "sci:quantity",
-        "@type": "string"
-    },
-    "quantityref": {
-        "@id": "sci:quantity",
-        "@type": "@id"
-    },
-    "abbrev": {
-        "@id": "sci:unitAbbreviation",
-        "@type": "string"
-    },
-    "symbol": {
-        "@id": "sci:unitSymbol",
-        "@type": "string"
-    },
-    "unitinsi": {
-        "@id": "sci:siUnitEquivalent",
-        "@type": "sic:siUnit"
-    },
-    "siunit": {
-        "@id": "sci:siUnit"
-   },
-    "siunitstr": {
-        "@id": "sci:siUnit",
-        "@type": "string"
-    },
-    "siunitref": {
-        "@id": "sci:siUnit",
-        "@type": "@id"
-    },
-    "prefix": {
-        "@id": "sci:siPrefix",
-        "@type": "string"
-    },
-    "power": {
-        "@id": "sci:unitPower",
-        "@type": "integer"
-    },
-    "factor": {"@id": "sci:conversionFactor"},
-    "factorref": {
-        "@id": "sci:conversionFactor",
-        "@type": "@id"
-    },
-    "fromunit": {
-        "@id": "sci:unitOfMeasure",
-        "@type": "unitref"
-    },
-    "tounit": {
-        "@id": "sci:unitOfMeasure",
-        "@type": "siunit"
-    },
-    "addend": {
-        "@id": "wkt:addend",
-        "@type": "float"
-    },
-    "minuend": {
-        "@id": "wkt:minuend",
-        "@type": "float"
-    },
-    "subtrahend": {
-        "@id": "wkt:subtrahend",
-        "@type": "float"
-    },
-    "multiplier": {
-        "@id": "wkt:multiplier",
-        "@type": "float"
-    },
-    "dividend": {
-        "@id": "wkt:dividend",
-        "@type": "float"
-    },
-    "divisor": {
-        "@id": "wkt:divisor",
-        "@type": "float"
-    },
-    "exact": {
-        "@id": "wkt:exact",
-        "@type": "boolean"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dc": "http://purl.org/dc/terms/",
+        "wkt": "http://en.wiktionary.org/wiki/",
+        "unit": {"@id": "sci:unitOfMeasure"},
+        "unitstr": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "string"
+        },
+        "unitref": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "@id"
+        },
+        "unitsystem": {
+            "@id": "sci:unitSystem",
+            "@type": "string"
+        },
+        "unitsystemref": {
+            "@id": "sci:unitSystem",
+            "@type": "@id"
+        },
+        "quantity": {
+            "@id": "sci:quantity",
+            "@type": "string"
+        },
+        "quantityref": {
+            "@id": "sci:quantity",
+            "@type": "@id"
+        },
+        "abbrev": {
+            "@id": "sci:unitAbbreviation",
+            "@type": "string"
+        },
+        "symbol": {
+            "@id": "sci:unitSymbol",
+            "@type": "string"
+        },
+        "unitinsi": {
+            "@id": "sci:siUnitEquivalent",
+            "@type": "sic:siUnit"
+        },
+        "siunit": {"@id": "sci:siUnit"},
+        "siunitstr": {
+            "@id": "sci:siUnit",
+            "@type": "string"
+        },
+        "siunitref": {
+            "@id": "sci:siUnit",
+            "@type": "@id"
+        },
+        "prefix": {
+            "@id": "sci:siPrefix",
+            "@type": "string"
+        },
+        "power": {
+            "@id": "sci:unitPower",
+            "@type": "integer"
+        },
+        "factor": {"@id": "sci:conversionFactor"},
+        "factorref": {
+            "@id": "sci:conversionFactor",
+            "@type": "@id"
+        },
+        "fromunit": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "unitref"
+        },
+        "tounit": {
+            "@id": "sci:unitOfMeasure",
+            "@type": "siunit"
+        },
+        "addend": {
+            "@id": "wkt:addend",
+            "@type": "float"
+        },
+        "minuend": {
+            "@id": "wkt:minuend",
+            "@type": "float"
+        },
+        "subtrahend": {
+            "@id": "wkt:subtrahend",
+            "@type": "float"
+        },
+        "multiplier": {
+            "@id": "wkt:multiplier",
+            "@type": "float"
+        },
+        "dividend": {
+            "@id": "wkt:dividend",
+            "@type": "float"
+        },
+        "divisor": {
+            "@id": "wkt:divisor",
+            "@type": "float"
+        },
+        "exact": {
+            "@id": "wkt:exact",
+            "@type": "boolean"
+        }
     }
-}}
+}

@@ -1,14 +1,16 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
-    "dc": "http://purl.org/dc/terms/",
-    "target": {"@id": "tgt:target"},
-    "name": {
-        "@id": "dc:title",
-        "@type": "string"
-    },
-    "organism": {
-        "@id": "tgt:hasOrganism",
-        "@type": "@id"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
+        "dc": "http://purl.org/dc/terms/",
+        "target": {"@id": "tgt:target"},
+        "name": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "organism": {
+            "@id": "tgt:hasOrganism",
+            "@type": "@id"
+        }
     }
-}}
+}

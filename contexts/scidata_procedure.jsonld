@@ -1,25 +1,27 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "dc": "http://purl.org/dc/terms/",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "proc": "http://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#",
-    "procedure": {"@id": "sci:procedure"},
-    "procType": {
-        "@id": "proc:procedureType",
-        "@type": "string"
-    },
-    "sequence": {"@id": "proc:procedureSequence"},
-    "steps": {"@id": "proc:procedureStep"},
-    "step": {
-        "@id": "proc:procedureStepNumber",
-        "@type": "string"
-    },
-    "instruction": {
-        "@id": "proc:procedureStepInstruction",
-        "@type": "string"
-    },
-    "notes": {
-        "@id": "proc:procedureNote",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "dc": "http://purl.org/dc/terms/",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "proc": "http://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#",
+        "procedure": {"@id": "sci:procedure"},
+        "procType": {
+            "@id": "proc:procedureType",
+            "@type": "string"
+        },
+        "sequence": {"@id": "proc:procedureSequence"},
+        "steps": {"@id": "proc:procedureStep"},
+        "step": {
+            "@id": "proc:procedureStepNumber",
+            "@type": "string"
+        },
+        "instruction": {
+            "@id": "proc:procedureStepInstruction",
+            "@type": "string"
+        },
+        "notes": {
+            "@id": "proc:procedureNote",
+            "@type": "string"
+        }
     }
-}}
+}

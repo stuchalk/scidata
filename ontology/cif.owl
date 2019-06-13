@@ -1,0 +1,813 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.iucr.org/resources/cif.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.iucr.org/resources/cif.owl"
+     versionIRI="https://www.iucr.org/resources/cif.owl/1.0.0">
+    <Prefix name="" IRI="https://www.iucr.org/resources/cif.owl#"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An ontology built form the CIF data dictionaries at https://www.iucr.org/resources/cif/dictionaries</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AtomSiteData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomSiteFractionalX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomSiteFractionalY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomSiteFractionalZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomSiteLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomSitesData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomTypeSymbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSDArchiveDepositNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSDDatabaseCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellAngleAlpha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellAngleBeta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellAngleGamma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellFormulaUnitsZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellLengthA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellLengthB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellLengthC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalAbsoluteConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalCommonName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalFormulaData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalFormulaMoiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalSystematicName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabaseData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffractionAmbientTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffractionData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffractionRadiationProbe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffrationRadiationData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NBSDatabaseCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryCellSetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryEquivPosSiteID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryEquivPosXYZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryEquivPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryH-MSpaceGroupName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetryIntTableNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitCell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCellAngle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCellLength"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#UnitCell"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#CellAngleAlpha"/>
+            <Class IRI="#CellAngleBeta"/>
+            <Class IRI="#CellAngleGamma"/>
+            <Class IRI="#CellLengthA"/>
+            <Class IRI="#CellLengthB"/>
+            <Class IRI="#CellLengthC"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UnitCell"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellAngle"/>
+                <Class IRI="#CellAngleAlpha"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellAngle"/>
+                <Class IRI="#CellAngleBeta"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellAngle"/>
+                <Class IRI="#CellAngleGamma"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellLength"/>
+                <Class IRI="#CellLengthA"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellLength"/>
+                <Class IRI="#CellLengthB"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCellLength"/>
+                <Class IRI="#CellLengthC"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AtomSiteData"/>
+        <Class IRI="#AtomSitesData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomSiteFractionalX"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomSiteFractionalY"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomSiteFractionalZ"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomSiteLabel"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomTypeSymbol"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalProperties"/>
+        <Class IRI="#ChemicalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSDArchiveDepositNumber"/>
+        <Class IRI="#DatabaseData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSDDatabaseCode"/>
+        <Class IRI="#DatabaseData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellAngleAlpha"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellAngleBeta"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellAngleGamma"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellFormulaUnitsZ"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellLengthA"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellLengthB"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellLengthC"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellVolume"/>
+        <Class IRI="#CellData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAbsoluteConfiguration"/>
+        <Class IRI="#ChemicalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalCommonName"/>
+        <Class IRI="#ChemicalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalFormulaData"/>
+        <Class IRI="#ChemicalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalFormulaMoiety"/>
+        <Class IRI="#ChemicalFormulaData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalSystematicName"/>
+        <Class IRI="#ChemicalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffractionAmbientTemperature"/>
+        <Class IRI="#DiffractionData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffractionRadiationProbe"/>
+        <Class IRI="#DiffrationRadiationData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffrationRadiationData"/>
+        <Class IRI="#DiffractionData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NBSDatabaseCode"/>
+        <Class IRI="#DatabaseData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryCellSetting"/>
+        <Class IRI="#SymmetryData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryEquivPosSiteID"/>
+        <Class IRI="#SymmetryEquivPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryEquivPosXYZ"/>
+        <Class IRI="#SymmetryEquivPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryEquivPosition"/>
+        <Class IRI="#SymmetryData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryH-MSpaceGroupName"/>
+        <Class IRI="#SymmetryData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetryIntTableNumber"/>
+        <Class IRI="#SymmetryData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitCell"/>
+        <Class IRI="#parts"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCellAngle"/>
+        <Class IRI="#UnitCell"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCellLength"/>
+        <Class IRI="#UnitCell"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellAngle"/>
+        <Class IRI="#CellAngleAlpha"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellAngle"/>
+        <Class IRI="#CellAngleBeta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellAngle"/>
+        <Class IRI="#CellAngleGamma"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellLength"/>
+        <Class IRI="#CellLengthA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellLength"/>
+        <Class IRI="#CellLengthB"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCellLength"/>
+        <Class IRI="#CellLengthC"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal>definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSiteData</IRI>
+        <Literal>Data items in the ATOM_SITE category record details about the atom sites in a crystal structure, such as the positional coordinates, atomic displacement parameters, and magnetic moments and directions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSiteData</IRI>
+        <Literal>data_atom_site_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSiteFractionalX</IRI>
+        <Literal>Atom-site coordinate for the x-axis as a fraction of the _cell_length_a value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSiteFractionalX</IRI>
+        <Literal>data_atom_site_fract_x</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSiteFractionalY</IRI>
+        <Literal>Atom-site coordinate for the y-axis as a fraction of the _cell_length_b value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSiteFractionalY</IRI>
+        <Literal>data_atom_site_fract_y</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSiteFractionalZ</IRI>
+        <Literal>Atom-site coordinate for the z-axis as a fraction of the _cell_length_c value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSiteFractionalZ</IRI>
+        <Literal>data_atom_site_fract_z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSiteLabel</IRI>
+        <Literal>The _atom_site_label is a unique identifier for a particular site in the crystal. This code is made up of a sequence of up to seven components, _atom_site_label_component_0 to *_6, which may be specified as separate data items. Component 0 usually matches one of the specified _atom_type_symbol codes. This is not mandatory if an _atom_site_type_symbol item is included in the atom-site list. The _atom_site_type_symbol always takes precedence over an _atom_site_label in the identification of the atom type. The label components 1 to 6 are optional, and normally only components 0 and 1 are used. Note that components 0 and 1 are concatenated, while all other components, if specified, are separated by an underscore. Underscores are only used if higher-order components exist. If an intermediate component is not used, it may be omitted provided the underscore separators are inserted. For example, the label &apos;C233__ggg&apos; is acceptable and represents the components C, 233, &apos;&apos; and ggg. Different labels may have a different number of components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSiteLabel</IRI>
+        <Literal>data_atom_site_label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomSitesData</IRI>
+        <Literal>Data items in the ATOM_SITES category record details about the crystallographic cell and cell transformations, which are common to all atom sites.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomSitesData</IRI>
+        <Literal>data_atom_sites_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomTypeSymbol</IRI>
+        <Literal>The code used to identify the atom species (singular or plural) representing this atom type. Normally this code is the element symbol. The code may be composed of any character except an underscore with the additional proviso that digits designate an oxidation state and must be followed by a + or - character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomTypeSymbol</IRI>
+        <Literal>data_atom_type_symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#BiologicalProperties</IRI>
+        <Literal>A free-text description of the biological properties of the material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiologicalProperties</IRI>
+        <Literal>data_chemical_properties_biological</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CSDArchiveDepositNumber</IRI>
+        <Literal>Deposition numbers assigned by the Cambridge Crystallographic Data Centre (CCDC) to files containing structural information archived by the CCDC.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CSDArchiveDepositNumber</IRI>
+        <Literal>data_database_code_depnum_ccdc_archive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CSDDatabaseCode</IRI>
+        <Literal>The codes are assigned by databases: Chemical Abstracts (CAS); Crystallography Open Database (COD); Cambridge Structural Database (organic and metal-organic compounds) (CSD); Inorganic Crystal Structure Database; Metals Data File (metal structures) (ICSD); NBS (NIST) Crystal Data Database (lattice parameters); Protein Data Bank (PDB); and the Powder Diffraction File (JCPDS/ICDD) (PDF).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CSDDatabaseCode</IRI>
+        <Literal>data_database_code_CSD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellAngleAlpha</IRI>
+        <Literal>One of the unit-cell angles of the reported structure in degrees. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_length_a, *_b and *_c. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellAngleAlpha</IRI>
+        <Literal>cell_angle_alpha</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellAngleBeta</IRI>
+        <Literal>One of the unit-cell angles of the reported structure in degrees. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_length_a, *_b and *_c. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellAngleBeta</IRI>
+        <Literal>cell_angle_beta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellAngleGamma</IRI>
+        <Literal>One of the unit-cell angles of the reported structure in degrees. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_length_a, *_b and *_c. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellAngleGamma</IRI>
+        <Literal>cell_angle_gamma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellData</IRI>
+        <Literal>Data items in the CELL category record details about the crystallographic cell parameters and their measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellData</IRI>
+        <Literal>data_cell_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellFormulaUnitsZ</IRI>
+        <Literal>The number of the formula units in the unit cell as specified by _chemical_formula_structural, _chemical_formula_moiety or _chemical_formula_sum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellFormulaUnitsZ</IRI>
+        <Literal>cell_formula_units_Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellLengthA</IRI>
+        <Literal>One of the unit-cell lengths in angstroms corresponding to the structure reported. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_angle_ values. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellLengthA</IRI>
+        <Literal>cell_length_a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellLengthB</IRI>
+        <Literal>One of the unit-cell lengths in angstroms corresponding to the structure reported. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_angle_ values. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellLengthB</IRI>
+        <Literal>cell_length_b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellLengthC</IRI>
+        <Literal>One of the unit-cell lengths in angstroms corresponding to the structure reported. The values of _refln_index_h, *_k, *_l must correspond to the cell defined by these values and _cell_angle_ values. The values of _diffrn_refln_index_h, *_k, *_l may not correspond to these values if a cell transformation took place following the measurement of the diffraction intensities. See also _diffrn_reflns_transf_matrix_.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellLengthC</IRI>
+        <Literal>cell_length_c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#CellVolume</IRI>
+        <Literal>Cell volume V in angstroms cubed.
+
+V = a b c [1 - cos^2^(alpha) - cos^2^(beta) - cos^2^(gamma) + 2 cos(alpha) cos(beta) cos(gamma) ] ^1/2^
+
+a     = _cell_length_a
+b     = _cell_length_b
+c     = _cell_length_c
+alpha = _cell_angle_alpha
+beta  = _cell_angle_beta
+gamma = _cell_angle_gamma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CellVolume</IRI>
+        <Literal>cell_volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalAbsoluteConfiguration</IRI>
+        <Literal>Necessary conditions for the assignment of _chemical_absolute_configuration are given by H. D. Flack and G. Bernardinelli (1999, 2000).
+
+References:
+Flack, H. D. &amp; Bernardinelli, G. (1999). Acta Cryst. A55, 908-915. (http://www.iucr.org/paper?sh0129)
+Flack, H. D. &amp; Bernardinelli, G. (2000). J. Appl. Cryst. 33, 1143-1148. (http://www.iucr.org/paper?ks0021)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ChemicalAbsoluteConfiguration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.iucr.org/paper?ks0021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ChemicalAbsoluteConfiguration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.iucr.org/paper?sh0129</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalAbsoluteConfiguration</IRI>
+        <Literal>data_chemical_absolute_configuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalCommonName</IRI>
+        <Literal>Trivial name by which the compound is commonly known.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalCommonName</IRI>
+        <Literal>data_chemical_name_common</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalData</IRI>
+        <Literal>Data items in the CHEMICAL category record details about the composition and chemical properties of the compound. The formula data items must agree with those that specify the density, unit-cell and Z values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalData</IRI>
+        <Literal>data_chemical_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalFormulaData</IRI>
+        <Literal>_chemical_formula_ items specify the composition and chemical properties of the compound. The formula data items must agree with those that specify the density, unit-cell and Z values.
+
+The following rules apply to the construction of the data items _chemical_formula_analytical, *_structural and *_sum. For the data item *_moiety, the formula construction is broken up into residues or moieties, i.e. groups of atoms that form a molecular unit or molecular ion. The  rules given below apply within each moiety but different requirements apply to the way that moieties are connected (see _chemical_formula_moiety).
+
+(1) Only recognized element symbols may be used.
+(2) Each element symbol is followed by a &apos;count&apos; number. A count of &apos;1&apos; may be omitted.
+(3) A space or parenthesis must separate each cluster of (element symbol + count).
+(4) Where a group of elements is enclosed in parentheses, the multiplier for the group must follow the closing parenthesis. That is, all element and group multipliers are assumed to be printed as subscripted numbers. (An exception to this rule exists for *_moiety formulae where pre- and post-multipliers are permitted for molecular units.)
+(5) Unless the elements are ordered in a manner that corresponds to their chemical structure, as in _chemical_formula_structural, the order of the elements within any group or moiety depends on whether carbon is present or not. If carbon is present, the order should be: C, then H, then the other elements in alphabetical order of their symbol. If carbon is not present, the elements are listed purely in alphabetical order of their symbol. This is the &apos;Hill&apos; system used by Chemical Abstracts. This ordering is used in _chemical_formula_moiety and _chemical_formula_sum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalFormulaData</IRI>
+        <Literal>data_chemical_formula_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalFormulaMoiety</IRI>
+        <Literal>Formula with each discrete bonded residue or ion shown as a separate moiety. See the _chemical_formula_[] category description for rules for writing chemical formulae. In addition to the general formulae requirements, the following rules apply:
+(1) Moieties are separated by commas &apos;,&apos;.
+(2) The order of elements within a moiety follows general rule (5) in the _chemical_formula_[] category description.
+(3) Parentheses are not used within moieties but may surround a moiety. Parentheses may not be nested.
+(4) Charges should be placed at the end of the moiety. The charge &apos;+&apos; or &apos;-&apos; may be preceded by a numerical multiplier and should be separated from the last (element symbol + count) by a space. Pre- or post-multipliers may be used for individual moieties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalFormulaMoiety</IRI>
+        <Literal>data_chemical_formula_moiety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ChemicalSystematicName</IRI>
+        <Literal>IUPAC or Chemical Abstracts full name of the compound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalSystematicName</IRI>
+        <Literal>data_chemical_name_systematic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#DatabaseData</IRI>
+        <Literal>Data items in the DATABASE category record details about the database identifiers of the data block. These data items are assigned by database managers and should only appear in a CIF if they originate from that source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DatabaseData</IRI>
+        <Literal>data_database_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#DiffractionAmbientTemperature</IRI>
+        <Literal>The mean temperature in kelvins at which the intensities were measured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiffractionAmbientTemperature</IRI>
+        <Literal>data_diffrn_ambient_temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#DiffractionData</IRI>
+        <Literal>Data items in the DIFFRN category record details about the intensity measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiffractionData</IRI>
+        <Literal>data_diffrn_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#DiffractionRadiationProbe</IRI>
+        <Literal>The nature of the radiation used (i.e. the name of the subatomic particle or the region of the electromagnetic spectrum). It is strongly recommended that this information be given, so that the probe radiation can be simply determined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiffractionRadiationProbe</IRI>
+        <Literal>data_diffrn_radiation_probe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#DiffrationRadiationData</IRI>
+        <Literal>Data items in the DIFFRN_RADIATION category describe the radiation used in measuring the diffraction intensities, its collimation and monochromatization before the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DiffrationRadiationData</IRI>
+        <Literal>data_diffrn_radiation_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#DiffrationRadiationData</IRI>
+        <Literal>Post-sample treatment of the beam is described by data items in the DIFFRN_DETECTOR category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#NBSDatabaseCode</IRI>
+        <Literal>The codes are assigned by databases: Chemical Abstracts (CAS); Crystallography Open Database (COD); Cambridge Structural Database (organic and metal-organic compounds) (CSD); Inorganic Crystal Structure Database; Metals Data File (metal structures) (ICSD); NBS (NIST) Crystal Data Database (lattice parameters); Protein Data Bank (PDB); and the Powder Diffraction File (JCPDS/ICDD) (PDF).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NBSDatabaseCode</IRI>
+        <Literal>data_database_code_NBS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryCellSetting</IRI>
+        <Literal>The cell settings for this space-group symmetry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryCellSetting</IRI>
+        <Literal>data_symmetry_cell_setting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryData</IRI>
+        <Literal>Data items in the SYMMETRY category record details about the space-group symmetry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryData</IRI>
+        <Literal>data_symmetry_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryEquivPosSiteID</IRI>
+        <Literal>A code identifying each entry in the _symmetry_equiv_pos_as_xyz list. It is normally the sequence number of the entry in that list, and should be identified with the code &apos;n&apos; in  _geom_*_symmetry_ codes of the form &apos;n_klm&apos;.
+
+In order for the defaults to work correctly, the identity operation should have _space_group_symop_id or _symmetry_equiv_pos_site_id set to 1, and _space_group_symop_operation_xyz or _symmetry_equiv_pos_as_xyz set to x,y,z; i.e. the operation labelled 1 should be the identity operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryEquivPosSiteID</IRI>
+        <Literal>data_symmetry_equiv_pos_site_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryEquivPosXYZ</IRI>
+        <Literal>Symmetry-equivalent position in the &apos;xyz&apos; representation. Except for the space group P1, these data will be repeated in a loop. The format of the data item is as per International Tables for Crystallography Vol. A. (2002). All equivalent positions should be entered, including those for lattice centring and a centre of symmetry, if present.
+
+In order for the defaults to work correctly, the identity operation should have _space_group_symop_id or _symmetry_equiv_pos_site_id set to 1, and _space_group_symop_operation_xyz or _symmetry_equiv_pos_as_xyz set to x,y,z; i.e. the operation labelled 1 should be the identity operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryEquivPosXYZ</IRI>
+        <Literal>data_symmetry_equiv_pos_as_xyz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryEquivPosition</IRI>
+        <Literal>Data items in the SYMMETRY_EQUIV category list the symmetry-equivalent positions for the space group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryEquivPosition</IRI>
+        <Literal>data_symmetry_equiv_[]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryH-MSpaceGroupName</IRI>
+        <Literal>Hermann-Mauguin space-group symbol. Note that the Hermann-Mauguin symbol does not necessarily contain complete information about the symmetry and the space-group origin. If used, always supply the FULL symbol from International Tables for Crystallography Vol. A (2002) and indicate the origin and the setting if it is not implicit. If there is any doubt that the equivalent positions can be uniquely deduced from this symbol, specify the _symmetry_equiv_pos_as_xyz or *_Hall data items as well. Leave spaces between symbols referring to different axes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryH-MSpaceGroupName</IRI>
+        <Literal>data_symmetry_space_group_name_H-M</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SymmetryIntTableNumber</IRI>
+        <Literal>Space-group number from International Tables for Crystallography Vol. A (2002).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SymmetryIntTableNumber</IRI>
+        <Literal>data_symmetry_Int_Tables_number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#UnitCell</IRI>
+        <Literal>The smallest, regularly repeating material portion contained in a parallel piped from which a crystal is formed by parallel displacements in three dimensions.
+
+Notes:
+1. Unlike in the case of low molar mass substances, the unit cell of polymer crystals usually comprises only parts of the polymer molecules and the regularity of the periodic repetition may be imperfect.
+2. In the case of parallel-chain crystals, the chain axis is usually denoted by c or, sometimes, b.
+3. This definition applies to the so-called primitive unit cell. In practice, the effective unit cell may consist of more than one primitive unit cell.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#UnitCell</IRI>
+        <Literal>The International Union of Pure and Applied Chemistry (IUPAC)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnitCell</IRI>
+        <Literal>unit cell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#UnitCell</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.U06562</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,76 +1,78 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "comp": "http://stuchalk.github.io/scidata/ontology/computer.owl#",
-    "computer": {"@id": "sci:computer"},
-    "architecture": {
-        "@id": "comp:architecture",
-        "@type": "string"
-    },
-    "cpu": {"@id": "comp:centralProcessingUnit"},
-    "opmodes": {
-        "@id": "comp:cpuOpModes",
-        "@type": "string"
-    },
-    "count": {
-        "@id": "comp:cpuCount",
-        "@type": "integer"
-    },
-    "speed": {
-        "@id": "comp:cpuSpeed",
-        "@type": "string"
-    },
-    "vendorid": {
-        "@id": "comp:cpuVendorID",
-        "@type": "string"
-    },
-    "family": {
-        "@id": "comp:cpuFamily",
-        "@type": "string"
-    },
-    "model": {
-        "@id": "comp:cpuModelNumber",
-        "@type": "string"
-    },
-    "modelname": {
-        "@id": "comp:cpuModelName",
-        "@type": "string"
-    },
-    "byteorder": {
-        "@id": "comp:byteOrder",
-        "@type": "string"
-    },
-    "threadspercore": {
-        "@id": "comp:threadsPerCore",
-        "@type": "string"
-    },
-    "corespersocket": {
-        "@id": "comp:coresPerSocket",
-        "@type": "string"
-    },
-    "sockets": {
-        "@id": "comp:sockets",
-        "@type": "string"
-    },
-    "cache": {"@id": "comp:onboardCache"},
-    "l1datacache": {
-        "@id": "comp:cacheL1Data",
-        "@type": "string"
-    },
-    "l1instcache": {
-        "@id": "comp:cacheL1Instruction",
-        "@type": "string"
-    },
-    "l2cache": {
-        "@id": "comp:cacheL2",
-        "@type": "string"
-    },
-    "l3cache": {
-        "@id": "comp:cacheL3",
-        "@type": "string"
-    },
-    "ram": {
-        "@id": "comp:randomAccessMemory",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "comp": "http://stuchalk.github.io/scidata/ontology/computer.owl#",
+        "computer": {"@id": "sci:computer"},
+        "architecture": {
+            "@id": "comp:architecture",
+            "@type": "string"
+        },
+        "cpu": {"@id": "comp:centralProcessingUnit"},
+        "opmodes": {
+            "@id": "comp:cpuOpModes",
+            "@type": "string"
+        },
+        "count": {
+            "@id": "comp:cpuCount",
+            "@type": "integer"
+        },
+        "speed": {
+            "@id": "comp:cpuSpeed",
+            "@type": "string"
+        },
+        "vendorid": {
+            "@id": "comp:cpuVendorID",
+            "@type": "string"
+        },
+        "family": {
+            "@id": "comp:cpuFamily",
+            "@type": "string"
+        },
+        "model": {
+            "@id": "comp:cpuModelNumber",
+            "@type": "string"
+        },
+        "modelname": {
+            "@id": "comp:cpuModelName",
+            "@type": "string"
+        },
+        "byteorder": {
+            "@id": "comp:byteOrder",
+            "@type": "string"
+        },
+        "threadspercore": {
+            "@id": "comp:threadsPerCore",
+            "@type": "string"
+        },
+        "corespersocket": {
+            "@id": "comp:coresPerSocket",
+            "@type": "string"
+        },
+        "sockets": {
+            "@id": "comp:sockets",
+            "@type": "string"
+        },
+        "cache": {"@id": "comp:onboardCache"},
+        "l1datacache": {
+            "@id": "comp:cacheL1Data",
+            "@type": "string"
+        },
+        "l1instcache": {
+            "@id": "comp:cacheL1Instruction",
+            "@type": "string"
+        },
+        "l2cache": {
+            "@id": "comp:cacheL2",
+            "@type": "string"
+        },
+        "l3cache": {
+            "@id": "comp:cacheL3",
+            "@type": "string"
+        },
+        "ram": {
+            "@id": "comp:randomAccessMemory",
+            "@type": "string"
+        }
     }
-}}
+}

@@ -1,28 +1,30 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-    "sw": "http://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
-    "dc": "http://purl.org/dc/terms/",
-    "obo": "http://purl.obolibrary.org/obo/",
-    "software": {"@id": "sci:software"},
-    "version": {
-        "@id": "obo:IAO_0000129",
-        "@type": "string"
-    },
-    "os": {
-        "@id": "sw:operatingSystem",
-        "@type": "string"
-    },
-    "developer": {
-        "@id": "sw:developer",
-        "@type": "string"
-    },
-    "input": {
-        "@id": "sw:calcInputFile",
-        "@type": "string"
-    },
-    "output": {
-        "@id": "sw:calcOutputFile",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sw": "http://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
+        "dc": "http://purl.org/dc/terms/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "software": {"@id": "sci:software"},
+        "version": {
+            "@id": "obo:IAO_0000129",
+            "@type": "string"
+        },
+        "os": {
+            "@id": "sw:operatingSystem",
+            "@type": "string"
+        },
+        "developer": {
+            "@id": "sw:developer",
+            "@type": "string"
+        },
+        "input": {
+            "@id": "sw:calcInputFile",
+            "@type": "string"
+        },
+        "output": {
+            "@id": "sw:calcOutputFile",
+            "@type": "string"
+        }
     }
-}}
+}

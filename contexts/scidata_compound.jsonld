@@ -4,7 +4,7 @@
         "dc": "https://purl.org/dc/terms/",
         "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "http://edamontology.org/",
-        "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+        "ss": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owll#",
         "compound": {"@id": "sci:compound"},
         "element": {"@id": "sci:element"},
         "name": {

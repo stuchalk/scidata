@@ -16,14 +16,16 @@
     "@id": "",
     "uid": "scidata/example/ph",
     "title": "pH of cyanide standard",
-    "author": [{
-        "@id": "author/1/",
-        "@type": "dc:creator",
-        "name": "Stuart Chalk",
-        "organization": "University of North Florida (UNF)",
-        "email": "schalk@unf.edu",
-        "orcid": "0000-0002-0703-7776"
-    }],
+    "author": [
+        {
+            "@id": "author/1/",
+            "@type": "dc:creator",
+            "name": "Stuart Chalk",
+            "organization": "University of North Florida (UNF)",
+            "email": "schalk@unf.edu",
+            "orcid": "0000-0002-0703-7776"
+        }
+    ],
     "description": "Determination of the pH of a 3 ppm cyanide solution after complete reaction",
     "publisher": "Chalk Group, Department of Chemistry, University of North Florida",
     "version": 1,
@@ -77,17 +79,19 @@
                     "techniqueType": "cao:electrochemistry",
                     "technique": "cao:potentiometry",
                     "instrumentType": "Temperature compensated pH electrode",
-                    "settings": [{
-                        "@id": "setting/1/",
-                        "@type": "sci:setting",
-                        "quantity": "instrument feature",
-                        "property": "Temperature compensation",
-                        "text": {
-                            "@id": "setting/1/value/",
-                            "@type": "sci:textvalue",
-                            "text": "true"
+                    "settings": [
+                        {
+                            "@id": "setting/1/",
+                            "@type": "sci:setting",
+                            "quantity": "instrument feature",
+                            "property": "Temperature compensation",
+                            "text": {
+                                "@id": "setting/1/value/",
+                                "@type": "sci:textvalue",
+                                "text": "true"
+                            }
                         }
-                    }]
+                    ]
                 },
                 {
                     "@id": "resource/1/",
@@ -123,18 +127,20 @@
                             "@type": "sci:chemical",
                             "source": "compound/1/",
                             "role": "chm:analyte",
-                            "properties": [{
-                                "@id": "substance/1/constituent/1/property/1/",
-                                "@type": "prop:concentrationMassVolume",
-                                "quantity": "mass of substance per volume",
-                                "property": "Concentration (w/v)",
-                                "value": {
-                                    "@id": "substance/1/constituent/1/property/1/value/",
-                                    "@type": "sci:value",
-                                    "number": 2.99,
-                                    "unitref": "qudt:PpmWeightVolume"
+                            "properties": [
+                                {
+                                    "@id": "substance/1/constituent/1/property/1/",
+                                    "@type": "prop:concentrationMassVolume",
+                                    "quantity": "mass of substance per volume",
+                                    "property": "Concentration (w/v)",
+                                    "value": {
+                                        "@id": "substance/1/constituent/1/property/1/value/",
+                                        "@type": "sci:value",
+                                        "number": 2.99,
+                                        "unitref": "qudt:PpmWeightVolume"
+                                    }
                                 }
-                            }]
+                            ]
                         },
                         {
                             "@id": "substance/1/constituent/2/",
@@ -167,56 +173,58 @@
                             "role": "chm:solvent"
                         }
                     ],
-                    "properties": [{
-                        "@id": "mixture/1/property/1/",
-                        "@type": "prop:volume",
-                        "quantity": "volume",
-                        "property": "Volume of solution",
-                        "value": {
-                            "@id": "mixture/1/property/1/value/",
-                            "@type": "sci:value",
-                            "number": 100,
-                            "unitref": "qudt:MilliLiter"
+                    "properties": [
+                        {
+                            "@id": "mixture/1/property/1/",
+                            "@type": "prop:volume",
+                            "quantity": "volume",
+                            "property": "Volume of solution",
+                            "value": {
+                                "@id": "mixture/1/property/1/value/",
+                                "@type": "sci:value",
+                                "number": 100,
+                                "unitref": "qudt:MilliLiter"
+                            }
                         }
-                    }]
+                    ]
                 },
                 {
-                    "@id": "compound/1",
+                    "@id": "compound/1/",
                     "@type": "sci:compound",
                     "name": "cyanide ion",
                     "inchi": "InChI=1S/CN/c1-2/q-1",
                     "chebi": "obo:CHEBI_17514"
                 },
                 {
-                    "@id": "compound/2",
+                    "@id": "compound/2/",
                     "@type": "sci:compound",
                     "name": "phenolphthlin",
                     "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H",
                     "chebi": "obo:CHEBI_34915"
                 },
                 {
-                    "@id": "compound/3",
+                    "@id": "compound/3/",
                     "@type": "sci:compound",
                     "name": "copper(II) ion",
                     "inchi": "InChI=1S/Cu/q+2",
                     "chebi": "obo:CHEBI_29036"
                 },
                 {
-                    "@id": "compound/4",
+                    "@id": "compound/4/",
                     "@type": "sci:compound",
                     "name": "tetraborate ion",
                     "inchi": "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2",
                     "chebi": "obo:CHEBI_38889"
                 },
                 {
-                    "@id": "compound/5",
+                    "@id": "compound/5/",
                     "@type": "sci:compound",
                     "name": "ethanol",
                     "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3",
                     "chebi": "obo:CHEBI_16236"
                 },
                 {
-                    "@id": "compound/6",
+                    "@id": "compound/6/",
                     "@type": "sci:compound",
                     "name": "water",
                     "inchi": "InChI=1S/H2O/h1H2",
@@ -274,12 +282,14 @@
             ]
         }
     },
-    "references": [{
-        "@id": "reference/1/",
-        "@type": "dc:source",
-        "citation": "Chalk Research Group http://chalk.coas.unf.edu",
-        "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
-    }],
+    "references": [
+        {
+            "@id": "reference/1/",
+            "@type": "dc:source",
+            "citation": "Chalk Research Group http://chalk.coas.unf.edu",
+            "url": "http://stuchalk.github.io/scidata/examples/ph.jsonld"
+        }
+    ],
     "rights": {
         "@id": "rights",
         "@type": "dc:rights",
