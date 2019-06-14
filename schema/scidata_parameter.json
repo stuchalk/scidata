@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Parameter Schema",
+  "description": "JSON schema for a parameter",
+  "type": "object",
+  "definitions": {
+    "parameterValue_def": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "name": { "type": "string" },
+        "scope": { "$ref": "string" },
+        "source": { "type": "string" },
+        "quantity": { "type": "string" },
+        "quantityref": { "type": "string" },
+        "property": { "type": "string" },
+        "propertyref": { "type": "string" },
+        "conditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "value": {
+          "oneOf": [
+            { "$ref": "value.json#/properties/numericvalue" },
+            { "$ref": "value.json#/properties/textstring" }
+          ]
+        }
+      }
+    },
+    "parameterArray_def": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "name": { "type": "string" },
+        "scope": { "$ref": "string" },
+        "source": { "type": "string" },
+        "quantity": { "type": "string" },
+        "quantityref": { "type": "string" },
+        "property": { "type": "string" },
+        "propertyref": { "type": "string" },
+        "conditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "valuearray": {
+          "oneOf": [
+            { "$ref": "value.json#/properties/numericvaluearray" },
+            { "$ref": "value.json#/properties/textstringarray" }
+          ]
+        }
+      }
+    }
+  },
+  "properties": {
+    "@context": {
+      "$ref": "context.json#/@context",
+      "default": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "default": ""
+    },
+    "scope": { "type": "string" },
+    "source": { "type": "string" },
+    "quantity": { "type": "string" },
+    "quantityref": { "type": "string" },
+    "property": { "type": "string" },
+    "propertyref": { "type": "string" },
+    "parameter": { "$ref": "#/definitions/parameterValue_def" },
+    "parameterArray":  { "$ref": "#/definitions/parameterArray_def" }
+
+  }
+}
