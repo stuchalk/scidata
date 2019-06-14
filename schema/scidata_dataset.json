@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dataset Schema",
+  "description": "JSON schema for scientific datasets",
+  "type": "object",
+  "definitions": {
+    "dataSeries_def": {
+      "type": "object",
+      "id": "dataGroupID",
+      "properties": {
+        "@id": { "type": "string" },
+        "type": { "type": "string" },
+        "axis": { "type": "string" },
+        "axisLabel": { "type": "string" },
+        "parameterArray": {
+          "$ref": "parameter.json#/properties/parameterArray"
+        },
+        "datapoints": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "dataGroup_def": {
+      "type": "object",
+      "id": "dataGroupID",
+      "properties": {
+        "@id": { "type": "string" },
+        "name": { "type": "string" },
+        "source": { "type": "string" },
+        "scope": { "type": "string" },
+        "attributes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "datapoint": {
+          "type": "array",
+          "items": { "$ref": "parameter.json#/properties/parameter" }
+        },
+        "dataseries": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/dataSeries_def" }
+        },
+        "datagroup": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "datapoints": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "dataserieses": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "datagroups": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "@context": {
+      "$ref": "context.json#/@context",
+      "default": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "default": ""
+    },
+    "name": { "type": "string" },
+    "source": { "type": "string" },
+    "scope": { "type": "string" },
+    "attributes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "datapoint": {
+      "type": "array",
+      "items": { "$ref": "parameter.json#/properties/parameter" }
+    },
+    "dataseries": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/dataSeries_def" }
+    },
+    "datagroup": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/dataGroup_def" }
+    }
+  }
+}
