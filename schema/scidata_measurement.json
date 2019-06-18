@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Measurement Schema",
+  "description": "JSON schema for a measurement",
+  "type": "object",
+  "definitions": {
+    "measurement_def": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "techniqueType": { "type": "string" },
+        "technique": { "type": "string" },
+        "instrumentType": { "type": "string" },
+        "instrument": { "type": "string" },
+        "vendor": { "type": "string" },
+        "settings": {
+          "type": "array",
+          "items": { "$ref": "parameter.json#/properties/parameter" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "@context": {
+      "$ref": "context.json#/@context",
+      "default": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld"
+      ]
+    },
+    "@id": { "type": "string" },
+    "techniqueType": { "type": "string" },
+    "technique": { "type": "string" },
+    "instrumentType": { "type": "string" },
+    "instrument": { "type": "string" },
+    "vendor": { "type": "string" },
+    "settings": {
+      "type": "array",
+      "items": { "$ref": "parameter.json#/properties/parameter" }
+    }
+  }
+}
