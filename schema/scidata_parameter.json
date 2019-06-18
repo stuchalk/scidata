@@ -9,7 +9,7 @@
       "properties": {
         "@id": { "type": "string" },
         "name": { "type": "string" },
-        "scope": { "$ref": "string" },
+        "scope": { "type": "string" },
         "source": { "type": "string" },
         "quantity": { "type": "string" },
         "quantityref": { "type": "string" },
