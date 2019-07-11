@@ -39,6 +39,10 @@
                 "@id": "sci:errorType",
                 "@type": "string"
             },
+            "errornote": {
+                "@id": "sci:errorNote",
+                "@type": "string"
+            },
             "text": {
                 "@id": "sci:text",
                 "@type": "string"

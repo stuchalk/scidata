@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.iucr.org/resources/cif.owl"
      versionIRI="https://www.iucr.org/resources/cif.owl/1.0.0">
-    <Prefix name="" IRI="https://www.iucr.org/resources/cif.owl#"/>
+    <Prefix name="" IRI="https://www.iucr.org/resources/cif.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -147,17 +147,6 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#UnitCell"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#CellAngleAlpha"/>
-            <Class IRI="#CellAngleBeta"/>
-            <Class IRI="#CellAngleGamma"/>
-            <Class IRI="#CellLengthA"/>
-            <Class IRI="#CellLengthB"/>
-            <Class IRI="#CellLengthC"/>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#UnitCell"/>
         <ObjectIntersectionOf>

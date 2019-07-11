@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://stuchalk.github.io/scidata/ontology/scidata.owl">
-    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl"/>
+    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="chm" IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -211,6 +211,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#errorArray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#errorNote"/>
     </Declaration>
     <Declaration>
         <Class IRI="#errorType"/>
@@ -756,6 +759,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#errorArray"/>
+        <Class IRI="#dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#errorNote"/>
         <Class IRI="#dataset"/>
     </SubClassOf>
     <SubClassOf>
@@ -2339,6 +2346,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#errorArray</IRI>
         <Literal>error array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#errorNote</IRI>
+        <Literal xml:lang="en">A contextual annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#errorNote</IRI>
+        <Literal xml:lang="en">error note</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>

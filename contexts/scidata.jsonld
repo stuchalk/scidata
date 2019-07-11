@@ -94,7 +94,7 @@
                 "@type": "anyURI"
             },
             "identifiers": {
-            	"@id": "dc:references",
+                "@id": "dc:references",
                 "@type": "@id"
             },
             "toc": {
