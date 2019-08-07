@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://stuchalk.github.io/scidata/ontology/solubility.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://stuchalk.github.io/scidata/ontology/solubility.owl">
+    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/solubility.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en">IUPAC Division of Analytical Chemisty</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en">IUPAC Subcommittee on Solubility and Equilibrium Data</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#SO_000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SO_000024"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/OBI_0002110"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#SO_000004"/>
+        <Class IRI="#SO_000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO_000005"/>
+        <Class IRI="#SO_000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO_000010"/>
+        <Class IRI="#SO_000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO_000011"/>
+        <Class IRI="#SO_000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO_000023"/>
+        <Class IRI="#SO_000022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SO_000024"/>
+        <Class IRI="#SO_000023"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000028</IRI>
+        <Literal xml:lang="en">symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
+        <Literal xml:lang="en">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0002110</IRI>
+        <Literal xml:lang="en">doi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <IRI>#SO_000001</IRI>
+        <Literal xml:lang="en">s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000001</IRI>
+        <Literal xml:lang="en">Analytical composition of a mixture or solution which is saturated with one of the components of the mixture or solution, expressed in terms of the proportion of the designated component in the designated mixture or solution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/OBI_0002110"/>
+        <IRI>#SO_000001</IRI>
+        <Literal xml:lang="en">10.1351/pac200880020233</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <IRI>#SO_000001</IRI>
+        <Literal xml:lang="en">Glossary of terms related to solubility (IUPAC Recommendations 2008), Pure and Applied Chemistry, Volume 80, Issue 2, Pages 233–276</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000001</IRI>
+        <Literal xml:lang="en">Solubility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <IRI>#SO_000002</IRI>
+        <Literal xml:lang="en">α</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000002</IRI>
+        <Literal xml:lang="en">Volume Vg of an amount nlB of a gas dissolved at a given standard temperature T⦵ (usually 273.15 K) and given standard (partial) pressure p⦵B (1 bar = 0.1 MPa or, in older literature, 1 atm) divided by the volume of the solvent Vl containing an amount nA of solvent at temperature T and the given total pressure p⦵.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/OBI_0002110"/>
+        <IRI>#SO_000002</IRI>
+        <Literal xml:lang="en">10.1351/pac200880020233</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <IRI>#SO_000002</IRI>
+        <Literal xml:lang="en">Glossary of terms related to solubility (IUPAC Recommendations 2008), Pure and Applied Chemistry, Volume 80, Issue 2, Pages 233–276</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000002</IRI>
+        <Literal xml:lang="en">Bunsen Coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000003</IRI>
+        <Literal xml:lang="en">In a binary system, point with coordinates critical solution temperature (CST) or critical solution pressure (CSP) and critical composition on a temperature-composition or pressure-composition phase diagram at which the distinction between coexistent phases disappears.
+
+In ternary and higher-order systems, composition below or above which, on a ternary or higher composition phase diagram at constant temperature and pressure, the distinction between coexistent phases disappears, and tie-lines between coexisting phases become tangential to the coexistence curve.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000003</IRI>
+        <Literal xml:lang="en">Critical Solution Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000004</IRI>
+        <Literal xml:lang="en">Critical Solution Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000005</IRI>
+        <Literal xml:lang="en">Critical Solution Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000006</IRI>
+        <Literal xml:lang="en">Mass of one constituent A divided by the mass of a second constituent B in the same system.
+
+ζA, B = mA/mB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000006</IRI>
+        <Literal xml:lang="en">Mass Ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <IRI>#SO_000007</IRI>
+        <Literal xml:lang="en">f^∞</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000007</IRI>
+        <Literal xml:lang="en">For a substance B, activity coefficient fB extrapolated to infinite dilution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000007</IRI>
+        <Literal xml:lang="en">Activity Coefficent at Infinite Dilution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000008</IRI>
+        <Literal xml:lang="en">Atmospheric chemists often define the Henry solubility as
+
+H c p = c a / p {\displaystyle H^{cp}=c_{\text{a}}/p} {\displaystyle H^{cp}=c_{\text{a}}/p}.[1]
+
+Here c a {\displaystyle c_{\text{a}}} {\displaystyle c_{\text{a}}} is the concentration of a species in the aqueous phase, and p {\displaystyle p} p is the partial pressure of that species in the gas phase under equilibrium conditions.[citation needed]
+
+The SI unit for H c p {\displaystyle H^{cp}} H^{cp} is mol/(m3 Pa); however, often the unit M/atm is used, since c a {\displaystyle c_{\text{a}}} {\displaystyle c_{\text{a}}} is usually expressed in M (1 M = 1 mol/dm3) and p {\displaystyle p} p in atm (1 atm = 101325 Pa).
+
+https://en.wikipedia.org/wiki/Henry&apos;s_law#Henry&apos;s_law_solubility_constants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000008</IRI>
+        <Literal xml:lang="en">This is a placeholder for a formal IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000008</IRI>
+        <Literal xml:lang="en">Henry Solubility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000009</IRI>
+        <Literal xml:lang="en">Henry Volatility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000010</IRI>
+        <Literal xml:lang="en">The Henry volatility can also be expressed as the dimensionless ratio between the gas-phase concentration c g {\displaystyle c_{\text{g}}} {\displaystyle c_{\text{g}}} of a species and its aqueous-phase concentration c a {\displaystyle c_{\text{a}}} {\displaystyle c_{\text{a}}}:
+
+K H c c = c g / c a = 1 / H c c . {\displaystyle K_{\text{H}}^{cc}=c_{\text{g}}/c_{\text{a}}=1/H^{cc}.} {\displaystyle K_{\text{H}}^{cc}=c_{\text{g}}/c_{\text{a}}=1/H^{cc}.}
+
+In chemical engineering and environmental chemistry, this dimensionless constant is often called the air–water partitioning coefficient K AW {\displaystyle K_{\text{AW}}} {\displaystyle K_{\text{AW}}}. 
+
+https://en.wikipedia.org/wiki/Henry&apos;s_law#Henry&apos;s_law_volatility_constants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000010</IRI>
+        <Literal xml:lang="en">This is a placeholder for an IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000010</IRI>
+        <Literal xml:lang="en">Henry Volatility (gas/liq. conc. ratio)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000011</IRI>
+        <Literal xml:lang="en">A common way to define a Henry volatility is dividing the partial pressure by the aqueous-phase concentration: 
+
+K H p c = p / c   = 1 / H c p . {\displaystyle K_{\text{H}}^{pc}=p/c_{\text{a}}=1/H^{cp}.} {\displaystyle K_{\text{H}}^{pc}=p/c_{\text{a}}=1/H^{cp}.}
+
+The SI unit for K H p c {\displaystyle K_{\text{H}}^{pc}} {\displaystyle K_{\text{H}}^{pc}} is Pa m3/mol. 
+
+https://en.wikipedia.org/wiki/Henry&apos;s_law#Henry&apos;s_law_volatility_constants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000011</IRI>
+        <Literal xml:lang="en">Thisis placeholder for IUPAC defintion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000011</IRI>
+        <Literal xml:lang="en">Henry Volatility (press/conc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000012</IRI>
+        <Literal xml:lang="en">Concentration unit based on reporting the amount of substance 1 (moles) per 100 g mass of substance 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000012</IRI>
+        <Literal xml:lang="en">This is an adhoc definition by SJC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000012</IRI>
+        <Literal xml:lang="en">Amount-of-substance per 100 grams</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000013</IRI>
+        <Literal xml:lang="en">Amount of one constituent divided by the amount of a second constituent in the same system. For constituents 1 and 2,
+r_12 = n1/n2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000013</IRI>
+        <Literal xml:lang="en">Mole Ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <IRI>#SO_000014</IRI>
+        <Literal xml:lang="en">L</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000014</IRI>
+        <Literal xml:lang="en">Volume Vg of an amount nlB of a dissolved gas calculated at given temperature T and pressure p divided by the volume of the dissolving liquid of volume Vl and containing an amount nA of solvent at the same temperature T and pressure p.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000014</IRI>
+        <Literal xml:lang="en">Ostwald Coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000015</IRI>
+        <Literal xml:lang="en">The volume of a constituent A that dissolve per volume of constituent B.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000015</IRI>
+        <Literal xml:lang="en">This is a placeholder for an IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000015</IRI>
+        <Literal xml:lang="en">Volume Ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000016</IRI>
+        <Literal xml:lang="en">Volume of Water Needed to Dissolve One Gram of Solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000016</IRI>
+        <Literal xml:lang="en">In paper https://doi.org/10.1093/oxfordjournals.aje.a117867</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000016</IRI>
+        <Literal xml:lang="en">Volume per Mass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000017</IRI>
+        <Literal xml:lang="en">Water activity or aw is the partial vapor pressure of water in a substance divided by the standard state partial vapor pressure of water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000017</IRI>
+        <Literal xml:lang="en">Placeholder for IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000017</IRI>
+        <Literal xml:lang="en">Water Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <IRI>#SO_000018</IRI>
+        <Literal xml:lang="en">α</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000018</IRI>
+        <Literal xml:lang="en">Ratio of the constituent concentration in the vapor phase divied by the constituent concentration in the liquid phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000018</IRI>
+        <Literal xml:lang="en">Placeholder for IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000018</IRI>
+        <Literal xml:lang="en">Separation Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000019</IRI>
+        <Literal xml:lang="en">?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000019</IRI>
+        <Literal xml:lang="en">Placeholder for IUPAC definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000019</IRI>
+        <Literal xml:lang="en">Mass Fraction per Molar Mass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000020</IRI>
+        <Literal xml:lang="en">The ratio of distribution coefficients of two components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SO_000020</IRI>
+        <Literal xml:lang="en">Placeholder for IUPAC definition.  Context is solubility, see SDS-77 page 72 (right side).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000020</IRI>
+        <Literal xml:lang="en">Selectvitiy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000022</IRI>
+        <Literal xml:lang="en">Isothermal reversible reaction of a liquid phase l which is transformed into two (or more) different solid phases α and β during the cooling of a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000022</IRI>
+        <Literal xml:lang="en">Eutectic Reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000023</IRI>
+        <Literal xml:lang="en">The set of conditions at which a eutectic reaction occurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000023</IRI>
+        <Literal xml:lang="en">Eutectic Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SO_000024</IRI>
+        <Literal xml:lang="en">The temperature at which a eutectic mixture undergoes transition from liquid to a mixture of two solids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SO_000024</IRI>
+        <Literal xml:lang="en">Eutectic Temperature</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
