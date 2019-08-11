@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "http://edamontology.org/",
         "ss": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owll#",
         "compound": {"@id": "sci:compound"},

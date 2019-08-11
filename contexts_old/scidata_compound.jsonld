@@ -1,7 +1,7 @@
 {"@context": [
     {
         "edam": "http://edamontology.org/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#"
     },
     {

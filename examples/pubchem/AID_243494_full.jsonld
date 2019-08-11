@@ -17,7 +17,7 @@
     "publisher": "ChEMBL",
     "version": 10,
     "keywords": ["bioassay"],
-    "permalink": "http://stuchalk.github.io/scidata/example/pubchem/AID_243494_full.jsonld",
+    "permalink": "https://stuchalk.github.io/scidata/example/pubchem/AID_243494_full.jsonld",
     "related": [
         "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/243494",
         "http://www.ncbi.nlm.nih.gov/pubmed/15955699",

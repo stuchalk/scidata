@@ -4,7 +4,7 @@
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "dc": "http://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "sub": "http://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
+            "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
             "substance": {"@id": "sub:substance"},
             "name": {
                 "@id": "dc:title",

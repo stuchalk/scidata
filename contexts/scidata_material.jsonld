@@ -3,8 +3,8 @@
         {
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "dc": "http://purl.org/dc/terms/",
-            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "mat": "http://stuchalk.github.io/scidata/ontology/scidata_material.owl#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "mat": "https://stuchalk.github.io/scidata/ontology/scidata_material.owl#",
             "material": {"@id": "sci:material"},
             "materialType": {
                 "@id": "mat:materialType",

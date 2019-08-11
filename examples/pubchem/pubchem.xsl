@@ -30,8 +30,8 @@
         "@context": [
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
-                "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-                "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
+                "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+                "tgt": "https://stuchalk.github.io/scidata/ontology/target/target.owl#",
                 "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
                 "obo": "http://purl.obolibrary.org/obo/",
                 "dc": "http://purl.org/dc/terms/",
@@ -49,7 +49,7 @@
         "publisher": "<xsl:value-of select="$desc//pc:PC-DBTracking_name"/>",
     	"version": <xsl:value-of select="$version"/>,
         "keywords": ["bioassay"],
-        "permalink": "http://stuchalk.github.io/scidata/example/pubchem/AID_<xsl:value-of select="$aid"/>_full.jsonld",
+        "permalink": "https://stuchalk.github.io/scidata/example/pubchem/AID_<xsl:value-of select="$aid"/>_full.jsonld",
         "related": [
         "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/<xsl:value-of select="$aid"/>",
     	<xsl:if test="$desc//pc:PC-XRefData">

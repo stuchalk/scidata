@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://stuchalk.github.io/scidata/ontology/scidata.owl"
+     xml:base="https://stuchalk.github.io/scidata/ontology/scidata.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://stuchalk.github.io/scidata/ontology/scidata.owl">
-    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="chm" IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
+    <Prefix name="chm" IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sub" IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
+    <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="cite" IRI="http://purl.org/spar/datacite/"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
-    <Prefix name="prop" IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl"/>
+    <Prefix name="prop" IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Prefix name="cheminf" IRI="http://semanticscience.org/resource/"/>
@@ -34,7 +34,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <Literal xml:lang="en">The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to http://stuchalk.github.io/scidata.</Literal>
+        <Literal xml:lang="en">The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to https://stuchalk.github.io/scidata.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
@@ -46,7 +46,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://stuchalk.github.io/scidata</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
@@ -126,10 +126,10 @@
         <Class abbreviatedIRI="cheminf:SIO_000999"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
     </Declaration>
     <Declaration>
         <Class IRI="#axisLabel"/>
@@ -345,7 +345,7 @@
         <Class IRI="#unitSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
@@ -650,11 +650,11 @@
         <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
         <Class IRI="#scientificData"/>
     </SubClassOf>
     <SubClassOf>
@@ -938,7 +938,7 @@
         <Class IRI="#unitOfMeasure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
@@ -1888,37 +1888,37 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>manufactured chemical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>chemical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>chemical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
         <Literal>Any property that can be characterized or measured</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
         <Literal>property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
         <Literal>property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2460,7 +2460,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>#metadata</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://stuchalk.github.io/scidata/</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://stuchalk.github.io/scidata/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2695,7 +2695,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#scidataFramework</IRI>
-        <Literal>A datatype where the contenxt of the file use the SciData framework (http://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
+        <Literal>A datatype where the contenxt of the file use the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3059,32 +3059,32 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. Physical properties such as density, refractive index, electric conductivity, melting point etc. characterize the chemical substance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>chemical substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>Also: A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <IRI>http://dx.doi.org/10.1351/goldbook.C01039</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

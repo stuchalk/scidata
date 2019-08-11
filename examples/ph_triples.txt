@@ -1,184 +1,184 @@
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.obolibrary.org/obo/IAO_0000129> "1" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/description> "Determination of the pH of a 3 ppm cyanide solution after complete reaction" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/identifier> "scidata/example/ph" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/publisher> "Chalk Group, Department of Chemistry, University of North Florida" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/nmr.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/ri.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/scf.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "Cyanide" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "Example Data" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "pH" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/title> "pH of cyanide standard" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://schema.org/url> "http://stuchalk.github.io/scidata/examples/ph.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasAuthor> <http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasRights> <http://stuchalk.github.io/scidata/examples/ph.jsonld/rights> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScientificData> <http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasTableOfContents> <http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Stuart Chalk" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://purl.org/dc/terms/identifier> "0000-0002-0703-7776" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/creator> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://xmlns.com/foaf/0.1/mbox> "schalk@unf.edu" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://xmlns.com/foaf/0.1/organization> "University of North Florida (UNF)" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_17514> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://purl.obolibrary.org/obo/IAO_0000302> "cyanide ion" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/CN/c1-2/q-1" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_34915> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://purl.obolibrary.org/obo/IAO_0000302> "phenolphthlin" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_29036> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://purl.obolibrary.org/obo/IAO_0000302> "copper(II) ion" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/Cu/q+2" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_38889> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://purl.obolibrary.org/obo/IAO_0000302> "tetraborate ion" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_16236> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://purl.obolibrary.org/obo/IAO_0000302> "ethanol" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_15377> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://purl.obolibrary.org/obo/IAO_0000302> "water" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/H2O/h1H2" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.28E1"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeCelcius> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Solution temperature" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> <http://stuchalk.github.io/scidata/ontology/property/property.owl#temperature> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "temperature" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "pH" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> <http://stuchalk.github.io/scidata/ontology/property/property.owl#pH> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "p-function negative log of value" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.003E1"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Observation" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "annotation" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#textString> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://purl.org/dc/terms/language> "en-us" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#text> "The solution was clear, no reagent precipitation was observed." .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#textType> "plain" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#textvalue> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ph.jsonld/solution/1> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataset> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000011> <http://champ-project.org/images/ontology/cao.owl#potentiometry> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000137> "Temperature compensated pH electrode" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000218> <http://champ-project.org/images/ontology/cao.owl#electrochemistry> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSetting> <http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://champ-project.org/images/ontology/cao.owl#CAO_000152> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "experimental" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <http://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#methodology> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Volume of solution" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "volume" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/property/property.owl#volume> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.0E2"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#MilliLiter> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> <http://purl.org/dc/terms/description> "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#procedure> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://purl.org/dc/terms/bibliographicCitation> "Chalk Research Group http://chalk.coas.unf.edu" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://schema.org/url> <http://stuchalk.github.io/scidata/examples/ph.jsonld> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/source> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/sep_00088> "Fisher Scientific" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/sep_0016> "13-620-530A" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "instrument" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#resource> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/rights> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/rights> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataFormat> "datapoint" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "property value" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataset> <http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodology> <http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystem> <http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "pH" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#scientificData> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Temperature compensation" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "instrument feature" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#text> <http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#setting> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#text> "true" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#textvalue> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://purl.org/dc/terms/title> "3 ppm cyanide standard solution" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#homogeneousSolution> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasStateOfAggregation> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#aq> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#phase> "sub:liquid" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#analyte> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Concentration (w/v)" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "mass of substance per volume" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/property/property.owl#concentrationMassVolume> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.99E0"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PpmWeightVolume> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#reagent> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#reagent> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#buffer> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#discipline> "chemistry" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#subdiscipline> "analytical chemistry" .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#system> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/dataset/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ph.jsonld/system/> .
-<http://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/tableOfContents> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.obolibrary.org/obo/IAO_0000129> "1" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/description> "Determination of the pH of a 3 ppm cyanide solution after complete reaction" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/identifier> "scidata/example/ph" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/publisher> "Chalk Group, Department of Chemistry, University of North Florida" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/nmr.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/ri.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/scf.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "Cyanide" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "Example Data" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/subject> "pH" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://purl.org/dc/terms/title> "pH of cyanide standard" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <http://schema.org/url> "https://stuchalk.github.io/scidata/examples/ph.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasAuthor> <https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasRights> <https://stuchalk.github.io/scidata/examples/ph.jsonld/rights> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScientificData> <https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasTableOfContents> <https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Stuart Chalk" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://purl.org/dc/terms/identifier> "0000-0002-0703-7776" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/creator> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://xmlns.com/foaf/0.1/mbox> "schalk@unf.edu" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/author/1/> <http://xmlns.com/foaf/0.1/organization> "University of North Florida (UNF)" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_17514> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://purl.obolibrary.org/obo/IAO_0000302> "cyanide ion" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/CN/c1-2/q-1" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_34915> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://purl.obolibrary.org/obo/IAO_0000302> "phenolphthlin" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_29036> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://purl.obolibrary.org/obo/IAO_0000302> "copper(II) ion" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/Cu/q+2" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_38889> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://purl.obolibrary.org/obo/IAO_0000302> "tetraborate ion" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/B4H4O9/c5-1-9-3(7)11-2(6)12-4(8,10-1)13-3/h5-8H/q-2" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_16236> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://purl.obolibrary.org/obo/IAO_0000302> "ethanol" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://edamontology.org/data_1174> <http://purl.obolibrary.org/obo/CHEBI_15377> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://purl.obolibrary.org/obo/IAO_0000302> "water" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000058> "InChI=1S/H2O/h1H2" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.28E1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeCelcius> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/value> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Solution temperature" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> <https://stuchalk.github.io/scidata/ontology/property/property.owl#temperature> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "temperature" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "pH" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> <https://stuchalk.github.io/scidata/ontology/property/property.owl#pH> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "p-function negative log of value" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.003E1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Observation" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "annotation" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#textString> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://purl.org/dc/terms/language> "en-us" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#text> "The solution was clear, no reagent precipitation was observed." .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#textType> "plain" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#textvalue> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ph.jsonld/solution/1> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataset> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000011> <http://champ-project.org/images/ontology/cao.owl#potentiometry> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000137> "Temperature compensated pH electrode" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000218> <http://champ-project.org/images/ontology/cao.owl#electrochemistry> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSetting> <https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://champ-project.org/images/ontology/cao.owl#CAO_000152> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "experimental" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <https://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#methodology> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Volume of solution" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "volume" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/property/property.owl#volume> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.0E2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#MilliLiter> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> <http://purl.org/dc/terms/description> "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#procedure> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://purl.org/dc/terms/bibliographicCitation> "Chalk Research Group http://chalk.coas.unf.edu" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://schema.org/url> <https://stuchalk.github.io/scidata/examples/ph.jsonld> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/reference/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/source> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/sep_00088> "Fisher Scientific" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://purl.obolibrary.org/obo/sep_0016> "13-620-530A" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "instrument" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/resource/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#resource> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/rights> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/rights> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataFormat> "datapoint" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "property value" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataset> <https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodology> <https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystem> <https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "pH" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/scidata/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#scientificData> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Temperature compensation" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "instrument feature" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#text> <https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#setting> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#text> "true" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/setting/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#textvalue> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://purl.org/dc/terms/title> "3 ppm cyanide standard solution" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/mixture/1/property/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#homogeneousSolution> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasStateOfAggregation> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#aq> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#phase> "sub:liquid" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#analyte> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Concentration (w/v)" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "mass of substance per volume" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/property/property.owl#concentrationMassVolume> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.99E0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PpmWeightVolume> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#reagent> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#reagent> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/3/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#buffer> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/4/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/5/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/constituent/6/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#discipline> "chemistry" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#subdiscipline> "analytical chemistry" .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#system> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/2/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/3/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/4/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/5/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/compound/6/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/condition/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/datapoint/2/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/dataset/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/methodology/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/procedure/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ph.jsonld/system/> .
+<https://stuchalk.github.io/scidata/examples/ph.jsonld/toc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/tableOfContents> .

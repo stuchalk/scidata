@@ -2,8 +2,8 @@
     {
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "chm": "http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#"
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

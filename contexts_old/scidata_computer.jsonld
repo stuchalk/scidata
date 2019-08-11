@@ -1,7 +1,7 @@
 {"@context": [
     {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "comp": "http://stuchalk.github.io/scidata/ontology/computer.owl#"
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "comp": "https://stuchalk.github.io/scidata/ontology/computer.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

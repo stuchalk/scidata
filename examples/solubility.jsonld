@@ -2,8 +2,8 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
-            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "meas": "http://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "meas": "https://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "dc": "http://purl.org/dc/terms/",
             "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",

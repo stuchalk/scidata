@@ -1,7 +1,7 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
     {
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {

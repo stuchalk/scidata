@@ -3,7 +3,7 @@
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "wkt": "http://en.wiktionary.org/wiki/",
         "unit": {"@id": "sci:unitOfMeasure"},
         "unitstr": {

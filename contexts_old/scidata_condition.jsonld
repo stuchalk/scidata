@@ -1,5 +1,5 @@
 {"@context": [
-    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+    {"sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "condition": {

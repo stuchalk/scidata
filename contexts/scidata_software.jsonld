@@ -1,8 +1,8 @@
 {
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "sw": "http://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sw": "https://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "software": {"@id": "sci:software"},

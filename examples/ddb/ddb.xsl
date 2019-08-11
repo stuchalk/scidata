@@ -30,7 +30,7 @@
         "@context": [
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
-                "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+                "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
                 "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
                 "obo": "http://purl.obolibrary.org/obo/",
                 "dc": "http://purl.org/dc/terms/",
@@ -45,7 +45,7 @@
 		"description": "<xsl:value-of select="$meta[@name='description']/@content"/>",
 		"publisher": "<xsl:value-of select="$meta[@name='author']/@content"/>",
 		"keywords": ["DDB","<xsl:value-of select="$id"/>","<xsl:value-of select="$prop"/>"],
-		"permalink": "http://stuchalk.github.io/scidata/example/ddb/ddb.jsonld",
+		"permalink": "https://stuchalk.github.io/scidata/example/ddb/ddb.jsonld",
 		"related": [
 		"http://www.ddbst.com/en/EED/PCP/<xsl:value-of select="replace($file,'html','php')"/>"
 		],

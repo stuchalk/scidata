@@ -130,7 +130,7 @@
         "@context": [
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
-                "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+                "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
                 "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
                 "obo": "http://purl.obolibrary.org/obo/",
                 "dc": "http://purl.org/dc/terms/",
@@ -158,7 +158,7 @@
 	    ],
 	    "version": <xsl:value-of select="$vars/revision"/>,
 	    "keywords": ["CIF File","Crystal Structure"],
-	    "permalink": "http://stuchalk.github.io/scidata/example/cif.<xsl:value-of select="$id"/>.jsonld",
+	    "permalink": "https://stuchalk.github.io/scidata/example/cif.<xsl:value-of select="$id"/>.jsonld",
 	    "related": [
 	    "http://www.crystallography.net/cod/<xsl:value-of select="$id"/>.html"
 	    ],

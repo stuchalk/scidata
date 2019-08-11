@@ -1,10 +1,10 @@
 {
     "@context": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
         {
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "dc": "http://purl.org/dc/terms/",
-            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "numericvalue": {"@id": "sci:numericValue"},
             "numericvaluearray": {"@id": "sci:numericValueArray"},
             "textstring": {"@id": "sci:textString"},

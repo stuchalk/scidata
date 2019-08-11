@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://stuchalk.github.io/scidata/ontology/solubility.owl"
+     xml:base="https://stuchalk.github.io/scidata/ontology/solubility.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://stuchalk.github.io/scidata/ontology/solubility.owl">
-    <Prefix name="" IRI="http://stuchalk.github.io/scidata/ontology/solubility.owl#"/>
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/solubility.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/solubility.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>

@@ -1,8 +1,8 @@
 {"@context": [
     {
         "dc": "http://purl.org/dc/terms/",
-        "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "proc": "http://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#"
+        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "proc": "https://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#"
     },
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",

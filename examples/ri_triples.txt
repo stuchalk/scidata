@@ -1,137 +1,137 @@
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.obolibrary.org/obo/IAO_0000129> "1" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/description> "Refractive index value extracted from a research publication" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/identifier> "scidata/example/ri" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/publisher> "Chalk Group, Department of Chemistry, University of North Florida" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/nmr.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/ph.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "http://stuchalk.github.io/scidata/examples/scf.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/subject> "Example Data" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/subject> "Refractive index" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/title> "Hydrochloric acid refractive index" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://schema.org/url> "http://stuchalk.github.io/scidata/examples/ri.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasAuthor> <http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasRights> <http://stuchalk.github.io/scidata/examples/ri.jsonld/rights> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScientificData> <http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasTableOfContents> <http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/> <obi:OBI_0001508> "2015-04-15T09:50:13-05:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Stuart Chalk" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://purl.org/dc/terms/identifier> "0000-0002-0703-7776" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/creator> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://xmlns.com/foaf/0.1/mbox> "schalk@unf.edu" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://xmlns.com/foaf/0.1/organization> "University of North Florida" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Water" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000059> "XLYOFNOQVPJJNP-UHFFFAOYSA-N" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://purl.obolibrary.org/obo/IAO_0000302> "Hydrogen chloride" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000059> "VEXZGXHMUGYJMC-UHFFFAOYSA-N" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "System temperature" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> <http://stuchalk.github.io/scidata/ontology/property/property.owl#temperature> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "temperature" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.0E1"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeCelcius> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Mass fraction" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> <http://stuchalk.github.io/scidata/ontology/property/property.owl#massFraction> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "Relative fractional amount" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "4.3043E-2"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#GramPerGram> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasCondition> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasCondition> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Index of refraction" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> <http://stuchalk.github.io/scidata/ontology/property/property.owl#indexOfRefraction> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "refraction" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.33987E0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataset> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000011> <http://stuchalk.github.io/scidata/examples/ri.jsonld/light refraction> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000137> "Refractometer" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000218> <http://champ-project.org/images/ontology/cao.owl#spectroscopy> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSetting> <http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://champ-project.org/images/ontology/cao.owl#CAO_000152> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "experimental" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "extracted" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#methodology> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#purity> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "9.99E0"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PercentWeightWeight> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> <http://purl.org/dc/terms/bibliographicCitation> "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/source> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://purl.org/dc/terms/rightsHolder> "Chalk Group, Department of Chemistry, University of North Florida" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/rights> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataFormat> "single reading" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "property value" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataset> <http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodology> <http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystem> <http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Refractive index" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#scientificData> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Wavelength of light" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "length" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#setting> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "5.89E2"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#Nanometer> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#binaryMixture> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#homogeneousSolution> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasStateOfAggregation> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#aq> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#phase> "sub:liquid" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Ultrapure Water" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#grade> "MilliQ Grade (18.2 MOhms)" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#purity> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#number> "9.001000000000001E1"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PercentWeightWeight> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/BFO_0000023> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solute> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/IAO_0000302> "Hydrochloric acid" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#grade> "ACS Certified grade" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <http://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#discipline> "chemistry" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://stuchalk.github.io/scidata/ontology/scidata.owl#subdiscipline> "physical chemistry" .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://stuchalk.github.io/scidata/ontology/scidata.owl#system> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <http://stuchalk.github.io/scidata/examples/ri.jsonld/system/> .
-<http://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/tableOfContents> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.obolibrary.org/obo/IAO_0000129> "1" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/description> "Refractive index value extracted from a research publication" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/identifier> "scidata/example/ri" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/publisher> "Chalk Group, Department of Chemistry, University of North Florida" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/nmr.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/ph.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/related> "https://stuchalk.github.io/scidata/examples/scf.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/subject> "Example Data" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/subject> "Refractive index" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://purl.org/dc/terms/title> "Hydrochloric acid refractive index" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <http://schema.org/url> "https://stuchalk.github.io/scidata/examples/ri.jsonld"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasAuthor> <https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasRights> <https://stuchalk.github.io/scidata/examples/ri.jsonld/rights> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScientificData> <https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasTableOfContents> <https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/> <obi:OBI_0001508> "2015-04-15T09:50:13-05:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Stuart Chalk" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://purl.org/dc/terms/identifier> "0000-0002-0703-7776" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/creator> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://xmlns.com/foaf/0.1/mbox> "schalk@unf.edu" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/author/1/> <http://xmlns.com/foaf/0.1/organization> "University of North Florida" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Water" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000059> "XLYOFNOQVPJJNP-UHFFFAOYSA-N" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://purl.obolibrary.org/obo/IAO_0000302> "Hydrogen chloride" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://www.semanticweb.org/ontologies/cheminf.owl#CHEMINF_000059> "VEXZGXHMUGYJMC-UHFFFAOYSA-N" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#compound> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "System temperature" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> <https://stuchalk.github.io/scidata/ontology/property/property.owl#temperature> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "temperature" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "2.0E1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeCelcius> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Mass fraction" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> <https://stuchalk.github.io/scidata/ontology/property/property.owl#massFraction> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "Relative fractional amount" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#condition> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "4.3043E-2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#GramPerGram> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasCondition> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasCondition> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Index of refraction" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> <https://stuchalk.github.io/scidata/ontology/property/property.owl#indexOfRefraction> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "refraction" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#datapoint> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "1.33987E0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataPoint> <https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasScope> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataset> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000011> <https://stuchalk.github.io/scidata/examples/ri.jsonld/light refraction> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000137> "Refractometer" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://champ-project.org/images/ontology/cao.owl#CAO_000218> <http://champ-project.org/images/ontology/cao.owl#spectroscopy> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSetting> <https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://champ-project.org/images/ontology/cao.owl#CAO_000152> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "experimental" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#evaluationMethod> "extracted" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodologyAspect> <https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#methodology> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#purity> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "9.99E0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PercentWeightWeight> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> <http://purl.org/dc/terms/bibliographicCitation> "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/reference/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/source> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://purl.org/dc/terms/rightsHolder> "Chalk Group, Department of Chemistry, University of North Florida" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/rights> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataFormat> "single reading" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#dataType> "property value" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataset> <https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasMethodology> <https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystem> <https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Refractive index" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/scidata/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#scientificData> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#property> "Wavelength of light" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#quantity> "length" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#setting> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "5.89E2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#Nanometer> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/setting/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasConstituent> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#binaryMixture> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasMixtureType> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#homogeneousSolution> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#hasStateOfAggregation> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#aq> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#phase> "sub:liquid" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solvent> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://purl.obolibrary.org/obo/IAO_0000302> "Ultrapure Water" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#grade> "MilliQ Grade (18.2 MOhms)" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#numericValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#purity> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#number> "9.001000000000001E1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#unitOfMeasure> <http://www.qudt.org/qudt/owl/1.0.0/unit.owl#PercentWeightWeight> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/1/property/1/value/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#value> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/BFO_0000023> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#solute> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://purl.obolibrary.org/obo/IAO_0000302> "Hydrochloric acid" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#grade> "ACS Certified grade" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#propertyValue> <https://stuchalk.github.io/scidata/examples/ri.jsonld/mixture/1/constituent/2/property/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/constituent/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#chemical> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#discipline> "chemistry" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSystemFacet> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#subdiscipline> "physical chemistry" .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#system> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/compound/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/condition/2/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/datapoint/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/dataset/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/measurement/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/methodology/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/substance/1/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://purl.org/dc/terms/hasPart> <https://stuchalk.github.io/scidata/examples/ri.jsonld/system/> .
+<https://stuchalk.github.io/scidata/examples/ri.jsonld/toc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/tableOfContents> .

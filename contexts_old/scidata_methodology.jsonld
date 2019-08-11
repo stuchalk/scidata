@@ -1,11 +1,11 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
-    "http://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
-    {"sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+    "https://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
+    {"sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
     {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "methodology": {

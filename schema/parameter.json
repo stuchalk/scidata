@@ -44,7 +44,7 @@
                 },
                 "value": {
                     "description": "A numeric value with or without unit",
-                    "$ref": "http://stuchalk.github.io/scidata/schema/value.json#measuredValue"
+                    "$ref": "https://stuchalk.github.io/scidata/schema/value.json#measuredValue"
                 },
                 "text": {
                     "description": "A string value",

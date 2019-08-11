@@ -1,5 +1,5 @@
 {
-    "@context": "http://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+    "@context": "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
     "uid": "STRENDA_ID",
     "title": "STRENDA data",
     "author": [{

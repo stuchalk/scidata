@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
-            "sci": "http://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "measurement": {"@id": "cao:CAO_000152"},

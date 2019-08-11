@@ -1,7 +1,7 @@
 {"@context": [
-    "http://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
+    "https://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
     {
-        "sub": "http://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
+        "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {

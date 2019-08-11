@@ -1,6 +1,6 @@
 {"@context": [
     {
-        "tgt": "http://stuchalk.github.io/scidata/ontology/target/target.owl#",
+        "tgt": "https://stuchalk.github.io/scidata/ontology/target/target.owl#",
         "dc": "http://purl.org/dc/terms/"
     },
     {
