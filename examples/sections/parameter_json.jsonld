@@ -1,7 +1,7 @@
 {
     "@context": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
-        {"@base": "http://stuchalk.github.io/value.jsonld#"}
+        "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+        {"@base": "https://stuchalk.github.io/value.jsonld#"}
     ],
     "@id": "",
     "scope": "molecule/1",

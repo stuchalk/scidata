@@ -17,6 +17,14 @@
                 "@id": "sci:number",
                 "@type": "double"
             },
+            "min": {
+                "@id": "sci:number",
+                "@type": "double"
+            },
+            "max": {
+                "@id": "sci:number",
+                "@type": "double"
+            },
             "numberarray": {
                 "@id": "sci:numberArray",
                 "@type": "double",

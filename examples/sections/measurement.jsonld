@@ -1,8 +1,8 @@
 {
     "@context": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
         {"cao": "http://champ-project.org/images/ontology/cao.owl#"},
-        {"@base": "http://stuchalk.github.io/scidata/examples/sections/measurement.jsonld/"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/measurement.jsonld/"}
     ],
     "@id": "",
     "techniqueType": "cao:spectroscopy",

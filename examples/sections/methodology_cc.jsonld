@@ -1,7 +1,7 @@
 {
     "@context": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
-        {"@base": "http://stuchalk.github.io/scidata/examples/sections/methodology_cc.jsonld/"}
+        "https://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/methodology_cc.jsonld/"}
     ],
     "@id": "",
     "@type": "sci:methodology",

@@ -1,8 +1,8 @@
 {
     "@context": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
         {"obo": "http://purl.obolibrary.org/obo/"},
-        {"@base": "http://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"}
     ],
     "@id": "",
     "name": "Water",
