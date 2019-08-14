@@ -1,0 +1,17 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
+        {"gc": "http://purl.org/gc/"},
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/calculation.jsonld/"}
+    ],
+    "@id": "",
+    "approach": "quantum mechanics",
+    "calculations": [{
+        "@id": "calculation/1/",
+        "class": "ab initio",
+        "calcType": "scf",
+        "referenceState": "single",
+        "determinant": "single",
+        "spin": "gc:UHF"
+    }]
+}

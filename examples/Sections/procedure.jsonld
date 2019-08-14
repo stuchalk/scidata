@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
+      {"@base": "https://stuchalk.github.io/scidata/examples/procedure/"}
+    ],
+    "@id": "",
+    "title": "pH meter calibration",
+    "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken",
+    "scope": "measurement/1",
+    "procType": "sequence",
+    "sequence": {
+        "@id": "sequence",
+        "title": "Three buffer standardization",
+        "steps": [
+            {
+                "@id": "step/1",
+                "step": 1,
+                "text": "Turn the pH meter on, make sure the electrode is connected and working by placing it in the pH buffer."
+            },
+            {
+                "@id": "step/2",
+                "step": 2,
+                "text": "Place the pH meter in standardization mode and select the 'use pH 4 7 and 10' option."
+            },
+            {
+                "@id": "step/3",
+                "step": 3,
+                "text": "Press standardize when the reading is stable."
+            },
+            {
+                "@id": "step/4",
+                "step": 4,
+                "text": "Clean off the electrode with DI water and a Kimwipe and place in the pH 4 buffer."
+            },
+            {
+                "@id": "step/5",
+                "step": 5,
+                "text": "Press standardize when the reading is stable."
+            },
+            {
+                "@id": "step/6",
+                "step": 6,
+                "text": "Clean off the electrode with DI water and a Kimwipe and place in the pH 10 buffer."
+            },
+            {
+                "@id": "step/7",
+                "step": 7,
+                "text": "Press standardize when the reading is stable."
+            },
+            {
+                "@id": "step/8",
+                "step": 8,
+                "text": "Check the slope of the calibration to ensure the electrode is in 'Good condition'. Store in pH 7 buffer."
+            }
+        ],
+        "notes": "If the electrode is not in 'Good condition' repeat the calibration procedure.  If it is still not showing 'Good condition' report to your supervisor and obtain a replacement."
+    }
+}

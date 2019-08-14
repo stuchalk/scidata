@@ -1,0 +1,34 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+        {"@base": "https://stuchalk.github.io/scidata/examples/parameter.jsonld#"}
+    ],
+    "@id": "",
+    "scope": "molecule/1",
+    "quantity": "energy",
+    "property": "Potential energy change",
+    "valuearray": {
+        "@id": "datagroup/3/dataseries/1/parameter/valuearray",
+        "numberarray": [
+            172.282,
+            165.2401,
+            163.7147,
+            162.0531,
+            160.9537,
+            158.916,
+            157.2113,
+            156.7069,
+            154.3057,
+            153.0673,
+            147.0614,
+            145.889,
+            136.9413,
+            136.3246,
+            135.888,
+            134.2918,
+            127.8327,
+            127.4838
+        ],
+        "unitstr": "kJ"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {"qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"},
+        {"@base": "https://stuchalk.github.io/scidata/examples/value.jsonld#"}
+    ],
+    "@id": "",
+    "numericvalue": {
+        "@id": "numeric/1",
+        "datatype": "decimal",
+        "number": 12.0107,
+        "error": 8.0E-4,
+        "sigfigs": 5,
+        "unit": "unit/amu"
+    },
+    "numericvaluearray": {
+        "@id": "numeric/2",
+        "datatype": "decimal",
+        "numberarray": [
+            0.9994,
+            0.0999,
+            0.9989
+        ],
+        "error": 1.0E-4,
+        "sigfigs": 4,
+        "unitref": "qudt:g"
+    },
+    "textstring": {
+        "@id": "text/1",
+        "text": "Simultaneous",
+        "texttype": "plain",
+        "language": "en-US"
+    },
+    "textstringarray": {
+        "@id": "text/2",
+        "textarray": [
+            "Begin of the data block",
+            "ACD/SpecManager v 12.01",
+            "End of the data block"
+        ],
+        "texttype": "plain",
+        "language": "en-US"
+    },
+    "unit": [{
+        "@id": "unit/amu",
+        "name": "Atomic mass units",
+        "quantity": "mass",
+        "symbol": "u",
+        "unitinsi": {
+            "@id": "amu/unitinsi",
+            "siunit": [{
+                "@id": "amu/unit/1",
+                "name": "gram",
+                "prefix": "y",
+                "power": {"numerator": 1}
+            }]
+        },
+        "conversion": {
+            "@id": "amu/conversion",
+            "fromunit": "g",
+            "multiplier": "1.660538921E-27"
+        }
+    }]
+}

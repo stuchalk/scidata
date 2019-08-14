@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dc": "http://purl.org/dc/terms/",
+        "wkt": "http://en.wiktionary.org/wiki/"
+    },
+    "report": {"@id": "obo:NCIT_C25375"},
+    "conditions": {"@id": "obo:NCIT_C134026"},
+    "annotations": {"@id": "obo:NCIT_C101123"},
+    "updates": {"@id": "obo:NCIT_C134026"}
+}
