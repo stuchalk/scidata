@@ -1,1 +1,10 @@
-{"@context":{"@vocab":"https:\/\/www.w3.org\/2001\/XMLSchema#","cif":"https:\/\/stuchalk.github.io\/scidata\/ontology\/cif.owl#","_exptl_crystal_recrystallization_method":{"@id":"cif:_exptl_crystal_recrystallization_method","@type":"xsd:string"}}}
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
+        "_exptl_crystal_recrystallization_method": {
+            "@id": "cif:_exptl_crystal_recrystallization_method",
+            "@type": "xsd:string"
+        }
+    }
+}

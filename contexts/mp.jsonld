@@ -1,0 +1,20 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "http://purl.org/dc/terms/",
+        "edam": "http://edamontology.org/",
+        "wd": "https://www.wikidata.org/wiki/",
+        "mpid": {
+            "@id": "dc:identifier",
+            "@type": "@id"
+        },
+        "formula": {
+            "@id": "edam:data_0846",
+            "@type": "xsd:string"
+        },
+        "doping": {
+            "@id": "wd:Q1130571",
+            "@type": "xsd:string"
+        }
+    }
+}
