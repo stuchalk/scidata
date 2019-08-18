@@ -1,14 +1,1 @@
-{
-    "@context": {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
-        "_chemical_formula_structural": {
-            "@id": "cif:_chemical_formula_structural",
-            "@type": "xsd:string"
-        },
-        "_chemical_formula_sum": {
-            "@id": "cif:_chemical_formula_sum",
-            "@type": "xsd:string"
-        }
-    }
-}
+{"@context":{"@vocab":"https:\/\/www.w3.org\/2001\/XMLSchema#","cif":"https:\/\/stuchalk.github.io\/scidata\/ontology\/cif.owl#","mp":"https:\/\/materialsproject.org\/materials\/","_chemical_formula_structural":{"@id":"cif:_chemical_formula_structural","@type":"xsd:string"},"_chemical_formula_sum":{"@id":"cif:_chemical_formula_sum","@type":"xsd:string"}}}

@@ -1,11 +1,11 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
+        "mp": "https://materialsproject.org/ontology/mp.owl",
         "edam": "http://edamontology.org/",
         "wd": "https://www.wikidata.org/wiki/",
         "mpid": {
-            "@id": "dc:identifier",
+            "@id": "mp:mprojid",
             "@type": "@id"
         },
         "formula": {
