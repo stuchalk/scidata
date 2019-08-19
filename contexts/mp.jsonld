@@ -1,7 +1,7 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "mp": "https://materialsproject.org/ontology/mp.owl",
+        "mp": "https://materialsproject.org/ontology/mp.owl#",
         "edam": "http://edamontology.org/",
         "wd": "https://www.wikidata.org/wiki/",
         "mpid": {
