@@ -7,7 +7,7 @@
         "wd": "https://www.wikidata.org/wiki/",
         "mpid": {
             "@id": "mp:mpprojid",
-            "@type": "dc:identifier"
+            "@type": "xsd:string"
         },
         "formula": {
             "@id": "edam:data_0846",
