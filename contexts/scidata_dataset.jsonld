@@ -29,6 +29,10 @@
                 "@id": "sci:hasCondition",
                 "@type": "@id"
             },
+            "system": {
+                "@id": "sci:evaluatedSystem",
+                "@type": "@id"
+            },
             "settings": {
                 "@id": "sci:hasSetting",
                 "@type": "id"
