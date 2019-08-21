@@ -29,7 +29,7 @@
                 "@id": "sci:hasCondition",
                 "@type": "@id"
             },
-            "system": {
+            "analyzed": {
                 "@id": "sci:evaluatedSystem",
                 "@type": "@id"
             },
