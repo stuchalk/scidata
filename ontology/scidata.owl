@@ -126,6 +126,54 @@
         <Class abbreviatedIRI="cheminf:SIO_000999"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:maker"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:mbox"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/URL"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
     </Declaration>
     <Declaration>
@@ -150,13 +198,13 @@
         <Class IRI="#chemical_element"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#component"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#compound"/>
     </Declaration>
     <Declaration>
         <Class IRI="#condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#constituent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#conversionFactor"/>
@@ -346,54 +394,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:Continuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:maker"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:mbox"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://schema.org/URL"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#componentOf"/>
@@ -550,12 +550,12 @@
         <Class IRI="#uid"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#chemical_element"/>
-        <Class IRI="#element"/>
+        <Class IRI="https://schema.org/URL"/>
+        <Class IRI="#permalink"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#permalink"/>
-        <Class IRI="https://schema.org/URL"/>
+        <Class IRI="#chemical_element"/>
+        <Class IRI="#element"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CHEBI_37577"/>
@@ -650,6 +650,62 @@
         <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+        <Class abbreviatedIRI="bfo11snap:Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
+        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
+        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Agent"/>
+        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:maker"/>
+        <Class IRI="#equivalentThings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:mbox"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:organization"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/URL"/>
+        <Class IRI="#metadata"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
@@ -682,16 +738,16 @@
         <Class IRI="#equivalentThings"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#component"/>
-        <Class IRI="#chemicalSystem"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#compound"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#condition"/>
         <Class IRI="#systemFacet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#constituent"/>
+        <Class IRI="#chemicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conversionFactor"/>
@@ -941,62 +997,6 @@
         <Class IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
-        <Class abbreviatedIRI="bfo11snap:Continuant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11snap:GenericallyDependentContinuant"/>
-        <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
-        <Class abbreviatedIRI="bfo11snap:Continuant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11snap:SpatiotemporalRegion"/>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
-        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11span:TemporalInterval"/>
-        <Class abbreviatedIRI="bfo11span:ConnectedTemporalRegion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="bfo11span:TemporalRegion"/>
-        <Class abbreviatedIRI="bfo11snap:Occurrent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="foaf:Agent"/>
-        <Class abbreviatedIRI="bfo11snap:IndependentContinuant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="foaf:Organization"/>
-        <Class abbreviatedIRI="foaf:Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="foaf:maker"/>
-        <Class IRI="#equivalentThings"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="foaf:mbox"/>
-        <Class IRI="#metadata"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="foaf:organization"/>
-        <Class IRI="#metadata"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://schema.org/URL"/>
-        <Class IRI="#metadata"/>
-    </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
         <Class abbreviatedIRI="bfo11snap:Occurrent"/>
@@ -1051,7 +1051,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isComponentNumber"/>
-        <Class IRI="#component"/>
+        <Class IRI="#constituent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#componentOf"/>
@@ -1887,6 +1887,236 @@
         <Literal>procedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:hasExactSynonym</AbbreviatedIRI>
+        <Literal>has Exact Synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:hasRelatedSynonym</AbbreviatedIRI>
+        <Literal>has related synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
+        <IRI>http://www.geneontology.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
+        <Literal>id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
+        <Literal>Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
+        <Literal>Dependent Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
+        <Literal>Generically dependent continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
+        <Literal>Independent Continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
+        <Literal>Occurrent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualEntity</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
+        <Literal>Processual Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <Literal>SpatiotemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
+        <Literal>Spatiotemporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
+        <Literal>Spatiotemporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <Literal>ConnectedTemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
+        <Literal>Connected temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <Literal>TemporalInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
+        <Literal>Temporal interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <Literal>TemporalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
+        <Literal>Temporal Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal>organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal>organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
+        <Literal>maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
+        <Literal>maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal>The email address of the author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal>mbox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
+        <Literal>email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal>Information describing the entity that employs the author of this research data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal>organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
+        <Literal>organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal>Uniform resource locator - a http based link to a page of information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal>url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/URL</IRI>
+        <Literal>url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
@@ -2007,21 +2237,6 @@
         <Literal xml:lang="en">chemical element</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#component</IRI>
-        <Literal>Representation of a discrete chemical as part of chemical substance (mixture)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#component</IRI>
-        <Literal>component</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#component</IRI>
-        <Literal>component</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#compound</IRI>
         <Literal>A chemical compound is a chemical substance formed by the covalent bonding of two or more atoms of two or more different elements, e.g. CO2, NO3-</Literal>
@@ -2050,6 +2265,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#condition</IRI>
         <Literal>condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#constituent</IRI>
+        <Literal xml:lang="en">Chemical species present in a system; often called a component, although the term component has a more restricted meaning in physical chemistry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#constituent</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.C01281</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#constituent</IRI>
+        <Literal>constituent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#constituent</IRI>
+        <Literal>constituent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -3086,236 +3321,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
         <Literal>substance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>oboowl:hasExactSynonym</AbbreviatedIRI>
-        <Literal>has Exact Synonym</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>oboowl:hasRelatedSynonym</AbbreviatedIRI>
-        <Literal>has related synonym</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
-        <IRI>http://www.geneontology.org/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>oboowl:id</AbbreviatedIRI>
-        <Literal>id</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:Continuant</AbbreviatedIRI>
-        <Literal>Continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:DependentContinuant</AbbreviatedIRI>
-        <Literal>Dependent Continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:GenericallyDependentContinuant</AbbreviatedIRI>
-        <Literal>Generically dependent continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:IndependentContinuant</AbbreviatedIRI>
-        <Literal>Independent Continuant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:Occurrent</AbbreviatedIRI>
-        <Literal>Occurrent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:ProcessualEntity</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:ProcessualOccurant</AbbreviatedIRI>
-        <Literal>Processual Entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
-        <Literal>SpatiotemporalRegion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:SpatiotemporalRegion</AbbreviatedIRI>
-        <Literal>Spatiotemporal Region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11snap:spatiotemporal_region</AbbreviatedIRI>
-        <Literal>Spatiotemporal Region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
-        <Literal>ConnectedTemporalRegion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11span:ConnectedTemporalRegion</AbbreviatedIRI>
-        <Literal>Connected temporal region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
-        <Literal>TemporalInterval</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11span:TemporalInterval</AbbreviatedIRI>
-        <Literal>Temporal interval</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
-        <Literal>TemporalRegion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
-        <IRI>http://www.ifomis.org/bfo/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>bfo11span:TemporalRegion</AbbreviatedIRI>
-        <Literal>Temporal Region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
-        <Literal>Agent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
-        <Literal>Agent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
-        <Literal>organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
-        <Literal>organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
-        <Literal>maker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>foaf:maker</AbbreviatedIRI>
-        <Literal>maker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
-        <Literal>The email address of the author</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
-        <Literal>mbox</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>foaf:mbox</AbbreviatedIRI>
-        <Literal>email</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
-        <Literal>Information describing the entity that employs the author of this research data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
-        <Literal>organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>foaf:organization</AbbreviatedIRI>
-        <Literal>organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>https://schema.org/URL</IRI>
-        <Literal>Uniform resource locator - a http based link to a page of information</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>https://schema.org/URL</IRI>
-        <Literal>url</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://schema.org/URL</IRI>
-        <Literal>url</Literal>
     </AnnotationAssertion>
 </Ontology>
 

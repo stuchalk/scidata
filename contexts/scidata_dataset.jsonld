@@ -5,6 +5,7 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
+            "obo": "http://purl.obolibrary.org/obo/",
             "dataset": {"@id": "sci:dataset"},
             "datagroup": {"@id": "sci:hasDataGroup"},
             "datagroups": {
@@ -63,6 +64,10 @@
             },
             "axisLabel": {
                 "@id": "sci:axisLabel",
+                "@type": "string"
+            },
+            "annotations": {
+                "@id": "obo:NCIT_C44272",
                 "@type": "string"
             }
         }
