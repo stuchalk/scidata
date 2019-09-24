@@ -5,6 +5,10 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
+            "uid": {
+                "@id": "dc:identifier",
+                "@type": "string"
+            },
             "parameter": {"@id": "sci:parameter"},
             "parameterArray": {"@id": "sci:parameterArray"},
             "quantity": {
