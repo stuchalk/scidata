@@ -18,13 +18,16 @@
                 "@id": "sub:hasMixtureType",
                 "@type": "@id"
             },
+            "compound": {
+                "@id": "sub:isCompound",
+                "@type": "@id"
+            },
             "phase": {
                 "@id": "sub:hasPhase",
                 "@type": "@id"
             },
             "constituents": {
-                "@id": "sub:hasConstituent",
-                "@type": "sci:chemical"
+                "@id": "sub:hasConstituent"
             },
             "properties": {
                 "@id": "sub:hasProperty",

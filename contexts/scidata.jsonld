@@ -124,7 +124,7 @@
             },
             "methodology": {
                 "@id": "sci:hasMethodology",
-                "@type": "methodology"
+                "@type": "sci:methodology"
             },
             "system": {
                 "@id": "sci:hasSystem",
@@ -132,7 +132,7 @@
             },
             "dataset": {
                 "@id": "sci:hasDataset",
-                "@type": "dataset"
+                "@type": "sci:dataset"
             },
             "sources": {"@id": "sci:hasSource"},
             "citation": {

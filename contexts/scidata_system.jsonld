@@ -13,7 +13,6 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "system": {"@id": "sci:system"},
             "discipline": {
                 "@id": "sci:discipline",
                 "@type": "string"
@@ -22,47 +21,7 @@
                 "@id": "sci:subdiscipline",
                 "@type": "string"
             },
-            "facets": {"@id": "sci:hasSystemFacet"},
-            "chemical": {
-                "@id": "sci:hasChemical",
-                "@type": "sci:facet"
-            },
-            "compound": {
-                "@id": "sci:hasCompound",
-                "@type": "sci:facet"
-            },
-            "substance": {
-                "@id": "sci:hasSubstance",
-                "@type": "sci:facet"
-            },
-            "sample": {
-                "@id": "sci:isSample",
-                "@type": "sci:facet"
-            },
-            "material": {
-                "@id": "sci:hasMaterial",
-                "@type": "sci:facet"
-            },
-            "organism": {
-                "@id": "sci:hasOrganism",
-                "@type": "sci:facet"
-            },
-            "condition": {
-                "@id": "sci:hasCondition",
-                "@type": "sci:facet"
-            },
-            "molecularsystem": {
-                "@id": "sci:hasMolecularSystem",
-                "@type": "sci:facet"
-            },
-            "chemicalsystem": {
-                "@id": "sci:hasChemicalSystem",
-                "@type": "sci:facet"
-            },
-            "computer": {
-                "@id": "sci:hasComputer",
-                "@type": "sci:facet"
-            }
+            "facets": {"@id": "sci:hasSystemFacet"}
         }
     ]
 }

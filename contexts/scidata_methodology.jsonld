@@ -9,36 +9,11 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "methodology": {"@id": "sci:methodology"},
             "evaluation": {
                 "@id": "sci:evaluationMethod",
                 "@type": "string"
             },
-            "aspects": {"@id": "sci:hasMethodologyAspect"},
-            "measurement": {
-                "@id": "sci:hasMeasurement",
-                "@type": "sci:aspect"
-            },
-            "resource": {
-                "@id": "sci:hasResource",
-                "@type": "sci:aspect"
-            },
-            "procedure": {
-                "@id": "sci:hasProcedure",
-                "@type": "sci:aspect"
-            },
-            "calculation": {
-                "@id": "sci:hasCalculation",
-                "@type": "sci:aspect"
-            },
-            "basisset": {
-                "@id": "sci:hasBasisSet",
-                "@type": "sci:aspect"
-            },
-            "software": {
-                "@id": "sci:hasSoftware",
-                "@type": "sci:aspect"
-            }
+            "aspects": {"@id": "sci:hasMethodologyAspect"}
         }
     ]
 }
