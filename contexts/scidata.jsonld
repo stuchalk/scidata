@@ -89,7 +89,7 @@
                 "@id": "obo:OBI_0001508",
                 "@type": "dateTime"
             },
-            "duration": {
+            "timerange": {
                 "@id": "obo:PATO_0001309",
                 "@type": "duration"
             },
