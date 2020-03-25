@@ -16,3 +16,6 @@ examples/remove?
 ontology/.DS_Store
 !/contexts/scidata_sample.jsonld
 catalog-v001.xml
+/ontology/target/catalog-v001.xml
+/ontology/property/catalog-v001.xml
+/ontology/chemical/catalog-v001.xml
