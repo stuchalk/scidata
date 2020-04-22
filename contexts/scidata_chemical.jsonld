@@ -12,11 +12,11 @@
                 "@type": "string"
             },
             "catalognumber": {
-                "@id": "obo:sep_0016",
+                "@id": "obo:NCIT_C99286",
                 "@type": "string"
             },
             "lotnumber": {
-                "@id": "obo:sep_0015",
+                "@id": "obo:NCIT_C70848",
                 "@type": "string"
             },
             "role": {
