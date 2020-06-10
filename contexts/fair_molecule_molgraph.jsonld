@@ -8,15 +8,15 @@
             "bonds": {"@id": "ss:CHEMINF_000063"},
             "atom": {
                 "@id": "ss:SIO_010037",
-                "@type": "uri"
+                "@type": "@id"
             },
             "bond": {
                 "@id": "ss:SIO_011118",
-                "@type": "uri"
+                "@type": "@id"
             },
             "bonded": {
                 "@id": "ss:SIO_000132",
-                "@type": "uri"
+                "@type": "@id"
             }
         }
     ]

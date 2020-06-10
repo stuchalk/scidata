@@ -25,11 +25,11 @@
                 "@id": "ss:CHEMINF_000245",
                 "@type": "nonNegativeInteger"
             },
-            "h-bond_donor": {
+            "h_bond_donor": {
                 "@id": "ss:CHEMINF_000244",
                 "@type": "nonNegativeInteger"
             },
-            "rotatble_bond": {
+            "rotatable_bond": {
                 "@id": "ss:CHEMINF_000254",
                 "@type": "nonNegativeInteger"
             },
@@ -47,11 +47,11 @@
             },
             "atccode": {
                 "@id": "edam:data_3103",
-                "@type": "uri"
+                "@type": "@id"
             },
             "chemont": {
                 "@id": "afo:AFX_0001154",
-                "@type": "uri"
+                "@type": "@id"
             }
         }
     ]
