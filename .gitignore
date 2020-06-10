@@ -1,21 +1,19 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-/other
-/.idea
-ontology/catalog-v001.xml
-/github_token.txt
-.DS_Store
-contexts/.DS_Store
+**/catalog-v001.xml
+**/.DS_Store
+other
+.idea
 contexts/aspects/
 contexts/facets/
 contexts/scidata_sample.jsonld
-examples/.DS_Store
 examples/Self contained/
 examples/ph_min.jsonld
 examples/remove?
-ontology/.DS_Store
-!/contexts/scidata_sample.jsonld
-catalog-v001.xml
-ontology/target/catalog-v001.xml
-ontology/property/catalog-v001.xml
-ontology/chemical/catalog-v001.xml
+ontology/resource/
+ontology/scidata.obda
+ontology/scidata.properties
+ontology/solubility.obda
+ontology/solubility.properties
+ontology/substance/substance.obda
+ontology/substance/substance.properties
