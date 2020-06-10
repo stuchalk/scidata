@@ -25,7 +25,7 @@
                 "@type": "string"
             },
             "pubchem": {
-                "@id": "wdt:662",
+                "@id": "wdt:P662",
                 "@type": "string"
             },
             "chemspider": {
