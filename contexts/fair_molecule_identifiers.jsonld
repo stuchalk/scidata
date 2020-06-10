@@ -3,6 +3,7 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "wdt": "http://www.wikidata.org/prop/direct/",
+            "ss": "http://semanticscience.org/resource/",
             "inchi": {
                 "@id": "wdt:P234",
                 "@type": "string"
@@ -49,6 +50,10 @@
             },
             "gmelin": {
                 "@id": "wdt:P1578",
+                "@type": "string"
+            },
+            "wikidata": {
+                "@id": "ss:CHEMINF_000123",
                 "@type": "string"
             }
         }

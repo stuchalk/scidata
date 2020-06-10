@@ -82,7 +82,7 @@
                 "@type": "@id"
             },
             "starttime": {
-                "@id": "obi:OBI_0001508",
+                "@id": "obo:OBI_0001508",
                 "@type": "dateTime"
             },
             "endtime": {
