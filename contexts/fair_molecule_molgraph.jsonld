@@ -1,0 +1,23 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "ss": "http://semanticscience.org/resource/",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "atoms": {"@id": "obo:CHEBI_33250"},
+            "bonds": {"@id": "ss:CHEMINF_000063"},
+            "atom": {
+                "@id": "ss:SIO_010037",
+                "@type": "uri"
+            },
+            "bond": {
+                "@id": "ss:SIO_011118",
+                "@type": "uri"
+            },
+            "bonded": {
+                "@id": "ss:SIO_000132",
+                "@type": "uri"
+            }
+        }
+    ]
+}

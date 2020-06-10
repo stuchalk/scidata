@@ -1,0 +1,58 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "ss": "http://semanticscience.org/resource/",
+            "edam": "http://edamontology.org/",
+            "afo": "http://purl.allotrope.org/ontologies/property#",
+            "heavy_atom": {
+                "@id": "ss:CHEMINF_000300",
+                "@type": "nonNegativeInteger"
+            },
+            "atom_chiral": {
+                "@id": "ss:CHEMINF_000205",
+                "@type": "nonNegativeInteger"
+            },
+            "bond_chiral": {
+                "@id": "ss:CHEMINF_000209",
+                "@type": "nonNegativeInteger"
+            },
+            "isotope_atom": {
+                "@id": "ss:CHEMINF_000301",
+                "@type": "nonNegativeInteger"
+            },
+            "h_bond_acceptor": {
+                "@id": "ss:CHEMINF_000245",
+                "@type": "nonNegativeInteger"
+            },
+            "h-bond_donor": {
+                "@id": "ss:CHEMINF_000244",
+                "@type": "nonNegativeInteger"
+            },
+            "rotatble_bond": {
+                "@id": "ss:CHEMINF_000254",
+                "@type": "nonNegativeInteger"
+            },
+            "covalent_unit": {
+                "@id": "ss:CHEMINF_000280",
+                "@type": "nonNegativeInteger"
+            },
+            "tautomers": {
+                "@id": "ss:CHEMINF_000202",
+                "@type": "integer"
+            },
+            "aromatic_rings": {
+                "@id": "ss:CHEMINF_000381",
+                "@type": "nonNegativeInteger"
+            },
+            "atccode": {
+                "@id": "edam:data_3103",
+                "@type": "uri"
+            },
+            "chemont": {
+                "@id": "afo:AFX_0001154",
+                "@type": "uri"
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/fair_molecule_identifiers.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fair_molecule_descriptors.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fair_molecule_molgraph.jsonld",
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "dc": "https://purl.org/dc/terms/",
+            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "ss": "http://semanticscience.org/resource/",
+            "name": {
+                "@id": "ss:CHEMINF_000107",
+                "@type": "string"
+            },
+            "formula": {
+                "@id": "ss:CHEMINF_000042",
+                "@type": "string"
+            },
+            "molweight": {
+                "@id": "ss:CHEMINF_000088",
+                "@type": "float"
+            },
+            "monoisotopicmass": {
+                "@id": "ss:CHEMINF_000218",
+                "@type": "string"
+            },
+            "identifers": {"@id": "ss:SIO_000732"},
+            "descriptors": {"@id": "ss:SIO_000732"},
+            "molgraph": {"@id": "ss:SIO_000626"}
+        }
+    ]
+}

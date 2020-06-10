@@ -1,0 +1,56 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "wdt": "http://www.wikidata.org/prop/direct/",
+            "inchi": {
+                "@id": "wdt:P234",
+                "@type": "string"
+            },
+            "inchikey": {
+                "@id": "wdt:P235",
+                "@type": "string"
+            },
+            "csmiles": {
+                "@id": "wdt:P233",
+                "@type": "string"
+            },
+            "ismiles": {
+                "@id": "wdt:P2017",
+                "@type": "string"
+            },
+            "casrn": {
+                "@id": "wdt:P231",
+                "@type": "string"
+            },
+            "pubchem": {
+                "@id": "wdt:662",
+                "@type": "string"
+            },
+            "chemspider": {
+                "@id": "wdt:P661",
+                "@type": "string"
+            },
+            "chebi": {
+                "@id": "wdt:P683",
+                "@type": "string"
+            },
+            "chembl": {
+                "@id": "wdt:P592",
+                "@type": "string"
+            },
+            "reaxys": {
+                "@id": "wdt:P1579",
+                "@type": "string"
+            },
+            "dsstox": {
+                "@id": "wdt:P3117",
+                "@type": "string"
+            },
+            "gmelin": {
+                "@id": "wdt:P1578",
+                "@type": "string"
+            }
+        }
+    ]
+}
