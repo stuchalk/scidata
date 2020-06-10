@@ -25,9 +25,9 @@
                 "@id": "ss:CHEMINF_000218",
                 "@type": "string"
             },
-            "identifiers": {"@id": "ss:SIO_000732"},
-            "descriptors": {"@id": "ss:SIO_000732"},
-            "molgraph": {"@id": "ss:SIO_000626"}
+            "identifiers": "obo:IAO_0000578",
+            "descriptors": "ss:CHEMINF_000123",
+            "molgraph":  "ss:CHEMINF_000022"
         }
     ]
 }
