@@ -1,0 +1,3061 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://stuchalk.github.io/scidata/ontology/thermo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/thermo.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/thermo.owl"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="qudt" IRI="http://qudt.org/vocab/unit/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Stuart Chalk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <Literal xml:lang="en">The International Union of Pure and Applied Chemistry (IUPAC)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rightsHolder"/>
+        <Literal xml:lang="en">The International Union of Pure and Applied Chemistry (IUPAC)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Based off of the ThermoML Schema v4.0 at http://trc.nist.gov/ThermoML.xsd</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">https://iupac.org/project/2007-039-1-024</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:GM-PER-GM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:J-PER-GM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:J-PER-KiloGM-K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:J-PER-KiloPA-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:J-PER-M3-K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:J-PER-MOL-K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:K-PER-KiloPA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloGM-PER-M3"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloJ"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloJ-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloPA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloPA-KiloGM-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloPA-L-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:KiloPA-PER-K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:L-PER-L"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:M-PER-SEC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:M2-PER-SEC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:M3-PER-KiloGM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:M3-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:M6-PER-MOL2"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:MOL-PER-KiloGM"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:MOL-PER-L"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:MOL-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:N-PER-M"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:PA-SEC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:PER-K"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:PER-KiloPA"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:PER-PA-SEC"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:S-M2-PER-MOL"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:S-PER-M"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:V"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:W-PER-M-K"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0043"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0044"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0045"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0053"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0060"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0062"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0064"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0066"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0067"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0068"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0069"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0070"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0071"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0072"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0073"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0074"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0075"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0076"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0077"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0078"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0079"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0081"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0082"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0083"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0084"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0085"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0086"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0087"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0089"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0090"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0091"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0092"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0093"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0094"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0095"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0096"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0097"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0098"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0099"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0104"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0106"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0107"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0108"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0111"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0112"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0113"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0114"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0116"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0117"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0118"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0119"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0120"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0121"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0122"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0123"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0124"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0126"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0127"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0128"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0129"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0130"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0131"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0132"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0133"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0134"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0135"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0136"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0137"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0138"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0139"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0140"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0141"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0142"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0143"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0144"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0145"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0146"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0147"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0148"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0149"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0150"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0151"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0152"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0153"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0154"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0155"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0156"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0157"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0158"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0159"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0160"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0161"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0162"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0163"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0164"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0165"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0166"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0167"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0168"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0169"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0170"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0171"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0172"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0173"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0174"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0175"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0176"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0177"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0178"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0179"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0180"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0181"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0182"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0183"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0184"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0185"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0186"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0187"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0188"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0189"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0190"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0191"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0192"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0193"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0194"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0195"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0196"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0197"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0199"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0200"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0201"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0202"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0203"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0204"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0205"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0206"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0207"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0208"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_CP0001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ITO_0015"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rightsHolder"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:GM-PER-GM"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:J-PER-GM"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:J-PER-KiloGM-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:J-PER-KiloPA-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:J-PER-M3-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:J-PER-MOL-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:K-PER-KiloPA"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloGM-PER-M3"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloJ"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloJ-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloPA"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloPA-KiloGM-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloPA-L-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:KiloPA-PER-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:L-PER-L"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:M-PER-SEC"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:M2-PER-SEC"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:M3-PER-KiloGM"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:M3-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:M6-PER-MOL2"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:MOL-PER-KiloGM"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:MOL-PER-L"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:MOL-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:N-PER-M"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:PA-SEC"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:PER-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:PER-KiloPA"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:PER-PA-SEC"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:S-M2-PER-MOL"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:S-PER-M"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:V"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="qudt:W-PER-M-K"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0001"/>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0002"/>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0003"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0004"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0005"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0006"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0007"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0008"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0009"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0010"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0011"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0012"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0013"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0016"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0017"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0018"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0019"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0020"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0021"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0022"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0023"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0024"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0025"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0026"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0027"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0028"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0029"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0030"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0031"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0032"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0033"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0034"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0035"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0036"/>
+        <Class IRI="#ITO_0002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0037"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0038"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0039"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0040"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0041"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0042"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0043"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0044"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0045"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0046"/>
+        <Class IRI="#ITO_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0048"/>
+        <Class IRI="#ITO_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0049"/>
+        <Class IRI="#ITO_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0050"/>
+        <Class IRI="#ITO_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0051"/>
+        <Class IRI="#ITO_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0052"/>
+        <Class IRI="#ITO_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0053"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0054"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0055"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0056"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0057"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0058"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0059"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0060"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0061"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0062"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0063"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0064"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0065"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0066"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0067"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0068"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0069"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0070"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0071"/>
+        <Class IRI="#ITO_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0072"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0073"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0074"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0075"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0076"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0077"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0078"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0079"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0080"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0081"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0082"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0083"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0084"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0085"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0086"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0087"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0088"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0089"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0090"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0091"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0092"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0093"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0094"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0095"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0096"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0097"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0098"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0099"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0100"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0101"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0102"/>
+        <Class IRI="#ITO_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0103"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0104"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0105"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0106"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0107"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0108"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0109"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0110"/>
+        <Class IRI="#ITO_0007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0111"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0112"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0113"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0114"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0115"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0116"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0117"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0118"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0119"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0120"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0121"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0122"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0123"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0124"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0125"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0126"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0127"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0128"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0129"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0130"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0131"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0132"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0133"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0134"/>
+        <Class IRI="#ITO_0008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0135"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0136"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0137"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0138"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0139"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0140"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0141"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0142"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0143"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0144"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0145"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0146"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0147"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0148"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0149"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0150"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0151"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0152"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0153"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0154"/>
+        <Class IRI="#ITO_0009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0155"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0156"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0157"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0158"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0159"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0160"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0161"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0162"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0163"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0164"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0165"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0166"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0167"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0168"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0169"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0170"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0171"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0172"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0173"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0174"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0175"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0176"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0177"/>
+        <Class IRI="#ITO_0010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0178"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0179"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0180"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0181"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0182"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0183"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0184"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0185"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0186"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0187"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0188"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0189"/>
+        <Class IRI="#ITO_0011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0190"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0191"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0192"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0193"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0194"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0195"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0196"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0197"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0198"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0199"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0200"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0201"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0202"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0203"/>
+        <Class IRI="#ITO_0012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0204"/>
+        <Class IRI="#ITO_0013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0205"/>
+        <Class IRI="#ITO_0013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0206"/>
+        <Class IRI="#ITO_0013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0207"/>
+        <Class IRI="#ITO_0013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0208"/>
+        <Class IRI="#ITO_0013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_CP0001"/>
+        <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ITO_0015"/>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ITO_0015"/>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ITO_0015"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical properties described in the PureOrMixtureData section of the ThermoML v4.0 schema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:NCIT_C17771</AbbreviatedIRI>
+        <Literal xml:lang="en">Chemical properties described in the ReactionData section of the ThermoML v4.0 schema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C17771</AbbreviatedIRI>
+        <Literal xml:lang="en">Chemical Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C25709</AbbreviatedIRI>
+        <Literal xml:lang="en">Unit of Measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:GM-PER-GM</AbbreviatedIRI>
+        <Literal xml:lang="en">g/g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:J-PER-GM</AbbreviatedIRI>
+        <Literal xml:lang="en">J/g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:J-PER-KiloGM-K</AbbreviatedIRI>
+        <Literal xml:lang="en">J/kg.K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:J-PER-KiloPA-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">J/kPa.mol*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:J-PER-M3-K</AbbreviatedIRI>
+        <Literal xml:lang="en">J/m^3.K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:J-PER-MOL-K</AbbreviatedIRI>
+        <Literal xml:lang="en">J/K.mol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:K</AbbreviatedIRI>
+        <Literal xml:lang="en">K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:K-PER-KiloPA</AbbreviatedIRI>
+        <Literal xml:lang="en">K/kPa*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloGM-PER-M3</AbbreviatedIRI>
+        <Literal xml:lang="en">kg/m^3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloJ</AbbreviatedIRI>
+        <Literal xml:lang="en">kJ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloJ-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">kJ/mol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloPA</AbbreviatedIRI>
+        <Literal xml:lang="en">kPa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloPA-KiloGM-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">kPa.kg/mol*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloPA-L-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">kPa.L/mol*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:KiloPA-PER-K</AbbreviatedIRI>
+        <Literal xml:lang="en">kPa/K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:L-PER-L</AbbreviatedIRI>
+        <Literal xml:lang="en">L/L</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:M-PER-SEC</AbbreviatedIRI>
+        <Literal xml:lang="en">m/s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:M2-PER-SEC</AbbreviatedIRI>
+        <Literal xml:lang="en">m^2/s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:M3-PER-KiloGM</AbbreviatedIRI>
+        <Literal xml:lang="en">m^3/kg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:M3-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">m^3/mol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:M6-PER-MOL2</AbbreviatedIRI>
+        <Literal xml:lang="en">m^6/mol^2*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:MOL-PER-KiloGM</AbbreviatedIRI>
+        <Literal xml:lang="en">mol/kg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:MOL-PER-L</AbbreviatedIRI>
+        <Literal xml:lang="en">mol/L</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:MOL-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">mol/mol*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:N-PER-M</AbbreviatedIRI>
+        <Literal xml:lang="en">N/m</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:PA-SEC</AbbreviatedIRI>
+        <Literal xml:lang="en">Pa.s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:PER-K</AbbreviatedIRI>
+        <Literal xml:lang="en">1/K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:PER-KiloPA</AbbreviatedIRI>
+        <Literal xml:lang="en">1/kPa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:PER-PA-SEC</AbbreviatedIRI>
+        <Literal xml:lang="en">1/Pa.s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:S-M2-PER-MOL</AbbreviatedIRI>
+        <Literal xml:lang="en">S.m^2/mol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:S-PER-M</AbbreviatedIRI>
+        <Literal xml:lang="en">S/m</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:V</AbbreviatedIRI>
+        <Literal xml:lang="en">V</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>qudt:W-PER-M-K</AbbreviatedIRI>
+        <Literal xml:lang="en">W/m.K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0001</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;ReactionStateChangeProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0001</IRI>
+        <Literal xml:lang="en">Reaction State Change Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0002</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;ReactionStateChangeProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0002</IRI>
+        <Literal xml:lang="en">Reaction Equilibrium Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0003</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;Criticals&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0003</IRI>
+        <Literal xml:lang="en">Critical Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0004</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;VaporPBoilingTAzeotropTandP&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0004</IRI>
+        <Literal xml:lang="en">Vapor Pressure, Boiling Temperature, and Azeotropic Temperature and Pressure Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0005</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;PhaseTransition&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0005</IRI>
+        <Literal xml:lang="en">Phase Transition Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0006</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;CompositionAtPhaseEquilibrium&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0006</IRI>
+        <Literal xml:lang="en">Composition at Phase Equilibrium Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0007</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;ActivityFugacityOsmoticProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0007</IRI>
+        <Literal xml:lang="en">Activity, Fugacity or Osmotic Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0008</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;VolumetricProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0008</IRI>
+        <Literal xml:lang="en">Volumetric Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0009</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;HeatCapacityAndDerivedProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0009</IRI>
+        <Literal xml:lang="en">Heat Capacity or Derived Heat Capacity Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0010</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;ExcessPartialApparentEnergyProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0010</IRI>
+        <Literal xml:lang="en">Excess, Partial or Apparent Energy Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0011</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;TransportProp&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0011</IRI>
+        <Literal xml:lang="en">Transport Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0012</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;RefractionSurfaceTensionSoundSpeed&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0012</IRI>
+        <Literal xml:lang="en">Refraction, Surface Tension or Sound Speed Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0013</IRI>
+        <Literal xml:lang="en">Properties enumerated in the &apos;BioProperties&quot; element in ThermoML v.4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0013</IRI>
+        <Literal xml:lang="en">Biochemical Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0015</IRI>
+        <Literal xml:lang="en">hasStandardUnitOfMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0016</IRI>
+        <Literal xml:lang="en">Enthalpy of process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0017</IRI>
+        <Literal xml:lang="en">Specific internal energy of reaction at constant volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0018</IRI>
+        <Literal xml:lang="en">Molar internal energy of reaction at constant volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0019</IRI>
+        <Literal xml:lang="en">Molar Gibbs energy of reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0020</IRI>
+        <Literal xml:lang="en">Molar entropy of reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0021</IRI>
+        <Literal xml:lang="en">Potential difference of an electrochemical cell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0022</IRI>
+        <Literal xml:lang="en">Thermodynamic equilibrium constant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0023</IRI>
+        <Literal xml:lang="en">Equilibrium constant in terms of molality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0024</IRI>
+        <Literal xml:lang="en">Equilibrium constant in terms of amount concentration (molarity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0025</IRI>
+        <Literal xml:lang="en">Equilibrium constant in terms of partial pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0026</IRI>
+        <Literal xml:lang="en">Equilibrium constant in terms of mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0027</IRI>
+        <Literal xml:lang="en">Natural logarithm of thermodynamic equilibrium constant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0028</IRI>
+        <Literal xml:lang="en">Natural logarithm of equilibrium constant in terms of molality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0029</IRI>
+        <Literal xml:lang="en">Natural logarithm of equilibrium constant in terms of amount concentration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0030</IRI>
+        <Literal xml:lang="en">Natural logarithm of equilibrium constant in terms of partial pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0031</IRI>
+        <Literal xml:lang="en">Natural logarithm of equilibrium constant in terms of mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0032</IRI>
+        <Literal xml:lang="en">Decadic logarithm of thermodynamic equilibrium constant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0033</IRI>
+        <Literal xml:lang="en">Decadic logarithm of equilibrium constant in terms of molality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0034</IRI>
+        <Literal xml:lang="en">Decadic logarithm of equilibrium constant in terms of amount concentration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0035</IRI>
+        <Literal xml:lang="en">Decadic logarithm of equilibrium constant in terms of partial pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0036</IRI>
+        <Literal xml:lang="en">Decadic logarithm of equilibrium constant in terms of mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0037</IRI>
+        <Literal xml:lang="en">Critical temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0038</IRI>
+        <Literal xml:lang="en">Critical pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0039</IRI>
+        <Literal xml:lang="en">Critical density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0040</IRI>
+        <Literal xml:lang="en">Critical molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0041</IRI>
+        <Literal xml:lang="en">Critical specific volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0042</IRI>
+        <Literal xml:lang="en">Critical compressibility factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0043</IRI>
+        <Literal xml:lang="en">Lower consolute temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0044</IRI>
+        <Literal xml:lang="en">Upper consolute temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0045</IRI>
+        <Literal xml:lang="en">Lower consolute pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0046</IRI>
+        <Literal xml:lang="en">Upper consolute pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0048</IRI>
+        <Literal xml:lang="en">Vapor or sublimation pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0049</IRI>
+        <Literal xml:lang="en">Normal boiling temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0050</IRI>
+        <Literal xml:lang="en">Boiling temperature at pressure P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0051</IRI>
+        <Literal xml:lang="en">Azeotropic pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0052</IRI>
+        <Literal xml:lang="en">Azeotropic temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0053</IRI>
+        <Literal xml:lang="en">Triple point temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0054</IRI>
+        <Literal xml:lang="en">Triple point pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0055</IRI>
+        <Literal xml:lang="en">Normal melting temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0056</IRI>
+        <Literal xml:lang="en">Molar enthalpy of transition or fusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0057</IRI>
+        <Literal xml:lang="en">Molar entropy of transition or fusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0058</IRI>
+        <Literal xml:lang="en">Cryoscopic constant (mole fraction scale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0059</IRI>
+        <Literal xml:lang="en">Cryoscopic constant (molality scale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0060</IRI>
+        <Literal xml:lang="en">Molar enthalpy of vaporization or sublimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0061</IRI>
+        <Literal xml:lang="en">Molar entropy of vaporization or sublimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0062</IRI>
+        <Literal xml:lang="en">Molar Gibbs energy of vaporization or sublimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0063</IRI>
+        <Literal xml:lang="en">Quadruple (quintuple) point temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0064</IRI>
+        <Literal xml:lang="en">Quadruple (quintuple) point pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0065</IRI>
+        <Literal xml:lang="en">Solid-liquid equilibrium temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0066</IRI>
+        <Literal xml:lang="en">Liquid-liquid equilibrium temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0067</IRI>
+        <Literal xml:lang="en">Phase boundary pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0068</IRI>
+        <Literal xml:lang="en">Eutectic temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0069</IRI>
+        <Literal xml:lang="en">Peritectic temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0070</IRI>
+        <Literal xml:lang="en">Monotectic temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0071</IRI>
+        <Literal xml:lang="en">Molar lattice energy at 0 K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0072</IRI>
+        <Literal xml:lang="en">Azeotropic composition: mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0073</IRI>
+        <Literal xml:lang="en">Azeotropic composition: mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0074</IRI>
+        <Literal xml:lang="en">Eutectic composition: mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0075</IRI>
+        <Literal xml:lang="en">Eutectic composition: mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0076</IRI>
+        <Literal xml:lang="en">Eutectic composition: volume fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0077</IRI>
+        <Literal xml:lang="en">Monotectic composition: mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0078</IRI>
+        <Literal xml:lang="en">Monotectic composition: mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0079</IRI>
+        <Literal xml:lang="en">Lower consolute composition: volume fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0080</IRI>
+        <Literal xml:lang="en">Lower consolute composition: mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0081</IRI>
+        <Literal xml:lang="en">Lower consolute composition: mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0082</IRI>
+        <Literal xml:lang="en">Mass concentration, kg/m3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0083</IRI>
+        <Literal xml:lang="en">Ratio of amount of solute to mass of solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0084</IRI>
+        <Literal xml:lang="en">Mass ratio of solute to solvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0085</IRI>
+        <Literal xml:lang="en">Molality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0086</IRI>
+        <Literal xml:lang="en">Amount concentration (molarity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0087</IRI>
+        <Literal xml:lang="en">Mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0088</IRI>
+        <Literal xml:lang="en">Mole fraction in LLG critical state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0089</IRI>
+        <Literal xml:lang="en">Amount ratio of solute to solvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0090</IRI>
+        <Literal xml:lang="en">Upper consolute composition: volume fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0091</IRI>
+        <Literal xml:lang="en">Upper consolute composition: mole fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0092</IRI>
+        <Literal xml:lang="en">Upper consolute composition: mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0093</IRI>
+        <Literal xml:lang="en">Volume fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0094</IRI>
+        <Literal xml:lang="en">Volume ratio of solute to solvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0095</IRI>
+        <Literal xml:lang="en">Mass fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0096</IRI>
+        <Literal xml:lang="en">Mass fraction in LLG critical state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0097</IRI>
+        <Literal xml:lang="en">Henry&apos;s Law constant (mole fraction scale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0098</IRI>
+        <Literal xml:lang="en">Henry&apos;s Law constant (molality scale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0099</IRI>
+        <Literal xml:lang="en">Henry&apos;s Law constant (amount concentration scale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0100</IRI>
+        <Literal xml:lang="en">Bunsen coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0101</IRI>
+        <Literal xml:lang="en">Ostwald coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0102</IRI>
+        <Literal xml:lang="en">Partial pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0103</IRI>
+        <Literal xml:lang="en">(Relative) activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0104</IRI>
+        <Literal xml:lang="en">Activity coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0105</IRI>
+        <Literal xml:lang="en">Mean ionic activity coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0106</IRI>
+        <Literal xml:lang="en">Mean ionic activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0107</IRI>
+        <Literal xml:lang="en">Fugacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0108</IRI>
+        <Literal xml:lang="en">Fugacity coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0109</IRI>
+        <Literal xml:lang="en">Osmotic pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0110</IRI>
+        <Literal xml:lang="en">Osmotic coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0111</IRI>
+        <Literal xml:lang="en">Mass density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0112</IRI>
+        <Literal xml:lang="en">Specific volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0113</IRI>
+        <Literal xml:lang="en">Amount density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0114</IRI>
+        <Literal xml:lang="en">Molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0115</IRI>
+        <Literal xml:lang="en">2nd virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0116</IRI>
+        <Literal xml:lang="en">2nd acoustic virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0117</IRI>
+        <Literal xml:lang="en">3rd virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0118</IRI>
+        <Literal xml:lang="en">3rd acoustic virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0119</IRI>
+        <Literal xml:lang="en">3rd interaction virial coefficient C112</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0120</IRI>
+        <Literal xml:lang="en">3rd interaction virial coefficient C122</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0121</IRI>
+        <Literal xml:lang="en">Excess virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0122</IRI>
+        <Literal xml:lang="en">Interaction virial coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0123</IRI>
+        <Literal xml:lang="en">Excess molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0124</IRI>
+        <Literal xml:lang="en">Partial molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0125</IRI>
+        <Literal xml:lang="en">Relative partial molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0126</IRI>
+        <Literal xml:lang="en">Apparent molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0127</IRI>
+        <Literal xml:lang="en">Adiabatic compressibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0128</IRI>
+        <Literal xml:lang="en">Excess adiabatic compressibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0129</IRI>
+        <Literal xml:lang="en">Isothermal compressibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0130</IRI>
+        <Literal xml:lang="en">Excess isothermal compressibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0131</IRI>
+        <Literal xml:lang="en">Isobaric coefficient of expansion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0132</IRI>
+        <Literal xml:lang="en">Excess coefficient of expansion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0133</IRI>
+        <Literal xml:lang="en">Compressibility factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0134</IRI>
+        <Literal xml:lang="en">Thermal pressure coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0135</IRI>
+        <Literal xml:lang="en">Molar heat capacity at constant pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0136</IRI>
+        <Literal xml:lang="en">Specific heat capacity at constant pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0137</IRI>
+        <Literal xml:lang="en">Heat capacity at constant pressure per volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0138</IRI>
+        <Literal xml:lang="en">Molar heat capacity at saturation pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0139</IRI>
+        <Literal xml:lang="en">Specific heat capacity at saturation pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0140</IRI>
+        <Literal xml:lang="en">Heat capacity at saturation pressure per volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0141</IRI>
+        <Literal xml:lang="en">Molar heat capacity at constant volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0142</IRI>
+        <Literal xml:lang="en">Specific heat capacity at constant volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0143</IRI>
+        <Literal xml:lang="en">Heat capacity at constant volume per volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0144</IRI>
+        <Literal xml:lang="en">Heat capacity ratio cp/cv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0145</IRI>
+        <Literal xml:lang="en">Molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0146</IRI>
+        <Literal xml:lang="en">Molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0147</IRI>
+        <Literal xml:lang="en">Molar enthalpy function {Hm(T)-Hm(0)}/T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0148</IRI>
+        <Literal xml:lang="en">Molar Gibbs energy function {Gm(T)-Hm(0)}/T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0149</IRI>
+        <Literal xml:lang="en">Molar Gibbs energy function {Gm(T)-Hm(298.15)}/T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0150</IRI>
+        <Literal xml:lang="en">Molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0151</IRI>
+        <Literal xml:lang="en">Molar Helmholtz energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0152</IRI>
+        <Literal xml:lang="en">Molar internal energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0153</IRI>
+        <Literal xml:lang="en">Joule-Thomson coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0154</IRI>
+        <Literal xml:lang="en">Pressure coefficient of molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0155</IRI>
+        <Literal xml:lang="en">Apparent molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0156</IRI>
+        <Literal xml:lang="en">Apparent molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0157</IRI>
+        <Literal xml:lang="en">Apparent molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0158</IRI>
+        <Literal xml:lang="en">Apparent molar heat capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0159</IRI>
+        <Literal xml:lang="en">Excess molar enthalpy (molar enthalpy of mixing)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0160</IRI>
+        <Literal xml:lang="en">Molar enthalpy of mixing with solvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0161</IRI>
+        <Literal xml:lang="en">Molar enthalpy of solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0162</IRI>
+        <Literal xml:lang="en">Molar enthalpy of dilution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0163</IRI>
+        <Literal xml:lang="en">Excess molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0164</IRI>
+        <Literal xml:lang="en">Excess molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0165</IRI>
+        <Literal xml:lang="en">Excess molar heat capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0166</IRI>
+        <Literal xml:lang="en">Partial molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0167</IRI>
+        <Literal xml:lang="en">Partial molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0168</IRI>
+        <Literal xml:lang="en">Partial molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0169</IRI>
+        <Literal xml:lang="en">Partial molar heat capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0170</IRI>
+        <Literal xml:lang="en">Relative partial molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0171</IRI>
+        <Literal xml:lang="en">Relative partial molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0172</IRI>
+        <Literal xml:lang="en">Relative partial molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0173</IRI>
+        <Literal xml:lang="en">Relative partial molar heat capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0174</IRI>
+        <Literal xml:lang="en">Standard state molar enthalpy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0175</IRI>
+        <Literal xml:lang="en">Standard state molar entropy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0176</IRI>
+        <Literal xml:lang="en">Standard state molar Gibbs energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0177</IRI>
+        <Literal xml:lang="en">Standard state molar heat capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0178</IRI>
+        <Literal xml:lang="en">Referred to only as &apos;Viscosity&apos; in ThermoML v4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0178</IRI>
+        <Literal xml:lang="en">Dynamic viscosity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_0179</IRI>
+        <Literal xml:lang="en">Referred to only as &apos;Excess viscosity&apos; in ThermoML v4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0179</IRI>
+        <Literal xml:lang="en">Excess dynamic viscosity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0180</IRI>
+        <Literal xml:lang="en">Kinematic viscosity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0181</IRI>
+        <Literal xml:lang="en">Fluidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0182</IRI>
+        <Literal xml:lang="en">Thermal conductivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0183</IRI>
+        <Literal xml:lang="en">Thermal diffusivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0184</IRI>
+        <Literal xml:lang="en">Binary diffusion coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0185</IRI>
+        <Literal xml:lang="en">Self diffusion coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0186</IRI>
+        <Literal xml:lang="en">Tracer diffusion coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0187</IRI>
+        <Literal xml:lang="en">Electrical conductivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0188</IRI>
+        <Literal xml:lang="en">Molar conductivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0189</IRI>
+        <Literal xml:lang="en">Transport number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0190</IRI>
+        <Literal xml:lang="en">Refractive index (Na D-line)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0191</IRI>
+        <Literal xml:lang="en">Excess refractive index (Na D-line)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0192</IRI>
+        <Literal xml:lang="en">Refractive index (other wavelength)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0193</IRI>
+        <Literal xml:lang="en">Excess refractive index (other wavelength)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0194</IRI>
+        <Literal xml:lang="en">Relative permittivity at zero frequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0195</IRI>
+        <Literal xml:lang="en">Excess relative permittivity at zero frequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0196</IRI>
+        <Literal xml:lang="en">Relative permittivity at various frequencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0197</IRI>
+        <Literal xml:lang="en">Complex relative permittivity (Real part) at various frequencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0198</IRI>
+        <Literal xml:lang="en">Complex relative permittivity (Imaginary part) at various frequencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0199</IRI>
+        <Literal xml:lang="en">Surface tension liquid-gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0200</IRI>
+        <Literal xml:lang="en">Excess surface tension liquid-gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0201</IRI>
+        <Literal xml:lang="en">Interfacial tension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0202</IRI>
+        <Literal xml:lang="en">Speed of sound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0203</IRI>
+        <Literal xml:lang="en">Excess speed of sound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0204</IRI>
+        <Literal xml:lang="en">Temperature of 1/2 conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0205</IRI>
+        <Literal xml:lang="en">Peak temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0206</IRI>
+        <Literal xml:lang="en">Zero-Gibbs energy temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0207</IRI>
+        <Literal xml:lang="en">Heat capacity change at transition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0208</IRI>
+        <Literal xml:lang="en">van&apos;t Hoff enthalpy of transition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_CP0001</IRI>
+        <Literal xml:lang="en">Molar enthalpy of reaction</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
