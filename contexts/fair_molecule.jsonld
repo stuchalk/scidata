@@ -23,7 +23,7 @@
             },
             "monoisotopicmass": {
                 "@id": "ss:CHEMINF_000218",
-                "@type": "string"
+                "@type": "float"
             },
             "identifiers": "obo:IAO_0000578",
             "descriptors": "ss:CHEMINF_000123",
