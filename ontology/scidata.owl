@@ -180,6 +180,9 @@
         <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#assay"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#axisLabel"/>
     </Declaration>
     <Declaration>
@@ -712,6 +715,10 @@
     <SubClassOf>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
         <Class IRI="#scientificData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#assay"/>
+        <Class IRI="#methodologyAspect"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#axisLabel"/>
@@ -2153,6 +2160,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#assay</IRI>
+        <Literal xml:lang="en">A set of operations having the object of determining the value of a quantity. In analytical chemistry, this term is synonymous with measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#assay</IRI>
+        <Literal xml:lang="en">https://goldbook.iupac.org/terms/view/A00470</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#assay</IRI>
+        <Literal xml:lang="en">assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assay</IRI>
+        <Literal xml:lang="en">assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#axisLabel</IRI>
         <Literal>The title given to an axis on a graph</Literal>
     </AnnotationAssertion>
@@ -3051,6 +3078,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#sigfigs</IRI>
         <Literal>significant figures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#software</IRI>
+        <Literal xml:lang="en">Software is a collection of data or computer instructions that tell the computer how to work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#software</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Software</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>

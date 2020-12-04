@@ -2,11 +2,12 @@
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "http://edamontology.org/",
+        "enm": "http://purl.enanomapper.org/onto/",
         "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
-        "compound": {"@id": "sci:compound"},
-        "element": {"@id": "sci:element"},
+        "compound": {"@id": "sdo:compound"},
+        "element": {"@id": "sdo:element"},
         "name": {
             "@id": "dc:title",
             "@type": "string"
@@ -46,6 +47,9 @@
         "casrn": {
             "@id": "edam:data_3102",
             "@type": "string"
-        }
+        },
+        "identifiers": {"@id": "dc:identifier"},
+        "descriptors": {"@id": "enm:ENM_8000019"},
+        "molgraph": {"@id": "ss:CHEMINF_000022"}
     }
 }

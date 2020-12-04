@@ -1,29 +1,29 @@
 {
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "sw": "https://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "ssw": "https://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "software": {"@id": "sci:software"},
+        "software": {"@id": "sdo:software"},
         "version": {
             "@id": "obo:IAO_0000129",
             "@type": "string"
         },
         "os": {
-            "@id": "sw:operatingSystem",
+            "@id": "ssw:operatingSystem",
             "@type": "string"
         },
         "developer": {
-            "@id": "sw:developer",
+            "@id": "ssw:developer",
             "@type": "string"
         },
         "input": {
-            "@id": "sw:calcInputFile",
+            "@id": "ssw:calcInputFile",
             "@type": "string"
         },
         "output": {
-            "@id": "sw:calcOutputFile",
+            "@id": "ssw:calcOutputFile",
             "@type": "string"
         }
     }

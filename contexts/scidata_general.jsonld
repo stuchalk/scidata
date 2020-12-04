@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
         "name": {
             "@id": "dc:title",
@@ -17,19 +17,19 @@
             "@type": "dateTime"
         },
         "source": {
-            "@id": "sci:hasSource",
+            "@id": "sdo:hasSource",
             "@type": "@id"
         },
         "scope": {
-            "@id": "sci:hasScope",
+            "@id": "sdo:hasScope",
             "@type": "@id"
         },
         "phase": {
-            "@id": "sci:phaseOfMatter",
+            "@id": "sdo:phaseOfMatter",
             "@type": "string"
         },
         "role": {
-            "@id": "sci:role",
+            "@id": "sdo:role",
             "@type": "@id"
         },
         "label": {

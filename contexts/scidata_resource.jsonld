@@ -2,9 +2,9 @@
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dc": "http://purl.org/dc/terms/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "res": "https://stuchalk.github.io/scidata/ontology/resource/resource.owl",
-        "resource": {"@id": "sci:hasResource"},
+        "resource": {"@id": "sdo:hasResource"},
         "type": {
             "@id": "dc:type",
             "@type": "string"

@@ -3,17 +3,14 @@
         "https://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "evaluation": {
-                "@id": "sci:evaluationMethod",
+                "@id": "sdo:evaluationMethod",
                 "@type": "string"
             },
-            "aspects": {"@id": "sci:hasMethodologyAspect"}
+            "aspects": {"@id": "sdo:hasMethodologyAspect"}
         }
     ]
 }

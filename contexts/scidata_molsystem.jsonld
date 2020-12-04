@@ -7,24 +7,24 @@
             "ss": "http://semanticscience.org/resource/",
             "obo": "http://purl.obolibrary.org/obo/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "molsystem": {"@id": "gc:MolecularSystem"},
             "temperature": {
                 "@id": "gc:hasSystemTemperature",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "charge": {
                 "@id": "gc:hasSystemCharge",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "multiplicity": {
                 "@id": "gc:hasSystemMultiplicity",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "molecule": {"@id": "gc:hasMolecule"},
             "atomCount": {
                 "@id": "gc:hasNumberOfAtoms",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "chain": {"@id": "gc:hasChain"},
             "residue": {"@id": "gc:hasResidue"},
@@ -34,15 +34,15 @@
             "atom": {"@id": "gc:hasAtom"},
             "atomMass": {
                 "@id": "gc:hasAtomMass",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "formalAtomCharge": {
                 "@id": "gc:hasFormalAtomCharge",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "calculatedAtomCharge": {
                 "@id": "gc:hasCalculatedAtomCharge",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "basisSet": {
                 "@id": "gc:hasBasisSet",
@@ -107,15 +107,15 @@
             "point": {"@id": "gc:hasPoint"},
             "x": {
                 "@id": "ss:SIO_000400",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "y": {
                 "@id": "ss:SIO_000401",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "z": {
                 "@id": "ss:SIO_000402",
-                "@type": "sci:parameter"
+                "@type": "sdo:parameter"
             },
             "tenant": {
                 "@id": "gc:hasTenant",

@@ -3,9 +3,9 @@
         {
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "dc": "http://purl.org/dc/terms/",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "mat": "https://stuchalk.github.io/scidata/ontology/scidata_material.owl#",
-            "material": {"@id": "sci:material"},
+            "material": {"@id": "sdo:material"},
             "materialType": {
                 "@id": "mat:materialType",
                 "@type": "string"
@@ -19,13 +19,10 @@
                 "@type": "string"
             },
             "origin": {
-                "@id": "sci:origin",
+                "@id": "sdo:origin",
                 "@type": "string"
             },
-            "property": {
-                "@id": "mat:property",
-                "@type": "sci:parameter"
-            }
+            "property": {"@id": "mat:property"}
         }
     ]
 }

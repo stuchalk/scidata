@@ -3,7 +3,8 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "gc": "https://purl.org/gc/",
         "dc": "https://purl.org/dc/terms/",
-        "basisSet": {"@id": "sci:basisSet"},
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "basisSet": {"@id": "sdo:basisSet"},
         "title": {
             "@id": "dc:title",
             "@type": "string"

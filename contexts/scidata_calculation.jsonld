@@ -2,8 +2,8 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "gc": "https://purl.org/gc/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "calculation": {"@id": "sci:calculation"},
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "calculation": {"@id": "sdo:calculation"},
         "approach": {
             "@id": "gc:calculationApproach",
             "@type": "string"

@@ -3,33 +3,33 @@
         "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
             "uid": {
                 "@id": "dc:identifier",
                 "@type": "string"
             },
-            "parameter": {"@id": "sci:parameter"},
-            "parameterArray": {"@id": "sci:parameterArray"},
+            "parameter": {"@id": "sdo:parameter"},
+            "parameterArray": {"@id": "sdo:parameterArray"},
             "quantity": {
-                "@id": "sci:quantity",
+                "@id": "sdo:quantity",
                 "@type": "string"
             },
             "quantityref": {
-                "@id": "sci:quantity",
+                "@id": "sdo:quantity",
                 "@type": "@id"
             },
             "property": {
-                "@id": "sci:property",
+                "@id": "sdo:property",
                 "@type": "string"
             },
             "propertyref": {
-                "@id": "sci:property",
+                "@id": "sdo:property",
                 "@type": "@id"
             },
             "value": {
-                "@id": "sci:hasValue",
-                "@type": "sci:value"
+                "@id": "sdo:hasValue",
+                "@type": "sdo:value"
             }
         }
     ]

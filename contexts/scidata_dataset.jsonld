@@ -3,77 +3,73 @@
         "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dataset": {"@id": "sci:dataset"},
-            "datagroup": {
-                "@id": "sci:hasDataGroup"
-            },
+            "dataset": {"@id": "sdo:dataset"},
+            "datagroup": {"@id": "sdo:hasDataGroup"},
             "datagroups": {
-                "@id": "sci:hasDataGroup",
+                "@id": "sdo:hasDataGroup",
                 "@type": "@id"
             },
-            "dataseries": {
-                "@id": "sci:hasDataSeries"
-            },
+            "dataseries": {"@id": "sdo:hasDataSeries"},
             "dataserieses": {
-                "@id": "sci:hasDataSeries",
+                "@id": "sdo:hasDataSeries",
                 "@type": "@id"
             },
             "dataname": {
-                "@id": "sci:dataName",
-                "@type": "sci:parameter"
+                "@id": "sdo:dataName",
+                "@type": "sdo:parameter"
             },
-            "datapoint": {
-                "@id": "sci:hasDataPoint"
-            },
+            "datapoint": {"@id": "sdo:hasDataPoint"},
             "datapoints": {
-                "@id": "sci:hasDataPoint",
+                "@id": "sdo:hasDataPoint",
                 "@type": "@id"
             },
             "conditions": {
-                "@id": "sci:hasCondition",
+                "@id": "sdo:hasCondition",
                 "@type": "@id"
             },
             "analyzed": {
-                "@id": "sci:evaluatedSystem",
+                "@id": "sdo:evaluatedSystem",
                 "@type": "@id"
             },
             "settings": {
-                "@id": "sci:hasSetting",
+                "@id": "sdo:hasSetting",
                 "@type": "@id"
             },
-            "data": {
-                "@id": "sci:hasDatum"
-            },
+            "data": {"@id": "sdo:hasDatum"},
             "reference": {
-                "@id": "sci:hasSource",
+                "@id": "sdo:hasSource",
                 "@type": "@id"
             },
             "attributes": {
-                "@id": "sci:hasDataAttributes",
-                "@type": "sci:parameter"
+                "@id": "sdo:hasDataAttributes",
+                "@type": "sdo:parameter"
             },
             "parameters": {
-                "@id": "sci:hasDataParameters",
-                "@type": "sci:parameterArray"
+                "@id": "sdo:hasDataParameters",
+                "@type": "sdo:parameterArray"
             },
             "seriesType": {
-                "@id": "sci:dataSeriesType",
+                "@id": "sdo:dataSeriesType",
                 "@type": "string"
             },
             "axis": {
-                "@id": "sci:axisType",
+                "@id": "sdo:axisType",
                 "@type": "string"
             },
             "axisLabel": {
-                "@id": "sci:axisLabel",
+                "@id": "sdo:axisLabel",
                 "@type": "string"
             },
             "annotations": {
                 "@id": "obo:NCIT_C44272",
                 "@type": "string"
+            },
+            "assay": {
+                "@id": "sdo:assay",
+                "@type": "@id"
             }
         }
     ]

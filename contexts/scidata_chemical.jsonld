@@ -4,9 +4,9 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
-            "chemical": {"@id": "sci:chemical"},
+            "chemical": {"@id": "sdo:chemical"},
             "vendor": {
                 "@id": "obo:sep_00088",
                 "@type": "string"
@@ -32,32 +32,31 @@
                 "@type": "string"
             },
             "properties": {
-                "@id": "sci:propertyValue",
-                "@type": "sci:parameter"
+                "@id": "sdo:propertyValue"
             },
             "source": {
-                "@id": "sci:hasSource",
+                "@id": "sdo:hasSource",
                 "@type": "@id"
             },
             "acquired": {
-                "@id": "sci:acquiredFrom",
+                "@id": "sdo:acquiredFrom",
                 "@type": "string"
             },
             "purity": {
-                "@id": "sci:purity",
-                "@type": "sci:parameter"
+                "@id": "sdo:purity",
+                "@type": "sdo:parameter"
             },
-            "steps": {"@id": "sci:purificationStep"},
+            "steps": {"@id": "sdo:purificationStep"},
             "part": {
-                "@id": "sci:propertyValue",
+                "@id": "sdo:propertyValue",
                 "@type": "string"
             },
             "analysis": {
-                "@id": "sci:analysisMethod",
+                "@id": "sdo:analysisMethod",
                 "@type": "string"
             },
             "purification": {
-                "@id": "sci:purificationMethod",
+                "@id": "sdo:purificationMethod",
                 "@type": "string"
             }
         }

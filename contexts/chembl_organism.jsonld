@@ -1,8 +1,31 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "dc": "https://purl.org/dc/terms/",
-    "name": {
-        "@id": "dc:title",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "edam": "http://edamontology.org",
+        "start_position": {
+            "@id": "obo:NCIT_C45276",
+            "@type": "string"
+        },
+        "organism": {
+            "@id": "obo:OBI_0100026",
+            "@type": "string"
+        },
+        "tax_id": {
+            "@id": "edam:data_1179",
+            "@type": "string"
+        },
+        "l1": {
+            "@id": "obo:NCIT_C45276",
+            "@type": "string"
+        },
+        "l2": {
+            "@id": "obo:NCIT_C45277",
+            "@type": "string"
+        },
+        "l3": {
+            "@id": "obo:NCIT_C45280",
+            "@type": "string"
+        }
     }
-}}
+}

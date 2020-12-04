@@ -1,75 +1,79 @@
 {
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "http://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
-        "unit": {"@id": "sci:unitOfMeasure"},
+        "unit": {"@id": "sdo:unitOfMeasure"},
         "unitstr": {
-            "@id": "sci:unitOfMeasure",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "unitref": {
-            "@id": "sci:unitOfMeasure",
+            "@id": "sdo:unitOfMeasure",
             "@type": "@id"
         },
+        "name": {
+            "@id": "obo:IAO_0000302",
+            "@type": "string"
+        },
         "unitsystem": {
-            "@id": "sci:unitSystem",
+            "@id": "sdo:unitSystem",
             "@type": "string"
         },
         "unitsystemref": {
-            "@id": "sci:unitSystem",
+            "@id": "sdo:unitSystem",
             "@type": "@id"
         },
         "quantity": {
-            "@id": "sci:quantity",
+            "@id": "sdo:quantity",
             "@type": "string"
         },
         "quantityref": {
-            "@id": "sci:quantity",
+            "@id": "sdo:quantity",
             "@type": "@id"
         },
         "abbrev": {
-            "@id": "sci:unitAbbreviation",
+            "@id": "sdo:unitAbbreviation",
             "@type": "string"
         },
         "symbol": {
-            "@id": "sci:unitSymbol",
+            "@id": "sdo:unitSymbol",
             "@type": "string"
         },
         "unitinsi": {
-            "@id": "sci:siUnitEquivalent",
+            "@id": "sdo:siUnitEquivalent",
             "@type": "sic:siUnit"
         },
-        "siunit": {"@id": "sci:siUnit"},
+        "siunit": {"@id": "sdo:siUnit"},
         "siunitstr": {
-            "@id": "sci:siUnit",
+            "@id": "sdo:siUnit",
             "@type": "string"
         },
         "siunitref": {
-            "@id": "sci:siUnit",
+            "@id": "sdo:siUnit",
             "@type": "@id"
         },
         "prefix": {
-            "@id": "sci:siPrefix",
+            "@id": "sdo:siPrefix",
             "@type": "string"
         },
         "power": {
-            "@id": "sci:unitPower",
+            "@id": "sdo:unitPower",
             "@type": "integer"
         },
-        "factor": {"@id": "sci:conversionFactor"},
+        "factor": {"@id": "sdo:conversionFactor"},
         "factorref": {
-            "@id": "sci:conversionFactor",
+            "@id": "sdo:conversionFactor",
             "@type": "@id"
         },
         "fromunit": {
-            "@id": "sci:unitOfMeasure",
+            "@id": "sdo:unitOfMeasure",
             "@type": "unitref"
         },
         "tounit": {
-            "@id": "sci:unitOfMeasure",
+            "@id": "sdo:unitOfMeasure",
             "@type": "siunit"
         },
         "addend": {

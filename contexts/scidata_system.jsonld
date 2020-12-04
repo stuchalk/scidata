@@ -4,24 +4,21 @@
         "https://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_substance.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_sample.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_target.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_material.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_organism.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_condition.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "discipline": {
-                "@id": "sci:discipline",
+                "@id": "sdo:discipline",
                 "@type": "string"
             },
             "subdiscipline": {
-                "@id": "sci:subdiscipline",
+                "@id": "sdo:subdiscipline",
                 "@type": "string"
             },
-            "facets": {"@id": "sci:hasSystemFacet"}
+            "facets": {"@id": "sdo:hasSystemFacet"}
         }
     ]
 }

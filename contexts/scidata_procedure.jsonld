@@ -2,9 +2,9 @@
     "@context": {
         "@vocab": "http://www.w3.org/2001/XMLSchema#",
         "dc": "http://purl.org/dc/terms/",
-        "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "proc": "https://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#",
-        "procedure": {"@id": "sci:procedure"},
+        "procedure": {"@id": "sdo:procedure"},
         "procType": {
             "@id": "proc:procedureType",
             "@type": "string"

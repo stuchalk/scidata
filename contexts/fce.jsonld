@@ -2,7 +2,7 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/fce_identifiers.jsonld",
         "https://stuchalk.github.io/scidata/contexts/fce_descriptors.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/fce.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fce_molgraph.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
@@ -27,7 +27,7 @@
             },
             "identifiers": "obo:IAO_0000578",
             "descriptors": "ss:CHEMINF_000123",
-            "molgraph":  "ss:CHEMINF_000022"
+            "molgraph": "ss:CHEMINF_000022"
         }
     ]
 }

@@ -4,64 +4,64 @@
         {
             "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "dc": "http://purl.org/dc/terms/",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "numericvalue": {"@id": "sci:numericValue"},
-            "numericvaluearray": {"@id": "sci:numericValueArray"},
-            "textstring": {"@id": "sci:textString"},
-            "textstringarray": {"@id": "sci:textStringArray"},
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "numericvalue": {"@id": "sdo:numericValue"},
+            "numericvaluearray": {"@id": "sdo:numericValueArray"},
+            "textstring": {"@id": "sdo:textString"},
+            "textstringarray": {"@id": "sdo:textStringArray"},
             "datatype": {
-                "@id": "sci:numericDatatype",
+                "@id": "sdo:numericDatatype",
                 "@type": "@id"
             },
             "number": {
-                "@id": "sci:number",
+                "@id": "sdo:number",
                 "@type": "double"
             },
             "min": {
-                "@id": "sci:number",
+                "@id": "sdo:number",
                 "@type": "double"
             },
             "max": {
-                "@id": "sci:number",
+                "@id": "sdo:number",
                 "@type": "double"
             },
             "numberarray": {
-                "@id": "sci:numberArray",
+                "@id": "sdo:numberArray",
                 "@type": "double",
                 "@container": "@list"
             },
             "sigfigs": {
-                "@id": "sci:sigfigs",
+                "@id": "sdo:sigfigs",
                 "@type": "integer"
             },
             "error": {
-                "@id": "sci:error",
+                "@id": "sdo:error",
                 "@type": "double"
             },
             "errorarray": {
-                "@id": "sci:errorArray",
+                "@id": "sdo:errorArray",
                 "@type": "double",
                 "@container": "@list"
             },
             "errortype": {
-                "@id": "sci:errorType",
+                "@id": "sdo:errorType",
                 "@type": "string"
             },
             "errornote": {
-                "@id": "sci:errorNote",
+                "@id": "sdo:errorNote",
                 "@type": "string"
             },
             "text": {
-                "@id": "sci:text",
+                "@id": "sdo:text",
                 "@type": "string"
             },
             "textarray": {
-                "@id": "sci:textArray",
+                "@id": "sdo:textArray",
                 "@type": "string",
                 "@container": "@list"
             },
             "texttype": {
-                "@id": "sci:textType",
+                "@id": "sdo:textType",
                 "@type": "string"
             },
             "language": {
@@ -69,12 +69,12 @@
                 "@type": "string"
             },
             "value": {
-                "@id": "sci:numericValue",
-                "@type": "sci:isValue"
+                "@id": "sdo:numericValue",
+                "@type": "sdo:isValue"
             },
             "valuearray": {
-                "@id": "sci:numericValueArray",
-                "@type": "sci:isValueArray"
+                "@id": "sdo:numericValueArray",
+                "@type": "sdo:isValueArray"
             }
         }
     ]
