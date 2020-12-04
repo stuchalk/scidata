@@ -22,6 +22,34 @@
             "element": {
                 "@id": "obo:CHEBI_33250",
                 "@type": "@id"
+            },
+            "xcoord": {
+                "@id": "obo:NCIT_C44477",
+                "@type": "string"
+            },
+            "ycoord": {
+                "@id": "obo:NCIT_C44478",
+                "@type": "string"
+            },
+            "zcoord": {
+                "@id": "obo:NCIT_C44479",
+                "@type": "string"
+            },
+            "singlebonds": {
+                "@id": "sdo:singlebondcount",
+                "@type": "integer"
+            },
+            "doublebonds": {
+                "@id": "sdo:doublebondcount",
+                "@type": "integer"
+            },
+            "triplebonds": {
+                "@id": "sdo:triplebondcount",
+                "@type": "integer"
+            },
+            "aromaticsbonds": {
+                "@id": "sdo:aromaticbondcount",
+                "@type": "integer"
             }
         }
     ]
