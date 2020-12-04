@@ -766,7 +766,16 @@
         <Class IRI="#ITO_0208"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ITO_CP0001"/>
+        <Class IRI="#ITO_0210"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0212"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0213"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_0214"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ITO_0015"/>
@@ -1733,8 +1742,16 @@
         <Class IRI="#ITO_0013"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ITO_CP0001"/>
+        <Class IRI="#ITO_0212"/>
+        <Class IRI="#ITO_0210"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0213"/>
         <Class IRI="#ITO_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_0214"/>
+        <Class IRI="#ITO_0210"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:NCIT_C158424"/>
@@ -2511,7 +2528,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0103</IRI>
-        <Literal xml:lang="en">(Relative) activity</Literal>
+        <Literal xml:lang="en">Relative activity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2571,7 +2588,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0115</IRI>
-        <Literal xml:lang="en">2nd virial coefficient</Literal>
+        <Literal xml:lang="en">Second virial coefficient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2581,7 +2598,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0117</IRI>
-        <Literal xml:lang="en">3rd virial coefficient</Literal>
+        <Literal xml:lang="en">Third virial coefficient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3050,8 +3067,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ITO_CP0001</IRI>
+        <IRI>#ITO_0210</IRI>
+        <Literal xml:lang="en">General Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0212</IRI>
+        <Literal xml:lang="en">Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0213</IRI>
         <Literal xml:lang="en">Molar enthalpy of reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_0214</IRI>
+        <Literal xml:lang="en">Temperature</Literal>
     </AnnotationAssertion>
 </Ontology>
 

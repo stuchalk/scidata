@@ -6,6 +6,7 @@
             "obo": "http://purl.obolibrary.org/obo/",
             "atoms": {"@id": "obo:CHEBI_33250"},
             "bonds": {"@id": "ss:CHEMINF_000063"},
+            "elements": {"@id": "ss:CHEBI_24431"},
             "atom": {
                 "@id": "ss:SIO_010037",
                 "@type": "@id"
@@ -16,6 +17,10 @@
             },
             "bonded": {
                 "@id": "ss:SIO_000132",
+                "@type": "@id"
+            },
+            "element": {
+                "@id": "obo:CHEBI_33250",
                 "@type": "@id"
             }
         }

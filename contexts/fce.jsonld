@@ -1,8 +1,8 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/fair_molecule_identifiers.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/fair_molecule_descriptors.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/fair_molecule_molgraph.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fce_identifiers.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fce_descriptors.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/fce.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",

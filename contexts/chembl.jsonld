@@ -1,13 +1,13 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "edam": "http://edamontology.org",
-        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
-        "ss": "http://semanticscience.org/resource/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "bao": "http://www.bioassayontology.org/bao#",
+        "ss": "http://semanticscience.org/resource/",
         "mesh": "http://purl.bioontology.org/ontology/MESH",
+        "edam": "http://edamontology.org",
         "ebi": "http://www.ebi.ac.uk/efo/",
+        "bao": "http://www.bioassayontology.org/bao#",
+        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "chembl_id": {
             "@id": "edam:data_2646",
             "@type": "string"
@@ -165,7 +165,7 @@
             "@type": "string"
         },
         "compound_name": {
-            "@id": "edam:data_0990",
+            "@id": "ss:SIO_000117",
             "@type": "string"
         },
         "cidx": {
@@ -229,7 +229,7 @@
             "@type": "string"
         },
         "efo_id": {
-            "@id": "edam:data_2338",
+            "@id": "cco:CO_000078",
             "@type": "string"
         },
         "efo_term": {
@@ -472,24 +472,8 @@
             "@id": "ss:SIO_000618",
             "@type": "string"
         },
-        "Standard_units": {
-            "@id": "ss:SIO_000074",
-            "@type": "string"
-        },
-        "Standard_value": {
-            "@id": "ss:SIO_000618",
-            "@type": "string"
-        },
-        "Text_value": {
+        "text_value": {
             "@id": "ss:SIO_000070",
-            "@type": "string"
-        },
-        "Type": {
-            "@id": "bao:BAO_0000181",
-            "@type": "string"
-        },
-        "Units": {
-            "@id": "ss:SIO_000074",
             "@type": "string"
         },
         "unit": {
@@ -504,7 +488,7 @@
             "@id": "obo:OMIT_0016926",
             "@type": "string"
         },
-        "bao_format": {
+        "bao_id": {
             "@id": "bao:BAO_0000019",
             "@type": "string"
         },
@@ -512,7 +496,7 @@
             "@id": "ss:SIO_000136",
             "@type": "string"
         },
-        "assay_type": {
+        "assay_type_id": {
             "@id": "obo:FBcv_0003050",
             "@type": "string"
         },
@@ -549,15 +533,15 @@
             "@type": "string"
         },
         "l1": {
-            "@id": "obo:NCIT_C45276",
+            "@id": "cco:CO_000068",
             "@type": "string"
         },
         "l2": {
-            "@id": "obo:NCIT_C45277",
+            "@id": "cco:CO_000069",
             "@type": "string"
         },
         "l3": {
-            "@id": "obo:NCIT_C45280",
+            "@id": "cco:CO_000070",
             "@type": "string"
         },
         "class type": {
@@ -568,36 +552,12 @@
             "@id": "obo:NCIT_C25683",
             "@type": "string"
         },
-        "text_value": {
-            "@id": "ss:SIO_000070",
-            "@type": "string"
-        },
         "standards_text_value": {
             "@id": "ss:SIO_000618",
             "@type": "string"
         },
-        "A": {
-            "@id": "obo:NCIT_C15967",
-            "@type": "string"
-        },
-        "B": {
-            "@id": "obo:OBI_0001146",
-            "@type": "string"
-        },
-        "F": {
-            "@id": "obo:NCIT_C132165",
-            "@type": "string"
-        },
-        "P": {
-            "@id": "obo:NCIT_C134259",
-            "@type": "string"
-        },
-        "T": {
-            "@id": "obo:NCIT_C27955",
-            "@type": "string"
-        },
-        "U": {
-            "@id": "cco:CO_000044",
+        "assay_type": {
+            "@id": "obo:FBcv_0003050",
             "@type": "string"
         },
         "assay_description": {
@@ -617,15 +577,15 @@
             "@type": "string"
         },
         "level3": {
-            "@id": "cco:CO_000040",
+            "@id": "cco:CO_000054",
             "@type": "string"
         },
         "level4": {
-            "@id": "cco:CO_000041",
+            "@id": "cco:CO_000058",
             "@type": "string"
         },
         "level5": {
-            "@id": "ss:SIO_011126",
+            "@id": "cco:CO_000052",
             "@type": "string"
         },
         "level1_description": {
@@ -637,7 +597,7 @@
             "@type": "string"
         },
         "level3_description": {
-            "@id": "ss:SIO_000136",
+            "@id": "cco:CO_000057",
             "@type": "string"
         },
         "level4_description": {
@@ -657,7 +617,7 @@
             "@type": "string"
         },
         "sequence": {
-            "@id": "obo:CDAO_0000120",
+            "@id": "cco:CO_000086",
             "@type": "string"
         },
         "sequence_md5sum": {
@@ -676,10 +636,6 @@
             "@id": "obo:CLO_0000001",
             "@type": "string"
         },
-        "cell_description": {
-            "@id": "ss:SIO_000136",
-            "@type": "string"
-        },
         "cell_source_tissue": {
             "@id": "obo:CLO_0037227",
             "@type": "string"
@@ -688,20 +644,8 @@
             "@id": "obo:CLO_0037229",
             "@type": "string"
         },
-        "clo_id": {
-            "@id": "edam:data_2338",
-            "@type": "string"
-        },
         "cell_source_tax_id": {
             "@id": "edam:data_1179",
-            "@type": "string"
-        },
-        "cellosaurus_id": {
-            "@id": "edam:data_2338",
-            "@type": "string"
-        },
-        "cl_linics_id": {
-            "@id": "obo:CLO_0000178",
             "@type": "string"
         },
         "status": {
@@ -721,7 +665,7 @@
             "@type": "string"
         },
         "accession": {
-            "@id": "edam:data_2091",
+            "@id": "cco:CO_000083",
             "@type": "string"
         },
         "db_source": {
@@ -776,18 +720,6 @@
             "@id": "obo:OMIT_0016926",
             "@type": "string"
         },
-        "ref_type": {
-            "@id": "obo:NCIT_C95346",
-            "@type": "string"
-        },
-        "ref_id": {
-            "@id": "obo:NCIT_C25364",
-            "@type": "string"
-        },
-        "ref_url": {
-            "@id": "ss:SIO_000811",
-            "@type": "string"
-        },
         "uberon_id": {
             "@id": "edam:data_2338",
             "@type": "string"
@@ -801,7 +733,7 @@
             "@type": "string"
         },
         "definition": {
-            "@id": "cco:CO_000045",
+            "@id": "cco:CO_000065",
             "@type": "string"
         },
         "bei": {
@@ -834,6 +766,126 @@
         },
         "cx_logd": {
             "@id": "ss:CHEMINF_000323",
+            "@type": "string"
+        },
+        "target_mapping": {
+            "@id": "edam:topic_0102",
+            "@type": "string"
+        },
+        "data_validity_comment": {
+            "@id": "cco:CO_000051",
+            "@type": "string"
+        },
+        "frac_code": {
+            "@id": "cco:CO_000053",
+            "@type": "string"
+        },
+        "hrac_code": {
+            "@id": "cco:CO_000055",
+            "@type": "string"
+        },
+        "drugind_id": {
+            "@id": "cco:CO_000056",
+            "@type": "string"
+        },
+        "ref_type": {
+            "@id": "obo:NCIT_C95346",
+            "@type": "string"
+        },
+        "ref_id": {
+            "@id": "obo:NCIT_C25364",
+            "@type": "string"
+        },
+        "ref_url": {
+            "@id": "ss:SIO_000811",
+            "@type": "string"
+        },
+        "irac_code": {
+            "@id": "cco:CO_000059",
+            "@type": "string"
+        },
+        "activity_id": {
+            "@id": "cco:CO_000060",
+            "@type": "string"
+        },
+        "site_id": {
+            "@id": "cco:CO_000061",
+            "@type": "string"
+        },
+        "prediction_method": {
+            "@id": "cco:CO_000062",
+            "@type": "string"
+        },
+        "confidence": {
+            "@id": "obo:CIO_0000028",
+            "@type": "string"
+        },
+        "short_name": {
+            "@id": "cco:CO_000063",
+            "@type": "string"
+        },
+        "protein_class_desc": {
+            "@id": "cco:CO_000067",
+            "@type": "string"
+        },
+        "class_level": {
+            "@id": "cco:CO_000066",
+            "@type": "string"
+        },
+        "l4": {
+            "@id": "cco:CO_000071",
+            "@type": "string"
+        },
+        "relationship_type": {
+            "@id": "cco:CO_000072",
+            "@type": "string"
+        },
+        "relationship_desc": {
+            "@id": "cco:CO_000073",
+            "@type": "string"
+        },
+        "target_type_id": {
+            "@id": "cco:CO_000074",
+            "@type": "string"
+        },
+        "target_type": {
+            "@id": "cco:CO_000074",
+            "@type": "string"
+        },
+        "target_desc": {
+            "@id": "cco:CO_000075",
+            "@type": "string"
+        },
+        "parent_type": {
+            "@id": "cco:CO_000076",
+            "@type": "string"
+        },
+        "clo_id": {
+            "@id": "cco:CO_000077",
+            "@type": "string"
+        },
+        "cell_description": {
+            "@id": "cco:CO_000079",
+            "@type": "string"
+        },
+        "cellosaurus_id": {
+            "@id": "cco:CO_000081",
+            "@type": "string"
+        },
+        "cl_linics_id": {
+            "@id": "obo:CLO_0000178",
+            "@type": "string"
+        },
+        "mutation": {
+            "@id": "cco:CO_000082",
+            "@type": "string"
+        },
+        "version": {
+            "@id": "cco:CO_000084",
+            "@type": "string"
+        },
+        "isoform": {
+            "@id": "cco:CO_000085",
             "@type": "string"
         }
     }

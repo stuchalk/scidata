@@ -16,6 +16,11 @@
             "xsd": "https://www.w3.org/2001/XMLSchema#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+            "prov": "http://www.w3.org/ns/prov#",
+            "generatedAtTime": {
+                "@id": "prov:generatedAtTime",
+                "@type": "dateTime"
+            },
             "uid": {
                 "@id": "dc:identifier",
                 "@type": "string"

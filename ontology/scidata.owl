@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">
-    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="chm" IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -2930,7 +2930,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#scidataFramework</IRI>
-        <Literal>A datatype where the contenxt of the file use the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
+        <Literal>A datatype where the context of the file use the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
