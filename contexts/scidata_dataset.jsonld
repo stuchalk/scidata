@@ -44,11 +44,11 @@
                 "@type": "@id"
             },
             "attributes": {
-                "@id": "sdo:hasDataAttributes",
+                "@id": "sdo:hasDataAttribute",
                 "@type": "sdo:parameter"
             },
             "parameters": {
-                "@id": "sdo:hasDataParameters",
+                "@id": "sdo:hasDataParameter",
                 "@type": "sdo:parameterArray"
             },
             "seriesType": {
