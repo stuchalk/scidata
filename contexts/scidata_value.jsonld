@@ -17,6 +17,10 @@
                 "@id": "sdo:number",
                 "@type": "double"
             },
+            "equality": {
+                "@id": "obo:NCIT_C27993",
+                "@type": "string"
+            },
             "min": {
                 "@id": "sdo:number",
                 "@type": "double"

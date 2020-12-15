@@ -30,6 +30,10 @@
             "value": {
                 "@id": "sdo:hasValue",
                 "@type": "sdo:value"
+            },
+            "outcome": {
+                "@id": "obo:NCIT_C20200",
+                "@type": "string"
             }
         }
     ]
