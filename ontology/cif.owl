@@ -37,6 +37,9 @@
         <Class IRI="#AtomSitesData"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AtomTypeOxidationNumber"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AtomTypeSymbol"/>
     </Declaration>
     <Declaration>
@@ -194,6 +197,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AtomSiteLabel"/>
+        <Class IRI="#AtomSiteData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomTypeOxidationNumber"/>
         <Class IRI="#AtomSiteData"/>
     </SubClassOf>
     <SubClassOf>
@@ -406,7 +413,17 @@
         <Literal>data_atom_sites_[]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#AtomTypeOxidationNumber</IRI>
+        <Literal xml:lang="en">Formal oxidation state of this atom type in the structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AtomTypeOxidationNumber</IRI>
+        <Literal xml:lang="en">data_atom_type_oxidation_number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AtomTypeSymbol</IRI>
         <Literal>The code used to identify the atom species (singular or plural) representing this atom type. Normally this code is the element symbol. The code may be composed of any character except an underscore with the additional proviso that digits designate an oxidation state and must be followed by a + or - character.</Literal>
     </AnnotationAssertion>
