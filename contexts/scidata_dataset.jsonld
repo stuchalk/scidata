@@ -70,6 +70,14 @@
             "assay": {
                 "@id": "sdo:assay",
                 "@type": "@id"
+            },
+            "format": {
+                "@id": "obo:OBI_0000227",
+                "@type": "@id"
+            },
+            "level": {
+                "@id": "obo:MS_1003084",
+                "@type": "@id"
             }
         }
     ]
