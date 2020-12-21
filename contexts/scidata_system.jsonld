@@ -12,11 +12,11 @@
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "discipline": {
                 "@id": "sdo:discipline",
-                "@type": "string"
+                "@type": "@id"
             },
             "subdiscipline": {
                 "@id": "sdo:subdiscipline",
-                "@type": "string"
+                "@type": "@id"
             },
             "facets": {"@id": "sdo:hasSystemFacet"}
         }

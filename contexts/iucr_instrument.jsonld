@@ -1,28 +1,30 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "cifcore": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/",
-    "diffrn_radiation_type": {
-        "@id": "cifcore:diffrn_radiation_type.html",
-        "@type": "string"
-    },
-    "diffrn_radiation_source": {
-        "@id": "cifcore:diffrn_radiation_source.html",
-        "@type": "string"
-    },
-    "diffrn_radiation_wavelength": {
-        "@id": "cifcore:diffrn_radiation_wavelength.html",
-        "@type": "decimal"
-    },
-    "diffrn_radiation_monochromator": {
-        "@id": "cifcore:diffrn_radiation_monochromator.html",
-        "@type": "string"
-    },
-    "diffrn_measurement_device": {
-        "@id": "cifcore:diffrn_measurement_device.html",
-        "@type": "string"
-    },
-    "diffrn_measurement_method": {
-        "@id": "cifcore:diffrn_measurement_method.html",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "cifcore": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/",
+        "diffrn_radiation_type": {
+            "@id": "cifcore:diffrn_radiation_type.html",
+            "@type": "string"
+        },
+        "diffrn_radiation_source": {
+            "@id": "cifcore:diffrn_radiation_source.html",
+            "@type": "string"
+        },
+        "diffrn_radiation_wavelength": {
+            "@id": "cifcore:diffrn_radiation_wavelength.html",
+            "@type": "decimal"
+        },
+        "diffrn_radiation_monochromator": {
+            "@id": "cifcore:diffrn_radiation_monochromator.html",
+            "@type": "string"
+        },
+        "diffrn_measurement_device": {
+            "@id": "cifcore:diffrn_measurement_device.html",
+            "@type": "string"
+        },
+        "diffrn_measurement_method": {
+            "@id": "cifcore:diffrn_measurement_method.html",
+            "@type": "string"
+        }
     }
-}}
+}

@@ -1,16 +1,18 @@
-{"@context": {
-    "@vocab": "http://www.w3.org/2001/XMLSchema#",
-    "cifcore": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/",
-    "chemical_name_common": {
-        "@id": "cifcore:chemical_name_common.html",
-        "@type": "string"
-    },
-    "chemical_name_systematic": {
-        "@id": "cifcore:chemical_name_systematic.html",
-        "@type": "string"
-    },
-    "chemical_formula_moiety": {
-        "@id": "cifcore:chemical_formula_moiety.html",
-        "@type": "string"
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "cifcore": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/",
+        "chemical_name_common": {
+            "@id": "cifcore:chemical_name_common.html",
+            "@type": "string"
+        },
+        "chemical_name_systematic": {
+            "@id": "cifcore:chemical_name_systematic.html",
+            "@type": "string"
+        },
+        "chemical_formula_moiety": {
+            "@id": "cifcore:chemical_formula_moiety.html",
+            "@type": "string"
+        }
     }
-}}
+}

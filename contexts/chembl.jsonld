@@ -54,11 +54,11 @@
         },
         "uo_units": {
             "@id": "cco:CO_000007",
-            "@type": "string"
+            "@type": "@id"
         },
         "qudt_units": {
             "@id": "cco:CO_000008",
-            "@type": "string"
+            "@type": "@id"
         },
         "standard_upper_value": {
             "@id": "ss:SIO_001114",

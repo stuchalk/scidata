@@ -38,6 +38,14 @@
             "@id": "cif:AtomSiteSymbol",
             "@type": "string"
         },
+        "atom_type_symbol": {
+            "@id": "cif:AtomTypeSymbol",
+            "@type": "string"
+        },
+        "atom_type_oxidation_number": {
+            "@id": "cif:AtomTypeOxidationNumber",
+            "@type": "string"
+        },
         "cell_length_a": {
             "@id": "cif:CellLengthA",
             "@type": "string"
