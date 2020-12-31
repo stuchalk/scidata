@@ -100,11 +100,11 @@
                 "@id": "gc:hasBondOrder",
                 "@type": "decimal"
             },
-            "points": {
-                "@id": "gc:hasCoordinates",
+            "points": {"@id": "gc:hasCoordinates"},
+            "point": {
+                "@id": "gc:hasPoint",
                 "@type": "@id"
             },
-            "point": {"@id": "gc:hasPoint"},
             "x": {
                 "@id": "ss:SIO_000400",
                 "@type": "sdo:parameter"
