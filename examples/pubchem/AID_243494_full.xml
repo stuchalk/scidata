@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<PC-AssaySubmit xmlns="http://www.ncbi.nlm.nih.gov" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-    xs:schemaLocation="http://www.ncbi.nlm.nih.gov ftp://ftp.ncbi.nlm.nih.gov/pubchem/specifications/pubchem.xsd">
+<PC-AssaySubmit xmlns="http://www.ncbi.nlm.nih.gov" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.ncbi.nlm.nih.gov ftp://ftp.ncbi.nlm.nih.gov/pubchem/specifications/pubchem.xsd">
     <PC-AssaySubmit_assay>
         <PC-AssaySubmit_assay_descr>
             <PC-AssayDescription>

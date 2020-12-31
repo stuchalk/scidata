@@ -2,17 +2,17 @@
 <!--
     Example XSLT file to process a CIF file and produce SciData formatted JSON-LD
     Example files found at http://www.crystallography.net
-    In order to process a file supply the 'id' paramteter to the XSLT processor along with an empty XML document
-    i.e.  providing id=1000118 will process the file at http://www.crystallography.net/cod/1000118.cif
+    In order to process a file supply the 'id' parameter to the XSLT processor in an a minimal XML document
     In this example some example symmetry, cell, journal and chemical CIF file dictionary terms have been included
     This file would need to be expanded significantly to cover even all the core CIF dictionary terms
-    Stuart Chalk June 22, 2016
+    Stuart Chalk December 15, 2020 v2
+    Stuart Chalk June 22, 2016 v1
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	exclude-result-prefixes="xs" version="2.0">
 	<!-- http://www.crystallography.net/cod/<id>.cif -->
-	<xsl:param name="id"/>
+	<xsl:variable name="id" select="//cifid"/>
 	<xsl:variable name="url" select="concat('http://www.crystallography.net/cod/',$id,'.cif')"/>
 	<xsl:variable name="cif" select="unparsed-text($url)" as="xs:string"/>
 	<xsl:output method="text"/>
@@ -125,22 +125,30 @@
 				</xsl:choose>
 			</xsl:for-each>
 		</xsl:variable>
-	    <xsl:text>
+		<xsl:variable name="base" select="concat('http://www.crystallography.net/cod/',normalize-space($id),'/')"/>
+		<xsl:text>
         {
         "@context": [
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
                 "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-                "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+                "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
+            	"w3i": "https://w3id.org/skgo/modsci#",
+            	"qudt": "http://qudt.org/vocab/unit/#",
                 "obo": "http://purl.obolibrary.org/obo/",
                 "dc": "http://purl.org/dc/terms/",
                 "xsd": "http://www.w3.org/2001/XMLSchema#"
             },
         </xsl:text>
-	    <xsl:value-of select="concat('{&quot;@base&quot;: &quot;http://www.crystallography.net/cod/',normalize-space($id),'.cif/&quot;}')"/>
+		{ "@base": "<xsl:value-of select="$base"/>" }
 	    ],
-	    "@id": "",
-	    "uid": "scidata:example:cif:<xsl:value-of select="$id"/>",
+	    "@id": "https://stuchalk.github.io/scidata/examples/cif",
+	    "generatedAt": "<xsl:value-of select="current-dateTime()"/>",
+		"version": 1,
+		"@graph": {
+		"@id": "<xsl:value-of select="$base"/>",
+	    "@type": "sdo:scientificData",
+	    "uid": "scidata:examples:cif",
 	    <xsl:variable name="title" select="replace($vars/var/value[../name/text()='publ_section_title'],';','')"/>
 	    "title": "<xsl:value-of select="$title"/>",
 	    "description": "Crystallographic Information File of <xsl:value-of select="$vars/var/value[../name/text()='chemical_name_systematic']"/>",
@@ -158,25 +166,29 @@
 	    ],
 	    "version": <xsl:value-of select="$vars/revision"/>,
 	    "keywords": ["CIF File","Crystal Structure"],
-	    "permalink": "https://stuchalk.github.io/scidata/example/cif.<xsl:value-of select="$id"/>.jsonld",
+	    "permalink": "https://stuchalk.github.io/scidata/examples/cif.<xsl:value-of select="$id"/>.jsonld",
 	    "related": [
 	    "http://www.crystallography.net/cod/<xsl:value-of select="$id"/>.html"
 	    ],
 	    "scidata": {
-	       "@id": "scidata/",
+	       "@id": "scidata",
+	       "@type": "sdo:scientificData",
+	       "discipline": "w3i:Chemistry",
+	       "subdiscipline": "w3i:Crystallography",
 	       "system": {
 	           "@id": "system/",
-	           "aspects": [
+	           "@type": "sdo:system",
+	           "facets": [
 	               {
 	                   "@id": "chemical/1/",
-	                   "@type": "sci:chemical",
+	                   "@type": "sdo:chemical",
 	                   "chemical_name_systematic": "<xsl:value-of select="$vars/var/value[../name/text()='chemical_name_systematic']"/>",
 	                   "chemical_formula_structural": "<xsl:value-of select="$vars/var/value[../name/text()='chemical_formula_structural']"/>",
 	                   "chemical_formula_sum": "<xsl:value-of select="$vars/var/value[../name/text()='chemical_formula_sum']"/>"
 	               },
 	               {
 	                   "@id": "chemicalsystem/1/",
-	                   "@type": "sci:chemicalsystem",
+	                   "@type": "sdo:chemicalsystem",
 	                   <xsl:variable name="ox" select="$vars/var[name/text()='atom_type_oxidation_number']"/>
 	                   <xsl:variable name="oxcols" select="$ox/cols"/>
 	                   <xsl:variable name="data" select="$ox/values"/>
@@ -185,7 +197,8 @@
 	                   <xsl:for-each select="$data/line">
                            {
                            "@id": "atom/<xsl:value-of select="position()"/>/",
-	                       "source": "chemical/1/",
+	                   	"@type": "sdo:atom",
+	                   	"source": "chemical/1/",
 	                       <xsl:variable name="vals" select="tokenize(.,' ')"/>	                      
 	                       <xsl:for-each select="$vals">
 	                           <xsl:variable name="i" select="$oxstart+position()"/>
@@ -201,10 +214,11 @@
 	       },
 	       "dataset": {
 	           "@id": "dataset/1/",
+	           "@type": "sdo:dataset",
 	           "datagroup": [
 	               {
 	                   "@id": "datagroup/1/",
-	                   "@type": "sci:datagroup",
+	                   "@type": "sdo:datagroup",
 	                   "name": "space group",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Cspace_group.html",
 	                   "datapoints": [
@@ -213,7 +227,7 @@
 	               }, 
 	               {
 	                   "@id": "datagroup/2/",
-	                   "@type": "sci:datagroup",
+	                   "@type": "sdo:datagroup",
 	                   "name": "symmetry",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Csymmetry.html",
 	                   "datapoints": [
@@ -226,7 +240,7 @@
 	               },
 	               {
 	                   "@id": "datagroup/3/",
-	                   "@type": "sci:datagroup",
+	                   "@type": "sdo:datagroup",
 	                   "name": "cell",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ccell.html",
 	                   "datapoints": [
@@ -244,73 +258,73 @@
 	           "datapoint": [
 	               {
 	                   "@id": "datapoint/1/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Ispace_group_IT_number.html",
 	                   "quantity": "space group descriptor",
 	                   "property": "space_group_IT_number",
 	                   "value": {
 	                       "@id": "datapoint/1/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       "text": "<xsl:value-of select="$vars/var/value[../name/text()='space_group_IT_number']"/>"
 	                   }
 	               },
 	               {
 	                   "@id": "datapoint/2/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_cell_setting.html",
 	                   "quantity": "symmetry descriptor",
 	                   "property": "symmetry_cell_setting",
 	                   "value": {
 	                       "@id": "datapoint/2/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       "text": "<xsl:value-of select="$vars/var/value[../name/text()='symmetry_cell_setting']"/>"
 	                   }
 	               },
 	               {
 	                   "@id": "datapoint/3/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_Int_Tables_number.html",
 	                   "quantity": "symmetry descriptor",
 	                   "property": "symmetry_Int_Tables_number",
 	                   "value": {
 	                       "@id": "datapoint/3/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       "text": "<xsl:value-of select="$vars/var/value[../name/text()='symmetry_Int_Tables_number']"/>"
 	                   }
 	               },
 	               {
 	                   "@id": "datapoint/4/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_Hall.html",
 	                   "quantity": "symmetry descriptor",
 	                   "property": "symmetry_space_group_name_Hall",
 	                   "value": {
 	                       "@id": "datapoint/4/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       "text": "<xsl:value-of select="$vars/var/value[../name/text()='symmetry_space_group_name_Hall']"/>"
 	                   }
 	               },
 	               {
 	                   "@id": "datapoint/5/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_space_group_name_H-M.html",
 	                   "quantity": "symmetry descriptor",
 	                   "property": "symmetry_space_group_name_H-M",
 	                   "value": {
 	                       "@id": "datapoint/5/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       "text": "<xsl:value-of select="$vars/var/value[../name/text()='symmetry_space_group_name_H-M']"/>"
 	                   }
 	               },
 	               {
 	                   "@id": "datapoint/6/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Isymmetry_equiv_pos_as_xyz.html",
 	                   "quantity": "symmetry descriptor",
 	                   "property": "symmetry_equiv_pos_as_xyz",
 	                   "valuearray": {
 	                       "@id": "datapoint/6/valuearray/",
-	                       "@type": "sci:valuearray",
+	                       "@type": "sdo:valuearray",
 	                       "textarray": [
 	                               <xsl:variable name="xyz" select="$vars/var/values[../name/text()='symmetry_equiv_pos_as_xyz']"/>
 	                               <xsl:for-each select="$xyz/line">
@@ -322,13 +336,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/7/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
 	                   "quantity": "plain angle",
 	                   "property": "cell_angle_alpha",
 	                   "value": {
 	                       "@id": "datapoint/7/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_angle_alpha']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -346,13 +360,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/8/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
 	                   "quantity": "plain angle",
 	                   "property": "cell_angle_beta",
 	                   "value": {
 	                       "@id": "datapoint/8/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_angle_beta']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -370,13 +384,13 @@
 	               },
    	               {
 	                   "@id": "datapoint/9/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_angle_.html",
 	                   "quantity": "plain angle",
 	                   "property": "cell_angle_gamma",
 	                   "value": {
 	                       "@id": "datapoint/9/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_angle_gamma']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -394,13 +408,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/10/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_formula_units_Z.html",
 	                   "quantity": "count",
 	                   "property": "cell_formula_units_Z",
 	                   "value": {
 	                       "@id": "datapoint/10/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_formula_units_Z']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -417,13 +431,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/11/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
 	                   "quantity": "length",
 	                   "property": "cell_length_a",
 	                   "value": {
 	                       "@id": "datapoint/11/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_length_a']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -441,13 +455,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/12/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
 	                   "quantity": "length",
 	                   "property": "cell_length_b",
 	                   "value": {
 	                       "@id": "datapoint/12/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_length_b']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -465,13 +479,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/13/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_length_.html",
 	                   "quantity": "length",
 	                   "property": "cell_length_c",
 	                   "value": {
 	                       "@id": "datapoint/13/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_length_c']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -489,13 +503,13 @@
 	               },
 	               {
 	                   "@id": "datapoint/14/",
-	                   "@type": "sci:datapoint",
+	                   "@type": "sdo:datapoint",
 	                   "url": "http://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Icell_volume.html",
 	                   "quantity": "length",
 	                   "property": "cell_volume",
 	                   "value": {
 	                       "@id": "datapoint/14/value/",
-	                       "@type": "sci:value",
+	                       "@type": "sdo:value",
 	                       <xsl:variable name="val" select="$vars/var/value[../name/text()='cell_volume']"/>
 	                       <xsl:choose>
 	                           <xsl:when test="contains($val,'(')">
@@ -516,8 +530,8 @@
 	    	   ]
 	        }
 	    },
-	    "references": [{
-	       "@id": "reference/1/",
+	    "sources": [{
+	    	"@id": "source/1/",
 	       "@type": "dc:source",
 			<xsl:variable name="j" select="$vars/var/value[../name/text()='journal_name_full']"/>
 	       <xsl:variable name="y" select="$vars/var/value[../name/text()='journal_year']"/>
@@ -528,7 +542,14 @@
 	       "reftype": "journal article",
 	       "doi": "<xsl:value-of select="$vars/var/value[../name/text()='journal_paper_doi']"/>",
 	       "url": "http://dx.doi.org/<xsl:value-of select="$vars/var/value[../name/text()='journal_paper_doi']"/>"
-	    }]
+		}],
+		"rights": [{
+		"@id": "rights/1/",
+		"@type": "sdo:source",
+		"holder": "The Crystallography Open Database",
+		"license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+		}]
+		}
 	}
 	</xsl:template>
 </xsl:stylesheet>

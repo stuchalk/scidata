@@ -2,547 +2,563 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "qudt": "http://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
             "dc": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        {"@base": "http://www.ddbst.com/en/EED/PCP/SFT_C3.php/"}
+        {"@base": "http://www.ddbst.com/en/EED/PCP/SFT_C3/"}
     ],
-    "@id": "",
-    "uid": "scidata:example:ddb:acetonitrile",
-    "title": "Surface Tension of Acetonitrile",
-    "description": "Surface Tension of Acetonitrile from Dortmund Data Bank",
-    "publisher": "DDBST GmbH",
-    "keywords": [
-        "DDB",
-        "Acetonitrile",
-        "Surface Tension"
-    ],
-    "permalink": "https://stuchalk.github.io/scidata/example/ddb/ddb.jsonld",
-    "related": ["http://www.ddbst.com/en/EED/PCP/SFT_C3.php"],
-    "scidata": {
-        "@id": "scidata/",
-        "@type": "sci:scientificData",
-        "system": {
-            "@id": "system/",
-            "@type": "sci:system",
-            "facets": [
-                {
-                    "@id": "compound/1/",
-                    "@type": "sci:compound",
-                    "formula": "C2H3N",
-                    "molweight": "41.053",
-                    "casrn": "75-05-8",
-                    "name": "Acetonitrile"
-                },
-                {
-                    "@id": "condition/1/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/1/value/",
-                        "@type": "sci:value",
-                        "number": 286.95,
-                        "unitref": "qudt:Kelvin"
+    "@id": "https://stuchalk.github.io/scidata/examples/ddb",
+    "generatedAt": "2020-12-17T05:19:57.409153-05:00",
+    "version": 2,
+    "@graph": {
+        "@id": "http://www.ddbst.com/en/EED/PCP/SFT_C3/",
+        "@type": "sdo:scidataFramework",
+        "uid": "scidata:example:ddb",
+        "title": "Surface Tension of Acetonitrile",
+        "description": "The experimental data shown in these pages are freely available and have been published already in the DDB Explorer Edition. The data represent a small sub list of all available data in the Dortmund Data Bank. For more data or any further information please search the DDB or contact DDBST.",
+        "publisher": "DDBST GmbH",
+        "keywords": [
+            "DDB",
+            "Acetonitrile",
+            "Surface Tension"
+        ],
+        "permalink": "https://stuchalk.github.io/scidata/examples/ddb/ddb.jsonld",
+        "related": ["http://www.ddbst.com/en/EED/PCP/SFT_C3.php"],
+        "scidata": {
+            "@id": "scidata/",
+            "@type": "sdo:scientificData",
+            "system": {
+                "@id": "system/",
+                "@type": "sdo:system",
+                "facets": [
+                    {
+                        "@id": "compound/1/",
+                        "@type": "sdo:compound",
+                        "formula": "C2H3N",
+                        "molweight": " 41.053",
+                        "casrn": "75-05-8",
+                        "name": "Acetonitrile"
+                    },
+                    {
+                        "@id": "condition/1/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/1/value/",
+                            "@type": "sdo:value",
+                            "number": 286.95,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/2/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/2/value/",
+                            "@type": "sdo:value",
+                            "number": 288.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/3/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/3/value/",
+                            "@type": "sdo:value",
+                            "number": 292.25,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/4/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/4/value/",
+                            "@type": "sdo:value",
+                            "number": 293.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/5/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/5/value/",
+                            "@type": "sdo:value",
+                            "number": 299.85,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/6/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/6/value/",
+                            "@type": "sdo:value",
+                            "number": 303.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/7/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/7/value/",
+                            "@type": "sdo:value",
+                            "number": 304.55,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/8/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/8/value/",
+                            "@type": "sdo:value",
+                            "number": 313.75,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/9/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/9/value/",
+                            "@type": "sdo:value",
+                            "number": 315.95,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/10/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/10/value/",
+                            "@type": "sdo:value",
+                            "number": 328.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/11/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/11/value/",
+                            "@type": "sdo:value",
+                            "number": 333.55,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/12/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/12/value/",
+                            "@type": "sdo:value",
+                            "number": 340.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/13/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/13/value/",
+                            "@type": "sdo:value",
+                            "number": 346.65,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/14/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "temperature",
+                        "property": "System temperature",
+                        "value": {
+                            "@id": "condition/14/value/",
+                            "@type": "sdo:value",
+                            "number": 353.15,
+                            "unitref": "qudt:Kelvin"
+                        }
+                    },
+                    {
+                        "@id": "condition/15/",
+                        "@type": "sdo:condition",
+                        "scope": "chemical/1/",
+                        "quantity": "pressure",
+                        "property": "System pressure",
+                        "value": {
+                            "@id": "condition/1/value/",
+                            "@type": "sdo:value",
+                            "number": 101.325,
+                            "unitref": "qudt:KiloPA"
+                        }
                     }
-                },
+                ]
+            },
+            "dataset": [
                 {
-                    "@id": "condition/2/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/2/value/",
-                        "@type": "sci:value",
-                        "number": 288.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/3/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/3/value/",
-                        "@type": "sci:value",
-                        "number": 292.25,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/4/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/4/value/",
-                        "@type": "sci:value",
-                        "number": 293.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/5/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/5/value/",
-                        "@type": "sci:value",
-                        "number": 299.85,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/6/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/6/value/",
-                        "@type": "sci:value",
-                        "number": 303.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/7/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/7/value/",
-                        "@type": "sci:value",
-                        "number": 304.55,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/8/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/8/value/",
-                        "@type": "sci:value",
-                        "number": 313.75,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/9/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/9/value/",
-                        "@type": "sci:value",
-                        "number": 315.95,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/10/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/10/value/",
-                        "@type": "sci:value",
-                        "number": 328.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/11/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/11/value/",
-                        "@type": "sci:value",
-                        "number": 333.55,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/12/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/12/value/",
-                        "@type": "sci:value",
-                        "number": 340.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/13/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/13/value/",
-                        "@type": "sci:value",
-                        "number": 346.65,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/14/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "temperature",
-                    "property": "System temperature",
-                    "value": {
-                        "@id": "condition/14/value/",
-                        "@type": "sci:value",
-                        "number": 353.15,
-                        "unitref": "qudt:Kelvin"
-                    }
-                },
-                {
-                    "@id": "condition/15/",
-                    "@type": "sci:condition",
-                    "scope": "chemical/1/",
-                    "quantity": "pressure",
-                    "property": "System pressure",
-                    "value": {
-                        "@id": "condition/1/value/",
-                        "@type": "sci:value",
-                        "number": 101.325,
-                        "unitref": "qudt:KiloPascal"
-                    }
+                    "@id": "dataset/1/",
+                    "@type": "sdo:dataset",
+                    "scope": "compound/1/",
+                    "datagroup": [
+                        {
+                            "@id": "datagroup/1/",
+                            "@type": "sdo:datagroup",
+                            "source": "source/6/",
+                            "datapoints": [
+                                "datapoint/3/",
+                                "datapoint/19/",
+                                "datapoint/23/",
+                                "datapoint/25/",
+                                "datapoint/29/",
+                                "datapoint/31/"
+                            ]
+                        },
+                        {
+                            "@id": "datagroup/2/",
+                            "@type": "sdo:datagroup",
+                            "source": "source/1/",
+                            "datapoints": [
+                                "datapoint/5/",
+                                "datapoint/11/",
+                                "datapoint/17/"
+                            ]
+                        },
+                        {
+                            "@id": "datagroup/3/",
+                            "@type": "sdo:datagroup",
+                            "source": "source/2/",
+                            "datapoints": [
+                                "datapoint/7/",
+                                "datapoint/15/",
+                                "datapoint/21/",
+                                "datapoint/27/"
+                            ]
+                        },
+                        {
+                            "@id": "datagroup/4/",
+                            "@type": "sdo:datagroup",
+                            "source": "source/4/",
+                            "datapoints": ["datapoint/9/"]
+                        },
+                        {
+                            "@id": "datagroup/5/",
+                            "@type": "sdo:datagroup",
+                            "source": "source/3/",
+                            "datapoints": [
+                                "datapoint/13/",
+                                "datapoint/33/"
+                            ]
+                        }
+                    ],
+                    "datapoint": [
+                        {
+                            "@id": "datapoint/1/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/1/"],
+                            "value": {
+                                "@id": "datapoint/1/value/",
+                                "@type": "sdo:value",
+                                "number": 29.1800,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/2/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/2/"],
+                            "value": {
+                                "@id": "datapoint/2/value/",
+                                "@type": "sdo:value",
+                                "number": 29.7600,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/3/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": [
+                                "condition/3/",
+                                "condition/15/"
+                            ],
+                            "value": {
+                                "@id": "datapoint/3/value/",
+                                "@type": "sdo:value",
+                                "number": 29.4500,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/4/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/4/"],
+                            "value": {
+                                "@id": "datapoint/4/value/",
+                                "@type": "sdo:value",
+                                "number": 29.0400,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/5/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/4/"],
+                            "value": {
+                                "@id": "datapoint/5/value/",
+                                "@type": "sdo:value",
+                                "number": 29.1000,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/6/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/4/"],
+                            "value": {
+                                "@id": "datapoint/6/value/",
+                                "@type": "sdo:value",
+                                "number": 29.2900,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/7/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": [
+                                "condition/5/",
+                                "condition/15/"
+                            ],
+                            "value": {
+                                "@id": "datapoint/7/value/",
+                                "@type": "sdo:value",
+                                "number": 28.4000,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/8/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/6/"],
+                            "value": {
+                                "@id": "datapoint/8/value/",
+                                "@type": "sdo:value",
+                                "number": 27.8000,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/9/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/7/"],
+                            "value": {
+                                "@id": "datapoint/9/value/",
+                                "@type": "sdo:value",
+                                "number": 26.8100,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/10/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": [
+                                "condition/8/",
+                                "condition/15/"
+                            ],
+                            "value": {
+                                "@id": "datapoint/10/value/",
+                                "@type": "sdo:value",
+                                "number": 26.6800,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/11/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/9/"],
+                            "value": {
+                                "@id": "datapoint/11/value/",
+                                "@type": "sdo:value",
+                                "number": 25.4300,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/12/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/10/"],
+                            "value": {
+                                "@id": "datapoint/12/value/",
+                                "@type": "sdo:value",
+                                "number": 23.8200,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/13/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": [
+                                "condition/11/",
+                                "condition/15/"
+                            ],
+                            "value": {
+                                "@id": "datapoint/13/value/",
+                                "@type": "sdo:value",
+                                "number": 24.2000,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/14/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/12/"],
+                            "value": {
+                                "@id": "datapoint/14/value/",
+                                "@type": "sdo:value",
+                                "number": 22.3500,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/15/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/13/"],
+                            "value": {
+                                "@id": "datapoint/15/value/",
+                                "@type": "sdo:value",
+                                "number": 21.5800,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        },
+                        {
+                            "@id": "datapoint/16/",
+                            "@type": "sdo:datapoint",
+                            "quantity": "force",
+                            "property": "Surface Tension",
+                            "conditions": ["condition/14/"],
+                            "value": {
+                                "@id": "datapoint/16/value/",
+                                "@type": "sdo:value",
+                                "number": 21.7700,
+                                "unitref": "qudt:MilliN-PER-M"
+                            }
+                        }
+                    ]
                 }
             ]
         },
-        "dataset": [{
-            "@id": "dataset/1/",
-            "@type": "sci:dataset",
-            "scope": "compound/1/",
-            "datagroup": [
-                {
-                    "@id": "datagroup/1/",
-                    "@type": "sci:datagroup",
-                    "reference": "reference/6/",
-                    "datapoints": [
-                        "datapoint/3/",
-                        "datapoint/19/",
-                        "datapoint/23/",
-                        "datapoint/25/",
-                        "datapoint/29/",
-                        "datapoint/31/"
-                    ]
-                },
-                {
-                    "@id": "datagroup/2/",
-                    "@type": "sci:datagroup",
-                    "reference": "reference/1/",
-                    "datapoints": [
-                        "datapoint/5/",
-                        "datapoint/11/",
-                        "datapoint/17/"
-                    ]
-                },
-                {
-                    "@id": "datagroup/3/",
-                    "@type": "sci:datagroup",
-                    "reference": "reference/2/",
-                    "datapoints": [
-                        "datapoint/7/",
-                        "datapoint/15/",
-                        "datapoint/21/",
-                        "datapoint/27/"
-                    ]
-                },
-                {
-                    "@id": "datagroup/4/",
-                    "@type": "sci:datagroup",
-                    "reference": "reference/4/",
-                    "datapoints": ["datapoint/9/"]
-                },
-                {
-                    "@id": "datagroup/5/",
-                    "@type": "sci:datagroup",
-                    "reference": "reference/3/",
-                    "datapoints": [
-                        "datapoint/13/",
-                        "datapoint/33/"
-                    ]
-                }
-            ],
-            "datapoint": [
-                {
-                    "@id": "datapoint/1/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force per length",
-                    "property": "surface tension",
-                    "conditions": ["condition/1/"],
-                    "value": {
-                        "@id": "datapoint/1/value/",
-                        "@type": "sci:value",
-                        "number": 29.18,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/2/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/2/"],
-                    "value": {
-                        "@id": "datapoint/2/value/",
-                        "@type": "sci:value",
-                        "number": 29.76,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/3/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": [
-                        "condition/3/",
-                        "condition/15/"
-                    ],
-                    "value": {
-                        "@id": "datapoint/3/value/",
-                        "@type": "sci:value",
-                        "number": 29.45,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/4/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/4/"],
-                    "value": {
-                        "@id": "datapoint/4/value/",
-                        "@type": "sci:value",
-                        "number": 29.04,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/5/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/4/"],
-                    "value": {
-                        "@id": "datapoint/5/value/",
-                        "@type": "sci:value",
-                        "number": 29.1,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/6/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/4/"],
-                    "value": {
-                        "@id": "datapoint/6/value/",
-                        "@type": "sci:value",
-                        "number": 29.29,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/7/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": [
-                        "condition/5/",
-                        "condition/15/"
-                    ],
-                    "value": {
-                        "@id": "datapoint/7/value/",
-                        "@type": "sci:value",
-                        "number": 28.4,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/8/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/6/"],
-                    "value": {
-                        "@id": "datapoint/8/value/",
-                        "@type": "sci:value",
-                        "number": 27.8,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/9/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/7/"],
-                    "value": {
-                        "@id": "datapoint/9/value/",
-                        "@type": "sci:value",
-                        "number": 26.81,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/10/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": [
-                        "condition/8/",
-                        "condition/15/"
-                    ],
-                    "value": {
-                        "@id": "datapoint/10/value/",
-                        "@type": "sci:value",
-                        "number": 26.68,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/11/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/9/"],
-                    "value": {
-                        "@id": "datapoint/11/value/",
-                        "@type": "sci:value",
-                        "number": 25.43,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/12/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/10/"],
-                    "value": {
-                        "@id": "datapoint/12/value/",
-                        "@type": "sci:value",
-                        "number": 23.82,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/13/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": [
-                        "condition/11/",
-                        "condition/15/"
-                    ],
-                    "value": {
-                        "@id": "datapoint/13/value/",
-                        "@type": "sci:value",
-                        "number": 24.2,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/14/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/12/"],
-                    "value": {
-                        "@id": "datapoint/14/value/",
-                        "@type": "sci:value",
-                        "number": 22.35,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/15/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/13/"],
-                    "value": {
-                        "@id": "datapoint/15/value/",
-                        "@type": "sci:value",
-                        "number": 21.58,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                },
-                {
-                    "@id": "datapoint/16/",
-                    "@type": "sci:datapoint",
-                    "quantity": "force",
-                    "property": "Surface Tension",
-                    "conditions": ["condition/14/"],
-                    "value": {
-                        "@id": "datapoint/16/value/",
-                        "@type": "sci:value",
-                        "number": 21.77,
-                        "unitref": "qudt:MilliNewtonPerMeter"
-                    }
-                }
-            ]
-        }]
-    },
-    "references": [
-        {
-            "@id": "reference/1/",
-            "@type": "dc:source",
-            "citation": "Lek M.: Methods and equipment used at the Bureau of Physico-Chem. Standards.IV. Surface tension of a series of org. substances.. Bull.Soc.Chim.Belg. 40 (1931) 177-188"
-        },
-        {
-            "@id": "reference/2/",
-            "@type": "dc:source",
-            "citation": "Vogel A.I.: Part XVII. Acetylenic Compounds and Cyanides.. J.Chem.Soc.London (1948) 674-683"
-        },
-        {
-            "@id": "reference/3/",
-            "@type": "dc:source",
-            "citation": "Kovats E.S.: Density and Surface Tension of 83 Organic Liquids. J.Chem.Eng.Data 26 (1981) 323-332"
-        },
-        {
-            "@id": "reference/4/",
-            "@type": "dc:source",
-            "citation": "Davies E.C.H.: The structure of the surfaces of liquids, and solubility as related to the work done by the attraction of two surfaces as they approach each other.. J.Am.Chem.Soc. 39 (1917) 354-364"
-        },
-        {
-            "@id": "reference/5/",
-            "@type": "dc:source",
-            "citation": "Hennaut-Roland M.: Travaux du bureau international d'etalons physico-chimiques IV Etude des constantes physiques de vingt composes organiques. J.Chim.Phys. 27 (1930) 401-442"
-        },
-        {
-            "@id": "reference/6/",
-            "@type": "dc:source",
-            "citation": "Guye P.-A.: Measurement of the surface tension. (Fr). J.Chim.Phys. 5 (1907) 81-112"
-        }
-    ]
+        "sources": [
+            {
+                "@id": "source/1/",
+                "@type": "dc:source",
+                "citation": "Hennaut-Roland L. ; Lek M. : IV. Surface Tension of a Series of Org. Substances (fr). Bull. Soc. Chim. Belg. 40 (1931) 177-188"
+            },
+            {
+                "@id": "source/2/",
+                "@type": "dc:source",
+                "citation": "Jeffery G. H. ; Vogel A. I. : Part XVII. Acetylenic Compounds and Cyanides. J. Chem. Soc. London (1948) 674-683"
+            },
+            {
+                "@id": "source/3/",
+                "@type": "dc:source",
+                "citation": "Korösi G. ; Kovats E. S. : Density and Surface Tension of 83 Organic Liquids. J. Chem. Eng. Data 26 (1981) 323-332"
+            },
+            {
+                "@id": "source/4/",
+                "@type": "dc:source",
+                "citation": "Harkins W. D. ; Brown F. E. ; Davies E. C. H. : The structure of the surfaces of liquids, and solubility as related to the work done by the attraction of two surfaces as they approach each other. . J. Am. Chem. Soc. 39 (1917) 354-364"
+            },
+            {
+                "@id": "source/5/",
+                "@type": "dc:source",
+                "citation": "Timmermans M. J. ; Hennaut-Roland M. : IV. Étude des constantes physiques de vingt composés organiques. J. Chim. Phys. 27 (1930) 401-442"
+            },
+            {
+                "@id": "source/6/",
+                "@type": "dc:source",
+                "citation": "Renard T. ; Guye P. -A. : Measurement of the surface tension. (Fr). J. Chim. Phys. 5 (1907) 81-112"
+            }
+        ],
+        "rights": [
+            {
+                "@id": "rights/1/",
+                "@type": "sdo:rights",
+                "holder": "DDBST GmbH",
+                "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            }
+        ]
+    }
 }

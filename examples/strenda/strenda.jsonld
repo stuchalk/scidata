@@ -1,68 +1,82 @@
 {
     "@context": "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
-    "uid": "STRENDA_ID",
-    "title": "STRENDA data",
-    "author": [{
-        "@type": "dc:creator",
-        "name": "Stuart Chalk"
-    }],
-    "description": "Example of how STRENDA data might be mapped to the SDM",
-    "keywords": [
-        "STRENDA Level 1A",
-        "STRENDA Level 2A"
-    ],
-    "toc": {"sections": [
-        "enzyme (1A)",
-        "preparation (1A)",
-        "assay conditions (1A)",
-        "activity data (1A)",
-        "methodology (1A)",
-        "metrics (1B)",
-        "inhibition data (1B)",
-        "activation data (1B)"
-    ]},
-    "scidata": {
-        "@type": "sci:scidata",
-        "type": ["property value"],
-        "property": ["reaction rate"],
-        "kind": ["time based array"],
-        "methodology": {
-            "@type": "sci:methodology",
-            "evaluation": "experiment",
-            "aspects": [
-                {"@type": "preparation (1A)"},
-                {"@type": "methodology (1A)"}
-            ]
+    "@id": "strendaExample",
+    "generatedAt": "2020-12-14 19:27:59",
+    "version": 2,
+    "@graph": {
+        "@id": "strenda",
+        "uid": "STRENDA_ID",
+        "title": "STRENDA data",
+        "author": [
+            {
+                "@type": "dc:creator",
+                "name": "Stuart Chalk"
+            }
+        ],
+        "description": "Example of how STRENDA data might be mapped to the SDM",
+        "keywords": [
+            "STRENDA Level 1A",
+            "STRENDA Level 2A"
+        ],
+        "toc": [
+            "enzyme (1A)",
+            "preparation (1A)",
+            "assay conditions (1A)",
+            "activity data (1A)",
+            "methodology (1A)",
+            "metrics (1B)",
+            "inhibition data (1B)",
+            "activation data (1B)"
+        ],
+        "scidata": {
+            "@id": "scidata",
+            "@type": "sci:scidata",
+            "type": ["property value"],
+            "property": ["reaction rate"],
+            "kind": ["time based array"],
+            "methodology": {
+                "@id": "methodology",
+                "@type": "sci:methodology",
+                "evaluation": "experiment",
+                "aspects": [
+                    {"@type": "preparation (1A)"},
+                    {"@type": "methodology (1A)"}
+                ]
+            },
+            "system": {
+                "@id": "system",
+                "@type": "sci:system",
+                "discipline": "biology",
+                "subdiscipline": "enzymology",
+                "facets": [
+                    {"@type": "enzyme (1A)"},
+                    {"@type": "assay conditions (1A)"},
+                    {"@type": "metrics (1B)"},
+                    {"@type": "substrate (1A)"}
+                ]
+            },
+            "dataset": {
+                "@id": "dataset",
+                "@type": "sci:dataset",
+                "name": "STRENDA dataset",
+                "datagroup": [
+                    {"@type": "activity data (1A)"},
+                    {"@type": "inhibition data (1B)"},
+                    {"@type": "activation data (1B)"}
+                ]
+            }
         },
-        "system": {
-            "@type": "sci:system",
-            "discipline": "biology",
-            "subdiscipline": "enzymology",
-            "facets": [
-                {"@type": "enzyme (1A)"},
-                {"@type": "assay conditions (1A)"},
-                {"@type": "metrics (1B)"},
-                {"@type": "substrate (1A)"}
-            ]
-        },
-        "dataset": {
-            "@type": "sci:dataset",
-            "name": "STRENDA dataset",
-            "datagroup": [
-                {"@type": "activity data (1A)"},
-                {"@type": "inhibition data (1B)"},
-                {"@type": "activation data (1B)"}
-            ]
-        }
-    },
-    "source": [
-        {
-            "@id": "source/1/",
-            "citation": "'STRENDA Guideline Level 1A', Beilstein Institute, https://dx.doi.org/10.3762/strenda.17"
-        },
-        {
-            "@id": "source/2/",
-            "citation": "'STRENDA Guideline Level 1B', Beilstein Institute, https://dx.doi.org/10.3762/strenda.27"
-        }
-    ]
+        "source": [
+            {
+                "@id": "source/1/",
+                "@type": "sci:source",
+                "citation": "'STRENDA Guideline Level 1A', Beilstein Institute, https://dx.doi.org/10.3762/strenda.17"
+            },
+            {
+                "@id": "source/2/",
+                "@type": "sci:source",
+                "citation": "'STRENDA Guideline Level 1B', Beilstein Institute, https://dx.doi.org/10.3762/strenda.27"
+            }
+        ]
+    }
 }

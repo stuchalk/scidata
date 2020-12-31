@@ -2,115 +2,98 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "meas": "https://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#",
             "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
             "dc": "http://purl.org/dc/terms/",
             "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
-        {"@base": "https://sds.coas.unf.edu/report/002014/"}
+        {"@base": "https://sds.coas.unf.edu/sds:report:002014/"}
     ],
-    "@id": "",
-    "uid": "sds:report:002014",
-    "title": "Fluoranthene with 1,3-Dinitrobenzene",
-    "author": [{
-        "@id": "author/1/",
-        "url": "https://sds.coas.unf.edu/authors/view/00014",
-        "name": "William E. Acree, Jr.",
-        "address": "Department of Chemistry University of North Texas, Denton, TX 76203, USA",
-        "role": "preparer"
-    }],
-    "publisher": "International Union of Pure and Applied Chemistry (IUPAC)",
-    "keywords": ["solubility"],
-    "startdate": "2016-07-17 15:56:42",
-    "permalink": "https://sds.coas.unf.edu/reports/view/002014",
-    "toc": [
-        "methodology/",
-        "procedure/1/",
-        "system/",
-        "chemicalsystem/1/",
-        "chemical/1/",
-        "chemical/2/",
-        "condition/1/",
-        "condition/2/",
-        "condition/3/",
-        "condition/4/",
-        "condition/5/",
-        "condition/6/",
-        "condition/7/",
-        "condition/8/",
-        "condition/9/",
-        "condition/10/",
-        "condition/11/",
-        "condition/12/",
-        "condition/13/",
-        "condition/14/",
-        "condition/15/",
-        "condition/16/",
-        "condition/17/",
-        "chemical/1/",
-        "chemical/2/",
-        "dataset/",
-        "dataseries/1/",
-        "datapoint/1/",
-        "datapoint/2/",
-        "datapoint/3/",
-        "datapoint/4/",
-        "datapoint/5/",
-        "datapoint/6/",
-        "datapoint/7/",
-        "datapoint/8/",
-        "datapoint/9/",
-        "datapoint/10/",
-        "datapoint/11/",
-        "datapoint/12/",
-        "datapoint/13/",
-        "datapoint/14/",
-        "datapoint/15/",
-        "datapoint/16/",
-        "datapoint/17/"
-    ],
-    "scidata": {
-        "@id": "scidata/",
-        "type": ["property value(s)"],
-        "property": [
-            "Mole Fraction (Component 1)",
-            "Mole Fraction (Component 2)"
+    "@id": "solubilityExample",
+    "generatedAt": "2020-12-14 19:27:59",
+    "version": 2,
+    "@graph": {
+        "@id": "https://sds.coas.unf.edu/sds:report:002014/",
+        "@type": "sdo:scidataFramework",
+        "uid": "sds:report:002014",
+        "title": "Fluoranthene with 1,3-Dinitrobenzene",
+        "author": [
+            {
+                "@id": "author/1/",
+                "@type": "dc:creator",
+                "url": "https://sds.coas.unf.edu/authors/view/00014",
+                "name": "William E. Acree, Jr.",
+                "address": "Department of Chemistry University of North Texas, Denton, TX 76203, USA",
+                "role": "preparer"
+            }
         ],
-        "kind": [
-            "dataseries",
-            "datapoint"
+        "publisher": "International Union of Pure and Applied Chemistry (IUPAC)",
+        "keywords": ["solubility"],
+        "starttime": "2016-07-17 15:56:42",
+        "permalink": "https://sds.coas.unf.edu/reports/view/002014",
+        "toc": [
+            "sdo:scidata",
+            "sdo:methodology",
+            "sdo:procedure",
+            "sdo:system",
+            "sdo:substance",
+            "sdo:constituent",
+            "sdo:compound",
+            "sdo:chemical",
+            "sdo:condition",
+            "sdo:numericvalue",
+            "sdo:dataset",
+            "sdo:datagroup",
+            "sdo:datapoint",
+            "sdo:datum"
         ],
-        "methodology": {
-            "@id": ["methodology/"],
-            "aspects": [{
-                "@id": "procedure/1/",
-                "description": "No experimental details given in paper."
-            }]
-        },
-        "system": {
-            "@id": "system/",
-            "discipline": "chemistry",
-            "subdiscipline": "physical chemistry",
-            "facets": [{
-                "system": {
-                    "@id": "chemicalsystem/1/",
-                    "name": "Fluoranthene with 1,3-Dinitrobenzene",
-                    "components": [
-                        {
-                            "@id": "chemicalsystem/1/component/1/",
-                            "scope": "chemical/1/"
-                        },
-                        {
-                            "@id": "chemicalsystem/1/component/2/",
-                            "scope": "chemical/2/"
-                        }
-                    ]
-                },
-                "compound": [
+        "scidata": {
+            "@id": "scidata/",
+            "@type": "sdo:scidata",
+            "type": ["property value(s)"],
+            "property": [
+                "Mole Fraction (Component 1)",
+                "Mole Fraction (Component 2)"
+            ],
+            "methodology": {
+                "@id": "methodology/",
+                "@type": "sdo:methodology",
+                "aspects": [
                     {
-                        "@id": "chemical/1/",
+                        "@id": "procedure/1/",
+                        "@type": "sdo:procedure",
+                        "description": "No experimental details given in paper."
+                    }
+                ]
+            },
+            "system": {
+                "@id": "system/",
+                "@type": "sdo:system",
+                "discipline": "chemistry",
+                "subdiscipline": "physical chemistry",
+                "facets": [
+                    {
+                        "@id": "substance/1/",
+                        "@type": "sdo:substance",
+                        "name": "Fluoranthene with 1,3-Dinitrobenzene",
+                        "constituents": [
+                            {
+                                "@id": "chemicalsystem/1/constituent/1/",
+                                "@type": "sdo:constituent",
+                                "scope": "chemical/1/"
+                            },
+                            {
+                                "@id": "chemicalsystem/1/constituent/2/",
+                                "@type": "sdo:constituent",
+                                "scope": "chemical/2/"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "compound/1/",
+                        "@type": "sdo:compound",
                         "name": "Fluoranthene",
                         "formula": "C16H10",
                         "molweight": "202.251",
@@ -120,7 +103,8 @@
                         "url": "https://sds.coas.unf.edu/substances/view/000634"
                     },
                     {
-                        "@id": "chemical/2/",
+                        "@id": "compound/2/",
+                        "@type": "sdo:compound",
                         "name": "1,3-Dinitrobenzene",
                         "formula": "C6H4N2O4",
                         "molweight": "168.107",
@@ -128,684 +112,666 @@
                         "inchi": "InChI=1S/C6H4N2O4/c9-7(10)5-2-1-3-6(4-5)8(11)12/h1-4H",
                         "inchikey": "WDCYWAQPCXBPJA-UHFFFAOYSA-N",
                         "url": "https://sds.coas.unf.edu/substances/view/000506"
-                    }
-                ],
-                "chemical": [
+                    },
                     {
                         "@id": "chemical/1/",
+                        "@type": "sdo:chemical",
                         "name": "Fluoranthene",
-                        "scope": "chemical/1/",
+                        "scope": "compound/1/",
                         "description": "Purity and chemical source were not specified in paper."
                     },
                     {
                         "@id": "chemical/2/",
+                        "@type": "sdo:chemical",
                         "name": "1,3-Dinitrobenzene",
-                        "scope": "chemical/2/",
+                        "scope": "compound/2/",
                         "description": "Purity and chemical source were not specified in paper."
-                    }
-                ],
-                "condition": [
+                    },
                     {
                         "@id": "condition/1/",
+                        "@type": "sdo:condition",
                         "scope": "datapoint/1/",
                         "quantity": "Temperature",
                         "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/1/value/",
-                            "datatype": "float",
-                            "number": 363.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/2/",
-                        "scope": "datapoint/2/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/2/value/",
-                            "datatype": "float",
-                            "number": 356.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/3/",
-                        "scope": "datapoint/3/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/3/value/",
-                            "datatype": "float",
-                            "number": 350.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/4/",
-                        "scope": "datapoint/4/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/4/value/",
-                            "datatype": "float",
-                            "number": 346.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/5/",
-                        "scope": "datapoint/5/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/5/value/",
-                            "datatype": "float",
-                            "number": 342.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/6/",
-                        "scope": "datapoint/6/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/6/value/",
-                            "datatype": "float",
-                            "number": 344.7,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/7/",
-                        "scope": "datapoint/7/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/7/value/",
-                            "datatype": "float",
-                            "number": 342.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/8/",
-                        "scope": "datapoint/8/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/8/value/",
-                            "datatype": "float",
-                            "number": 347.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/9/",
-                        "scope": "datapoint/9/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/9/value/",
-                            "datatype": "float",
-                            "number": 348,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/10/",
-                        "scope": "datapoint/10/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/10/value/",
-                            "datatype": "float",
-                            "number": 349.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/11/",
-                        "scope": "datapoint/11/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/11/value/",
-                            "datatype": "float",
-                            "number": 349.7,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/12/",
-                        "scope": "datapoint/12/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/12/value/",
-                            "datatype": "float",
-                            "number": 349.7,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/13/",
-                        "scope": "datapoint/13/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/13/value/",
-                            "datatype": "float",
-                            "number": 350.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/14/",
-                        "scope": "datapoint/14/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/14/value/",
-                            "datatype": "float",
-                            "number": 349.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/15/",
-                        "scope": "datapoint/15/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/15/value/",
-                            "datatype": "float",
-                            "number": 349.2,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/16/",
-                        "scope": "datapoint/16/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/16/value/",
-                            "datatype": "float",
-                            "number": 352.7,
-                            "unitstr": "K"
-                        }
-                    },
-                    {
-                        "@id": "condition/17/",
-                        "scope": "datapoint/17/",
-                        "quantity": "Temperature",
-                        "property": "Ambient Temperature",
-                        "value": {
-                            "@id": "condition/17/value/",
-                            "datatype": "float",
-                            "number": 382.7,
-                            "unitstr": "K"
-                        }
+                        "unitstr": "K",
+                        "valuearray": [
+                            {
+                                "@id": "condition/1/value/1/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 363.2
+                            },
+                            {
+                                "@id": "condition/1/value/2/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 356.2
+                            },
+                            {
+                                "@id": "condition/1/value/3/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 350.2
+                            },
+                            {
+                                "@id": "condition/1/value/4/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 350.2
+                            },
+                            {
+                                "@id": "condition/1/value/5/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 346.2
+                            },
+                            {
+                                "@id": "condition/1/value/6/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 342.2
+                            },
+                            {
+                                "@id": "condition/1/value/7/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 344.7
+                            },
+                            {
+                                "@id": "condition/1/value/8/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 342.2
+                            },
+                            {
+                                "@id": "condition/1/value/9/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 347.2
+                            },
+                            {
+                                "@id": "condition/1/value/10",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 348.0
+                            },
+                            {
+                                "@id": "condition/1/value/11",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 349.2
+                            },
+                            {
+                                "@id": "condition/1/value/12",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 349.7
+                            },
+                            {
+                                "@id": "condition/1/value/13",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 349.7
+                            },
+                            {
+                                "@id": "condition/1/value/14/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 350.2
+                            },
+                            {
+                                "@id": "condition/1/value/15/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 349.2
+                            },
+                            {
+                                "@id": "condition/1/value/16/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 349.2
+                            },
+                            {
+                                "@id": "condition/1/value/17/",
+                                "@type": "sdo:numericvalue",
+                                "datatype": "float",
+                                "number": 352.7
+                            }
+                        ]
                     }
                 ]
-            }]
-        },
-        "dataset": {
-            "@id": "dataset/",
-            "dataseries": [{
-                "@id": "dataseries/1",
-                "type": "independent set",
-                "datapoints": [
-                    "datapoint/1/",
-                    "datapoint/2/",
-                    "datapoint/3/",
-                    "datapoint/4/",
-                    "datapoint/5/",
-                    "datapoint/6/",
-                    "datapoint/7/",
-                    "datapoint/8/",
-                    "datapoint/9/",
-                    "datapoint/10/",
-                    "datapoint/11/",
-                    "datapoint/12/",
-                    "datapoint/13/",
-                    "datapoint/14/",
-                    "datapoint/15/",
-                    "datapoint/16/",
-                    "datapoint/17/"
+            },
+            "dataset": {
+                "@id": "dataset/",
+                "@type": "sdo:dataset",
+                "datagroups": [
+                    {
+                        "@id": "datagroup/1",
+                        "@type": "sdo:datagroup",
+                        "type": "independent set",
+                        "datapoints": [
+                            "datapoint/1/",
+                            "datapoint/2/",
+                            "datapoint/3/",
+                            "datapoint/4/",
+                            "datapoint/5/",
+                            "datapoint/6/",
+                            "datapoint/7/",
+                            "datapoint/8/",
+                            "datapoint/9/",
+                            "datapoint/10/",
+                            "datapoint/11/",
+                            "datapoint/12/",
+                            "datapoint/13/",
+                            "datapoint/14/",
+                            "datapoint/15/",
+                            "datapoint/16/",
+                            "datapoint/17/"
+                        ]
+                    }
+                ],
+                "datapoint": [
+                    {
+                        "@id": "datapoint/1/",
+                        "@type": "sdo:datapoint",
+                        "conditions": ["condition/1/value/1/"],
+                        "data": [
+                            {
+                                "@id": "datum/1/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/1/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0
+                                }
+                            },
+                            {
+                                "@id": "datum/2/",
+                                "quantity": "mole fraction",
+                                "@type": "sdo:datum",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/2/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/2/",
+                        "conditions": ["condition/1/value/2/"],
+                        "data": [
+                            {
+                                "@id": "datum/3/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/3/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.121
+                                }
+                            },
+                            {
+                                "@id": "datum/4/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/4/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.879
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/3/",
+                        "conditions": ["condition/1/value/3/"],
+                        "data": [
+                            {
+                                "@id": "datum/5/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/5/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.216
+                                }
+                            },
+                            {
+                                "@id": "datum/6/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/6/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.784
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/4/",
+                        "conditions": ["condition/1/value/4/"],
+                        "data": [
+                            {
+                                "@id": "datum/7/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/7/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.248
+                                }
+                            },
+                            {
+                                "@id": "datum/8/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/8/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.752
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/5/",
+                        "conditions": ["condition/1/value/5/"],
+                        "data": [
+                            {
+                                "@id": "datum/9/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/9/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.26
+                                }
+                            },
+                            {
+                                "@id": "datum/10/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/10/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.74
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/6/",
+                        "conditions": ["condition/1/value/6/"],
+                        "data": [
+                            {
+                                "@id": "datum/11/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/11/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.27
+                                }
+                            },
+                            {
+                                "@id": "datum/12/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/12/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.73
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/7/",
+                        "conditions": ["condition/1/value/7/"],
+                        "data": [
+                            {
+                                "@id": "datum/13/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/13/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.31
+                                }
+                            },
+                            {
+                                "@id": "datum/14/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/14/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.69
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/8/",
+                        "conditions": ["condition/1/value/8/"],
+                        "data": [
+                            {
+                                "@id": "datum/15/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/15/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.345
+                                }
+                            },
+                            {
+                                "@id": "datum/16/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/16/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.655
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/9/",
+                        "conditions": ["condition/1/value/9/"],
+                        "data": [
+                            {
+                                "@id": "datum/17/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/17/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.367
+                                }
+                            },
+                            {
+                                "@id": "datum/18/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/18/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.633
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/10/",
+                        "conditions": ["condition/1/value/10/"],
+                        "data": [
+                            {
+                                "@id": "datum/19/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/19/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.399
+                                }
+                            },
+                            {
+                                "@id": "datum/20/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/20/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.601
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/11/",
+                        "conditions": ["condition/1/value/11/"],
+                        "data": [
+                            {
+                                "@id": "datum/21/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/21/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.432
+                                }
+                            },
+                            {
+                                "@id": "datum/22/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/22/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.568
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/12/",
+                        "conditions": ["condition/1/value/12/"],
+                        "data": [
+                            {
+                                "@id": "datum/23/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/23/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.478
+                                }
+                            },
+                            {
+                                "@id": "datum/24/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/24/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.522
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/13/",
+                        "conditions": ["condition/1/value/13/"],
+                        "data": [
+                            {
+                                "@id": "datum/25/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/25/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.498
+                                }
+                            },
+                            {
+                                "@id": "datum/26/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/26/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.502
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/14/",
+                        "conditions": ["condition/1/value/14/"],
+                        "data": [
+                            {
+                                "@id": "datum/27/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/27/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.57
+                                }
+                            },
+                            {
+                                "@id": "datum/28/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/28/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.43
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/15/",
+                        "conditions": ["condition/1/value/15/"],
+                        "data": [
+                            {
+                                "@id": "datum/29/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/29/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.615
+                                }
+                            },
+                            {
+                                "@id": "datum/30/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/30/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.385
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/16/",
+                        "conditions": ["condition/1/value/16/"],
+                        "data": [
+                            {
+                                "@id": "datum/31/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/31/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.693
+                                }
+                            },
+                            {
+                                "@id": "datum/32/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/32/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0.307
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "datapoint/17/",
+                        "conditions": ["condition/1/value/17/"],
+                        "data": [
+                            {
+                                "@id": "datum/33/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 1)",
+                                "value": {
+                                    "@id": "datum/33/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 1
+                                }
+                            },
+                            {
+                                "@id": "datum/34/",
+                                "@type": "sdo:datum",
+                                "quantity": "mole fraction",
+                                "property": "Mole Fraction (Component 2)",
+                                "value": {
+                                    "@id": "datum/34/value/",
+                                    "@type": "sdo:numericvalue",
+                                    "number": 0
+                                }
+                            }
+                        ]
+                    }
                 ]
-            }],
-            "datapoint": [
-                {
-                    "@id": "datapoint/1/",
-                    "conditions": ["condition/1/"],
-                    "data": [
-                        {
-                            "@id": "datum/1/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/1/value/",
-                                "number": 0
-                            }
-                        },
-                        {
-                            "@id": "datum/2/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/2/value/",
-                                "number": 1
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/2/",
-                    "conditions": ["condition/2/"],
-                    "data": [
-                        {
-                            "@id": "datum/3/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/3/value/",
-                                "number": 0.121
-                            }
-                        },
-                        {
-                            "@id": "datum/4/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/4/value/",
-                                "number": 0.879
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/3/",
-                    "conditions": ["condition/3/"],
-                    "data": [
-                        {
-                            "@id": "datum/5/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/5/value/",
-                                "number": 0.216
-                            }
-                        },
-                        {
-                            "@id": "datum/6/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/6/value/",
-                                "number": 0.784
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/4/",
-                    "conditions": ["condition/4/"],
-                    "data": [
-                        {
-                            "@id": "datum/7/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/7/value/",
-                                "number": 0.248
-                            }
-                        },
-                        {
-                            "@id": "datum/8/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/8/value/",
-                                "number": 0.752
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/5/",
-                    "conditions": ["condition/5/"],
-                    "data": [
-                        {
-                            "@id": "datum/9/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/9/value/",
-                                "number": 0.26
-                            }
-                        },
-                        {
-                            "@id": "datum/10/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/10/value/",
-                                "number": 0.74
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/6/",
-                    "conditions": ["condition/6/"],
-                    "data": [
-                        {
-                            "@id": "datum/11/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/11/value/",
-                                "number": 0.27
-                            }
-                        },
-                        {
-                            "@id": "datum/12/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/12/value/",
-                                "number": 0.73
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/7/",
-                    "conditions": ["condition/7/"],
-                    "data": [
-                        {
-                            "@id": "datum/13/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/13/value/",
-                                "number": 0.31
-                            }
-                        },
-                        {
-                            "@id": "datum/14/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/14/value/",
-                                "number": 0.69
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/8/",
-                    "conditions": ["condition/8/"],
-                    "data": [
-                        {
-                            "@id": "datum/15/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/15/value/",
-                                "number": 0.345
-                            }
-                        },
-                        {
-                            "@id": "datum/16/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/16/value/",
-                                "number": 0.655
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/9/",
-                    "conditions": ["condition/9/"],
-                    "data": [
-                        {
-                            "@id": "datum/17/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/17/value/",
-                                "number": 0.367
-                            }
-                        },
-                        {
-                            "@id": "datum/18/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/18/value/",
-                                "number": 0.633
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/10/",
-                    "conditions": ["condition/10/"],
-                    "data": [
-                        {
-                            "@id": "datum/19/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/19/value/",
-                                "number": 0.399
-                            }
-                        },
-                        {
-                            "@id": "datum/20/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/20/value/",
-                                "number": 0.601
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/11/",
-                    "conditions": ["condition/11/"],
-                    "data": [
-                        {
-                            "@id": "datum/21/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/21/value/",
-                                "number": 0.432
-                            }
-                        },
-                        {
-                            "@id": "datum/22/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/22/value/",
-                                "number": 0.568
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/12/",
-                    "conditions": ["condition/12/"],
-                    "data": [
-                        {
-                            "@id": "datum/23/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/23/value/",
-                                "number": 0.478
-                            }
-                        },
-                        {
-                            "@id": "datum/24/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/24/value/",
-                                "number": 0.522
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/13/",
-                    "conditions": ["condition/13/"],
-                    "data": [
-                        {
-                            "@id": "datum/25/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/25/value/",
-                                "number": 0.498
-                            }
-                        },
-                        {
-                            "@id": "datum/26/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/26/value/",
-                                "number": 0.502
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/14/",
-                    "conditions": ["condition/14/"],
-                    "data": [
-                        {
-                            "@id": "datum/27/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/27/value/",
-                                "number": 0.57
-                            }
-                        },
-                        {
-                            "@id": "datum/28/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/28/value/",
-                                "number": 0.43
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/15/",
-                    "conditions": ["condition/15/"],
-                    "data": [
-                        {
-                            "@id": "datum/29/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/29/value/",
-                                "number": 0.615
-                            }
-                        },
-                        {
-                            "@id": "datum/30/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/30/value/",
-                                "number": 0.385
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/16/",
-                    "conditions": ["condition/16/"],
-                    "data": [
-                        {
-                            "@id": "datum/31/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/31/value/",
-                                "number": 0.693
-                            }
-                        },
-                        {
-                            "@id": "datum/32/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/32/value/",
-                                "number": 0.307
-                            }
-                        }
-                    ]
-                },
-                {
-                    "@id": "datapoint/17/",
-                    "conditions": ["condition/17/"],
-                    "data": [
-                        {
-                            "@id": "datum/33/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 1)",
-                            "value": {
-                                "@id": "datum/33/value/",
-                                "number": 1
-                            }
-                        },
-                        {
-                            "@id": "datum/34/",
-                            "quantity": "mole fraction",
-                            "property": "Mole Fraction (Component 2)",
-                            "value": {
-                                "@id": "datum/34/value/",
-                                "number": 0
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    "source": [
-        {
-            "@id": "source",
-            "citation": "NIST-IUPAC Solubility Database - https://sds.coas.unf.edu",
-            "reftype": "database",
-            "url": "https://sds.coas.unf.edu/"
+            }
         },
-        {
-            "@id": "source",
-            "citation": "Shinomiya, C.; J. Chem. Soc. Japan 1940, 15, 259-270.",
-            "reftype": "original paper",
-            "url": "http://dx.doi.org/10.1246/bcsj.15.259"
+        "source": [
+            {
+                "@id": "source",
+                "@type": "dc:source",
+                "citation": "NIST-IUPAC Solubility Database - https://sds.coas.unf.edu",
+                "reftype": "database",
+                "url": "https://sds.coas.unf.edu/"
+            },
+            {
+                "@id": "source",
+                "@type": "dc:source",
+                "citation": "Shinomiya, C.; J. Chem. Soc. Japan 1940, 15, 259-270.",
+                "reftype": "original paper",
+                "url": "http://dx.doi.org/10.1246/bcsj.15.259"
+            }
+        ],
+        "rights": {
+            "@id": "rights",
+            "@type": "dc:rights",
+            "holder": "International Union of Pure and Applied Chemistry (IUPAC)",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/"
         }
-    ],
-    "rights": {
-        "@id": "rights",
-        "holder": "International Union of Pure and Applied Chemistry (IUPAC)",
-        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
     }
 }
