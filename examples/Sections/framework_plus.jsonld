@@ -1,0 +1,269 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        {"dc": "http://purl.org/dc/terms/"},
+        {"@base": "https://stuchalk.github.io/scidata/"}
+    ],
+    "@id": "identifier",
+    "uid": "dc:identifier (string)",
+    "title": "dc:title (string)",
+    "author": [
+        {
+            "@id": "author/1/",
+            "name": "foaf:name (string)",
+            "organization": "foaf:organization (string)",
+            "email": "foaf:mbox (string)",
+            "orcid": "dc:identifier (string)"
+        }
+    ],
+    "description": "dc:description (string)",
+    "publisher": "dc:publisher (string)",
+    "keywords": "dc:subject (string)",
+    "version": "dc:hasVersion (integer)",
+    "date": "dc:subject (string)",
+    "permalink": "dc:identifier (uri)",
+    "related": ["one or more external links (uri)"],
+    "toc": {
+        "@id": "toc/",
+        "sections": ["one or more internal links (uri)"]
+    },
+    "scidata": {
+        "@id": "scidata/",
+        "type": ["type of data (from enum list e.g. 'property value')"],
+        "property": ["list of one to many properties (string)"],
+        "kind": ["list of one to many kinds of data (set list)"],
+        "methodology": {
+            "@id": "methodology/",
+            "@type": "sci:methodology",
+            "evaluation": "how the data was obtained (enum list e.g. 'experimental')",
+            "aspects": [
+                "measurement",
+                "procedure",
+                "resource",
+                "calculation",
+                "basisset",
+                "software"
+            ]
+        },
+        "system": {
+            "@id": "system/",
+            "@type": "sci:system",
+            "discipline": "science area",
+            "subdiscipline": "subdiscipline area",
+            "facets": [
+                "organism",
+                "compound",
+                "molecularsystem",
+                "chemicalsystem",
+                "material",
+                "condition"
+            ]
+        },
+        "dataset": {
+            "@id": "dataset/",
+            "uid": "unique identifier (string)",
+            "name": "name of dataset (string)",
+            "source": "which aspect was used to obtain data (internal uri)",
+            "scope": "which facet is this measured on (internal uri)",
+            "attribute": ["one or more attributes about the dataset (parameter)"],
+            "datapoint": [
+                {
+                    "@id": "datapoint",
+                    "uid": "",
+                    "name": "",
+                    "source": "",
+                    "scope": "",
+                    "quantity": "quantity name (string)",
+                    "quantityref": "external reference to a quantity (uri)",
+                    "property": "property name (string)",
+                    "propertyref": "external reference to a property (uri)",
+                    "value": {
+                        "@id": "numericValue",
+                        "exact": "exact value or not (boolean)",
+                        "number": {
+                            "@value": 6.022E23,
+                            "@type": "xsd:float"
+                        },
+                        "sigfigs": 4,
+                        "error": {
+                            "@value": 1.23E20,
+                            "@type": "xsd:float"
+                        },
+                        "errortype": "what type of error is reported (string)",
+                        "unit": {
+                            "@id": "unitOfMeasure",
+                            "name": "the name of the unit",
+                            "unitsystem": "the unit system that the unit is part of (string)",
+                            "unitsystemref": "external reference to the unit system that the unit is part of (uri)",
+                            "quantity": "",
+                            "quantityref": "",
+                            "abbrev": "unit abbreviation (string)",
+                            "symbol": "unit symbol (string)",
+                            "unitinsi": "description or definition of a unit in scientific notation (siunit)",
+                            "siunit": {
+                                "@id": "siUnit",
+                                "name": "the name of the SI unit (string)",
+                                "prefix": "the SI prefix (enum list)",
+                                "power": "the unit power (integer)"
+                            },
+                            "siunitstr": "the SI unit (string)",
+                            "siunitref": "external reference to a SI unit (uri)",
+                            "factor": {
+                                "@id": "conversionFactor",
+                                "fromunit": "unit from which the conversion is done",
+                                "tounit": "unit to which the conversion is done",
+                                "addend": "value to be added to the 'from unit' value (float)",
+                                "minuend": "value that the 'from unit' value is to be subtraced from (float)",
+                                "subtrahend": "value to be subtraced from the 'from unit' value (float)",
+                                "multiplier": "value to multiply the 'from unit' value by (float)",
+                                "dividend": "value that the 'from unit' value is to be divided into (float)",
+                                "divisor": "value to be divided into the 'from unit' value (float)",
+                                "exact": "indication that the conversion factor is an exact number or not (boolean)"
+                            },
+                            "factorref": "external reference to a conversion factor (uri)"
+                        },
+                        "unitstr": "unit of measure (string)",
+                        "unitref": "internal or external reference to a unit of measure (uri)"
+                    },
+                    "textstring": {
+                        "@id": "textString",
+                        "text": "the textual value (string)",
+                        "texttype": "the text type (enum list) e.g. plain, JSON, etc...",
+                        "language": "the language of the text string (string)"
+                    }
+                }
+            ],
+            "dataseries": [
+                {
+                    "@id": "dataseries",
+                    "type": "the type of series (string from enum)",
+                    "axis": "the axis on a graph the series represents (independent or dependent)",
+                    "label": "the axis label (string)",
+                    "parameterArray": [
+                        {
+                            "@id": "parameter/1",
+                            "uid": "",
+                            "name": "",
+                            "source": "",
+                            "scope": "",
+                            "quantity": "",
+                            "property": "",
+                            "propertyref": "",
+                            "valuearray": {
+                                "@id": "valuearray",
+                                "numberarray": [
+                                    0.1042,
+                                    0.1037
+                                ]
+                            }
+                        },
+                        {
+                            "@id": "parameter/1",
+                            "textarray": {
+                                "@id": "textarray",
+                                "textarray": "an array of textual values (strings)"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "datagroup": [
+                {
+                    "@id": "datagroup",
+                    "uid": "",
+                    "name": "",
+                    "source": "",
+                    "scope": "",
+                    "attribute": [""],
+                    "datagroup": [
+                        {}
+                    ],
+                    "dataseries": [
+                        {}
+                    ],
+                    "datapoint": [
+                        {}
+                    ]
+                }
+            ]
+        },
+        "derivatives": [
+            {
+                "@id": "derivative/",
+                "@type": "sci:derivative",
+                "creator": "another author",
+                "date": "creation/publication date",
+                "extracts": [
+                    {
+                        "@id": "extract/1/",
+                        "@type": "sci:extract",
+                        "point": {
+                            "@id": "point/1/",
+                            "@type": "sci:extract",
+                            "scope": "reference back to dataset section",
+                            "description": "single extraced data point",
+                            "annotation": "context of why this value was extracted"
+                        },
+                        "range": {
+                            "@id": "range/1/",
+                            "@type": "sci:range",
+                            "scope": "reference back to dataset section",
+                            "description": "range of data points based on an axis with limits",
+                            "annotation": "context of why this range was extracted",
+                            "limits": "low and high of the range used to define it"
+                        },
+                        "group": {
+                            "@id": "group/1/",
+                            "@type": "sci:group",
+                            "scope": "reference back to dataset section",
+                            "description": "discontinuous set of data points",
+                            "annotation": "context of why this group was extracted"
+                        },
+                        "series": {
+                            "@id": "series/1/",
+                            "@type": "sci:series",
+                            "scope": "reference back to dataset section",
+                            "description": "a series created from an axis orthoginal to the data collection axis",
+                            "annotation": "context of why this group was extracted"
+                        }
+                    }
+                ],
+                "analyses": [
+                    {
+                        "@id": "analysis/1/",
+                        "@type": "sci:analysis",
+                        "scope": "operation to be done in the analysis",
+                        "type": ["annotation","statistics","function fitting","calculus"],
+                        "mathematics": [
+                        	{
+                        		"@id": "math/1/",
+                        		"@type": "sci:math",
+                        		"math": "algebra"
+                        	}
+                        ],
+                        "results": [
+                        		{
+                        		"@id": "result/1/",
+                        		"@type": "sci:calculatedresult",
+                        		"datapoint": "1 to n",
+                        		"dataseries": "1 to n"
+                        	}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "references": [
+        {
+            "@id": "reference/1/",
+            "citation": "textual citation (string)",
+            "url": "dc:identifier (uri)"
+        }
+    ],
+    "rights": {
+        "@id": "rights/1/",
+        "license": "dc:rights (uri)",
+        "holder": "dc:rightsHolder (string)"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+        {"@base": "https://stuchalk.github.io/value.jsonld#"}
+    ],
+    "@id": "",
+    "scope": "molecule/1",
+    "quantity": "magnetic field strength",
+    "property": "Anisotropic NMR Shielding",
+    "value": {
+        "@id": "value/1",
+        "number": 3.2,
+        "unitstr": "ppm_Hz"
+    }
+}
+

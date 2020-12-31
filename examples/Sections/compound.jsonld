@@ -1,0 +1,16 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_compound.jsonld",
+        {"obo": "http://purl.obolibrary.org/obo/"},
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"}
+    ],
+    "@id": "",
+    "name": "Water",
+    "iupacname": "Oxidane",
+    "inchi": "InChI=1S/H2O/h1H2",
+    "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+    "smiles": "O",
+    "formula": "H2O",
+    "molweight": "18.0153",
+    "chebi": "obo:CHEBI_15377"
+}
