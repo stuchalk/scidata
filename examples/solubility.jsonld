@@ -13,7 +13,7 @@
     ],
     "@id": "solubilityExample",
     "generatedAt": "2020-12-14 19:27:59",
-    "version": 2,
+    "version": 3,
     "@graph": {
         "@id": "https://sds.coas.unf.edu/sds:report:002014/",
         "@type": "sdo:scidataFramework",
