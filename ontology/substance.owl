@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl">
-    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#"/>
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
@@ -54,6 +54,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhaseType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasProperty"/>
@@ -131,6 +134,9 @@
         <NamedIndividual IRI="#solid"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#supercriticalFluid"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ternaryMixture"/>
     </Declaration>
     <Declaration>
@@ -230,6 +236,10 @@
         <NamedIndividual IRI="#solid"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#phase"/>
+        <NamedIndividual IRI="#supercriticalFluid"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#mixtureType"/>
         <NamedIndividual IRI="#ternaryMixture"/>
     </ClassAssertion>
@@ -265,6 +275,13 @@
         <NamedIndividual IRI="#heterogeneousSolution"/>
         <NamedIndividual IRI="#homogeneousSolution"/>
     </DifferentIndividuals>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="#phase"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isConstituentOf"/>
         <Class IRI="#substance"/>
@@ -413,6 +430,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPhase</IRI>
         <Literal>has phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPhaseType</IRI>
+        <Literal xml:lang="en">A description of the phase (or multiple phases) to better represent its form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhaseType</IRI>
+        <Literal xml:lang="en">has phase type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -594,6 +621,16 @@ chemical species. The letters are appended to the formula symbol in parentheses.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#substance</IRI>
         <Literal>substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supercriticalFluid</IRI>
+        <Literal xml:lang="en">A supercritical fluid (SCF) is any substance at a temperature and pressure above its critical point, where distinct liquid and gas phases do not exist, but below the pressure required to compress it into a solid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supercriticalFluid</IRI>
+        <Literal xml:lang="en">supercritical fluid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

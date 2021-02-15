@@ -25,6 +25,10 @@
                 "@id": "sub:hasPhase",
                 "@type": "@id"
             },
+            "phasetype": {
+                "@id": "sub:hasPhaseType",
+                "@type": "string"
+            },
             "constituents": {"@id": "sub:hasConstituent"},
             "properties": {"@id": "sub:hasProperty"}
         }
