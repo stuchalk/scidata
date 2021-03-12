@@ -41,7 +41,7 @@
                 "@id": "dc:isPartOf",
                 "@type": "string"
             },
-            "author": {"@id": "sdo:hasAuthor"},
+            "authors": {"@id": "sdo:hasAuthor"},
             "name": {
                 "@id": "obo:IAO_0000590",
                 "@type": "string"
