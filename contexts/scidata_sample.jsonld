@@ -1,8 +1,8 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "cao": "http://champ-project.org/images/ontology/cao.owl#",
-        "dc": "http://purl.org/dc/terms/",
+        "dc": "https://purl.org/dc/terms/",
         "substance": {"@id": "cao:CAO_000189"},
         "identifier": {
             "@id": "dc:identifier",

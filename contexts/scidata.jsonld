@@ -14,7 +14,7 @@
             "schema": "https://schema.org/",
             "bse": "http://purl.oclc.org/NET/EMSL/BSE",
             "xsd": "https://www.w3.org/2001/XMLSchema#",
-            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "qudt": "http://qudt.org/vocab/unit/",
             "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
             "prov": "http://www.w3.org/ns/prov#",
             "generatedAt": {

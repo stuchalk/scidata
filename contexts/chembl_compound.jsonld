@@ -2,9 +2,9 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "http://semanticscience.org/resource/",
+        "ss": "https://semanticscience.org/ontology/sio.owl",
         "mesh": "http://purl.bioontology.org/ontology/MESH",
-        "edam": "http://edamontology.org",
+        "edam": "https://edamontology.org",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "chembl_id": {
             "@id": "edam:data_2646",

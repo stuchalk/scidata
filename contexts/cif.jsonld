@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "cif": "http://www.iucr.org/cif/",
         "diffrn_ambient_temperature": {
             "@id": "cif:DiffractionAmbientTemperature",

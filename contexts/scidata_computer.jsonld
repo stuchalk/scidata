@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "comp": "https://stuchalk.github.io/scidata/ontology/computer.owl#",
         "computer": {"@id": "sdo:computer"},

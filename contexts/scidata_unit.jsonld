@@ -1,9 +1,9 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "dc": "http://purl.org/dc/terms/",
+        "dc": "https://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
         "unit": {"@id": "sdo:unitOfMeasure"},
         "unitstr": {

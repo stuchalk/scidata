@@ -1,7 +1,7 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "res": "https://stuchalk.github.io/scidata/ontology/resource/resource.owl",
         "resource": {"@id": "sdo:hasResource"},
@@ -9,9 +9,21 @@
             "@id": "dc:type",
             "@type": "string"
         },
+        "typeref": {
+             "@id": "dc:type",
+             "@type": "@id"
+        },
         "vendor": {
             "@id": "obo:sep_00088",
             "@type": "string"
+        },
+        "software": {
+             "@id": "obo:IAO_0000010",
+             "@type": "string"
+        },
+        "accessory": {
+             "@id": "obo:NCIT_C49755",
+             "@type": "string"
         },
         "catalognumber": {
             "@id": "obo:sep_0016",

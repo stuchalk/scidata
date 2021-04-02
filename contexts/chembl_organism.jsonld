@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "edam": "http://edamontology.org",
+        "edam": "https://edamontology.org",
         "start_position": {
             "@id": "obo:NCIT_C45276",
             "@type": "string"

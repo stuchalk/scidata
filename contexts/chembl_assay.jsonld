@@ -2,8 +2,8 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "http://semanticscience.org/resource/",
-        "edam": "http://edamontology.org",
+        "ss": "https://semanticscience.org/ontology/sio.owl",
+        "edam": "https://edamontology.org",
         "bao": "http://www.bioassayontology.org/bao#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "chembl_id": {

@@ -3,7 +3,7 @@
      xml:base="https://www.iucr.org/resources/cif.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsd="https://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.iucr.org/resources/cif.owl"
      versionIRI="https://www.iucr.org/resources/cif.owl/1.0.0">

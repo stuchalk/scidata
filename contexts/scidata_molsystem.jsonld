@@ -1,10 +1,10 @@
 {
     "@context": [
         {
-            "@vocab": "http://www.w3.org/2001/XMLSchema#",
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "gc": "http://purl.org/gc/",
-            "dc": "http://purl.org/dc/terms/",
-            "ss": "http://semanticscience.org/resource/",
+            "dc": "https://purl.org/dc/terms/",
+            "ss": "https://semanticscience.org/ontology/sio.owl",
             "obo": "http://purl.obolibrary.org/obo/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",

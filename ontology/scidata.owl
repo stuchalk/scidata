@@ -2,12 +2,12 @@
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="https://stuchalk.github.io/scidata/ontology/scidata.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="https://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="https://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="dc" IRI="https://purl.org/dc/terms/"/>
     <Prefix name="chm" IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -21,7 +21,7 @@
     <Prefix name="prop" IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
-    <Prefix name="cheminf" IRI="http://semanticscience.org/resource/"/>
+    <Prefix name="cheminf" IRI="https://semanticscience.org/ontology/sio.owl"/>
     <Prefix name="bfo11snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
     <Prefix name="bfo11span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
     <Annotation>

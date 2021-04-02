@@ -8,7 +8,7 @@
             "dc": "https://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "ss": "http://semanticscience.org/resource/",
+            "ss": "https://semanticscience.org/ontology/sio.owl",
             "name": {
                 "@id": "ss:CHEMINF_000107",
                 "@type": "string"

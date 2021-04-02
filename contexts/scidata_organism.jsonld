@@ -1,7 +1,7 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "organism": {"@id": "obo:OBI_0100026"},
         "description": {

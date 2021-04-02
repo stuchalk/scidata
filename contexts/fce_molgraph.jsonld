@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "ss": "http://semanticscience.org/resource/",
+            "ss": "https://semanticscience.org/ontology/sio.owl",
             "obo": "http://purl.obolibrary.org/obo/",
             "atoms": {"@id": "obo:CHEBI_33250"},
             "bonds": {"@id": "ss:CHEMINF_000063"},

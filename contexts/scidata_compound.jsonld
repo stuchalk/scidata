@@ -1,10 +1,10 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "edam": "http://edamontology.org/",
-        "enm": "http://purl.enanomapper.org/onto/",
+        "edam": "https://edamontology.org/",
+        "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
         "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
         "compound": {"@id": "sdo:compound"},
         "element": {"@id": "sdo:element"},

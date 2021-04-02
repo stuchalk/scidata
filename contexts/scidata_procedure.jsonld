@@ -1,7 +1,7 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "proc": "https://stuchalk.github.io/scidata/ontology/scidata_procedure.owl#",
         "procedure": {"@id": "sdo:procedure"},

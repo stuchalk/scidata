@@ -2,7 +2,7 @@
     "@context": [
         {
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "@vocab": "http://www.w3.org/2001/XMLSchema#",
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "condition": {"@id": "sdo:condition"}
         }
     ]

@@ -1,8 +1,8 @@
 {
     "@context": {
-        "@vocab": "http://www.w3.org/2001/XMLSchema#",
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "tgt": "https://stuchalk.github.io/scidata/ontology/target/target.owl#",
-        "dc": "http://purl.org/dc/terms/",
+        "dc": "https://purl.org/dc/terms/",
         "target": {"@id": "tgt:target"},
         "name": {
             "@id": "dc:title",
