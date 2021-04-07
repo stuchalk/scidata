@@ -2,7 +2,7 @@
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="https://stuchalk.github.io/scidata/ontology/scidata.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="https://www.w3.org/XML/1998/namespace"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="https://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">

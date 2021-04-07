@@ -107,7 +107,7 @@
                 "@type": "anyURI"
             },
             "toc": {
-                "@id": "sdo:hasPart",
+                "@id": "dc:hasPart",
                 "@type": "@id"
             },
             "scidata": {"@id": "sdo:hasScientificData"},
