@@ -1,0 +1,28 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sch": "http://schema.org/",
+        "subject": "obo:NCIT_C48910",
+        "species": {
+            "@id": "obo:NCIT_C45293",
+            "@type": "string"
+        },
+        "speciesref": {
+             "@id": "obo:NCIT_C45293",
+             "@type": "@id"
+        },
+        "ethnicity": {
+            "@id": "obo:NCIT_C16564",
+            "@type": "string"
+        },
+        "gender": {
+            "@id": "obo:NCIT_C17357",
+            "@type": "@id"
+        },
+        "nationality": {
+            "@id": "sch:nationality",
+            "@type": "@id"
+        }
+    }
+}
