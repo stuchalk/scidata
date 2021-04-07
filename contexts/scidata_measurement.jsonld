@@ -6,13 +6,13 @@
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "measurement": {"@id": "cao:CAO_000152"},
-            "techniqueType": {
-                "@id": "cao:CAO_000218",
+            "techniqueref": {
+                "@id": "cao:CAO_000011",
                 "@type": "@id"
             },
             "technique": {
                 "@id": "cao:CAO_000011",
-                "@type": "@id"
+                "@type": "string"
             },
             "instrumentType": {
                 "@id": "cao:CAO_000137",
