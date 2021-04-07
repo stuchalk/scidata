@@ -18,11 +18,11 @@
         },
         "gender": {
             "@id": "obo:NCIT_C17357",
-            "@type": "@id"
+            "@type": "string"
         },
         "nationality": {
             "@id": "sch:nationality",
-            "@type": "@id"
+            "@type": "string"
         }
     }
 }
