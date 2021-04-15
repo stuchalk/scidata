@@ -31,12 +31,20 @@
                 "@id": "sub:phase",
                 "@type": "string"
             },
+            "phase_": {
+                "@id": "sub:phase",
+                "@type": "@id"
+            },
             "properties": {
                 "@id": "sdo:propertyValue"
             },
             "source": {
                 "@id": "sdo:hasSource",
-                "@type": "@id"
+                "@type": "string"
+            },
+            "source_": {
+                 "@id": "sdo:hasSource",
+                 "@type": "@id"
             },
             "acquired": {
                 "@id": "sdo:acquiredFrom",
