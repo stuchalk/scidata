@@ -21,6 +21,10 @@
             },
             "role": {
                 "@id": "obo:BFO_0000023",
+                "@type": "string"
+            },
+            "role_": {
+                "@id": "obo:BFO_0000023",
                 "@type": "@id"
             },
             "grade": {
