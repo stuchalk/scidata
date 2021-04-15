@@ -38,11 +38,11 @@
             "properties": {
                 "@id": "sdo:propertyValue"
             },
-            "source": {
+            "sourcetype": {
                 "@id": "sdo:hasSource",
                 "@type": "string"
             },
-            "source_": {
+            "sourcetype_": {
                  "@id": "sdo:hasSource",
                  "@type": "@id"
             },
