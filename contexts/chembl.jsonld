@@ -2,9 +2,9 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "https://semanticscience.org/ontology/sio.owl",
+        "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
         "mesh": "http://purl.bioontology.org/ontology/MESH",
-        "edam": "https://edamontology.org",
+        "edam": "http://edamontology.org/",
         "ebi": "https://www.ebi.ac.uk/efo/",
         "bao": "http://www.bioassayontology.org/bao#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
@@ -18,7 +18,7 @@
         },
         "standard_value": {
             "@id": "ss:SIO_000618",
-            "@type": "string"
+            "@type": "float"
         },
         "standard_units": {
             "@id": "ss:SIO_000074",
@@ -134,7 +134,7 @@
         },
         "full_mwt": {
             "@id": "mesh:D008970",
-            "@type": "string"
+            "@type": "float"
         },
         "aromatic_rings": {
             "@id": "ss:SIO_010781",
@@ -150,7 +150,7 @@
         },
         "mw_monoisotopic": {
             "@id": "ss:CHEMINF_000485",
-            "@type": "string"
+            "@type": "float"
         },
         "full_molformula": {
             "@id": "ss:CHEMINF_000490",
