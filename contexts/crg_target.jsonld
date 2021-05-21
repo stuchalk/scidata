@@ -21,7 +21,7 @@
             "@id": "edam:data_2091",
             "@type": "string"
         },
-        "component_synonym": {
+        "synonyms": {
             "@id": "ss:SIO_000122",
             "@type": "string"
         },
@@ -69,6 +69,7 @@
         "target_components": {
             "@id": "ss:SIO_000313",
             "@type": "string"
-        }
+        },
+        "component_domains": {"@id": "ss:SIO_001379"}
     }
 }
