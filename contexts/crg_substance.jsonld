@@ -1,0 +1,36 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "dc": "https://purl.org/dc/terms/",
+            "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
+            "substance": {"@id": "sub:substance"},
+            "name": {
+                "@id": "dc:title",
+                "@type": "string"
+            },
+            "aggregation": {
+                "@id": "sub:hasStateOfAggregation",
+                "@type": "@id"
+            },
+            "mixtype": {
+                "@id": "sub:hasMixtureType",
+                "@type": "@id"
+            },
+            "compound": {
+                "@id": "sub:isCompound",
+                "@type": "@id"
+            },
+            "phase": {
+                "@id": "sub:hasPhase",
+                "@type": "string"
+            },
+            "phase_": {
+                "@id": "sub:hasPhase",
+                "@type": "@id"
+            },
+            "constituents": {"@id": "sub:hasConstituent"},
+            "properties": {"@id": "sub:hasProperty"}
+        }
+    ]
+}

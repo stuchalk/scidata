@@ -1,5 +1,5 @@
 {
-    "@context": { 
+    "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/resource/",
@@ -7,14 +7,30 @@
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "start_position": {
             "@id": "obo:NCIT_C45276",
-            "@type": "string"
+            "@type": "integer"
         },
         "end_position": {
             "@id": "ss:SIO_000792",
+            "@type": "integer"
+        },
+        "component_type": {
+            "@id": "obo:NCIT_C45994",
+            "@type": "string"
+        },
+        "accession": {
+            "@id": "edam:data_2091",
             "@type": "string"
         },
         "component_synonym": {
             "@id": "ss:SIO_000122",
+            "@type": "string"
+        },
+        "domain_type": {
+            "@id": "ss:SIO_001379",
+            "@type": "string"
+        },
+        "domain_name": {
+            "@id": "ss:SIO_001379",
             "@type": "string"
         },
         "target_type_id": {
@@ -49,12 +65,9 @@
             "@id": "cco:CO_000076",
             "@type": "string"
         },
-        "domain_type": {
-            "@id": "ss:SIO_001379",
-            "@type": "string"
-        },
-        "domain_name": {
-            "@id": "ss:SIO_001379",
+        "domains": {"@id": "ss:SIO_001379"},
+        "target_components": {
+            "@id": "ss:SIO_000313",
             "@type": "string"
         }
     }

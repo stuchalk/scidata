@@ -5,15 +5,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "https://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
-        "unit": {"@id": "sdo:unitOfMeasure"},
-        "unitstr": {
-            "@id": "sdo:unitOfMeasure",
-            "@type": "string"
-        },
-        "unitref": {
-            "@id": "sdo:unitOfMeasure",
-            "@type": "@id"
-        },
+        "uom": {"@id": "sdo:unitOfMeasure"},
         "name": {
             "@id": "obo:IAO_0000302",
             "@type": "string"
@@ -22,7 +14,7 @@
             "@id": "sdo:unitSystem",
             "@type": "string"
         },
-        "unitsystemref": {
+        "unitsystem#": {
             "@id": "sdo:unitSystem",
             "@type": "@id"
         },
@@ -30,7 +22,7 @@
             "@id": "sdo:quantity",
             "@type": "string"
         },
-        "quantityref": {
+        "quantity#": {
             "@id": "sdo:quantity",
             "@type": "@id"
         },
@@ -46,12 +38,11 @@
             "@id": "sdo:siUnitEquivalent",
             "@type": "sic:siUnit"
         },
-        "siunit": {"@id": "sdo:siUnit"},
-        "siunitstr": {
+        "siunit": {
             "@id": "sdo:siUnit",
             "@type": "string"
         },
-        "siunitref": {
+        "siunit#": {
             "@id": "sdo:siUnit",
             "@type": "@id"
         },
@@ -64,7 +55,7 @@
             "@type": "integer"
         },
         "factor": {"@id": "sdo:conversionFactor"},
-        "factorref": {
+        "factor#": {
             "@id": "sdo:conversionFactor",
             "@type": "@id"
         },

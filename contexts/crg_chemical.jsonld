@@ -1,0 +1,76 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "dc": "https://purl.org/dc/terms/",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+            "chemical": {"@id": "sdo:chemical"},
+            "vendor": {
+                "@id": "obo:sep_00088",
+                "@type": "string"
+            },
+            "catalognumber": {
+                "@id": "obo:NCIT_C99286",
+                "@type": "string"
+            },
+            "lotnumber": {
+                "@id": "obo:NCIT_C70848",
+                "@type": "string"
+            },
+            "role": {
+                "@id": "obo:BFO_0000023",
+                "@type": "string"
+            },
+            "role_": {
+                "@id": "obo:BFO_0000023",
+                "@type": "@id"
+            },
+            "grade": {
+                "@id": "chm:grade",
+                "@type": "string"
+            },
+            "phase": {
+                "@id": "sub:phase",
+                "@type": "string"
+            },
+            "phase_": {
+                "@id": "sub:phase",
+                "@type": "@id"
+            },
+            "properties": {
+                "@id": "sdo:propertyValue"
+            },
+            "sourcetype": {
+                "@id": "sdo:hasSource",
+                "@type": "string"
+            },
+            "sourcetype_": {
+                 "@id": "sdo:hasSource",
+                 "@type": "@id"
+            },
+            "acquired": {
+                "@id": "sdo:acquiredFrom",
+                "@type": "string"
+            },
+            "purity": {
+                "@id": "sdo:purity",
+                "@type": "sdo:parameter"
+            },
+            "steps": {"@id": "sdo:purificationStep"},
+            "part": {
+                "@id": "sdo:propertyValue",
+                "@type": "string"
+            },
+            "analysis": {
+                "@id": "sdo:analysisMethod",
+                "@type": "string"
+            },
+            "purification": {
+                "@id": "sdo:purificationMethod",
+                "@type": "string"
+            }
+        }
+    ]
+}

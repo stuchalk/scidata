@@ -1,6 +1,5 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
@@ -17,9 +16,13 @@
                 "@id": "sdo:number",
                 "@type": "double"
             },
-            "equality": {
+            "relation": {
                 "@id": "obo:NCIT_C27993",
                 "@type": "string"
+            },
+            "relation#": {
+                "@id": "obo:NCIT_C27993",
+                "@type": "@id"
             },
             "min": {
                 "@id": "sdo:number",
@@ -72,6 +75,10 @@
                 "@id": "dc:language",
                 "@type": "string"
             },
+            "language#": {
+                "@id": "dc:language",
+                "@type": "string"
+            },
             "value": {
                 "@id": "sdo:numericValue",
                 "@type": "sdo:isValue"
@@ -79,6 +86,14 @@
             "valuearray": {
                 "@id": "sdo:numericValueArray",
                 "@type": "sdo:isValueArray"
+            },
+            "unit": {
+                "@id": "sdo:unitOfMeasure",
+                "@type": "string"
+            },
+            "unit#": {
+                "@id": "sdo:unitOfMeasure",
+                "@type": "@id"
             }
         }
     ]

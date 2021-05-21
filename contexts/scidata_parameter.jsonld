@@ -15,7 +15,7 @@
                 "@id": "sdo:quantity",
                 "@type": "string"
             },
-            "quantityref": {
+            "quantity#": {
                 "@id": "sdo:quantity",
                 "@type": "@id"
             },
@@ -23,7 +23,7 @@
                 "@id": "sdo:property",
                 "@type": "string"
             },
-            "propertyref": {
+            "property#": {
                 "@id": "sdo:property",
                 "@type": "@id"
             },

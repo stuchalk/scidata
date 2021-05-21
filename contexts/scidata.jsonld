@@ -1,8 +1,6 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_general.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
@@ -127,10 +125,24 @@
                 "@id": "sdo:hasMethodology",
                 "@type": "sdo:methodology"
             },
+            "evaluation": {
+                 "@id": "sdo:evaluationMethod",
+                 "@type": "string"
+            },
+            "aspects": {"@id": "sdo:hasMethodologyAspect"},
             "system": {
                 "@id": "sdo:hasSystem",
                 "@type": "@id"
             },
+            "discipline": {
+                "@id": "sdo:discipline",
+                "@type": "@id"
+            },
+            "subdiscipline": {
+                "@id": "sdo:subdiscipline",
+                "@type": "@id"
+            },
+            "facets": {"@id": "sdo:hasSystemFacet"},
             "dataset": {
                 "@id": "sdo:hasDataset",
                 "@type": "sdo:dataset"
