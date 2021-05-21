@@ -5,7 +5,8 @@
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+            "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
+            "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
             "chemical": {"@id": "sdo:chemical"},
             "vendor": {
                 "@id": "obo:sep_00088",
@@ -23,7 +24,7 @@
                 "@id": "obo:BFO_0000023",
                 "@type": "string"
             },
-            "role_": {
+            "role#": {
                 "@id": "obo:BFO_0000023",
                 "@type": "@id"
             },
@@ -35,7 +36,7 @@
                 "@id": "sub:phase",
                 "@type": "string"
             },
-            "phase_": {
+            "phase#": {
                 "@id": "sub:phase",
                 "@type": "@id"
             },
@@ -46,7 +47,7 @@
                 "@id": "sdo:hasSource",
                 "@type": "string"
             },
-            "sourcetype_": {
+            "sourcetype#": {
                  "@id": "sdo:hasSource",
                  "@type": "@id"
             },
