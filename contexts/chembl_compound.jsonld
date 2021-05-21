@@ -4,7 +4,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "https://semanticscience.org/ontology/sio.owl",
         "mesh": "http://purl.bioontology.org/ontology/MESH",
-        "edam": "https://edamontology.org",
+        "edam": "https://edamontology.org/",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "chembl_id": {
             "@id": "edam:data_2646",

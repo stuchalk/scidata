@@ -4,7 +4,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
         "mesh": "http://purl.bioontology.org/ontology/MESH",
-        "edam": "http://edamontology.org/",
+        "edam": "https://edamontology.org/",
         "ebi": "https://www.ebi.ac.uk/efo/",
         "bao": "http://www.bioassayontology.org/bao#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
