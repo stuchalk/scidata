@@ -3,7 +3,7 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/resource/",
-        "edam": "http://edamontology.org",
+        "edam": "https://edamontology.org/",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "start_position": {
             "@id": "obo:NCIT_C45276",
