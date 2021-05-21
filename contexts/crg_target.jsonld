@@ -1,5 +1,5 @@
 {
-    "@context": {
+    "@context": { 
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/resource/",
