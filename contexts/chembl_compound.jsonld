@@ -2,9 +2,9 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "http://semanticscience.org/resource/",
-        "mesh": "https://bioportal.bioontology.org/ontologies/MESH",
-        "edam": "http://edamontology.org",
+        "ss": "http://semanticscience.org/ontology/sio.owl#",
+        "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "acd_logd": {
             "@id": "ss:CHEMINF_000323",
