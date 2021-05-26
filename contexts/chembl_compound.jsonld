@@ -6,6 +6,7 @@
         "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
+        "enm": "http://purl.enanomapper.org/onto/",
         "acd_logd": {
             "@id": "ss:CHEMINF_000323",
             "@type": "string"
@@ -64,6 +65,10 @@
         },
         "cx_most_bpka": {
             "@id": "ss:CHEMINF_000325",
+            "@type": "string"
+        },
+        "descriptors": {
+            "@id": "enm:ENM_8000019",
             "@type": "string"
         },
         "full_molformula": {

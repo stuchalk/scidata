@@ -1,100 +1,65 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/ontology/sio.owl#",
         "bao": "http://www.bioassayontology.org/bao/bao_complete.owl#",
-        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "activity_comment": {
             "@id": "obo:NCIT_C94169",
             "@type": "string"
+        },
+        "activity_id": {
+            "@id": "obo:NCIT_C93704",
+            "@type": "integer"
         },
         "bao_endpoint": {
             "@id": "bao:BAO_0002162",
             "@type": "string"
         },
         "bei": {
-            "@id": "cco:CO_000047",
+            "@id": "obo:NCIT_C20139",
             "@type": "string"
         },
         "comments": {
             "@id": "obo:OMIT_0016926",
             "@type": "string"
         },
-        "data_validity_comment ": {
-            "@id": "cco:CO_000004",
-            "@type": "string"
-        },
-        "ddd_units": {
-            "@id": "ss:SIO_000074",
-            "@type": "string"
-        },
-        "ddd_value": {
-            "@id": "obo:NCIT_C94169",
-            "@type": "string"
-        },
-        "definition": {
-            "@id": "cco:CO_000045",
-            "@type": "string"
-        },
         "le": {
-            "@id": "cco:CO_000049",
+            "@id": "obo:NCIT_C20139",
             "@type": "string"
         },
         "lle": {
-            "@id": "cco:CO_000050",
-            "@type": "string"
-        },
-        "met_conversion": {
-            "@id": "obo:GO_0008152",
+            "@id": "obo:NCIT_C20139",
             "@type": "string"
         },
         "pchembl_value": {
-            "@id": "cco:CO_000006",
-            "@type": "string"
-        },
-        "potential_duplicate": {
-            "@id": "cco:CO_000005",
+            "@id": "bao:BAO_0000102",
             "@type": "string"
         },
         "qudt_units": {
-            "@id": "cco:CO_000008",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "relation": {
-            "@id": "cco:CO_000009",
+            "@id": "dc:relation",
             "@type": "string"
         },
         "sei": {
-            "@id": "cco:CO_000048",
-            "@type": "string"
-        },
-        "set_name": {
-            "@id": "ss:SIO_000137",
-            "@type": "string"
-        },
-        "standard_flag": {
-            "@id": "cco:CO_000002",
+            "@id": "obo:NCIT_C20139",
             "@type": "string"
         },
         "standard_relation": {
-            "@id": "cco:CO_000001",
-            "@type": "string"
-        },
-        "standard_text_value": {
-            "@id": "ss:SIO_000618",
+            "@id": "dc:relation",
             "@type": "string"
         },
         "standard_type": {
-            "@id": "cco:CO_000046",
-            "@type": "string"
-        },
-        "standard_unit": {
-            "@id": "ss:SIO_000074",
+            "@id": "obo:NCIT_C25284",
             "@type": "string"
         },
         "standard_units": {
-            "@id": "ss:SIO_000074",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "standard_upper_value": {
@@ -105,28 +70,20 @@
             "@id": "ss:SIO_000618",
             "@type": "string"
         },
-        "standards_text_value": {
-            "@id": "ss:SIO_000618",
-            "@type": "string"
-        },
-        "text_value": {
-            "@id": "ss:SIO_000070",
-            "@type": "string"
-        },
         "type": {
-            "@id": "bao:BAO_0000181",
+            "@id": "obo:NCIT_C25284",
             "@type": "string"
         },
         "unit": {
-            "@id": "ss:SIO_000074",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "units": {
-            "@id": "ss:SIO_000074",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "uo_units": {
-            "@id": "cco:CO_000007",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "value": {
