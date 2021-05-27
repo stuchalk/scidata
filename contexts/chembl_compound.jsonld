@@ -5,6 +5,7 @@
         "ss": "http://semanticscience.org/ontology/sio.owl#",
         "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
         "acd_logd": {
             "@id": "ss:CHEMINF_000323",
             "@type": "string"
@@ -61,6 +62,9 @@
             "@id": "ss:CHEMINF_000325",
             "@type": "string"
         },
+        "descriptors": {
+            "@id": "enm:ENM_8000019"
+        },
         "full_molformula": {
             "@id": "ss:CHEMINF_000490",
             "@type": "string"
@@ -90,8 +94,7 @@
             "@type": "string"
         },
         "identifiers": {
-            "@id": "obo:NCIT_C25364",
-            "@type": "string"
+            "@id": "obo:NCIT_C25364"
         },
         "inorganic_flag": {
             "@id": "obo:CHEBI_24835",

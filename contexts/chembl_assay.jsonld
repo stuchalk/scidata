@@ -35,6 +35,10 @@
             "@id": "obo:UBERON_0000479",
             "@type": "string"
         },
+        "assay_type": {
+            "@id": "obo:FBcv_0003050",
+            "@type": "string"
+        },
         "assay_type_id": {
             "@id": "obo:FBcv_0003050",
             "@type": "string"

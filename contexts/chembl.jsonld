@@ -7,6 +7,7 @@
         "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "bao": "http://www.bioassayontology.org/bao#",
+        "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "accession": {
             "@id": "edam:data_2091",
@@ -74,6 +75,10 @@
         },
         "assay_tissue": {
             "@id": "obo:UBERON_0000479",
+            "@type": "string"
+        },
+        "assay_type": {
+            "@id": "obo:FBcv_0003050",
             "@type": "string"
         },
         "assay_type_id": {
@@ -175,6 +180,9 @@
             "@id": "ss:SIO_000136",
             "@type": "string"
         },
+        "descriptors": {
+            "@id": "enm:ENM_8000019"
+        },
         "domain_name": {
             "@id": "ss:SIO_001379",
             "@type": "string"
@@ -223,8 +231,7 @@
             "@type": "string"
         },
         "identifiers": {
-            "@id": "obo:NCIT_C25364",
-            "@type": "string"
+            "@id": "obo:NCIT_C25364"
         },
         "inorganic_flag": {
             "@id": "obo:CHEBI_24835",
@@ -308,7 +315,7 @@
         },
         "qudt_units": {
             "@id": "sdo:unitOfMeasure",
-            "@type": "string"
+            "@type": "@id"
         },
         "relation": {
             "@id": "dc:relation",
@@ -428,7 +435,7 @@
         },
         "uo_units": {
             "@id": "sdo:unitOfMeasure",
-            "@type": "string"
+            "@type": "@id"
         },
         "value": {
             "@id": "ss:SIO_000070",

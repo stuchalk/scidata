@@ -40,7 +40,7 @@
         },
         "qudt_units": {
             "@id": "sdo:unitOfMeasure",
-            "@type": "string"
+            "@type": "@id"
         },
         "relation": {
             "@id": "dc:relation",
@@ -88,7 +88,7 @@
         },
         "uo_units": {
             "@id": "sdo:unitOfMeasure",
-            "@type": "string"
+            "@type": "@id"
         },
         "value": {
             "@id": "ss:SIO_000070",
