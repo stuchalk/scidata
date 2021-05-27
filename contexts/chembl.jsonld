@@ -141,8 +141,7 @@
             "@type": "string"
         },
         "component_domains": {
-            "@id": "ss:SIO_001379",
-            "@type": null
+            "@id": "ss:SIO_001379"
         },
         "component_type": {
             "@id": "obo:NCIT_C45994",
