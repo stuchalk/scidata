@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
-        "https://stuchalk.github.io/scidata/examples/context.jsonld",
+        "https://stuchalk.github.io/scidata/examples/strenda/context.jsonld",
         {
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
@@ -113,7 +113,7 @@
                 ]
             }
         },
-        "source": [
+        "sources": [
             {
                 "@id": "source/1/",
                 "@type": "sdo:source",

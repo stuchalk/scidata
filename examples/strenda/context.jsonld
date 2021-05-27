@@ -3,7 +3,7 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
         "focus": {
-            "@id": "obo:NCIT_C25511 ",
+            "@id": "obo:NCIT_C25511",
             "@type": "string"
         }
     }
