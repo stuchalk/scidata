@@ -184,8 +184,7 @@
             "@type": "string"
         },
         "domains": {
-            "@id": "ss:SIO_001379",
-            "@type": null
+            "@id": "ss:SIO_001379"
         },
         "efo_id": {
             "@id": "edam:data_2338",

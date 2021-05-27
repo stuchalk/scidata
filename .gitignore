@@ -3,7 +3,7 @@
 **/catalog-v001.xml
 **/.DS_Store
 other
-.idea
+.idea/*
 contexts/aspects/
 contexts/facets/
 contexts/scidata_sample.jsonld
