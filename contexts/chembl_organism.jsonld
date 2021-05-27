@@ -2,19 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "edam": "https://edamontology.org/",
-        "start_position": {
-            "@id": "obo:NCIT_C45276",
-            "@type": "string"
-        },
-        "organism": {
-            "@id": "obo:OBI_0100026",
-            "@type": "string"
-        },
-        "tax_id": {
-            "@id": "edam:data_1179",
-            "@type": "string"
-        },
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "l1": {
             "@id": "obo:NCIT_C45276",
             "@type": "string"
@@ -25,6 +13,10 @@
         },
         "l3": {
             "@id": "obo:NCIT_C45280",
+            "@type": "string"
+        },
+        "tax_id": {
+            "@id": "edam:data_1179",
             "@type": "string"
         }
     }

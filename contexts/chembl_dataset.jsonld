@@ -1,11 +1,11 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/ontology/sio.owl#",
-        "bao": "http://www.bioassayontology.org/bao/bao_complete.owl#",
+        "bao": "http://www.bioassayontology.org/bao#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "activity_comment": {
             "@id": "obo:NCIT_C94169",
             "@type": "string"
@@ -48,6 +48,10 @@
         },
         "sei": {
             "@id": "obo:NCIT_C20139",
+            "@type": "string"
+        },
+        "standard_flag": {
+            "@id": "obo:OBI_0302840",
             "@type": "string"
         },
         "standard_relation": {

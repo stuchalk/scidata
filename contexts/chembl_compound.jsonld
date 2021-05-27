@@ -5,8 +5,6 @@
         "ss": "http://semanticscience.org/ontology/sio.owl#",
         "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
-        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
-        "enm": "http://purl.enanomapper.org/onto/",
         "acd_logd": {
             "@id": "ss:CHEMINF_000323",
             "@type": "string"
@@ -43,10 +41,6 @@
             "@id": "ss:CHEMINF_000245",
             "@type": "string"
         },
-        "cidx": {
-            "@id": "edam:data_1086",
-            "@type": "string"
-        },
         "compound_name": {
             "@id": "ss:SIO_000117",
             "@type": "string"
@@ -65,10 +59,6 @@
         },
         "cx_most_bpka": {
             "@id": "ss:CHEMINF_000325",
-            "@type": "string"
-        },
-        "descriptors": {
-            "@id": "enm:ENM_8000019",
             "@type": "string"
         },
         "full_molformula": {
@@ -99,6 +89,10 @@
             "@id": "ss:CHEMINF_000300",
             "@type": "string"
         },
+        "identifiers": {
+            "@id": "obo:NCIT_C25364",
+            "@type": "string"
+        },
         "inorganic_flag": {
             "@id": "obo:CHEBI_24835",
             "@type": "string"
@@ -124,7 +118,7 @@
             "@type": "string"
         },
         "polymer_flag": {
-            "@id": "cco:CO_000021",
+            "@id": "obo:NCIT_C48803",
             "@type": "string"
         },
         "pref_name": {
@@ -156,7 +150,7 @@
             "@type": "string"
         },
         "structure_type": {
-            "@id": "cco:CO_000016",
+            "@id": "obo:NCIT_C41186",
             "@type": "string"
         }
     }

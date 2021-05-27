@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "cell_name": {
+            "@id": "obo:CLO_0000001",
+            "@type": "string"
+        },
+        "cell_source_organism": {
+            "@id": "obo:CLO_0037229",
+            "@type": "string"
+        },
+        "cell_source_tax_id": {
+            "@id": "edam:data_1179",
+            "@type": "string"
+        },
+        "cell_source_tissue": {
+            "@id": "obo:CLO_0037227",
+            "@type": "string"
+        },
+        "chembl_id": {
+            "@id": "edam:data_2646",
+            "@type": "string"
+        }
+    }
+}

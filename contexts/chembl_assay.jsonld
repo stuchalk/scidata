@@ -1,13 +1,14 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/ontology/sio.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "bao": "http://www.bioassayontology.org/bao#",
-        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "assay_category": {
-            "@id": "cco:CO_000037",
+            "@id": "obo:NCIT_C25372",
             "@type": "string"
         },
         "assay_cell_type": {
@@ -32,10 +33,6 @@
         },
         "assay_tissue": {
             "@id": "obo:UBERON_0000479",
-            "@type": "string"
-        },
-        "assay_type": {
-            "@id": "obo:FBcv_0003050",
             "@type": "string"
         },
         "assay_type_id": {
@@ -71,7 +68,7 @@
             "@type": "string"
         },
         "relation": {
-            "@id": "cco:CO_000009",
+            "@id": "dc:relation",
             "@type": "string"
         },
         "source": {
@@ -83,11 +80,11 @@
             "@type": "string"
         },
         "type": {
-            "@id": "bao:BAO_0000181",
+            "@id": "obo:NCIT_C25284",
             "@type": "string"
         },
         "units": {
-            "@id": "ss:SIO_000074",
+            "@id": "sdo:unitOfMeasure",
             "@type": "string"
         },
         "value": {
