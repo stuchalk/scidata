@@ -1,16 +1,27 @@
 {
-    "@context": "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+        "https://stuchalk.github.io/scidata/examples/context.jsonld",
+        {
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "w3i": "https://w3id.org/skgo/modsci#"
+        }
+    ],
     "@id": "strendaExample",
     "generatedAt": "2020-12-14 19:27:59",
     "version": 2,
     "@graph": {
         "@id": "strenda",
+        "@type": "sdo:scidataFramework",
         "uid": "STRENDA_ID",
         "title": "STRENDA data",
-        "author": [
+        "authors": [
             {
+                "@id": "author/1/",
                 "@type": "dc:creator",
-                "name": "Stuart Chalk"
+                "name": "Stuart Chalk",
+                "orcid": "0000-0002-0703-7776"
             }
         ],
         "description": "Example of how STRENDA data might be mapped to the SDM",
@@ -19,63 +30,101 @@
             "STRENDA Level 2A"
         ],
         "toc": [
-            "enzyme (1A)",
-            "preparation (1A)",
-            "assay conditions (1A)",
-            "activity data (1A)",
-            "methodology (1A)",
-            "metrics (1B)",
-            "inhibition data (1B)",
-            "activation data (1B)"
+            "sdo:scidataFramework",
+            "dc:creator",
+            "sdo:scidata",
+            "sdo:methodology",
+            "sdo:system",
+            "sdo:condition",
+            "sdo:metrics",
+            "sdo:substrate",
+            "sdo:dataset",
+            "sdo:datagroup",
+            "sdo:source"
         ],
         "scidata": {
             "@id": "scidata",
-            "@type": "sci:scidata",
-            "type": ["property value"],
-            "property": ["reaction rate"],
-            "kind": ["time based array"],
+            "@type": "sdo:scidata",
+            "discipline": "w3i:Biochemistry",
+            "subdiscipline": "obo:NCIT_C18645",
             "methodology": {
                 "@id": "methodology",
-                "@type": "sci:methodology",
+                "@type": "sdo:methodology",
                 "evaluation": "experiment",
                 "aspects": [
-                    {"@type": "preparation (1A)"},
-                    {"@type": "methodology (1A)"}
+                    {
+                        "@id": "preparation/1/",
+                        "@type": "obo:IAO_0000317",
+                        "focus": "preparation (1A)"
+                    },
+                    {
+                        "@id": "method/1/",
+                        "@type": "obo:IAO_0000317",
+                        "focus": "methodology (1A)"
+                    }
                 ]
             },
             "system": {
                 "@id": "system",
-                "@type": "sci:system",
-                "discipline": "biology",
-                "subdiscipline": "enzymology",
+                "@type": "sdo:system",
                 "facets": [
-                    {"@type": "enzyme (1A)"},
-                    {"@type": "assay conditions (1A)"},
-                    {"@type": "metrics (1B)"},
-                    {"@type": "substrate (1A)"}
+                    {
+                        "@id": "enzyme/1/",
+                        "@type": "obo:OBI_0000427",
+                        "focus": "enzyme (1A)"
+                    },
+                    {
+                        "@id": "condition/1/",
+                        "@type": "sdo:condition",
+                        "focus": "assay conditions (1A)"
+                    },
+                    {
+                        "@id": "metric/1/",
+                        "@type": "sdo:metrics",
+                        "focus": "metrics (1B)"
+                    },
+                    {
+                        "@id": "substrate/1/",
+                        "@type": "sdo:substrate",
+                        "focus": "substrate (1A)"
+                    }
                 ]
             },
             "dataset": {
                 "@id": "dataset",
-                "@type": "sci:dataset",
+                "@type": "sdo:dataset",
                 "name": "STRENDA dataset",
                 "datagroup": [
-                    {"@type": "activity data (1A)"},
-                    {"@type": "inhibition data (1B)"},
-                    {"@type": "activation data (1B)"}
+                    {
+                        "@id": "group/1/",
+                        "@type": "sdo:datagroup",
+                        "focus": "activity data (1A)"
+                    },
+                    {
+                        "@id": "group/2/",
+                        "@type": "sdo:datagroup",
+                        "focus": "inhibition data (1B)"
+                    },
+                    {
+                        "@id": "group/3/",
+                        "@type": "sdo:datagroup",
+                        "focus": "activation data (1B)"
+                    }
                 ]
             }
         },
         "source": [
             {
                 "@id": "source/1/",
-                "@type": "sci:source",
-                "citation": "'STRENDA Guideline Level 1A', Beilstein Institute, https://dx.doi.org/10.3762/strenda.17"
+                "@type": "sdo:source",
+                "citation": "'STRENDA Guideline Level 1A', Beilstein Institute (2016)",
+                "doi": "10.3762/strenda.17"
             },
             {
                 "@id": "source/2/",
-                "@type": "sci:source",
-                "citation": "'STRENDA Guideline Level 1B', Beilstein Institute, https://dx.doi.org/10.3762/strenda.27"
+                "@type": "sdo:source",
+                "citation": "'STRENDA Guideline Level 1B', Beilstein Institute (2016)",
+                "doi": "10.3762/strenda.27"
             }
         ]
     }
