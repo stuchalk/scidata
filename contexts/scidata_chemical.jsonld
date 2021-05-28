@@ -6,7 +6,10 @@
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
-            "chemical": {"@id": "sdo:chemical"},
+            "compound": {
+                 "@id": "sub:isCompound",
+                 "@type": "@id"
+            },
             "vendor": {
                 "@id": "obo:sep_00088",
                 "@type": "string"
@@ -19,14 +22,6 @@
                 "@id": "obo:NCIT_C70848",
                 "@type": "string"
             },
-            "role": {
-                "@id": "obo:BFO_0000023",
-                "@type": "string"
-            },
-            "role_": {
-                "@id": "obo:BFO_0000023",
-                "@type": "@id"
-            },
             "grade": {
                 "@id": "chm:grade",
                 "@type": "string"
@@ -35,7 +30,7 @@
                 "@id": "sub:phase",
                 "@type": "string"
             },
-            "phase_": {
+            "phase#": {
                 "@id": "sub:phase",
                 "@type": "@id"
             },
@@ -46,7 +41,7 @@
                 "@id": "sdo:hasSource",
                 "@type": "string"
             },
-            "sourcetype_": {
+            "sourcetype#": {
                  "@id": "sdo:hasSource",
                  "@type": "@id"
             },

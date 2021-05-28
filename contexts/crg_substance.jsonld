@@ -9,17 +9,29 @@
                 "@id": "dc:title",
                 "@type": "string"
             },
+            "role": {
+                 "@id": "obo:BFO_0000023",
+                 "@type": "string"
+            },
+            "role#": {
+                "@id": "obo:BFO_0000023",
+                "@type": "@id"
+            },
             "aggregation": {
                 "@id": "sub:hasStateOfAggregation",
-                "@type": "@id"
+                "@type": "string"
+            },
+            "aggregation#": {
+                 "@id": "sub:hasStateOfAggregation",
+                 "@type": "@id"
             },
             "composition": {
                 "@id": "sub:hasMixtureType",
-                "@type": "@id"
+                "@type#": "string"
             },
-            "compound": {
-                "@id": "sub:isCompound",
-                "@type": "@id"
+            "composition#": {
+                 "@id": "sub:hasMixtureType",
+                 "@type": "@id"
             },
             "phase": {
                 "@id": "sub:hasPhase",

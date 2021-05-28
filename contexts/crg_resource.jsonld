@@ -3,7 +3,7 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dc": "https://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "res": "https://stuchalk.github.io/scidata/ontology/resource/resource.owl",
+        "obo": "http://purl.obolibrary.org/obo/",
         "resource": {"@id": "sdo:hasResource"},
         "type": {
             "@id": "dc:type",

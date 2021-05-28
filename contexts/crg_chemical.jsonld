@@ -5,9 +5,11 @@
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
-            "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
-            "chemical": {"@id": "sdo:chemical"},
+            "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+            "compound": {
+                 "@id": "sub:isCompound",
+                 "@type": "@id"
+            },
             "vendor": {
                 "@id": "obo:sep_00088",
                 "@type": "string"
@@ -19,14 +21,6 @@
             "lotnumber": {
                 "@id": "obo:NCIT_C70848",
                 "@type": "string"
-            },
-            "role": {
-                "@id": "obo:BFO_0000023",
-                "@type": "string"
-            },
-            "role#": {
-                "@id": "obo:BFO_0000023",
-                "@type": "@id"
             },
             "grade": {
                 "@id": "chm:grade",
