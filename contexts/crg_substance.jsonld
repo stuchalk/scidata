@@ -27,7 +27,7 @@
             },
             "composition": {
                 "@id": "sub:hasMixtureType",
-                "@type#": "string"
+                "@type": "string"
             },
             "composition#": {
                  "@id": "sub:hasMixtureType",
