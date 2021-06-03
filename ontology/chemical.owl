@@ -46,6 +46,9 @@
         <Class abbreviatedIRI="sci:propertyValue"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCompound"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#analyte"/>
     </Declaration>
     <Declaration>
@@ -200,6 +203,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#grade</IRI>
         <Literal xml:lang="en">grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCompound</IRI>
+        <Literal>indicates that the thing referred to is a chemical compound</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
