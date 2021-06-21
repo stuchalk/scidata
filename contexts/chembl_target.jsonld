@@ -36,7 +36,7 @@
             "@type": "string"
         },
         "parent_type": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000076",
             "@type": "string"
         },
         "pref_name": {
@@ -51,17 +51,17 @@
             "@id": "ss:SIO_000122",
             "@type": "string"
         },
-        "target_components": { "@id": "ss:SIO_000313" },
+        "target_components": {"@id": "ss:SIO_000313"},
         "target_desc": {
-            "@id": "ss:SIO_000136",
+            "@id": "cco:CO_000075",
             "@type": "string"
         },
         "target_type": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000074",
             "@type": "string"
         },
         "target_type_id": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000074",
             "@type": "string"
         },
         "tax_id": {
