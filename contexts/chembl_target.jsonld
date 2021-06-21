@@ -1,9 +1,11 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "dc": "https://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "ss": "http://semanticscience.org/ontology/sio.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "accession": {
             "@id": "edam:data_2091",
             "@type": "string"
@@ -12,17 +14,16 @@
             "@id": "edam:data_2646",
             "@type": "string"
         },
-        "component_domains": {"@id": "ss:SIO_001379"},
         "component_type": {
             "@id": "obo:NCIT_C45994",
             "@type": "string"
         },
         "domain_name": {
-            "@id": "ss:SIO_001379",
+            "@id": "edam:data_2757",
             "@type": "string"
         },
         "domain_type": {
-            "@id": "ss:SIO_001379",
+            "@id": "dc:type",
             "@type": "string"
         },
         "domains": {"@id": "ss:SIO_001379"},
@@ -50,10 +51,7 @@
             "@id": "ss:SIO_000122",
             "@type": "string"
         },
-        "target_components": {
-            "@id": "ss:SIO_000313",
-            "@type": "string"
-        },
+        "target_components": { "@id": "ss:SIO_000313" },
         "target_desc": {
             "@id": "ss:SIO_000136",
             "@type": "string"
