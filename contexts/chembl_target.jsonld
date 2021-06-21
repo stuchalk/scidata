@@ -43,6 +43,10 @@
             "@id": "ss:SIO_000117",
             "@type": "string"
         },
+        "sequence": {
+            "@id": "cco:CO_000086",
+            "@type": "string"
+        },
         "start_position": {
             "@id": "obo:NCIT_C45276",
             "@type": "integer"
