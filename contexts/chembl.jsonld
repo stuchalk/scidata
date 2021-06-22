@@ -184,16 +184,14 @@
             "@id": "enm:ENM_8000019"
         },
         "domain_name": {
-            "@id": "ss:SIO_001379",
+            "@id": "edam:data_2757",
             "@type": "string"
         },
         "domain_type": {
-            "@id": "ss:SIO_001379",
+            "@id": "dc:type",
             "@type": "string"
         },
-        "domains": {
-            "@id": "ss:SIO_001379"
-        },
+        "domains": { "@id": "ss:SIO_001379" },
         "efo_id": {
             "@id": "edam:data_2338",
             "@type": "string"
@@ -286,7 +284,7 @@
             "@type": "string"
         },
         "parent_type": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000076",
             "@type": "string"
         },
         "pchembl_value": {
@@ -334,7 +332,7 @@
             "@type": "string"
         },
         "sequence": {
-            "@id": "obo:CDAO_0000120",
+            "@id": "cco:CO_000086",
             "@type": "string"
         },
         "sequence_md5sum": {
@@ -393,20 +391,17 @@
             "@id": "ss:SIO_000122",
             "@type": "string"
         },
-        "target_components": {
-            "@id": "ss:SIO_000313",
-            "@type": "string"
-        },
+        "target_components": { "@id": "ss:SIO_000313" },
         "target_desc": {
-            "@id": "ss:SIO_000136",
+            "@id": "cco:CO_000075",
             "@type": "string"
         },
         "target_type": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000074",
             "@type": "string"
         },
         "target_type_id": {
-            "@id": "edam:topic_0102",
+            "@id": "cco:CO_000074",
             "@type": "string"
         },
         "tax_id": {
