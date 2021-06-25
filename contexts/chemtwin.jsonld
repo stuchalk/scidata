@@ -1,14 +1,14 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/fce_identifiers.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/fce_descriptors.jsonld",
-        "https://stuchalk.github.io/scidata/contexts/fce_molgraph.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/chemtwin_identifiers.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/chemtwin_descriptors.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/chemtwin_molgraph.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "ss": "https://semanticscience.org/ontology/sio.owl",
+            "ss": "https://semanticscience.org/ontology/sio.owl#",
             "name": {
                 "@id": "ss:CHEMINF_000107",
                 "@type": "string"
