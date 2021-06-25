@@ -25,15 +25,19 @@
             },
             "xcoord": {
                 "@id": "obo:NCIT_C44477",
-                "@type": "string"
+                "@type": "decimal"
             },
             "ycoord": {
                 "@id": "obo:NCIT_C44478",
-                "@type": "string"
+                "@type": "decimal"
             },
             "zcoord": {
                 "@id": "obo:NCIT_C44479",
-                "@type": "string"
+                "@type": "decimal"
+            },
+            "order": {
+                "@id": "ss:CHEMINF_000062",
+                "@type": "decimal"
             },
             "singlebonds": {
                 "@id": "sdo:singlebondcount",
@@ -47,7 +51,7 @@
                 "@id": "sdo:triplebondcount",
                 "@type": "integer"
             },
-            "aromaticsbonds": {
+            "aromaticbonds": {
                 "@id": "sdo:aromaticbondcount",
                 "@type": "integer"
             }
