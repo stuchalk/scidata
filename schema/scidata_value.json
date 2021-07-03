@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Value Schema",
+  "description": "JSON schema for a scientific value",
+  "type": "object",
+
+  "definitions": {
+    "numericValue_def": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "datatype":   { "type": "string" },
+        "number":   { "type": "number" },
+        "error": { "type": "number" },
+        "errortype": { "type": "string" },
+        "sigfigs":  { "type": "integer" },
+        "unit": { "type": "string" },
+        "unitstr": { "type": "string" },
+        "unitref": { "type": "string" }
+      }
+    },
+    "numericValueArray_def": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "datatype":   { "type": "string" },
+        "numberarray":   { 
+          "type": "array",
+          "items": {
+            "type": "number"
+          } 
+        },
+        "error": { "type": "number" },
+        "errorarray":   { 
+          "type": "array",
+          "items": {
+            "type": "number"
+          } 
+        },
+        "errortype": { "type": "string" },
+        "sigfigs":  { "type": "integer" }
+      },
+      "additionalProperties": true   
+    },
+    "textString_def": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "text":   { "type": "string" },
+        "texttype": { "type": "string" },
+        "language":  { "type": "integer" }
+      }
+    },
+    "textStringArray_def": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "textarray":   { 
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "texttype": { "type": "string" },
+        "language":  { "type": "string" }
+      }
+    }
+  },
+
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { 
+        "anyOf" : [ 
+          {
+            "type": "string"
+            }, 
+            {
+              "type": "object",
+              "additionalProperties": true
+            } 
+          ]
+      },
+      "default": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {"qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"},
+        {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld#"}
+      ]
+    },
+    "@id": { 
+      "type": "string",
+      "default": ""
+     },
+     "numericvalue": { "$ref": "#/definitions/numericValue_def" },
+     "numericvaluearray": { "$ref": "#/definitions/numericValueArray_def" },
+     "textstring": { "$ref": "#/definitions/textString_def" },
+     "textstringarray": { "$ref": "#/definitions/textStringArray_def" },
+     "value": { "$ref": "#/definitions/numericValue_def" },
+     "valuearray": { "$ref": "#/definitions/numericValueArray_def" }
+  }
+}
