@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/thermo.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/thermo.owl"/>
+    <Prefix name="dc" IRI="https://purl.org/dc/terms/"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -779,6 +780,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ITO_0015"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -1771,6 +1778,26 @@
         <Class abbreviatedIRI="obo:NCIT_C25709"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <AbbreviatedIRI>obo:iao</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal>definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
+        <AbbreviatedIRI>obo:iao</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
+        <Literal>definition source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
         <Literal xml:lang="en">Physical properties described in the PureOrMixtureData section of the ThermoML v4.0 schema.</Literal>
@@ -2569,6 +2596,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0111</IRI>
         <Literal xml:lang="en">Mass density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ITO_0112</IRI>
+        <Literal>Volume of a substance divided by its mass. It is the reciprocal of mass density.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#ITO_0112</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.S05807 </IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
