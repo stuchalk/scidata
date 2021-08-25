@@ -7,8 +7,8 @@
             "w3i": "https://w3id.org/skgo/modsci#",
             "qudt": "http://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "http://purl.org/dc/terms/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "dc": "https://purl.org/dc/terms/",
+            "xsd": "https://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "http://www.crystallography.net/cod/1000118/"}
     ],

@@ -1,0 +1,60 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "mp": "https://stuchalk.github.io/scidata/ontology/mp.owl#",
+        "dc": "https://purl.org/dc/terms/",
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
+        "npo": "http://purl.bioontology.org/ontology/npo#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "wd": "https://www.wikidata.org/wiki/",
+        "mpid": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "comptype": {
+            "@id": "mp:computationType",
+            "@type": "string"
+        },
+        "name": {
+            "@id": "ss:CHEMINF_000107",
+            "@type": "string"
+        },
+        "formula": {
+            "@id": "edam:data_0846",
+            "@type": "string"
+        },
+        "reduced": {
+            "@id": "mp:reducedformula",
+            "@type": "string"
+        },
+        "pointGroup": {
+            "@id": "mp:pointGroup",
+            "@type": "string"
+        },
+        "crystalSystem": {
+            "@id": "npo:NPO_1512",
+            "@type": "string"
+        },
+        "inchikey": {
+            "@id": "ss:CHEMINF_000059",
+            "@type": "string"
+        },
+        "element": {
+            "@id": "obo:CHEBI_33250",
+            "@type": "@id"
+        },
+        "form": {
+            "@id": "obo:CHEBI_23367",
+            "@type": "string"
+        },
+        "chebi": {
+            "@id": "edam:data_1174",
+            "@type": "@id"
+        },
+        "points": {
+            "@id": "obo:MS_1000515",
+            "@type": "@id"
+        }
+    }
+}

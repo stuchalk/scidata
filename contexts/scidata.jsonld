@@ -14,9 +14,9 @@
             "xsd": "https://www.w3.org/2001/XMLSchema#",
             "qudt": "http://qudt.org/vocab/unit/",
             "prov": "http://www.w3.org/ns/prov#",
-            "edam": "https://edamontology.org/",
+            "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
             "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
-            "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
+            "ss": "http://semanticscience.org/ontology/sio.owl#",
             "generatedAt": {
                 "@id": "prov:generatedAtTime",
                 "@type": "dateTime"

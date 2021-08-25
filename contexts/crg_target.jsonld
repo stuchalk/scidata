@@ -2,8 +2,8 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "http://semanticscience.org/resource/",
-        "edam": "https://edamontology.org/",
+        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "start_position": {
             "@id": "obo:NCIT_C45276",

@@ -9,8 +9,8 @@
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
             "qudt": "http://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "http://purl.org/dc/terms/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "dc": "https://purl.org/dc/terms/",
+            "xsd": "https://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/nmr/"}
     ],
