@@ -2,6 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "mp": "https://stuchalk.github.io/scidata/ontology/mp.owl#",
+        "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
         "dc": "https://purl.org/dc/terms/",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
@@ -39,6 +40,10 @@
         "inchikey": {
             "@id": "ss:CHEMINF_000059",
             "@type": "string"
+        },
+        "constituents": {
+            "@id": "sub:hasConstituent",
+            "@type": "sub:constituent"
         },
         "element": {
             "@id": "obo:CHEBI_33250",
