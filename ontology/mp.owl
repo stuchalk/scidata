@@ -34,6 +34,36 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://stuchalk.github.io/scidata/ontology/mp.owl#MP_000001 -->
+
+    <owl:Class rdf:about="https://stuchalk.github.io/scidata/ontology/mp.owl#MP_000001">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A point group is a group of symmetry operations all of which leave at least one point unmoved. A crystallographic point group is a point group that maps a point lattice onto itself: in three dimensions the symmetry operations of these groups are restricted to 1, 2, 3, 4, 6 and 1|bar, 2|bar (= m), 3|bar, 4|bar, 6|bar respectively.</obo:IAO_0000115>
+        <rdfs:isDefinedBy>https://dictionary.iucr.org/Point_group</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">pointGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stuchalk.github.io/scidata/ontology/mp.owl#MP_000002 -->
+
+    <owl:Class rdf:about="https://stuchalk.github.io/scidata/ontology/mp.owl#MP_000002">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical formula showing the absolute number of atoms of each element in a molecule</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">reducedFormula</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
