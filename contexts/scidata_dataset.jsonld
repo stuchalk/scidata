@@ -6,24 +6,32 @@
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dataset": {"@id": "sdo:dataset"},
-            "datagroup": {"@id": "sdo:hasDataGroup"},
-            "datagroups": {
-                "@id": "sdo:hasDataGroup",
+            "dataset": {
+                "@id": "sdo:hasDataset",
                 "@type": "@id"
             },
-            "dataseries": {"@id": "sdo:hasDataSeries"},
-            "dataserieses": {
-                "@id": "sdo:hasDataSeries",
+            "datagroup": {
+                "@id": "sdo:hasDatagroup",
+                "@type": "@id"
+            },
+            "datagroups": {
+                "@id": "sdo:hasDatagroup",
+                "@type": "@id"
+            },
+            "dataseries": {
+                "@id": "sdo:hasDataseries",
                 "@type": "@id"
             },
             "dataname": {
                 "@id": "sdo:dataName",
                 "@type": "sdo:parameter"
             },
-            "datapoint": {"@id": "sdo:hasDataPoint"},
+            "datapoint": {
+                "@id": "sdo:hasDatapoint",
+                "@type": "@id"
+            },
             "datapoints": {
-                "@id": "sdo:hasDataPoint",
+                "@id": "sdo:hasDatapoint",
                 "@type": "@id"
             },
             "conditions": {
@@ -38,7 +46,10 @@
                 "@id": "sdo:hasSetting",
                 "@type": "@id"
             },
-            "data": {"@id": "sdo:hasDatum"},
+            "data": {
+                "@id": "sdo:hasDatum",
+                "@type": "@id"
+            },
             "reference": {
                 "@id": "sdo:hasSource",
                 "@type": "@id"
@@ -52,15 +63,15 @@
                 "@type": "sdo:parameterArray"
             },
             "seriesType": {
-                "@id": "sdo:dataSeriesType",
+                "@id": "sdo:hasDataseriesType",
                 "@type": "string"
             },
             "axis": {
-                "@id": "sdo:axisType",
+                "@id": "sdo:hasAxisType",
                 "@type": "string"
             },
             "axisLabel": {
-                "@id": "sdo:axisLabel",
+                "@id": "sdo:hasAxisLabel",
                 "@type": "string"
             },
             "annotations": {

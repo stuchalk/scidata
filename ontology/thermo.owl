@@ -791,6 +791,9 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
     </Declaration>
     <Declaration>
@@ -1824,6 +1827,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/identifier</IRI>
+        <Literal>id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>qudt:GM-PER-GM</AbbreviatedIRI>
         <Literal xml:lang="en">g/g</Literal>
     </AnnotationAssertion>
@@ -2605,7 +2613,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>#ITO_0112</IRI>
-        <IRI>https://doi.org/10.1351/goldbook.S05807 </IRI>
+        <IRI>https://doi.org/10.1351/goldbook.S05807</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+        <IRI>#ITO_0112</IRI>
+        <Literal>ITO_0112</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

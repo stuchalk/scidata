@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "mp": "https://materialsproject.org/ontology/mp.owl#",
+        "dc": "https://purl.org/dc/terms/",
+        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "emmo": "https://github.com/emmo-repo/EMMO",
+        "wd": "https://www.wikidata.org/wiki/",
+        "mpid": {
+            "@id": "mp:mpprojid",
+            "@type": "xsd:string"
+        },
+        "formula": {
+            "@id": "edam:data_0846",
+            "@type": "xsd:string"
+        },
+        "doping": {
+            "@id": "wd:Q1130571",
+            "@type": "xsd:string"
+        },
+        "reduced": {
+            "@id": "emmo:redform",
+            "@type": "xsd:string"
+        }
+    }
+}

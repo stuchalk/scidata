@@ -9,8 +9,14 @@
                 "@id": "dc:identifier",
                 "@type": "string"
             },
-            "parameter": {"@id": "sdo:parameter"},
-            "parameterArray": {"@id": "sdo:parameterArray"},
+            "parameter": {
+                "@id": "sdo:parameter",
+                "@type": "@id"
+            },
+            "parameterArray": {
+                "@id": "sdo:parameterArray",
+                "@type": "@id"
+            },
             "quantity": {
                 "@id": "sdo:quantity",
                 "@type": "string"

@@ -32,6 +32,14 @@
             "@id": "ss:CHEMINF_000018",
             "@type": "string"
         },
+        "csmiles": {
+            "@id": "ss:CHEMINF_000007",
+            "@type": "string"
+        },
+        "ismiles": {
+            "@id": "ss:CHEMINF_000032",
+            "@type": "string"
+        },
         "formula": {
             "@id": "ss:CHEMINF_000042",
             "@type": "string"

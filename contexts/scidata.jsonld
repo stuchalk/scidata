@@ -41,7 +41,10 @@
                 "@id": "dc:isPartOf",
                 "@type": "string"
             },
-            "authors": {"@id": "sdo:hasAuthor"},
+            "authors": {
+                "@id": "sdo:hasAuthor",
+                "@type": "@id"
+            },
             "name": {
                 "@id": "obo:IAO_0000590",
                 "@type": "string"
@@ -110,7 +113,10 @@
                 "@id": "dc:hasPart",
                 "@type": "@id"
             },
-            "scidata": {"@id": "sdo:hasScientificData"},
+            "scidata": {
+                "@id": "sdo:hasScientificData",
+                "@type": "@id"
+            },
             "type": {
                 "@id": "sdo:dataType",
                 "@type": "string"
@@ -125,31 +131,48 @@
             },
             "methodology": {
                 "@id": "sdo:hasMethodology",
-                "@type": "sdo:methodology"
+                "@type": "@id"
             },
             "evaluation": {
                  "@id": "sdo:evaluationMethod",
                  "@type": "string"
             },
-            "aspects": {"@id": "sdo:hasMethodologyAspect"},
+            "aspects": {
+                "@id": "sdo:hasMethodologyAspect",
+                "@type": "@id"
+            },
             "system": {
                 "@id": "sdo:hasSystem",
                 "@type": "@id"
             },
             "discipline": {
                 "@id": "sdo:discipline",
-                "@type": "@id"
+                "@type": "string"
             },
+            "discipline#": {
+                "@id": "sdo:discipline",
+                "@type": "@id"
+                },
             "subdiscipline": {
+                "@id": "sdo:subdiscipline",
+                "@type": "string"
+            },
+            "subdiscipline#": {
                 "@id": "sdo:subdiscipline",
                 "@type": "@id"
             },
-            "facets": {"@id": "sdo:hasSystemFacet"},
+            "facets": {
+                "@id": "sdo:hasSystemFacet",
+                "@type": "@id"
+            },
             "dataset": {
                 "@id": "sdo:hasDataset",
-                "@type": "sdo:dataset"
+                "@type": "@id"
             },
-            "sources": {"@id": "sdo:hasSource"},
+            "sources": {
+                "@id": "sdo:hasSource",
+                "@type": "@id"
+            },
             "citation": {
                 "@id": "dc:bibliographicCitation",
                 "@type": "string"
@@ -158,15 +181,22 @@
                 "@id": "dc:type",
                 "@type": "string"
             },
+            "reftype#": {
+                "@id": "dc:type",
+                "@type": "@id"
+            },
             "url": {
                 "@id": "schema:url",
-                "@type": "@id"
+                "@type": "anyURI"
             },
             "doi": {
                 "@id": "bibo:doi",
                 "@type": "string"
             },
-            "rights": {"@id": "sdo:hasRights"},
+            "rights": {
+                "@id": "sdo:hasRights",
+                "@type": "@id"
+            },
             "holder": {
                 "@id": "dc:rightsHolder",
                 "@type": "string"

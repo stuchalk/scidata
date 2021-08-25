@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dc": "https://purl.org/dc/terms/",
+        "sysID": {
+            "@id": "dc:identifier",
+            "@type": "string"
+        },
+        "title": {
+            "@id": "dc:title",
+            "@type": "string"
+        },
+        "preparer": {
+            "@id": "dc:creator",
+            "@type": "string"
+        },
+        "remarks": {
+            "@id": "obo:NCIT_C25393",
+            "@type": "string"
+        },
+        "data": {
+            "@id": "obo:NCIT_C25393",
+            "@type": "string"
+        },
+        "datanotes": {
+            "@id": "obo:NCIT_C25393",
+            "@type": "string"
+        },
+        "method": {
+            "@id": "obo:NCIT_C25393",
+            "@type": "string"
+        }
+    }
+}

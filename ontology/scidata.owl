@@ -354,6 +354,9 @@
         <Class IRI="#software"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#specimen"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#starttime"/>
     </Declaration>
     <Declaration>
@@ -361,6 +364,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#systemFacet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#target"/>
     </Declaration>
     <Declaration>
         <Class IRI="#text"/>
@@ -384,7 +390,7 @@
         <Class IRI="#unitAbbreviation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#unitPower"/>
@@ -541,7 +547,7 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="obo:sep_00056"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="bibo:doi"/>
@@ -765,7 +771,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conversionFactor"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#dataAttribute"/>
@@ -905,7 +911,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#quantity"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#resource"/>
@@ -929,15 +935,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#siPrefix"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#siUnit"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#siUnitEquivalent"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sigfigs"/>
@@ -946,6 +952,10 @@
     <SubClassOf>
         <Class IRI="#software"/>
         <Class IRI="#methodologyAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specimen"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#starttime"/>
@@ -958,6 +968,10 @@
     <SubClassOf>
         <Class IRI="#systemFacet"/>
         <Class IRI="#system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#target"/>
+        <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#text"/>
@@ -985,15 +999,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unitAbbreviation"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unitPower"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unitReference"/>
@@ -1001,11 +1015,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unitSymbol"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unitSystem"/>
-        <Class IRI="#unitOfMeasure"/>
+        <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance"/>
@@ -1054,6 +1068,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMethodologyAspect"/>
         <Class IRI="#methodology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRights"/>
+        <Class IRI="#scientificData"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSystem"/>
@@ -1161,6 +1179,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000117</AbbreviatedIRI>
         <Literal>term editor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
+        <AbbreviatedIRI>obo:iao</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2789,7 +2812,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#molecularSystem</IRI>
-        <Literal>A definition of an atom system used as a starting point for computational chemistry calcualtions.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described.</Literal>
+        <Literal>A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -3122,6 +3145,36 @@
         <Literal>software</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#specimen</IRI>
+        <Literal>A part of a thing, or of several things, taken to demonstrate or to determine the character of the whole, e.g. a substance, or portion of material obtained for use in testing, examination, or study; particularly, a preparation of tissue or bodily fluid taken for examination or diagnosis.  From NCI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#specimen</IRI>
+        <Literal>A specifically selected portion of a material taken from a dynamic system and assumed to be representative of the parent material at the time it is taken. Although the specimen may not be reproducible in time, e.g. it may be taken from a flowing stream or a portion of blood, no separable sampling error exists since this error is unavoidably included with the corresponding error of the estimate of the property, function or analyte being studied. A specimen may be considered as a special type of sample, taken primarily in time rather than in space. The term &apos;specimen&apos; has been used both as a representative unit and as a nonrepresentative (often better than most) unit of a population, usually in clinical, biological and mineralogical collections. &apos;Collections&apos; in this case is used as either a noun or verb. This usage is almost always self-evident, and thus would not be confused with a time-type sample. From the IUPAC Gold Book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#specimen</IRI>
+        <AbbreviatedIRI>obo:NCIT_C19157</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#specimen</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.S05809</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#specimen</IRI>
+        <Literal>specimen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specimen</IRI>
+        <Literal>specimen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#starttime</IRI>
         <Literal>The time point when either i) data is collected (ie. the end point is the same), or ii) the collection of data is started</Literal>
@@ -3165,6 +3218,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#systemFacet</IRI>
         <Literal>system facet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#target</IRI>
+        <Literal>Any organism, organ, tissue, cell, or cell constituent that is subject to the action of an agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#target</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.TT06812</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>#target</IRI>
+        <Literal>target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#target</IRI>
+        <Literal>target</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -3273,18 +3346,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#unitOfMeasure</IRI>
+        <IRI>#unitOfMeasurement</IRI>
         <Literal>A unit for representing the scale that a quantity is being reported in.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>#unitOfMeasure</IRI>
-        <Literal>unitOfMeasure</Literal>
+        <IRI>#unitOfMeasurement</IRI>
+        <Literal>unitOfMeasurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#unitOfMeasure</IRI>
-        <Literal>unit of measure</Literal>
+        <IRI>#unitOfMeasurement</IRI>
+        <Literal>unit of measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -3374,7 +3447,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.C01039</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.C01039</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

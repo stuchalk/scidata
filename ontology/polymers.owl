@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/n00002621/ontologies/2021/7/untitled-ontology-34#"
+     xml:base="http://www.semanticweb.org/n00002621/ontologies/2021/7/untitled-ontology-34"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/n00002621/ontologies/2021/7/untitled-ontology-34"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000001 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000001">
+        <owl:disjointWith rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000002"/>
+        <obo:IAO_0000115>Molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>macromolecule</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Note 1: In many cases, especially for synthetic polymers, a molecule can be regarded as having a high relative molecular mass if the addition or removal of one or a few of the units has a negligible effect on the molecular properties. This statement fails in the case of certain properties of macromolecules which may be critically dependent on fine details of the molecular structure, e.g., the enzymatic properties of polypeptides.
+Note 2: If a part or the whole of the molecule has a high relative molecular mass and essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, it may be described as either macromolecular or polymeric, or by polymer used adjectivally.
+Note 3: In most cases, the polymer can actually be made by direct polymerization of its parent monomer but in other cases, e.g., poly(vinyl alcohol), the description ‘conceptual’ denotes that an indirect route is used because the nominal monomer does not exist.</rdfs:comment>
+        <rdfs:isDefinedBy>IUPAC Purple Book</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">polymer molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000002 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000002">
+        <rdfs:label xml:lang="en">monomer molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000003 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000003">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <owl:disjointWith rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000004"/>
+        <rdfs:isDefinedBy>IUPAC Purple Book</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">regular macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000004 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000004">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <rdfs:isDefinedBy>IUPAC Purple Book</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">irregular macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000005 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000005">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <rdfs:isDefinedBy>IUPAC Purple Book</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">linear macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000006 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000006">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <rdfs:label xml:lang="en">block macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000007 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000007">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000006"/>
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000008"/>
+        <rdfs:label xml:lang="en">stereoblock macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000008 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000008">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <rdfs:label xml:lang="en">stereoregular macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000009 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000009">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000001"/>
+        <rdfs:label xml:lang="en">double-strand macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iupac.org/ontologies/polymer.owl#POLY_000010 -->
+
+    <owl:Class rdf:about="http://iupac.org/ontologies/polymer.owl#POLY_000010">
+        <rdfs:subClassOf rdf:resource="http://iupac.org/ontologies/polymer.owl#POLY_000009"/>
+        <rdfs:label xml:lang="en">spiro chain</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -5,10 +5,22 @@
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "numericvalue": {"@id": "sdo:numericValue"},
-            "numericvaluearray": {"@id": "sdo:numericValueArray"},
-            "textstring": {"@id": "sdo:textString"},
-            "textstringarray": {"@id": "sdo:textStringArray"},
+            "numericvalue": {
+                "@id": "sdo:numericValue",
+                "@type": "@id"
+            },
+            "numericvaluearray": {
+                "@id": "sdo:numericValueArray",
+                "@type": "@id"
+            },
+            "textstring": {
+                "@id": "sdo:textString",
+                "@type": "@id"
+            },
+            "textstringarray": {
+                "@id": "sdo:textStringArray",
+                "@type": "@id"
+            },
             "datatype": {
                 "@id": "sdo:numericDatatype",
                 "@type": "@id"
@@ -78,7 +90,7 @@
             },
             "language#": {
                 "@id": "dc:language",
-                "@type": "string"
+                "@type": "@id"
             },
             "value": {
                 "@id": "sdo:numericValue",
