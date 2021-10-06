@@ -1768,6 +1768,11 @@
         <Class abbreviatedIRI="obo:NCIT_C17771"/>
         <Class abbreviatedIRI="obo:NCIT_C25709"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ITO_0112"/>
+        <Class IRI="#ITO_0117"/>
+        <Class IRI="#ITO_0134"/>
+    </DisjointClasses>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ITO_0015"/>
         <Class abbreviatedIRI="obo:NCIT_C158424"/>

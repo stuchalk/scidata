@@ -34,13 +34,16 @@
         <Class abbreviatedIRI="obo:BFO_0000023"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#chemical"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#CHM_000003"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#grade"/>
+        <Class IRI="#CHM_000001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#phase"/>
+        <Class IRI="#CHM_000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CHM_000004"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="sci:propertyValue"/>
@@ -83,11 +86,11 @@
         <NamedIndividual IRI="#analyte"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#CHM_000004"/>
         <NamedIndividual IRI="#gas"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#CHM_000004"/>
         <NamedIndividual IRI="#liquid"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -95,7 +98,7 @@
         <NamedIndividual IRI="#reagent"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#CHM_000004"/>
         <NamedIndividual IRI="#solid"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -156,6 +159,51 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#CHM_000003</IRI>
+        <Literal>What type of original source a chemical was otbtianed from, e.g., supplier, synethized in-house, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#CHM_000003</IRI>
+        <Literal xml:lang="en">source type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#CHM_000001</IRI>
+        <Literal>manufactured chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CHM_000001</IRI>
+        <Literal>In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CHM_000001</IRI>
+        <Literal>chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CHM_000002</IRI>
+        <Literal xml:lang="en">Statement of the quality of a manufactured chemical, e.g. ACS Certified Reagent grade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CHM_000002</IRI>
+        <Literal xml:lang="en">grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CHM_000004</IRI>
+        <Literal>Phase of matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CHM_000004</IRI>
+        <Literal>phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#analyte</IRI>
         <Literal>The component of a system to be analysed.</Literal>
     </AnnotationAssertion>
@@ -170,21 +218,6 @@
         <Literal>analyte</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>#chemical</IRI>
-        <Literal>manufactured chemical</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#chemical</IRI>
-        <Literal>In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#chemical</IRI>
-        <Literal>chemical</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#gas</IRI>
         <Literal>Phase of matter</Literal>
@@ -193,16 +226,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#gas</IRI>
         <Literal>gas</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#grade</IRI>
-        <Literal xml:lang="en">Statement of the quality of a manufactured chemical, e.g. ACS Certified Reagent grade.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#grade</IRI>
-        <Literal xml:lang="en">grade</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -218,16 +241,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#liquid</IRI>
         <Literal>liquid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#phase</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#phase</IRI>
-        <Literal>phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
