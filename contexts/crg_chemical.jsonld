@@ -1,1 +1,1 @@
-{"@context":{"@vocab":"https://www.w3.org/2001/XMLSchema#","sdo":"https://stuchalk.github.io/scidata/ontology/scidata.owl#"}}
+{"@context":{"@vocab":"https://www.w3.org/2001/XMLSchema#","sdo":"https://stuchalk.github.io/scidata/ontology/scidata.owl#","ss":"https://semanticscience.org/ontology/sio.owl#","cmo":"https://stuchalk.github.io/scidata/ontology/chemical.owl","name":{"@id":"ss:SIO_000118","@type":"string"},"sourcetype":{"@id":"cmo:CHM_00003","@type":"string"}}}
