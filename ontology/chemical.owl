@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemical.owl">
-    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#"/>
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -34,6 +34,33 @@
         <Class abbreviatedIRI="obo:BFO_0000023"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="obo:CHMO_0002231"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C117039"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C48176"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C62352"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C68608"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C70848"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C99286"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CHM_000001"/>
     </Declaration>
     <Declaration>
@@ -49,7 +76,7 @@
         <Class abbreviatedIRI="sci:propertyValue"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isCompound"/>
+        <ObjectProperty IRI="#MIX_000006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#analyte"/>
@@ -71,6 +98,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#solvent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -81,6 +114,17 @@
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+        <Class abbreviatedIRI="sci:propertyValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+        <Class abbreviatedIRI="sci:propertyValue"/>
+    </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="obo:BFO_0000023"/>
         <NamedIndividual IRI="#analyte"/>
@@ -122,6 +166,10 @@
         <NamedIndividual IRI="#solute"/>
         <NamedIndividual IRI="#solvent"/>
     </DifferentIndividuals>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MIX_000006"/>
+        <Class IRI="#CHM_000001"/>
+    </ObjectPropertyDomain>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>dc:title</IRI>
@@ -143,6 +191,151 @@
         <Literal>role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:CHMO_0002231</AbbreviatedIRI>
+        <Literal xml:lang="en">Any technique used to physically separate an analyte from byproducts, reagents or contaminating substances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:CHMO_0002231</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/chmo.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHMO_0002231</AbbreviatedIRI>
+        <Literal xml:lang="en">purification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal xml:lang="en">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000119</AbbreviatedIRI>
+        <Literal xml:lang="en">definition source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C117039</AbbreviatedIRI>
+        <Literal xml:lang="en">A means, manner of procedure, or systematic course of actions that are performed in order to examine and interpret an event or entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C117039</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C117039</AbbreviatedIRI>
+        <Literal xml:lang="en">analysis method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
+        <Literal xml:lang="en">Any of the characteristics that define the nature of matter or forces that act upon it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C158424</AbbreviatedIRI>
+        <Literal xml:lang="en">physical property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C17771</AbbreviatedIRI>
+        <Literal xml:lang="en">General term for compositional, structural, and reactivity- affecting qualities of chemical compounds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C17771</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C17771</AbbreviatedIRI>
+        <Literal xml:lang="en">chemical property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C48176</AbbreviatedIRI>
+        <Literal xml:lang="en">A specific stage of progression through a sequential process, e.g., the process of purification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C48176</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C48176</AbbreviatedIRI>
+        <Literal xml:lang="en">purification step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C62352</AbbreviatedIRI>
+        <Literal xml:lang="en">A quantitative assessment of the homogeneity or uniformity of a mixture. Alternatively, purity refers to the degree of being free of contaminants or heterogeneous components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C62352</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C62352</AbbreviatedIRI>
+        <Literal xml:lang="en">purity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <AbbreviatedIRI>obo:NCIT_C62352</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.allotrope.org/ontologies/quality#AFQ_0000209</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C68608</AbbreviatedIRI>
+        <Literal xml:lang="en">A person or agency that promotes or exchanges goods or services for money; a seller.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C68608</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C68608</AbbreviatedIRI>
+        <Literal xml:lang="en">vendor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C70848</AbbreviatedIRI>
+        <Literal xml:lang="en">A distinctive alpha-numeric identification code assigned by the manufacturer or distributor to a specific quantity of manufactured material or product within a batch.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:NCIT_C70848</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C70848</AbbreviatedIRI>
+        <Literal xml:lang="en">lot number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:NCIT_C99286</AbbreviatedIRI>
+        <Literal xml:lang="en">The identifier assigned to a product, usually in the list of products published by a reseller or manufacturer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:NCIT_C99286</AbbreviatedIRI>
+        <Literal xml:lang="en">catalog number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
         <Literal>Creator</Literal>
@@ -158,9 +351,29 @@
         <Literal>has Exact Synonym</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#exactMatch</IRI>
+        <Literal xml:lang="en">https://www.w3.org/2009/08/skos-reference/skos.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#exactMatch</IRI>
+        <Literal xml:lang="en">exact match</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#CHM_000001</IRI>
+        <Literal xml:lang="en">chemical specimen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>#CHM_000001</IRI>
         <Literal>manufactured chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#CHM_000001</IRI>
+        <Literal xml:lang="en">synthesized chemical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -173,9 +386,19 @@
         <Literal>chemical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#CHM_000002</IRI>
-        <Literal xml:lang="en">Statement of the quality of a manufactured chemical, e.g. ACS Certified Reagent grade.</Literal>
+        <Literal xml:lang="en">Statement of the quality (purity) of a manufactured chemical, e.g. ACS Certified Reagent grade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#CHM_000002</IRI>
+        <Literal xml:lang="en">chemical grade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#CHM_000002</IRI>
+        <Literal xml:lang="en">reagent grade</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -193,14 +416,29 @@
         <Literal xml:lang="en">source type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#CHM_000004</IRI>
-        <Literal>Phase of matter</Literal>
+        <Literal xml:lang="en">System or portion of a system which is uniform in chemical composition and physical state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#CHM_000004</IRI>
+        <Literal xml:lang="en">10.1351/pac200880020233</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CHM_000004</IRI>
         <Literal>phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#MIX_000006</IRI>
+        <Literal xml:lang="en">is an instance (physical amount) of a chemical substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000006</IRI>
+        <Literal xml:lang="en">isSubstance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -226,11 +464,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#gas</IRI>
         <Literal>gas</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isCompound</IRI>
-        <Literal>indicates that the thing referred to is a chemical compound</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -303,9 +536,9 @@
         <Literal>solvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
-        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
+        <Literal xml:lang="en">A measured physical or chemical property of a chemical substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

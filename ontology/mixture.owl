@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://stuchalk.github.io/scidata/ontology/substance.owl"
+     xml:base="https://stuchalk.github.io/scidata/ontology/mixture.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://stuchalk.github.io/scidata/ontology/substance.owl">
-    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/substance.owl#"/>
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/mixture.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+    <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance.owl"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
@@ -19,7 +20,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-        <Literal xml:lang="en">Substance ontology</Literal>
+        <Literal xml:lang="en">Mixture ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -29,7 +30,7 @@
         <Class IRI="dc:title"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class IRI="#MIX_000005"/>
     </Declaration>
     <Declaration>
         <Class IRI="#constituent"/>
@@ -45,6 +46,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#substance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sci:propertyValue"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasConstituent"/>
@@ -307,14 +311,9 @@
         <Literal>Title</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
-        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
-        <Literal xml:lang="en">property</Literal>
+        <IRI>#MIX_000005</IRI>
+        <Literal xml:lang="en">mixture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -594,8 +593,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#stateOfAggregation</IRI>
-        <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of
-chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
+        <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -661,6 +659,16 @@ chemical species. The letters are appended to the formula symbol in parentheses.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#aq,(inf)</IRI>
         <Literal>aq,(inf)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
+        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
+        <Literal xml:lang="en">property</Literal>
     </AnnotationAssertion>
 </Ontology>
 
