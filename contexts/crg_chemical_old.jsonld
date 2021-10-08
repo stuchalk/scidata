@@ -5,7 +5,7 @@
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
+            "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "compound": {
                  "@id": "sub:isCompound",
                  "@type": "@id"

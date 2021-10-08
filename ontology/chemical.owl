@@ -185,7 +185,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CHM_000003</IRI>
-        <Literal>What type of original source a chemical was otbtianed from, e.g., supplier, synethized in-house, etc.</Literal>
+        <Literal>What type of original source a chemical was obtained from, e.g., supplier, synethized in-house, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
