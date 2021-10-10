@@ -28,6 +28,12 @@
         <Literal xml:lang="en">Example of an ontology to use as the basis for a system:facet in the scientific data model (SDM) framework.  This ontology should be developed by those in the community expert in chemical description (compounds manufacturered and sold or made in a laboratory) and familiar with the development of ontologies.  Alhtough this is being provided as an example for the SDM it can and should be used outside this application.  Note: this ontology is not a part of the SDM framework.</Literal>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_24835"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_72695"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SUB_000001"/>
     </Declaration>
     <Declaration>
@@ -49,28 +55,10 @@
         <Class IRI="#SUB_000007"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SUB_000008"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#MIX_000006"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#analyte"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#gas"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#liquid"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solid"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solute"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solvent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -91,6 +79,14 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     </Declaration>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_24835"/>
+        <Class IRI="#SUB_000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:CHEBI_72695"/>
+        <Class IRI="#SUB_000007"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SUB_000006"/>
         <Class IRI="#SUB_000001"/>
     </SubClassOf>
@@ -98,19 +94,40 @@
         <Class IRI="#SUB_000007"/>
         <Class IRI="#SUB_000001"/>
     </SubClassOf>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#analyte"/>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#gas"/>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#liquid"/>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solid"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solute"/>
-        <NamedIndividual IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl#solvent"/>
-    </DifferentIndividuals>
+    <SubClassOf>
+        <Class IRI="#SUB_000008"/>
+        <Class IRI="#SUB_000007"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:CHEBI_24835</AbbreviatedIRI>
+        <Literal xml:lang="en">A molecular entity that contains no carbon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:CHEBI_24835</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/chebi.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_24835</AbbreviatedIRI>
+        <Literal xml:lang="en">inorganic compound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:CHEBI_72695</AbbreviatedIRI>
+        <Literal xml:lang="en">Any molecule that consists of at least one carbon atom as part of the electrically neutral entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:CHEBI_72695</AbbreviatedIRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/chebi.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_72695</AbbreviatedIRI>
+        <Literal xml:lang="en">organic compound</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
@@ -155,101 +172,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#MIX_000006</IRI>
         <Literal xml:lang="en">isSubstance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#analyte</IRI>
-        <Literal>The component of a system to be analysed.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#analyte</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.A00331</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#analyte</IRI>
-        <Literal>analyte</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#gas</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#gas</IRI>
-        <Literal>gas</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#liquid</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#liquid</IRI>
-        <Literal>liquid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent</IRI>
-        <Literal>reactant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent</IRI>
-        <Literal>A substance that is consumed in the course of a chemical reaction. It is sometimes known, especially in the older literature, as a reagent, but this term is better used in a more specialized sense as a test substance that is added to a system in order to bring about a reaction or to see whether a reaction occurs (e.g. an analytical reagent).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.R05163</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#reagent</IRI>
-        <Literal>reagent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solid</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solid</IRI>
-        <Literal>solid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solute</IRI>
-        <Literal>The minor component of a solution which is regarded as having been dissolved by the solvent.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solute</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.S05744</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solute</IRI>
-        <Literal>solute</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solvent</IRI>
-        <Literal>A liquid or solid phase containing more than one substance, when for convenience one (or more) substance, which is called the solvent, is treated differently from the other substances, which are called solutes. When, as is often but not necessarily the case, the sum of the mole fractions of solutes is small compared with unity, the solution is called a dilute solution. A superscript attached to the ∞ symbol for a property of a solution denotes the property in the limit of infinite dilution.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solvent</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.S05746</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/chemical.owl#solvent</IRI>
-        <Literal>solvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -366,6 +288,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SUB_000007</IRI>
         <Literal xml:lang="en">chemical compound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#SUB_000008</IRI>
+        <Literal xml:lang="en">Classically compounds having bonds between one or more metal atoms and one or more carbon atoms of an organyl group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#SUB_000008</IRI>
+        <Literal xml:lang="en">https://doi.org/10.1351/goldbook.O04328</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SUB_000008</IRI>
+        <Literal xml:lang="en">organometallic compound</Literal>
     </AnnotationAssertion>
 </Ontology>
 
