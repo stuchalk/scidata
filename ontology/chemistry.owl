@@ -14,6 +14,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>https://stuchalk.github.io/scidata/ontology/chemical.owl</Import>
     <Import>https://stuchalk.github.io/scidata/ontology/mixture.owl</Import>
+    <Import>https://stuchalk.github.io/scidata/ontology/substance.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal xml:lang="en">Stuart Chalk</Literal>
@@ -26,6 +27,14 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal xml:lang="en">General ontology for chemistry.  Imports many smaller ontologies so updates can be modular.  Definitions based on IUPAC defined terms in the IUPAC Gold Book, or in IUPAC Recommendations published in Pure and Applied Chemistry.  This work is not associated with, or endorsed by IUPAC.</Literal>
     </Annotation>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl#hasConstituent"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl#MIX_000005"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl#hasConstituent"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/substance.owl#SUB_000001"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

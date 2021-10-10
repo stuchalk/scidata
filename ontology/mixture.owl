@@ -27,25 +27,22 @@
         <Literal xml:lang="en">Example of an ontology to use as the basis for a system:facet in the scientific data model (SDM) framework.  This ontology should be developed by those in the community expert in chemical substance description and familiar with the development of ontologies.  Alhtough this is being provided as an example for the SDM it can and should be used outside this application.  Note: this ontology is not a part of the SDM work, i.e. it is separate than the SciData ontology that defines the structure the metadata in a SciData JSON-LD file</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="dc:title"/>
+        <Class IRI="#MIX_000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIX_000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIX_000004"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MIX_000005"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#constituent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#mixtureType"/>
+        <Class IRI="#MIX_000009"/>
     </Declaration>
     <Declaration>
         <Class IRI="#phase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#stateOfAggregation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#substance"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="sci:propertyValue"/>
@@ -75,79 +72,82 @@
         <ObjectProperty IRI="#isConstituentOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ads"/>
+        <NamedIndividual IRI="#MIX_000010"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#am"/>
+        <NamedIndividual IRI="#MIX_000011"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#aq"/>
+        <NamedIndividual IRI="#MIX_000012"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#binaryMixture"/>
+        <NamedIndividual IRI="#MIX_000013"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#cd"/>
+        <NamedIndividual IRI="#MIX_000014"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#cr"/>
+        <NamedIndividual IRI="#MIX_000015"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#f"/>
+        <NamedIndividual IRI="#MIX_000016"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#g"/>
+        <NamedIndividual IRI="#MIX_000017"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#gas"/>
+        <NamedIndividual IRI="#MIX_000018"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#heterogeneousSolution"/>
+        <NamedIndividual IRI="#MIX_000019"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#homogeneousSolution"/>
+        <NamedIndividual IRI="#MIX_000020"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#l"/>
+        <NamedIndividual IRI="#MIX_000021"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lc"/>
+        <NamedIndividual IRI="#MIX_000022"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#liquid"/>
+        <NamedIndividual IRI="#MIX_000023"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mon"/>
+        <NamedIndividual IRI="#MIX_000024"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#n"/>
+        <NamedIndividual IRI="#MIX_000025"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#pol"/>
+        <NamedIndividual IRI="#MIX_000026"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#quaternaryMixture"/>
+        <NamedIndividual IRI="#MIX_000027"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#s"/>
+        <NamedIndividual IRI="#MIX_000028"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#sln"/>
+        <NamedIndividual IRI="#MIX_000029"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#solid"/>
+        <NamedIndividual IRI="#MIX_000030"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#supercriticalFluid"/>
+        <NamedIndividual IRI="#MIX_000031"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ternaryMixture"/>
+        <NamedIndividual IRI="#MIX_000032"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#vit"/>
+        <NamedIndividual IRI="#MIX__000033"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#aq,(inf)"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -155,129 +155,183 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    </Declaration>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#ads"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000010"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#am"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000010"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#aq"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000011"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#mixtureType"/>
-        <NamedIndividual IRI="#binaryMixture"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000011"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#cd"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000012"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#cr"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000012"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#f"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000013"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#g"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000013"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
-        <NamedIndividual IRI="#gas"/>
+        <Class IRI="#MIX_000002"/>
+        <NamedIndividual IRI="#MIX_000014"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#mixtureType"/>
-        <NamedIndividual IRI="#heterogeneousSolution"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000015"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#mixtureType"/>
-        <NamedIndividual IRI="#homogeneousSolution"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000015"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#l"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000016"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#lc"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000016"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
-        <NamedIndividual IRI="#liquid"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000017"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#mon"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000017"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#n"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000018"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#pol"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#mixtureType"/>
-        <NamedIndividual IRI="#quaternaryMixture"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#s"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#sln"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000018"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#phase"/>
-        <NamedIndividual IRI="#solid"/>
+        <NamedIndividual IRI="#MIX_000019"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000002"/>
+        <NamedIndividual IRI="#MIX_000020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000002"/>
+        <NamedIndividual IRI="#MIX_000021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000023"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#phase"/>
-        <NamedIndividual IRI="#supercriticalFluid"/>
+        <NamedIndividual IRI="#MIX_000024"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#mixtureType"/>
-        <NamedIndividual IRI="#ternaryMixture"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000025"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#vit"/>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000025"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#stateOfAggregation"/>
-        <NamedIndividual IRI="#aq,(inf)"/>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000026"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000002"/>
+        <NamedIndividual IRI="#MIX_000027"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX_000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phase"/>
+        <NamedIndividual IRI="#MIX_000029"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX_000030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phase"/>
+        <NamedIndividual IRI="#MIX_000031"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000002"/>
+        <NamedIndividual IRI="#MIX_000032"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000004"/>
+        <NamedIndividual IRI="#MIX__000033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MIX_000009"/>
+        <NamedIndividual IRI="#MIX__000033"/>
     </ClassAssertion>
     <SameIndividual>
-        <NamedIndividual IRI="#g"/>
-        <NamedIndividual IRI="#gas"/>
+        <NamedIndividual IRI="#MIX_000018"/>
+        <NamedIndividual IRI="#MIX_000019"/>
     </SameIndividual>
     <SameIndividual>
-        <NamedIndividual IRI="#l"/>
-        <NamedIndividual IRI="#liquid"/>
+        <NamedIndividual IRI="#MIX_000022"/>
+        <NamedIndividual IRI="#MIX_000024"/>
     </SameIndividual>
     <SameIndividual>
-        <NamedIndividual IRI="#s"/>
-        <NamedIndividual IRI="#solid"/>
+        <NamedIndividual IRI="#MIX_000028"/>
+        <NamedIndividual IRI="#MIX_000029"/>
     </SameIndividual>
     <DifferentIndividuals>
-        <NamedIndividual IRI="#g"/>
-        <NamedIndividual IRI="#gas"/>
-        <NamedIndividual IRI="#l"/>
-        <NamedIndividual IRI="#liquid"/>
-        <NamedIndividual IRI="#s"/>
-        <NamedIndividual IRI="#solid"/>
+        <NamedIndividual IRI="#MIX_000018"/>
+        <NamedIndividual IRI="#MIX_000019"/>
+        <NamedIndividual IRI="#MIX_000022"/>
+        <NamedIndividual IRI="#MIX_000024"/>
+        <NamedIndividual IRI="#MIX_000028"/>
+        <NamedIndividual IRI="#MIX_000029"/>
     </DifferentIndividuals>
     <DifferentIndividuals>
-        <NamedIndividual IRI="#heterogeneousSolution"/>
-        <NamedIndividual IRI="#homogeneousSolution"/>
+        <NamedIndividual IRI="#MIX_000020"/>
+        <NamedIndividual IRI="#MIX_000021"/>
     </DifferentIndividuals>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPhase"/>
@@ -286,19 +340,15 @@
             <Class IRI="#phase"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isConstituentOf"/>
-        <Class IRI="#substance"/>
-    </ObjectPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>dc:title</IRI>
-        <Literal xml:lang="en">Common way the substance is identified.</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
+        <Literal xml:lang="en">definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>dc:title</IRI>
-        <Literal xml:lang="en">name</Literal>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000119</IRI>
+        <Literal xml:lang="en">definition source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -312,108 +362,358 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MIX_000005</IRI>
-        <Literal xml:lang="en">mixture</Literal>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal xml:lang="en">has exact synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2004/02/skos/core#exactMatch</IRI>
+        <Literal>exact match</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ads</IRI>
-        <Literal>Species adsorbed on a surface</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ads</IRI>
-        <Literal>ads</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#am</IRI>
-        <Literal>Amorphous solid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#am</IRI>
-        <Literal>am</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#aq</IRI>
-        <Literal>Aqueous solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#aq</IRI>
-        <Literal>aq</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#binaryMixture</IRI>
-        <Literal>A mixture of two chemical constituents.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#binaryMixture</IRI>
-        <Literal>binary mixture</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cd</IRI>
-        <Literal>Condensed phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#cd</IRI>
-        <Literal>cd</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#constituent</IRI>
+        <IRI>#MIX_000001</IRI>
         <Literal xml:lang="en">Reference to a part of the chemical substance.  E.g. delineation of the chemical substances in a mixture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#constituent</IRI>
+        <IRI>#MIX_000001</IRI>
         <Literal xml:lang="en">constituent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cr</IRI>
-        <Literal>Crystalline</Literal>
+        <IRI>#MIX_000002</IRI>
+        <Literal>A statement about the type of mixture the substance is.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#cr</IRI>
+        <IRI>#MIX_000002</IRI>
+        <Literal>mixture type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MIX_000004</IRI>
+        <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MIX_000004</IRI>
+        <Literal xml:lang="en">IUPAC &quot;Quantities, Units and Symbols in Physical Chemistry (Green Book)&quot;, 3rd Edition, E Richard Cohen, Tom Cvitas, Jeremy G Frey, Bertil Holström, Kozo Kuchitsu, Roberto Marquardt, Ian Mills, Franco Pavese, Martin Quack, Jüergen Stohner, Herbert L Strauss, Michio Takami, Anders J Thor Eds., 2012 ISBN 978-0-85404-433-7 http://iupac.org/cms/wp-content/uploads/2015/07/Green-Book-PDF-Version-2011.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000004</IRI>
+        <Literal>state of aggregation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000005</IRI>
+        <Literal xml:lang="en">mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">The indication that a chemical form is solid, liquid, or gas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">Chemical State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">Physical Form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">State of Matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000009</IRI>
+        <Literal xml:lang="en">state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MIX_000010</IRI>
+        <Literal>Species adsorbed on a surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000010</IRI>
+        <Literal>ads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000011</IRI>
+        <Literal>am</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <IRI>#MIX_000011</IRI>
+        <Literal xml:lang="en">Amorphous solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000012</IRI>
+        <Literal xml:lang="en">Aqueous solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000012</IRI>
+        <Literal>aq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000013</IRI>
+        <Literal xml:lang="en">Aqueous solution at infinite dilution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000013</IRI>
+        <Literal>aq,(inf)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000014</IRI>
+        <Literal xml:lang="en">A mixture of two chemical constituents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000014</IRI>
+        <Literal>binary mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000015</IRI>
+        <Literal xml:lang="en">Condensed phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000015</IRI>
+        <Literal>cd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000016</IRI>
+        <Literal xml:lang="en">Crystalline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000016</IRI>
         <Literal>cr</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#f</IRI>
-        <Literal>Fluid phase</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000017</IRI>
+        <Literal xml:lang="en">Fluid phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#f</IRI>
+        <IRI>#MIX_000017</IRI>
         <Literal>f</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#g</IRI>
-        <Literal>Gas or vapor</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000018</IRI>
+        <Literal>Gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000018</IRI>
+        <Literal xml:lang="en">vapor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#g</IRI>
+        <IRI>#MIX_000018</IRI>
         <Literal>g</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#gas</IRI>
-        <Literal>Phase of matter</Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000019</IRI>
+        <Literal xml:lang="en">A fluid in the gaseous state having neither independent shape nor volume and being able to expand indefinitely.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000019</IRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/ncit.owl</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#gas</IRI>
+        <IRI>#MIX_000019</IRI>
         <Literal>gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000020</IRI>
+        <Literal xml:lang="en">A heterogeneous mixture is a portion of mixed material that is not uniform in composition, but proportions of its components vary throughout the sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000020</IRI>
+        <Literal xml:lang="en">http://purl.allotrope.org/voc/afo/merged-OLS/REC/2019/05/10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000020</IRI>
+        <Literal>heterogeneous mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000021</IRI>
+        <Literal xml:lang="en">A homogeneous mixture is a portion of mixed material that has the same proportions of its components throughout a given sample. Homogeneous mixture can have a variable composition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000021</IRI>
+        <Literal xml:lang="en">http://purl.allotrope.org/voc/afo/merged-OLS/REC/2019/05/10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000021</IRI>
+        <Literal>homogeneous mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000022</IRI>
+        <Literal xml:lang="en">Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000022</IRI>
+        <Literal>l</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000023</IRI>
+        <Literal xml:lang="en">Liquid crystal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000023</IRI>
+        <Literal>lc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000024</IRI>
+        <Literal xml:lang="en">A state of matter that is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000024</IRI>
+        <Literal xml:lang="en">http://purl.allotrope.org/voc/afo/merged-OLS/REC/2019/05/10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000024</IRI>
+        <Literal>liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000025</IRI>
+        <Literal xml:lang="en">Nematic phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000025</IRI>
+        <Literal>n</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000026</IRI>
+        <Literal xml:lang="en">Polymeric phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000026</IRI>
+        <Literal>pol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000027</IRI>
+        <Literal xml:lang="en">A mixture of four chemical constituents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000027</IRI>
+        <Literal>quaternary mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000028</IRI>
+        <Literal xml:lang="en">Solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000028</IRI>
+        <Literal>s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000029</IRI>
+        <Literal xml:lang="en">A state of matter, in which particles are closely packed together. The forces between particles are strong so that the particles cannot move freely but can only vibrate. As a result, a solid has a stable, definite shape, and a definite volume.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000029</IRI>
+        <Literal xml:lang="en">http://purl.allotrope.org/voc/afo/merged-OLS/REC/2019/05/10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000029</IRI>
+        <Literal>solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX_000030</IRI>
+        <Literal xml:lang="en">solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000030</IRI>
+        <Literal>sln</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000031</IRI>
+        <Literal xml:lang="en">The defined state of a compound, mixture or element above its critical pressure (p_{c}) and critical temperature (T_{c}).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000031</IRI>
+        <Literal xml:lang="en">https://doi.org/10.1351/goldbook.S06138</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000031</IRI>
+        <Literal xml:lang="en">supercritical fluid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000032</IRI>
+        <Literal xml:lang="en">A mixture of three chemical constituents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000032</IRI>
+        <Literal>ternary mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>#MIX__000033</IRI>
+        <Literal xml:lang="en">Vitreous liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX__000033</IRI>
+        <Literal>vit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -456,79 +756,9 @@
         <Literal>has substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#heterogeneousSolution</IRI>
-        <Literal>A solution of one or more solutes in a solvent such that the composition of the mixture is non-uniform throughout.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#heterogeneousSolution</IRI>
-        <Literal>heterogeneous solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#homogeneousSolution</IRI>
-        <Literal>A solution of one or more solutes in a solvent such that the composition of the mixture is uniform throughout.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#homogeneousSolution</IRI>
-        <Literal>homogeneous solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isConstituentOf</IRI>
         <Literal xml:lang="en">is constituent of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#l</IRI>
-        <Literal>Liquid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#l</IRI>
-        <Literal>l</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#lc</IRI>
-        <Literal>Liquid crystal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#lc</IRI>
-        <Literal>lc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#liquid</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#liquid</IRI>
-        <Literal>liquid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#mixtureType</IRI>
-        <Literal>A statement about the type of mixture the substance is.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#mixtureType</IRI>
-        <Literal>mixture type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#n</IRI>
-        <Literal>Nematic phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#n</IRI>
-        <Literal>n</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -539,126 +769,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#phase</IRI>
         <Literal>phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#pol</IRI>
-        <Literal>Polymeric phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#pol</IRI>
-        <Literal>pol</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#quaternaryMixture</IRI>
-        <Literal>A mixture of four chemical constituents.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#quaternaryMixture</IRI>
-        <Literal>quaternary mixture</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#s</IRI>
-        <Literal>Solid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#s</IRI>
-        <Literal>s</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sln</IRI>
-        <Literal>sln</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sln</IRI>
-        <Literal xml:lang="en">solution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#solid</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#solid</IRI>
-        <Literal>solid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#stateOfAggregation</IRI>
-        <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#stateOfAggregation</IRI>
-        <Literal xml:lang="en">IUPAC &quot;Quantities, Units and Symbols in Physical Chemistry (Green Book)&quot;, 3rd Edition, E Richard Cohen, Tom Cvitas, Jeremy G Frey, Bertil Holström, Kozo Kuchitsu, Roberto Marquardt, Ian Mills, Franco Pavese, Martin Quack, Jüergen Stohner, Herbert L Strauss, Michio Takami, Anders J Thor Eds., 2012 ISBN 978-0-85404-433-7 http://iupac.org/cms/wp-content/uploads/2015/07/Green-Book-PDF-Version-2011.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#stateOfAggregation</IRI>
-        <Literal>state of aggregation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#substance</IRI>
-        <Literal>Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. Physical properties such as density, refractive index, electric conductivity, melting point etc. characterize the chemical substance.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#substance</IRI>
-        <IRI>http://dx.doi.org/10.1351/goldbook.C01039</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#substance</IRI>
-        <Literal>substance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#supercriticalFluid</IRI>
-        <Literal xml:lang="en">A supercritical fluid (SCF) is any substance at a temperature and pressure above its critical point, where distinct liquid and gas phases do not exist, but below the pressure required to compress it into a solid.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#supercriticalFluid</IRI>
-        <Literal xml:lang="en">supercritical fluid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ternaryMixture</IRI>
-        <Literal>A mixture of three chemical constituents.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ternaryMixture</IRI>
-        <Literal>ternary mixture</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#vit</IRI>
-        <Literal>Vitreous liquid</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#vit</IRI>
-        <Literal>vit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#aq,(inf)</IRI>
-        <Literal>Aqueous solution at infinite dilution.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#aq,(inf)</IRI>
-        <Literal>aq,(inf)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
