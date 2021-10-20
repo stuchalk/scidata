@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
+        "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "igb": "https://goldbook.iupac.org/",
         "name": {
             "@id": "ncit:NCIT_C42774",
