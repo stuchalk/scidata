@@ -1,1 +1,32 @@
-{"@context":{"@vocab":"https://www.w3.org/2001/XMLSchema#","sdo":"https://stuchalk.github.io/scidata/ontology/scidata.owl#","ncit":"http://purl.obolibrary.org/obo/ncit.owl","igb":"https://goldbook.iupac.org/","name":{"@id":"ncit:NCIT_C42774","@type":"string"},"composition":{"@id":"ncit:NCIT_C53414","@type":"string"},"composition#":{"@id":"ncit:NCIT_C53414","@type":"@id"},"phase":{"@id":"ncit:NCIT_C73487","@type":"string"},"phase#":{"@id":"ncit:NCIT_C73487","@type":"@id"},"constituents":{"@id":"igb:C01281","@type":"@id"}}}
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
+        "igb": "https://goldbook.iupac.org/",
+        "name": {
+            "@id": "ncit:NCIT_C42774",
+            "@type": "string"
+        },
+        "composition": {
+            "@id": "ncit:NCIT_C53414",
+            "@type": "string"
+        },
+        "composition#": {
+            "@id": "ncit:NCIT_C53414",
+            "@type": "@id"
+        },
+        "phase": {
+            "@id": "ncit:NCIT_C73487",
+            "@type": "string"
+        },
+        "phase#": {
+            "@id": "ncit:NCIT_C73487",
+            "@type": "@id"
+        },
+        "constituents": {
+            "@id": "igb:C01281",
+            "@type": "@id"
+        }
+    }
+}
