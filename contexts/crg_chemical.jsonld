@@ -1,16 +1,1 @@
-{
-    "@context": {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
-        "cmo": "https://stuchalk.github.io/scidata/ontology/chemical.owl",
-        "name": {
-            "@id": "ss:SIO_000118",
-            "@type": "string"
-        },
-        "sourcetype": {
-            "@id": "cmo:CHM_00003",
-            "@type": "string"
-        }
-    }
-}
+{"@context":{"@vocab":"https://www.w3.org/2001/XMLSchema#","sdo":"https://stuchalk.github.io/scidata/ontology/scidata.owl#","ss":"https://semanticscience.org/ontology/sio.owl#","cmo":"https://stuchalk.github.io/scidata/ontology/chemical.owl","ncit":"http://purl.obolibrary.org/obo/ncit.owl#","name":{"@id":"ss:SIO_000118","@type":"string"},"sourcetype":{"@id":"cmo:CHM_00003","@type":"string"},"purity":{"@id":"ncit:NCIT_C62352","@type":"@id"},"steps":{"@id":"ncit:NCIT_C48176","@type":"@id"}}}
