@@ -5,7 +5,7 @@
         "edam": "https://edamontology.org/EDAM.owl#",
         "ss": "https://semanticscience.org/ontology/sio.owl#",
         "mi": "http://purl.obolibrary.org/obo/mi.owl#",
-        "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
+        "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "name": {
             "@id": "edam:data_0990",
             "@type": "string"
