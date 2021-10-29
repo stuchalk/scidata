@@ -98,7 +98,8 @@
             },
             "valuearray": {
                 "@id": "sdo:numericValueArray",
-                "@type": "sdo:isValueArray"
+                "@type": "double",
+                "@container": "@list"
             },
             "unit": {
                 "@id": "sdo:unitOfMeasure",
