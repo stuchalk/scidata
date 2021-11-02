@@ -73,6 +73,9 @@
         <Class IRI="#CHM_000004"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl#puresubstance"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="sci:propertyValue"/>
     </Declaration>
     <Declaration>
@@ -534,6 +537,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#solvent</IRI>
         <Literal>solvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemtwin.owl#puresubstance</IRI>
+        <Literal xml:lang="en">A pure substance is a chemical substance composed of multiple molecules, which are all of the same kind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemtwin.owl#puresubstance</IRI>
+        <Literal xml:lang="en">pure substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <IRI>https://stuchalk.github.io/scidata/ontology/chemtwin.owl#puresubstance</IRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/CHEBI_60003</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
