@@ -45,6 +45,10 @@
                 "@id": "sdo:hasAuthor",
                 "@type": "@id"
             },
+            "creators": {
+                "@id": "sdo:hasCreator",
+                "@type": "@id"
+            },
             "name": {
                 "@id": "obo:IAO_0000590",
                 "@type": "string"
@@ -67,6 +71,10 @@
             },
             "email": {
                 "@id": "foaf:mbox",
+                "@type": "string"
+            },
+            "role": {
+                "@id": "ss:SIO_000016",
                 "@type": "string"
             },
             "orcid": {
