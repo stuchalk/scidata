@@ -25,6 +25,14 @@
                 "@id": "sdo:quantity",
                 "@type": "@id"
             },
+            "quantitykind": {
+                "@id": "sdo:quantityKind",
+                "@type": "string"
+            },
+            "quantitykind#": {
+                "@id": "sdo:quantityKind",
+                "@type": "@id"
+            },
             "property": {
                 "@id": "sdo:property",
                 "@type": "string"
