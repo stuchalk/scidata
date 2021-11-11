@@ -324,6 +324,9 @@
         <Class IRI="#quantity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#quantityKind"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#resource"/>
     </Declaration>
     <Declaration>
@@ -911,6 +914,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#quantity"/>
+        <Class IRI="#unitOfMeasurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantityKind"/>
         <Class IRI="#unitOfMeasurement"/>
     </SubClassOf>
     <SubClassOf>
@@ -2983,6 +2990,38 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#quantity</IRI>
         <Literal>quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#quantityKind</IRI>
+        <Literal xml:lang="en">aspect common to mutually comparable quantities.
+
+NOTE 1 The division of &apos;quantity&apos; according to &apos;kind of quantity&apos; is to some extent arbitrary.
+
+EXAMPLE 1 The quantities diameter, circumference, and wavelength are generally considered to be quantities of the same kind, namely of the kind of quantity called length.
+
+EXAMPLE 2 The quantities heat, kinetic energy, and potential energy are generally considered to be quantities of the same kind, namely of the kind of quantity called energy.
+
+NOTE 2 Quantities of the same kind within a given system of quantities have the same quantity dimension. However, quantities of the same dimension are not necessarily of the same kind.
+
+EXAMPLE The quantities moment of force and energy are, by convention, not regarded as being of the same kind, although they have the same dimension. Similarly for heat capacity and entropy, as well as for number of entities, relative permeability, and mass fraction.
+
+NOTE 3 In English, the terms for quantities in the left half of the table in 1.1, Note 1, are often used for the corresponding &apos;kinds of quantity&apos;. In French, the term “nature” is only used in expressions such as “grandeurs de même nature” (in English, “quantities of the same kind”).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#quantityKind</IRI>
+        <Literal xml:lang="en">International Vocabulary of Metrology - Online Edition, https://jcgm.bipm.org/vim/en/1.2.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:hasExactSynonym"/>
+        <IRI>#quantityKind</IRI>
+        <Literal xml:lang="en">kind of quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantityKind</IRI>
+        <Literal xml:lang="en">quanity kind</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
