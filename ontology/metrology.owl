@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.bipm.org/metrology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.bipm.org/metrology">
+    <Prefix name="" IRI="http://www.bipm.org/metrology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#SI_0001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0019"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0011"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0012"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0013"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0014"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0015"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0016"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0017"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0018"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0020"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0021"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#SI_0010"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0012"/>
+            <Class IRI="#SI_0009"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SI_0010"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0020"/>
+            <Class IRI="#SI_0008"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#SI_0006"/>
+        <Class IRI="#SI_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0007"/>
+        <Class IRI="#SI_0005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0008"/>
+        <Class IRI="#SI_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0009"/>
+        <Class IRI="#SI_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0010"/>
+        <Class IRI="#SI_0006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0019"/>
+        <Class IRI="#SI_0006"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#SI_0010"/>
+        <Class IRI="#SI_0019"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
+        <Literal>definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0003</IRI>
+        <Literal xml:lang="en">quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0004</IRI>
+        <Literal xml:lang="en">symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0005</IRI>
+        <Literal xml:lang="en">unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0006</IRI>
+        <Literal xml:lang="en">baseunit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0007</IRI>
+        <Literal xml:lang="en">derivedunit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0008</IRI>
+        <Literal xml:lang="en">time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0009</IRI>
+        <Literal xml:lang="en">time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.bipm.or/metrology#SI_0010</IRI>
+        <Literal xml:lang="en">The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency, &amp;#916;&amp;#957;Cs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s&lt;sup&gt;-1&lt;/sup&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bipm.or/metrology#SI_0010</IRI>
+        <Literal xml:lang="en">second</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0001</IRI>
+        <Literal xml:lang="en">dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0002</IRI>
+        <Literal xml:lang="en">dimensionvector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0003</IRI>
+        <Literal>quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0004</IRI>
+        <Literal>symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0005</IRI>
+        <Literal>unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0006</IRI>
+        <Literal>baseunit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0007</IRI>
+        <Literal>derivedunit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0008</IRI>
+        <Literal>time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0009</IRI>
+        <Literal>time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SI_0010</IRI>
+        <Literal>The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency, &amp;#916;&amp;#957;Cs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s&lt;sup&gt;-1&lt;/sup&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0010</IRI>
+        <Literal>second</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0011</IRI>
+        <Literal xml:lang="en">hasBaseUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0012</IRI>
+        <Literal xml:lang="en">hasDimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0013</IRI>
+        <Literal xml:lang="en">isBaseUnitOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0014</IRI>
+        <Literal xml:lang="en">isDimensionOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0015</IRI>
+        <Literal xml:lang="en">hasDimensionvector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0016</IRI>
+        <Literal xml:lang="en">isDimensionvectorOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0017</IRI>
+        <Literal xml:lang="en">hasSymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0018</IRI>
+        <Literal xml:lang="en">isSymbolOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0019</IRI>
+        <Literal xml:lang="en">meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0020</IRI>
+        <Literal xml:lang="en">hasQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0021</IRI>
+        <Literal xml:lang="en">isQuantityOf</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
