@@ -158,6 +158,12 @@
         <Class IRI="#ITO_0002"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ITO_000215"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITO_000216"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ITO_0003"/>
     </Declaration>
     <Declaration>
@@ -938,6 +944,10 @@
     <SubClassOf>
         <Class IRI="#ITO_0002"/>
         <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITO_000216"/>
+        <Class IRI="#ITO_000215"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ITO_0003"/>
@@ -2021,6 +2031,21 @@
         <Literal xml:lang="en">Reaction Equilibrium Property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_000215</IRI>
+        <Literal xml:lang="en">Composition Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITO_000216</IRI>
+        <Literal>Components are different and mass component can be a mixture of components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ITO_000216</IRI>
+        <Literal xml:lang="en">Amount of Substance of Component per Mass of Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ITO_0003</IRI>
         <Literal xml:lang="en">Properties enumerated in the &apos;Criticals&quot; element in ThermoML v.4.0</Literal>
@@ -2556,6 +2581,16 @@
         <Literal xml:lang="en">Bunsen coefficient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ITO_0101</IRI>
+        <Literal>Volume V&lt;sup&gt;g&lt;/sup&gt; of an amount n&lt;sup&gt;l&lt;/sup&gt;&lt;sub&gt;B&lt;/sub&gt; of a dissolved gas calculated at given temperature T and pressure p divided by the volume of the dissolving liquid of volume V&lt;sup&gt;l&lt;/sup&gt; and containing an amount n&lt;sub&gt;A&lt;/sub&gt; of solvent at the same temperature T and pressure p.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#ITO_0101</IRI>
+        <Literal>https://doi.org/10.1351/pac200880020233</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0101</IRI>
         <Literal xml:lang="en">Ostwald coefficient</Literal>
@@ -2699,6 +2734,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ITO_0126</IRI>
         <Literal xml:lang="en">Apparent molar volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ITO_0127</IRI>
+        <Literal>In thermodynamics &apos;adiabatic&apos; is used in a macroscopic sense to refer to a process occurring in a thermally insulated system, so that there is no flow of heat to or from the surroundings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#ITO_0127</IRI>
+        <Literal>https://doi.org/10.1351/goldbook.A00141</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
