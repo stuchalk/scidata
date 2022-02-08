@@ -5,7 +5,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemical.owl">
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemical.owl"
+     versionIRI="https://stuchalk.github.io/scidata/ontology/chemical.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>

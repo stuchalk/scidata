@@ -5,7 +5,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://stuchalk.github.io/scidata/ontology/mixture.owl">
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/mixture.owl"
+     versionIRI="https://stuchalk.github.io/scidata/ontology/mixture.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -33,43 +34,43 @@
         <Class IRI="#MIX_000002"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MIX_000003"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MIX_000004"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MIX_000005"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MIX_000008"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MIX_000009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#phase"/>
+        <ObjectProperty IRI="#MIX_000040"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <ObjectProperty IRI="#MIX_000041"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasConstituent"/>
+        <ObjectProperty IRI="#MIX_000042"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMixtureType"/>
+        <ObjectProperty IRI="#MIX_000043"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPhase"/>
+        <ObjectProperty IRI="#MIX_000045"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPhaseType"/>
+        <ObjectProperty IRI="#MIX_000046"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasProperty"/>
+        <ObjectProperty IRI="#MIX_000047"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasStateOfAggregation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSubstance"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConstituentOf"/>
+        <ObjectProperty IRI="#MIX_000048"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MIX_000010"/>
@@ -141,7 +142,7 @@
         <NamedIndividual IRI="#MIX_000032"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MIX__000033"/>
+        <NamedIndividual IRI="#MIX_000033"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -230,7 +231,7 @@
         <NamedIndividual IRI="#MIX_000018"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#MIX_000003"/>
         <NamedIndividual IRI="#MIX_000019"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -258,7 +259,7 @@
         <NamedIndividual IRI="#MIX_000023"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#MIX_000003"/>
         <NamedIndividual IRI="#MIX_000024"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -286,7 +287,7 @@
         <NamedIndividual IRI="#MIX_000028"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#MIX_000003"/>
         <NamedIndividual IRI="#MIX_000029"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -294,7 +295,7 @@
         <NamedIndividual IRI="#MIX_000030"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#phase"/>
+        <Class IRI="#MIX_000003"/>
         <NamedIndividual IRI="#MIX_000031"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -303,11 +304,11 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#MIX_000004"/>
-        <NamedIndividual IRI="#MIX__000033"/>
+        <NamedIndividual IRI="#MIX_000033"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#MIX_000009"/>
-        <NamedIndividual IRI="#MIX__000033"/>
+        <NamedIndividual IRI="#MIX_000033"/>
     </ClassAssertion>
     <SameIndividual>
         <NamedIndividual IRI="#MIX_000018"/>
@@ -334,10 +335,10 @@
         <NamedIndividual IRI="#MIX_000021"/>
     </DifferentIndividuals>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPhase"/>
+        <ObjectProperty IRI="#MIX_000042"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPhase"/>
-            <Class IRI="#phase"/>
+            <ObjectProperty IRI="#MIX_000042"/>
+            <Class IRI="#MIX_000003"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <AnnotationAssertion>
@@ -392,6 +393,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MIX_000003</IRI>
+        <Literal>Phase of matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000003</IRI>
+        <Literal>phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MIX_000004</IRI>
+        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MIX_000004</IRI>
         <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
     </AnnotationAssertion>
@@ -403,12 +419,32 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MIX_000004</IRI>
+        <Literal xml:lang="en">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000004</IRI>
         <Literal>state of aggregation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MIX_000005</IRI>
         <Literal xml:lang="en">mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000008</IRI>
+        <Literal>the nominal number assigned to a constituent of a mixture - important for referencing condition or data quantities to specific parts of a mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000008</IRI>
+        <Literal xml:lang="en">Stuart Chalk, ORCID 0000-0002-0703-7776</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIX_000008</IRI>
+        <Literal xml:lang="en">constituent number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -707,78 +743,58 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>#MIX__000033</IRI>
+        <IRI>#MIX_000033</IRI>
         <Literal xml:lang="en">Vitreous liquid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MIX__000033</IRI>
+        <IRI>#MIX_000033</IRI>
         <Literal>vit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasConstituent</IRI>
+        <IRI>#MIX_000040</IRI>
         <Literal>has constituent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasMixtureType</IRI>
+        <IRI>#MIX_000041</IRI>
         <Literal>has mixture type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasPhase</IRI>
+        <IRI>#MIX_000042</IRI>
         <Literal>has phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasPhaseType</IRI>
+        <IRI>#MIX_000043</IRI>
         <Literal xml:lang="en">A description of the phase (or multiple phases) to better represent its form</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasPhaseType</IRI>
+        <IRI>#MIX_000043</IRI>
         <Literal xml:lang="en">has phase type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasProperty</IRI>
+        <IRI>#MIX_000045</IRI>
         <Literal>has property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasStateOfAggregation</IRI>
+        <IRI>#MIX_000046</IRI>
         <Literal>has state of aggregation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasSubstance</IRI>
+        <IRI>#MIX_000047</IRI>
         <Literal>has substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isConstituentOf</IRI>
+        <IRI>#MIX_000048</IRI>
         <Literal xml:lang="en">is constituent of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#phase</IRI>
-        <Literal>Phase of matter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#phase</IRI>
-        <Literal>phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
-        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
-        <Literal xml:lang="en">property</Literal>
     </AnnotationAssertion>
 </Ontology>
 
