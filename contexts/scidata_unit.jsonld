@@ -5,7 +5,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "dc": "https://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
-        "uom": {"@id": "sdo:unitOfMeasure"},
+        "uom": {"@id": "sdo:unitOfMeasurement"},
         "name": {
             "@id": "obo:IAO_0000302",
             "@type": "string"
@@ -60,11 +60,11 @@
             "@type": "@id"
         },
         "fromunit": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "unitref"
         },
         "tounit": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "siunit"
         },
         "addend": {

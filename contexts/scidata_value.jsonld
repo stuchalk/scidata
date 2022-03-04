@@ -102,11 +102,11 @@
                 "@container": "@list"
             },
             "unit": {
-                "@id": "sdo:unitOfMeasure",
+                "@id": "sdo:unitOfMeasurement",
                 "@type": "string"
             },
             "unit#": {
-                "@id": "sdo:unitOfMeasure",
+                "@id": "sdo:unitOfMeasurement",
                 "@type": "@id"
             }
         }

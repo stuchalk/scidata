@@ -88,7 +88,7 @@
             "@type": "string"
         },
         "units": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "string"
         },
         "value": {

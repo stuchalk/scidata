@@ -312,7 +312,7 @@
             "@type": "string"
         },
         "qudt_units": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "@id"
         },
         "relation": {
@@ -368,7 +368,7 @@
             "@type": "string"
         },
         "standard_units": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "string"
         },
         "standard_upper_value": {
@@ -421,15 +421,15 @@
             "@type": "string"
         },
         "unit": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "string"
         },
         "units": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "string"
         },
         "uo_units": {
-            "@id": "sdo:unitOfMeasure",
+            "@id": "sdo:unitOfMeasurement",
             "@type": "@id"
         },
         "value": {

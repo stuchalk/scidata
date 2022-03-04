@@ -11,11 +11,11 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "discipline": {
-                "@id": "sdo:discipline",
+                "@id": "sdo:scientificDiscipline",
                 "@type": "@id"
             },
             "subdiscipline": {
-                "@id": "sdo:subdiscipline",
+                "@id": "sdo:scientificSubdiscipline",
                 "@type": "@id"
             },
             "facets": {"@id": "sdo:hasSystemFacet"}

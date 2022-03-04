@@ -16,7 +16,7 @@
             "prov": "http://www.w3.org/ns/prov#",
             "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
             "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
-            "ss": "http://semanticscience.org/ontology/sio.owl#",
+            "ss": "https://semanticscience.org/ontology/sio.owl#",
             "generatedAt": {
                 "@id": "prov:generatedAtTime",
                 "@type": "dateTime"
@@ -154,19 +154,19 @@
                 "@type": "@id"
             },
             "discipline": {
-                "@id": "sdo:discipline",
+                "@id": "sdo:scientificDiscipline",
                 "@type": "string"
             },
             "discipline#": {
-                "@id": "sdo:discipline",
+                "@id": "sdo:scientificDiscipline",
                 "@type": "@id"
                 },
             "subdiscipline": {
-                "@id": "sdo:subdiscipline",
+                "@id": "sdo:scientificSubdiscipline",
                 "@type": "string"
             },
             "subdiscipline#": {
-                "@id": "sdo:subdiscipline",
+                "@id": "sdo:scientificSubdiscipline",
                 "@type": "@id"
             },
             "facets": {
