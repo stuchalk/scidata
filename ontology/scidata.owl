@@ -417,6 +417,12 @@
         <ObjectProperty IRI="#hasChemicalSystem"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCreator"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasDatagroup"/>
     </Declaration>
     <Declaration>
@@ -427,6 +433,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDataset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatum"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasEvaluation"/>
@@ -442,6 +451,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScientificData"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSource"/>
@@ -1049,6 +1061,14 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChemicalSystem"/>
+        <Class IRI="#system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataset"/>
     </ObjectPropertyDomain>
@@ -1067,6 +1087,13 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDataset"/>
         <Class IRI="#scientificData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDatum"/>
+        <ObjectUnionOf>
+            <Class IRI="#dataGroup"/>
+            <Class IRI="#dataset"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMethodology"/>
@@ -1101,6 +1128,14 @@
         <Class IRI="#chemicalSystem"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCreator"/>
+        <Class abbreviatedIRI="dc:creator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDatagroup"/>
         <Class IRI="#dataGroup"/>
     </ObjectPropertyRange>
@@ -1113,6 +1148,10 @@
         <Class IRI="#dataset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDatum"/>
+        <Class IRI="#datum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMethodology"/>
         <Class IRI="#methodology"/>
     </ObjectPropertyRange>
@@ -1123,6 +1162,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRights"/>
         <Class abbreviatedIRI="dc:accessRights"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScientificData"/>
+        <Class IRI="#scientificData"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSource"/>
@@ -3041,7 +3084,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#scidataFramework</IRI>
-        <Literal>A datatype where the context of the file use the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
+        <Literal>A datatype where the context of the file uses the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
