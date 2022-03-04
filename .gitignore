@@ -3,7 +3,7 @@
 **/catalog-v001.xml
 **/.DS_Store
 other
-.idea/*
+.idea
 contexts/aspects/
 contexts/facets/
 contexts/scidata_sample.jsonld
@@ -14,6 +14,7 @@ ontology/resource/
 ontology/scidata.obda
 ontology/scidata.properties
 ontology/solubility.obda
+ontology/metrology.properties
 ontology/solubility.properties
 ontology/substance/substance.obda
 ontology/substance/substance.properties
