@@ -46,6 +46,18 @@
         <Class IRI="#SI_0019"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SI_0027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SI_0030"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#SI_0011"/>
     </Declaration>
     <Declaration>
@@ -74,6 +86,30 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#SI_0021"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0022"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0023"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0024"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0025"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0026"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0031"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0032"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SI_0033"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -116,10 +152,66 @@
         <Class IRI="#SI_0019"/>
         <Class IRI="#SI_0006"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0027"/>
+        <Class IRI="#SI_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0028"/>
+        <Class IRI="#SI_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0029"/>
+        <Class IRI="#SI_0004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SI_0030"/>
+        <Class IRI="#SI_0027"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#SI_0010"/>
         <Class IRI="#SI_0019"/>
     </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0011"/>
+        <ObjectProperty IRI="#SI_0013"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0012"/>
+        <ObjectProperty IRI="#SI_0014"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0015"/>
+        <ObjectProperty IRI="#SI_0016"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0017"/>
+        <ObjectProperty IRI="#SI_0018"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0018"/>
+        <ObjectProperty IRI="#SI_0024"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0020"/>
+        <ObjectProperty IRI="#SI_0021"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0025"/>
+        <ObjectProperty IRI="#SI_0026"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#SI_0031"/>
+        <ObjectProperty IRI="#SI_0032"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SI_0012"/>
+        <Class IRI="#SI_0003"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SI_0012"/>
+        <Class IRI="#SI_0001"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
@@ -182,6 +274,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_00025</IRI>
+        <Literal xml:lang="en">hasBaseQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0003</IRI>
         <Literal>quantity</Literal>
     </AnnotationAssertion>
@@ -206,6 +303,11 @@
         <Literal>derivedunit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SI_0008</IRI>
+        <Literal xml:lang="en">The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency, &amp;#916;&amp;#957;Cs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9 192 631 770 when expressed in the unit Hz, which is equal to s&lt;sup&gt;-1&lt;/sup&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0008</IRI>
         <Literal>time</Literal>
@@ -213,7 +315,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0009</IRI>
-        <Literal>time</Literal>
+        <Literal>dim_time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -272,6 +374,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0019</IRI>
+        <Literal xml:lang="fr">metre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0020</IRI>
         <Literal xml:lang="en">hasQuantity</Literal>
     </AnnotationAssertion>
@@ -279,6 +386,71 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0021</IRI>
         <Literal xml:lang="en">isQuantityOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0022</IRI>
+        <Literal xml:lang="en">hasQuantitySymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0023</IRI>
+        <Literal xml:lang="en">hasUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0024</IRI>
+        <Literal xml:lang="en">isUnitOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0025</IRI>
+        <Literal>hasBaseQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0026</IRI>
+        <Literal xml:lang="en">isBaseQuantityOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SI_0027</IRI>
+        <Literal>A dimension symbol is the symbolic character used to represent a dimension in the SI.  Each of the base dimension symbols is a single capital letter assigned to a dimension through the metre convention for the SI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0027</IRI>
+        <Literal xml:lang="en">dimensionsymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0028</IRI>
+        <Literal xml:lang="en">quantitysymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0029</IRI>
+        <Literal xml:lang="en">unitsymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0030</IRI>
+        <Literal xml:lang="en">T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0031</IRI>
+        <Literal xml:lang="en">hasDimensionSymbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0032</IRI>
+        <Literal xml:lang="en">isDimensionSymbolOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SI_0033</IRI>
+        <Literal xml:lang="en">isQuantitySymbolOf</Literal>
     </AnnotationAssertion>
 </Ontology>
 
