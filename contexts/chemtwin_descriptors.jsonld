@@ -10,11 +10,11 @@
                 "@type": "nonNegativeInteger"
             },
             "atom_chiral": {
-                "@id": "ss:CHEMINF_000205",
+                "@id": "ss:CHEMINF_000206",
                 "@type": "nonNegativeInteger"
             },
             "bond_chiral": {
-                "@id": "ss:CHEMINF_000209",
+                "@id": "ss:CHEMINF_000214",
                 "@type": "nonNegativeInteger"
             },
             "isotope_atom": {
