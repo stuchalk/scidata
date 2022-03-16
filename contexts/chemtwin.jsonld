@@ -9,7 +9,7 @@
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "ss": "https://semanticscience.org/ontology/sio.owl#",
-            "name": {
+            "iupacname": {
                 "@id": "ss:CHEMINF_000107",
                 "@type": "string"
             },
