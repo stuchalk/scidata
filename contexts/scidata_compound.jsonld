@@ -5,7 +5,7 @@
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
-        "ss": "http://semanticscience.org/ontology/sio.owl#",
+        "ss": "https://semanticscience.org/ontology/sio.owl#",
         "compound": {"@id": "sdo:compound"},
         "element": {"@id": "sdo:element"},
         "name": {

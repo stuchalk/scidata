@@ -3,7 +3,7 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "dc": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "http://semanticscience.org/ontology/sio.owl#",
+        "ss": "https://semanticscience.org/ontology/sio.owl#",
         "bao": "http://www.bioassayontology.org/bao#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "activity_comment": {
