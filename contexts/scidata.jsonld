@@ -17,6 +17,7 @@
             "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
             "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
             "ss": "https://semanticscience.org/ontology/sio.owl#",
+            "w3id": "https://w3id.org/reproduceme#",
             "generatedAt": {
                 "@id": "prov:generatedAtTime",
                 "@type": "dateTime"
@@ -78,7 +79,7 @@
                 "@type": "string"
             },
             "orcid": {
-                "@id": "obo:IAO_0000302",
+                "@id": "w3id:ORCID",
                 "@type": "string"
             },
             "description": {
