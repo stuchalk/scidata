@@ -18,3 +18,6 @@ ontology/metrology.properties
 ontology/solubility.properties
 ontology/substance/substance.obda
 ontology/substance/substance.properties
+
+# python venv environment
+env/
