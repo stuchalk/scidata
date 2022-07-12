@@ -37,7 +37,7 @@
   "properties": {
     "@context": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": { "type": ["string", "object"] },
       "default": ["http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
     },
     "@id": { 
