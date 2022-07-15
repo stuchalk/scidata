@@ -1,5 +1,9 @@
 # SciData
 
+| Health |
+|--------|
+| [![GitHub Actions](https://github.com/stuchalk/scidata/actions/workflows/actions.yml/badge.svg?branch=master)](https://github.com/stuchalk/scidata/actions/workflows/actions.yml) | 
+
 SciData is a general scientific data model (SDM) and related ontology (SDMO) that has been developed for use in chemistry but may also be useful in biology, physics, and related disciplines.  It can be used in any way, meaning that it can be applied in databases (relational or graph), spreadsheets (excel or google sheets), and any other way that makes sense for the user.  The examples in this repo are all written in JSON-LD (https://www.w3.org/TR/json-ld/) because the data annotated in this way can be read by humans and also converted to RDF.
 
 It is important to point out that SciData is a framework about how to organize scientific data and its contextual metadata. Contextual meaning of the metadata and data stored in the framework is the responsibility of other ontologies (as can be seen in some of the examples). Although the framework provides a detailed way to link/organize this information none of the pieces are required and all terms can be used in any way needed by the user.  The only caveat is that if the links between data and metadata are important in your application you need to be careful to implement them with or without the SciData framework.

@@ -1,0 +1,33 @@
+name: scidata-schema-validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: '*' 
+
+jobs:
+
+  linux:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04]
+        python-version: ["3.8"]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install jsonschema
+
+      - name: Run Unit schema validation
+        run: |
+          jsonschema --instance examples/sections/unit.jsonld schema/unit.json
+      
