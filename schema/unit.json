@@ -4,7 +4,7 @@
   "description": "JSON schema for a scientific unit of measure",
 
   "definitions": {
-    "siUnit_def": {
+    "siunit_def": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -14,7 +14,7 @@
       }
           
     },
-    "conversionFactor_def": {
+    "factor_def": {
       "type": "object",
       "properties": {
         "@id":        { "type": "string" },
@@ -67,14 +67,14 @@
       "type": "object",
       "properties": {
         "@id": { "type": "string" },
-        "factor": { "$ref": "#/definitions/conversionFactor_def" },
+        "factor": { "$ref": "#/definitions/factor_def" },
         "siunit": {
           "type": "array",
-          "items": { "$ref": "#/definitions/siUnit_def" }
+          "items": { "$ref": "#/definitions/siunit_def" }
           }
         }
     },
-    "siunit": { "$ref": "#/definitions/siUnit_def" },
+    "siunit": { "$ref": "#/definitions/siunit_def" },
     "siunitstr": { "type": "string" },
     "siunitref": {
       "type": "string",
@@ -82,7 +82,7 @@
     },
     "prefix": { "type": "string" },
     "power":  { "type": "integer" },
-    "factor": { "$ref": "#/definitions/conversionFactor_def" },
+    "factor": { "$ref": "#/definitions/factor_def" },
     "factorref": {
       "type": "string",
       "format": "uri-reference"
