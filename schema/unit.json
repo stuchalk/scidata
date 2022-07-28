@@ -1,4 +1,5 @@
 {
+  "$id": "scidata.unit.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Unit Schema",
   "description": "JSON schema for a scientific unit of measure",
