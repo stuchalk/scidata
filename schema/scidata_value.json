@@ -5,7 +5,7 @@
   "type": "object",
 
   "definitions": {
-    "numericValue_def": {
+    "numericvalue_def": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -19,7 +19,7 @@
         "unitref": { "type": "string" }
       }
     },
-    "numericValueArray_def": {
+    "numericvaluearray_def": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -42,7 +42,7 @@
       },
       "additionalProperties": true   
     },
-    "textString_def": {
+    "textstring_def": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -51,7 +51,7 @@
         "language":  { "type": "integer" }
       }
     },
-    "textStringArray_def": {
+    "textstringarray_def": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -92,11 +92,11 @@
       "type": "string",
       "default": ""
      },
-     "numericvalue": { "$ref": "#/definitions/numericValue_def" },
-     "numericvaluearray": { "$ref": "#/definitions/numericValueArray_def" },
-     "textstring": { "$ref": "#/definitions/textString_def" },
-     "textstringarray": { "$ref": "#/definitions/textStringArray_def" },
-     "value": { "$ref": "#/definitions/numericValue_def" },
-     "valuearray": { "$ref": "#/definitions/numericValueArray_def" }
+     "numericvalue": { "$ref": "#/definitions/numericvalue_def" },
+     "numericvaluearray": { "$ref": "#/definitions/numericvaluearray_def" },
+     "textstring": { "$ref": "#/definitions/textstring_def" },
+     "textstringarray": { "$ref": "#/definitions/textstringarray_def" },
+     "value": { "$ref": "#/definitions/numericvalue_def" },
+     "valuearray": { "$ref": "#/definitions/numericvaluearray_def" }
   }
 }
