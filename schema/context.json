@@ -1,0 +1,19 @@
+{
+  "$id": "scidata.context.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Context Schema",
+  "description": "JSON schema for context header across all files",
+  "type": "object",
+
+  "definitions": {
+    "context_def": {
+      "type": "array",
+      "items": {
+        "anyOf" : [
+          {"type": "string"},
+          {"type": "object", "additionalProperties": true}
+        ]
+      }
+    }
+  }
+}
