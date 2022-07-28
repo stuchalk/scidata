@@ -30,4 +30,7 @@ jobs:
       - name: Run Unit schema validation
         run: |
           jsonschema --instance examples/sections/unit.jsonld schema/unit.json
-      
+
+      - name: Run Value schema validation
+        run: |
+          jsonschema --instance examples/sections/value.jsonld schema/value.json
