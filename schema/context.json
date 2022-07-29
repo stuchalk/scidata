@@ -6,7 +6,7 @@
   "type": "object",
 
   "definitions": {
-    "context_def": {
+    "context": {
       "type": "array",
       "items": {
         "anyOf" : [
