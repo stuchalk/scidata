@@ -5,98 +5,105 @@
   "description": "JSON schema for a scientific unit of measure",
 
   "definitions": {
-    "siunit_def": {
-      "type": "object",
-      "properties": {
-        "@id":    { "type": "string" },
-        "name":   { "type": "string" },
-        "prefix": { "type": "string" },
-        "power":  { "type": "integer" }
-      }
-          
-    },
-    "factor_def": {
+    "abbrev":        { "type": "string" },
+    "addend":        { "type": "number" },
+    "dividend":      { "type": "number" },
+    "divisor":       { "type": "number" },
+    "exact":         { "type": "boolean" },
+    "factorref":     { "type": "string", "format": "uri-reference" },
+    "fromunit":      { "type": "string" },
+    "minuend":       { "type": "number" },
+    "multiplier":    { "type": "number" },
+    "name":          { "type": "string" },
+    "power":         { "type": "integer" },
+    "prefix":        { "type": "string" },
+    "quantity":      { "type": "string" },
+    "quantityref":   { "type": "string", "format": "uri-reference" },
+    "siunitref":     { "type": "string", "format": "uri-reference" },
+    "siunitstr":     { "type": "string" },
+    "subtrahend":    { "type": "number" },
+    "symbol":        { "type": "string" },
+    "tounit":        { "type": "string" },
+    "unitref":       { "type": "string", "format": "uri-reference" },
+    "unitstr":       { "type": "string" },
+    "unitsystem":    { "type": "string" },
+    "unitsystemref": { "type": "string", "format": "uri-reference", "enum": ["sci:imperial"] },
+
+    "factor": {
       "type": "object",
       "properties": {
         "@id":        { "type": "string" },
-        "fromunit":   { "type": "string" },
-        "tounit":     { "type": "string" },
-        "addend":     { "type": "number" },
-        "minuend":    { "type": "number" },
-        "subtrahend": { "type": "number" },
-        "multiplier": { "type": "number" },
-        "dividend":   { "type": "number" },
-        "divisor":    { "type": "number" },
-        "exact":      { "type": "boolean" }
+        "dividend":   { "$ref": "#/definitions/dividend" },
+        "divisor":    { "$ref": "#/definitions/divisor" },
+        "exact":      { "$ref": "#/definitions/exact" },
+        "fromunit":   { "$ref": "#/definitions/fromunit" },
+        "tounit":     { "$ref": "#/definitions/tounit" },
+        "addend":     { "$ref": "#/definitions/addend" },
+        "minuend":    { "$ref": "#/definitions/minuend" },
+        "multiplier": { "$ref": "#/definitions/multiplier" },
+        "subtrahend": { "$ref": "#/definitions/subtrahend" }
+      }
+    },
+    "siunit": {
+      "type": "object",
+      "properties": {
+        "@id":    { "type": "string" },
+        "name":   { "$ref": "#/definitions/name" },
+        "prefix": { "$ref": "#/definitions/prefix" },
+        "power":  { "$ref": "#/definitions/power" }
+      }
+    },
+    "unitinsi": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "factor": { "$ref": "#/definitions/factor" },
+        "siunit": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/siunit" }
+        }
       }
     }
-
   },
 
   "type": "object",
-
   "properties": {
     "@context": {
-      "type": "array",
-      "items": { "type": ["string", "object"] },
+      "$ref": "scidata.context.json#/definitions/context",
       "default": ["http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
     },
     "@id": { 
       "type": "string",
       "default": ""
      },
-    "unitstr": { "type": "string" },
-    "unitref": {
-      "type": "string",
-      "format": "uri-reference"
-    },
-    "name": { "type": "string" },
-    "unitsystem": { "type": "string" },
-    "unitsystemref": {
-      "type": "string",
-      "format": "uri-reference",
-      "enum": ["sci:imperial"]      
-    },
-    "quantity": { "type": "string" },
-    "quantityref": {
-      "type": "string",
-      "format": "uri-reference"
-    },
-    "abbrev": { "type": "string" },
-    "symbol": { "type": "string" },
-    "unitinsi": {
-      "type": "object",
-      "properties": {
-        "@id": { "type": "string" },
-        "factor": { "$ref": "#/definitions/factor_def" },
-        "siunit": {
-          "type": "array",
-          "items": { "$ref": "#/definitions/siunit_def" }
-          }
-        }
-    },
-    "siunit": { "$ref": "#/definitions/siunit_def" },
-    "siunitstr": { "type": "string" },
-    "siunitref": {
-      "type": "string",
-      "format": "uri-reference"
-    },
-    "prefix": { "type": "string" },
-    "power":  { "type": "integer" },
-    "factor": { "$ref": "#/definitions/factor_def" },
-    "factorref": {
-      "type": "string",
-      "format": "uri-reference"
-    },
-    "fromunit":   { "type": "string" },
-    "tounit":     { "type": "string" },
-    "addend":     { "type": "number" },
-    "minuend":    { "type": "number" },
-    "subtrahend": { "type": "number" },
-    "multiplier": { "type": "number" },
-    "dividend":   { "type": "number" },
-    "divisor":    { "type": "number" },
-    "exact":      { "type": "boolean" }
-  }
+    "abbrev":        { "$ref": "#/definitions/abbrev" },
+    "addend":        { "$ref": "#/definitions/addend" },
+    "dividend":      { "$ref": "#/definitions/dividend" },
+    "divisor":       { "$ref": "#/definitions/divisor" },
+    "exact":         { "$ref": "#/definitions/exact" },
+    "factorref":     { "$ref": "#/definitions/factorref" },
+    "fromunit":      { "$ref": "#/definitions/fromunit" },
+    "minuend":       { "$ref": "#/definitions/minuend" },
+    "multiplier":    { "$ref": "#/definitions/multiplier" },
+    "name":          { "$ref": "#/definitions/name" },
+    "power":         { "$ref": "#/definitions/power" },
+    "prefix":        { "$ref": "#/definitions/prefix" },
+    "quantity":      { "$ref": "#/definitions/quantity" },
+    "quantityref":   { "$ref": "#/definitions/quantityref" },
+    "siunitref":     { "$ref": "#/definitions/siunitref" },
+    "siunitstr":     { "$ref": "#/definitions/siunitstr" },
+    "subtrahend":    { "$ref": "#/definitions/subtrahend" },
+    "symbol":        { "$ref": "#/definitions/symbol" },
+    "tounit":        { "$ref": "#/definitions/tounit" },
+    "unitref":       { "$ref": "#/definitions/unitref" },
+    "unitstr":       { "$ref": "#/definitions/unitstr" },
+    "unitsystem":    { "$ref": "#/definitions/unitsystem" },
+    "unitsystemref": { "$ref": "#/definitions/unitsystemref" },
+
+    "factor": { "$ref": "#/definitions/factor" },
+    "siunit":        { "$ref": "#/definitions/siunit" },
+    "unitinsi":      { "$ref": "#/definitions/unitinsi" }
+  },
+  "additionalProperties": false
 }
 
