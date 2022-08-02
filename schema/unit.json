@@ -13,9 +13,13 @@
     "factorref":     { "type": "string", "format": "uri-reference" },
     "fromunit":      { "type": "string" },
     "minuend":       { "type": "number" },
-    "multiplier":    { "type": "number" },
+    "multiplier":    {
+      "anyOf": [
+        { "type": "number" },
+        { "type": "string" }
+      ]
+    },
     "name":          { "type": "string" },
-    "power":         { "type": "integer" },
     "prefix":        { "type": "string" },
     "quantity":      { "type": "string" },
     "quantityref":   { "type": "string", "format": "uri-reference" },
@@ -29,6 +33,19 @@
     "unitsystem":    { "type": "string" },
     "unitsystemref": { "type": "string", "format": "uri-reference", "enum": ["sci:imperial"] },
 
+    "power": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "numerator": { "type": "integer" }
+          }
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
     "factor": {
       "type": "object",
       "properties": {
@@ -63,8 +80,54 @@
           "items": { "$ref": "#/definitions/siunit" }
         }
       }
+    },
+    "unitinsi": {
+      "type": "object",
+      "properties": {
+        "@id": { "type": "string" },
+        "factor": { "$ref": "#/definitions/factor" },
+        "siunit": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/siunit" }
+        }
+      }
+    },
+    "unit": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "@id":           { "type": "string", "default": "" },
+          "abbrev":        { "$ref": "#/definitions/abbrev" },
+          "addend":        { "$ref": "#/definitions/addend" },
+          "dividend":      { "$ref": "#/definitions/dividend" },
+          "divisor":       { "$ref": "#/definitions/divisor" },
+          "exact":         { "$ref": "#/definitions/exact" },
+          "factorref":     { "$ref": "#/definitions/factorref" },
+          "fromunit":      { "$ref": "#/definitions/fromunit" },
+          "minuend":       { "$ref": "#/definitions/minuend" },
+          "multiplier":    { "$ref": "#/definitions/multiplier" },
+          "name":          { "$ref": "#/definitions/name" },
+          "power":         { "$ref": "#/definitions/power" },
+          "prefix":        { "$ref": "#/definitions/prefix" },
+          "quantity":      { "$ref": "#/definitions/quantity" },
+          "quantityref":   { "$ref": "#/definitions/quantityref" },
+          "siunitref":     { "$ref": "#/definitions/siunitref" },
+          "siunitstr":     { "$ref": "#/definitions/siunitstr" },
+          "subtrahend":    { "$ref": "#/definitions/subtrahend" },
+          "symbol":        { "$ref": "#/definitions/symbol" },
+          "tounit":        { "$ref": "#/definitions/tounit" },
+          "unitref":       { "$ref": "#/definitions/unitref" },
+          "unitstr":       { "$ref": "#/definitions/unitstr" },
+          "unitsystem":    { "$ref": "#/definitions/unitsystem" },
+          "unitsystemref": { "$ref": "#/definitions/unitsystemref" },
+          "factor":        { "$ref": "#/definitions/factor" },
+          "siunit":        { "$ref": "#/definitions/siunit" },
+          "unitinsi":      { "$ref": "#/definitions/unitinsi" }
+        }
+      }
     }
   },
+
 
   "type": "object",
   "properties": {
@@ -72,10 +135,7 @@
       "$ref": "scidata.context.json#/definitions/context",
       "default": ["http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
     },
-    "@id": { 
-      "type": "string",
-      "default": ""
-     },
+    "@id":           { "type": "string", "default": "" },
     "abbrev":        { "$ref": "#/definitions/abbrev" },
     "addend":        { "$ref": "#/definitions/addend" },
     "dividend":      { "$ref": "#/definitions/dividend" },
@@ -99,8 +159,7 @@
     "unitstr":       { "$ref": "#/definitions/unitstr" },
     "unitsystem":    { "$ref": "#/definitions/unitsystem" },
     "unitsystemref": { "$ref": "#/definitions/unitsystemref" },
-
-    "factor": { "$ref": "#/definitions/factor" },
+    "factor":        { "$ref": "#/definitions/factor" },
     "siunit":        { "$ref": "#/definitions/siunit" },
     "unitinsi":      { "$ref": "#/definitions/unitinsi" }
   },
