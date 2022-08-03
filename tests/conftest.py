@@ -24,3 +24,11 @@ def fixture__value_schema():
     value_path = "../schema/value.json"
     schema_file = this_file.parents[0] / pathlib.Path(value_path)
     return json.loads(schema_file.read_text())
+
+
+@pytest.fixture(name="parameter_schema")
+def fixture__parameter_schema():
+    this_file = pathlib.Path(__file__)
+    parameter_path = "../schema/parameter.json"
+    schema_file = this_file.parents[0] / pathlib.Path(parameter_path)
+    return json.loads(schema_file.read_text())
