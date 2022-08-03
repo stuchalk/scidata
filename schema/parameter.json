@@ -1,75 +1,89 @@
 {
+  "$id": "scidata.parameter.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Parameter Schema",
   "description": "JSON schema for a parameter",
-  "type": "object",
   "definitions": {
-    "parameterValue_def": {
+    "conditions":   { "type": "array", "items": { "type": "string" }},
+    "name":         { "type": "string" },
+    "outcome":      { "type": "string" },
+    "property":     { "type": "string" },
+    "propertyref":  { "type": "string" },
+    "quantity":     { "type": "string" },
+    "quantitykind": { "type": "string" },
+    "quantityref":  { "type": "string" },
+    "scope":        { "type": "string" },
+    "source":       { "type": "string" },
+    "value": {
+      "anyOf": [
+        { "$ref": "scidata.value.json#/properties/numericvalue" },
+        { "$ref": "scidata.value.json#/properties/textstring" }
+      ]
+    },
+    "valuearray": {
+      "anyOf": [
+        { "$ref": "scidata.value.json#/properties/numericvaluearray" },
+        { "$ref": "scidata.value.json#/properties/textstringarray" }
+      ]
+    },
+
+    "parameter": {
       "type": "object",
       "properties": {
-        "@id": { "type": "string" },
-        "name": { "type": "string" },
-        "scope": { "type": "string" },
-        "source": { "type": "string" },
-        "quantity": { "type": "string" },
-        "quantityref": { "type": "string" },
-        "property": { "type": "string" },
-        "propertyref": { "type": "string" },
-        "conditions": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "value": {
-          "oneOf": [
-            { "$ref": "scidata.value.json#/properties/numericvalue" },
-            { "$ref": "scidata.value.json#/properties/textstring" }
-          ]
-        }
+        "@id":          { "type": "string" },
+        "conditions":   { "$ref": "#/definitions/conditions" },
+        "name":         { "$ref": "#/definitions/name" },
+        "property":     { "$ref": "#/definitions/property" },
+        "propertyref":  { "$ref": "#/definitions/propertyref" },
+        "quantity":     { "$ref": "#/definitions/quantity" },
+        "quantitykind": { "$ref": "#/definitions/quantitykind" },
+        "quantityref":  { "$ref": "#/definitions/quantityref" },
+        "scope":        { "$ref": "#/definitions/scope" },
+        "source":       { "$ref": "#/definitions/source" },
+        "value":        { "$ref": "#/definitions/value" }
       }
     },
-    "parameterArray_def": {
+
+    "parameterarray": {
       "type": "object",
       "properties": {
-        "@id": { "type": "string" },
-        "name": { "type": "string" },
-        "scope": { "$ref": "string" },
-        "source": { "type": "string" },
-        "quantity": { "type": "string" },
-        "quantityref": { "type": "string" },
-        "property": { "type": "string" },
-        "propertyref": { "type": "string" },
-        "conditions": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "valuearray": {
-          "oneOf": [
-            { "$ref": "sciatat.value.json#/properties/numericvaluearray" },
-            { "$ref": "scidata.value.json#/properties/textstringarray" }
-          ]
-        }
+        "@id":          { "type": "string" },
+        "conditions":   { "$ref": "#/definitions/conditions" },
+        "name":         { "$ref": "#/definitions/name" },
+        "property":     { "$ref": "#/definitions/property" },
+        "propertyref":  { "$ref": "#/definitions/propertyref" },
+        "quantity":     { "$ref": "#/definitions/quantity" },
+        "quantitykind": { "$ref": "#/definitions/quantitykind" },
+        "quantityref":  { "$ref": "#/definitions/quantityref" },
+        "scope":        { "$ref": "#/definitions/scope" },
+        "source":       { "$ref": "#/definitions/source" },
+        "valuearray":   { "$ref": "#/definitions/valuearray" }
       }
     }
   },
+
+  "type": "object",
   "properties": {
     "@context": {
-      "$ref": "scidata.context.json#/definitions/context_def",
+      "$ref": "scidata.context.json#/definitions/context",
       "default": [
         "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld"
       ]
     },
-    "@id": {
-      "type": "string",
-      "default": ""
-    },
-    "scope": { "type": "string" },
-    "source": { "type": "string" },
-    "quantity": { "type": "string" },
-    "quantityref": { "type": "string" },
-    "property": { "type": "string" },
-    "propertyref": { "type": "string" },
-    "parameter": { "$ref": "#/definitions/parameterValue_def" },
-    "parameterArray":  { "$ref": "#/definitions/parameterArray_def" }
-
-  }
+    "@id": { "type": "string", "default": "" },
+    "conditions":     { "$ref": "#/definitions/conditions" },
+    "name":           { "$ref": "#/definitions/name" },
+    "parameter":      { "$ref": "#/definitions/parameter" },
+    "parameterarray": { "$ref": "#/definitions/parameterarray" },
+    "property":       { "$ref": "#/definitions/property" },
+    "propertyref":    { "$ref": "#/definitions/propertyref" },
+    "quantity":       { "$ref": "#/definitions/quantity" },
+    "quantitykind":   { "$ref": "#/definitions/quantitykind" },
+    "quantityref":    { "$ref": "#/definitions/quantityref" },
+    "scope":          { "$ref": "#/definitions/scope" },
+    "source":         { "$ref": "#/definitions/source" },
+    "value":          { "$ref": "#/definitions/value" },
+    "valuearray":     { "$ref": "#/definitions/valuearray" }
+  },
+  "additionalProperties": false
 }
