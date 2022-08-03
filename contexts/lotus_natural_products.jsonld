@@ -1,1 +1,310 @@
-{"@context":{"@vocab":"https://www.w3.org/2001/XMLSchema#","sdo":"https://stuchalk.github.io/scidata/ontology/scidata.owl#","mi":"http://purl.obolibrary.org/obo/mi.owl#","ss":"https://semanticscience.org/ontology/sio.owl#","edam":"https://edamontology.org/EDAM.owl#","mesh":"https://purl.bioontology.org/ontology/MESH","lotus_id":{"@id":"test:09999","@type":"string"},"npl_score":{"@id":"test:09999","@type":"string"},"inchikey":{"@id":"mi:MI_1101","@type":"string"},"smiles":{"@id":"mi:MI_2039","@type":"string"},"inchi":{"@id":"mi:MI_2010","@type":"string"},"iupac_name":{"@id":"ss:CHEMINF_000107","@type":"string"},"cas":{"@id":"edam:data_1002","@type":"string"},"molecular_formula":{"@id":"ss:CHEMINF_000042","@type":"string"},"molecular_weight":{"@id":"mesh:D008970","@type":"string"},"npl_noh_score":{"@id":"test:09999","@type":"string"},"npl_sugar_score":{"@id":"test:09999","@type":"string"},"wikidata_id":{"@id":"ss:CHEMINF_000567","@type":"string"},"contains_sugar":{"@id":"test:09999","@type":"string"},"heavy_atom_number":{"@id":"ss:CHEMINF_000300","@type":"string"},"inchi2D":{"@id":"test:09999","@type":"string"},"inchikey2D":{"@id":"test:09999","@type":"string"},"smiles2D":{"@id":"test:09999","@type":"string"},"sugar_free_smiles":{"@id":"test:09999","@type":"string"},"traditional_name":{"@id":"edam:data_0990","@type":"string"},"synonyms":{"@id":"ss:SIO_000122","@type":"string"},"contains_ring_sugars":{"@id":"test:09999","@type":"string"},"contains_linear_sugars":{"@id":"test:09999","@type":"string"},"number_of_carbons":{"@id":"test:09999","@type":"string"},"number_of_nitrogens":{"@id":"test:09999","@type":"string"},"number_of_rings":{"@id":"test:09999","@type":"string"},"max_number_of_rings":{"@id":"test:09999","@type":"string"},"min_number_of_rings":{"@id":"test:09999","@type":"string"},"number_repeated_fragments":{"@id":"test:09999","@type":"string"},"sugar_free_heavy_atom_number":{"@id":"test:09999","@type":"string"},"sugar_free_total_atom_number":{"@id":"test:09999","@type":"string"},"total_atom_number":{"@id":"ss:CHEMINF_000263","@type":"string"},"murko_framework":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyNPclassifierPathway":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyNPclassifierSuperclass":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyNPclassifierClass":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyClassyfireKingdom":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyClassyfireSuperclass":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyClassyfireClass":{"@id":"test:09999","@type":"string"},"chemicalTaxonomyClassyfireDirectParent":{"@id":"test:09999","@type":"string"},"allChemClassifications":{"@id":"test:09999","@type":"@list"},"allTaxa":{"@id":"test:09999","@type":"string"},"alogp":{"@id":"ss:CHEMINF_000295","@type":"string"},"alogp2":{"@id":"test:09999","@type":"string"},"amralogp":{"@id":"ss:CHEMINF_000001","@type":"string"},"apol":{"@id":"ss:CHEMINF_000002","@type":"string"},"bcutDescriptor":{"@id":"ss:CHEMINF_001500","@type":"string"},"bpol":{"@id":"ss:CHEMINF_000179","@type":"string"},"eccentricConnectiityIndexDescriptor":{"@id":"ss:CHEMINF_000192","@type":"string"},"fmfDescriptor":{"@id":"test:09999","@type":"string"},"fragmentComplexityDescriptor":{"@id":"ss:CHEMINF_000180","@type":"string"},"gravitationalIndexHeavyAtoms":{"@id":"ss:CHEMINF_001510","@type":"string"},"hBondAcceptorCount":{"@id":"ss:CHEMINF_000245","@type":"string"},"hBondDonorCount":{"@id":"ss:CHEMINF_000244","@type":"string"},"hybridizationRatioDescriptor":{"@id":"ss:CHEMINF_001542","@type":"string"},"kappaShapeIndex1":{"@id":"ss:CHEMINF_001543","@type":"string"},"kappaShapeIndex2":{"@id":"ss:CHEMINF_001543","@type":"string"},"kappaShapeIndex3":{"@id":"ss:CHEMINF_001543","@type":"string"},"manholdlogp":{"@id":"ss:CHEMINF_000187","@type":"string"},"petitjeanNumber":{"@id":"ss:CHEMINF_000184","@type":"string"},"petitjeanShapeTopo":{"@id":"ss:CHEMINF_000182","@type":"string"},"petitjeanShapeGeom":{"@id":"ss:CHEMINF_000183","@type":"string"},"lipinskiRuleOf5Failures":{"@id":"ss:CHEMINF_000367","@type":"string"},"vabcDescriptor":{"@id":"test:09999","@type":"string"},"weinerPathNumber":{"@id":"ss:CHEMINF_000117","@type":"string"},"weinerPolarityNumber":{"@id":"ss:CHEMINF_000137","@type":"string"},"xlogp":{"@id":"ss:CHEMINF_000186","@type":"string"},"zagrebIndex":{"@id":"ss:CHEMINF_000046","@type":"string"},"bond_count":{"@id":"ss:CHEMINF_000233","@type":"string"},"fsp3":{"@id":"test:09999","@type":"string"},"numberSpiroAtoms":{"@id":"test:09999","@type":"string"},"vertexAdjMagnitude":{"@id":"test:09999","@type":"string"},"topoPSA":{"@id":"ss:CHEMINF_000152","@type":"string"},"tpsaEfficiency":{"@id":"test:09999","@type":"string"},"Tanimoto":{"@id":"test:09999","@type":"string"},"number_of_oxygens":{"@id":"ss:CHEMINF_000449","@type":"string"}}}
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mi": "http://purl.obolibrary.org/obo/mi.owl#",
+        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "edam": "https://edamontology.org/EDAM.owl#",
+        "mesh": "https://purl.bioontology.org/ontology/MESH",
+        "lotus_id": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "npl_score": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "inchikey": {
+            "@id": "mi:MI_1101",
+            "@type": "string"
+        },
+        "smiles": {
+            "@id": "mi:MI_2039",
+            "@type": "string"
+        },
+        "inchi": {
+            "@id": "mi:MI_2010",
+            "@type": "string"
+        },
+        "iupac_name": {
+            "@id": "ss:CHEMINF_000107",
+            "@type": "string"
+        },
+        "cas": {
+            "@id": "edam:data_1002",
+            "@type": "string"
+        },
+        "molecular_formula": {
+            "@id": "ss:CHEMINF_000042",
+            "@type": "string"
+        },
+        "molecular_weight": {
+            "@id": "mesh:D008970",
+            "@type": "string"
+        },
+        "npl_noh_score": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "npl_sugar_score": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "wikidata_id": {
+            "@id": "ss:CHEMINF_000567",
+            "@type": "string"
+        },
+        "contains_sugar": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "heavy_atom_number": {
+            "@id": "ss:CHEMINF_000300",
+            "@type": "string"
+        },
+        "inchi2D": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "inchikey2D": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "smiles2D": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "sugar_free_smiles": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "traditional_name": {
+            "@id": "edam:data_0990",
+            "@type": "string"
+        },
+        "synonyms": {
+            "@id": "ss:SIO_000122",
+            "@type": "string"
+        },
+        "contains_ring_sugars": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "contains_linear_sugars": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "number_of_carbons": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "number_of_nitrogens": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "number_of_rings": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "max_number_of_rings": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "min_number_of_rings": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "number_repeated_fragments": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "sugar_free_heavy_atom_number": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "sugar_free_total_atom_number": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "total_atom_number": {
+            "@id": "ss:CHEMINF_000263",
+            "@type": "string"
+        },
+        "murko_framework": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyNPclassifierPathway": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyNPclassifierSuperclass": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyNPclassifierClass": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyClassyfireKingdom": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyClassyfireSuperclass": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyClassyfireClass": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "chemicalTaxonomyClassyfireDirectParent": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "allChemClassifications": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "allTaxa": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "alogp": {
+            "@id": "ss:CHEMINF_000295",
+            "@type": "string"
+        },
+        "alogp2": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "amralogp": {
+            "@id": "ss:CHEMINF_000001",
+            "@type": "string"
+        },
+        "apol": {
+            "@id": "ss:CHEMINF_000002",
+            "@type": "string"
+        },
+        "bcutDescriptor": {
+            "@id": "ss:CHEMINF_001500",
+            "@type": "string"
+        },
+        "bpol": {
+            "@id": "ss:CHEMINF_000179",
+            "@type": "string"
+        },
+        "eccentricConnectiityIndexDescriptor": {
+            "@id": "ss:CHEMINF_000192",
+            "@type": "string"
+        },
+        "fmfDescriptor": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "fragmentComplexityDescriptor": {
+            "@id": "ss:CHEMINF_000180",
+            "@type": "string"
+        },
+        "gravitationalIndexHeavyAtoms": {
+            "@id": "ss:CHEMINF_001510",
+            "@type": "string"
+        },
+        "hBondAcceptorCount": {
+            "@id": "ss:CHEMINF_000245",
+            "@type": "string"
+        },
+        "hBondDonorCount": {
+            "@id": "ss:CHEMINF_000244",
+            "@type": "string"
+        },
+        "hybridizationRatioDescriptor": {
+            "@id": "ss:CHEMINF_001542",
+            "@type": "string"
+        },
+        "kappaShapeIndex1": {
+            "@id": "ss:CHEMINF_001543",
+            "@type": "string"
+        },
+        "kappaShapeIndex2": {
+            "@id": "ss:CHEMINF_001543",
+            "@type": "string"
+        },
+        "kappaShapeIndex3": {
+            "@id": "ss:CHEMINF_001543",
+            "@type": "string"
+        },
+        "manholdlogp": {
+            "@id": "ss:CHEMINF_000187",
+            "@type": "string"
+        },
+        "petitjeanNumber": {
+            "@id": "ss:CHEMINF_000184",
+            "@type": "string"
+        },
+        "petitjeanShapeTopo": {
+            "@id": "ss:CHEMINF_000182",
+            "@type": "string"
+        },
+        "petitjeanShapeGeom": {
+            "@id": "ss:CHEMINF_000183",
+            "@type": "string"
+        },
+        "lipinskiRuleOf5Failures": {
+            "@id": "ss:CHEMINF_000367",
+            "@type": "string"
+        },
+        "vabcDescriptor": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "weinerPathNumber": {
+            "@id": "ss:CHEMINF_000117",
+            "@type": "string"
+        },
+        "weinerPolarityNumber": {
+            "@id": "ss:CHEMINF_000137",
+            "@type": "string"
+        },
+        "xlogp": {
+            "@id": "ss:CHEMINF_000186",
+            "@type": "string"
+        },
+        "zagrebIndex": {
+            "@id": "ss:CHEMINF_000046",
+            "@type": "string"
+        },
+        "bond_count": {
+            "@id": "ss:CHEMINF_000233",
+            "@type": "string"
+        },
+        "fsp3": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "numberSpiroAtoms": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "vertexAdjMagnitude": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "topoPSA": {
+            "@id": "ss:CHEMINF_000152",
+            "@type": "string"
+        },
+        "tpsaEfficiency": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "Tanimoto": {
+            "@id": "test:09999",
+            "@type": "string"
+        },
+        "number_of_oxygens": {
+            "@id": "ss:CHEMINF_000449",
+            "@type": "string"
+        }
+    }
+}
