@@ -1,0 +1,159 @@
+Prefix(:=<https://stuchalk.github.io/scidata/ontology/chemtwin.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://stuchalk.github.io/scidata/ontology/chemtwin.owl>
+
+Declaration(Class(:atom))
+Declaration(Class(:bond))
+Declaration(Class(:bromine))
+Declaration(Class(:carbon))
+Declaration(Class(:chlorine))
+Declaration(Class(:covalentDoubleBond))
+Declaration(Class(:covalentSingleBond))
+Declaration(Class(:covalentTripleBond))
+Declaration(Class(:element))
+Declaration(Class(:fluorine))
+Declaration(Class(:hydrogen))
+Declaration(Class(:ionicBond))
+Declaration(Class(:molecule))
+Declaration(Class(:nitrogen))
+Declaration(Class(:oxygen))
+Declaration(ObjectProperty(:hasBondedAtom))
+Declaration(ObjectProperty(:hasConstituentAtom))
+Declaration(ObjectProperty(:hasConstituentBond))
+Declaration(ObjectProperty(:isBondedAtomOf))
+Declaration(ObjectProperty(:isConstituentAtomOf))
+Declaration(ObjectProperty(:isConstituentBondOf))
+Declaration(DataProperty(:hasAtomicCharge))
+Declaration(DataProperty(:hasAtomicNumber))
+Declaration(DataProperty(:hasBondOrder))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasBondedAtom (:hasBondedAtom)
+
+InverseObjectProperties(:hasBondedAtom :isBondedAtomOf)
+ObjectPropertyDomain(:hasBondedAtom :bond)
+ObjectPropertyRange(:hasBondedAtom :atom)
+
+# Object Property: :hasConstituentAtom (:hasConstituentAtom)
+
+InverseObjectProperties(:hasConstituentAtom :isConstituentAtomOf)
+ObjectPropertyDomain(:hasConstituentAtom :molecule)
+ObjectPropertyRange(:hasConstituentAtom :atom)
+
+# Object Property: :hasConstituentBond (:hasConstituentBond)
+
+InverseObjectProperties(:hasConstituentBond :isConstituentBondOf)
+ObjectPropertyDomain(:hasConstituentBond :molecule)
+ObjectPropertyRange(:hasConstituentBond :bond)
+
+# Object Property: :isBondedAtomOf (:isBondedAtomOf)
+
+ObjectPropertyDomain(:isBondedAtomOf :atom)
+ObjectPropertyRange(:isBondedAtomOf :bond)
+
+# Object Property: :isConstituentAtomOf (:isConstituentAtomOf)
+
+ObjectPropertyDomain(:isConstituentAtomOf :atom)
+ObjectPropertyRange(:isConstituentAtomOf :molecule)
+
+# Object Property: :isConstituentBondOf (:isConstituentBondOf)
+
+ObjectPropertyDomain(:isConstituentBondOf :bond)
+ObjectPropertyRange(:isConstituentBondOf :molecule)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasAtomicCharge (:hasAtomicCharge)
+
+DataPropertyDomain(:hasAtomicCharge :atom)
+DataPropertyRange(:hasAtomicCharge xsd:int)
+
+# Data Property: :hasAtomicNumber (:hasAtomicNumber)
+
+DataPropertyDomain(:hasAtomicNumber :atom)
+DataPropertyRange(:hasAtomicNumber xsd:positiveInteger)
+
+# Data Property: :hasBondOrder (:hasBondOrder)
+
+DataPropertyDomain(:hasBondOrder :bond)
+DataPropertyRange(:hasBondOrder xsd:positiveInteger)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :bromine (:bromine)
+
+SubClassOf(:bromine :atom)
+SubClassOf(:bromine :element)
+
+# Class: :carbon (:carbon)
+
+SubClassOf(:carbon :atom)
+SubClassOf(:carbon :element)
+
+# Class: :chlorine (:chlorine)
+
+SubClassOf(:chlorine :atom)
+SubClassOf(:chlorine :element)
+
+# Class: :covalentDoubleBond (double bond)
+
+AnnotationAssertion(rdfs:label :covalentDoubleBond "double bond"@en)
+EquivalentClasses(:covalentDoubleBond DataExactCardinality(2 :hasBondOrder xsd:int))
+SubClassOf(:covalentDoubleBond :bond)
+
+# Class: :covalentSingleBond (single bond)
+
+AnnotationAssertion(rdfs:label :covalentSingleBond "single bond"@en)
+EquivalentClasses(:covalentSingleBond DataExactCardinality(1 :hasBondOrder xsd:int))
+SubClassOf(:covalentSingleBond :bond)
+
+# Class: :covalentTripleBond (triple bond)
+
+AnnotationAssertion(rdfs:label :covalentTripleBond "triple bond"@en)
+EquivalentClasses(:covalentTripleBond DataExactCardinality(3 :hasBondOrder xsd:int))
+SubClassOf(:covalentTripleBond :bond)
+
+# Class: :fluorine (:fluorine)
+
+SubClassOf(:fluorine :atom)
+SubClassOf(:fluorine :element)
+
+# Class: :hydrogen (:hydrogen)
+
+SubClassOf(:hydrogen :atom)
+SubClassOf(:hydrogen :element)
+
+# Class: :ionicBond (ionic bond)
+
+AnnotationAssertion(rdfs:label :ionicBond "ionic bond")
+EquivalentClasses(:ionicBond DataSomeValuesFrom(:hasAtomicCharge xsd:int))
+SubClassOf(:ionicBond :bond)
+
+# Class: :nitrogen (:nitrogen)
+
+SubClassOf(:nitrogen :atom)
+SubClassOf(:nitrogen :element)
+
+# Class: :oxygen (:oxygen)
+
+SubClassOf(:oxygen :atom)
+SubClassOf(:oxygen :element)
+
+
+)
