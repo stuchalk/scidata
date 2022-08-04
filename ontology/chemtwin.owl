@@ -25,6 +25,9 @@
         <Class IRI="#carbon"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#carbonylGroup"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#chlorine"/>
     </Declaration>
     <Declaration>
@@ -41,6 +44,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#fluorine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#functionalGroup"/>
     </Declaration>
     <Declaration>
         <Class IRI="#hydrogen"/>
@@ -68,6 +74,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasConstituentBond"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunctionalGroup"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isBondedAtomOf"/>
@@ -162,6 +171,10 @@
         <Class IRI="#element"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#carbonylGroup"/>
+        <Class IRI="#functionalGroup"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#chlorine"/>
         <Class IRI="#atom"/>
     </SubClassOf>
@@ -250,6 +263,10 @@
         <Class IRI="#molecule"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFunctionalGroup"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isBondedAtomOf"/>
         <Class IRI="#atom"/>
     </ObjectPropertyDomain>
@@ -280,6 +297,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasConstituentBond"/>
         <Class IRI="#bond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFunctionalGroup"/>
+        <Class IRI="#functionalGroup"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBondedAtomOf"/>
