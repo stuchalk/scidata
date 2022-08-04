@@ -1,159 +1,296 @@
-Prefix(:=<https://stuchalk.github.io/scidata/ontology/chemtwin.owl#>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://stuchalk.github.io/scidata/ontology/chemtwin.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bromine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chlorine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#covalentDoubleBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#covalentSingleBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#covalentTripleBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fluorine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ionicBond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#molecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nitrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oxygen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBondedAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConstituentAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConstituentBond"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBondedAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstituentAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstituentBondOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAtomicCharge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAtomicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBondOrder"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#covalentDoubleBond"/>
+        <DataExactCardinality cardinality="2">
+            <DataProperty IRI="#hasBondOrder"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#covalentSingleBond"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasBondOrder"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#covalentTripleBond"/>
+        <DataExactCardinality cardinality="3">
+            <DataProperty IRI="#hasBondOrder"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ionicBond"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAtomicCharge"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#bromine"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bromine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carbon"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carbon"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chlorine"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chlorine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#covalentDoubleBond"/>
+        <Class IRI="#bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#covalentSingleBond"/>
+        <Class IRI="#bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#covalentTripleBond"/>
+        <Class IRI="#bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluorine"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluorine"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hydrogen"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hydrogen"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ionicBond"/>
+        <Class IRI="#bond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nitrogen"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nitrogen"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oxygen"/>
+        <Class IRI="#atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oxygen"/>
+        <Class IRI="#element"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBondedAtom"/>
+        <ObjectProperty IRI="#isBondedAtomOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasConstituentAtom"/>
+        <ObjectProperty IRI="#isConstituentAtomOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasConstituentBond"/>
+        <ObjectProperty IRI="#isConstituentBondOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBondedAtom"/>
+        <Class IRI="#bond"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConstituentAtom"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConstituentBond"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBondedAtomOf"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConstituentAtomOf"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConstituentBondOf"/>
+        <Class IRI="#bond"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBondedAtom"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConstituentAtom"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConstituentBond"/>
+        <Class IRI="#bond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBondedAtomOf"/>
+        <Class IRI="#bond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConstituentAtomOf"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConstituentBondOf"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAtomicCharge"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAtomicNumber"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBondOrder"/>
+        <Class IRI="#bond"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAtomicCharge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAtomicNumber"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBondOrder"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#covalentDoubleBond</IRI>
+        <Literal xml:lang="en">double bond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#covalentSingleBond</IRI>
+        <Literal xml:lang="en">single bond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#covalentTripleBond</IRI>
+        <Literal xml:lang="en">triple bond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ionicBond</IRI>
+        <Literal>ionic bond</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
-Ontology(<https://stuchalk.github.io/scidata/ontology/chemtwin.owl>
 
-Declaration(Class(:atom))
-Declaration(Class(:bond))
-Declaration(Class(:bromine))
-Declaration(Class(:carbon))
-Declaration(Class(:chlorine))
-Declaration(Class(:covalentDoubleBond))
-Declaration(Class(:covalentSingleBond))
-Declaration(Class(:covalentTripleBond))
-Declaration(Class(:element))
-Declaration(Class(:fluorine))
-Declaration(Class(:hydrogen))
-Declaration(Class(:ionicBond))
-Declaration(Class(:molecule))
-Declaration(Class(:nitrogen))
-Declaration(Class(:oxygen))
-Declaration(ObjectProperty(:hasBondedAtom))
-Declaration(ObjectProperty(:hasConstituentAtom))
-Declaration(ObjectProperty(:hasConstituentBond))
-Declaration(ObjectProperty(:isBondedAtomOf))
-Declaration(ObjectProperty(:isConstituentAtomOf))
-Declaration(ObjectProperty(:isConstituentBondOf))
-Declaration(DataProperty(:hasAtomicCharge))
-Declaration(DataProperty(:hasAtomicNumber))
-Declaration(DataProperty(:hasBondOrder))
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-############################
-#   Object Properties
-############################
-
-# Object Property: :hasBondedAtom (:hasBondedAtom)
-
-InverseObjectProperties(:hasBondedAtom :isBondedAtomOf)
-ObjectPropertyDomain(:hasBondedAtom :bond)
-ObjectPropertyRange(:hasBondedAtom :atom)
-
-# Object Property: :hasConstituentAtom (:hasConstituentAtom)
-
-InverseObjectProperties(:hasConstituentAtom :isConstituentAtomOf)
-ObjectPropertyDomain(:hasConstituentAtom :molecule)
-ObjectPropertyRange(:hasConstituentAtom :atom)
-
-# Object Property: :hasConstituentBond (:hasConstituentBond)
-
-InverseObjectProperties(:hasConstituentBond :isConstituentBondOf)
-ObjectPropertyDomain(:hasConstituentBond :molecule)
-ObjectPropertyRange(:hasConstituentBond :bond)
-
-# Object Property: :isBondedAtomOf (:isBondedAtomOf)
-
-ObjectPropertyDomain(:isBondedAtomOf :atom)
-ObjectPropertyRange(:isBondedAtomOf :bond)
-
-# Object Property: :isConstituentAtomOf (:isConstituentAtomOf)
-
-ObjectPropertyDomain(:isConstituentAtomOf :atom)
-ObjectPropertyRange(:isConstituentAtomOf :molecule)
-
-# Object Property: :isConstituentBondOf (:isConstituentBondOf)
-
-ObjectPropertyDomain(:isConstituentBondOf :bond)
-ObjectPropertyRange(:isConstituentBondOf :molecule)
-
-
-############################
-#   Data Properties
-############################
-
-# Data Property: :hasAtomicCharge (:hasAtomicCharge)
-
-DataPropertyDomain(:hasAtomicCharge :atom)
-DataPropertyRange(:hasAtomicCharge xsd:int)
-
-# Data Property: :hasAtomicNumber (:hasAtomicNumber)
-
-DataPropertyDomain(:hasAtomicNumber :atom)
-DataPropertyRange(:hasAtomicNumber xsd:positiveInteger)
-
-# Data Property: :hasBondOrder (:hasBondOrder)
-
-DataPropertyDomain(:hasBondOrder :bond)
-DataPropertyRange(:hasBondOrder xsd:positiveInteger)
-
-
-
-############################
-#   Classes
-############################
-
-# Class: :bromine (:bromine)
-
-SubClassOf(:bromine :atom)
-SubClassOf(:bromine :element)
-
-# Class: :carbon (:carbon)
-
-SubClassOf(:carbon :atom)
-SubClassOf(:carbon :element)
-
-# Class: :chlorine (:chlorine)
-
-SubClassOf(:chlorine :atom)
-SubClassOf(:chlorine :element)
-
-# Class: :covalentDoubleBond (double bond)
-
-AnnotationAssertion(rdfs:label :covalentDoubleBond "double bond"@en)
-EquivalentClasses(:covalentDoubleBond DataExactCardinality(2 :hasBondOrder xsd:int))
-SubClassOf(:covalentDoubleBond :bond)
-
-# Class: :covalentSingleBond (single bond)
-
-AnnotationAssertion(rdfs:label :covalentSingleBond "single bond"@en)
-EquivalentClasses(:covalentSingleBond DataExactCardinality(1 :hasBondOrder xsd:int))
-SubClassOf(:covalentSingleBond :bond)
-
-# Class: :covalentTripleBond (triple bond)
-
-AnnotationAssertion(rdfs:label :covalentTripleBond "triple bond"@en)
-EquivalentClasses(:covalentTripleBond DataExactCardinality(3 :hasBondOrder xsd:int))
-SubClassOf(:covalentTripleBond :bond)
-
-# Class: :fluorine (:fluorine)
-
-SubClassOf(:fluorine :atom)
-SubClassOf(:fluorine :element)
-
-# Class: :hydrogen (:hydrogen)
-
-SubClassOf(:hydrogen :atom)
-SubClassOf(:hydrogen :element)
-
-# Class: :ionicBond (ionic bond)
-
-AnnotationAssertion(rdfs:label :ionicBond "ionic bond")
-EquivalentClasses(:ionicBond DataSomeValuesFrom(:hasAtomicCharge xsd:int))
-SubClassOf(:ionicBond :bond)
-
-# Class: :nitrogen (:nitrogen)
-
-SubClassOf(:nitrogen :atom)
-SubClassOf(:nitrogen :element)
-
-# Class: :oxygen (:oxygen)
-
-SubClassOf(:oxygen :atom)
-SubClassOf(:oxygen :element)
-
-
-)
