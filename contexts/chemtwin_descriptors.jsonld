@@ -39,7 +39,7 @@
             },
             "tautomers": {
                 "@id": "ss:CHEMINF_000202",
-                "@type": "integer"
+                "@type": "nonNegativeInteger"
             },
             "aromatic_rings": {
                 "@id": "ss:CHEMINF_000381",

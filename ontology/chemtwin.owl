@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl">
-    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl#"/>
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -58,6 +58,9 @@
         <Class IRI="#oxygen"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#containsElement"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasBondedAtom"/>
     </Declaration>
     <Declaration>
@@ -76,6 +79,15 @@
         <ObjectProperty IRI="#isConstituentBondOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isElementContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAromaticBondCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAromaticRingCount"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasAtomicCharge"/>
     </Declaration>
     <Declaration>
@@ -83,6 +95,27 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBondOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCovalentDoubleBondCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCovalentSingleBondCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCovalentTripleBondCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalBondCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasXcoordinatePosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYcoordinatePosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasZcoordinatePosition"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#covalentDoubleBond"/>
@@ -185,6 +218,10 @@
         <Class IRI="#element"/>
     </SubClassOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#containsElement"/>
+        <ObjectProperty IRI="#isElementContainedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasBondedAtom"/>
         <ObjectProperty IRI="#isBondedAtomOf"/>
     </InverseObjectProperties>
@@ -197,6 +234,10 @@
         <ObjectProperty IRI="#isConstituentBondOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsElement"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasBondedAtom"/>
         <Class IRI="#bond"/>
     </ObjectPropertyDomain>
@@ -220,6 +261,14 @@
         <ObjectProperty IRI="#isConstituentBondOf"/>
         <Class IRI="#bond"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isElementContainedIn"/>
+        <Class IRI="#element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsElement"/>
+        <Class IRI="#element"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasBondedAtom"/>
         <Class IRI="#atom"/>
@@ -244,6 +293,18 @@
         <ObjectProperty IRI="#isConstituentBondOf"/>
         <Class IRI="#molecule"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isElementContainedIn"/>
+        <Class IRI="#molecule"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAromaticBondCount"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAromaticRingCount"/>
+        <Class IRI="#molecule"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasAtomicCharge"/>
         <Class IRI="#atom"/>
@@ -256,6 +317,46 @@
         <DataProperty IRI="#hasBondOrder"/>
         <Class IRI="#bond"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCovalentDoubleBondCount"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCovalentSingleBondCount"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCovalentTripleBondCount"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalBondCount"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalBondCount"/>
+        <Class IRI="#molecule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasXcoordinatePosition"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYcoordinatePosition"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasZcoordinatePosition"/>
+        <Class IRI="#atom"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAromaticBondCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAromaticRingCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasAtomicCharge"/>
         <Datatype abbreviatedIRI="xsd:int"/>
@@ -266,7 +367,35 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasBondOrder"/>
-        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCovalentDoubleBondCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCovalentSingleBondCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCovalentTripleBondCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalBondCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasXcoordinatePosition"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYcoordinatePosition"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasZcoordinatePosition"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -286,7 +415,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ionicBond</IRI>
-        <Literal>ionic bond</Literal>
+        <Literal xml:lang="en">ionic bond</Literal>
     </AnnotationAssertion>
 </Ontology>
 

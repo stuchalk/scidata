@@ -2,62 +2,65 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "ss": "https://semanticscience.org/ontology/sio.owl#",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "atoms": {"@id": "obo:CHEBI_33250"},
-            "bonds": {"@id": "ss:CHEMINF_000063"},
-            "elements": {"@id": "obo:CHEBI_24431"},
+            "cto": "https://stuchalk.github.io/scidata/ontology/chemtwin.owl#",
+            "atoms": {"@id": "cto:hasConstituentAtom"},
+            "bonds": {"@id": "cto:hasConstituentBond"},
+            "elements": {"@id": "cto:containsElement"},
             "atom": {
-                "@id": "ss:SIO_010037",
+                "@id": "cto:atom",
                 "@type": "@id"
             },
             "bond": {
-                "@id": "ss:SIO_011118",
+                "@id": "cto:bond",
                 "@type": "@id"
             },
             "charge": {
-                "@id": "ss:CHEMINF_000120",
+                "@id": "cto:hasAtomicCharge",
                 "@type": "integer"
             },
-            "bonded": {
-                "@id": "ss:SIO_000132",
+            "bondedatoms": {
+                "@id": "cto:hasBondedAtom",
                 "@type": "@id"
             },
             "element": {
-                "@id": "obo:CHEBI_33250",
+                "@id": "cto:element",
                 "@type": "@id"
             },
             "xcoord": {
-                "@id": "obo:NCIT_C44477",
+                "@id": "cto:hasXcoordinatePosition",
                 "@type": "decimal"
             },
             "ycoord": {
-                "@id": "obo:NCIT_C44478",
+                "@id": "cto:hasYcoordinatePosition",
                 "@type": "decimal"
             },
             "zcoord": {
-                "@id": "obo:NCIT_C44479",
+                "@id": "cto:hasZcoordinatePosition",
                 "@type": "decimal"
             },
             "order": {
-                "@id": "ss:CHEMINF_000062",
-                "@type": "decimal"
+                "@id": "cto:bondOrder",
+                "@type": "integer"
+            },
+            "bondcount": {
+                "@id": "cto:hasTotalBondCount",
+                "@type": "integer"
             },
             "singlebonds": {
-                "@id": "sdo:singlebondcount",
+                "@id": "cto:hasCovalentSingleBondCount",
                 "@type": "integer"
             },
             "doublebonds": {
-                "@id": "sdo:doublebondcount",
+                "@id": "cto:hasCovalentDoubleBondCount",
                 "@type": "integer"
             },
             "triplebonds": {
-                "@id": "sdo:triplebondcount",
-                "@type": "integer"
+                "@id": "cto:hasCovalentTripleBondCount",
+                "@type": "nonNegativeInteger"
             },
             "aromaticbonds": {
-                "@id": "sdo:aromaticbondcount",
-                "@type": "integer"
+                "@id": "cto:hasAromaticBondCount",
+                "@type": "nonNegativeInteger"
             }
         }
     ]

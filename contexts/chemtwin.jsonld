@@ -7,7 +7,7 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "obo": "http://purl.obolibrary.org/obo/",
+            "obo": "https://purl.obolibrary.org/obo/",
             "ss": "https://semanticscience.org/ontology/sio.owl#",
             "iupacname": {
                 "@id": "ss:CHEMINF_000107",
