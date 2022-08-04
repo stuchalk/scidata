@@ -26,6 +26,10 @@
                 "@id": "cto:element",
                 "@type": "@id"
             },
+            "elementType": {
+                "@id": "cto:isElement",
+                "@type": "@id"
+            },
             "xcoord": {
                 "@id": "cto:hasXcoordinatePosition",
                 "@type": "decimal"

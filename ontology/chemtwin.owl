@@ -67,6 +67,9 @@
         <ObjectProperty IRI="#containsElement"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAtom"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasBondedAtom"/>
     </Declaration>
     <Declaration>
@@ -79,6 +82,9 @@
         <ObjectProperty IRI="#hasFunctionalGroup"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isAtomOfElement"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isBondedAtomOf"/>
     </Declaration>
     <Declaration>
@@ -86,6 +92,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isConstituentBondOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isElement"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isElementContainedIn"/>
@@ -235,6 +244,10 @@
         <ObjectProperty IRI="#isElementContainedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAtom"/>
+        <ObjectProperty IRI="#isAtomOfElement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasBondedAtom"/>
         <ObjectProperty IRI="#isBondedAtomOf"/>
     </InverseObjectProperties>
@@ -249,6 +262,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#containsElement"/>
         <Class IRI="#molecule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAtom"/>
+        <Class IRI="#element"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasBondedAtom"/>
@@ -267,6 +284,10 @@
         <Class IRI="#molecule"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAtomOfElement"/>
+        <Class IRI="#atom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isBondedAtomOf"/>
         <Class IRI="#atom"/>
     </ObjectPropertyDomain>
@@ -279,12 +300,20 @@
         <Class IRI="#bond"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isElement"/>
+        <Class IRI="#element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isElementContainedIn"/>
         <Class IRI="#element"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#containsElement"/>
         <Class IRI="#element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAtom"/>
+        <Class IRI="#atom"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasBondedAtom"/>
@@ -301,6 +330,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasFunctionalGroup"/>
         <Class IRI="#functionalGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAtomOfElement"/>
+        <Class IRI="#element"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBondedAtomOf"/>
