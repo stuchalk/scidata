@@ -1,56 +1,89 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Parameter Schema",
-    "description": "JSON schema for a scientific parameter",
-    "required": ["parameter"],
-    "properties": {
-        "parameter": {
-            "type": "object",
-            "required": ["property"],
-            "oneOf": [
-                {
-                    "required": ["value"]
-                },
-                {
-                    "required": ["text"]
-                }
-            ],
-            "properties": {
-                "property": {
-                    "description": "The property that the parameter is about",
-                    "type": "object",
-                    "oneOf": [
-                        {
-                            "required": ["name"]
-                        },
-                        {
-                            "required": ["code"]
-                        }
-                    ],
-                    "properties": {
-                        "name": {
-                            "description": "The name of the measured property",
-                            "type": "string"
-                        },
-                        "code": {
-                            "description": "A unique code identifying a property in a system of properties",
-                            "type": "string"
-                        },
-                        "codeType": {
-                            "description": "The system of properties the property code comes from",
-                            "type": "string"
-                        }
-                    }
-                },
-                "value": {
-                    "description": "A numeric value with or without unit",
-                    "$ref": "https://stuchalk.github.io/scidata/schema/value.json#measuredValue"
-                },
-                "text": {
-                    "description": "A string value",
-                    "type": "string"
-                }
-            }
-        }
+  "$id": "scidata.parameter.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Parameter Schema",
+  "description": "JSON schema for a parameter",
+  "definitions": {
+    "conditions":   { "type": "array", "items": { "type": "string" }},
+    "name":         { "type": "string" },
+    "outcome":      { "type": "string" },
+    "property":     { "type": "string" },
+    "propertyref":  { "type": "string" },
+    "quantity":     { "type": "string" },
+    "quantitykind": { "type": "string" },
+    "quantityref":  { "type": "string" },
+    "scope":        { "type": "string" },
+    "source":       { "type": "string" },
+    "value": {
+      "anyOf": [
+        { "$ref": "scidata.value.json#/properties/numericvalue" },
+        { "$ref": "scidata.value.json#/properties/textstring" }
+      ]
+    },
+    "valuearray": {
+      "anyOf": [
+        { "$ref": "scidata.value.json#/properties/numericvaluearray" },
+        { "$ref": "scidata.value.json#/properties/textstringarray" }
+      ]
+    },
+
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "@id":          { "type": "string" },
+        "conditions":   { "$ref": "#/definitions/conditions" },
+        "name":         { "$ref": "#/definitions/name" },
+        "property":     { "$ref": "#/definitions/property" },
+        "propertyref":  { "$ref": "#/definitions/propertyref" },
+        "quantity":     { "$ref": "#/definitions/quantity" },
+        "quantitykind": { "$ref": "#/definitions/quantitykind" },
+        "quantityref":  { "$ref": "#/definitions/quantityref" },
+        "scope":        { "$ref": "#/definitions/scope" },
+        "source":       { "$ref": "#/definitions/source" },
+        "value":        { "$ref": "#/definitions/value" }
+      }
+    },
+
+    "parameterarray": {
+      "type": "object",
+      "properties": {
+        "@id":          { "type": "string" },
+        "conditions":   { "$ref": "#/definitions/conditions" },
+        "name":         { "$ref": "#/definitions/name" },
+        "property":     { "$ref": "#/definitions/property" },
+        "propertyref":  { "$ref": "#/definitions/propertyref" },
+        "quantity":     { "$ref": "#/definitions/quantity" },
+        "quantitykind": { "$ref": "#/definitions/quantitykind" },
+        "quantityref":  { "$ref": "#/definitions/quantityref" },
+        "scope":        { "$ref": "#/definitions/scope" },
+        "source":       { "$ref": "#/definitions/source" },
+        "valuearray":   { "$ref": "#/definitions/valuearray" }
+      }
     }
+  },
+
+  "type": "object",
+  "properties": {
+    "@context": {
+      "$ref": "scidata.context.json#/definitions/context",
+      "default": [
+        "http://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld"
+      ]
+    },
+    "@id": { "type": "string", "default": "" },
+    "conditions":     { "$ref": "#/definitions/conditions" },
+    "name":           { "$ref": "#/definitions/name" },
+    "parameter":      { "$ref": "#/definitions/parameter" },
+    "parameterarray": { "$ref": "#/definitions/parameterarray" },
+    "property":       { "$ref": "#/definitions/property" },
+    "propertyref":    { "$ref": "#/definitions/propertyref" },
+    "quantity":       { "$ref": "#/definitions/quantity" },
+    "quantitykind":   { "$ref": "#/definitions/quantitykind" },
+    "quantityref":    { "$ref": "#/definitions/quantityref" },
+    "scope":          { "$ref": "#/definitions/scope" },
+    "source":         { "$ref": "#/definitions/source" },
+    "value":          { "$ref": "#/definitions/value" },
+    "valuearray":     { "$ref": "#/definitions/valuearray" }
+  },
+  "additionalProperties": false
 }

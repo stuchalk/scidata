@@ -56,7 +56,7 @@
                 "power": {"numerator": 1}
             }]
         },
-        "conversion": {
+        "factor": {
             "@id": "amu/conversion",
             "fromunit": "g",
             "multiplier": "1.660538921E-27"

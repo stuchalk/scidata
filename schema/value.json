@@ -1,11 +1,12 @@
 {
+  "$id": "scidata.value.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Value Schema",
   "description": "JSON schema for a scientific value",
   "type": "object",
 
   "definitions": {
-    "numericvalue_def": {
+    "numericvalue": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -19,7 +20,7 @@
         "unitref": { "type": "string" }
       }
     },
-    "numericvaluearray_def": {
+    "numericvaluearray": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -42,7 +43,7 @@
       },
       "additionalProperties": true   
     },
-    "textstring_def": {
+    "textstring": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -51,7 +52,7 @@
         "language":  { "type": "string" }
       }
     },
-    "textstringarray_def": {
+    "textstringarray": {
       "type": "object",
       "properties": {
         "@id":    { "type": "string" },
@@ -69,18 +70,7 @@
 
   "properties": {
     "@context": {
-      "type": "array",
-      "items": { 
-        "anyOf" : [ 
-          {
-            "type": "string"
-            }, 
-            {
-              "type": "object",
-              "additionalProperties": true
-            } 
-          ]
-      },
+      "$ref": "scidata.context.json#/definitions/context",
       "default": [
         "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
         "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
@@ -88,15 +78,14 @@
         {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld#"}
       ]
     },
-    "@id": { 
-      "type": "string",
-      "default": ""
-     },
-     "numericvalue": { "$ref": "#/definitions/numericvalue_def" },
-     "numericvaluearray": { "$ref": "#/definitions/numericvaluearray_def" },
-     "textstring": { "$ref": "#/definitions/textstring_def" },
-     "textstringarray": { "$ref": "#/definitions/textstringarray_def" },
-     "value": { "$ref": "#/definitions/numericvalue_def" },
-     "valuearray": { "$ref": "#/definitions/numericvaluearray_def" }
-  }
+    "@id":               { "type": "string", "default": "" },
+    "numericvalue":      { "$ref": "#/definitions/numericvalue" },
+    "numericvaluearray": { "$ref": "#/definitions/numericvaluearray" },
+    "textstring":        { "$ref": "#/definitions/textstring" },
+    "textstringarray":   { "$ref": "#/definitions/textstringarray" },
+    "value":             { "$ref": "#/definitions/numericvalue" },
+    "valuearray":        { "$ref": "#/definitions/numericvaluearray" },
+    "unit":              { "$ref": "scidata.unit.json#/definitions/unit" }
+  },
+  "additionalProperties": false
 }
