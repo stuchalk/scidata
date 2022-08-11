@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://stuchalk.github.io/scidata/ontology/chemelements.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://stuchalk.github.io/scidata/ontology/chemelements.owl"
+     versionIRI="https://stuchalk.github.io/scidata/ontology/chemelements.owl">
+    <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/chemelements.owl"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Created by Stuart Chalk.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is a very small part of the fantastic ChEBI ontology that only has entries for the representation of elements and atoms.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_22927"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_23116"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_24061"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_25805"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_27594"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_33260"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_33262"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_33415"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_33431"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_36892"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_36894"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_49637"/>
+    </Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_22927</AbbreviatedIRI>
+        <Literal>bromine atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_22927</AbbreviatedIRI>
+        <Literal xml:lang="en">bromine atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_23116</AbbreviatedIRI>
+        <Literal xml:lang="en">chlorine atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_24061</AbbreviatedIRI>
+        <Literal xml:lang="en">chlorine atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_24061</AbbreviatedIRI>
+        <Literal xml:lang="en">fluorine atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_25805</AbbreviatedIRI>
+        <Literal xml:lang="en">oxygen atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_27594</AbbreviatedIRI>
+        <Literal xml:lang="en">carbon atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_33260</AbbreviatedIRI>
+        <Literal xml:lang="en">elemental hydrogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_33262</AbbreviatedIRI>
+        <Literal xml:lang="en">elemental oxygen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_33415</AbbreviatedIRI>
+        <Literal xml:lang="en">elemental carbon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_33431</AbbreviatedIRI>
+        <Literal>elemental chlorine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_36892</AbbreviatedIRI>
+        <Literal xml:lang="en">elemental fluorine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_36894</AbbreviatedIRI>
+        <Literal xml:lang="en">elemental bromine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:CHEBI_49637</AbbreviatedIRI>
+        <Literal xml:lang="en">hydrogen atom</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
