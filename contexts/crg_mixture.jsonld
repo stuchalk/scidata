@@ -2,6 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "mix": "https://stuchalk.github.io/scidata/ontology/mixture.owl#",
         "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "igb": "https://goldbook.iupac.org/",
         "name": {
@@ -30,6 +31,18 @@
         },
         "constituent": {
             "@id": "igb:C01281",
+            "@type": "string"
+        },
+        "constituent#": {
+            "@id": "igb:C01281",
+            "@type": "@id"
+        },
+        "constituentNumber": {
+            "@id": "mix:MIX_000008",
+            "@type": "integer"
+        },
+        "constituentNumber#": {
+            "@id": "mix:MIX_000008",
             "@type": "@id"
         }
     }

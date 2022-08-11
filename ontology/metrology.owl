@@ -13,6 +13,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#L"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SI_0001"/>
     </Declaration>
     <Declaration>
@@ -56,6 +59,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SI_0030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dim_length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#l"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#m"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#s"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#t"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#SI_0011"/>
@@ -115,19 +136,51 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#SI_0010"/>
+        <Class IRI="#SI_0008"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0011"/>
+            <Class IRI="#SI_0010"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SI_0008"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#SI_0012"/>
             <Class IRI="#SI_0009"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SI_0010"/>
+        <Class IRI="#SI_0008"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#SI_0020"/>
-            <Class IRI="#SI_0008"/>
+            <ObjectProperty IRI="#SI_0022"/>
+            <Class IRI="#t"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#length"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0011"/>
+            <Class IRI="#SI_0019"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#length"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0012"/>
+            <Class IRI="#dim_length"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#length"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SI_0022"/>
+            <Class IRI="#L"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#L"/>
+        <Class IRI="#SI_0027"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#SI_0006"/>
         <Class IRI="#SI_0005"/>
@@ -167,6 +220,30 @@
     <SubClassOf>
         <Class IRI="#SI_0030"/>
         <Class IRI="#SI_0027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dim_length"/>
+        <Class IRI="#SI_0001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#l"/>
+        <Class IRI="#SI_0028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#length"/>
+        <Class IRI="#SI_0003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#m"/>
+        <Class IRI="#SI_0029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#s"/>
+        <Class IRI="#SI_0029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#t"/>
+        <Class IRI="#SI_0028"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#SI_0010"/>
@@ -264,6 +341,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#L</IRI>
+        <Literal xml:lang="en">L</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0001</IRI>
         <Literal xml:lang="en">dimension</Literal>
     </AnnotationAssertion>
@@ -315,7 +397,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0009</IRI>
-        <Literal>dim_time</Literal>
+        <Literal xml:lang="en">dim_time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -451,6 +533,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SI_0033</IRI>
         <Literal xml:lang="en">isQuantitySymbolOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dim_length</IRI>
+        <Literal xml:lang="en">dim_length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#l</IRI>
+        <Literal xml:lang="en">l</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#length</IRI>
+        <Literal xml:lang="en">The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum, &lt;em&gt;c&lt;/em&gt;, to be 299 792 458 when expressed in the unit m s&lt;sup&gt;-1&lt;/sup&gt;, where the second is defined in terms of the caesium frequency &amp;#916;&amp;#957;&lt;sub&gt;Cs&lt;/sub&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#length</IRI>
+        <Literal xml:lang="en">length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#s</IRI>
+        <Literal xml:lang="en">s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#t</IRI>
+        <Literal xml:lang="en">t</Literal>
     </AnnotationAssertion>
 </Ontology>
 

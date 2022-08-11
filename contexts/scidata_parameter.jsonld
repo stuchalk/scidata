@@ -21,6 +21,10 @@
                 "@id": "sdo:quantity",
                 "@type": "string"
             },
+            "quantity@": {
+                "@id": "sdo:quantity",
+                "@type": "@id"
+            },
             "quantity#": {
                 "@id": "sdo:quantity",
                 "@type": "@id"

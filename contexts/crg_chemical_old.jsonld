@@ -3,7 +3,7 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dc": "https://purl.org/dc/terms/",
-            "obo": "http://purl.obolibrary.org/obo/",
+            "obo": "https://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "compound": {
