@@ -94,10 +94,10 @@
         <ObjectProperty IRI="#isConstituentBondOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isElement"/>
+        <ObjectProperty IRI="#isElementContainedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isElementContainedIn"/>
+        <ObjectProperty IRI="#isElementType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAromaticBondCount"/>
@@ -300,11 +300,11 @@
         <Class IRI="#bond"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isElement"/>
+        <ObjectProperty IRI="#isElementContainedIn"/>
         <Class IRI="#element"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isElementContainedIn"/>
+        <ObjectProperty IRI="#isElementType"/>
         <Class IRI="#element"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>

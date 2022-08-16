@@ -23,11 +23,11 @@
                 "@type": "@id"
             },
             "element": {
-                "@id": "cto:element",
+                "@id": "cto:isAtomOfElement",
                 "@type": "@id"
             },
             "elementType": {
-                "@id": "cto:isElement",
+                "@id": "cto:isElementType",
                 "@type": "@id"
             },
             "xcoord": {
