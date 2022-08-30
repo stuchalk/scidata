@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+            "edam": "https://edamontology.org/",
             "goprocess": {
                 "@id": "edam:data_2582",
                 "@type": "string"
