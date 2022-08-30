@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/targtwin_identifiers.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/targtwin_descriptors.jsonld",
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "obo": "https://purl.obolibrary.org/obo/",
+            "edam": "https://edamontology.org/",
+            "ci": "https://semanticscience.org/ontology/cheminf.owl#",
+            "enm": "https://purl.enanomapper.org/onto/",
+            "name": {
+                "@id": "edam:data_2099",
+                "@type": "string"
+            },
+            "targettype": {
+                "@id": "edam:data_1872",
+                "@type": "string"
+            },
+            "organism": {
+                "@id": "obo:NCIT_C14250",
+                "@type": "string"
+            },
+            "organismTaxonId": {
+                "@id": "obo:NCIT_C164641",
+                "@type": "string"
+            },
+            "chemblId": {
+                "@id": "edam:data_2646",
+                "@type": "string"
+            },
+            "identifiers": "edam:data_0976",
+            "descriptors": "enm:ENM_8000029"
+        }
+    ]
+}

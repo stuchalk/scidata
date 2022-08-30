@@ -1,0 +1,90 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "obo": "https://purl.obolibrary.org/obo/",
+            "ci": "https://semanticscience.org/ontology/cheminf.owl#",
+            "edam": "https://edamontology.org/",
+            "accession_id": {
+                "@id": "obo:NCIT_C25402",
+                "@type": "string"
+            },
+            "cansar-target": {
+                "@id": "edam:data_0842",
+                "@type": "string"
+            },
+            "cgd": {
+                "@id": "data_1031",
+                "@type": "string"
+            },
+            "chembl": {
+                "@id": "edam:data_2646",
+                "@type": "string"
+            },
+            "experssionatlas": {
+                "@id": "edam:data_3568",
+                "@type": "string"
+            },
+            "gene_symbol": {
+                "@id": "edam:data_1026",
+                "@type": "string"
+            },
+            "gene_symbol_other": {
+                "@id": "edam:data_1026",
+                "@type": "string"
+            },
+            "guidetopharmacology": {
+                "@id": "edam:data_0842",
+                "@type": "string"
+            },
+            "intact": {
+                "@id": "edam:data_1130",
+                "@type": "string"
+            },
+            "interpro": {
+                "@id": "edam:data_1133",
+                "@type": "string"
+            },
+            "pdbe": {
+                "@id": "edam:data_1127",
+                "@type": "string"
+            },
+            "pfam": {
+                "@id": "edam:data_1138",
+                "@type": "string"
+            },
+            "pharmgkb": {
+                "@id": "edam:data_2649",
+                "@type": "string"
+            },
+            "pharos": {
+                "@id": "obo:NCIT_C25402",
+                "@type": "string"
+            },
+            "prefname": {
+                "@id": "obo:NCIT_P108",
+                "@type": "string"
+            },
+            "reactome": {
+                "@id": "edam:data_1155",
+                "@type": "string"
+            },
+            "taxid": {
+                "@id": "edam:data_1179",
+                "@type": "string"
+            },
+            "taxid#": {
+                "@id": "edam:data_1179",
+                "@type": "@id"
+            },
+            "uniprot": {
+                "@id": "edam:data_2291",
+                "@type": "string"
+            },
+            "wikipedia": {
+                "@id": "ci:CHEMINF_000410",
+                "@type": "string"
+            }
+        }
+    ]
+}

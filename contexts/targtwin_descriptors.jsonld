@@ -1,0 +1,20 @@
+{
+    "@context": [
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+            "goprocess": {
+                "@id": "edam:data_2582",
+                "@type": "string"
+            },
+            "gofunction": {
+                "@id": "edam:data_2583",
+                "@type": "string"
+            },
+            "gocomponent": {
+                "@id": "edam:data_2705",
+                "@type": "string"
+            }
+        }
+    ]
+}
