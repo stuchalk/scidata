@@ -34,6 +34,14 @@
                 "@id": "sdo:hasDatapoint",
                 "@type": "@id"
             },
+            "quantity": {
+                "@id": "sdo:quantity",
+                "@type": "string"
+            },
+            "quantitykind": {
+                "@id": "sdo:quantityKind",
+                "@type": "string"
+            },
             "conditions": {
                 "@id": "sdo:hasCondition",
                 "@type": "@id"

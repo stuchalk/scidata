@@ -1,12 +1,15 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
+        { "obo": "http://purl.obolibrary.org/obo/" },
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/computer.jsonld/"}
     ],
     "@id": "",
+    "@type": "obo:OBI_0400107",
     "architecture": "x86_64",
     "cpu": {
         "@id": "cpu/1/",
+        "@type": "obo:NCIT_C50332",
         "opmodes": "32-bit, 64-bit",
         "count": 8,
         "speed": "1201.621 MHz",
@@ -21,10 +24,11 @@
     "sockets": 1,
     "cache": {
         "@id": "cache/1/",
-        "l1datacache": "32K",
-        "l1instcache": "32K",
-        "l2cache": "256K",
-        "l3cache": "10240K"
+        "@type": "obo:NCIT_C63626",
+        "l1datacache": "32 kB",
+        "l1instcache": "32 kB",
+        "l2cache": "256 kB",
+        "l3cache": "10240 kB"
     },
     "ram": "4 GB"
 }

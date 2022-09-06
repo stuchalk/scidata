@@ -2,76 +2,77 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "comp": "https://stuchalk.github.io/scidata/ontology/computer.owl#",
+        "fs": "http://www.fairsharing.org/ontology/subject/",
+        "obo": "http://purl.obolibrary.org/obo/",
         "computer": {"@id": "sdo:computer"},
         "architecture": {
-            "@id": "comp:architecture",
+            "@id": "fs:SRAO_0000258",
             "@type": "string"
         },
-        "cpu": {"@id": "comp:centralProcessingUnit"},
+        "cpu": {"@id": "obo:NCIT_C50332"},
         "opmodes": {
-            "@id": "comp:cpuOpModes",
+            "@id": "obo:FOODON_00004084",
             "@type": "string"
         },
         "count": {
-            "@id": "comp:cpuCount",
+            "@id": "obo:NCIT_C25463",
             "@type": "integer"
         },
         "speed": {
-            "@id": "comp:cpuSpeed",
+            "@id": "obo:NCIT_C41146",
             "@type": "string"
         },
         "vendorid": {
-            "@id": "comp:cpuVendorID",
+            "@id": "obo:NCIT_C117200",
             "@type": "string"
         },
         "family": {
-            "@id": "comp:cpuFamily",
+            "@id": "obo:NCIT_C45290",
             "@type": "string"
         },
         "model": {
-            "@id": "comp:cpuModelNumber",
+            "@id": "obo:NCIT_C43383",
             "@type": "string"
         },
         "modelname": {
-            "@id": "comp:cpuModelName",
+            "@id": "obo:NCIT_C43383",
             "@type": "string"
         },
         "byteorder": {
-            "@id": "comp:byteOrder",
+            "@id": "obo:NCIT_C181701",
             "@type": "string"
         },
         "threadspercore": {
-            "@id": "comp:threadsPerCore",
-            "@type": "string"
+            "@id": "obo:NCIT_C25463",
+            "@type": "integer"
         },
         "corespersocket": {
-            "@id": "comp:coresPerSocket",
-            "@type": "string"
+            "@id": "obo:NCIT_C25463",
+            "@type": "integer"
         },
         "sockets": {
-            "@id": "comp:sockets",
-            "@type": "string"
+            "@id": "obo:NCIT_C25463",
+            "@type": "integer"
         },
-        "cache": {"@id": "comp:onboardCache"},
+        "cache": {"@id": "obo:NCIT_C63626"},
         "l1datacache": {
-            "@id": "comp:cacheL1Data",
+            "@id": "obo:NCIT_C63626",
             "@type": "string"
         },
         "l1instcache": {
-            "@id": "comp:cacheL1Instruction",
+            "@id": "obo:NCIT_C63626",
             "@type": "string"
         },
         "l2cache": {
-            "@id": "comp:cacheL2",
+            "@id": "obo:NCIT_C63626",
             "@type": "string"
         },
         "l3cache": {
-            "@id": "comp:cacheL3",
+            "@id": "obo:NCIT_C63626",
             "@type": "string"
         },
         "ram": {
-            "@id": "comp:randomAccessMemory",
+            "@id": "obo:OBI_0001877",
             "@type": "string"
         }
     }

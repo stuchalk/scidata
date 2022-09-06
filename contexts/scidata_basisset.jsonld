@@ -1,7 +1,7 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "gc": "https://purl.org/gc/",
+        "obo": "http://purl.obolibrary.org/obo/",
         "dc": "https://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "basisSet": {"@id": "sdo:basisSet"},
@@ -14,50 +14,50 @@
             "@type": "string"
         },
         "format": {
-            "@id": "gc:basisSetFormat",
+            "@id": "dc:format",
             "@type": "string"
         },
         "setType": {
-            "@id": "gc:basisSetType",
+            "@id": "dc:type",
             "@type": "string"
         },
         "harmonicType": {
-            "@id": "gc:basisSetHarmonicType",
+            "@id": "dc:type",
             "@type": "string"
         },
         "contractionType": {
-            "@id": "gc:basisSetContractionType",
+            "@id": "dc:type",
             "@type": "string"
         },
-        "sets": {"@id": "gc:basisSetElementSet"},
+        "sets": {"@id": "obo:NCIT_C47894"},
         "symbol": {
-            "@id": "gc:elementSymbol",
+            "@id": "obo:IAO_0000028",
             "@type": "string"
         },
-        "contractions": {"@id": "gc:basisSetContractions"},
+        "contractions": {"@id": "sdo:contraction"},
         "shell": {
-            "@id": "gc:orbitalShell",
+            "@id": "obo:NCIT_C64372",
             "@type": "string"
         },
-        "matrix": {"@id": "gc:cmlMatrix"},
+        "matrix": {"@id": "sdo:contractionMatrix"},
         "datatype": {
-            "@id": "gc:cmlDatatype",
+            "@id": "obo:NCIT_C42645",
             "@type": "string"
         },
         "rows": {
-            "@id": "gc:tableRowCount",
-            "@type": "string"
+            "@id": "obo:NCIT_C25463",
+            "@type": "integer"
         },
         "columns": {
-            "@id": "gc:tableColumnCount",
-            "@type": "string"
+            "@id": "obo:NCIT_C25463",
+            "@type": "integer"
         },
         "delimiter": {
-            "@id": "gc:stringDelimiter",
+            "@id": "obo:NCIT_C73519",
             "@type": "string"
         },
         "values": {
-            "@id": "gc:delimitedString",
+            "@id": "sio:SIO_000089",
             "@type": "string"
         }
     }

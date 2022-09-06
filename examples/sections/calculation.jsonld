@@ -1,17 +1,23 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_calculation.jsonld",
-        {"gc": "http://purl.org/gc/"},
+        {
+            "obo": "http://purl.obolibrary.org/obo/",
+            "bao": "http://www.bioassayontology.org/bao#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        },
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/calculation.jsonld/"}
     ],
     "@id": "",
+    "@type": "obo:NCIT_C18470",
     "approach": "quantum mechanics",
     "calculations": [{
         "@id": "calculation/1/",
+        "@type": "sdo:calculation",
         "class": "ab initio",
         "calcType": "scf",
         "referenceState": "single",
         "determinant": "single",
-        "spin": "gc:UHF"
+        "spin": "bao:BAO_0002321"
     }]
 }

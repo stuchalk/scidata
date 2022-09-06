@@ -213,6 +213,12 @@
         <Class IRI="#constituent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#contraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contractionMatrix"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#conversionFactor"/>
     </Declaration>
     <Declaration>
@@ -783,6 +789,14 @@
     <SubClassOf>
         <Class IRI="#constituent"/>
         <Class IRI="#chemicalSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contraction"/>
+        <Class IRI="#basisSet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contractionMatrix"/>
+        <Class IRI="#basisSet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conversionFactor"/>
@@ -2407,6 +2421,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#constituent</IRI>
         <Literal>constituent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#contraction</IRI>
+        <Literal xml:lang="en">A linear combination of gaussian primitives to be used as basis function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#contraction</IRI>
+        <Literal xml:lang="en">http://www.ccl.net/cca/documents/basis-sets/basis.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contraction</IRI>
+        <Literal xml:lang="en">contraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contractionMatrix</IRI>
+        <Literal xml:lang="en">contraction matrix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
