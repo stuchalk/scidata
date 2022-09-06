@@ -6,13 +6,14 @@
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "w3i": "https://w3id.org/skgo/modsci#"
-        }
+        },
+        { "@base": "https://stuchalk.github.io/scidata/examples/strenda/strenda.jsonld"}
     ],
-    "@id": "strendaExample",
+    "@id": "https://stuchalk.github.io/scidata/examples/strenda",
     "generatedAt": "2020-12-14 19:27:59",
     "version": 2,
     "@graph": {
-        "@id": "strenda",
+        "@id": "https://stuchalk.github.io/scidata/examples/strenda/strenda.jsonld",
         "@type": "sdo:scidataFramework",
         "uid": "STRENDA_ID",
         "title": "STRENDA data",
