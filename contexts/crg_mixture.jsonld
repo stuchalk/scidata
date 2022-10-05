@@ -44,8 +44,7 @@
         },
         "mixture": {
             "@id": "sdo:isExperimentalDataOf",
-            "@type": "@id",
-            "comment": "this is for referencing back to a mixture in the dataset section"
+            "@type": "@id"
         }
     }
 }

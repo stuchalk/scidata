@@ -41,8 +41,7 @@
         },
         "chemical": {
             "@id": "sdo:isExperimentalDataOf",
-            "@type": "@id",
-            "comment": "this is for referencing back to a chemical in the dataset section"
+            "@type": "@id"
         }
     }
 }
