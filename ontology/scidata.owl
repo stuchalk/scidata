@@ -447,6 +447,9 @@
         <ObjectProperty IRI="#hasEvaluation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasExperimentalData"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasMethodology"/>
     </Declaration>
     <Declaration>
@@ -475,6 +478,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComponentNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#dependent"/>
@@ -1074,6 +1080,10 @@
         <ObjectProperty IRI="#isComponentNumber"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExperimentalData"/>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasChemicalSystem"/>
         <Class IRI="#system"/>
@@ -1132,6 +1142,18 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isComponentNumber"/>
         <Class IRI="#constituent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="#dataGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="#dataPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="#dataSeries"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#componentOf"/>
@@ -1196,6 +1218,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTOC"/>
         <Class abbreviatedIRI="dc:tableOfContents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="#chemicalSystem"/>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="#hasDataset"/>

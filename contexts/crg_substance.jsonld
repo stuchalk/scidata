@@ -7,7 +7,7 @@
         "mi": "http://purl.obolibrary.org/obo/mi.owl#",
         "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "name": {
-            "@id": "edam:data_0990",
+            "@id": "ss:SIO_000118",
             "@type": "string"
         },
         "iupacname": {

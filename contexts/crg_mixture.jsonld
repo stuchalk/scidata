@@ -3,10 +3,11 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "mix": "https://stuchalk.github.io/scidata/ontology/mixture.owl#",
+        "ss": "https://semanticscience.org/ontology/sio.owl#",
         "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "igb": "https://goldbook.iupac.org/",
         "name": {
-            "@id": "ncit:NCIT_C42774",
+            "@id": "ss:SIO_000118",
             "@type": "string"
         },
         "composition": {
@@ -41,9 +42,10 @@
             "@id": "mix:MIX_000008",
             "@type": "integer"
         },
-        "constituentNumber#": {
-            "@id": "mix:MIX_000008",
-            "@type": "@id"
+        "mixture": {
+            "@id": "sdo:isExperimentalDataOf",
+            "@type": "@id",
+            "comment": "this is for referencing back to a mixture in the dataset section"
         }
     }
 }
