@@ -49,6 +49,10 @@
         "type": {
             "@id": "ncit:NCIT_C25346",
             "@type": "string"
+        },
+        "substance": {
+            "@id": "ncit:NCIT_C25346",
+            "@type": "@id"
         }
     }
 }

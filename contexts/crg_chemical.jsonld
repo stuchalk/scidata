@@ -40,7 +40,19 @@
             "@type": "decimal"
         },
         "chemical": {
-            "@id": "sdo:isExperimentalDataOf",
+            "@id": "cmo:isExperimentalDataOf",
+            "@type": "string"
+        },
+        "chemical#": {
+            "@id": "cmo:isExperimentalDataOf",
+            "@type": "@id"
+        },
+        "substance": {
+            "@id": "cmo:isSampleOf",
+            "@type": "string"
+        },
+        "substance#": {
+            "@id": "cmo:isSampleOf",
             "@type": "@id"
         }
     }

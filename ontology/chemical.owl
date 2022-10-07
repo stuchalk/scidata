@@ -11,7 +11,7 @@
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+    <Prefix name="sdo" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance.owl#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
@@ -77,10 +77,16 @@
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemtwin.owl#puresubstance"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#MIX_000006"/>
+        <Class abbreviatedIRI="sub:SUB_000001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CHM_000006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#analyte"/>
@@ -123,11 +129,11 @@
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="obo:NCIT_C158424"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:NCIT_C17771"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="obo:BFO_0000023"/>
@@ -171,9 +177,17 @@
         <NamedIndividual IRI="#solvent"/>
     </DifferentIndividuals>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#MIX_000006"/>
+        <ObjectProperty IRI="#CHM_000006"/>
         <Class IRI="#CHM_000001"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExperimentalDataOf"/>
+        <Class IRI="#CHM_000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CHM_000006"/>
+        <Class abbreviatedIRI="sub:SUB_000001"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>dc:title</IRI>
@@ -436,13 +450,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#MIX_000006</IRI>
+        <IRI>#CHM_000006</IRI>
         <Literal xml:lang="en">is an instance (physical amount) of a chemical substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MIX_000006</IRI>
-        <Literal xml:lang="en">isSubstance</Literal>
+        <IRI>#CHM_000006</IRI>
+        <Literal xml:lang="en">isSampleOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -556,13 +570,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
+        <AbbreviatedIRI>sdo:propertyValue</AbbreviatedIRI>
         <Literal xml:lang="en">A measured physical or chemical property of a chemical substance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>sci:propertyValue</AbbreviatedIRI>
+        <AbbreviatedIRI>sdo:propertyValue</AbbreviatedIRI>
         <Literal xml:lang="en">property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sub:SUB_000001</AbbreviatedIRI>
+        <Literal xml:lang="en">substance</Literal>
     </AnnotationAssertion>
 </Ontology>
 
