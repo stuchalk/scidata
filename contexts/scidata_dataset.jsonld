@@ -10,6 +10,9 @@
                 "@id": "sdo:hasDataset",
                 "@type": "@id"
             },
+            "datagroup": {
+                "@id": "sdo:hasDatagroup"
+            },
             "datagroup#": {
                 "@id": "sdo:hasDatagroup",
                 "@type": "@id"
@@ -61,6 +64,9 @@
             "settings#": {
                 "@id": "sdo:hasSetting",
                 "@type": "@id"
+            },
+            "data": {
+                "@id": "sdo:hasDatum"
             },
             "data#": {
                 "@id": "sdo:hasDatum",
