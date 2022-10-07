@@ -212,7 +212,7 @@
             },
             "created": {
                 "@id": "dc:created",
-                "@type": "dateTime"
+                "@type": "date"
             },
             "rights": {
                 "@id": "sdo:hasRights",
