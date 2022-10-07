@@ -6,19 +6,19 @@
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dc": "https://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dataset": {
+            "dataset#": {
                 "@id": "sdo:hasDataset",
                 "@type": "@id"
             },
-            "datagroup": {
+            "datagroup#": {
                 "@id": "sdo:hasDatagroup",
                 "@type": "@id"
             },
-            "datagroups": {
+            "datagroups#": {
                 "@id": "sdo:hasDatagroup",
                 "@type": "@id"
             },
-            "dataseries": {
+            "dataseries#": {
                 "@id": "sdo:hasDataseries",
                 "@type": "@id"
             },
@@ -26,11 +26,11 @@
                 "@id": "sdo:dataName",
                 "@type": "sdo:parameter"
             },
-            "datapoint": {
+            "datapoint#": {
                 "@id": "sdo:hasDatapoint",
                 "@type": "@id"
             },
-            "datapoints": {
+            "datapoints#": {
                 "@id": "sdo:hasDatapoint",
                 "@type": "@id"
             },
@@ -44,21 +44,29 @@
             },
             "conditions": {
                 "@id": "sdo:hasCondition",
+                "@type": "string"
+            },
+            "conditions#": {
+                "@id": "sdo:hasCondition",
                 "@type": "@id"
             },
-            "analyzed": {
+            "analyzed#": {
                 "@id": "sdo:evaluatedSystem",
                 "@type": "@id"
             },
             "settings": {
                 "@id": "sdo:hasSetting",
+                "@type": "string"
+            },
+            "settings#": {
+                "@id": "sdo:hasSetting",
                 "@type": "@id"
             },
-            "data": {
+            "data#": {
                 "@id": "sdo:hasDatum",
                 "@type": "@id"
             },
-            "reference": {
+            "reference#": {
                 "@id": "sdo:hasSource",
                 "@type": "@id"
             },
@@ -86,15 +94,15 @@
                 "@id": "obo:NCIT_C44272",
                 "@type": "string"
             },
-            "assay": {
+            "assay#": {
                 "@id": "sdo:assay",
                 "@type": "@id"
             },
-            "format": {
+            "format#": {
                 "@id": "obo:OBI_0000227",
                 "@type": "@id"
             },
-            "level": {
+            "level#": {
                 "@id": "obo:MS_1003084",
                 "@type": "@id"
             }
