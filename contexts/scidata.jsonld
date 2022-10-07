@@ -150,6 +150,10 @@
                 "@id": "sdo:hasMethodologyAspect",
                 "@type": "@id"
             },
+            "aspect#": {
+                "@id": "sdo:hasMethodologyAspect",
+                "@type": "@id"
+            },
             "system": {
                 "@id": "sdo:hasSystem",
                 "@type": "@id"
@@ -171,6 +175,10 @@
                 "@type": "@id"
             },
             "facets": {
+                "@id": "sdo:hasSystemFacet",
+                "@type": "@id"
+            },
+            "facet#": {
                 "@id": "sdo:hasSystemFacet",
                 "@type": "@id"
             },
@@ -201,6 +209,10 @@
             "doi": {
                 "@id": "bibo:doi",
                 "@type": "string"
+            },
+            "created": {
+                "@id": "dc:created",
+                "@type": "dateTime"
             },
             "rights": {
                 "@id": "sdo:hasRights",
