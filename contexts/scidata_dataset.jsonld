@@ -29,9 +29,8 @@
                 "@id": "sdo:dataName",
                 "@type": "sdo:parameter"
             },
-            "datapoint#": {
-                "@id": "sdo:hasDatapoint",
-                "@type": "@id"
+            "datapoint": {
+                "@id": "sdo:hasDatapoint"
             },
             "datapoints#": {
                 "@id": "sdo:hasDatapoint",
