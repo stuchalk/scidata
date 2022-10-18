@@ -6,14 +6,6 @@
             "atoms": {"@id": "cto:hasConstituentAtom"},
             "bonds": {"@id": "cto:hasConstituentBond"},
             "elements": {"@id": "cto:containsElement"},
-            "atom": {
-                "@id": "cto:atom",
-                "@type": "@id"
-            },
-            "bond": {
-                "@id": "cto:bond",
-                "@type": "@id"
-            },
             "charge": {
                 "@id": "cto:hasAtomicCharge",
                 "@type": "integer"
