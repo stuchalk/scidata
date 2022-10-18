@@ -35,7 +35,7 @@
                 "@type": "decimal"
             },
             "order": {
-                "@id": "cto:bondOrder",
+                "@id": "cto:hasBondOrder",
                 "@type": "integer"
             },
             "bondcount": {
