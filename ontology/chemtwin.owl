@@ -100,9 +100,6 @@
         <ObjectProperty IRI="#isElementType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isTestType"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasAromaticBondCount"/>
     </Declaration>
     <Declaration>
@@ -473,16 +470,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ionicBond</IRI>
         <Literal xml:lang="en">ionic bond</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isTestType</IRI>
-        <Literal>isElementType test for issue with Lnkd plugin for PyCharm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isTestType</IRI>
-        <Literal>isTestType</Literal>
     </AnnotationAssertion>
 </Ontology>
 
