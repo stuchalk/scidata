@@ -2,79 +2,79 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "cif": "http://www.iucr.org/cif/",
-        "diffrn_ambient_temperature": {
+        "_diffrn_ambient_temperature": {
             "@id": "cif:DiffractionAmbientTemperature",
             "@type": "decimal"
         },
-        "diffrn_radiation_probe": {
+        "_diffrn_radiation_probe": {
             "@id": "cif:DiffractionRadiationProbe",
             "@type": "string"
         },
-        "chemical_name_common": {
+        "_chemical_name_common": {
             "@id": "cif:ChemicalCommonName",
             "@type": "string"
         },
-        "chemical_formula_moiety": {
+        "_chemical_formula_moiety": {
             "@id": "cif:ChemicalFormulaMoiety",
             "@type": "decimal"
         },
-        "chemical_name_systematic": {
+        "_chemical_name_systematic": {
             "@id": "cif:ChemicalSystematicName",
             "@type": "string"
         },
-        "chemical_absolute_configuration": {
+        "_chemical_absolute_configuration": {
             "@id": "cif:ChemicalAbsoluteConfiguration",
             "@type": "string"
         },
-        "site": {
+        "_site": {
             "@id": "cif:AtomSiteData",
             "@type": "string"
         },
-        "atom_label": {
+        "_atom_label": {
             "@id": "cif:AtomSiteLabel",
             "@type": "string"
         },
-        "atom_symbol": {
+        "_atom_symbol": {
             "@id": "cif:AtomSiteSymbol",
             "@type": "string"
         },
-        "atom_type_symbol": {
+        "_atom_type_symbol": {
             "@id": "cif:AtomTypeSymbol",
             "@type": "string"
         },
-        "atom_type_oxidation_number": {
+        "_atom_type_oxidation_number": {
             "@id": "cif:AtomTypeOxidationNumber",
             "@type": "string"
         },
-        "cell_length_a": {
+        "_cell_length_a": {
             "@id": "cif:CellLengthA",
             "@type": "string"
         },
-        "cell_length_b": {
+        "_cell_length_b": {
             "@id": "cif:CellLengthB",
             "@type": "string"
         },
-        "cell_length_c": {
+        "_cell_length_c": {
             "@id": "cif:CellLengthC",
             "@type": "string"
         },
-        "cell_angle_alpha": {
+        "_cell_angle_alpha": {
             "@id": "cif:CellAngleAlpha",
             "@type": "string"
         },
-        "cell_angle_beta": {
+        "_cell_angle_beta": {
             "@id": "cif:CellAngleBeta",
             "@type": "string"
         },
-        "cell_angle_gamma": {
+        "_cell_angle_gamma": {
             "@id": "cif:CellAngleGamma",
             "@type": "string"
         },
-        "cell_volume": {
+        "_cell_volume": {
             "@id": "cif:CellVolume",
             "@type": "string"
         },
-        "cell_formula_units_Z": {
+        "_cell_formula_units_Z": {
             "@id": "cif:CellFormulaUnitsZ",
             "@type": "string"
         }
