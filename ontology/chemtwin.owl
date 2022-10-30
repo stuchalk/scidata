@@ -244,10 +244,6 @@
         <ObjectProperty IRI="#isElementContainedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasAtom"/>
-        <ObjectProperty IRI="#isAtomOfElement"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasBondedAtom"/>
         <ObjectProperty IRI="#isBondedAtomOf"/>
     </InverseObjectProperties>
