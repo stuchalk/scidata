@@ -1,173 +1,173 @@
 {
-    "@context": {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "ms": "http://purl.obolibrary.org/obo/ms.owl#",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "edam": "https://edamontology.org/EDAM.owl#",
-        "mi": "http://purl.obolibrary.org/obo/mi.owl#",
-        "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
-        "cheminf": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
-        "wdp": "https://www.wikidata.org/wiki/Property:",
-        "afo": "http://purl.allotrope.org/ontologies/result#",
-        "chebi": "http://purl.obolibrary.org/obo/chebi.owl#",
-        "m/z": {
-            "@id": "ms:1000040",
-            "@type": "string"
-        },
-        "int": {
-            "@id": "ms:1000042",
-            "@type": "string"
-        },
-        "rel. int": {
-            "@id": "test:09999",
-            "@type": "string"
-        },
-        "tentative_formula": {
-            "@id": "ss:CHEMINF_000042",
-            "@type": "string"
-        },
-        "mass": {
-            "@id": "test:09999",
-            "@type": "string"
-        },
-        "error(ppm)": {
-            "@id": "obo:NCIT_C43369",
-            "@type": "string"
-        },
-        "NAME": {
-            "@id": "edam:data_0990",
-            "@type": "string",
-            "@container": "@list"
-        },
-        "SMILES": {
-            "@id": "mi:MI_2039",
-            "@type": "string"
-        },
-        "IUPAC": {
-            "@id": "mi:MI_2010",
-            "@type": "string"
-        },
-        "COMPOUND_CLASS": {
-            "@id": "ncit:NCIT_C25346",
-            "@type": "string"
-        },
-        "FORMULA": {
-            "@id": "ss:CHEMINF_000042",
-            "@type": "float"
-        },
-        "EXACT_MASS": {
-            "@id": "test:09999",
-            "@type": "string"
-        },
-        "CHEBI": {
-            "@id": "mi:MI_0474",
-            "@type": "string"
-        },
-        "KEGG": {
-            "@id": "cheminf:000409",
-            "@type": "string"
-        },
-        "PUBCHEM": {
-            "@id": "ss:CHEMINF_000042",
-            "@type": "string"
-        },
-        "INCHIKEY": {
-            "@id": "wdp:P235",
-            "@type": "string"
-        },
-        "CHEMSPIDER": {
-            "@id": "ss:CHEMINF_000405",
-            "@type": "string"
-        },
-        "COMPTOX": {
-            "@id": "wdp:P3117",
-            "@type": "string"
-        },
-        "INSTRUMENT": {
-            "@id": "ms:1000031",
-            "@type": "string"
-        },
-        "INSTRUMENT_TYPE": {
-            "@id": "ms:1000496",
-            "@type": "string"
-        },
-        "MS_TYPE": {
-            "@id": "ms:1000496",
-            "@type": "string"
-        },
-        "ION_MODE": {
-            "@id": "ms:1000465",
-            "@type": "string"
-        },
-        "IONIZATION": {
-            "@id": "ms:1000008",
-            "@type": "string"
-        },
-        "FRAGMENTATION_MODE": {
-            "@id": "ms:1000044",
-            "@type": "string"
-        },
-        "COLLISION_ENERGY": {
-            "@id": "ms:1000045",
-            "@type": "string"
-        },
-        "RESOLUTION": {
-            "@id": "ms:1000011",
-            "@type": "string"
-        },
-        "COLUMN_NAME": {
-            "@id": "afo:AFE_0000217",
-            "@type": "string"
-        },
-        "FLOW_GRADIENT": {
-            "@id": "afo:AFP_0003289",
-            "@type": "string"
-        },
-        "FLOW_RATE": {
-            "@id": "ms:1003020",
-            "@type": "string"
-        },
-        "RETENTION_TIME": {
-            "@id": "afo:AFR_0001089",
-            "@type": "string"
-        },
-        "SOLVENT": {
-            "@id": "chebi:46787",
-            "@type": "string"
-        },
-        "solvent": {
-            "@id": "test:09999",
-            "@type": "string"
-        },
-        "BASE_PEAK": {
-            "@id": "ms:1000210",
-            "@type": "string"
-        },
-        "PRECURSOR_M/Z": {
-            "@id": "ms:1002234",
-            "@type": "string"
-        },
-        "PRECURSOR_TYPE": {
-            "@id": "ms:1001523",
-            "@type": "string"
-        },
-        "RECALIBRATE": {
-            "@id": "ms:1000543",
-            "@type": "string"
-        },
-        "REANALYZE": {
-            "@id": "ms:1000543",
-            "@type": "string"
-        },
-        "WHOLE": {
-            "@id": "ms:1000543",
-            "@type": "string"
-        },
-        "label": {
-            "@id": "test:09999",
-            "@type": "string"
-        }
-    }
+	"@context": {
+		"@vocab": "https://www.w3.org/2001/XMLSchema#",
+		"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+		"ms": "http://purl.obolibrary.org/obo/ms.owl#",
+		"ss": "https://semanticscience.org/ontology/sio.owl#",
+		"obo": "http://purl.obolibrary.org/obo/",
+		"edam": "https://edamontology.org/EDAM.owl#",
+		"mi": "http://purl.obolibrary.org/obo/mi.owl#",
+		"ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
+		"cheminf": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
+		"wdp": "http://www.wikidata.org/prop/direct/",
+		"afo": "http://purl.allotrope.org/ontologies/result#",
+		"chebi": "http://purl.obolibrary.org/obo/chebi.owl#",
+		"m/z": {
+			"@id": "ms:1000040",
+			"@type": "string"
+		},
+		"int": {
+			"@id": "ms:1000042",
+			"@type": "string"
+		},
+		"rel. int": {
+			"@id": "test:09999",
+			"@type": "string"
+		},
+		"tentative_formula": {
+			"@id": "ss:CHEMINF_000042",
+			"@type": "string"
+		},
+		"mass": {
+			"@id": "test:09999",
+			"@type": "string"
+		},
+		"error(ppm)": {
+			"@id": "obo:NCIT_C43369",
+			"@type": "string"
+		},
+		"NAME": {
+			"@id": "edam:data_0990",
+			"@type": "string",
+			"@container": "@list"
+		},
+		"SMILES": {
+			"@id": "mi:MI_2039",
+			"@type": "string"
+		},
+		"IUPAC": {
+			"@id": "mi:MI_2010",
+			"@type": "string"
+		},
+		"COMPOUND_CLASS": {
+			"@id": "ncit:NCIT_C25346",
+			"@type": "string"
+		},
+		"FORMULA": {
+			"@id": "ss:CHEMINF_000042",
+			"@type": "float"
+		},
+		"EXACT_MASS": {
+			"@id": "test:09999",
+			"@type": "string"
+		},
+		"CHEBI": {
+			"@id": "mi:MI_0474",
+			"@type": "string"
+		},
+		"KEGG": {
+			"@id": "cheminf:000409",
+			"@type": "string"
+		},
+		"PUBCHEM": {
+			"@id": "ss:CHEMINF_000042",
+			"@type": "string"
+		},
+		"INCHIKEY": {
+			"@id": "wdp:P235",
+			"@type": "string"
+		},
+		"CHEMSPIDER": {
+			"@id": "ss:CHEMINF_000405",
+			"@type": "string"
+		},
+		"COMPTOX": {
+			"@id": "wdp:P3117",
+			"@type": "string"
+		},
+		"INSTRUMENT": {
+			"@id": "ms:1000031",
+			"@type": "string"
+		},
+		"INSTRUMENT_TYPE": {
+			"@id": "ms:1000496",
+			"@type": "string"
+		},
+		"MS_TYPE": {
+			"@id": "ms:1000496",
+			"@type": "string"
+		},
+		"ION_MODE": {
+			"@id": "ms:1000465",
+			"@type": "string"
+		},
+		"IONIZATION": {
+			"@id": "ms:1000008",
+			"@type": "string"
+		},
+		"FRAGMENTATION_MODE": {
+			"@id": "ms:1000044",
+			"@type": "string"
+		},
+		"COLLISION_ENERGY": {
+			"@id": "ms:1000045",
+			"@type": "string"
+		},
+		"RESOLUTION": {
+			"@id": "ms:1000011",
+			"@type": "string"
+		},
+		"COLUMN_NAME": {
+			"@id": "afo:AFE_0000217",
+			"@type": "string"
+		},
+		"FLOW_GRADIENT": {
+			"@id": "afo:AFP_0003289",
+			"@type": "string"
+		},
+		"FLOW_RATE": {
+			"@id": "ms:1003020",
+			"@type": "string"
+		},
+		"RETENTION_TIME": {
+			"@id": "afo:AFR_0001089",
+			"@type": "string"
+		},
+		"SOLVENT": {
+			"@id": "chebi:46787",
+			"@type": "string"
+		},
+		"solvent": {
+			"@id": "test:09999",
+			"@type": "string"
+		},
+		"BASE_PEAK": {
+			"@id": "ms:1000210",
+			"@type": "string"
+		},
+		"PRECURSOR_M/Z": {
+			"@id": "ms:1002234",
+			"@type": "string"
+		},
+		"PRECURSOR_TYPE": {
+			"@id": "ms:1001523",
+			"@type": "string"
+		},
+		"RECALIBRATE": {
+			"@id": "ms:1000543",
+			"@type": "string"
+		},
+		"REANALYZE": {
+			"@id": "ms:1000543",
+			"@type": "string"
+		},
+		"WHOLE": {
+			"@id": "ms:1000543",
+			"@type": "string"
+		},
+		"label": {
+			"@id": "test:09999",
+			"@type": "string"
+		}
+	}
 }
