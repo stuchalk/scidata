@@ -5,7 +5,7 @@
         "dc": "https://purl.org/dc/terms/",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "emmo": "https://github.com/emmo-repo/EMMO",
-        "wd": "https://www.wikidata.org/wiki/",
+        "wd": "http://www.wikidata.org/wiki/",
         "mpid": {
             "@id": "mp:mpprojid",
             "@type": "xsd:string"

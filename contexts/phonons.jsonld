@@ -8,7 +8,7 @@
         "ss": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
         "npo": "http://purl.bioontology.org/ontology/npo#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "wd": "https://www.wikidata.org/wiki/",
+        "wd": "http://www.wikidata.org/wiki/",
         "mpid": {
             "@id": "dc:identifier",
             "@type": "string"

@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "wdt": "https://www.wikidata.org/prop/direct/",
+            "wdt": "http://www.wikidata.org/prop/direct/",
             "ss": "https://semanticscience.org/ontology/sio.owl#",
             "inchi": {
                 "@id": "wdt:P234",
