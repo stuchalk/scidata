@@ -1,15 +1,18 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_parameter.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/parameter.jsonld#"}
     ],
     "@id": "",
+    "@type": "sdo:parameter",
     "scope": "molecule/1",
-    "quantity": "magnetic field strength",
-    "property": "Anisotropic NMR Shielding",
+    "quantitykind": "magnetic field strength",
+    "quantity": "Anisotropic NMR Shielding",
     "value": {
-        "@id": "value",
+        "@id": "value/",
+        "@type": "sdo:value",
         "number": "3.2",
-        "unitstr": "ppm_Hz"
+        "unitstr": "ppm Hz"
     }
 }

@@ -1,9 +1,11 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/software.jsonld#"}
     ],
     "@id": "",
+    "@type": "sdo:software",
     "name": "HyperChem",
     "version": "9.0",
     "os": "Windows 8",

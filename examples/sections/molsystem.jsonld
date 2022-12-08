@@ -1,25 +1,31 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/molsystem.jsonld#"}
     ],
     "@id": "",
+    "@type": "sdo:molecularsystem",
     "temperature": {
-        "@id": "temperature",
+        "@id": "temperature/",
+        "@type": "sdo:condition",
         "number": 273.15,
         "unitstr": "K"
     },
     "charge": {
-        "@id": "charge",
+        "@id": "charge/",
+        "@type": "sdo:property",
         "number": 0,
         "unitstr": "C"
     },
     "multiplicity": {
-        "@id": "multiplicity",
+        "@id": "multiplicity/",
+        "@type": "sdo:property",
         "number": 1
     },
     "space": {
-        "@id": "space",
+        "@id": "space/",
+        "@type": "sdo:space",
         "spaceType": "cartesian",
         "points": [
             "point/1",
@@ -29,26 +35,30 @@
     },
     "point": [
         {
-            "@id": "point/1",
+            "@id": "point/1/",
+            "@type": "sdo:pointinspace",
             "x": {
-                "@id": "point/1/x",
+                "@id": "point/1/x/",
+                "@type": "sdo:xcoordinate",
                 "number": 0,
                 "unitstr": "angstrom"
             },
             "y": {
-                "@id": "point/1/y",
+                "@id": "point/1/y/",
+                "@type": "sdo:ycoordinate",
                 "number": 0,
                 "unitstr": "angstrom"
             },
             "z": {
-                "@id": "point/1/z",
+                "@id": "point/1/z/",
+                "@type": "sdo:zcoordinate",
                 "number": 0.03719146,
                 "unitstr": "angstrom"
             },
-            "tenant": "molecule/1/atom/1"
+            "tenant": "molecule/1/atom/1/"
         },
         {
-            "@id": "point/2",
+            "@id": "point/2/",
             "x": {
                 "@id": "point/2/x",
                 "number": 0,

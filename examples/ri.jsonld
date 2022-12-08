@@ -6,9 +6,10 @@
             "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
             "prop": "https://stuchalk.github.io/scidata/ontology/property/property.owl#",
-            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "smed": "http://snomed.info/id/",
+            "qudt": "https://qudt.org/vocab/unit/",
             "dc": "http://purl.org/dc/terms/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "xsd": "https://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata:example:ri"}
     ],
@@ -58,6 +59,10 @@
             "qudt:NanoM",
             "dc:source",
             "dc:rights"
+        ],
+        "ids": [
+            "smed:420772006",
+            "qudt:Percent_GM-PER-GM"
         ],
         "scidata": {
             "@id": "scidata/",
@@ -139,7 +144,7 @@
                                     "@id": "substance/1/constituent/1/property/1/value/",
                                     "@type": "sdo:value",
                                     "number": 90.01,
-                                    "unitref": "qudt:Percent_GM-PER-GM"
+                                    "unit#": "qudt:Percent_GM-PER-GM"
                                 }
                             }
                         ]
@@ -188,7 +193,7 @@
                             "@id": "condition/1/value/",
                             "@type": "sdo:numericvalue",
                             "number": 20,
-                            "unitref": "qudt:Deg_C"
+                            "unit#": "qudt:Deg_C"
                         }
                     },
                     {
@@ -203,7 +208,7 @@
                             "@id": "condition/2/value/",
                             "@type": "sdo:numericvalue",
                             "number": 0.043043,
-                            "unitref": "qudt:GM-Per-GM"
+                            "unit#": "qudt:GM-Per-GM"
                         }
                     }
                 ]
@@ -217,8 +222,9 @@
                     {
                         "@id": "datapoint/1/",
                         "@type": "sdo:datapoint",
-                        "quantity": "refraction",
-                        "propertyref": "prop:indexOfRefraction",
+                        "quantitykind": "refraction",
+                        "quantity": "Index of Refraction",
+                        "quantity#": "smed:420772006",
                         "conditions": [
                             "condition/1/",
                             "condition/2/"
@@ -226,10 +232,8 @@
                         "value": {
                             "@id": "datapoint/1/value/",
                             "@type": "sdo:value",
-                            "number": {
-                                "@value": 1.33987,
-                                "@type": "xsd:decimal"
-                            }
+                            "number": 1.33987,
+                            "datatype": "xsd:decimal"
                         }
                     }
                 ]
@@ -246,7 +250,7 @@
             "@id": "rights",
             "@type": "dc:rights",
             "holder": "Chalk Group, Department of Chemistry, University of North Florida",
-            "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+            "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
         }
     }
 }

@@ -290,7 +290,7 @@
             "@id": "rights/1/",
             "@type": "sdo:rights",
             "holder": "US National Library of Medicine",
-            "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            "license": "https://creativecommons.org/licenses/by-sa/4.0/"
             }]
         </xsl:if>
         }

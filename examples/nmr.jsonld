@@ -33275,7 +33275,7 @@
             "@id": "rights/1/",
             "@type": "dc:rights",
             "holder": "Chalk Group, Department of Chemistry, University of North Florida",
-            "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            "license": "https://creativecommons.org/licenses/by-sa/4.0/"
         }
     }
 }

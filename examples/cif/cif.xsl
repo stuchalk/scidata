@@ -547,7 +547,7 @@
 		"@id": "rights/1/",
 		"@type": "sdo:source",
 		"holder": "The Crystallography Open Database",
-		"license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+		"license": "https://creativecommons.org/licenses/by-sa/4.0/"
 		}]
 		}
 	}

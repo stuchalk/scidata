@@ -1,9 +1,11 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_resource.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/resource.jsonld#"}
     ],
     "@id": "",
+    "@type": "sdo:resource",
     "type": "instrument",
     "name": "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode",
     "vendor": "Fisher Scientific",

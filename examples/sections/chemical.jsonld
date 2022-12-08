@@ -2,8 +2,8 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
         {
-            "obo": "http://purl.obolibrary.org/obo/",
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "qudt": "https://qudt.org/vocab/unit/",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "@base": "https://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"
         }
     ],
@@ -14,28 +14,28 @@
     "properties": [
         {
             "@id": "property/1/",
-            "@type": "sci:purity",
+            "@type": "sdo:purity",
             "scope": "compound/1/",
-            "quantity": "concentration",
-            "property": "Bulk purity",
+            "quantitykind": "concentration",
+            "quantity": "Bulk purity",
             "value": {
                 "@id": "property/1/value/",
-                "@type": "sci:value",
+                "@type": "sdo:value",
                 "number": 99.9999,
-                "unitref": "obo:UO_0000167"
+                "unit#": "qudt:PERCENT"
             }
         },
         {
             "@id": "property/2/",
-            "@type": "sci:purity",
+            "@type": "sdo:purity",
             "scope": "compound/2/",
-            "quantity": "concentration",
-            "property": "Trace impurity",
+            "quantitykind": "concentration",
+            "quantity": "Trace impurity",
             "value": {
                 "@id": "property/2/value/",
-                "@type": "sci:value",
+                "@type": "sdo:value",
                 "number": 1.23174,
-                "unitref": "obo:UO_0000171"
+                "unit#": "qudt:PPTR_VOL"
             }
         }
     ]

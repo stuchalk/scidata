@@ -1,6 +1,7 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/system_exp.jsonld#"}
     ],
     "@id": "",
@@ -8,7 +9,7 @@
     "subdiscipline": "analytical chemistry",
     "facets": [{
         "@id": "system/",
-        "@type": ["sci:facet","sci:system"],
+        "@type": "sdo:system",
         "name": "R-(-)-Carvone and Chloroform-d",
         "description": "Solution prepared for 1H NMR analysis",
         "systemtype": "binary mixture",
@@ -16,13 +17,13 @@
         "constituents": [
             {
                 "@id": "substance/1/",
-                "@type": ["sci:constituent"],
+                "@type": "sdo:constituent",
         		"name": "(R)(-) CARVONE",
                 "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
             },
             {
                 "@id": "substance/2/",
-                "@type": ["sci:constituent"],
+                "@type": "sdo:constituent",
         		"name": "Chloroform-d",
                 "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
             }

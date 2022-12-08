@@ -2,12 +2,16 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
         "https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
-        {"qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"},
+        {
+            "qudt": "https://qudt.org/vocab/unit/",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        },
         {"@base": "https://stuchalk.github.io/scidata/examples/value.jsonld#"}
     ],
     "@id": "",
     "numericvalue": {
         "@id": "numeric/1",
+        "@type": "sdo:value",
         "datatype": "decimal",
         "number": 12.0107,
         "error": 8.0E-4,
@@ -16,6 +20,7 @@
     },
     "numericvaluearray": {
         "@id": "numeric/2",
+        "@type": "sdo:valuearray",
         "datatype": "decimal",
         "numberarray": [
             0.9994,
@@ -28,12 +33,14 @@
     },
     "textstring": {
         "@id": "text/1",
+        "@type": "sdo:textString",
         "text": "Simultaneous",
         "texttype": "plain",
         "language": "en-US"
     },
     "textstringarray": {
         "@id": "text/2",
+        "@type": "sdo:textStringArray",
         "textarray": [
             "Begin of the data block",
             "ACD/SpecManager v 12.01",
@@ -43,21 +50,25 @@
         "language": "en-US"
     },
     "unit": [{
-        "@id": "unit/amu",
+        "@id": "unit/1/",
+        "@type": "sdo:value",
         "name": "Atomic mass units",
         "quantity": "mass",
         "symbol": "u",
         "unitinsi": {
-            "@id": "amu/unitinsi",
+            "@id": "unitinsi/",
+            "@type": "sdo:siunit",
             "siunit": [{
-                "@id": "amu/unit/1",
+                "@id": "unit/2/",
+                "@type": "sdo:unit",
                 "name": "gram",
                 "prefix": "y",
                 "power": {"numerator": 1}
             }]
         },
         "conversion": {
-            "@id": "amu/conversion",
+            "@id": "conversion",
+            "@type": "sdo:factor",
             "fromunit": "g",
             "multiplier": "1.660538921E-27"
         }

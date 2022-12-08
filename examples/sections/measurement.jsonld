@@ -1,10 +1,14 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
-        {"cao": "http://champ-project.org/images/ontology/cao.owl#"},
+        {
+            "cao": "https://champ-project.org/images/ontology/cao.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
+        },
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/measurement.jsonld/"}
     ],
     "@id": "",
+    "@type": "sdo:measurement",
     "techniqueType": "cao:spectroscopy",
     "technique": "cao:NMR",
     "instrumentType": "300 MHz NMR",
@@ -12,66 +16,80 @@
     "settings": [
         {
             "@id": "setting/1/",
+            "@type": "sdo:setting",
             "quantity": "frequency",
             "property": "Observe Frequency",
             "value": {
                 "@id": "setting/1/value/",
+                "@type": "sdo:value",
                 "number": 300.0318,
                 "unitstr": "MHz"
             }
         },
         {
             "@id": "setting/2/",
+            "@type": "sdo:setting",
             "quantity": "time",
             "property": "Acquisition Time",
             "value": {
                 "@id": "setting/2/value/",
                 "number": 3.42098,
+                "@type": "sdo:value",
                 "unitstr": "s"
             }
         },
         {
             "@id": "setting/3/",
+            "@type": "sdo:setting",
             "quantity": "count",
             "property": "Zero Fill",
             "value": {
                 "@id": "setting/3/value/",
+                "@type": "sdo:value",
                 "number": 0
             }
         },
         {
             "@id": "setting/4/",
+            "@type": "sdo:setting",
             "quantity": "frequency",
             "property": "Shift Reference",
             "value": {
                 "@id": "setting/4/value/",
+                "@type": "sdo:value",
                 "text": "INTERNAL,  ,16384, -1.874"
             }
         },
         {
             "@id": "setting/5/",
+            "@type": "sdo:setting",
             "quantity": "isotope",
             "property": "Observe Nucleus",
             "value": {
                 "@id": "setting/5/value/",
+                "@type": "sdo:value",
                 "text": "1H"
             }
         },
         {
             "@id": "setting/6/",
+            "@type": "sdo:setting",
             "quantity": "mode of operation",
             "property": "Acquisition Mode",
             "value": {
                 "@id": "setting/6/value/",
+                "@type": "sdo:value",
                 "text": "Simultaneous"
             }
         },
         {
             "@id": "setting/7/",
+            "@type": "sdo:setting",
             "quantity": "chemical",
             "property": "Solvent Name",
             "value": {
                 "@id": "setting/7/value/",
+                "@type": "sdo:value",
                 "text": "Chloroform-d"
             }
         }

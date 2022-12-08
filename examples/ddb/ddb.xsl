@@ -203,7 +203,7 @@
 		"@id": "rights/1/",
 		"@type": "sdo:rights",
 		"holder": "<xsl:value-of select="$pub"/>",
-		"license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+		"license": "https://creativecommons.org/licenses/by-sa/4.0/"
 		}]}}
 	</xsl:template>
 </xsl:stylesheet>

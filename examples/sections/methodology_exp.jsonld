@@ -4,19 +4,19 @@
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/methodology.jsonld/"}
     ],
     "@id": "",
-    "@type": "sci:methodology",
+    "@type": "sdo:methodology",
     "evaluation": "experimental",
     "aspects": [
         {
             "@id": "measurement/1/",
-            "@type": "sci:measurement",
+            "@type": "sdo:measurement",
             "scope": "resource/1/",
             "techniqueType": "ion-selective electrode",
             "technique": "pH electrode",
             "instrumentType": "Temperature compensated pH electrode",
             "settings": [{
                 "@id": "setting/1/",
-                "@type": "sci:setting",
+                "@type": "sdo:setting",
                 "quantity": "instrument feature",
                 "property": "Temperature compensation",
                 "textstr": {
@@ -27,7 +27,7 @@
         },
         {
             "@id": "resource/1/",
-            "@type": "sci:resource",
+            "@type": "sdo:resource",
             "type": "instrument",
             "name": "Accumet Liquid-Filled pH/ATC Epoxy Body Combination Electrode",
             "vendor": "Fisher Scientific",
@@ -35,7 +35,7 @@
         },
         {
             "@id": "procedure/1/",
-            "@type": "sci:procedure",
+            "@type": "sdo:procedure",
             "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken"
         }
     ]

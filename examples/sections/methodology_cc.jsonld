@@ -1,14 +1,16 @@
 {
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_methodology.jsonld",
+        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/methodology_cc.jsonld/"}
     ],
     "@id": "",
-    "@type": "sci:methodology",
+    "@type": "sdo:methodology",
     "evaluation": "calculation",
     "aspects": [
         {
             "@id": "calculation/1/",
+            "@type": "sdo:calculation",
             "approach": "quantum mechanics",
             "calcclass": "ab initio",
             "calcType": "ccsd(t)",
@@ -16,7 +18,7 @@
         },
         {
             "@id": "calculation/2/",
-            "@type": "sci:calculation",
+            "@type": "sdo:calculation",
             "calcclass": "ab initio",
             "calcType": "scf",
             "referenceState": "single",
@@ -25,7 +27,7 @@
         },
         {
             "@id": "basisset/1/",
-            "@type": "sci:calculation",
+            "@type": "sdo:calculation",
             "title": "3-21G",
             "description": "A test BSE basis set",
             "format": "gaussian94",
@@ -34,15 +36,16 @@
             "contractionType": "general",
             "sets": [{
                 "@id": "basisset/1/H/",
-                "@type": "sci:basisset",
+                "@type": "sdo:basisset",
                 "symbol": "H",
                 "contractions": [
                     {
                         "@id": "basisset/1/H/contraction/S/",
-                        "@type": "sci:basissetshell",
+                        "@type": "sdo:basissetshell",
                         "shell": "S",
                         "matrix": {
                             "@id": "basisset/1/H/contraction/S/matrix/",
+                            "@type": "sdo:matrix",
                             "datatype": "scalar",
                             "rows": 2,
                             "columns": 2,
@@ -52,10 +55,11 @@
                     },
                     {
                         "@id": "basisset/1/H/contraction/P/",
-                        "@type": "sci:basissetshell",
+                        "@type": "sdo:basissetshell",
                         "shell": "P",
                         "matrix": {
                             "@id": "basisset/1/H/contraction/P/matrix/",
+                            "@type": "sdo:matrix",
                             "datatype": "scalar",
                             "rows": 1,
                             "columns": 2,
@@ -68,7 +72,7 @@
         },
         {
             "@id": "software/",
-            "@type": "sci:software",
+            "@type": "sdo:software",
             "name": "HyperChem",
             "version": "9.0",
             "input": "Here is the input file contents...",

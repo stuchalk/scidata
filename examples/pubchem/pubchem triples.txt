@@ -38,7 +38,7 @@
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/organism/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#organism> <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/> .
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/organism/1/> <https://schema.org/url> <http://www.uniprot.org/taxonomy/9606> <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/> .
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/rights/1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#source> .
-<http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/rights/1/> <https://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-nd/4.0/"^^<https://www.w3.org/2001/XMLSchema#anyURI> .
+<http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/rights/1/> <https://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/"^^<https://www.w3.org/2001/XMLSchema#anyURI> .
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/rights/1/> <https://purl.org/dc/terms/rightsHolder> "US National Library of Medicine"^^<https://www.w3.org/2001/XMLSchema#string> .
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/scidata/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#scientificData> <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/> .
 <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/scidata/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasDataset> <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/dataset/> <http://pubchem.ncbi.nlm.nih.gov/bioassay/243494/> .

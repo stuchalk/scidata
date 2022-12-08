@@ -4,10 +4,10 @@
         {
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "meas": "https://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#",
-            "qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#",
+            "qudt": "https://qudt.org/vocab/unit/",
             "dc": "http://purl.org/dc/terms/",
             "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
+            "xsd": "https://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://sds.coas.unf.edu/sds:report:002014/"}
     ],
