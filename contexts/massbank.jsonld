@@ -4,14 +4,9 @@
 		"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
 		"obo": "http://purl.obolibrary.org/obo/",
 		"sio": "http://semanticscience.org/ontology/sio.owl/",
-		"chmo": "http://purl.obolibrary.org/obo/chmo.owl/",
 		"edam": "https://edamontology.org/EDAM.owl/",
-		"mi": "http://purl.obolibrary.org/obo/mi.owl/",
-		"ncit": "http://purl.obolibrary.org/obo/ncit.owl/",
-		"pato": "http://purl.obolibrary.org/obo/pato.owl/",
 		"cheminf": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl/",
 		"wdt": "http://www.wikidata.org/prop/direct/",
-		"ms": "http://purl.obolibrary.org/obo/ms.owl/",
 		"afe": "http://purl.allotrope.org/ontologies/equipment#",
         "afp": "http://purl.allotrope.org/ontologies/process#",
 		"afr": "http://purl.allotrope.org/ontologies/result#",
@@ -37,7 +32,7 @@
 			"@type": "string"
 		},
 		"mass": {
-			"@id": "chmo:0001996",
+			"@id": "obo:CHMO_0001996",
 			"@type": "string"
 		},
 		"error(ppm)": {
@@ -70,7 +65,7 @@
 			"@type": "string"
 		},
 		"kegg": {
-			"@id": "cheminf:000409",
+			"@id": "sio:CHEMINF_000409",
 			"@type": "string"
 		},
 		"pubchem": {
@@ -178,7 +173,7 @@
 			"@type": "string"
 		},
 		"concentration": {
-			"@id": "chmo:0002820",
+			"@id": "obo:CHMO_0002820",
 			"@type": "string"
 		},
 		"concentration_unit": {

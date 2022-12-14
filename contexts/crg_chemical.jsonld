@@ -4,9 +4,7 @@
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
         "cmo": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
-        "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "afr": "http://purl.allotrope.org/ontologies/result#",
-        "chmo": "http://purl.obolibrary.org/obo/chmo.owl#",
         "name": {
             "@id": "sio:SIO_000118",
             "@type": "string"
@@ -16,11 +14,11 @@
             "@type": "string"
         },
         "purity": {
-            "@id": "ncit:NCIT_C62352",
+            "@id": "obo:NCIT_C62352",
             "@type": "@id"
         },
         "steps": {
-            "@id": "ncit:NCIT_C48176",
+            "@id": "obo:NCIT_C48176",
             "@type": "@id"
         },
         "analysis": {
@@ -32,11 +30,11 @@
             "@type": "string"
         },
         "purification": {
-            "@id": "chmo:CHMO_0002231",
+            "@id": "obo:CHMO_0002231",
             "@type": "string"
         },
         "number": {
-            "@id": "ncit:NCIT_C25712",
+            "@id": "obo:NCIT_C25712",
             "@type": "decimal"
         },
         "chemical": {

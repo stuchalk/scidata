@@ -2,7 +2,10 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "activity": "obo:NCIT_C43431",
+        "activity": {
+            "@id": "obo:NCIT_C43431",
+            "@type": "string"
+        },
         "exercise": {
             "@id": "obo:NCIT_C17708",
             "@type": "string"
