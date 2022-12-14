@@ -56,9 +56,9 @@
             {
                 "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
                 "tgt": "https://stuchalk.github.io/scidata/ontology/target.owl#",
-                "qudt": "http://qudt.org/vocab/unit/",
+                "qudt": "https://qudt.org/vocab/unit/",
                 "obo": "http://purl.obolibrary.org/obo/",
-                "dc": "http://purl.org/dc/terms/",
+                "dct": "http://purl.org/dc/terms/",
                 "xsd": "http://www.w3.org/2001/XMLSchema#"
             },
         </xsl:text>
@@ -114,7 +114,7 @@
                         <xsl:if test="$desc//pc:PC-CategorizedComment">,
                             <xsl:for-each select="$desc//pc:PC-CategorizedComment">
                                 <xsl:if test="pc:PC-CategorizedComment_title='Assay Type'">
-                                    "type": { "@value": "<xsl:value-of select="normalize-space(pc:PC-CategorizedComment_comment)"/>", "@type": "dc:type" }
+                                    "type": { "@value": "<xsl:value-of select="normalize-space(pc:PC-CategorizedComment_comment)"/>", "@type": "dct:type" }
                                 </xsl:if>
                                 <xsl:if test="pc:PC-CategorizedComment_title='Assay Data Source'">
                                     "source": "<xsl:value-of select="normalize-space(pc:PC-CategorizedComment_comment)"/>"

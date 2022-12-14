@@ -20,7 +20,7 @@
         "authors": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Stuart Chalk",
                 "orcid": "0000-0002-0703-7776"
             }
@@ -32,7 +32,7 @@
         ],
         "toc": [
             "sdo:scidataFramework",
-            "dc:creator",
+            "dct:creator",
             "sdo:scidata",
             "sdo:methodology",
             "sdo:system",

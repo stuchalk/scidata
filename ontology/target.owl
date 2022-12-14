@@ -7,7 +7,7 @@
      xmlns:rdfs="https://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/target/target.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/target/target.owl#"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -32,7 +32,7 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
-        <Class IRI="dc:title"/>
+        <Class IRI="dct:title"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#reagent"/>
@@ -88,12 +88,12 @@
     </DifferentIndividuals>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>dc:title</IRI>
+        <IRI>dct:title</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Common why the chemical is identified.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>dc:title</IRI>
+        <IRI>dct:title</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

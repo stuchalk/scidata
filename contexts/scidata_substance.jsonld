@@ -2,11 +2,11 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
             "substance": {"@id": "sub:substance"},
             "name": {
-                "@id": "dc:title",
+                "@id": "dct:title",
                 "@type": "string"
             },
             "role": {

@@ -3,7 +3,7 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "wkt": "http://en.wiktionary.org/wiki/",
         "uom": {"@id": "sdo:unitOfMeasurement"},
         "name": {
@@ -61,11 +61,11 @@
         },
         "fromunit": {
             "@id": "sdo:unitOfMeasurement",
-            "@type": "unitref"
+            "@type": "string"
         },
         "tounit": {
             "@id": "sdo:unitOfMeasurement",
-            "@type": "siunit"
+            "@type": "string"
         },
         "addend": {
             "@id": "wkt:addend",

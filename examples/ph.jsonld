@@ -10,8 +10,8 @@
             "w3i": "https://w3id.org/skgo/modsci#",
             "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "https://purl.org/dc/terms/",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "dct": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/ph/"}
     ],
@@ -26,7 +26,7 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Stuart Chalk",
                 "organization": "University of North Florida (UNF)",
                 "email": "schalk@unf.edu",
@@ -145,7 +145,7 @@
                                             "@id": "substance/1/constituent/1/property/1/value/",
                                             "@type": "sdo:value",
                                             "number": 2.99,
-                                            "unitref": "qudt:PPM"
+                                            "unit#": "qudt:PPM"
                                         }
                                     }
                                 ]
@@ -191,7 +191,7 @@
                                     "@id": "mixture/1/property/1/value/",
                                     "@type": "sdo:value",
                                     "number": 100,
-                                    "unitref": "qudt:MilliL"
+                                    "unit#": "qudt:MilliL"
                                 }
                             }
                         ]
@@ -218,7 +218,7 @@
                                     "@id": "chemical/1/property/1/value/",
                                     "@type": "sdo:value",
                                     "number": 1000,
-                                    "unitref": "qudt:PPM"
+                                    "unit#": "qudt:PPM"
                                 }
                             },
                             {
@@ -230,7 +230,7 @@
                                     "@id": "chemical/1/property/2/value/",
                                     "@type": "sdo:value",
                                     "number": 500,
-                                    "unitref": "qudt:MilliL"
+                                    "unit#": "qudt:MilliL"
                                 }
                             }
                         ]
@@ -319,7 +319,7 @@
                             "@id": "condition/1/value/",
                             "@type": "sdo:value",
                             "number": "22.8",
-                            "unitref": "qudt:DEG_C"
+                            "unit#": "qudt:DEG_C"
                         }
                     }
                 ]
@@ -363,14 +363,14 @@
         "sources": [
             {
                 "@id": "source/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Chalk Research Group",
                 "url": "https://stuchalk.github.io/scidata/examples/ph.jsonld"
             }
         ],
         "rights": {
             "@id": "rights/1/",
-            "@type": "dc:rights",
+            "@type": "dct:rights",
             "holder": "Chalk Research Group",
             "license": "https://creativecommons.org/licenses/by-sa/4.0/"
         }

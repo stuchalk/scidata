@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "numericvalue": {
@@ -85,11 +85,11 @@
                 "@type": "string"
             },
             "language": {
-                "@id": "dc:language",
+                "@id": "dct:language",
                 "@type": "string"
             },
             "language#": {
-                "@id": "dc:language",
+                "@id": "dct:language",
                 "@type": "@id"
             },
             "value": {

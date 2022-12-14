@@ -2,10 +2,10 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "tgt": "https://stuchalk.github.io/scidata/ontology/target/target.owl#",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "target": {"@id": "tgt:target"},
         "name": {
-            "@id": "dc:title",
+            "@id": "dct:title",
             "@type": "string"
         },
         "organism": {

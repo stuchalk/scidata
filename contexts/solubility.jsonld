@@ -2,10 +2,10 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "mp": "https://materialsproject.org/ontology/mp.owl#",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "emmo": "https://github.com/emmo-repo/EMMO",
-        "wd": "http://www.wikidata.org/wiki/",
+        "wd": "http://www.wikidata.org/entity/",
         "mpid": {
             "@id": "mp:mpprojid",
             "@type": "xsd:string"

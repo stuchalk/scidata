@@ -4,19 +4,19 @@
         "https://stuchalk.github.io/scidata/contexts/scidata_dataset.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "foaf": "http://xmlns.com/foaf/0.1/",
             "bibo": "http://purl.obolibrary.org/obo/bibo/",
-            "schema": "https://schema.org/",
+            "schema": "http://schema.org/",
             "bse": "http://purl.oclc.org/NET/EMSL/BSE",
-            "xsd": "https://www.w3.org/2001/XMLSchema#",
-            "qudt": "http://qudt.org/vocab/unit/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "qudt": "https://qudt.org/vocab/unit/",
             "prov": "http://www.w3.org/ns/prov#",
             "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
             "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
-            "ss": "https://semanticscience.org/ontology/sio.owl#",
+            "sio": "http://semanticscience.org/ontology/sio.owl#",
             "w3id": "https://w3id.org/reproduceme#",
             "generatedAt": {
                 "@id": "prov:generatedAtTime",
@@ -27,19 +27,19 @@
                 "@type": "string"
             },
             "uid": {
-                "@id": "dc:identifier",
+                "@id": "dct:identifier",
                 "@type": "string"
             },
             "pid": {
-                "@id": "dc:identifier",
+                "@id": "dct:identifier",
                 "@type": "string"
             },
             "title": {
-                "@id": "dc:title",
+                "@id": "dct:title",
                 "@type": "string"
             },
             "project": {
-                "@id": "dc:isPartOf",
+                "@id": "dct:isPartOf",
                 "@type": "string"
             },
             "authors": {
@@ -83,19 +83,19 @@
                 "@type": "string"
             },
             "description": {
-                "@id": "dc:description",
+                "@id": "dct:description",
                 "@type": "string"
             },
             "publisher": {
-                "@id": "dc:publisher",
+                "@id": "dct:publisher",
                 "@type": "string"
             },
             "keywords": {
-                "@id": "dc:subject",
+                "@id": "dct:subject",
                 "@type": "string"
             },
             "ids": {
-                "@id": "dc:identifier",
+                "@id": "dct:identifier",
                 "@type": "@id"
             },
             "starttime": {
@@ -115,11 +115,11 @@
                 "@type": "anyURI"
             },
             "related": {
-                "@id": "dc:related",
+                "@id": "dct:related",
                 "@type": "anyURI"
             },
             "toc": {
-                "@id": "dc:hasPart",
+                "@id": "dct:hasPart",
                 "@type": "@id"
             },
             "scidata": {
@@ -191,15 +191,15 @@
                 "@type": "@id"
             },
             "citation": {
-                "@id": "dc:bibliographicCitation",
+                "@id": "dct:bibliographicCitation",
                 "@type": "string"
             },
             "reftype": {
-                "@id": "dc:type",
+                "@id": "dct:type",
                 "@type": "string"
             },
             "reftype#": {
-                "@id": "dc:type",
+                "@id": "dct:type",
                 "@type": "@id"
             },
             "url": {
@@ -211,7 +211,7 @@
                 "@type": "string"
             },
             "created": {
-                "@id": "dc:created",
+                "@id": "dct:created",
                 "@type": "date"
             },
             "rights": {
@@ -219,11 +219,11 @@
                 "@type": "@id"
             },
             "holder": {
-                "@id": "dc:rightsHolder",
+                "@id": "dct:rightsHolder",
                 "@type": "string"
             },
             "license": {
-                "@id": "dc:license",
+                "@id": "dct:license",
                 "@type": "anyURI"
             }
         }

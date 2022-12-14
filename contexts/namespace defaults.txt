@@ -1,0 +1,15 @@
+From https://prefix.cc/context.jsonld
+
+"dct": "http://purl.org/dc/terms/"
+"schema": "http://schema.org/"
+"obo": "http://purl.obolibrary.org/obo/"
+"xsd": "http://www.w3.org/2001/XMLSchema#"
+"qudt": "https://qudt.org/vocab/unit/"
+"mesh": "http://purl.bioontology.org/ontology/MESH/"
+"wdt": "http://www.wikidata.org/prop/direct/"
+"wd": "http://www.wikidata.org/entity/"
+"cheminf": "http://www.semanticweb.org/ontologies/cheminf.owl#"
+"sio": "http://semanticscience.org/resource/"
+"modsci": "https://w3id.org/skgo/modsci#"
+"edam": "http://edamontology.org/"
+"efo": "http://www.ebi.ac.uk/efo/"

@@ -3,9 +3,9 @@
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "qudt": "http://qudt.org/vocab/unit/",
+            "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "http://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "http://www.ddbst.com/en/EED/PCP/SFT_C3/"}
@@ -52,7 +52,7 @@
                             "@id": "condition/1/value/",
                             "@type": "sdo:value",
                             "number": 286.95,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -65,7 +65,7 @@
                             "@id": "condition/2/value/",
                             "@type": "sdo:value",
                             "number": 288.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -78,7 +78,7 @@
                             "@id": "condition/3/value/",
                             "@type": "sdo:value",
                             "number": 292.25,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -91,7 +91,7 @@
                             "@id": "condition/4/value/",
                             "@type": "sdo:value",
                             "number": 293.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -104,7 +104,7 @@
                             "@id": "condition/5/value/",
                             "@type": "sdo:value",
                             "number": 299.85,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -117,7 +117,7 @@
                             "@id": "condition/6/value/",
                             "@type": "sdo:value",
                             "number": 303.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -130,7 +130,7 @@
                             "@id": "condition/7/value/",
                             "@type": "sdo:value",
                             "number": 304.55,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -143,7 +143,7 @@
                             "@id": "condition/8/value/",
                             "@type": "sdo:value",
                             "number": 313.75,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -156,7 +156,7 @@
                             "@id": "condition/9/value/",
                             "@type": "sdo:value",
                             "number": 315.95,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -169,7 +169,7 @@
                             "@id": "condition/10/value/",
                             "@type": "sdo:value",
                             "number": 328.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -182,7 +182,7 @@
                             "@id": "condition/11/value/",
                             "@type": "sdo:value",
                             "number": 333.55,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -195,7 +195,7 @@
                             "@id": "condition/12/value/",
                             "@type": "sdo:value",
                             "number": 340.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -208,7 +208,7 @@
                             "@id": "condition/13/value/",
                             "@type": "sdo:value",
                             "number": 346.65,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -221,7 +221,7 @@
                             "@id": "condition/14/value/",
                             "@type": "sdo:value",
                             "number": 353.15,
-                            "unitref": "qudt:Kelvin"
+                            "unit#": "qudt:Kelvin"
                         }
                     },
                     {
@@ -234,7 +234,7 @@
                             "@id": "condition/1/value/",
                             "@type": "sdo:value",
                             "number": 101.325,
-                            "unitref": "qudt:KiloPA"
+                            "unit#": "qudt:KiloPA"
                         }
                     }
                 ]
@@ -306,7 +306,7 @@
                                 "@id": "datapoint/1/value/",
                                 "@type": "sdo:value",
                                 "number": 29.1800,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -319,7 +319,7 @@
                                 "@id": "datapoint/2/value/",
                                 "@type": "sdo:value",
                                 "number": 29.7600,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -335,7 +335,7 @@
                                 "@id": "datapoint/3/value/",
                                 "@type": "sdo:value",
                                 "number": 29.4500,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -348,7 +348,7 @@
                                 "@id": "datapoint/4/value/",
                                 "@type": "sdo:value",
                                 "number": 29.0400,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -361,7 +361,7 @@
                                 "@id": "datapoint/5/value/",
                                 "@type": "sdo:value",
                                 "number": 29.1000,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -374,7 +374,7 @@
                                 "@id": "datapoint/6/value/",
                                 "@type": "sdo:value",
                                 "number": 29.2900,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -390,7 +390,7 @@
                                 "@id": "datapoint/7/value/",
                                 "@type": "sdo:value",
                                 "number": 28.4000,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -403,7 +403,7 @@
                                 "@id": "datapoint/8/value/",
                                 "@type": "sdo:value",
                                 "number": 27.8000,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -416,7 +416,7 @@
                                 "@id": "datapoint/9/value/",
                                 "@type": "sdo:value",
                                 "number": 26.8100,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -432,7 +432,7 @@
                                 "@id": "datapoint/10/value/",
                                 "@type": "sdo:value",
                                 "number": 26.6800,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -445,7 +445,7 @@
                                 "@id": "datapoint/11/value/",
                                 "@type": "sdo:value",
                                 "number": 25.4300,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -458,7 +458,7 @@
                                 "@id": "datapoint/12/value/",
                                 "@type": "sdo:value",
                                 "number": 23.8200,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -474,7 +474,7 @@
                                 "@id": "datapoint/13/value/",
                                 "@type": "sdo:value",
                                 "number": 24.2000,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -487,7 +487,7 @@
                                 "@id": "datapoint/14/value/",
                                 "@type": "sdo:value",
                                 "number": 22.3500,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -500,7 +500,7 @@
                                 "@id": "datapoint/15/value/",
                                 "@type": "sdo:value",
                                 "number": 21.5800,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         },
                         {
@@ -513,7 +513,7 @@
                                 "@id": "datapoint/16/value/",
                                 "@type": "sdo:value",
                                 "number": 21.7700,
-                                "unitref": "qudt:MilliN-PER-M"
+                                "unit#": "qudt:MilliN-PER-M"
                             }
                         }
                     ]
@@ -523,32 +523,32 @@
         "sources": [
             {
                 "@id": "source/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Hennaut-Roland L. ; Lek M. : IV. Surface Tension of a Series of Org. Substances (fr). Bull. Soc. Chim. Belg. 40 (1931) 177-188"
             },
             {
                 "@id": "source/2/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Jeffery G. H. ; Vogel A. I. : Part XVII. Acetylenic Compounds and Cyanides. J. Chem. Soc. London (1948) 674-683"
             },
             {
                 "@id": "source/3/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Korösi G. ; Kovats E. S. : Density and Surface Tension of 83 Organic Liquids. J. Chem. Eng. Data 26 (1981) 323-332"
             },
             {
                 "@id": "source/4/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Harkins W. D. ; Brown F. E. ; Davies E. C. H. : The structure of the surfaces of liquids, and solubility as related to the work done by the attraction of two surfaces as they approach each other. . J. Am. Chem. Soc. 39 (1917) 354-364"
             },
             {
                 "@id": "source/5/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Timmermans M. J. ; Hennaut-Roland M. : IV. Étude des constantes physiques de vingt composés organiques. J. Chim. Phys. 27 (1930) 401-442"
             },
             {
                 "@id": "source/6/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Renard T. ; Guye P. -A. : Measurement of the surface tension. (Fr). J. Chim. Phys. 5 (1907) 81-112"
             }
         ],

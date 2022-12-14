@@ -2,14 +2,14 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "cao": "http://champ-project.org/images/ontology/cao.owl#",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "substance": {"@id": "cao:CAO_000189"},
         "identifier": {
-            "@id": "dc:identifier",
+            "@id": "dct:identifier",
             "@type": "string"
         },
         "source": {
-            "@id": "dc:hasSource",
+            "@id": "dct:hasSource",
             "@type": "@id"
         },
         "preparation": {

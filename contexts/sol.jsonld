@@ -2,17 +2,17 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "sysID": {
-            "@id": "dc:identifier",
+            "@id": "dct:identifier",
             "@type": "string"
         },
         "title": {
-            "@id": "dc:title",
+            "@id": "dct:title",
             "@type": "string"
         },
         "preparer": {
-            "@id": "dc:creator",
+            "@id": "dct:creator",
             "@type": "string"
         },
         "remarks": {

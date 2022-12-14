@@ -134,9 +134,9 @@
                 "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
                 "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
             	"w3i": "https://w3id.org/skgo/modsci#",
-            	"qudt": "http://qudt.org/vocab/unit/#",
+            	"qudt": "https://qudt.org/vocab/unit/",
                 "obo": "http://purl.obolibrary.org/obo/",
-                "dc": "http://purl.org/dc/terms/",
+                "dct": "http://purl.org/dc/terms/",
                 "xsd": "http://www.w3.org/2001/XMLSchema#"
             },
         </xsl:text>
@@ -158,7 +158,7 @@
 	    <xsl:for-each select="$aus/line">
 	        {
 	            "@id": "author/<xsl:value-of select="position()"/>/",
-	            "@type": "dc:creator",
+	            "@type": "dct:creator",
 	            "name": "<xsl:value-of select="replace(.,$apos,'')"/>"
 	        }
 	        <xsl:if test="position() != last()">,</xsl:if>
@@ -355,7 +355,7 @@
 	                           "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:DegreeAngle"
+	                       "unit#": "qudt:DegreeAngle"
 	                   }
 	               },
 	               {
@@ -379,7 +379,7 @@
 	                               "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:DegreeAngle"
+	                       "unit#": "qudt:DegreeAngle"
 	                   }
 	               },
    	               {
@@ -403,7 +403,7 @@
 	                               "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:DegreeAngle"
+	                       "unit#": "qudt:DegreeAngle"
 	                   }
 	               },
 	               {
@@ -450,7 +450,7 @@
 	                               "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:Angstrom"
+	                       "unit#": "qudt:Angstrom"
 	                   }
 	               },
 	               {
@@ -474,7 +474,7 @@
 	                           "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:Angstrom"
+	                       "unit#": "qudt:Angstrom"
 	                   }
 	               },
 	               {
@@ -498,7 +498,7 @@
 	                               "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:Angstrom"
+	                       "unit#": "qudt:Angstrom"
 	                   }
 	               },
 	               {
@@ -524,7 +524,7 @@
 	                               "number": <xsl:value-of select="$val"/>
 	                           </xsl:otherwise>
 	                       </xsl:choose>,
-	                       "unitref": "qudt:CubicAngstrom"
+	                       "unit#": "qudt:CubicAngstrom"
 	                   }
 	               }
 	    	   ]
@@ -532,7 +532,7 @@
 	    },
 	    "sources": [{
 	    	"@id": "source/1/",
-	       "@type": "dc:source",
+	       "@type": "dct:source",
 			<xsl:variable name="j" select="$vars/var/value[../name/text()='journal_name_full']"/>
 	       <xsl:variable name="y" select="$vars/var/value[../name/text()='journal_year']"/>
 	       <xsl:variable name="f" select="$vars/var/value[../name/text()='journal_page_first']"/>

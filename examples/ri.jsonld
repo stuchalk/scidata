@@ -8,8 +8,8 @@
             "prop": "https://stuchalk.github.io/scidata/ontology/property/property.owl#",
             "smed": "http://snomed.info/id/",
             "qudt": "https://qudt.org/vocab/unit/",
-            "dc": "http://purl.org/dc/terms/",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "dct": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata:example:ri"}
     ],
@@ -24,7 +24,7 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Stuart Chalk",
                 "organization": "University of North Florida",
                 "email": "schalk@unf.edu",
@@ -57,8 +57,8 @@
             "sdo:condition",
             "sdo:datapoint",
             "qudt:NanoM",
-            "dc:source",
-            "dc:rights"
+            "dct:source",
+            "dct:rights"
         ],
         "ids": [
             "smed:420772006",
@@ -94,7 +94,7 @@
                                     "@id": "setting/1/value/",
                                     "@type": "sdo:value",
                                     "number": 589,
-                                    "unitref": "qudt:NanoM"
+                                    "unit#": "qudt:NanoM"
                                 }
                             }
                         ]
@@ -164,7 +164,7 @@
                                     "@id": "chemical/2/property/1/value/",
                                     "@type": "sdo:numercicvalue",
                                     "number": 9.99,
-                                    "unitref": "qudt:Percent_GM-PER-GM"
+                                    "unit#": "qudt:Percent_GM-PER-GM"
                                 }
                             }
                         ]
@@ -242,13 +242,13 @@
         "sources": [
             {
                 "@id": "source/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Hantzsch, A.; Duerigen, F.: Z. Phys. Chem., Abt. A 136 (1928) 1"
             }
         ],
         "rights": {
             "@id": "rights",
-            "@type": "dc:rights",
+            "@type": "dct:rights",
             "holder": "Chalk Group, Department of Chemistry, University of North Florida",
             "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
         }

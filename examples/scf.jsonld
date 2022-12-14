@@ -6,9 +6,9 @@
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "qudt": "https://qudt.org/vocab/unit/",
             "gc": "http://purl.org/gc/",
-            "dc": "http://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata:examples:scf/"}
     ],
@@ -22,14 +22,14 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Neil Ostlund",
                 "organization": "Chemical Semantics",
                 "email": "ostlund@hyper.com"
             },
             {
                 "@id": "author/2/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Stuart Chalk",
                 "organization": "UNF",
                 "email": "schalk@unf.edu"
@@ -40,7 +40,7 @@
         "permalink": "https://stuchalk.github.io/scidata/examples/scf.jsonld",
         "toc": {
             "@id": "toc",
-            "@type": "dc:tableOfContents",
+            "@type": "dct:tableOfContents",
             "sections": [
                 "sdo:methodology",
                 "sdo:system",
@@ -17729,14 +17729,14 @@
         "references": [
             {
                 "@id": "reference/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Provided by Chemical Semantics Inc. http://chemicalsemantics.com",
                 "url": "https://stuchalk.github.io/scidata/examples/scf.jsonld"
             }
         ],
         "rights": {
             "@id": "rights",
-            "@type": "dc:rights",
+            "@type": "dct:rights",
             "license": "http://creativecommons.org/publicdomain/zero/1.0/"
         }
     }

@@ -1,15 +1,15 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
         "compound": {"@id": "sdo:compound"},
         "element": {"@id": "sdo:element"},
         "name": {
-            "@id": "dc:title",
+            "@id": "dct:title",
             "@type": "string"
         },
         "iupacname": {
@@ -48,7 +48,7 @@
             "@id": "edam:data_3102",
             "@type": "string"
         },
-        "identifiers": {"@id": "dc:identifier"},
+        "identifiers": {"@id": "dct:identifier"},
         "descriptors": {"@id": "enm:ENM_8000019"},
         "molgraph": {"@id": "ss:CHEMINF_000022"}
     }

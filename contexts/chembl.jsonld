@@ -1,10 +1,10 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
-        "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "mesh": "http://purl.bioontology.org/ontology/MESH/",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "bao": "http://www.bioassayontology.org/bao#",
         "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
@@ -188,7 +188,7 @@
             "@type": "string"
         },
         "domain_type": {
-            "@id": "dc:type",
+            "@id": "dct:type",
             "@type": "string"
         },
         "domains": { "@id": "ss:SIO_001379" },
@@ -316,7 +316,7 @@
             "@type": "@id"
         },
         "relation": {
-            "@id": "dc:relation",
+            "@id": "dct:relation",
             "@type": "string"
         },
         "ro3_pass": {
@@ -360,7 +360,7 @@
             "@type": "string"
         },
         "standard_relation": {
-            "@id": "dc:relation",
+            "@id": "dct:relation",
             "@type": "string"
         },
         "standard_type": {

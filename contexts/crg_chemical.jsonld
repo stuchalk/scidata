@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
         "cmo": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
         "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
         "afo": "http://purl.allotrope.org/ontologies/result#",

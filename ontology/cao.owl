@@ -17,14 +17,14 @@
      xmlns:vivo="http://vivoweb.org/ontology/core#">
     <owl:Ontology rdf:about="http://champ-project.org/images/ontology/cao.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Analysis Metadata Platform (ChAMP) Ontology version 0.2</dc:title>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://champ-project.org</dc:source>
-        <dc:date xml:lang="en">2015-04-29</dc:date>
-        <dc:contributor xml:lang="en">Antony Williams</dc:contributor>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
-        <dc:creator xml:lang="en">Stuart Chalk</dc:creator>
-        <dc:description xml:lang="en">The Chemical Analysis Ontology (CAO) is an ontology developed as part of the Chemical Analaysis Metadata Project (ChAMP) as a resource to semantically annotate standards developed using the ChAMP platform.  For more information go to http://champ-project.org.</dc:description>
-        <dc:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical Analysis Metadata Platform (ChAMP) Ontology version 0.2</dct:title>
+        <dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://champ-project.org</dct:source>
+        <dct:date xml:lang="en">2015-04-29</dct:date>
+        <dct:contributor xml:lang="en">Antony Williams</dct:contributor>
+        <dct:format xml:lang="en">OWL-DL</dct:format>
+        <dct:creator xml:lang="en">Stuart Chalk</dct:creator>
+        <dct:description xml:lang="en">The Chemical Analysis Ontology (CAO) is an ontology developed as part of the Chemical Analaysis Metadata Project (ChAMP) as a resource to semantically annotate standards developed using the ChAMP platform.  For more information go to http://champ-project.org.</dct:description>
+        <dct:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</dct:license>
     </owl:Ontology>
     
 
@@ -81,9 +81,9 @@
         <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
         <rdfs:comment xml:lang="en-us">An entity responsible for making contributions to the
             content of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Examples of a Contributor include a person, an 
+        <dct:description xml:lang="en-us">Examples of a Contributor include a person, an
             organisation, or a service.  Typically, the name of a 
-            Contributor should be used to indicate the entity.</dc:description>
+            Contributor should be used to indicate the entity.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -94,7 +94,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
         <rdfs:label>Coverage</rdfs:label>
         <rdfs:label xml:lang="en-us">Coverage</rdfs:label>
-        <dc:description xml:lang="en-us">Coverage will typically include spatial location (a place name
+        <dct:description xml:lang="en-us">Coverage will typically include spatial location (a place name
             or geographic coordinates), temporal period (a period label,
             date, or date range) or jurisdiction (such as a named
             administrative entity).
@@ -102,7 +102,7 @@
             controlled vocabulary (for example, the Thesaurus of Geographic
             Names [TGN]) and that, where appropriate, named places or time
             periods be used in preference to numeric identifiers such as
-            sets of coordinates or date ranges.</dc:description>
+            sets of coordinates or date ranges.</dct:description>
         <rdfs:comment xml:lang="en-us">The extent or scope of the content of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
@@ -116,9 +116,9 @@
         <rdfs:label xml:lang="en-us">Creator</rdfs:label>
         <rdfs:comment xml:lang="en-us">An entity primarily responsible for making the content 
             of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Examples of a Creator include a person, an organisation,
+        <dct:description xml:lang="en-us">Examples of a Creator include a person, an organisation,
             or a service.  Typically, the name of a Creator should 
-            be used to indicate the entity.</dc:description>
+            be used to indicate the entity.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -131,10 +131,10 @@
         <rdfs:label xml:lang="en-us">Date</rdfs:label>
         <rdfs:comment xml:lang="en-us">A date associated with an event in the life cycle of the
             resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Typically, Date will be associated with the creation or
+        <dct:description xml:lang="en-us">Typically, Date will be associated with the creation or
             availability of the resource.  Recommended best practice
             for encoding the date value is defined in a profile of
-            ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+            ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -146,9 +146,9 @@
         <rdfs:label>Description</rdfs:label>
         <rdfs:label xml:lang="en-us">Description</rdfs:label>
         <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+        <dct:description xml:lang="en-us">Description may include but is not limited to: an abstract,
             table of contents, reference to a graphical representation
-            of content or a free-text account of the content.</dc:description>
+            of content or a free-text account of the content.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -160,13 +160,13 @@
         <rdfs:label>Format</rdfs:label>
         <rdfs:label xml:lang="en-us">Format</rdfs:label>
         <rdfs:comment xml:lang="en-us">The physical or digital manifestation of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Typically, Format may include the media-type or dimensions of
+        <dct:description xml:lang="en-us">Typically, Format may include the media-type or dimensions of
             the resource. Format may be used to determine the software,
             hardware or other equipment needed to display or operate the
             resource. Examples of dimensions include size and duration.
             Recommended best practice is to select a value from a
             controlled vocabulary (for example, the list of Internet Media
-            Types [MIME] defining computer media formats).</dc:description>
+            Types [MIME] defining computer media formats).</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -178,13 +178,13 @@
         <rdfs:label>Resource Identifier</rdfs:label>
         <rdfs:label xml:lang="en-us">Resource Identifier</rdfs:label>
         <rdfs:comment xml:lang="en-us">An unambiguous reference to the resource within a given context.</rdfs:comment>
-        <dc:description xml:lang="en-us">Recommended best practice is to identify the resource by means
+        <dct:description xml:lang="en-us">Recommended best practice is to identify the resource by means
             of a string or number conforming to a formal identification
             system.
             Example formal identification systems include the Uniform
             Resource Identifier (URI) (including the Uniform Resource
             Locator (URL)), the Digital Object Identifier (DOI) and the
-            International Standard Book Number (ISBN).</dc:description>
+            International Standard Book Number (ISBN).</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -196,12 +196,12 @@
         <rdfs:label>Language</rdfs:label>
         <rdfs:label xml:lang="en-us">Language</rdfs:label>
         <rdfs:comment xml:lang="en-us">A language of the intellectual content of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Recommended best practice is to use RFC 3066 [RFC3066],
+        <dct:description xml:lang="en-us">Recommended best practice is to use RFC 3066 [RFC3066],
             which, in conjunction with ISO 639 [ISO639], defines two-
             and three-letter primary language tags with optional
             subtags.  Examples include &quot;en&quot; or &quot;eng&quot; for English,
             &quot;akk&quot; for Akkadian, and &quot;en-GB&quot; for English used in the
-            United Kingdom.</dc:description>
+            United Kingdom.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -219,10 +219,10 @@
         <rdfs:label>Publisher</rdfs:label>
         <rdfs:label xml:lang="en-us">Publisher</rdfs:label>
         <rdfs:comment xml:lang="en-us">An entity responsible for making the resource available</rdfs:comment>
-        <dc:description xml:lang="en-us">Examples of a Publisher include a person, an organisation,
+        <dct:description xml:lang="en-us">Examples of a Publisher include a person, an organisation,
             or a service.
             Typically, the name of a Publisher should be used to
-            indicate the entity.</dc:description>
+            indicate the entity.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -233,11 +233,11 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
         <rdfs:label>Relation</rdfs:label>
         <rdfs:label xml:lang="en-us">Relation</rdfs:label>
-        <dc:description xml:lang="en-us">
+        <dct:description xml:lang="en-us">
             Recommended best practice is to reference the resource by means
             of a string or number conforming to a formal identification
             system.
-        </dc:description>
+        </dct:description>
         <rdfs:comment xml:lang="en-us">A reference to a related resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
@@ -249,7 +249,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
         <rdfs:label>Rights Management</rdfs:label>
         <rdfs:label xml:lang="en-us">Rights Management</rdfs:label>
-        <dc:description xml:lang="en-us">
+        <dct:description xml:lang="en-us">
             Typically, a Rights element will contain a rights 
             management statement for the resource, or reference 
             a service providing such information. Rights information 
@@ -258,7 +258,7 @@
             If the Rights element is absent, no assumptions can be made 
             about the status of these and other rights with respect to 
             the resource.
-        </dc:description>
+        </dct:description>
         <rdfs:comment xml:lang="en-us">Information about rights held in and over the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
@@ -272,10 +272,10 @@
         <rdfs:label xml:lang="en-us">Source</rdfs:label>
         <rdfs:comment xml:lang="en-us">A reference to a resource from which the present resource
             is derived.</rdfs:comment>
-        <dc:description xml:lang="en-us">The present resource may be derived from the Source resource
+        <dct:description xml:lang="en-us">The present resource may be derived from the Source resource
             in whole or in part.  Recommended best practice is to reference
             the resource by means of a string or number conforming to a
-            formal identification system.</dc:description>
+            formal identification system.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -287,11 +287,11 @@
         <rdfs:label>Subject and Keywords</rdfs:label>
         <rdfs:label xml:lang="en-us">Subject and Keywords</rdfs:label>
         <rdfs:comment xml:lang="en-us">The topic of the content of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Typically, a Subject will be expressed as keywords,
+        <dct:description xml:lang="en-us">Typically, a Subject will be expressed as keywords,
             key phrases or classification codes that describe a topic
             of the resource.  Recommended best practice is to select 
             a value from a controlled vocabulary or formal 
-            classification scheme.</dc:description>
+            classification scheme.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     
@@ -302,10 +302,10 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
         <rdfs:label>Title</rdfs:label>
         <rdfs:label xml:lang="en-us">Title</rdfs:label>
-        <dc:description xml:lang="en-us">
+        <dct:description xml:lang="en-us">
             Typically, a Title will be a name by which the resource is
             formally known.
-        </dc:description>
+        </dct:description>
         <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
@@ -318,12 +318,12 @@
         <rdfs:label>Resource Type</rdfs:label>
         <rdfs:label xml:lang="en-us">Resource Type</rdfs:label>
         <rdfs:comment xml:lang="en-us">The nature or genre of the content of the resource.</rdfs:comment>
-        <dc:description xml:lang="en-us">Type includes terms describing general categories, functions,
+        <dct:description xml:lang="en-us">Type includes terms describing general categories, functions,
             genres, or aggregation levels for content. Recommended best
             practice is to select a value from a controlled vocabulary
             (for example, the DCMI Type Vocabulary [DCMITYPE]). To 
             describe the physical or digital manifestation of the 
-            resource, use the Format element.</dc:description>
+            resource, use the Format element.</dct:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
     

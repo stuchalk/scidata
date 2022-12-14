@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "start_position": {

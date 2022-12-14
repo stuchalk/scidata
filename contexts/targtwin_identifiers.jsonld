@@ -2,8 +2,8 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "obo": "https://purl.obolibrary.org/obo/",
-            "ci": "https://semanticscience.org/ontology/cheminf.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "ci": "http://semanticscience.org/ontology/cheminf.owl#",
             "edam": "https://edamontology.org/",
             "accession_id": {
                 "@id": "obo:NCIT_C25402",

@@ -2,7 +2,7 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
         {
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
         },
         {"@base": "https://stuchalk.github.io/scidata/"}
@@ -13,23 +13,23 @@
     "@graph": {
         "@id": "identifier (uri)",
         "@type": "sdo:scidataFramework",
-        "uid": "dc:identifier (unique string)",
-        "title": "dc:title (string)",
+        "uid": "dct:identifier (unique string)",
+        "title": "dct:title (string)",
         "author": [
             {
                 "@id": "author/1/",
                 "name": "foaf:name (string)",
                 "organization": "foaf:organization (string)",
                 "email": "foaf:mbox (string)",
-                "orcid": "dc:identifier (string)"
+                "orcid": "dct:identifier (string)"
             }
         ],
-        "description": "dc:description (string)",
-        "publisher": "dc:publisher (string)",
-        "keywords": "dc:subject (string)",
-        "version": "dc:hasVersion - of the data not the file (integer)",
-        "date": "dc:date - date/time of data collection (string)",
-        "permalink": "dc:identifier (uri)",
+        "description": "dct:description (string)",
+        "publisher": "dct:publisher (string)",
+        "keywords": "dct:subject (string)",
+        "version": "dct:hasVersion - of the data not the file (integer)",
+        "date": "dct:date - date/time of data collection (string)",
+        "permalink": "dct:identifier (uri)",
         "related": ["one or more external links (uri)"],
         "toc": ["one or more internal links (uri)"],
         "ids": ["one or more external links from values in the file (uri)"],
@@ -149,13 +149,13 @@
             {
                 "@id": "source/1/",
                 "citation": "textual citation (string)",
-                "url": "dc:identifier (uri)"
+                "url": "dct:identifier (uri)"
             }
         ],
         "rights": {
             "@id": "rights/1/",
-            "license": "dc:rights (uri)",
-            "holder": "dc:rightsHolder (string)"
+            "license": "dct:rights (uri)",
+            "holder": "dct:rightsHolder (string)"
         }
     }
 }

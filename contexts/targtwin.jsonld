@@ -4,9 +4,9 @@
         "https://stuchalk.github.io/scidata/contexts/targtwin_descriptors.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "obo": "https://purl.obolibrary.org/obo/",
+            "obo": "http://purl.obolibrary.org/obo/",
             "edam": "https://edamontology.org/",
-            "ci": "https://semanticscience.org/ontology/cheminf.owl#",
+            "ci": "http://semanticscience.org/ontology/cheminf.owl#",
             "enm": "https://purl.enanomapper.org/onto/",
             "name": {
                 "@id": "edam:data_2099",

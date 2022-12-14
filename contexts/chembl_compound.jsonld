@@ -2,8 +2,8 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
-        "mesh": "https://bioportal.bioontology.org/ontologies/MESH#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "mesh": "http://purl.bioontology.org/ontology/MESH/",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
         "acd_logd": {

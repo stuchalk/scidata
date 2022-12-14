@@ -4,9 +4,9 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "uid": {
-                "@id": "dc:identifier",
+                "@id": "dct:identifier",
                 "@type": "string"
             },
             "parameter": {

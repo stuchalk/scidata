@@ -5,10 +5,10 @@
         "https://stuchalk.github.io/scidata/contexts/chemtwin_molgraph.jsonld",
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "dc": "https://purl.org/dc/terms/",
+            "dct": "http://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "obo": "https://purl.obolibrary.org/obo/",
-            "ss": "https://semanticscience.org/ontology/sio.owl#",
+            "obo": "http://purl.obolibrary.org/obo/",
+            "sio": "http://semanticscience.org/ontology/sio.owl#",
             "iupacname": {
                 "@id": "ss:CHEMINF_000107",
                 "@type": "string"

@@ -5,10 +5,10 @@
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
             "w3i": "https://w3id.org/skgo/modsci#",
-            "qudt": "http://qudt.org/vocab/unit/",
+            "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "https://purl.org/dc/terms/",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "dct": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "http://www.crystallography.net/cod/1000118/"}
     ],
@@ -25,17 +25,17 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Le Bail, A"
             },
             {
                 "@id": "author/2/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Marcos, M D"
             },
             {
                 "@id": "author/3/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Amoros, P"
             }
         ],
@@ -231,7 +231,7 @@
                             "@id": "datapoint/7/value/",
                             "@type": "sdo:value",
                             "number": 90,
-                            "unitref": "qudt:DegreeAngle"
+                            "unit#": "qudt:DegreeAngle"
                         }
                     },
                     {
@@ -245,7 +245,7 @@
                             "@type": "sdo:value",
                             "number": 121.83,
                             "error": 0.002,
-                            "unitref": "qudt:DegreeAngle"
+                            "unit#": "qudt:DegreeAngle"
                         }
                     },
                     {
@@ -258,7 +258,7 @@
                             "@id": "datapoint/9/value/",
                             "@type": "sdo:value",
                             "number": 90,
-                            "unitref": "qudt:DegreeAngle"
+                            "unit#": "qudt:DegreeAngle"
                         }
                     },
                     {
@@ -284,7 +284,7 @@
                             "@type": "sdo:value",
                             "number": 12.046,
                             "error": 0.0003,
-                            "unitref": "qudt:Angstrom"
+                            "unit#": "qudt:Angstrom"
                         }
                     },
                     {
@@ -298,7 +298,7 @@
                             "@type": "sdo:value",
                             "number": 8.147,
                             "error": 0.0001,
-                            "unitref": "qudt:Angstrom"
+                            "unit#": "qudt:Angstrom"
                         }
                     },
                     {
@@ -312,7 +312,7 @@
                             "@type": "sdo:value",
                             "number": 7.548,
                             "error": 0.0002,
-                            "unitref": "qudt:Angstrom"
+                            "unit#": "qudt:Angstrom"
                         }
                     },
                     {
@@ -325,7 +325,7 @@
                             "@id": "datapoint/14/value/",
                             "@type": "sdo:value",
                             "number": 629.4,
-                            "unitref": "qudt:CubicAngstrom"
+                            "unit#": "qudt:CubicAngstrom"
                         }
                     }
                 ]
@@ -334,7 +334,7 @@
         "sources": [
             {
                 "@id": "source/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Inorganic Chemistry 1994 Vol 33 2607-2613",
                 "reftype": "journal article",
                 "doi": "10.1021/ic00090a021",

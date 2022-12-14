@@ -7,10 +7,10 @@
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "w3i": "https://w3id.org/skgo/modsci#",
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
-            "qudt": "http://qudt.org/vocab/unit/",
+            "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "dc": "https://purl.org/dc/terms/",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "dct": "http://purl.org/dc/terms/",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/nmr/"}
     ],
@@ -25,7 +25,7 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "name": "Bruker BioSpin GmbH"
             }
         ],
@@ -52,8 +52,8 @@
             "sdo:compound",
             "sdo:datagroup",
             "sdo:dataseries",
-            "dc:source",
-            "dc:rights"
+            "dct:source",
+            "dct:rights"
         ],
         "ids": [
             "obo:CHMO_0000228",
@@ -94,7 +94,7 @@
                                     "@id": "setting/1/value/",
                                     "@type": "sdo:value",
                                     "number": "300.03180",
-                                    "unitref": "qudt:MegaHZ"
+                                    "unit#": "qudt:MegaHZ"
                                 }
                             },
                             {
@@ -106,7 +106,7 @@
                                     "@id": "setting/2/value/",
                                     "@type": "sdo:value",
                                     "number": "3.42098",
-                                    "unitref": "qudt:SEC"
+                                    "unit#": "qudt:SEC"
                                 }
                             },
                             {
@@ -251,7 +251,7 @@
                                     "@id": "attribute/2/value/",
                                     "@type": "sdo:value",
                                     "number": "4184.02539063",
-                                    "unitref": "qudt:HZ"
+                                    "unit#": "qudt:HZ"
                                 }
                             },
                             {
@@ -263,7 +263,7 @@
                                     "@id": "attribute/3/value/",
                                     "@type": "sdo:value",
                                     "number": "-604.9543457",
-                                    "unitref": "qudt:HZ"
+                                    "unit#": "qudt:HZ"
                                 }
                             },
                             {
@@ -275,7 +275,7 @@
                                     "@id": "attribute/4/value/",
                                     "@type": "sdo:value",
                                     "number": "4184.02539063",
-                                    "unitref": "qudt:HZ"
+                                    "unit#": "qudt:HZ"
                                 }
                             },
                             {
@@ -287,7 +287,7 @@
                                     "@id": "attribute/5/value/",
                                     "@type": "sdo:value",
                                     "number": "-604.9543457",
-                                    "unitref": "qudt:HZ"
+                                    "unit#": "qudt:HZ"
                                 }
                             },
                             {
@@ -354,7 +354,7 @@
                                     "@id": "attribute/11/value/",
                                     "@type": "sdo:value",
                                     "number": "-0.29231454",
-                                    "unitref": "qudt:HZ"
+                                    "unit#": "qudt:HZ"
                                 }
                             }
                         ],
@@ -16809,7 +16809,7 @@
                                     -617.55863404,
                                     -617.85094858
                                 ],
-                                "unitref": "qudt:HZ"
+                                "unit#": "qudt:HZ"
                             }
                         }
                     },
@@ -33266,14 +33266,14 @@
         "sources": [
             {
                 "@id": "source/1/",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "SpectraSchool Spectra Dataset, Royal Society of Chemistry",
                 "url": "http://www.rsc.org/learn-chemistry/collections/spectroscopy"
             }
         ],
         "rights": {
             "@id": "rights/1/",
-            "@type": "dc:rights",
+            "@type": "dct:rights",
             "holder": "Chalk Group, Department of Chemistry, University of North Florida",
             "license": "https://creativecommons.org/licenses/by-sa/4.0/"
         }

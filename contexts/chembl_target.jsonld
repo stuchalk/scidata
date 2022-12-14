@@ -1,9 +1,9 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "ss": "https://semanticscience.org/ontology/sio.owl#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
         "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
         "cco": "http://rdf.ebi.ac.uk/terms/chembl#",
         "accession": {
@@ -23,7 +23,7 @@
             "@type": "string"
         },
         "domain_type": {
-            "@id": "dc:type",
+            "@id": "dct:type",
             "@type": "string"
         },
         "domains": {"@id": "ss:SIO_001379"},

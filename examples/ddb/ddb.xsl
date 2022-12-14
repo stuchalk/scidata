@@ -33,9 +33,9 @@
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
                 "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-                "qudt": "http://qudt.org/vocab/unit/",
+                "qudt": "https://qudt.org/vocab/unit/",
                 "obo": "http://purl.obolibrary.org/obo/",
-                "dc": "http://purl.org/dc/terms/",
+                "dct": "http://purl.org/dc/terms/",
                 "xsd": "http://www.w3.org/2001/XMLSchema#"
             },
         </xsl:text>
@@ -101,7 +101,7 @@
 							"@id": "condition/<xsl:value-of select="position()"/>/value/",
 							"@type": "sdo:value",
 							"number": <xsl:value-of select="number($t)"/>,
-							"unitref": "qudt:Kelvin"
+							"unit#": "qudt:Kelvin"
 						}
 					}
 					<xsl:if test="position() != last()">,</xsl:if>
@@ -119,7 +119,7 @@
 						"@id": "condition/<xsl:value-of select="position()"/>/value/",
 							"@type": "sdo:value",
 							"number": <xsl:value-of select="number($p)"/>,
-							"unitref": "qudt:KiloPA"
+							"unit#": "qudt:KiloPA"
 						}
 					}
 					<xsl:if test="position() != last()">,</xsl:if>
@@ -175,7 +175,7 @@
 							"@id": "datapoint/<xsl:value-of select="$pos"/>/value/",
 							"@type": "sdo:value",
 							"number": <xsl:value-of select="td[3]"/>,
-							"unitref": "qudt:MilliN-PER-M"
+							"unit#": "qudt:MilliN-PER-M"
 						}
 					}
 					</xsl:if>
@@ -189,7 +189,7 @@
 				<xsl:if test="position()>1">
 					{
 						"@id": "source/<xsl:value-of select="td[1]"/>/",
-						"@type": "dc:source",
+						"@type": "dct:source",
 						<xsl:variable name="cite" select="replace(replace(replace(td[2],'\.','. '),'\n',' '),'\s+',' ')"/>
 						<!--  tried using the citation string to retrieve the DOI from api.crossref.org but kept timing out -->
 						"citation": "<xsl:value-of select="$cite"/>"

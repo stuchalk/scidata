@@ -2,31 +2,31 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "dc": "https://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "basisSet": {"@id": "sdo:basisSet"},
         "title": {
-            "@id": "dc:title",
+            "@id": "dct:title",
             "@type": "string"
         },
         "description": {
-            "@id": "dc:description",
+            "@id": "dct:description",
             "@type": "string"
         },
         "format": {
-            "@id": "dc:format",
+            "@id": "dct:format",
             "@type": "string"
         },
         "setType": {
-            "@id": "dc:type",
+            "@id": "dct:type",
             "@type": "string"
         },
         "harmonicType": {
-            "@id": "dc:type",
+            "@id": "dct:type",
             "@type": "string"
         },
         "contractionType": {
-            "@id": "dc:type",
+            "@id": "dct:type",
             "@type": "string"
         },
         "sets": {"@id": "obo:NCIT_C47894"},

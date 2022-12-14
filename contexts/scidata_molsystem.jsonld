@@ -3,8 +3,8 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "gc": "http://purl.org/gc/",
-            "dc": "https://purl.org/dc/terms/",
-            "ss": "https://semanticscience.org/ontology/sio.owl#",
+            "dct": "http://purl.org/dc/terms/",
+            "sio": "http://semanticscience.org/ontology/sio.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",

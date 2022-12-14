@@ -82,10 +82,10 @@
           ]
       },
       "default": [
-        "http://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
-        "http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
-        {"qudt": "http://www.qudt.org/qudt/owl/1.0.0/unit.owl#"},
-        {"@base": "http://stuchalk.github.io/scidata/examples/value.jsonld#"}
+        "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld",
+        {"qudt": "https://qudt.org/vocab/unit/"},
+        {"@base": "https://stuchalk.github.io/scidata/examples/value.jsonld#"}
       ]
     },
     "@id": { 

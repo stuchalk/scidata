@@ -16,7 +16,7 @@
         "number": 12.0107,
         "error": 8.0E-4,
         "sigfigs": 5,
-        "unit": "unit/amu"
+        "unit#": "qudt:amu"
     },
     "numericvaluearray": {
         "@id": "numeric/2",
@@ -29,7 +29,7 @@
         ],
         "error": 1.0E-4,
         "sigfigs": 4,
-        "unitref": "qudt:g"
+        "unit#": "qudt:g"
     },
     "textstring": {
         "@id": "text/1",

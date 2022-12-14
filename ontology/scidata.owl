@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl"/>
-    <Prefix name="dc" IRI="https://purl.org/dc/terms/"/>
+    <Prefix name="dct" IRI="https://purl.org/dc/terms/"/>
     <Prefix name="chm" IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -21,7 +21,7 @@
     <Prefix name="prop" IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
-    <Prefix name="cheminf" IRI="https://semanticscience.org/ontology/sio.owl"/>
+    <Prefix name="cheminf" IRI="http://semanticscience.org/ontology/sio.owl"/>
     <Prefix name="bfo11snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
     <Prefix name="bfo11span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
     <Annotation>
@@ -138,43 +138,43 @@
         <Class abbreviatedIRI="foaf:organization"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:accessRights"/>
+        <Class abbreviatedIRI="dct:accessRights"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+        <Class abbreviatedIRI="dct:bibliographicCitation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="dct:creator"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:description"/>
+        <Class abbreviatedIRI="dct:description"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:hasPart"/>
+        <Class abbreviatedIRI="dct:hasPart"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:identifier"/>
+        <Class abbreviatedIRI="dct:identifier"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:license"/>
+        <Class abbreviatedIRI="dct:license"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:source"/>
+        <Class abbreviatedIRI="dct:source"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:subject"/>
+        <Class abbreviatedIRI="dct:subject"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:tableOfContents"/>
+        <Class abbreviatedIRI="dct:tableOfContents"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dc:title"/>
+        <Class abbreviatedIRI="dct:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://schema.org/URL"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://semanticscience.org/ontology/sio.owlSIO_000999"/>
+        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
@@ -578,14 +578,14 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="bibo:doi"/>
-        <Class abbreviatedIRI="dc:identifier"/>
+        <Class abbreviatedIRI="dct:identifier"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="foaf:maker"/>
-        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="dct:creator"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="dc:identifier"/>
+        <Class abbreviatedIRI="dct:identifier"/>
         <Class IRI="#uid"/>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -697,47 +697,47 @@
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:accessRights"/>
+        <Class abbreviatedIRI="dct:accessRights"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:bibliographicCitation"/>
+        <Class abbreviatedIRI="dct:bibliographicCitation"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="dct:creator"/>
         <Class abbreviatedIRI="foaf:Agent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:description"/>
+        <Class abbreviatedIRI="dct:description"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:hasPart"/>
+        <Class abbreviatedIRI="dct:hasPart"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:identifier"/>
+        <Class abbreviatedIRI="dct:identifier"/>
         <Class IRI="#equivalentThings"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:license"/>
+        <Class abbreviatedIRI="dct:license"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:source"/>
+        <Class abbreviatedIRI="dct:source"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:subject"/>
+        <Class abbreviatedIRI="dct:subject"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:tableOfContents"/>
+        <Class abbreviatedIRI="dct:tableOfContents"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dc:title"/>
+        <Class abbreviatedIRI="dct:title"/>
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
@@ -745,7 +745,7 @@
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://semanticscience.org/ontology/sio.owlSIO_000999"/>
+        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
         <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
     </SubClassOf>
     <SubClassOf>
@@ -1169,7 +1169,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCreator"/>
-        <Class abbreviatedIRI="dc:creator"/>
+        <Class abbreviatedIRI="dct:creator"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDatagroup"/>
@@ -1197,7 +1197,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRights"/>
-        <Class abbreviatedIRI="dc:accessRights"/>
+        <Class abbreviatedIRI="dct:accessRights"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasScientificData"/>
@@ -1205,7 +1205,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSource"/>
-        <Class abbreviatedIRI="dc:source"/>
+        <Class abbreviatedIRI="dct:source"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSystem"/>
@@ -1217,7 +1217,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTOC"/>
-        <Class abbreviatedIRI="dc:tableOfContents"/>
+        <Class abbreviatedIRI="dct:tableOfContents"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isExperimentalDataOf"/>
@@ -2061,112 +2061,112 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:accessRights</AbbreviatedIRI>
         <Literal>Information about who can access the resource or an indication of its security status.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:accessRights</AbbreviatedIRI>
         <Literal>accessRights</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:accessRights</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:accessRights</AbbreviatedIRI>
         <Literal>rights</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:bibliographicCitation</AbbreviatedIRI>
         <Literal>A bibliographic reference for a resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:bibliographicCitation</AbbreviatedIRI>
         <Literal>bibliographicCitation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:bibliographicCitation</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:bibliographicCitation</AbbreviatedIRI>
         <Literal>citation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:creator</AbbreviatedIRI>
         <Literal>The person (one of the persons) that authored the scientific data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:creator</AbbreviatedIRI>
         <Literal>author</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:creator</AbbreviatedIRI>
         <Literal>author</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:description</AbbreviatedIRI>
         <Literal>Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:description</AbbreviatedIRI>
         <Literal>description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:description</AbbreviatedIRI>
         <Literal>description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:hasPart</AbbreviatedIRI>
         <Literal>A uri pointing to a section of the scientific data report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:hasPart</AbbreviatedIRI>
         <Literal>hasPart</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:hasPart</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:hasPart</AbbreviatedIRI>
         <Literal>section</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
         <Literal>An unambiguous reference to the resource within a given context.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
         <Literal>identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:identifier</AbbreviatedIRI>
         <Literal>identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:license</AbbreviatedIRI>
         <Literal>A legal document giving official permission to do something with the resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:license</AbbreviatedIRI>
         <Literal>license</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:license</AbbreviatedIRI>
         <Literal>license</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:source</AbbreviatedIRI>
         <Literal xml:lang="en-us">The present resource may be derived from the Source resource
             in whole or in part.  Recommended best practice is to reference
             the resource by means of a string or number conforming to a
@@ -2174,62 +2174,62 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:source</AbbreviatedIRI>
         <Literal>A reference to a resource from which the present resource is derived.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:source</AbbreviatedIRI>
         <IRI>http://purl.org/dc/elements/1.1/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:source</AbbreviatedIRI>
         <Literal>source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:subject</AbbreviatedIRI>
         <Literal>A word or phrase that indicates a subject that is pertinent to the scientific data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:subject</AbbreviatedIRI>
         <Literal>subject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:subject</AbbreviatedIRI>
         <Literal>keywords</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:tableOfContents</AbbreviatedIRI>
         <Literal>A list of uris that point to the main parts of the scientific data report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:tableOfContents</AbbreviatedIRI>
         <Literal>tableOfContents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:tableOfContents</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:tableOfContents</AbbreviatedIRI>
         <Literal>table of contents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:title</AbbreviatedIRI>
         <Literal>The title of a scientific data report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:title</AbbreviatedIRI>
         <Literal>title</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <AbbreviatedIRI>dct:title</AbbreviatedIRI>
         <Literal>title</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2249,17 +2249,17 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>https://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
         <Literal>A procedure is a process that attempts to achieve one or more objectives by following an established set of actions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>https://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
         <Literal>SIO_000999</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
         <Literal>procedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

@@ -2,7 +2,7 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "ss": "https://semanticscience.org/ontology/sio.owl#",
+            "sio": "http://semanticscience.org/ontology/sio.owl#",
             "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
             "afo": "http://purl.allotrope.org/ontologies/property#",
             "heavy_atom": {

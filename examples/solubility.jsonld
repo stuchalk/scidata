@@ -5,9 +5,9 @@
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "meas": "https://stuchalk.github.io/scidata/ontology/scidata_measurement.owl#",
             "qudt": "https://qudt.org/vocab/unit/",
-            "dc": "http://purl.org/dc/terms/",
-            "ss": "http://www.semanticweb.org/ontologies/cheminf.owl#",
-            "xsd": "https://www.w3.org/2001/XMLSchema#"
+            "dct": "http://purl.org/dc/terms/",
+            "chminf": "http://www.semanticweb.org/ontologies/cheminf.owl#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
         },
         {"@base": "https://sds.coas.unf.edu/sds:report:002014/"}
     ],
@@ -22,7 +22,7 @@
         "author": [
             {
                 "@id": "author/1/",
-                "@type": "dc:creator",
+                "@type": "dct:creator",
                 "url": "https://sds.coas.unf.edu/authors/view/00014",
                 "name": "William E. Acree, Jr.",
                 "address": "Department of Chemistry University of North Texas, Denton, TX 76203, USA",
@@ -754,14 +754,14 @@
         "source": [
             {
                 "@id": "source",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "NIST-IUPAC Solubility Database - https://sds.coas.unf.edu",
                 "reftype": "database",
                 "url": "https://sds.coas.unf.edu/"
             },
             {
                 "@id": "source",
-                "@type": "dc:source",
+                "@type": "dct:source",
                 "citation": "Shinomiya, C.; J. Chem. Soc. Japan 1940, 15, 259-270.",
                 "reftype": "original paper",
                 "url": "http://dx.doi.org/10.1246/bcsj.15.259"
@@ -769,7 +769,7 @@
         ],
         "rights": {
             "@id": "rights",
-            "@type": "dc:rights",
+            "@type": "dct:rights",
             "holder": "International Union of Pure and Applied Chemistry (IUPAC)",
             "license": "http://creativecommons.org/publicdomain/zero/1.0/"
         }
