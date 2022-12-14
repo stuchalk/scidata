@@ -3,7 +3,7 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "wdt": "http://www.wikidata.org/prop/direct/",
-            "sio": "http://semanticscience.org/ontology/sio.owl#",
+            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
             "inchi": {
                 "@id": "wdt:P234",
                 "@type": "string"
@@ -53,7 +53,7 @@
                 "@type": "string"
             },
             "wikidata": {
-                "@id": "sio:CHEMINF_000123",
+                "@id": "cheminf:CHEMINF_000123",
                 "@type": "string"
             }
         }

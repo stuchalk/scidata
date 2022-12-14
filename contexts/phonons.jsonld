@@ -4,8 +4,8 @@
         "mp": "https://stuchalk.github.io/scidata/ontology/mp.owl#",
         "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
         "dct": "http://purl.org/dc/terms/",
-        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
-        "chminf": "https://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl#",
+        "edam": "https://edamontology.org/EDAM.owl#",
+        "cheminf": "https://semanticchemistry.com/ontology/cheminf.owl#",
         "npo": "http://purl.bioontology.org/ontology/npo#",
         "obo": "http://purl.obolibrary.org/obo/",
         "wd": "http://www.wikidata.org/entity/",
@@ -18,7 +18,7 @@
             "@type": "string"
         },
         "name": {
-            "@id": "sio:CHEMINF_000107",
+            "@id": "cheminf:CHEMINF_000107",
             "@type": "string"
         },
         "formula": {
@@ -38,7 +38,7 @@
             "@type": "string"
         },
         "inchikey": {
-            "@id": "sio:CHEMINF_000059",
+            "@id": "cheminf:CHEMINF_000059",
             "@type": "string"
         },
         "constituents": {

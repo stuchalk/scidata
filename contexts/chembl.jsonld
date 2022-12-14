@@ -4,8 +4,9 @@
         "dct": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
         "mesh": "http://purl.bioontology.org/ontology/MESH/",
-        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "edam": "https://edamontology.org/EDAM.owl#",
         "bao": "http://www.bioassayontology.org/bao#",
         "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
@@ -14,19 +15,19 @@
             "@type": "string"
         },
         "acd_logd": {
-            "@id": "sio:CHEMINF_000323",
+            "@id": "cheminf:CHEMINF_000323",
             "@type": "string"
         },
         "acd_logp": {
-            "@id": "sio:CHEMINF_000321",
+            "@id": "cheminf:CHEMINF_000321",
             "@type": "string"
         },
         "acd_most_apka": {
-            "@id": "sio:CHEMINF_000324",
+            "@id": "cheminf:CHEMINF_000324",
             "@type": "string"
         },
         "acd_most_bpka": {
-            "@id": "sio:CHEMINF_000325",
+            "@id": "cheminf:CHEMINF_000325",
             "@type": "string"
         },
         "action_type": {
@@ -42,7 +43,7 @@
             "@type": "integer"
         },
         "alogp": {
-            "@id": "sio:CHEMINF_000295",
+            "@id": "cheminf:CHEMINF_000295",
             "@type": "string"
         },
         "aromatic_rings": {
@@ -130,7 +131,7 @@
             "@type": "string"
         },
         "chirality": {
-            "@id": "sio:CHEMINF_000245",
+            "@id": "cheminf:CHEMINF_000245",
             "@type": "string"
         },
         "class type": {
@@ -157,19 +158,19 @@
             "@type": "string"
         },
         "cx_logd": {
-            "@id": "sio:CHEMINF_000323",
+            "@id": "cheminf:CHEMINF_000323",
             "@type": "string"
         },
         "cx_logp": {
-            "@id": "sio:CHEMINF_000321",
+            "@id": "cheminf:CHEMINF_000321",
             "@type": "string"
         },
         "cx_most_apka": {
-            "@id": "sio:CHEMINF_000324",
+            "@id": "cheminf:CHEMINF_000324",
             "@type": "string"
         },
         "cx_most_bpka": {
-            "@id": "sio:CHEMINF_000325",
+            "@id": "cheminf:CHEMINF_000325",
             "@type": "string"
         },
         "definition": {
@@ -201,7 +202,7 @@
             "@type": "integer"
         },
         "full_molformula": {
-            "@id": "sio:CHEMINF_000490",
+            "@id": "cheminf:CHEMINF_000490",
             "@type": "string"
         },
         "full_mwt": {
@@ -209,23 +210,23 @@
             "@type": "string"
         },
         "hba": {
-            "@id": "sio:CHEMINF_000245",
+            "@id": "cheminf:CHEMINF_000245",
             "@type": "string"
         },
         "hba_lipinski": {
-            "@id": "sio:CHEMINF_000245",
+            "@id": "cheminf:CHEMINF_000245",
             "@type": "string"
         },
         "hbd": {
-            "@id": "sio:CHEMINF_000244",
+            "@id": "cheminf:CHEMINF_000244",
             "@type": "string"
         },
         "hbd_lipinski": {
-            "@id": "sio:CHEMINF_000244",
+            "@id": "cheminf:CHEMINF_000244",
             "@type": "string"
         },
         "heavy_atoms": {
-            "@id": "sio:CHEMINF_000300",
+            "@id": "cheminf:CHEMINF_000300",
             "@type": "string"
         },
         "identifiers": {
@@ -260,7 +261,7 @@
             "@type": "string"
         },
         "molecular_species": {
-            "@id": "sio:CHEMINF_000327",
+            "@id": "cheminf:CHEMINF_000327",
             "@type": "string"
         },
         "molecule_type": {
@@ -268,15 +269,15 @@
             "@type": "string"
         },
         "mw_freebase": {
-            "@id": "sio:CHEMINF_000350",
+            "@id": "cheminf:CHEMINF_000350",
             "@type": "string"
         },
         "mw_monoisotopic": {
-            "@id": "sio:CHEMINF_000485",
+            "@id": "cheminf:CHEMINF_000485",
             "@type": "string"
         },
         "num_ro5_violations": {
-            "@id": "sio:CHEMINF_000367",
+            "@id": "cheminf:CHEMINF_000367",
             "@type": "string"
         },
         "organism": {
@@ -304,11 +305,11 @@
             "@type": "string"
         },
         "psa": {
-            "@id": "sio:CHEMINF_000307",
+            "@id": "cheminf:CHEMINF_000307",
             "@type": "string"
         },
         "qed_weighted": {
-            "@id": "sio:CHEMINF_000431",
+            "@id": "cheminf:CHEMINF_000431",
             "@type": "string"
         },
         "qudt_units": {
@@ -320,11 +321,11 @@
             "@type": "string"
         },
         "ro3_pass": {
-            "@id": "sio:CHEMINF_000315",
+            "@id": "cheminf:CHEMINF_000315",
             "@type": "string"
         },
         "rtb": {
-            "@id": "sio:CHEMINF_000254",
+            "@id": "cheminf:CHEMINF_000254",
             "@type": "string"
         },
         "sei": {

@@ -3,7 +3,7 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "ci": "http://semanticscience.org/ontology/cheminf.owl#",
+            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
             "edam": "https://edamontology.org/",
             "accession_id": {
                 "@id": "obo:NCIT_C25402",
@@ -82,7 +82,7 @@
                 "@type": "string"
             },
             "wikipedia": {
-                "@id": "ci:CHEMINF_000410",
+                "@id": "cheminf:CHEMINF_000410",
                 "@type": "string"
             }
         }

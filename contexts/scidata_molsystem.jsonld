@@ -5,6 +5,7 @@
             "gc": "http://purl.org/gc/",
             "dct": "http://purl.org/dc/terms/",
             "sio": "http://semanticscience.org/ontology/sio.owl#",
+            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
@@ -85,7 +86,7 @@
                 "@type": "@id"
             },
             "inchiKey": {
-                "@id": "sio:CHEMINF_000059",
+                "@id": "cheminf:CHEMINF_000059",
                 "@type": "string"
             },
             "type": {

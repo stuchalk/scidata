@@ -8,26 +8,26 @@
             "dct": "http://purl.org/dc/terms/",
             "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "sio": "http://semanticscience.org/ontology/sio.owl#",
+            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
             "iupacname": {
-                "@id": "sio:CHEMINF_000107",
+                "@id": "cheminf:CHEMINF_000107",
                 "@type": "string"
             },
             "formula": {
-                "@id": "sio:CHEMINF_000042",
+                "@id": "cheminf:CHEMINF_000042",
                 "@type": "string"
             },
             "molweight": {
-                "@id": "sio:CHEMINF_000088",
+                "@id": "cheminf:CHEMINF_000088",
                 "@type": "float"
             },
             "monoisotopicmass": {
-                "@id": "sio:CHEMINF_000218",
+                "@id": "cheminf:CHEMINF_000218",
                 "@type": "float"
             },
             "identifiers": "obo:IAO_0000578",
-            "descriptors": "sio:CHEMINF_000123",
-            "molgraph": "sio:CHEMINF_000022"
+            "descriptors": "cheminf:CHEMINF_000123",
+            "molgraph": "cheminf:CHEMINF_000022"
         }
     ]
 }

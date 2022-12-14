@@ -5,6 +5,7 @@
         "edam": "https://edamontology.org/EDAM.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
         "mesh": "http://purl.bioontology.org/ontology/MESH/",
         "lotus_id": {
             "@id": "edam:data_1086",
@@ -27,7 +28,7 @@
             "@type": "string"
         },
         "iupac_name": {
-            "@id": "sio:CHEMINF_000107",
+            "@id": "cheminf:CHEMINF_000107",
             "@type": "string"
         },
         "cas": {
@@ -35,7 +36,7 @@
             "@type": "string"
         },
         "molecular_formula": {
-            "@id": "sio:CHEMINF_000042",
+            "@id": "cheminf:CHEMINF_000042",
             "@type": "string"
         },
         "molecular_weight": {
@@ -51,7 +52,7 @@
             "@type": "float"
         },
         "wikidata_id": {
-            "@id": "sio:CHEMINF_000567",
+            "@id": "cheminf:CHEMINF_000567",
             "@type": "string"
         },
         "contains_sugar": {
@@ -59,7 +60,7 @@
             "@type": "integer"
         },
         "heavy_atom_number": {
-            "@id": "sio:CHEMINF_000300",
+            "@id": "cheminf:CHEMINF_000300",
             "@type": "integer"
         },
         "inchi2D": {
@@ -95,11 +96,11 @@
             "@type": "string"
         },
         "number_of_carbons": {
-            "@id": "sio:CHEMINF_000263",
+            "@id": "cheminf:CHEMINF_000263",
             "@type": "integer"
         },
         "number_of_nitrogens": {
-            "@id": "sio:CHEMINF_000263",
+            "@id": "cheminf:CHEMINF_000263",
             "@type": "integer"
         },
         "number_of_rings": {
@@ -127,7 +128,7 @@
             "@type": "integer"
         },
         "total_atom_number": {
-            "@id": "sio:CHEMINF_000263",
+            "@id": "cheminf:CHEMINF_000263",
             "@type": "integer"
         },
         "murko_framework": {
@@ -172,115 +173,115 @@
             "@type": "string"
         },
         "alogp": {
-            "@id": "sio:CHEMINF_000295",
+            "@id": "cheminf:CHEMINF_000295",
             "@type": "float"
         },
         "alogp2": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "float"
         },
         "amralogp": {
-            "@id": "sio:CHEMINF_000001",
+            "@id": "cheminf:CHEMINF_000001",
             "@type": "string"
         },
         "apol": {
-            "@id": "sio:CHEMINF_000002",
+            "@id": "cheminf:CHEMINF_000002",
             "@type": "string"
         },
         "bcutDescriptor": {
-            "@id": "sio:CHEMINF_001500",
+            "@id": "cheminf:CHEMINF_001500",
             "@type": "string"
         },
         "bpol": {
-            "@id": "sio:CHEMINF_000179",
+            "@id": "cheminf:CHEMINF_000179",
             "@type": "float"
         },
         "eccentricConnectiityIndexDescriptor": {
-            "@id": "sio:CHEMINF_000192",
+            "@id": "cheminf:CHEMINF_000192",
             "@type": "string"
         },
         "fmfDescriptor": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "float"
         },
         "fragmentComplexityDescriptor": {
-            "@id": "sio:CHEMINF_000180",
+            "@id": "cheminf:CHEMINF_000180",
             "@type": "float"
         },
         "gravitationalIndexHeavyAtoms": {
-            "@id": "sio:CHEMINF_001510",
+            "@id": "cheminf:CHEMINF_001510",
             "@type": "string"
         },
         "hBondAcceptorCount": {
-            "@id": "sio:CHEMINF_000245",
+            "@id": "cheminf:CHEMINF_000245",
             "@type": "integer"
         },
         "hBondDonorCount": {
-            "@id": "sio:CHEMINF_000244",
+            "@id": "cheminf:CHEMINF_000244",
             "@type": "integer"
         },
         "hybridizationRatioDescriptor": {
-            "@id": "sio:CHEMINF_001542",
+            "@id": "cheminf:CHEMINF_001542",
             "@type": "float"
         },
         "kappaShapeIndex1": {
-            "@id": "sio:CHEMINF_001543",
+            "@id": "cheminf:CHEMINF_001543",
             "@type": "float"
         },
         "kappaShapeIndex2": {
-            "@id": "sio:CHEMINF_001543",
+            "@id": "cheminf:CHEMINF_001543",
             "@type": "float"
         },
         "kappaShapeIndex3": {
-            "@id": "sio:CHEMINF_001543",
+            "@id": "cheminf:CHEMINF_001543",
             "@type": "float"
         },
         "manholdlogp": {
-            "@id": "sio:CHEMINF_000187",
+            "@id": "cheminf:CHEMINF_000187",
             "@type": "float"
         },
         "petitjeanNumber": {
-            "@id": "sio:CHEMINF_000184",
+            "@id": "cheminf:CHEMINF_000184",
             "@type": "float"
         },
         "petitjeanShapeTopo": {
-            "@id": "sio:CHEMINF_000182",
+            "@id": "cheminf:CHEMINF_000182",
             "@type": "float"
         },
         "petitjeanShapeGeom": {
-            "@id": "sio:CHEMINF_000183",
+            "@id": "cheminf:CHEMINF_000183",
             "@type": "string"
         },
         "lipinskiRuleOf5Failures": {
-            "@id": "sio:CHEMINF_000367",
+            "@id": "cheminf:CHEMINF_000367",
             "@type": "integer"
         },
         "vabcDescriptor": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "string"
         },
         "weinerPathNumber": {
-            "@id": "sio:CHEMINF_000117",
+            "@id": "cheminf:CHEMINF_000117",
             "@type": "float"
         },
         "weinerPolarityNumber": {
-            "@id": "sio:CHEMINF_000137",
+            "@id": "cheminf:CHEMINF_000137",
             "@type": "float"
         },
         "xlogp": {
-            "@id": "sio:CHEMINF_000186",
+            "@id": "cheminf:CHEMINF_000186",
             "@type": "float"
         },
         "zagrebIndex": {
-            "@id": "sio:CHEMINF_000046",
+            "@id": "cheminf:CHEMINF_000046",
             "@type": "float"
         },
         "bond_count": {
-            "@id": "sio:CHEMINF_000233",
+            "@id": "cheminf:CHEMINF_000233",
             "@type": "integer"
         },
         "fsp3": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "float"
         },
         "numberSpiroAtoms": {
@@ -288,15 +289,15 @@
             "@type": "integer"
         },
         "vertexAdjMagnitude": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "float"
         },
         "topoPSA": {
-            "@id": "sio:CHEMINF_000152",
+            "@id": "cheminf:CHEMINF_000152",
             "@type": "float"
         },
         "tpsaEfficiency": {
-            "@id": "sio:CHEMINF_000123",
+            "@id": "cheminf:CHEMINF_000123",
             "@type": "float"
         },
         "Tanimoto": {
@@ -304,7 +305,7 @@
             "@type": "float"
         },
         "number_of_oxygens": {
-            "@id": "sio:CHEMINF_000449",
+            "@id": "cheminf:CHEMINF_000449",
             "@type": "integer"
         }
     }

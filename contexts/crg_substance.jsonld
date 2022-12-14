@@ -4,13 +4,14 @@
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "https://edamontology.org/EDAM.owl#",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
         "obo": "http://purl.obolibrary.org/obo/",
         "name": {
             "@id": "sio:SIO_000118",
             "@type": "string"
         },
         "iupacname": {
-            "@id": "sio:CHEMINF_000107",
+            "@id": "cheminf:CHEMINF_000107",
             "@type": "string"
         },
         "synonyms": {
@@ -26,19 +27,19 @@
             "@type": "string"
         },
         "csmiles": {
-            "@id": "sio:CHEMINF_000007",
+            "@id": "cheminf:CHEMINF_000007",
             "@type": "string"
         },
         "ismiles": {
-            "@id": "sio:CHEMINF_000032",
+            "@id": "cheminf:CHEMINF_000032",
             "@type": "string"
         },
         "formula": {
-            "@id": "sio:CHEMINF_000042",
+            "@id": "cheminf:CHEMINF_000042",
             "@type": "string"
         },
         "molweight": {
-            "@id": "sio:CHEMINF_000088",
+            "@id": "cheminf:CHEMINF_000088",
             "@type": "string"
         },
         "casrn": {

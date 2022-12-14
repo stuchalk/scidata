@@ -14,7 +14,7 @@
             "xsd": "http://www.w3.org/2001/XMLSchema#",
             "qudt": "https://qudt.org/vocab/unit/",
             "prov": "http://www.w3.org/ns/prov#",
-            "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+            "edam": "https://edamontology.org/EDAM.owl#",
             "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
             "sio": "http://semanticscience.org/ontology/sio.owl#",
             "w3id": "https://w3id.org/reproduceme#",

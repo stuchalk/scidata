@@ -2,47 +2,47 @@
     "@context": [
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "sio": "http://semanticscience.org/ontology/sio.owl#",
-            "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
+            "edam": "https://edamontology.org/EDAM.owl#",
             "afx": "http://purl.allotrope.org/ontologies/property#",
             "heavy_atom": {
-                "@id": "sio:CHEMINF_000300",
+                "@id": "cheminf:CHEMINF_000300",
                 "@type": "nonNegativeInteger"
             },
             "atom_chiral": {
-                "@id": "sio:CHEMINF_000206",
+                "@id": "cheminf:CHEMINF_000206",
                 "@type": "nonNegativeInteger"
             },
             "bond_chiral": {
-                "@id": "sio:CHEMINF_000214",
+                "@id": "cheminf:CHEMINF_000214",
                 "@type": "nonNegativeInteger"
             },
             "isotope_atom": {
-                "@id": "sio:CHEMINF_000301",
+                "@id": "cheminf:CHEMINF_000301",
                 "@type": "nonNegativeInteger"
             },
             "h_bond_acceptor": {
-                "@id": "sio:CHEMINF_000245",
+                "@id": "cheminf:CHEMINF_000245",
                 "@type": "nonNegativeInteger"
             },
             "h_bond_donor": {
-                "@id": "sio:CHEMINF_000244",
+                "@id": "cheminf:CHEMINF_000244",
                 "@type": "nonNegativeInteger"
             },
             "rotatable_bond": {
-                "@id": "sio:CHEMINF_000254",
+                "@id": "cheminf:CHEMINF_000254",
                 "@type": "nonNegativeInteger"
             },
             "covalent_unit": {
-                "@id": "sio:CHEMINF_000280",
+                "@id": "cheminf:CHEMINF_000280",
                 "@type": "nonNegativeInteger"
             },
             "tautomers": {
-                "@id": "sio:CHEMINF_000202",
+                "@id": "cheminf:CHEMINF_000202",
                 "@type": "nonNegativeInteger"
             },
             "aromatic_rings": {
-                "@id": "sio:CHEMINF_000381",
+                "@id": "cheminf:CHEMINF_000381",
                 "@type": "nonNegativeInteger"
             },
             "atccode": {

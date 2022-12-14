@@ -21,7 +21,7 @@
     <Prefix name="prop" IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
-    <Prefix name="cheminf" IRI="http://semanticscience.org/ontology/sio.owl"/>
+    <Prefix name="cheminf" IRI="http://semanticscience.org/ontology/cheminf.owl"/>
     <Prefix name="bfo11snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
     <Prefix name="bfo11span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
     <Annotation>

@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
+        "edam": "https://edamontology.org/EDAM.owl#",
         "l1": {
             "@id": "obo:NCIT_C45276",
             "@type": "string"
