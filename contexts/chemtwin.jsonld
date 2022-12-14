@@ -10,24 +10,24 @@
             "obo": "http://purl.obolibrary.org/obo/",
             "sio": "http://semanticscience.org/ontology/sio.owl#",
             "iupacname": {
-                "@id": "ss:CHEMINF_000107",
+                "@id": "sio:CHEMINF_000107",
                 "@type": "string"
             },
             "formula": {
-                "@id": "ss:CHEMINF_000042",
+                "@id": "sio:CHEMINF_000042",
                 "@type": "string"
             },
             "molweight": {
-                "@id": "ss:CHEMINF_000088",
+                "@id": "sio:CHEMINF_000088",
                 "@type": "float"
             },
             "monoisotopicmass": {
-                "@id": "ss:CHEMINF_000218",
+                "@id": "sio:CHEMINF_000218",
                 "@type": "float"
             },
             "identifiers": "obo:IAO_0000578",
-            "descriptors": "ss:CHEMINF_000123",
-            "molgraph": "ss:CHEMINF_000022"
+            "descriptors": "sio:CHEMINF_000123",
+            "molgraph": "sio:CHEMINF_000022"
         }
     ]
 }

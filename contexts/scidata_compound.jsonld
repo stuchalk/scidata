@@ -13,31 +13,31 @@
             "@type": "string"
         },
         "iupacname": {
-            "@id": "ss:CHEMINF_000107",
+            "@id": "sio:CHEMINF_000107",
             "@type": "string"
         },
         "synonyms": {
-            "@id": "ss:SIO_000122",
+            "@id": "sio:SIO_000122",
             "@type": "string"
         },
         "inchi": {
-            "@id": "ss:CHEMINF_000058",
+            "@id": "sio:CHEMINF_000058",
             "@type": "string"
         },
         "inchikey": {
-            "@id": "ss:CHEMINF_000059",
+            "@id": "sio:CHEMINF_000059",
             "@type": "string"
         },
         "smiles": {
-            "@id": "ss:CHEMINF_000018",
+            "@id": "sio:CHEMINF_000018",
             "@type": "string"
         },
         "formula": {
-            "@id": "ss:CHEMINF_000042",
+            "@id": "sio:CHEMINF_000042",
             "@type": "string"
         },
         "molweight": {
-            "@id": "ss:CHEMINF_000088",
+            "@id": "sio:CHEMINF_000088",
             "@type": "float"
         },
         "chebi": {
@@ -50,6 +50,6 @@
         },
         "identifiers": {"@id": "dct:identifier"},
         "descriptors": {"@id": "enm:ENM_8000019"},
-        "molgraph": {"@id": "ss:CHEMINF_000022"}
+        "molgraph": {"@id": "sio:CHEMINF_000022"}
     }
 }

@@ -47,7 +47,7 @@
                 "@type": "@id"
             },
             "creators": {
-                "@id": "sdo:hasCreator",
+                "@id": "dct:creator",
                 "@type": "@id"
             },
             "name": {
@@ -75,7 +75,7 @@
                 "@type": "string"
             },
             "role": {
-                "@id": "ss:SIO_000016",
+                "@id": "sio:SIO_000016",
                 "@type": "string"
             },
             "orcid": {

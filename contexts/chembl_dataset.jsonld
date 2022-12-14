@@ -67,11 +67,11 @@
             "@type": "string"
         },
         "standard_upper_value": {
-            "@id": "ss:SIO_001114",
+            "@id": "sio:SIO_001114",
             "@type": "string"
         },
         "standard_value": {
-            "@id": "ss:SIO_000618",
+            "@id": "sio:SIO_000618",
             "@type": "string"
         },
         "type": {
@@ -91,7 +91,7 @@
             "@type": "@id"
         },
         "value": {
-            "@id": "ss:SIO_000070",
+            "@id": "sio:SIO_000070",
             "@type": "string"
         }
     }

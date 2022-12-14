@@ -4,45 +4,45 @@
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "sio": "http://semanticscience.org/ontology/sio.owl#",
             "edam": "https://bioportal.bioontology.org/ontologies/EDAM#",
-            "afo": "http://purl.allotrope.org/ontologies/property#",
+            "afx": "http://purl.allotrope.org/ontologies/property#",
             "heavy_atom": {
-                "@id": "ss:CHEMINF_000300",
+                "@id": "sio:CHEMINF_000300",
                 "@type": "nonNegativeInteger"
             },
             "atom_chiral": {
-                "@id": "ss:CHEMINF_000206",
+                "@id": "sio:CHEMINF_000206",
                 "@type": "nonNegativeInteger"
             },
             "bond_chiral": {
-                "@id": "ss:CHEMINF_000214",
+                "@id": "sio:CHEMINF_000214",
                 "@type": "nonNegativeInteger"
             },
             "isotope_atom": {
-                "@id": "ss:CHEMINF_000301",
+                "@id": "sio:CHEMINF_000301",
                 "@type": "nonNegativeInteger"
             },
             "h_bond_acceptor": {
-                "@id": "ss:CHEMINF_000245",
+                "@id": "sio:CHEMINF_000245",
                 "@type": "nonNegativeInteger"
             },
             "h_bond_donor": {
-                "@id": "ss:CHEMINF_000244",
+                "@id": "sio:CHEMINF_000244",
                 "@type": "nonNegativeInteger"
             },
             "rotatable_bond": {
-                "@id": "ss:CHEMINF_000254",
+                "@id": "sio:CHEMINF_000254",
                 "@type": "nonNegativeInteger"
             },
             "covalent_unit": {
-                "@id": "ss:CHEMINF_000280",
+                "@id": "sio:CHEMINF_000280",
                 "@type": "nonNegativeInteger"
             },
             "tautomers": {
-                "@id": "ss:CHEMINF_000202",
+                "@id": "sio:CHEMINF_000202",
                 "@type": "nonNegativeInteger"
             },
             "aromatic_rings": {
-                "@id": "ss:CHEMINF_000381",
+                "@id": "sio:CHEMINF_000381",
                 "@type": "nonNegativeInteger"
             },
             "atccode": {
@@ -50,7 +50,7 @@
                 "@type": "@id"
             },
             "chemont": {
-                "@id": "afo:AFX_0001154",
+                "@id": "afx:AFX_0001154",
                 "@type": "@id"
             }
         }

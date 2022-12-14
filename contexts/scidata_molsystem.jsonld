@@ -85,7 +85,7 @@
                 "@type": "@id"
             },
             "inchiKey": {
-                "@id": "ss:CHEMINF_000059",
+                "@id": "sio:CHEMINF_000059",
                 "@type": "string"
             },
             "type": {
@@ -106,15 +106,15 @@
                 "@type": "@id"
             },
             "x": {
-                "@id": "ss:SIO_000400",
+                "@id": "sio:SIO_000400",
                 "@type": "sdo:parameter"
             },
             "y": {
-                "@id": "ss:SIO_000401",
+                "@id": "sio:SIO_000401",
                 "@type": "sdo:parameter"
             },
             "z": {
-                "@id": "ss:SIO_000402",
+                "@id": "sio:SIO_000402",
                 "@type": "sdo:parameter"
             },
             "tenant": {

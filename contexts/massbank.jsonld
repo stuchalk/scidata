@@ -12,13 +12,14 @@
 		"cheminf": "http://semanticchemistry.github.io/semanticchemistry/ontology/cheminf.owl/",
 		"wdt": "http://www.wikidata.org/prop/direct/",
 		"ms": "http://purl.obolibrary.org/obo/ms.owl/",
-		"afo": "http://purl.allotrope.org/ontologies/result/",
-		"chebi": {
-			"@id": "mi:MI_0474",
+		"afe": "http://purl.allotrope.org/ontologies/equipment#",
+        "afp": "http://purl.allotrope.org/ontologies/process#",
+		"afr": "http://purl.allotrope.org/ontologies/result#",
+        "chebi": {
+			"@id": "obo:MI_0474",
 			"@type": "string"
 		},
 		"bao": "http://www.bioassayontology.org/bao#",
-		"msio": "http://purl.obolibrary.org/obo/msio.owl/",
 		"mz": {
 			"@id": "obo:MS_1000040",
 			"@type": "string"
@@ -32,7 +33,7 @@
 			"@type": "string"
 		},
 		"tentative_formula": {
-			"@id": "ss:CHEMINF_000042",
+			"@id": "sio:CHEMINF_000042",
 			"@type": "string"
 		},
 		"mass": {
@@ -49,23 +50,23 @@
 			"@container": "@list"
 		},
 		"smiles": {
-			"@id": "mi:MI_2039",
+			"@id": "obo:MI_2039",
 			"@type": "string"
 		},
 		"iupac": {
-			"@id": "mi:MI_2010",
+			"@id": "obo:MI_2010",
 			"@type": "string"
 		},
 		"compound_class": {
-			"@id": "ncit:NCIT_C25346",
+			"@id": "obo:NCIT_C25346",
 			"@type": "string"
 		},
 		"formula": {
-			"@id": "ss:CHEMINF_000042",
+			"@id": "sio:CHEMINF_000042",
 			"@type": "float"
 		},
 		"exact_mass": {
-			"@id": "pato:PATO_0001681",
+			"@id": "obo:PATO_0001681",
 			"@type": "string"
 		},
 		"kegg": {
@@ -73,19 +74,19 @@
 			"@type": "string"
 		},
 		"pubchem": {
-			"@id": "ss:CHEMINF_000042",
+			"@id": "sio:CHEMINF_000042",
 			"@type": "string"
 		},
 		"inchikey": {
-			"@id": "wdp:P235",
+			"@id": "wdt:P235",
 			"@type": "string"
 		},
 		"chemspider": {
-			"@id": "ss:CHEMINF_000405",
+			"@id": "sio:CHEMINF_000405",
 			"@type": "string"
 		},
 		"comptox": {
-			"@id": "wdp:P3117",
+			"@id": "wdt:P3117",
 			"@type": "string"
 		},
 		"instrument": {
@@ -121,11 +122,11 @@
 			"@type": "string"
 		},
 		"column_name": {
-			"@id": "afo:AFE_0000217",
+			"@id": "afe:AFE_0000217",
 			"@type": "string"
 		},
 		"flow_gradient": {
-			"@id": "afo:AFP_0003289",
+			"@id": "afp:AFP_0003289",
 			"@type": "string"
 		},
 		"flow_rate": {
@@ -133,7 +134,7 @@
 			"@type": "string"
 		},
 		"retention_time": {
-			"@id": "afo:AFR_0001089",
+			"@id": "afr:AFR_0001089",
 			"@type": "string"
 		},
 		"base_peak": {
@@ -169,7 +170,7 @@
 			"@type": "string"
 		},
 		"substance": {
-			"@id": "ncit:NCIT_C43366",
+			"@id": "obo:NCIT_C43366",
 			"@type": "string"
 		},
 		"solvent": {
@@ -185,11 +186,11 @@
 			"@type": "string"
 		},
 		"elapsed_time": {
-			"@id": "ncit:NCIT_C82572",
+			"@id": "obo:NCIT_C82572",
 			"@type": "string"
 		},
 		"solvent_composition": {
-			"@id": "ncit:NCIT_C53414",
+			"@id": "obo:NCIT_C53414",
 			"@type": "string"
 		},
 		"flow_program": {

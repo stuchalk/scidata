@@ -5,10 +5,10 @@
         "sio": "http://semanticscience.org/ontology/sio.owl#",
         "cmo": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
         "ncit": "http://purl.obolibrary.org/obo/ncit.owl#",
-        "afo": "http://purl.allotrope.org/ontologies/result#",
+        "afr": "http://purl.allotrope.org/ontologies/result#",
         "chmo": "http://purl.obolibrary.org/obo/chmo.owl#",
         "name": {
-            "@id": "ss:SIO_000118",
+            "@id": "sio:SIO_000118",
             "@type": "string"
         },
         "sourcetype": {
@@ -24,11 +24,11 @@
             "@type": "@id"
         },
         "analysis": {
-            "@id": "afo:AFR_0000895",
+            "@id": "afr:AFR_0000895",
             "@type": "string"
         },
         "part": {
-            "@id": "ss:SIO_000313",
+            "@id": "sio:SIO_000313",
             "@type": "string"
         },
         "purification": {
@@ -40,19 +40,19 @@
             "@type": "decimal"
         },
         "chemical": {
-            "@id": "cmo:isExperimentalDataOf",
+            "@id": "sdo:isExperimentalDataOf",
             "@type": "string"
         },
         "chemical#": {
-            "@id": "cmo:isExperimentalDataOf",
+            "@id": "sdo:isExperimentalDataOf",
             "@type": "@id"
         },
         "substance": {
-            "@id": "cmo:isSampleOf",
+            "@id": "sdo:isSampleOf",
             "@type": "string"
         },
         "substance#": {
-            "@id": "cmo:isSampleOf",
+            "@id": "sdo:isSampleOf",
             "@type": "@id"
         }
     }

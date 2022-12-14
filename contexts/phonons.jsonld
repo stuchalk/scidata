@@ -18,7 +18,7 @@
             "@type": "string"
         },
         "name": {
-            "@id": "ss:CHEMINF_000107",
+            "@id": "sio:CHEMINF_000107",
             "@type": "string"
         },
         "formula": {
@@ -38,7 +38,7 @@
             "@type": "string"
         },
         "inchikey": {
-            "@id": "ss:CHEMINF_000059",
+            "@id": "sio:CHEMINF_000059",
             "@type": "string"
         },
         "constituents": {

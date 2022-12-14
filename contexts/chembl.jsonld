@@ -14,19 +14,19 @@
             "@type": "string"
         },
         "acd_logd": {
-            "@id": "ss:CHEMINF_000323",
+            "@id": "sio:CHEMINF_000323",
             "@type": "string"
         },
         "acd_logp": {
-            "@id": "ss:CHEMINF_000321",
+            "@id": "sio:CHEMINF_000321",
             "@type": "string"
         },
         "acd_most_apka": {
-            "@id": "ss:CHEMINF_000324",
+            "@id": "sio:CHEMINF_000324",
             "@type": "string"
         },
         "acd_most_bpka": {
-            "@id": "ss:CHEMINF_000325",
+            "@id": "sio:CHEMINF_000325",
             "@type": "string"
         },
         "action_type": {
@@ -42,11 +42,11 @@
             "@type": "integer"
         },
         "alogp": {
-            "@id": "ss:CHEMINF_000295",
+            "@id": "sio:CHEMINF_000295",
             "@type": "string"
         },
         "aromatic_rings": {
-            "@id": "ss:SIO_010781",
+            "@id": "sio:SIO_010781",
             "@type": "string"
         },
         "assay_category": {
@@ -130,7 +130,7 @@
             "@type": "string"
         },
         "chirality": {
-            "@id": "ss:CHEMINF_000245",
+            "@id": "sio:CHEMINF_000245",
             "@type": "string"
         },
         "class type": {
@@ -146,30 +146,30 @@
             "@type": "string"
         },
         "component_domains": {
-            "@id": "ss:SIO_001379"
+            "@id": "sio:SIO_001379"
         },
         "component_type": {
             "@id": "obo:NCIT_C45994",
             "@type": "string"
         },
         "compound_name": {
-            "@id": "ss:SIO_000117",
+            "@id": "sio:SIO_000117",
             "@type": "string"
         },
         "cx_logd": {
-            "@id": "ss:CHEMINF_000323",
+            "@id": "sio:CHEMINF_000323",
             "@type": "string"
         },
         "cx_logp": {
-            "@id": "ss:CHEMINF_000321",
+            "@id": "sio:CHEMINF_000321",
             "@type": "string"
         },
         "cx_most_apka": {
-            "@id": "ss:CHEMINF_000324",
+            "@id": "sio:CHEMINF_000324",
             "@type": "string"
         },
         "cx_most_bpka": {
-            "@id": "ss:CHEMINF_000325",
+            "@id": "sio:CHEMINF_000325",
             "@type": "string"
         },
         "definition": {
@@ -177,7 +177,7 @@
             "@type": "string"
         },
         "description": {
-            "@id": "ss:SIO_000136",
+            "@id": "sio:SIO_000136",
             "@type": "string"
         },
         "descriptors": {
@@ -191,17 +191,17 @@
             "@id": "dct:type",
             "@type": "string"
         },
-        "domains": { "@id": "ss:SIO_001379" },
+        "domains": { "@id": "sio:SIO_001379" },
         "efo_id": {
             "@id": "edam:data_2338",
             "@type": "string"
         },
         "end_position": {
-            "@id": "ss:SIO_000792",
+            "@id": "sio:SIO_000792",
             "@type": "integer"
         },
         "full_molformula": {
-            "@id": "ss:CHEMINF_000490",
+            "@id": "sio:CHEMINF_000490",
             "@type": "string"
         },
         "full_mwt": {
@@ -209,23 +209,23 @@
             "@type": "string"
         },
         "hba": {
-            "@id": "ss:CHEMINF_000245",
+            "@id": "sio:CHEMINF_000245",
             "@type": "string"
         },
         "hba_lipinski": {
-            "@id": "ss:CHEMINF_000245",
+            "@id": "sio:CHEMINF_000245",
             "@type": "string"
         },
         "hbd": {
-            "@id": "ss:CHEMINF_000244",
+            "@id": "sio:CHEMINF_000244",
             "@type": "string"
         },
         "hbd_lipinski": {
-            "@id": "ss:CHEMINF_000244",
+            "@id": "sio:CHEMINF_000244",
             "@type": "string"
         },
         "heavy_atoms": {
-            "@id": "ss:CHEMINF_000300",
+            "@id": "sio:CHEMINF_000300",
             "@type": "string"
         },
         "identifiers": {
@@ -260,23 +260,23 @@
             "@type": "string"
         },
         "molecular_species": {
-            "@id": "ss:CHEMINF_000327",
+            "@id": "sio:CHEMINF_000327",
             "@type": "string"
         },
         "molecule_type": {
-            "@id": "ss:SIO_010072",
+            "@id": "sio:SIO_010072",
             "@type": "string"
         },
         "mw_freebase": {
-            "@id": "ss:CHEMINF_000350",
+            "@id": "sio:CHEMINF_000350",
             "@type": "string"
         },
         "mw_monoisotopic": {
-            "@id": "ss:CHEMINF_000485",
+            "@id": "sio:CHEMINF_000485",
             "@type": "string"
         },
         "num_ro5_violations": {
-            "@id": "ss:CHEMINF_000367",
+            "@id": "sio:CHEMINF_000367",
             "@type": "string"
         },
         "organism": {
@@ -296,19 +296,19 @@
             "@type": "string"
         },
         "pref_name": {
-            "@id": "ss:SIO_000117",
+            "@id": "sio:SIO_000117",
             "@type": "string"
         },
         "protein_class_desc": {
-            "@id": "ss:SIO_000136",
+            "@id": "sio:SIO_000136",
             "@type": "string"
         },
         "psa": {
-            "@id": "ss:CHEMINF_000307",
+            "@id": "sio:CHEMINF_000307",
             "@type": "string"
         },
         "qed_weighted": {
-            "@id": "ss:CHEMINF_000431",
+            "@id": "sio:CHEMINF_000431",
             "@type": "string"
         },
         "qudt_units": {
@@ -320,11 +320,11 @@
             "@type": "string"
         },
         "ro3_pass": {
-            "@id": "ss:CHEMINF_000315",
+            "@id": "sio:CHEMINF_000315",
             "@type": "string"
         },
         "rtb": {
-            "@id": "ss:CHEMINF_000254",
+            "@id": "sio:CHEMINF_000254",
             "@type": "string"
         },
         "sei": {
@@ -372,11 +372,11 @@
             "@type": "string"
         },
         "standard_upper_value": {
-            "@id": "ss:SIO_001114",
+            "@id": "sio:SIO_001114",
             "@type": "string"
         },
         "standard_value": {
-            "@id": "ss:SIO_000618",
+            "@id": "sio:SIO_000618",
             "@type": "string"
         },
         "start_position": {
@@ -388,10 +388,10 @@
             "@type": "string"
         },
         "synonyms": {
-            "@id": "ss:SIO_000122",
+            "@id": "sio:SIO_000122",
             "@type": "string"
         },
-        "target_components": { "@id": "ss:SIO_000313" },
+        "target_components": { "@id": "sio:SIO_000313" },
         "target_desc": {
             "@id": "cco:CO_000075",
             "@type": "string"
@@ -409,7 +409,7 @@
             "@type": "string"
         },
         "text_value": {
-            "@id": "ss:SIO_000070",
+            "@id": "sio:SIO_000070",
             "@type": "string"
         },
         "type": {
@@ -433,7 +433,7 @@
             "@type": "@id"
         },
         "value": {
-            "@id": "ss:SIO_000070",
+            "@id": "sio:SIO_000070",
             "@type": "string"
         }
     }

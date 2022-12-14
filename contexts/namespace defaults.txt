@@ -13,3 +13,9 @@ From https://prefix.cc/context.jsonld
 "modsci": "https://w3id.org/skgo/modsci#"
 "edam": "http://edamontology.org/"
 "efo": "http://www.ebi.ac.uk/efo/"
+"afd": "http://purl.allotrope.org/ontologies/datapackage#"
+"afe": "http://purl.allotrope.org/ontologies/equipment#"
+"afm": "http://purl.allotrope.org/ontologies/material#"
+"afp": "http://purl.allotrope.org/ontologies/process#"
+"afr": "http://purl.allotrope.org/ontologies/result#"
+"afx": "http://purl.allotrope.org/ontologies/property#"  (the Allotrope way terms start with AFX_)

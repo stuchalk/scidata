@@ -53,7 +53,7 @@
                 "@type": "string"
             },
             "wikidata": {
-                "@id": "ss:CHEMINF_000123",
+                "@id": "sio:CHEMINF_000123",
                 "@type": "string"
             }
         }

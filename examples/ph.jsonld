@@ -6,7 +6,7 @@
             "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "prop": "https://stuchalk.github.io/scidata/ontology/property.owl#",
-            "afo": "http://purl.allotrope.org/ontologies/result#",
+            "afr": "http://purl.allotrope.org/ontologies/result#",
             "w3i": "https://w3id.org/skgo/modsci#",
             "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
@@ -65,7 +65,7 @@
             "obo:CHEBI_38889",
             "obo:CHEBI_16236",
             "obo:CHEBI_15377",
-            "afo:AFR_0000955",
+            "afr:AFR_0000955",
             "qudt:DEG_C",
             "prop:temperature"
         ],
@@ -348,7 +348,7 @@
                         "@type": "sdo:datapoint",
                         "quantitykind": "annotation",
                         "quantity": "Observation",
-                        "quantity#": "afo:AFR_0000955",
+                        "quantity#": "afr:AFR_0000955",
                         "textstring": {
                             "@id": "datapoint/2/value/",
                             "@type": "sdo:textvalue",

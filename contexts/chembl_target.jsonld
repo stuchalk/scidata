@@ -26,9 +26,9 @@
             "@id": "dct:type",
             "@type": "string"
         },
-        "domains": {"@id": "ss:SIO_001379"},
+        "domains": {"@id": "sio:SIO_001379"},
         "end_position": {
-            "@id": "ss:SIO_000792",
+            "@id": "sio:SIO_000792",
             "@type": "integer"
         },
         "organism": {
@@ -40,7 +40,7 @@
             "@type": "string"
         },
         "pref_name": {
-            "@id": "ss:SIO_000117",
+            "@id": "sio:SIO_000117",
             "@type": "string"
         },
         "sequence": {
@@ -52,10 +52,10 @@
             "@type": "integer"
         },
         "synonyms": {
-            "@id": "ss:SIO_000122",
+            "@id": "sio:SIO_000122",
             "@type": "string"
         },
-        "target_components": {"@id": "ss:SIO_000313"},
+        "target_components": {"@id": "sio:SIO_000313"},
         "target_desc": {
             "@id": "cco:CO_000075",
             "@type": "string"

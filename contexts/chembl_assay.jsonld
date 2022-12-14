@@ -56,7 +56,7 @@
             "@type": "string"
         },
         "description": {
-            "@id": "ss:SIO_000136",
+            "@id": "sio:SIO_000136",
             "@type": "string"
         },
         "l1": {
@@ -80,7 +80,7 @@
             "@type": "string"
         },
         "text_value": {
-            "@id": "ss:SIO_000070",
+            "@id": "sio:SIO_000070",
             "@type": "string"
         },
         "type": {
@@ -92,7 +92,7 @@
             "@type": "string"
         },
         "value": {
-            "@id": "ss:SIO_000070",
+            "@id": "sio:SIO_000070",
             "@type": "string"
         }
     }
