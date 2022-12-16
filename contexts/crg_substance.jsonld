@@ -18,12 +18,16 @@
             "@id": "sio:SIO_000122",
             "@type": "string"
         },
+        "chebi": {
+            "@id": "cheminf:CHEMINF_000007",
+            "@type": "string"
+        },
         "inchi": {
-            "@id": "obo:MI_2010",
+            "@id": "cheminf:CHEMINF_000113",
             "@type": "string"
         },
         "inchikey": {
-            "@id": "obo:MI_1101",
+            "@id": "cheminf:CHEMINF_000059",
             "@type": "string"
         },
         "csmiles": {
@@ -43,16 +47,12 @@
             "@type": "string"
         },
         "casrn": {
-            "@id": "edam:data_1002",
+            "@id": "cheminf:CHEMINF_000446",
             "@type": "string"
         },
         "type": {
             "@id": "obo:NCIT_C25346",
             "@type": "string"
-        },
-        "substance": {
-            "@id": "obo:NCIT_C25346",
-            "@type": "@id"
         }
     }
 }
