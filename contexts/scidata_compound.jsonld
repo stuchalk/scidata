@@ -4,7 +4,7 @@
         "dct": "http://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "edam": "https://edamontology.org/EDAM.owl#",
-        "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
+        "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
         "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
         "compound": {"@id": "sdo:compound"},

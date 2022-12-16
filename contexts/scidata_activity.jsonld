@@ -6,11 +6,15 @@
             "@id": "obo:NCIT_C43431",
             "@type": "string"
         },
+        "activity#": {
+            "@id": "obo:NCIT_C43431",
+            "@type": "@id"
+        },
         "exercise": {
             "@id": "obo:NCIT_C17708",
             "@type": "string"
         },
-        "exerciseref": {
+        "exercise#": {
             "@id": "obo:NCIT_C17708",
             "@type": "@id"
         }

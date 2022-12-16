@@ -19,3 +19,7 @@ From https://prefix.cc/context.jsonld
 "afp": "http://purl.allotrope.org/ontologies/process#"
 "afr": "http://purl.allotrope.org/ontologies/result#"
 "afx": "http://purl.allotrope.org/ontologies/property#"  (the Allotrope way terms start with AFX_)
+"prov": "http://www.w3.org/ns/prov#"
+"igb": "https://goldbook.iupac.org/"
+"repome": "https://w3id.org/reproduceme#"
+"bao": "http://www.bioassayontology.org/bao#",

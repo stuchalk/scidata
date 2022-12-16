@@ -38,26 +38,26 @@
     "@context": {
       "type": "array",
       "items": { "type": ["string", "object"] },
-      "default": ["http://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
+      "default": ["https://stuchalk.github.io/scidata/contexts/scidata_unit.jsonld"]
     },
     "@id": { 
       "type": "string",
       "default": ""
      },
-    "unitstr": { "type": "string" },
-    "unitref": {
+    "unit": { "type": "string" },
+    "unit#": {
       "type": "string",
       "format": "uri-reference"
     },
     "name": { "type": "string" },
     "unitsystem": { "type": "string" },
-    "unitsystemref": {
+    "unitsystem#": {
       "type": "string",
       "format": "uri-reference",
-      "enum": ["sci:imperial"]      
+      "enum": ["se:imperial"]
     },
     "quantity": { "type": "string" },
-    "quantityref": {
+    "quantity#": {
       "type": "string",
       "format": "uri-reference"
     },
@@ -76,14 +76,14 @@
     },
     "siunit": { "$ref": "#/definitions/siunit_def" },
     "siunitstr": { "type": "string" },
-    "siunitref": {
+    "siunit#": {
       "type": "string",
       "format": "uri-reference"
     },
     "prefix": { "type": "string" },
     "power":  { "type": "integer" },
     "factor": { "$ref": "#/definitions/factor_def" },
-    "factorref": {
+    "factor#": {
       "type": "string",
       "format": "uri-reference"
     },

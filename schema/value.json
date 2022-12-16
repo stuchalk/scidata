@@ -15,8 +15,7 @@
         "errortype": { "type": "string" },
         "sigfigs":  { "type": "integer" },
         "unit": { "type": "string" },
-        "unitstr": { "type": "string" },
-        "unitref": { "type": "string" }
+        "unit#": { "type": "string" }
       }
     },
     "numericvaluearray_def": {

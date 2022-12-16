@@ -6,7 +6,7 @@
         "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
         "mesh": "http://purl.bioontology.org/ontology/MESH/",
         "edam": "https://edamontology.org/EDAM.owl#",
-        "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
+        "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
         "acd_logd": {
             "@id": "cheminf:CHEMINF_000323",
             "@type": "string"

@@ -5,17 +5,21 @@
             "cao": "http://champ-project.org/images/ontology/cao.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
             "measurement": {"@id": "cao:CAO_000152"},
-            "techniqueref": {
-                "@id": "cao:CAO_000011",
-                "@type": "@id"
-            },
             "technique": {
                 "@id": "cao:CAO_000011",
                 "@type": "string"
             },
+            "technique#": {
+                "@id": "cao:CAO_000011",
+                "@type": "@id"
+            },
             "instrumentType": {
                 "@id": "cao:CAO_000137",
                 "@type": "string"
+            },
+            "instrumentType#": {
+                "@id": "cao:CAO_000137",
+                "@type": "@id"
             },
             "instrument": {
                 "@id": "cao:CAO_000048",

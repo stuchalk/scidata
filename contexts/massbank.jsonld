@@ -10,11 +10,11 @@
 		"afe": "http://purl.allotrope.org/ontologies/equipment#",
         "afp": "http://purl.allotrope.org/ontologies/process#",
 		"afr": "http://purl.allotrope.org/ontologies/result#",
-        "chebi": {
+		"bao": "http://www.bioassayontology.org/bao#",
+		"chebi": {
 			"@id": "obo:MI_0474",
 			"@type": "string"
 		},
-		"bao": "http://www.bioassayontology.org/bao#",
 		"mz": {
 			"@id": "obo:MS_1000040",
 			"@type": "string"
@@ -85,35 +85,35 @@
 			"@type": "string"
 		},
 		"instrument": {
-			"@id": "ms:1000031",
+			"@id": "obo:MS_1000031",
 			"@type": "string"
 		},
 		"instrument_type": {
-			"@id": "ms:1000496",
+			"@id": "obo:MS_1000496",
 			"@type": "string"
 		},
 		"ms_type": {
-			"@id": "ms:1000496",
+			"@id": "obo:MS_1000496",
 			"@type": "string"
 		},
 		"ion_mode": {
-			"@id": "ms:1000465",
+			"@id": "obo:MS_1000465",
 			"@type": "string"
 		},
 		"ionization": {
-			"@id": "ms:1000008",
+			"@id": "obo:MS_1000008",
 			"@type": "string"
 		},
 		"fragmentation_mode": {
-			"@id": "ms:1000044",
+			"@id": "obo:MS_1000044",
 			"@type": "string"
 		},
 		"collision_energy": {
-			"@id": "ms:1000045",
+			"@id": "obo:MS_1000045",
 			"@type": "string"
 		},
 		"resolution": {
-			"@id": "ms:1000011",
+			"@id": "obo:MS_1000011",
 			"@type": "string"
 		},
 		"column_name": {
@@ -125,7 +125,7 @@
 			"@type": "string"
 		},
 		"flow_rate": {
-			"@id": "ms:1003020",
+			"@id": "obo:MS_1003020",
 			"@type": "string"
 		},
 		"retention_time": {
@@ -133,35 +133,35 @@
 			"@type": "string"
 		},
 		"base_peak": {
-			"@id": "ms:1000210",
+			"@id": "obo:MS_1000210",
 			"@type": "string"
 		},
 		"precursor_mz": {
-			"@id": "ms:1002234",
+			"@id": "obo:MS_1002234",
 			"@type": "string"
 		},
 		"precursor_type": {
-			"@id": "ms:1001523",
+			"@id": "obo:MS_1001523",
 			"@type": "string"
 		},
 		"recalibrate": {
-			"@id": "ms:1000543",
+			"@id": "obo:MS_1000543",
 			"@type": "string"
 		},
 		"reanalyze": {
-			"@id": "ms:1000543",
+			"@id": "obo:MS_1000543",
 			"@type": "string"
 		},
 		"whole": {
-			"@id": "ms:1000543",
+			"@id": "obo:MS_1000543",
 			"@type": "string"
 		},
 		"splash": {
-			"@id": "ms:1002599",
+			"@id": "obo:MS_1002599",
 			"@type": "string"
 		},
 		"num_peak": {
-			"@id": "ms:1003059",
+			"@id": "obo:MS_1003059",
 			"@type": "string"
 		},
 		"substance": {
@@ -177,7 +177,7 @@
 			"@type": "string"
 		},
 		"concentration_unit": {
-			"@id": "bao:0190000",
+			"@id": "bao:BAO_0190000",
 			"@type": "string"
 		},
 		"elapsed_time": {

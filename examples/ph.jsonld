@@ -314,7 +314,7 @@
                         "scope": "substance/1/",
                         "quantity": "temperature",
                         "property": "Temperature of the experiment",
-                        "propertyref": "prop:temperature",
+                        "property#": "prop:temperature",
                         "value": {
                             "@id": "condition/1/value/",
                             "@type": "sdo:value",

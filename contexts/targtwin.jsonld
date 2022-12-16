@@ -7,7 +7,7 @@
             "obo": "http://purl.obolibrary.org/obo/",
             "edam": "https://edamontology.org/",
             "ci": "http://semanticscience.org/ontology/cheminf.owl#",
-            "enm": "https://purl.enanomapper.org/onto/",
+            "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
             "name": {
                 "@id": "edam:data_2099",
                 "@type": "string"
@@ -29,7 +29,7 @@
                 "@type": "string"
             },
             "identifiers": "edam:data_0976",
-            "descriptors": "enm:ENM_8000029"
+            "descriptors": "enm:ENM_8000019"
         }
     ]
 }

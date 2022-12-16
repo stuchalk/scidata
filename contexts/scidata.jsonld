@@ -15,7 +15,7 @@
             "qudt": "https://qudt.org/vocab/unit/",
             "prov": "http://www.w3.org/ns/prov#",
             "edam": "https://edamontology.org/EDAM.owl#",
-            "enm": "https://enanomapper.github.io/ontologies/enanomapper.owl",
+            "enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
             "sio": "http://semanticscience.org/ontology/sio.owl#",
             "w3id": "https://w3id.org/reproduceme#",
             "generatedAt": {

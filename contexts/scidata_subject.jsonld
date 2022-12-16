@@ -8,7 +8,7 @@
             "@id": "obo:NCIT_C45293",
             "@type": "string"
         },
-        "speciesref": {
+        "species#": {
              "@id": "obo:NCIT_C45293",
              "@type": "@id"
         },
