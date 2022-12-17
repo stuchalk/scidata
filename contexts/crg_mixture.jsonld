@@ -28,7 +28,7 @@
         },
         "constituents": {
             "@id": "igb:C01281",
-            "@type": "@id"
+            "@container": "@set"
         },
         "constituent": {
             "@id": "igb:C01281",
