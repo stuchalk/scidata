@@ -45,6 +45,10 @@
         "mixture": {
             "@id": "sdo:isExperimentalDataOf",
             "@type": "@id"
+        },
+        "properties": {
+            "@id": "sdo:property",
+            "@container": "@set"
         }
     }
 }

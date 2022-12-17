@@ -1,8 +1,8 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "dct": "http://purl.org/dc/terms/",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "dct": "http://purl.org/dc/terms/",
         "obo": "http://purl.obolibrary.org/obo/",
         "resource": {"@id": "sdo:hasResource"},
         "type": {
@@ -25,14 +25,17 @@
              "@id": "obo:NCIT_C49755",
              "@type": "string"
         },
-        "catalognumber": {
+        "catnumber": {
+            "@id": "obo:sep_0016",
+            "@type": "string"
+        },
+        "sernumber": {
             "@id": "obo:sep_0016",
             "@type": "string"
         },
         "resourceOrigin": {
             "@id": "dct:origin",
             "@type": "string"
-        },
-        "property": {"@id": "res:resourceProperty"}
+        }
     }
 }
