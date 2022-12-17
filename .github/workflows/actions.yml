@@ -33,4 +33,4 @@ jobs:
 
       - name: Run Value schema validation
         run: |
-          check-jsonschema -o json --schemafile schema/value.json --instance examples/sections/value.jsonld
+          check-jsonschema -o json --schemafile schema/value.json examples/sections/value.jsonld
