@@ -29,8 +29,8 @@ jobs:
 
       - name: Run Unit schema validation
         run: |
-          check-jsonschema -o --schemafile schema/unit.json examples/sections/unit.jsonld
+          check-jsonschema -o json --schemafile schema/unit.json examples/sections/unit.jsonld
 
       - name: Run Value schema validation
         run: |
-          check-jsonschema -o --schemafile schema/value.json --instance examples/sections/value.jsonld
+          check-jsonschema -o json --schemafile schema/value.json --instance examples/sections/value.jsonld
