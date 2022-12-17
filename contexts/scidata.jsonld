@@ -97,7 +97,7 @@
 			"ids": {
 				"@id": "dct:identifier",
 				"@type": "@id",
-                "@container": "@set"
+				"@container": "@set"
 			},
 			"permalink": {
 				"@id": "schema:url",
@@ -106,12 +106,12 @@
 			"related": {
 				"@id": "dct:related",
 				"@type": "anyURI",
-                "@container": "@set"
+				"@container": "@set"
 			},
 			"toc": {
 				"@id": "dct:hasPart",
 				"@type": "@id",
-                "@container": "@set"
+				"@container": "@set"
 			},
 			"scidata": {
 				"@id": "sdo:hasScientificData",
@@ -143,8 +143,8 @@
 			},
 			"aspects#": {
 				"@id": "sdo:hasMethodologyAspect",
-            	"@type": "@id"
-            	"@container": "@set",
+				"@type": "@id",
+				"@container": "@set"
 			},
 			"system": {
 				"@id": "sdo:hasSystem",
@@ -168,12 +168,12 @@
 			},
 			"facets": {
 				"@id": "sdo:hasSystemFacet",
-			   	"@container": "@set"
+				"@container": "@set"
 			},
 			"facet#": {
 				"@id": "sdo:hasSystemFacet",
-			    "@type": "@id"
-                "@container": "@set"
+				"@type": "@id",
+				"@container": "@set"
 			},
 			"dataset": {
 				"@id": "sdo:hasDataset",
