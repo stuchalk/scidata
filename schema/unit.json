@@ -54,7 +54,7 @@
     "unitsystem#": {
       "type": "string",
       "format": "uri-reference",
-      "enum": ["se:imperial"]
+      "enum": ["sdo:imperial"]
     },
     "quantity": { "type": "string" },
     "quantity#": {
