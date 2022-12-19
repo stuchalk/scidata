@@ -134,23 +134,24 @@
 					{
 						"@id": "mixture/1/",
 						"@type": "sub:mixture",
+						"sourcetype": "inhouse",
 						"title": "3 ppm cyanide standard solution",
 						"composition": ["sub:homogeneousSolution", "sub:aq"],
 						"phase": "sub:liquid",
 						"constituents": [
 							{
-								"@id": "mixture/1/constituent/1/",
+								"@id": "constituent/1/",
 								"@type": "sdo:constituent",
 								"source#": "substance/1/",
 								"role#": "chm:analyte",
 								"properties": [
 									{
-										"@id": "substance/1/constituent/1/property/1/",
+										"@id": "property/1/",
 										"@type": "sdo:property",
 										"quantitykind": "mass of substance per volume",
 										"quantity": "Concentration (w/v)",
 										"value": {
-											"@id": "substance/1/constituent/1/property/1/value/",
+											"@id": "value/",
 											"@type": "sdo:value",
 											"number": 2.99,
 											"unit#": "qudt:PPM"
@@ -159,31 +160,31 @@
 								]
 							},
 							{
-								"@id": "mixture/1/constituent/2/",
+								"@id": "constituent/2/",
 								"@type": "sdo:constituent",
 								"source#": "substance/2/",
 								"role#": "chm:reagent"
 							},
 							{
-								"@id": "mixture/1/constituent/3/",
+								"@id": "constituent/3/",
 								"@type": "sdo:constituent",
 								"source#": "substance/3/",
 								"role#": "chm:reagent"
 							},
 							{
-								"@id": "mixture/1/constituent/4/",
+								"@id": "constituent/4/",
 								"@type": "sdo:constituent",
 								"source#": "substance/4/",
 								"role#": "chm:buffer"
 							},
 							{
-								"@id": "mixture/1/constituent/5/",
+								"@id": "constituent/5/",
 								"@type": "sdo:constituent",
 								"source#": "substance/5/",
 								"role#": "chm:solvent"
 							},
 							{
-								"@id": "mixture/1/constituent/6/",
+								"@id": "constituent/6/",
 								"@type": "sdo:constituent",
 								"source": "substance/6/",
 								"role#": "chm:solvent"
@@ -191,12 +192,12 @@
 						],
 						"properties": [
 							{
-								"@id": "mixture/1/property/1/",
+								"@id": "property/1/",
 								"@type": "sdo:property",
 								"quantitykind": "volume",
 								"quantity": "Volume of solution",
 								"value": {
-									"@id": "mixture/1/property/1/value/",
+									"@id": "value/",
 									"@type": "sdo:value",
 									"number": 100,
 									"unit#": "qudt:MilliL"
@@ -205,8 +206,9 @@
 						]
 					},
 					{
-						"@id": "chemical/1/",
-						"@type": "sdo:chemical",
+						"@id": "mixture/1/",
+						"@type": "sdo:mixture",
+						"sourcetype": "commercial",
 						"name": "Standard Cyanide Ion Solution",
 						"manufacturer": "SPEX CertiPrep",
 						"vendor": "Fischer Scientific",
@@ -218,7 +220,7 @@
 						],
 						"properties": [
 							{
-								"@id": "chemical/1/property/1/",
+								"@id": "property/1/",
 								"@type": "sdo:property",
 								"quantitykind": "mass of substance per volume",
 								"quantity": "Concentration (w/v)",
@@ -230,7 +232,7 @@
 								}
 							},
 							{
-								"@id": "chemical/1/property/2/",
+								"@id": "property/2/",
 								"@type": "sdo:property",
 								"quantitykind": "volume",
 								"quantity": "Liquid volume (mL)",

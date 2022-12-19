@@ -33,14 +33,6 @@
                 "@id": "sdo:quantityKind",
                 "@type": "@id"
             },
-            "property": {
-                "@id": "sdo:property",
-                "@type": "string"
-            },
-            "property#": {
-                "@id": "sdo:property",
-                "@type": "@id"
-            },
             "value": {
                 "@id": "sdo:hasValue",
                 "@type": "sdo:value"

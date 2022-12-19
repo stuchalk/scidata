@@ -9,16 +9,23 @@
 			"dataset#": {"@id": "sdo:hasDataset"},
 			"datagroup": {
 				"@id": "sdo:hasDatagroup",
-				"@container": "@set"
+				"@type": "string"
 			},
 			"datagroup#": {
+				"@id": "sdo:hasDatagroup",
+				"@type": "@id"
+			},
+			"datagroups": {
+				"@id": "sdo:hasDatagroup",
+				"@container": "@set"
+			},
+			"datagroups#": {
 				"@id": "sdo:hasDatagroup",
 				"@type": "@id",
 				"@container": "@set"
 			},
 			"dataseries": {
 				"@id": "sdo:hasDataseries",
-				"@type": "@id",
 				"@container": "@set"
 			},
 			"dataseries#": {
@@ -30,10 +37,18 @@
 				"@id": "sdo:dataName",
 				"@type": "sdo:parameter"
 			},
-			"datapoint": {"@id": "sdo:hasDatapoint"},
+			"datapoint": {
+				"@id": "sdo:hasDatapoint",
+				"@container": "@set"
+			},
+			"datapoints": {
+				"@id": "sdo:hasDatapoint",
+				"@container": "@set"
+			},
 			"datapoints#": {
 				"@id": "sdo:hasDatapoint",
-				"@type": "@id"
+				"@type": "@id",
+				"@container": "@set"
 			},
 			"quantity": {
 				"@id": "sdo:quantity",

@@ -3,7 +3,6 @@
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "dct": "http://purl.org/dc/terms/",
-        "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
         "name": {
             "@id": "dct:title",
             "@type": "string"
@@ -32,21 +31,21 @@
             "@id": "sdo:hasScope",
             "@type": "@id"
         },
-        "phase": {
-            "@id": "sdo:phaseOfMatter",
-            "@type": "string"
-        },
         "role": {
-            "@id": "sdo:role",
+            "@id": "obo:NCIT_C48835",
             "@type": "string"
         },
         "role#": {
-            "@id": "sdo:role",
+            "@id": "obo:NCIT_C48835",
             "@type": "@id"
         },
         "label": {
-            "@id": "rdfs:label",
+            "@id": "obo:NCIT_C45561",
             "@type": "string"
+        },
+        "label#": {
+            "@id": "obo:NCIT_C45561",
+            "@type": "@id"
         }
     }
 }

@@ -15,7 +15,6 @@
 			"prov": "http://www.w3.org/ns/prov#",
 			"edam": "https://edamontology.org/EDAM.owl#",
 			"enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
-			"sio": "http://semanticscience.org/ontology/sio.owl#",
 			"w3id": "https://w3id.org/reproduceme#",
 			"generatedAt": {
 				"@id": "prov:generatedAtTime",
@@ -68,14 +67,6 @@
 			"email": {
 				"@id": "foaf:mbox",
 				"@type": "string"
-			},
-			"role": {
-				"@id": "sio:SIO_000016",
-				"@type": "string"
-			},
-			"role#": {
-				"@id": "sio:SIO_000016",
-				"@type": "@id"
 			},
 			"orcid": {
 				"@id": "w3id:ORCID",

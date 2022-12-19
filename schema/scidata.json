@@ -11,7 +11,7 @@
         "scidata"
     ],
     "properties": {
-        "author": {"type": "string"},
+        "authors": {"type": "string"},
         "description": {"type": "string"},
         "version": {"type": "string"},
         "date": {

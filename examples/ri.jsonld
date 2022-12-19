@@ -125,12 +125,12 @@
                         "phase#": "sub:liquid",
                         "constituents": [
                             {
-                                "@id": "substance/1/constituent/1/",
+                                "@id": "constituent/1/",
                                 "@type": "sdo:constituent",
                                 "source": "chemical/1/"
                             },
                             {
-                                "@id": "substance/1/constituent/2/",
+                                "@id": "constituent/2/",
                                 "@type": "sdo:constituent",
                                 "source": "chemical/2/"
                             }
@@ -138,8 +138,9 @@
                     },
                     {
                         "@id": "chemical/1/",
-                        "@type": "sdo:constituent",
+                        "@type": "sdo:chemical",
                         "name": "Ultrapure water",
+                        "sourcetype": "inhouse",
                         "source#": "substance/1/",
                         "role#": "chm:solvent",
                         "grade": "MilliQ Grade (18.2 MOhms)",
@@ -159,16 +160,17 @@
                     {
                         "@id": "chemical/2/",
                         "@type": "sdo:consituent",
+                        "sourcetype": "commerical",
                         "name": "Hydrochloric acid",
                         "source#": "substance/2/",
                         "role#": "chm:solute",
                         "grade": "ACS Certified grade",
                         "properties": [
                             {
-                                "@id": "chemical/2/property/1/",
+                                "@id": "property/1/",
                                 "@type": "sdo:purity",
                                 "value": {
-                                    "@id": "chemical/2/property/1/value/",
+                                    "@id": "property/1/value/",
                                     "@type": "sdo:numercicvalue",
                                     "number": 9.99,
                                     "unit#": "qudt:Percent_GM-PER-GM"

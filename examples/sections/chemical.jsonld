@@ -10,6 +10,7 @@
     ],
     "@id": "https://stuchalk.github.io/scidata/examples/sections/chemical/",
     "name": "Water",
+    "sourcetype": "inhouse",
     "vendor": "University of North Florida",
     "grade": "MilliQ Grade (18.2 MOhms)",
     "properties": [
