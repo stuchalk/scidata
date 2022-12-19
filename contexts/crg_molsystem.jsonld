@@ -1,119 +1,114 @@
 {
-    "@context": [
-        {
-            "@vocab": "https://www.w3.org/2001/XMLSchema#",
-            "gc": "http://purl.org/gc/",
-            "dct": "http://purl.org/dc/terms/",
-            "sio": "http://semanticscience.org/ontology/sio.owl#",
-            "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "molsystem": {"@id": "gc:MolecularSystem"},
-            "temperature": {
-                "@id": "gc:hasSystemTemperature"
-            },
-            "charge": {
-                "@id": "gc:hasSystemCharge"
-            },
-            "multiplicity": {
-                "@id": "gc:hasSystemMultiplicity"
-            },
-            "molecule": {"@id": "gc:hasMolecule"},
-            "atomCount": {
-                "@id": "gc:hasNumberOfAtoms"
-            },
-            "chain": {"@id": "gc:hasChain"},
-            "residue": {"@id": "gc:hasResidue"},
-            "selection": {"@id": "gc:hasSelection"},
-            "group": {"@id": "gc:hasGroup"},
-            "bond": {"@id": "gc:hasChemicalBond"},
-            "atom": {"@id": "gc:hasAtom"},
-            "atomMass": {
-                "@id": "gc:hasAtomMass"
-            },
-            "formalAtomCharge": {
-                "@id": "gc:hasFormalAtomCharge"
-            },
-            "calculatedAtomCharge": {
-                "@id": "gc:hasCalculatedAtomCharge"
-            },
-            "basisSet": {
-                "@id": "gc:hasBasisSet",
-                "@type": "@id"
-            },
-            "molecules": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "chains": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "residues": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "selections": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "groups": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "bonds": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "atoms": {
-                "@id": "gc:hasPart",
-                "@type": "@id"
-            },
-            "spaceType": {
-                "@id": "gc:hasSpaceType",
-                "@type": "string"
-            },
-            "element": {
-                "@id": "obo:CHEBI_33250",
-                "@type": "@id"
-            },
-            "inchiKey": {
-                "@id": "cheminf:CHEMINF_000059",
-                "@type": "string"
-            },
-            "type": {
-                "@id": "obo:CHEBI_24433",
-                "@type": "@id"
-            },
-            "bondType": {
-                "@id": "gc:hasBondType",
-                "@type": "string"
-            },
-            "bondOrder": {
-                "@id": "gc:hasBondOrder",
-                "@type": "decimal"
-            },
-            "points": {
-                "@id": "gc:hasCoordinates",
-                "@container": "@set"
-            },
-            "points#": {
-                "@id": "gc:hasPoint",
-                "@type": "@id",
-                "@container": "@set"
-            },
-            "x": {
-                "@id": "sio:SIO_000400"
-            },
-            "y": {
-                "@id": "sio:SIO_000401"
-            },
-            "z": {
-                "@id": "sio:SIO_000402"
-            },
-            "tenant": {
-                "@id": "gc:hasTenant",
-                "@type": "@id"
-            }
-        }
-    ]
+	"@context": [
+		{
+			"@vocab": "https://www.w3.org/2001/XMLSchema#",
+			"gc": "http://purl.org/gc/",
+			"dct": "http://purl.org/dc/terms/",
+			"sio": "http://semanticscience.org/ontology/sio.owl#",
+			"cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
+			"obo": "http://purl.obolibrary.org/obo/",
+			"molsystem": {"@id": "gc:MolecularSystem"},
+			"temperature": {"@id": "gc:hasSystemTemperature"},
+			"charge": {"@id": "gc:hasSystemCharge"},
+			"multiplicity": {"@id": "gc:hasSystemMultiplicity"},
+			"molecule": {"@id": "gc:hasMolecule"},
+			"atomCount": {"@id": "gc:hasNumberOfAtoms"},
+			"chain": {"@id": "gc:hasChain"},
+			"residue": {"@id": "gc:hasResidue"},
+			"selection": {"@id": "gc:hasSelection"},
+			"group": {"@id": "gc:hasGroup"},
+			"bond": {"@id": "gc:hasChemicalBond"},
+			"atom": {"@id": "gc:hasAtom"},
+			"atomMass": {"@id": "gc:hasAtomMass"},
+			"formalAtomCharge": {"@id": "gc:hasFormalAtomCharge"},
+			"calculatedAtomCharge": {"@id": "gc:hasCalculatedAtomCharge"},
+			"basisSet": {
+				"@id": "gc:hasBasisSet",
+				"@type": "@id"
+			},
+			"molecules": {
+				"@id": "gc:hasPart",
+				"@type": "@id"
+			},
+			"chains": {
+				"@id": "gc:hasPart",
+				"@type": "@id"
+			},
+			"residues": {
+				"@id": "gc:hasPart",
+				"@type": "@id"
+			},
+			"selections": {
+				"@id": "gc:hasPart",
+				"@type": "@id"
+			},
+			"groups": {
+				"@id": "gc:hasPart",
+				"@container": "@set"
+			},
+			"groups#": {
+				"@id": "gc:hasPart",
+				"@container": "@set"
+			},
+			"bonds": {
+				"@id": "gc:hasPart",
+				"@container": "@set"
+			},
+			"bonds#": {
+				"@id": "gc:hasPart",
+				"@type": "@id",
+				"@container": "@set"
+			},
+			"atoms": {
+				"@id": "gc:hasPart",
+				"@container": "@set"
+			},
+			"atoms#": {
+				"@id": "gc:hasPart",
+				"@type": "@id",
+				"@container": "@set"
+			},
+			"spaceType": {
+				"@id": "gc:hasSpaceType",
+				"@type": "string"
+			},
+			"element": {
+				"@id": "obo:CHEBI_33250",
+				"@type": "@id",
+				"@container": "@set"
+			},
+			"inchiKey": {
+				"@id": "cheminf:CHEMINF_000059",
+				"@type": "string"
+			},
+			"type": {
+				"@id": "obo:CHEBI_24433",
+				"@type": "@id"
+			},
+			"bondType": {
+				"@id": "gc:hasBondType",
+				"@type": "string"
+			},
+			"bondOrder": {
+				"@id": "gc:hasBondOrder",
+				"@type": "decimal"
+			},
+			"points": {
+				"@id": "gc:hasCoordinates",
+				"@container": "@set"
+			},
+			"points#": {
+				"@id": "gc:hasPoint",
+				"@type": "@id",
+				"@container": "@set"
+			},
+			"x": {"@id": "sio:SIO_000400"},
+			"y": {"@id": "sio:SIO_000401"},
+			"z": {"@id": "sio:SIO_000402"},
+			"tenant": {
+				"@id": "gc:hasTenant",
+				"@type": "@id"
+			}
+		}
+	]
 }
