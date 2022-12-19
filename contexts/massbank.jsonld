@@ -5,7 +5,7 @@
 		"obo": "http://purl.obolibrary.org/obo/",
 		"sio": "http://semanticscience.org/ontology/sio.owl#",
 		"edam": "https://edamontology.org/EDAM.owl#",
-		"cheminf": "http://semanticchemistry.com/ontology/cheminf.owl/",
+		"cheminf": "http://semanticchemistry.com/ontology/cheminf.owl#",
 		"wdt": "http://www.wikidata.org/prop/direct/",
 		"afe": "http://purl.allotrope.org/ontologies/equipment#",
         "afp": "http://purl.allotrope.org/ontologies/process#",
@@ -41,8 +41,7 @@
 		},
 		"name": {
 			"@id": "edam:data_0990",
-			"@type": "string",
-			"@container": "@list"
+			"@type": "string"
 		},
 		"smiles": {
 			"@id": "obo:MI_2039",
@@ -73,7 +72,7 @@
 			"@type": "string"
 		},
 		"inchikey": {
-			"@id": "wdt:P235",
+			"@id": "cheminf:CHEMINF_000059",
 			"@type": "string"
 		},
 		"chemspider": {
@@ -81,7 +80,7 @@
 			"@type": "string"
 		},
 		"comptox": {
-			"@id": "wdt:P3117",
+			"@id": "cheminf:CHEMINF_000568",
 			"@type": "string"
 		},
 		"instrument": {
@@ -169,7 +168,7 @@
 			"@type": "string"
 		},
 		"solvent": {
-			"@id": "chebi:46787",
+			"@id": "obo:CHEBI_46787",
 			"@type": "string"
 		},
 		"concentration": {

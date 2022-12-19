@@ -166,7 +166,7 @@
         "allChemClassifications": {
             "@id": "obo:GSSO_004258",
             "@type": "string",
-            "@container": "@list"
+            "@container": "@set"
         },
         "allTaxa": {
             "@id": "edam:data_1868",

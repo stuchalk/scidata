@@ -60,7 +60,7 @@
         "points": {
             "@id": "obo:MS_1000515",
             "@type": "decimal",
-            "@container": "@list"
+            "@container": "@set"
         }
     }
 }

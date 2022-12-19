@@ -3,26 +3,29 @@
         {
             "@vocab": "https://www.w3.org/2001/XMLSchema#",
             "dct": "http://purl.org/dc/terms/",
+            "obo": "http://purl.obolibrary.org/obo/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "mat": "https://stuchalk.github.io/scidata/ontology/scidata_material.owl#",
             "material": {"@id": "sdo:material"},
-            "materialType": {
-                "@id": "mat:materialType",
+            "type": {
+                "@id": "dct:type",
                 "@type": "string"
             },
             "composition": {
-                "@id": "mat:composition",
+                "@id": "obo:NCIT_C53414",
                 "@type": "string"
             },
             "manufactured": {
-                "@id": "mat:manufactured",
-                "@type": "string"
+                "@id": "obo:NCIT_C93591",
+                "@type": "dateTime"
             },
             "origin": {
-                "@id": "sdo:origin",
+                "@id": "obo:NCIT_C42703",
                 "@type": "string"
             },
-            "property": {"@id": "mat:property"}
+            "properties": {
+                "@id": "sdo:property",
+                "@container": "@set"
+            }
         }
     ]
 }
