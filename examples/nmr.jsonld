@@ -6,7 +6,7 @@
             "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
             "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "w3i": "https://w3id.org/skgo/modsci#",
-            "cao": "http://champ-project.org/images/ontology/cao.owl#",
+            "cao": "https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl#",
             "qudt": "https://qudt.org/vocab/unit/",
             "obo": "http://purl.obolibrary.org/obo/",
             "dct": "http://purl.org/dc/terms/",
@@ -22,7 +22,7 @@
         "@type": "sdo:scidataFramework",
         "uid": "scidata:example:nmr",
         "title": "R-(+)-Limonene (1H NMR)",
-        "author": [
+        "authors": [
             {
                 "@id": "author/1/",
                 "@type": "dct:creator",
@@ -31,7 +31,6 @@
         ],
         "description": "NMR spectrum of (+)-(r)-limonene",
         "publisher": "Bruker BioSpin GmbH",
-        "starttime": "2015-08-17T07:50:46-05:00",
         "permalink": "https://stuchalk.github.io/scidata/examples/nmr.jsonld",
         "related": [
             "https://stuchalk.github.io/scidata/examples/ri.jsonld",

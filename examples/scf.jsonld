@@ -2,7 +2,8 @@
 	"@context": [
 		"https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
 		"https://stuchalk.github.io/scidata/contexts/crg_molsystem.jsonld",
-		{
+		"https://stuchalk.github.io/scidata/contexts/crg_computer.jsonld",
+        		{
 			"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
 			"qudt": "https://qudt.org/vocab/unit/",
 			"gc": "http://purl.org/gc/",
@@ -17729,18 +17730,18 @@
 				]
 			}
 		},
-		"references": [
+		"sources": [
 			{
-				"@id": "reference/1/",
+				"@id": "source/1/",
 				"@type": "dct:source",
 				"citation": "Provided by Chemical Semantics Inc. http://chemicalsemantics.com",
 				"url": "https://stuchalk.github.io/scidata/examples/scf.jsonld"
 			}
 		],
-		"rights": {
+		"rights": [{
 			"@id": "rights",
 			"@type": "dct:rights",
 			"license": "http://creativecommons.org/publicdomain/zero/1.0/"
-		}
+		}]
 	}
 }
