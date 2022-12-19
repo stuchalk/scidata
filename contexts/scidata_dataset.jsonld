@@ -7,23 +7,26 @@
             "dct": "http://purl.org/dc/terms/",
             "obo": "http://purl.obolibrary.org/obo/",
             "dataset#": {
-                "@id": "sdo:hasDataset",
-                "@type": "@id"
+                "@id": "sdo:hasDataset"
             },
             "datagroup": {
                 "@id": "sdo:hasDatagroup"
+                "@container": "@set"
             },
             "datagroup#": {
                 "@id": "sdo:hasDatagroup",
                 "@type": "@id"
+                "@container": "@set"
             },
-            "datagroups#": {
-                "@id": "sdo:hasDatagroup",
+            "dataseries": {
+                "@id": "sdo:hasDataseries",
                 "@type": "@id"
+                "@container": "@set"
             },
             "dataseries#": {
                 "@id": "sdo:hasDataseries",
-                "@type": "@id"
+                "@type": "@id",
+                "@container": "@set"
             },
             "dataname": {
                 "@id": "sdo:dataName",
