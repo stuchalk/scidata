@@ -1,68 +1,73 @@
 {
-    "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
-        {
-            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
-        }
-    ],
-    "@id": "unique uri for this document (and graph name)",
-    "generatedAt": "the date/time this document was created",
-    "version": "the version of this file (integer)",
-    "@graph": {
-        "@id": "identifier (uri)",
-        "@type": "sdo:scidataFramework",
-        "uid": "unique identifier (string)",
-        "title": "title (string)",
-        "author": ["list of authors with e.g., affilation, email, ORCID"],
-        "description": "description (string)",
-        "publisher": "publisher (string)",
-        "keywords": "subject (string)",
-        "version": "version of the data not the file (integer)",
-        "date": "date/time of data collection (string)",
-        "permalink": "permanent URL to file (uri)",
-        "related": ["one or more external links related to this file (uri)"],
-        "toc": ["links sections of this file (interal uri)"],
-        "ids": ["links to ontology defined terms (external uri)"],
-        "scidata": {
-            "@id": "scidataFramework/",
-            "@type": "sdo:scientificData",
-            "type": ["type of data (from enum list e.g. 'property value')"],
-            "property": ["list of one to many properties (string)"],
-            "kind": ["list of one to many kinds of data (set list)"],
-            "methodology": {
-                "@id": "methodology/",
-                "evaluation": "how the data was obtained (enum list e.g. 'experimental')",
-                "aspects": ["add data that describes the methodology (user defined)",
-                    "examples: instrument, procedure, resource, calculation, software"]
-            },
-            "system": {
-                "@id": "system/",
-                "discipline": "science area",
-                "subdiscipline": "subdiscipline area",
-                "facets": ["add data that describes the system under study (user defined)",
-                    "examples: compound, molecularsystem, mixture, organism, material, condition"]
-            },
-            "dataset": {
-                "@id": "dataset/",
-                "uid": "unique identifier (string)",
-                "name": "name of dataset (string)",
-                "source": "which aspect was used to obtain data (internal uri)",
-                "scope": "which facet is this measured on (internal uri)",
-                "attribute": ["one or more attributes about the dataset (parameter)"],
-                "datapoint": ["one or more individual discrete pieces of data"],
-                "dataseries": ["one or more series of data (e.g, spectral, chromatographic, kinetic)"],
-                "datagroup": ["one or more sets of datapoints that are in some way correlated"]
-            }
-        },
-        "sources": [{
-                "@id": "source/1/",
-                "citation": "textual citation (string)",
-                "url": "doi/link to source (uri)"
-            }],
-        "rights": {
-            "@id": "rights/1/",
-            "license": "data license (uri)",
-            "holder": "license holder (string)"
-        }
-    }
+	"@context": [
+		"https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+		{"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"}
+	],
+	"@id": "unique_uri_for_this_document_(and_graph_name)",
+	"generatedAt": "the date/time this document was created",
+	"version": "the version of this file (integer)",
+	"@graph": {
+		"@id": "identifier_(uri)",
+		"@type": "sdo:scidataFramework",
+		"uid": "unique identifier (string)",
+		"title": "title (string)",
+		"authors": ["list of authors with e.g., affilation, email, ORCID"],
+		"description": "description (string)",
+		"publisher": "publisher (string)",
+		"keywords": "subject (string)",
+		"version": "version of the data not the file (integer)",
+		"permalink": "permanent URL to file (uri)",
+		"related": ["one or more external links related to this file (uri)"],
+		"toc": ["links sections of this file (interal uri)"],
+		"ids": ["links to ontology defined terms (external uri)"],
+		"scidata": {
+			"@id": "scidataFramework/",
+			"@type": "sdo:scientificData",
+			"type": ["type of data (from enum list e.g. 'property value')"],
+			"property": ["list of one to many properties (string)"],
+			"kind": ["list of one to many kinds of data (set list)"],
+			"methodology": {
+				"@id": "methodology/",
+				"evaluation": "how the data was obtained (enum list e.g. 'experimental')",
+				"aspects": [
+					"add data that describes the methodology (user defined)",
+					"examples: instrument, procedure, resource, calculation, software"
+				]
+			},
+			"system": {
+				"@id": "system/",
+				"discipline": "science area",
+				"subdiscipline": "subdiscipline area",
+				"facets": [
+					"add data that describes the system under study (user defined)",
+					"examples: compound, molecularsystem, mixture, organism, material, condition"
+				]
+			},
+			"dataset": {
+				"@id": "dataset/",
+				"uid": "unique identifier (string)",
+				"name": "name of dataset (string)",
+				"source": "which aspect was used to obtain data (internal uri)",
+				"scope": "which facet is this measured on (internal uri)",
+				"attribute": ["one or more attributes about the dataset (parameter)"],
+				"datapoint": ["one or more individual discrete pieces of data"],
+				"dataseries": ["one or more series of data (e.g, spectral, chromatographic, kinetic)"],
+				"datagroup": ["one or more sets of datapoints that are in some way correlated"]
+			}
+		},
+		"sources": [
+			{
+				"@id": "source/1/",
+				"citation": "textual citation (string)",
+				"url": "doi/link to source (uri)"
+			}
+		],
+		"rights": [
+			{
+				"@id": "rights/1/",
+				"license": "data license (uri)",
+				"holder": "license holder (string)"
+			}
+		]
+	}
 }
