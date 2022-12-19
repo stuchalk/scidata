@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "afp": "http://purl.allotrope.org/ontologies/process#",
+        "afr": "http://purl.allotrope.org/ontologies/result#",
+        "afre": "http://purl.allotrope.org/ontologies/realizable",
+        "repome": "https://w3id.org/reproduceme#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "procedure": {"@id": "afre:AFRE_0000002"},
+        "procedures": {
+            "@id": "afre:AFRE_0000002",
+            "@container": "@set"
+        },
+        "activity": {
+            "@id": "afp:AFP_0003620",
+            "@type": "string"
+        },
+        "sequence": {"@id": "afr:AFR_0000945"},
+        "steps": {
+            "@id": "repome:IntermediateStep",
+            "@container": "@set"
+        },
+        "step": {
+            "@id": "repome:IntermediateStep",
+            "@type": "integer"
+        },
+        "instruction": {
+            "@id": "afr:AFR_0000941",
+            "@type": "string"
+        },
+        "notes": {
+            "@id": "sio:SIO_001166",
+            "@type": "string"
+        }
+    }
+}
