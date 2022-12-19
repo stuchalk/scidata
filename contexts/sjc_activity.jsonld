@@ -1,0 +1,22 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "activity": {
+            "@id": "obo:NCIT_C43431",
+            "@type": "string"
+        },
+        "activity#": {
+            "@id": "obo:NCIT_C43431",
+            "@type": "@id"
+        },
+        "exercise": {
+            "@id": "obo:NCIT_C17708",
+            "@type": "string"
+        },
+        "exercise#": {
+            "@id": "obo:NCIT_C17708",
+            "@type": "@id"
+        }
+    }
+}

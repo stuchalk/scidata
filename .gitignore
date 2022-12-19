@@ -15,6 +15,7 @@ ontology/metrology.properties
 ontology/solubility.properties
 ontology/substance/substance.obda
 ontology/substance/substance.properties
+prefix.cc_context.jsonld
 
 # python venv environment
 env/

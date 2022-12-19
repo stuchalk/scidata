@@ -1,57 +1,77 @@
 {
-    "@context": {
-        "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+	"@context": {
+		"@vocab": "https://www.w3.org/2001/XMLSchema#",
+		"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+		"dct": "http://purl.org/dc/terms/",
         "sio": "http://semanticscience.org/ontology/sio.owl#",
-        "cmo": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
-        "afr": "http://purl.allotrope.org/ontologies/result#",
-        "name": {
-            "@id": "sio:SIO_000118",
+		"afr": "http://purl.allotrope.org/ontologies/result#",
+		"name": {
+			"@id": "sio:SIO_000118",
+			"@type": "string"
+		},
+		"type": {
+			"@id": "dct:type",
+			"@type": "string"
+		},
+        "grade": {
+            "@id": "obo:FOODON_03530013",
             "@type": "string"
         },
-        "sourcetype": {
-            "@id": "cmo:CHM_00003",
-            "@type": "string"
-        },
-        "purity": {
-            "@id": "obo:NCIT_C62352",
-            "@type": "@id"
-        },
-        "steps": {
-            "@id": "obo:NCIT_C48176",
-            "@type": "@id"
-        },
-        "analysis": {
-            "@id": "afr:AFR_0000895",
-            "@type": "string"
-        },
-        "part": {
-            "@id": "sio:SIO_000313",
-            "@type": "string"
-        },
-        "purification": {
-            "@id": "obo:CHMO_0002231",
-            "@type": "string"
-        },
-        "number": {
-            "@id": "obo:NCIT_C25712",
-            "@type": "decimal"
-        },
-        "chemical": {
-            "@id": "sdo:isExperimentalDataOf",
-            "@type": "string"
-        },
-        "chemical#": {
-            "@id": "sdo:isExperimentalDataOf",
-            "@type": "@id"
-        },
-        "substance": {
-            "@id": "sdo:isSampleOf",
-            "@type": "string"
-        },
-        "substance#": {
-            "@id": "sdo:isSampleOf",
-            "@type": "@id"
+		"vendor": {
+			"@id": "obo:NCIT_C68608",
+			"@type": "string"
+		},
+		"catnumber": {
+			"@id": "obo:NCIT_C99286",
+			"@type": "string"
+		},
+		"lotnumber": {
+			"@id": "obo:NCIT_C70848",
+			"@type": "string"
+		},
+		"purity": {
+			"@id": "obo:NCIT_C62352",
+			"@type": "@id"
+		},
+		"steps": {
+			"@id": "obo:NCIT_C48176",
+			"@type": "@id"
+		},
+		"analysis": {
+			"@id": "afr:AFR_0000895",
+			"@type": "string"
+		},
+		"part": {
+			"@id": "sio:SIO_000313",
+			"@type": "string"
+		},
+		"purification": {
+			"@id": "obo:CHMO_0002231",
+			"@type": "string"
+		},
+		"number": {
+			"@id": "obo:NCIT_C25712",
+			"@type": "decimal"
+		},
+		"chemical": {
+			"@id": "sdo:isExperimentalDataOf",
+			"@type": "string"
+		},
+		"chemical#": {
+			"@id": "sdo:isExperimentalDataOf",
+			"@type": "@id"
+		},
+		"substance": {
+			"@id": "sdo:isSampleOf",
+			"@type": "string"
+		},
+		"substance#": {
+			"@id": "sdo:isSampleOf",
+			"@type": "@id"
+		},
+        "properties": {
+            "@id": "sdo:property",
+            "@container": "@set"
         }
-    }
+	}
 }

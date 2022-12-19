@@ -29,7 +29,10 @@
                 "@id": "obo:sep_00088",
                 "@type": "string"
             },
-            "settings": {"@id": "obo:IAO_0000140"}
+            "settings": {
+                "@id": "obo:IAO_0000140",
+                "@container": "@set"
+            }
         }
     ]
 }

@@ -15,11 +15,13 @@ From https://prefix.cc/context.jsonld
 "efo": "http://www.ebi.ac.uk/efo/"
 "afd": "http://purl.allotrope.org/ontologies/datapackage#"
 "afe": "http://purl.allotrope.org/ontologies/equipment#"
+"afre": "http://purl.allotrope.org/ontologies/realizable#"
 "afm": "http://purl.allotrope.org/ontologies/material#"
 "afp": "http://purl.allotrope.org/ontologies/process#"
 "afr": "http://purl.allotrope.org/ontologies/result#"
-"afx": "http://purl.allotrope.org/ontologies/property#"  (the Allotrope way terms start with AFX_)
+"afx": "http://purl.allotrope.org/ontologies/property#" (the Allotrope way terms start with AFX_)
 "prov": "http://www.w3.org/ns/prov#"
 "igb": "https://goldbook.iupac.org/"
 "repome": "https://w3id.org/reproduceme#"
-"bao": "http://www.bioassayontology.org/bao#",
+"bao": "http://www.bioassayontology.org/bao#"
+"gc": "http://purl.org/gc/"
