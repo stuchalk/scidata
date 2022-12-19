@@ -9,7 +9,7 @@
 			"@id": "sio:SIO_000118",
 			"@type": "string"
 		},
-		"type": {
+		"sourcetype": {
 			"@id": "dct:type",
 			"@type": "string"
 		},
