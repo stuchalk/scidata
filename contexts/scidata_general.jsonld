@@ -32,11 +32,11 @@
             "@type": "@id"
         },
         "role": {
-            "@id": "obo:NCIT_C48835",
+            "@id": "sio:SIO_000016",
             "@type": "string"
         },
         "role#": {
-            "@id": "obo:NCIT_C48835",
+            "@id": "sio:SIO_000016",
             "@type": "@id"
         },
         "label": {
