@@ -11,8 +11,7 @@
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
-    <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
+    <Prefix name="sdo" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>

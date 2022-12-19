@@ -10,7 +10,7 @@
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/mixture.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+    <Prefix name="sdo" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance.owl"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
@@ -374,7 +374,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MIX_000001</IRI>
-        <Literal xml:lang="en">Reference to a part of the chemical substance.  E.g. delineation of the chemical substances in a mixture</Literal>
+        <Literal xml:lang="en">Chemical species present in a system; often called a component, although the term component has a more restricted meaning in physical chemistry.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -392,9 +392,14 @@
         <Literal>mixture type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MIX_000003</IRI>
+        <IRI>https://doi.org/10.1351/goldbook.C01281 </IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MIX_000003</IRI>
-        <Literal>Phase of matter</Literal>
+        <Literal>An entity of a material system which is uniform in chemical composition and physical state.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -402,19 +407,14 @@
         <Literal>phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#MIX_000004</IRI>
-        <Literal xml:lang="en">A measured physical or chemical property about a substance</Literal>
+        <Literal>A set of data elements (system, component, kind-of-property) common to a set of particular properties, e.g., substance concentration of glucose in blood plasma.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#MIX_000004</IRI>
-        <Literal>The one-, two- or three-letter symbols are used to represent the states of aggregation of chemical species. The letters are appended to the formula symbol in parentheses.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#MIX_000004</IRI>
-        <Literal xml:lang="en">IUPAC &quot;Quantities, Units and Symbols in Physical Chemistry (Green Book)&quot;, 3rd Edition, E Richard Cohen, Tom Cvitas, Jeremy G Frey, Bertil Holström, Kozo Kuchitsu, Roberto Marquardt, Ian Mills, Franco Pavese, Martin Quack, Jüergen Stohner, Herbert L Strauss, Michio Takami, Anders J Thor Eds., 2012 ISBN 978-0-85404-433-7 http://iupac.org/cms/wp-content/uploads/2015/07/Green-Book-PDF-Version-2011.pdf</Literal>
+        <IRI>https://doi.org/10.1351/goldbook.P04883</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -422,14 +422,19 @@
         <Literal xml:lang="en">property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MIX_000004</IRI>
-        <Literal>state of aggregation</Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MIX_000005</IRI>
+        <Literal>Portion of matter consisting of two or more chemical substances called constituents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MIX_000005</IRI>
         <Literal xml:lang="en">mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <IRI>#MIX_000005</IRI>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_60004</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -609,7 +614,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#MIX_000021</IRI>
-        <Literal xml:lang="en">http://purl.allotrope.org/voc/afo/merged-OLS/REC/2019/05/10</Literal>
+        <IRI>http://purl.allotrope.org/ontologies/material#AFM_0001035</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

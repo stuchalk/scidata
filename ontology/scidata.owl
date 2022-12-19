@@ -7,18 +7,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://stuchalk.github.io/scidata/ontology/scidata.owl">
     <Prefix name="" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl"/>
-    <Prefix name="dct" IRI="https://purl.org/dc/terms/"/>
-    <Prefix name="chm" IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="cite" IRI="http://purl.org/spar/datacite/"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
-    <Prefix name="prop" IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="oboowl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Prefix name="cheminf" IRI="http://semanticscience.org/ontology/cheminf.owl"/>
@@ -91,6 +88,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cite:orcid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
@@ -174,13 +174,10 @@
         <Class IRI="https://schema.org/URL"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/property.owl#property"/>
     </Declaration>
     <Declaration>
         <Class IRI="#assay"/>
@@ -645,6 +642,10 @@
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
+        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="bfo11snap:DependentContinuant"/>
         <Class abbreviatedIRI="bfo11snap:Continuant"/>
     </SubClassOf>
@@ -745,15 +746,11 @@
         <Class IRI="#metadata"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://semanticscience.org/ontology/sio.owlSIO_000999"/>
-        <Class abbreviatedIRI="bfo11snap:ProcessualEntity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical"/>
         <Class IRI="#systemFacet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://stuchalk.github.io/scidata/ontology/property/property.owl#property"/>
+        <Class IRI="https://stuchalk.github.io/scidata/ontology/property.owl#property"/>
         <Class IRI="#scientificData"/>
     </SubClassOf>
     <SubClassOf>
@@ -1845,6 +1842,21 @@
         <Literal>orcid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <Literal>A procedure is a process that attempts to achieve one or more objectives by following an established set of actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <Literal>SIO_000999</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
+        <Literal>procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>oboowl:hasExactSynonym</AbbreviatedIRI>
         <Literal>has Exact Synonym</Literal>
@@ -2248,21 +2260,6 @@
         <Literal>url</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
-        <Literal>A procedure is a process that attempts to achieve one or more objectives by following an established set of actions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
-        <Literal>SIO_000999</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://semanticscience.org/ontology/sio.owlSIO_000999</IRI>
-        <Literal>procedure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical</IRI>
         <Literal>In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds.</Literal>
@@ -2284,17 +2281,17 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property.owl#property</IRI>
         <Literal>Any property that can be characterized or measured</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property.owl#property</IRI>
         <Literal>property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://stuchalk.github.io/scidata/ontology/property/property.owl#property</IRI>
+        <IRI>https://stuchalk.github.io/scidata/ontology/property.owl#property</IRI>
         <Literal>property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

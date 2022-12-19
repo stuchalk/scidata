@@ -5,7 +5,7 @@
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sci" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
+    <Prefix name="sdo" IRI="https://stuchalk.github.io/scidata/ontology/scidata.owl#"/>
     <Prefix name="sub" IRI="https://stuchalk.github.io/scidata/ontology/substance/substance.owl"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
@@ -41,7 +41,7 @@
         <Class IRI="#volume"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#gas"/>
@@ -63,27 +63,27 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#concentrationMassVolume"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#indexOfRefraction"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#massFraction"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pH"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#temperature"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#volume"/>
-        <Class abbreviatedIRI="sci:propertyValue"/>
+        <Class abbreviatedIRI="sdo:propertyValue"/>
     </SubClassOf>
     <DifferentIndividuals>
         <NamedIndividual IRI="#gas"/>
