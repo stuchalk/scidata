@@ -7,25 +7,19 @@
             "sio": "http://semanticscience.org/ontology/sio.owl#",
             "cheminf": "http://semanticscience.org/ontology/cheminf.owl#",
             "obo": "http://purl.obolibrary.org/obo/",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "molsystem": {"@id": "gc:MolecularSystem"},
             "temperature": {
-                "@id": "gc:hasSystemTemperature",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasSystemTemperature"
             },
             "charge": {
-                "@id": "gc:hasSystemCharge",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasSystemCharge"
             },
             "multiplicity": {
-                "@id": "gc:hasSystemMultiplicity",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasSystemMultiplicity"
             },
             "molecule": {"@id": "gc:hasMolecule"},
             "atomCount": {
-                "@id": "gc:hasNumberOfAtoms",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasNumberOfAtoms"
             },
             "chain": {"@id": "gc:hasChain"},
             "residue": {"@id": "gc:hasResidue"},
@@ -34,16 +28,13 @@
             "bond": {"@id": "gc:hasChemicalBond"},
             "atom": {"@id": "gc:hasAtom"},
             "atomMass": {
-                "@id": "gc:hasAtomMass",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasAtomMass"
             },
             "formalAtomCharge": {
-                "@id": "gc:hasFormalAtomCharge",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasFormalAtomCharge"
             },
             "calculatedAtomCharge": {
-                "@id": "gc:hasCalculatedAtomCharge",
-                "@type": "sdo:parameter"
+                "@id": "gc:hasCalculatedAtomCharge"
             },
             "basisSet": {
                 "@id": "gc:hasBasisSet",
@@ -101,22 +92,23 @@
                 "@id": "gc:hasBondOrder",
                 "@type": "decimal"
             },
-            "points": {"@id": "gc:hasCoordinates"},
-            "point": {
+            "points": {
+                "@id": "gc:hasCoordinates",
+                "@container": "@set"
+            },
+            "points#": {
                 "@id": "gc:hasPoint",
-                "@type": "@id"
+                "@type": "@id",
+                "@container": "@set"
             },
             "x": {
-                "@id": "sio:SIO_000400",
-                "@type": "sdo:parameter"
+                "@id": "sio:SIO_000400"
             },
             "y": {
-                "@id": "sio:SIO_000401",
-                "@type": "sdo:parameter"
+                "@id": "sio:SIO_000401"
             },
             "z": {
-                "@id": "sio:SIO_000402",
-                "@type": "sdo:parameter"
+                "@id": "sio:SIO_000402"
             },
             "tenant": {
                 "@id": "gc:hasTenant",
