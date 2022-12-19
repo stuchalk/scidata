@@ -1,0 +1,48 @@
+{
+	"@context": [
+		"https://stuchalk.github.io/scidata/contexts/crg_mixture.jsonld",
+		{
+			"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+			"chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
+			"mix": "https://stuchalk.github.io/scidata/ontology/mixture.owl#"
+		},
+		{"@base": "https://stuchalk.github.io/scidata/examples/mixture/"}
+	],
+	"@id": "https://stuchalk.github.io/scidata/examples/mixture/",
+	"type": "binary mixture",
+	"phase": "liquid",
+	"constituents": [
+		{
+			"@id": "constituent/1/",
+			"@type": "sdo:constituent",
+			"source#": "chemical/1/",
+			"grade": "MilliQ Grade (18.2 MOhms)",
+			"purity": {
+				"@id": "constituent/1/purity/",
+				"@type": "chm:purity",
+				"value": {
+					"@id": "constituent/1/purity/value",
+					"@type": "sdo:value",
+					"number": 99.9999,
+					"unit": "%(w/w)"
+				}
+			}
+		},
+		{
+			"@id": "constituent/2/",
+			"@type": "mix:constituent",
+			"source#": "chemical/2/",
+			"grade": "ACS Certified grade",
+			"purity": {
+				"@id": "constituent/2/purity/",
+				"@type": "chm:purity",
+				"value": {
+					"@id": "constituent/2/purity/value",
+					"@type": "sdo:value",
+					"number": 1e-4,
+					"unit": "%(w/w)"
+				}
+			}
+		}
+	]
+}

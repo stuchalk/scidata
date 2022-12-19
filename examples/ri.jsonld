@@ -6,11 +6,9 @@
         "https://stuchalk.github.io/scidata/contexts/crg_mixture.jsonld",
         "https://stuchalk.github.io/scidata/contexts/crg_measurement.jsonld",
             {
-            "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "sub": "https://stuchalk.github.io/scidata/ontology/substance/substance.owl#",
-            "chm": "https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#",
-            "prop": "https://stuchalk.github.io/scidata/ontology/property/property.owl#",
-            "smed": "http://snomed.info/id/",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "sub": "https://stuchalk.github.io/scidata/ontology/substance.owl#",
+            "chm": "https://stuchalk.github.io/scidata/ontology/chemical.owl#",
             "qudt": "https://qudt.org/vocab/unit/",
             "dct": "http://purl.org/dc/terms/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"

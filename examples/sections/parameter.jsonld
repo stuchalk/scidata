@@ -6,13 +6,13 @@
     ],
     "@id": "",
     "@type": "sdo:parameter",
-    "scope": "molecule/1",
+    "scope": "molecule/1/",
     "quantitykind": "magnetic field strength",
     "quantity": "Anisotropic NMR Shielding",
     "value": {
         "@id": "value/",
         "@type": "sdo:value",
         "number": "3.2",
-        "unitstr": "ppm Hz"
+        "unit": "ppm Hz"
     }
 }

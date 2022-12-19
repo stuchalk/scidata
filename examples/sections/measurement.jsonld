@@ -1,48 +1,48 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_measurement.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/crg_measurement.jsonld",
         {
-            "cao": "https://champ-project.org/images/ontology/cao.owl#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
+            "cao": "https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl#",
         },
-        {"@base": "https://stuchalk.github.io/scidata/examples/sections/measurement.jsonld/"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/measurement"}
     ],
-    "@id": "",
+    "@id": "https://stuchalk.github.io/scidata/examples/sections/measurement",
     "@type": "sdo:measurement",
-    "techniqueType": "cao:spectroscopy",
-    "technique": "cao:NMR",
-    "instrumentType": "300 MHz NMR",
-    "instrument": "??",
+    "techniqueType#": "cao:spectroscopy",
+    "technique#": "cao:NMR",
+    "instrumentType": "Fourier Transform NMR",
+    "instrument": "Bruker 300 MHz NMR",
     "settings": [
         {
             "@id": "setting/1/",
             "@type": "sdo:setting",
-            "quantity": "frequency",
-            "property": "Observe Frequency",
+            "quantitykind": "frequency",
+            "quantity": "Observe Frequency",
             "value": {
                 "@id": "setting/1/value/",
                 "@type": "sdo:value",
                 "number": 300.0318,
-                "unitstr": "MHz"
+                "unit": "MHz"
             }
         },
         {
             "@id": "setting/2/",
             "@type": "sdo:setting",
-            "quantity": "time",
-            "property": "Acquisition Time",
+            "quantitykind": "time",
+            "quantity": "Acquisition Time",
             "value": {
                 "@id": "setting/2/value/",
-                "number": 3.42098,
                 "@type": "sdo:value",
-                "unitstr": "s"
+                "number": 3.42098,
+                "unit": "s"
             }
         },
         {
             "@id": "setting/3/",
             "@type": "sdo:setting",
-            "quantity": "count",
-            "property": "Zero Fill",
+            "quantitykind": "count",
+            "quantity": "Zero fill",
             "value": {
                 "@id": "setting/3/value/",
                 "@type": "sdo:value",
@@ -52,8 +52,8 @@
         {
             "@id": "setting/4/",
             "@type": "sdo:setting",
-            "quantity": "frequency",
-            "property": "Shift Reference",
+            "quantitykind": "frequency",
+            "quantity": "Shift reference",
             "value": {
                 "@id": "setting/4/value/",
                 "@type": "sdo:value",
@@ -63,8 +63,7 @@
         {
             "@id": "setting/5/",
             "@type": "sdo:setting",
-            "quantity": "isotope",
-            "property": "Observe Nucleus",
+            "type": "Observed nucleus",
             "value": {
                 "@id": "setting/5/value/",
                 "@type": "sdo:value",
@@ -74,8 +73,7 @@
         {
             "@id": "setting/6/",
             "@type": "sdo:setting",
-            "quantity": "mode of operation",
-            "property": "Acquisition Mode",
+            "type": "Acquisition mode",
             "value": {
                 "@id": "setting/6/value/",
                 "@type": "sdo:value",
@@ -85,8 +83,7 @@
         {
             "@id": "setting/7/",
             "@type": "sdo:setting",
-            "quantity": "chemical",
-            "property": "Solvent Name",
+            "type": "Solvent name",
             "value": {
                 "@id": "setting/7/value/",
                 "@type": "sdo:value",

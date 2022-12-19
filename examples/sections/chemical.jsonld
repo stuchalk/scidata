@@ -1,21 +1,22 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_chemical.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/crg_chemical.jsonld",
         {
-            "qudt": "https://qudt.org/vocab/unit/",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-            "@base": "https://stuchalk.github.io/scidata/examples/sections/chemical.jsonld/"
-        }
+            "qudt": "https://qudt.org/vocab/unit/",
+            "obo": "http://purl.obolibrary.org/obo/"
+        },
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/chemical/"}
     ],
-    "@id": "",
+    "@id": "https://stuchalk.github.io/scidata/examples/sections/chemical/",
     "name": "Water",
-    "vendor": "UNF",
+    "vendor": "University of North Florida",
     "grade": "MilliQ Grade (18.2 MOhms)",
     "properties": [
         {
             "@id": "property/1/",
-            "@type": "sdo:purity",
-            "scope": "compound/1/",
+            "@type": "obo:NCIT_C62352",
+            "scope": "substance/1/",
             "quantitykind": "concentration",
             "quantity": "Bulk purity",
             "value": {
@@ -27,8 +28,8 @@
         },
         {
             "@id": "property/2/",
-            "@type": "sdo:purity",
-            "scope": "compound/2/",
+            "@type": "obo:NCIT_C62352",
+            "scope": "substance/2/",
             "quantitykind": "concentration",
             "quantity": "Trace impurity",
             "value": {

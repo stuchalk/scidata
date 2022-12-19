@@ -200,9 +200,9 @@
                         "@id": "datagroup/1/dataseries/2/parameter",
                         "quantity": "molecular symmetry",
                         "property": "Symmetry element",
-                        "textArray": {
-                            "@id": "datagroup/1/dataseries/2/parameter/textarray",
-                            "text": [
+                        "valuearray": {
+                            "@id": "datagroup/1/dataseries/2/parameter/valuearray",
+                            "textarray": [
                                 "C2",
                                 "C2v",
                                 "C2"
@@ -366,9 +366,9 @@
                         "@id": "datagroup/1/dataseries/5/parameter",
                         "quantity": "molecular symmetry",
                         "property": "Symmetry element",
-                        "textArray": {
-                            "@id": "datagroup/1/dataseries/6/parameter/textarray",
-                            "text": [
+                        "valuearray": {
+                            "@id": "datagroup/1/dataseries/6/parameter/valuearray",
+                            "textarray": [
                                 "C2",
                                 "C2v",
                                 "C2"
@@ -9568,9 +9568,9 @@
                         "@id": "datagroup/2/dataseries/2/parameter",
                         "quantity": "martix",
                         "property": "Representation matrix",
-                        "textArray": {
-                            "@id": "datagroup/2/dataseries/2/parameter/textarray",
-                            "text": [
+                        "valuearray": {
+                            "@id": "datagroup/2/dataseries/2/parameter/valuearray",
+                            "textarray": [
                                 "A1",
                                 "A1",
                                 "B2"

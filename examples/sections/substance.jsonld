@@ -1,40 +1,20 @@
 {
-    "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
-        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
-        {"@base": "https://stuchalk.github.io/scidata/examples/system.jsonld#"}
-    ],
-    "@id": "",
-    "type": "Binary mixture",
-    "phase": "liquid",
-    "components": [
-        {
-            "@id": "component/1/",
-            "@type": "sdo:component",
-            "scope": "compound/1/",
-            "grade": "MilliQ Grade (18.2 MOhms)",
-            "purity": {
-                "@id": "component/1/purity/",
-                "@type": "sdo:purity",
-                "value": {
-                    "number": 99.9999,
-                    "unitstr": "%(w/w)"
-                }
-            }
-        },
-        {
-            "@id": "component/2/",
-            "@type": "sdo:component",
-            "scope": "compound/2/",
-            "grade": "ACS Certified grade",
-            "purity": {
-                "@id": "component/2/purity/",
-                "@type": "sdo:purity",
-                "value": {
-                    "number": 1e-4,
-                    "unitstr": "%(w/w)"
-                }
-            }
-        }
-    ]
+	"@context": [
+		"https://stuchalk.github.io/scidata/contexts/crg_substance.jsonld",
+		{
+			"obo": "http://purl.obolibrary.org/obo/",
+			"igb": "https://goldbook.iupac.org/"
+		},
+		{"@base": "https://stuchalk.github.io/scidata/examples/sections/substance/"}
+	],
+	"@id": "https://stuchalk.github.io/scidata/examples/sections/substance/",
+	"@type": "igb:C01039",
+	"name": "Water",
+	"iupacname": "Oxidane",
+	"inchi": "InChI=1S/H2O/h1H2",
+	"inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+	"smiles": "O",
+	"formula": "H2O",
+	"molweight": "18.0153",
+	"chebi": "obo:CHEBI_15377"
 }

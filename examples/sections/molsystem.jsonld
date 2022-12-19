@@ -2,21 +2,21 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/scidata_molsystem.jsonld",
         {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
-        {"@base": "https://stuchalk.github.io/scidata/examples/molsystem.jsonld#"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/molsystem/"}
     ],
-    "@id": "",
+    "@id": "https://stuchalk.github.io/scidata/examples/molsystem/",
     "@type": "sdo:molecularsystem",
     "temperature": {
         "@id": "temperature/",
         "@type": "sdo:condition",
         "number": 273.15,
-        "unitstr": "K"
+        "unit": "K"
     },
     "charge": {
         "@id": "charge/",
         "@type": "sdo:property",
         "number": 0,
-        "unitstr": "C"
+        "unit": "C"
     },
     "multiplicity": {
         "@id": "multiplicity/",
@@ -27,13 +27,13 @@
         "@id": "space/",
         "@type": "sdo:space",
         "spaceType": "cartesian",
-        "points": [
+        "points#": [
             "point/1",
             "point/2",
             "point/3"
         ]
     },
-    "point": [
+    "points": [
         {
             "@id": "point/1/",
             "@type": "sdo:pointinspace",
@@ -41,19 +41,19 @@
                 "@id": "point/1/x/",
                 "@type": "sdo:xcoordinate",
                 "number": 0,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "y": {
                 "@id": "point/1/y/",
                 "@type": "sdo:ycoordinate",
                 "number": 0,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "z": {
                 "@id": "point/1/z/",
                 "@type": "sdo:zcoordinate",
                 "number": 0.03719146,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "tenant": "molecule/1/atom/1/"
         },
@@ -62,17 +62,17 @@
             "x": {
                 "@id": "point/2/x",
                 "number": 0,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "y": {
                 "@id": "point/2/y",
                 "number": -0.7580816,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "z": {
                 "@id": "point/2/z",
                 "number": -0.5986095,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "tenant": "molecule/1/atom/2"
         },
@@ -81,17 +81,17 @@
             "x": {
                 "@id": "point/3/x",
                 "number": 0,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "y": {
                 "@id": "point/3/y",
                 "number": 0.7580816,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "z": {
                 "@id": "point/3/z",
                 "number": -0.5986095,
-                "unitstr": "angstrom"
+                "unit": "angstrom"
             },
             "tenant": "molecule/1/atom/3"
         }

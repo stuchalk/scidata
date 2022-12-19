@@ -1,32 +1,35 @@
 {
-    "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_system.jsonld",
-        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
-        {"@base": "https://stuchalk.github.io/scidata/examples/system_exp.jsonld#"}
-    ],
-    "@id": "",
-    "discipline": "chemistry",
-    "subdiscipline": "analytical chemistry",
-    "facets": [{
-        "@id": "system/",
-        "@type": "sdo:system",
-        "name": "R-(-)-Carvone and Chloroform-d",
-        "description": "Solution prepared for 1H NMR analysis",
-        "systemtype": "binary mixture",
-        "systemphase": "single phase liquid",
-        "constituents": [
-            {
-                "@id": "substance/1/",
-                "@type": "sdo:constituent",
-        		"name": "(R)(-) CARVONE",
-                "inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
-            },
-            {
-                "@id": "substance/2/",
-                "@type": "sdo:constituent",
-        		"name": "Chloroform-d",
-                "inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
-            }
-        ]
-    }]
+	"@context": [
+		"https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
+		"https://stuchalk.github.io/scidata/contexts/crg_mixture.jsonld",
+		{"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+		{"@base": "https://stuchalk.github.io/scidata/examples/system_exp/"}
+	],
+	"@id": "https://stuchalk.github.io/scidata/examples/system_exp/",
+	"discipline": "chemistry",
+	"subdiscipline": "analytical chemistry",
+	"facets": [
+		{
+			"@id": "mixture/1/",
+			"@type": "sdo:system",
+			"name": "R-(-)-Carvone and Chloroform-d",
+			"description": "Solution prepared for 1H NMR analysis",
+			"type": "binary mixture",
+			"phase": "single phase liquid",
+			"constituents": [
+				{
+					"@id": "substance/1/",
+					"@type": "sdo:substance",
+					"name": "(R)(-) CARVONE",
+					"inchikey": "ULDHMXUKGWMISQ-SECBINFHSA-N"
+				},
+				{
+					"@id": "substance/2/",
+					"@type": "sdo:substance",
+					"name": "Chloroform-d",
+					"inchikey": "HEDRZPFGACZZDS-MICDWDOJSA-N"
+				}
+			]
+		}
+	]
 }

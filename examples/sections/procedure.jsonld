@@ -1,65 +1,69 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_procedure.jsonld",
-        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+        "https://stuchalk.github.io/scidata/contexts/crg_procedure.jsonld",
+        {
+            "afr": "http://purl.allotrope.org/ontologies/result#",
+            "afre": "http://purl.allotrope.org/ontologies/realizable",
+            "repome": "https://w3id.org/reproduceme#",
+        },
         {"@base": "https://stuchalk.github.io/scidata/examples/procedure/"}
     ],
-    "@id": "",
-    "@type": "sdo:procedure",
+    "@id": "https://stuchalk.github.io/scidata/examples/procedure/",
+    "@type": "afre:AFRE_0000002",
     "title": "pH meter calibration",
     "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken",
-    "scope": "measurement/1",
-    "proctype": "sequence",
+    "scope": "measurement/1/",
+    "activity": "standarization",
     "sequence": {
         "@id": "sequence/",
-        "@type": "sdo:sequence",
+        "@type": "afr:AFR_0000945",
         "title": "Three buffer standardization",
         "steps": [
             {
-                "@id": "step/1",
-                "@type": "sdo:step",
+                "@id": "step/1/",
+                "@type": "repome:IntermediateStep",
                 "step": 1,
                 "text": "Turn the pH meter on, make sure the electrode is connected and working by placing it in the pH buffer."
             },
             {
-                "@id": "step/2",
-                "@type": "sdo:step",
+                "@id": "step/2/",
+                "@type": "repome:IntermediateStep",
                 "step": 2,
                 "text": "Place the pH meter in standardization mode and select the 'use pH 4 7 and 10' option."
             },
             {
-                "@id": "step/3",
-                "@type": "sdo:step",
+                "@id": "step/3/",
+                "@type": "repome:IntermediateStep",
                 "step": 3,
                 "text": "Press standardize when the reading is stable."
             },
             {
-                "@id": "step/4",
-                "@type": "sdo:step",
+                "@id": "step/4/",
+                "@type": "repome:IntermediateStep",
                 "step": 4,
                 "text": "Clean off the electrode with DI water and a Kimwipe and place in the pH 4 buffer."
             },
             {
-                "@id": "step/5",
-                "@type": "sdo:step",
+                "@id": "step/5/",
+                "@type": "repome:IntermediateStep",
                 "step": 5,
                 "text": "Press standardize when the reading is stable."
             },
             {
-                "@id": "step/6",
-                "@type": "sdo:step",
+                "@id": "step/6/",
+                "@type": "repome:IntermediateStep",
                 "step": 6,
                 "text": "Clean off the electrode with DI water and a Kimwipe and place in the pH 10 buffer."
             },
             {
-                "@id": "step/7",
-                "@type": "sdo:step",
+                "@id": "step/7/",
+                "@type": "repome:IntermediateStep",
                 "step": 7,
                 "text": "Press standardize when the reading is stable."
             },
             {
-                "@id": "step/8",
-                "@type": "sdo:step",
+                "@id": "step/8/",
+                "@type": "repome:IntermediateStep",
                 "step": 8,
                 "text": "Check the slope of the calibration to ensure the electrode is in 'Good condition'. Store in pH 7 buffer."
             }
