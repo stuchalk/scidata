@@ -1,10 +1,11 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "obo": "http://purl.obolibrary.org/obo/",
         "dct": "http://purl.org/dc/terms/",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "basisSet": {"@id": "sdo:basisSet"},
+        "gc": "http://purl.org/gc/",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "wd": "http://www.wikidata.org/entity/",
+        "basisSet": {"@id": "gc:BasisSet"},
         "title": {
             "@id": "dct:title",
             "@type": "string"
@@ -29,17 +30,23 @@
             "@id": "dct:type",
             "@type": "string"
         },
-        "sets": {"@id": "obo:NCIT_C47894"},
+        "sets": {
+            "@id": "obo:NCIT_C47894",
+            "@container": "@set"
+        },
         "symbol": {
             "@id": "obo:IAO_0000028",
             "@type": "string"
         },
-        "contractions": {"@id": "sdo:contraction"},
+        "contractions": {
+            "@id": "wd:Q5165685",
+            "@container": "@set"
+        },
         "shell": {
             "@id": "obo:NCIT_C64372",
             "@type": "string"
         },
-        "matrix": {"@id": "sdo:contractionMatrix"},
+        "matrix": {"@id": "wd:Q44337"},
         "datatype": {
             "@id": "obo:NCIT_C42645",
             "@type": "string"

@@ -1,10 +1,10 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_computer.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/crg_computer.jsonld",
         { "obo": "http://purl.obolibrary.org/obo/" },
-        {"@base": "https://stuchalk.github.io/scidata/examples/sections/computer.jsonld/"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/computer/"}
     ],
-    "@id": "",
+    "@id": "https://stuchalk.github.io/scidata/examples/sections/computer/",
     "@type": "obo:OBI_0400107",
     "architecture": "x86_64",
     "cpu": {

@@ -1,11 +1,11 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_software.jsonld",
-        {"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"},
+        "https://stuchalk.github.io/scidata/contexts/crg_software.jsonld",
+        {"repome": "https://w3id.org/reproduceme#"},
         {"@base": "https://stuchalk.github.io/scidata/examples/software.jsonld#"}
     ],
     "@id": "",
-    "@type": "sdo:software",
+    "@type": "repome:Software",
     "name": "HyperChem",
     "version": "9.0",
     "os": "Windows 8",

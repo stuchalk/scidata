@@ -1,10 +1,9 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "fs": "http://www.fairsharing.org/ontology/subject/",
         "obo": "http://purl.obolibrary.org/obo/",
-        "computer": {"@id": "sdo:computer"},
+        "computer": {"@id": "obo:NCIT_C16464"},
         "architecture": {
             "@id": "fs:SRAO_0000258",
             "@type": "string"
@@ -54,7 +53,9 @@
             "@id": "obo:NCIT_C25463",
             "@type": "integer"
         },
-        "cache": {"@id": "obo:NCIT_C63626"},
+        "cache": {
+            "@id": "obo:NCIT_C63626"
+        },
         "l1datacache": {
             "@id": "obo:NCIT_C63626",
             "@type": "string"

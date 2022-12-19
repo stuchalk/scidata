@@ -2,13 +2,15 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "gc": "https://purl.org/gc/",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "calculation": {"@id": "sdo:calculation"},
+        "calculation": {"@id": "gc:hasCalculation"},
         "approach": {
             "@id": "gc:calculationApproach",
             "@type": "string"
         },
-        "calculations": {"@id": "gc:calculationStep"},
+        "calculations": {
+            "@id": "gc:calculationStep",
+            "@container": "@set"
+        },
         "calcclass": {
             "@id": "gc:calculationClass",
             "@type": "string"
@@ -25,7 +27,7 @@
             "@id": "gc:determinant",
             "@type": "string"
         },
-        "spin": {
+        "spin#": {
             "@id": "gc:spin",
             "@type": "@id"
         },

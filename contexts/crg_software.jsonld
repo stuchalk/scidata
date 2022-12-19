@@ -1,29 +1,27 @@
 {
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
-        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
-        "ssw": "https://stuchalk.github.io/scidata/ontology/scidata_software.owl#",
-        "dct": "http://purl.org/dc/terms/",
+        "repome": "https://w3id.org/reproduceme#",
         "obo": "http://purl.obolibrary.org/obo/",
-        "software": {"@id": "sdo:software"},
+        "software": {"@id": "obo:SWO_0000001"},
         "version": {
             "@id": "obo:IAO_0000129",
             "@type": "string"
         },
         "os": {
-            "@id": "ssw:operatingSystem",
+            "@id": "obo:SWO_0000021",
             "@type": "string"
         },
         "developer": {
-            "@id": "ssw:developer",
+            "@id": "obo:SWO_0000396",
             "@type": "string"
         },
         "input": {
-            "@id": "ssw:calcInputFile",
+            "@id": "repome:InputData",
             "@type": "string"
         },
         "output": {
-            "@id": "ssw:calcOutputFile",
+            "@id": "repome:Output",
             "@type": "string"
         }
     }

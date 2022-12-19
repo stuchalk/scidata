@@ -1,13 +1,15 @@
 {
     "@context": [
-        "https://stuchalk.github.io/scidata/contexts/scidata_basisset.jsonld",
+        "https://stuchalk.github.io/scidata/contexts/crg_basisset.jsonld",
         {
+            "dct": "http://purl.org/dc/terms/",
+            "gc": "http://purl.org/gc/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
+            "wd": "http://www.wikidata.org/entity/",
         },
-        {"@base": "https://stuchalk.github.io/scidata/examples/sections/basisset.jsonld/"}
+        {"@base": "https://stuchalk.github.io/scidata/examples/sections/basisset/"}
     ],
-    "@id": "",
+    "@id": "https://stuchalk.github.io/scidata/examples/sections/basisset/",
     "@type": "obo:NCIT_C18470",
     "title": "3-21G",
     "description": "STO-3G form the EMSL Basis Set Exchange Library @ 7/28/15 2:34 PM",
@@ -18,15 +20,15 @@
     "sets": [
         {
             "@id": "basisset/1/H/",
-            "@type": "sdo:basisset",
+            "@type": "gc:BasisSet",
             "symbol": "H",
             "contractions": [{
                 "@id": "basisset/1/H/contraction/S/",
-                "@type": "sdo:contraction",
+                "@type": "wd:contraction",
                 "shell": "S",
                 "matrix": {
                     "@id": "basisset/1/H/contraction/S/matrix/",
-                    "@type": "sdo:contractionMatrix",
+                    "@type": "wd:matrix",
                     "datatype": "scalar",
                     "rows": 3,
                     "columns": 2,
@@ -37,16 +39,16 @@
         },
         {
             "@id": "basisset/1/O/",
-            "@type": "sdo:basisset",
+            "@type": "gc:BasisSet",
             "symbol": "O",
             "contractions": [
                 {
                     "@id": "basisset/1/O/contraction/S/",
-                    "@type": "sdo:contraction",
+                    "@type": "wd:contraction",
                     "shell": "S",
                     "matrix": {
                         "@id": "basisset/1/O/contraction/S/matrix/",
-                        "@type": "sdo:contractionMatrix",
+                        "@type": "wd:matrix",
                         "datatype": "scalar",
                         "rows": 3,
                         "columns": 2,
@@ -59,7 +61,7 @@
                     "shell": "SP",
                     "matrix": {
                         "@id": "basisSet/1/O/contraction/SP/matrix/",
-                        "@type": "sdo:contractionMatrix",
+                        "@type": "wd:matrix",
                         "datatype": "scalar",
                         "rows": 3,
                         "columns": 3,
