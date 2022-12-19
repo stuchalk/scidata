@@ -8,7 +8,6 @@
 	"version": "the version of this file (integer)",
 	"@graph": {
 		"@id": "identifier_(uri)",
-		"@type": "sdo:scidataFramework",
 		"uid": "unique identifier (string)",
 		"title": "title (string)",
 		"authors": ["list of authors with e.g., affilation, email, ORCID"],
@@ -22,15 +21,13 @@
 		"ids": ["links to ontology defined terms (external uri)"],
 		"scidata": {
 			"@id": "scidataFramework/",
-			"@type": "sdo:scientificData",
 			"type": ["type of data (from enum list e.g. 'property value')"],
 			"property": ["list of one to many properties (string)"],
 			"kind": ["list of one to many kinds of data (set list)"],
 			"methodology": {
 				"@id": "methodology/",
 				"evaluation": "how the data was obtained (enum list e.g. 'experimental')",
-				"aspects": [
-					"add data that describes the methodology (user defined)",
+				"aspects": ["add data that describes the methodology (user defined)",
 					"examples: instrument, procedure, resource, calculation, software"
 				]
 			},
@@ -38,8 +35,7 @@
 				"@id": "system/",
 				"discipline": "science area",
 				"subdiscipline": "subdiscipline area",
-				"facets": [
-					"add data that describes the system under study (user defined)",
+				"facets": ["add data that describes the system under study (user defined)",
 					"examples: compound, molecularsystem, mixture, organism, material, condition"
 				]
 			},

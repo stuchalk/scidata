@@ -4,9 +4,6 @@
 **/.DS_Store
 other
 .idea
-contexts/aspects/
-contexts/facets/
-contexts/scidata_sample.jsonld
 examples/Self contained/
 examples/ph_min.jsonld
 examples/remove?

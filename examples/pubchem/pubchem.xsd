@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!-- ============================================
      ::DATATOOL:: Generated from "pubchem.asn"
-     ::DATATOOL:: by application DATATOOL version 2.19.0
-     ::DATATOOL:: on 03/25/2019 12:51:22
+     ::DATATOOL:: by application DATATOOL version 2.21.0
+     ::DATATOOL:: on 10/13/2021 08:19:18
      ============================================ -->
 
 <xs:schema
@@ -17,7 +17,7 @@
 <!-- This section is mapped from module "NCBI-General"
 ================================================= -->
 <!--
-$Id: pubchem.xsd 608756 2020-05-20 18:42:22Z thiessen $
+$Id: pubchem.xsd 639093 2021-10-13 12:31:32Z thiessen $
 ***************************************************************************
 
   ASN.1 modules for PubChem
@@ -26,7 +26,7 @@ $Id: pubchem.xsd 608756 2020-05-20 18:42:22Z thiessen $
      general.asn biblio.asn medline.asn pub.asn OrgRef_and_BioSource.asn pcsubstance.asn pcassay.asn
 
 ***************************************************************************
-$Revision: 608756 $
+$Revision: 639093 $
 **********************************************************************
 
   NCBI General Data elements
@@ -420,7 +420,7 @@ $Revision: 608756 $
 <!-- This section is mapped from module "NCBI-Biblio"
 ================================================= -->
 <!--
-$Revision: 608756 $
+$Revision: 639093 $
 ****************************************************************
 
   NCBI Bibliographic data elements
@@ -1392,7 +1392,7 @@ $Revision: 608756 $
 <!-- This section is mapped from module "NCBI-Medline"
 ================================================= -->
 <!--
-$Revision: 608756 $
+$Revision: 639093 $
 **********************************************************************
 
   MEDLINE data definitions
@@ -1732,7 +1732,7 @@ $Revision: 608756 $
 <!-- This section is mapped from module "NCBI-Pub"
 ================================================= -->
 <!--
-$Revision: 608756 $
+$Revision: 639093 $
 ********************************************************************
 
   Publication common set
@@ -2395,7 +2395,7 @@ $Revision: 608756 $
 <!-- This section is mapped from module "NCBI-PCSubstance"
 ================================================= -->
 <!--
- $Id: pubchem.xsd 608756 2020-05-20 18:42:22Z thiessen $
+ $Id: pubchem.xsd 639093 2021-10-13 12:31:32Z thiessen $
  ===========================================================================
 
                             PUBLIC DOMAIN NOTICE
@@ -2737,7 +2737,7 @@ $Revision: 608756 $
       </xs:element>
       <xs:element name="PC-XRefData_mim" type="xs:integer">
         <xs:annotation><xs:documentation>
- MIM, Mendelian Inheritance in Man, Number 
+ MIM, Mendelian Inheritance in Man, Number
    Note: Must be greater than "0" or, if invalid, "0"
         </xs:documentation></xs:annotation>
       </xs:element>
@@ -2773,6 +2773,18 @@ $Revision: 608756 $
       </xs:element>
       <xs:element name="PC-XRefData_patent" type="xs:string">
         <xs:annotation><xs:documentation>Patent Identifier (e.g., USPTO, EPO, WPO, JPO, CPO)</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-XRefData_protein-accession" type="xs:string">
+        <xs:annotation><xs:documentation>GenBank Accession for a Protein</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-XRefData_nucleotide-accession" type="xs:string">
+        <xs:annotation><xs:documentation>GenBank Accession for a Nucleotide</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-XRefData_doi" type="xs:string">
+        <xs:annotation><xs:documentation>digital object identifier (DOI)</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-XRefData_citation" type="xs:string">
+        <xs:annotation><xs:documentation>citation when PMID or DOI are not available</xs:documentation></xs:annotation>
       </xs:element>
     </xs:choice>
   </xs:complexType>
@@ -2856,6 +2868,13 @@ $Revision: 608756 $
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="PC-Compound_groups" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element ref="PC-Group"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -2930,6 +2949,199 @@ $Revision: 608756 $
           </xs:choice>
         </xs:complexType>
       </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="PC-Group">
+  <xs:annotation><xs:documentation>Superatom group (e.g. from MOL Sgroup)</xs:documentation></xs:annotation>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="PC-Group_atoms">
+        <xs:complexType>
+          <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="PC-Group_atoms_E" type="xs:integer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_type">
+        <xs:annotation><xs:documentation>
+ These enumerated values are adapted from the ctfile format specification
+ Type of group (e.g. from MOL field STY)
+        </xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:integer">
+              <xs:attribute name="value" use="optional">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:annotation><xs:documentation>
+ sup	-  Superatom
+ mul	-  Multiple group
+ sru	-  Structure repeat unit (polymer)
+ mon	-  Monomer
+ mer	-  Mer type
+ cop	-  Copolymer
+ cro	-  Crosslink
+ mod	-  Modification
+ gra	-  Graft
+ com	-  Component
+ mix	-  Mixture
+ for	-  Formulation
+ dat	-  Data Sgroup
+ any	-  Any polymer
+ gen	-  Generic
+                    </xs:documentation></xs:annotation>
+                    <xs:enumeration value="sup" ncbi:intvalue="1"/>
+                    <xs:enumeration value="mul" ncbi:intvalue="2"/>
+                    <xs:enumeration value="sru" ncbi:intvalue="3"/>
+                    <xs:enumeration value="mon" ncbi:intvalue="4"/>
+                    <xs:enumeration value="mer" ncbi:intvalue="5"/>
+                    <xs:enumeration value="cop" ncbi:intvalue="6"/>
+                    <xs:enumeration value="cro" ncbi:intvalue="7"/>
+                    <xs:enumeration value="mod" ncbi:intvalue="8"/>
+                    <xs:enumeration value="gra" ncbi:intvalue="9"/>
+                    <xs:enumeration value="com" ncbi:intvalue="10"/>
+                    <xs:enumeration value="mix" ncbi:intvalue="11"/>
+                    <xs:enumeration value="for" ncbi:intvalue="12"/>
+                    <xs:enumeration value="dat" ncbi:intvalue="13"/>
+                    <xs:enumeration value="any" ncbi:intvalue="14"/>
+                    <xs:enumeration value="gen" ncbi:intvalue="15"/>
+                    <xs:enumeration value="unknown" ncbi:intvalue="255"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_subtype" minOccurs="0">
+        <xs:annotation><xs:documentation>Subtype (e.g. from MOL field SST)</xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:integer">
+              <xs:attribute name="value" use="optional">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:annotation><xs:documentation>
+ alt	-  Alternating
+ ran	-  Random
+ blo	-  Block
+                    </xs:documentation></xs:annotation>
+                    <xs:enumeration value="alt" ncbi:intvalue="1"/>
+                    <xs:enumeration value="ran" ncbi:intvalue="2"/>
+                    <xs:enumeration value="blo" ncbi:intvalue="3"/>
+                    <xs:enumeration value="unknown" ncbi:intvalue="255"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_connectivity" minOccurs="0">
+        <xs:annotation><xs:documentation>Connectivity (e.g. from MOL field SCN)</xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:integer">
+              <xs:attribute name="value" use="optional">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:annotation><xs:documentation>
+ hh	-  Head-to-head
+ ht	-  Head-to-tail
+ eu	-  Either unknown
+                    </xs:documentation></xs:annotation>
+                    <xs:enumeration value="hh" ncbi:intvalue="1"/>
+                    <xs:enumeration value="ht" ncbi:intvalue="2"/>
+                    <xs:enumeration value="eu" ncbi:intvalue="3"/>
+                    <xs:enumeration value="unknown" ncbi:intvalue="255"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_label" type="xs:integer" minOccurs="0">
+        <xs:annotation><xs:documentation>Label (e.g. from MOL field SLB)</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-Group_subscript" type="xs:string" minOccurs="0">
+        <xs:annotation><xs:documentation>Subscript (e.g. from MOL field SMT)</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="PC-Group_repeat-count" minOccurs="0">
+        <xs:annotation><xs:documentation>Repeat count (e.g. for polymers)</xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="PC-Group_repeat-count_exact" type="xs:integer"/>
+            <xs:element name="PC-Group_repeat-count_range">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PC-Group_repeat-count_range_lower" type="xs:integer"/>
+                  <xs:element name="PC-Group_repeat-count_range_upper" type="xs:integer"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_bonds" minOccurs="0">
+        <xs:annotation><xs:documentation>
+ Special bonds in this group (typically capping/crossing bonds, e.g. from MOL field SBL)
+   If present, from and to must be parallel lists of aid from PC-Bonds
+        </xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PC-Group_bonds_from">
+              <xs:complexType>
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="PC-Group_bonds_from_E" type="xs:integer"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="PC-Group_bonds_to">
+              <xs:complexType>
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="PC-Group_bonds_to_E" type="xs:integer"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PC-Group_brackets" minOccurs="0">
+        <xs:annotation><xs:documentation>Bracket display (e.g. from MOL field SDI)</xs:documentation></xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PC-Group_brackets_left">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element ref="PC-Bracket"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="PC-Group_brackets_right">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element ref="PC-Bracket"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="PC-Bracket">
+  <xs:annotation><xs:documentation>Display coordinates for a bracket (e.g. from MOL field SDI)</xs:documentation></xs:annotation>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="PC-Bracket_x1" type="xs:double"/>
+      <xs:element name="PC-Bracket_y1" type="xs:double"/>
+      <xs:element name="PC-Bracket_x2" type="xs:double"/>
+      <xs:element name="PC-Bracket_y2" type="xs:double"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -3133,8 +3345,8 @@ $Revision: 608756 $
 
 <xs:element name="PC-Urn">
   <xs:annotation><xs:documentation>
- Universal Resource Name 
-    Provides explicit source information on derived or calculated data 
+ Universal Resource Name
+    Provides explicit source information on derived or calculated data
   </xs:documentation></xs:annotation>
   <xs:complexType>
     <xs:sequence>
@@ -4343,10 +4555,10 @@ $Revision: 608756 $
 </xs:element>
 
 <!-- ============================================ -->
-<!-- This section is mapped from module "NCBI-PCAssay"
+<!-- This section is mapped from module "NCBI-PCAssay2"
 ================================================= -->
 <!--
- $Id: pubchem.xsd 608756 2020-05-20 18:42:22Z thiessen $
+ $Id: pubchem.xsd 639093 2021-10-13 12:31:32Z thiessen $
  ===========================================================================
 
                             PUBLIC DOMAIN NOTICE
@@ -4374,15 +4586,13 @@ $Revision: 608756 $
  Authors:  NCBI Structure Group
 
  File Description:
-      ASN.1 definitions for PubChem biological assay data database
+      ASN.1 definitions for PubChem biological assay data database (PCAssay2)
 
  ===========================================================================
 -->
 <!-- Elements referenced from other modules:
-          Pub FROM NCBI-Pub,
           BioSource FROM NCBI-BioSource,
-          Date,
-          Object-id FROM NCBI-General,
+          Date FROM NCBI-General,
           PC-ID,
           PC-Source,
           PC-XRefData FROM NCBI-PCSubstance -->
@@ -4459,7 +4669,7 @@ $Revision: 608756 $
   <xs:annotation><xs:documentation>
  Container for multiple Assay Result Sets
  PC-AssayResultsSet ::= SEQUENCE OF PC-AssayResults
- Assay Results provided for a given Substance tested, with respect to the results types defined in the 
+ Assay Results provided for a given Substance tested, with respect to the results types defined in the
    referenced Assay Description
   </xs:documentation></xs:annotation>
   <xs:complexType>
@@ -4467,7 +4677,7 @@ $Revision: 608756 $
       <xs:element name="PC-AssayResults_sid" type="xs:integer">
         <xs:annotation><xs:documentation>
  Internal/External Tracking Information
- Tested Substance ID/Version  [Either valid ID or, 
+ Tested Substance ID/Version  [Either valid ID or,
    if "sid-source" is used, this is a "0" value]
    Note: A valid ID is greater than "0"
         </xs:documentation></xs:annotation>
@@ -4600,8 +4810,8 @@ $Revision: 608756 $
 
 <xs:element name="PC-AssayDescription">
   <xs:annotation><xs:documentation>
- Assay Description provided by an Organization that describes the assay/protocol performed and defines the 
-   measured end-points and parameters to be stored.  An Assay Description is not a database table.  You can 
+ Assay Description provided by an Organization that describes the assay/protocol performed and defines the
+   measured end-points and parameters to be stored.  An Assay Description is not a database table.  You can
    define as many Result Definitions as needed and they need not be used by all Substances tested.
  Assay Descriptions can be modified on both description text and Result Definitions after initial submission
  as desired, and such udpates will be tracked in PubChem
@@ -4675,15 +4885,12 @@ $Revision: 608756 $
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="PC-AssayDescription_pub" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="Pub"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
       <xs:element name="PC-AssayDescription_revision" type="xs:integer" minOccurs="0">
-        <xs:annotation><xs:documentation>Revision identifier for textual description</xs:documentation></xs:annotation>
+        <xs:annotation><xs:documentation>
+ Additional Information
+ pub               SEQUENCE OF Pub                 OPTIONAL, Depositor provided publications for this assay (never used)
+ Revision identifier for textual description
+        </xs:documentation></xs:annotation>
       </xs:element>
       <xs:element name="PC-AssayDescription_target" minOccurs="0">
         <xs:complexType>
@@ -4749,6 +4956,7 @@ $Revision: 608756 $
         </xs:complexType>
       </xs:element>
       <xs:element name="PC-AssayDescription_project-category" minOccurs="0">
+        <xs:annotation><xs:documentation>to distinguish projects funded through MLSCN, MLPCN or other</xs:documentation></xs:annotation>
         <xs:complexType>
           <xs:simpleContent>
             <xs:extension base="xs:integer">
@@ -4756,7 +4964,16 @@ $Revision: 608756 $
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:annotation><xs:documentation>
- journal-article	-  to be deprecated
+ mlscn	-  assay depositions from MLSCN screen center
+ mlpcn	-  assay depositions from MLPCN screen center
+ mlscn-ap	-  assay depositions from MLSCN assay provider
+ mlpcn-ap	-  assay depositions from MLPCN assay provider
+ journal-article	-  to be deprecated and replaced by option 7, 8 &amp; 9
+ assay-vendor	-  assay depositions from assay vendors
+ literature-extracted	-  data from literature, extracted by curators
+ literature-author	-  data from literature, submitted by author of articles
+ literature-publisher	-  data from literature, submitted by journals/publishers
+ rnaigi	-  RNAi screenings from RNAi Global Initiative
                     </xs:documentation></xs:annotation>
                     <xs:enumeration value="mlscn" ncbi:intvalue="1"/>
                     <xs:enumeration value="mlpcn" ncbi:intvalue="2"/>
@@ -4776,59 +4993,11 @@ $Revision: 608756 $
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="PC-AssayDescription_is-panel" minOccurs="0">
-        <xs:annotation><xs:documentation>
- annotation to indicate whether an assay is a panel, e.g. containing multiple components, or belongs to a group    
- annotation for panel assay, e.g. to indicate that this assay
- contains multiple members/components. 
- A panel assay can be one assay reporting readouts for
- many targets, or reporting readouts for different
- cell lines, or different organisms
- examples such as bioassay containing kinase profiling data
- or bioassay containing cytoxicity data for multiple cell lines
- or bioassay containing screening data from different stages, 
- such as primary screening, follow ups
-        </xs:documentation></xs:annotation>
-        <xs:complexType>
-          <xs:attribute name="value" use="required">
-            <xs:simpleType>
-              <xs:restriction base="xs:string">
-                <xs:enumeration value="true"/>
-                <xs:enumeration value="false"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:attribute>
-        </xs:complexType>
-      </xs:element>
       <xs:element name="PC-AssayDescription_assay-group" minOccurs="0">
         <xs:complexType>
           <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="PC-AssayDescription_assay-group_E" type="xs:string"/>
           </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayDescription_panel-info" minOccurs="0">
-        <xs:annotation><xs:documentation>
- for 'panel' type of bioassay only
- store assay panel member information
-        </xs:documentation></xs:annotation>
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element ref="PC-AssayPanel"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayDescription_is-mlp-late-stage" minOccurs="0">
-        <xs:annotation><xs:documentation>verification for 'late-stage-data' deposition</xs:documentation></xs:annotation>
-        <xs:complexType>
-          <xs:attribute name="value" use="required">
-            <xs:simpleType>
-              <xs:restriction base="xs:string">
-                <xs:enumeration value="true"/>
-                <xs:enumeration value="false"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:attribute>
         </xs:complexType>
       </xs:element>
       <xs:element name="PC-AssayDescription_categorized-comment" minOccurs="0">
@@ -4842,126 +5011,11 @@ $Revision: 608756 $
   </xs:complexType>
 </xs:element>
 
-<xs:element name="PC-AssayPanel">
-  <xs:annotation><xs:documentation>
- Description for Panel Assay
- Describe general information about the panel, and link to information for each panel member 
-  </xs:documentation></xs:annotation>
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="PC-AssayPanel_name" type="xs:string">
-        <xs:annotation><xs:documentation>short name for the panel, such as 'Kinase Profiling'</xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanel_descr" type="xs:string" minOccurs="0">
-        <xs:annotation><xs:documentation>short description of this panel</xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanel_member" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="PC-AssayPanelMember"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
-
-<xs:element name="PC-AssayPanelMember">
-  <xs:annotation><xs:documentation>Specific information about each panel member(or component), such as target, cell line name, cross-reference ...</xs:documentation></xs:annotation>
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="PC-AssayPanelMember_mid" type="xs:integer">
-        <xs:annotation><xs:documentation>
- ID for panel member 
- if a kinase panel with 300 kinases, ID will range from 1 to 300  
- TIDs of the same panel member to be grouped based on panel member ID
-        </xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_name" type="xs:string" minOccurs="0">
-        <xs:annotation><xs:documentation>short name for this panel member</xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_description" type="xs:string" minOccurs="0">
-        <xs:annotation><xs:documentation>
- description about specifics of this panel member
- such as about cell line, or target information 
-        </xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_protocol" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="PC-AssayPanelMember_protocol_E" type="xs:string"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_comment" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="PC-AssayPanelMember_comment_E" type="xs:string"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_target" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="PC-AssayTargetInfo"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_xref" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="PC-AnnotatedXRef"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_activity-outcome-method" minOccurs="0">
-        <xs:annotation><xs:documentation>Assay Outcome Qualifier</xs:documentation></xs:annotation>
-        <xs:complexType>
-          <xs:simpleContent>
-            <xs:extension base="xs:integer">
-              <xs:attribute name="value" use="optional">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:annotation><xs:documentation>
- other	-    All Other Type
- screening	-    Primary Screen Assay
- confirmatory	-    Confirmatory Assay
- summary	-    Probe Summary Assay
-                    </xs:documentation></xs:annotation>
-                    <xs:enumeration value="other" ncbi:intvalue="0"/>
-                    <xs:enumeration value="screening" ncbi:intvalue="1"/>
-                    <xs:enumeration value="confirmatory" ncbi:intvalue="2"/>
-                    <xs:enumeration value="summary" ncbi:intvalue="3"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:attribute>
-            </xs:extension>
-          </xs:simpleContent>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_dr" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="PC-AssayDRAttr"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PC-AssayPanelMember_categorized-comment" minOccurs="0">
-        <xs:complexType>
-          <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="PC-CategorizedComment"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
-
 <xs:element name="PC-CategorizedComment">
   <xs:annotation><xs:documentation>
- Definition for Categorized description/comment 
- This field is added to provide flexibility for depositors to present textual description/comments in a desirable way 
- and to facilitate information validation by the depositor and data exchange with PubChem 
+ Definition for Categorized description/comment
+ This field is added to provide flexibility for depositors to present textual description/comments in a desirable way
+ and to facilitate information validation by the depositor and data exchange with PubChem
   </xs:documentation></xs:annotation>
   <xs:complexType>
     <xs:sequence>
@@ -5027,7 +5081,7 @@ $Revision: 608756 $
 
 <xs:element name="PC-AssayTargetInfo">
   <xs:annotation><xs:documentation>
- Molecular target information provides by organization describes the functionality of the target, 
+ Molecular target information provides by organization describes the functionality of the target,
  facilitates the linking between PubChem bioassays, and the linking between target molecule to other NCBI resources
   </xs:documentation></xs:annotation>
   <xs:complexType>
@@ -5035,35 +5089,26 @@ $Revision: 608756 $
       <xs:element name="PC-AssayTargetInfo_name" type="xs:string">
         <xs:annotation><xs:documentation>Molecular name of target</xs:documentation></xs:annotation>
       </xs:element>
-      <xs:element name="PC-AssayTargetInfo_mol-id" type="xs:integer">
-        <xs:annotation><xs:documentation>NCBI database identifier of the target molecule</xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayTargetInfo_molecule-type" minOccurs="0">
-        <xs:annotation><xs:documentation>Assay Target Type</xs:documentation></xs:annotation>
+      <xs:element name="PC-AssayTargetInfo_mol-id">
+        <xs:annotation><xs:documentation>database and identifier of the target molecule</xs:documentation></xs:annotation>
         <xs:complexType>
-          <xs:simpleContent>
-            <xs:extension base="xs:integer">
-              <xs:attribute name="value" use="optional" default="protein">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:annotation><xs:documentation>
- protein	-  mol-id: NCBI Protein GI 
- dna	-  mol-id: NCBI Nucleotide GI
- rna	-  mol-id: NCBI Nucleotide GI
- gene	-  mol-id: NCBI Gene ID
- biosystem	-  mol-id: NCBI BioSystems ID
-                    </xs:documentation></xs:annotation>
-                    <xs:enumeration value="protein" ncbi:intvalue="1"/>
-                    <xs:enumeration value="dna" ncbi:intvalue="2"/>
-                    <xs:enumeration value="rna" ncbi:intvalue="3"/>
-                    <xs:enumeration value="gene" ncbi:intvalue="4"/>
-                    <xs:enumeration value="biosystem" ncbi:intvalue="5"/>
-                    <xs:enumeration value="other" ncbi:intvalue="255"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:attribute>
-            </xs:extension>
-          </xs:simpleContent>
+          <xs:choice>
+            <xs:element name="PC-AssayTargetInfo_mol-id_gene-id" type="xs:integer">
+              <xs:annotation><xs:documentation>target is a NCBI Gene ID</xs:documentation></xs:annotation>
+            </xs:element>
+            <xs:element name="PC-AssayTargetInfo_mol-id_protein-accession" type="xs:string">
+              <xs:annotation><xs:documentation>target is a NCBI Protein Accession</xs:documentation></xs:annotation>
+            </xs:element>
+            <xs:element name="PC-AssayTargetInfo_mol-id_nucleotide-accession" type="xs:string">
+              <xs:annotation><xs:documentation>target is a NCBI Nucleotide Accession</xs:documentation></xs:annotation>
+            </xs:element>
+            <xs:element name="PC-AssayTargetInfo_mol-id_other" type="xs:string">
+              <xs:annotation><xs:documentation>target is beyond supported type (format = TYPE::RESOURCE::IDENTIFIER)</xs:documentation></xs:annotation>
+            </xs:element>
+            <xs:element name="PC-AssayTargetInfo_mol-id_tax-id" type="xs:integer">
+              <xs:annotation><xs:documentation>target is a NCBI Taxonomy ID</xs:documentation></xs:annotation>
+            </xs:element>
+          </xs:choice>
         </xs:complexType>
       </xs:element>
       <xs:element name="PC-AssayTargetInfo_organism" minOccurs="0">
@@ -5111,7 +5156,7 @@ $Revision: 608756 $
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:annotation><xs:documentation>
- pcit	-  primary PMID/citation directly associated with the current assay data 
+ pcit	-  primary PMID/citation directly associated with the current assay data
  pgene	-  gene encoding the protein assay target
                     </xs:documentation></xs:annotation>
                     <xs:enumeration value="pcit" ncbi:intvalue="1"/>
@@ -5230,10 +5275,10 @@ $Revision: 608756 $
       </xs:element>
       <xs:element name="PC-ResultType_unit" minOccurs="0">
         <xs:annotation><xs:documentation>
- Unit information provides the units for the values reported for this TID.  For example, if the values 
-   reported for this TID are a concentration, e.g., micro-molar, setting the unit "um" allows PubChem to 
-   know that the value, e.g., "1.3", is actually "1.3 uM".  This also allows PubChem to properly report the 
-   units when displaying the reported values for this TID.  If the enumerated units provided below are 
+ Unit information provides the units for the values reported for this TID.  For example, if the values
+   reported for this TID are a concentration, e.g., micro-molar, setting the unit "um" allows PubChem to
+   know that the value, e.g., "1.3", is actually "1.3 uM".  This also allows PubChem to properly report the
+   units when displaying the reported values for this TID.  If the enumerated units provided below are
    insufficient, you may represent the units as a string in the optional "sunit" field (see below).
  Units for Value
         </xs:documentation></xs:annotation>
@@ -5319,9 +5364,9 @@ $Revision: 608756 $
         <xs:annotation><xs:documentation>
  Value Transform information qualifies the values reported for this TID.  For example, if the values
    reported for this TID are "-Log10 GI50", you may want to consider setting
-   the "nlog" value below.  In doing so, PubChem would know that the value, e.g., "5.0" 
+   the "nlog" value below.  In doing so, PubChem would know that the value, e.g., "5.0"
    is actually "1.0e-5".  If the transformation applied is not listed, you may represent
-   this transformation as a string in the "stransform" (see below) for eventual inclusion 
+   this transformation as a string in the "stransform" (see below) for eventual inclusion
    in the enumerated transform list below.
 
 
@@ -5358,15 +5403,13 @@ $Revision: 608756 $
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="PC-ResultType_stransform" type="xs:string" minOccurs="0">
+      <xs:element name="PC-ResultType_tc" minOccurs="0">
         <xs:annotation><xs:documentation>
  ATTENTION: stransform field is DEPRECATED. It is no longer
             supported and remains for legacy data only.
- Value Transform Type (as a String)
+ stransform       VisibleString               OPTIONAL,  Value Transform Type as a string (never used)
+ Tested concentration attribute
         </xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-ResultType_tc" minOccurs="0">
-        <xs:annotation><xs:documentation>Tested concentration attribute</xs:documentation></xs:annotation>
         <xs:complexType>
           <xs:sequence>
             <xs:element ref="PC-ConcentrationAttr"/>
@@ -5375,13 +5418,13 @@ $Revision: 608756 $
       </xs:element>
       <xs:element name="PC-ResultType_ac" minOccurs="0">
         <xs:annotation><xs:documentation>
- if true, indicates that this TID field 
- provides active concentration summary by 
- reporting the concentration which produces 
+ if true, indicates that this TID field
+ provides active concentration summary by
+ reporting the concentration which produces
  50% of the maximum possible biological response
- such as IC50, EC50, AC50, GI50 etc. 
- or by reporting constant parameters such as Ki, 
- that based on which the activity outcome in this assay is called   
+ such as IC50, EC50, AC50, GI50 etc.
+ or by reporting constant parameters such as Ki,
+ that based on which the activity outcome in this assay is called
         </xs:documentation></xs:annotation>
         <xs:complexType>
           <xs:attribute name="value" use="required">
@@ -5394,16 +5437,17 @@ $Revision: 608756 $
           </xs:attribute>
         </xs:complexType>
       </xs:element>
-      <xs:element name="PC-ResultType_panel-info" minOccurs="0">
-        <xs:annotation><xs:documentation>
- needed for panel assay only
- each panel member may have a number of TID columns reported
- such TIDs are grouped by panel member ID, see PC-AssayPanelMemberInfo
-        </xs:documentation></xs:annotation>
+      <xs:element name="PC-ResultType_ac-qualifier" minOccurs="0">
+        <xs:annotation><xs:documentation>endpoint qualifier (e.g. &lt;, &lt;=, =, &gt;, &gt;=) associated with the ac field above</xs:documentation></xs:annotation>
         <xs:complexType>
-          <xs:sequence>
-            <xs:element ref="PC-AssayPanelTestResult"/>
-          </xs:sequence>
+          <xs:attribute name="value" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
         </xs:complexType>
       </xs:element>
       <xs:element name="PC-ResultType_annot" minOccurs="0">
@@ -5416,30 +5460,31 @@ $Revision: 608756 $
                     <xs:annotation><xs:documentation>
  pmid	-  PubMed ID
  mmdb	-  MMDB ID
- url	-  indicate  TID data is a url that provides supplementary information
- protein-gi	-  GenBank General ID (GI) for a Protein
- nucleotide-gi	-  GenBank General ID (GI) for a Nucleotide 
+ url	-  indicate TID data is a url that provides supplementary information
+  protein-gi                    (4), GenBank General ID (GI) for a Protein
+  nucleotide-gi                 (5), GenBank General ID (GI) for a Nucleotide
  taxonomy	-  Taxonomy ID for an Organism
- mim	-  MIM, Mendelian Inheritance in Man, ID 
+ mim	-  MIM, Mendelian Inheritance in Man, ID
  gene	-  Entrez Gene ID
  probe	-  Entrez Probe ID
  aid	-  PubChem BioAssay ID, may be used in 'Summary' assay
- sid	-  PubChem Substance ID, may be used in 'Summary' assay 
- cid	-  PubChem Compound ID 
- protein-target-gi	-  GenBank General ID (GI) for a Protein target
- biosystems-target-id	-  NCBI BioSystems ID 
+ sid	-  PubChem Substance ID, may be used in 'Summary' assay
+ cid	-  PubChem Compound ID
+  protein-target-gi            (13), GenBank General ID (GI) for a Protein target
+  biosystems-target-id         (14), NCBI BioSystems ID
  target-name	-  target name
- target-descr	-  brief target description 
- target-tax-id	-  NCBI Taxonomy ID for target molecule 
- gene-target-id	-  NCBI Gene ID for a gene target 
- dna-nucleotide-target-gi	-  GenBank General ID (GI) for a DNA Nucleotide target 
- rna-nucleotide-target-gi	-  GenBank General ID (GI) for a RNA Nucleotide target 
+ target-descr	-  brief target description
+ target-tax-id	-  NCBI Taxonomy ID for target molecule
+ gene-target-id	-  NCBI Gene ID for a gene target
+  dna-nucleotide-target-gi     (19), GenBank General ID (GI) for a DNA Nucleotide target
+  rna-nucleotide-target-gi     (20), GenBank General ID (GI) for a RNA Nucleotide target
+ protein-target-accession	-  GenBank Accession for a Protein target
+ nucleotide-target-accession	-  GenBank Accession for a DNA/RNA Nucleotide target
+ other	-  for identifier types not currently support
                     </xs:documentation></xs:annotation>
                     <xs:enumeration value="pmid" ncbi:intvalue="1"/>
                     <xs:enumeration value="mmdb" ncbi:intvalue="2"/>
                     <xs:enumeration value="url" ncbi:intvalue="3"/>
-                    <xs:enumeration value="protein-gi" ncbi:intvalue="4"/>
-                    <xs:enumeration value="nucleotide-gi" ncbi:intvalue="5"/>
                     <xs:enumeration value="taxonomy" ncbi:intvalue="6"/>
                     <xs:enumeration value="mim" ncbi:intvalue="7"/>
                     <xs:enumeration value="gene" ncbi:intvalue="8"/>
@@ -5447,55 +5492,13 @@ $Revision: 608756 $
                     <xs:enumeration value="aid" ncbi:intvalue="10"/>
                     <xs:enumeration value="sid" ncbi:intvalue="11"/>
                     <xs:enumeration value="cid" ncbi:intvalue="12"/>
-                    <xs:enumeration value="protein-target-gi" ncbi:intvalue="13"/>
-                    <xs:enumeration value="biosystems-target-id" ncbi:intvalue="14"/>
                     <xs:enumeration value="target-name" ncbi:intvalue="15"/>
                     <xs:enumeration value="target-descr" ncbi:intvalue="16"/>
                     <xs:enumeration value="target-tax-id" ncbi:intvalue="17"/>
                     <xs:enumeration value="gene-target-id" ncbi:intvalue="18"/>
-                    <xs:enumeration value="dna-nucleotide-target-gi" ncbi:intvalue="19"/>
-                    <xs:enumeration value="rna-nucleotide-target-gi" ncbi:intvalue="20"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:attribute>
-            </xs:extension>
-          </xs:simpleContent>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
-
-<xs:element name="PC-AssayPanelTestResult">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="PC-AssayPanelTestResult_mid" type="xs:integer">
-        <xs:annotation><xs:documentation>
- panel member ID, see PC-AssayPanelMemberInfo
- track association between a group of TIDs and panel member
-        </xs:documentation></xs:annotation>
-      </xs:element>
-      <xs:element name="PC-AssayPanelTestResult_readout-annot" minOccurs="0">
-        <xs:complexType>
-          <xs:simpleContent>
-            <xs:extension base="xs:integer">
-              <xs:attribute name="value" use="optional" default="regular">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:annotation><xs:documentation>
- regular	-  to indicate this TID column is a regular readout
- outcome	-  to indicate this TID column is  "outcome" of the particular panel member
- score	-  to indicate this TID column reports activity score of the particular panel member
-  to be used for neighboring assays
- ac	-  to indicate this TID column is "active concentration"   
-  'outcome' and 'ac' type of TID are to be used for data analysis 
-  across members of panel
-  or across multiple assays including other panel assays
-                    </xs:documentation></xs:annotation>
-                    <xs:enumeration value="regular" ncbi:intvalue="1"/>
-                    <xs:enumeration value="outcome" ncbi:intvalue="2"/>
-                    <xs:enumeration value="score" ncbi:intvalue="3"/>
-                    <xs:enumeration value="ac" ncbi:intvalue="4"/>
+                    <xs:enumeration value="protein-target-accession" ncbi:intvalue="21"/>
+                    <xs:enumeration value="nucleotide-target-accession" ncbi:intvalue="22"/>
+                    <xs:enumeration value="other" ncbi:intvalue="255"/>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:attribute>

@@ -131,7 +131,7 @@
         "@context": [
             "https://stuchalk.github.io/scidata/contexts/scidata.jsonld",
             {
-                "sci": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+                "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
                 "cif": "https://stuchalk.github.io/scidata/ontology/cif.owl#",
             	"w3i": "https://w3id.org/skgo/modsci#",
             	"qudt": "https://qudt.org/vocab/unit/",

@@ -46,7 +46,7 @@
 	<xsl:variable name="path" select="document-uri(/)"/>
     <xsl:variable name="file" select="tokenize($path, '/')[last()]"/>
     <xsl:variable name="id" select="tokenize($file, '\.')[position() = 1]"/>
-    <xsl:variable name="base" select="concat('http://pubchem.ncbi.nlm.nih.gov/bioassay/',normalize-space($aid),'/')"/>
+    <xsl:variable name="base" select="concat('https://pubchem.ncbi.nlm.nih.gov/bioassay/',normalize-space($aid),'/')"/>
     <!-- Main processing -->
     <xsl:template match="/">
         <xsl:text>
@@ -70,7 +70,7 @@
         "@graph": {
         "@id": "<xsl:value-of select="$base"/>",
             "@type": "sdo:scientificData",
-            "uid": "scidata:example:pubchem:<xsl:value-of select="$aid"/>",
+            "uid": "example_pubchem_<xsl:value-of select="$aid"/>",
             "title": "<xsl:value-of select="$desc/pc:PC-AssayDescription_name"/>",
             "description": "<xsl:value-of select="$desc//pc:PC-AssayDescription_description_E"/>",
             "publisher": "<xsl:value-of select="$desc//pc:PC-DBTracking_name"/>",
@@ -82,13 +82,13 @@
     		<xsl:for-each select="$desc//pc:PC-XRefData">
     			<xsl:choose>
     				<xsl:when test="pc:PC-XRefData_pmid">
-    					<xsl:value-of select="concat('&quot;http://www.ncbi.nlm.nih.gov/pubmed/',normalize-space(pc:PC-XRefData_pmid),'&quot;')"/>
+    					<xsl:value-of select="concat('&quot;https://www.ncbi.nlm.nih.gov/pubmed/',normalize-space(pc:PC-XRefData_pmid),'&quot;')"/>
     				</xsl:when>
     				<xsl:when test="pc:PC-XRefData_protein-gi">
-    					"http://www.ncbi.nlm.nih.gov/protein/<xsl:value-of select="pc:PC-XRefData_protein-gi"/>"
+    					"https://www.ncbi.nlm.nih.gov/protein/<xsl:value-of select="pc:PC-XRefData_protein-gi"/>"
     				</xsl:when>
     				<xsl:when test="pc:PC-XRefData_taxonomy">
-    					"http://www.uniprot.org/taxonomy/<xsl:value-of select="pc:PC-XRefData_taxonomy"/>"
+    					"https://www.uniprot.org/taxonomy/<xsl:value-of select="pc:PC-XRefData_taxonomy"/>"
     				</xsl:when>
     				<xsl:when test="pc:PC-XRefData_dburl">
     					"<xsl:value-of select="pc:PC-XRefData_dburl"/>"
@@ -110,7 +110,7 @@
                     "aspects": [{
                         "@id": "assay/1/",
                         "@type": "sdo:assay",
-                        "url": "<xsl:value-of select="replace($desc//pc:PC-AssayDescription_assay-group_E,'PMID: ','http://www.ncbi.nlm.nih.gov/pubmed/')"/>"
+                        "url": "<xsl:value-of select="replace($desc//pc:PC-AssayDescription_assay-group_E,'PMID: ','https://www.ncbi.nlm.nih.gov/pubmed/')"/>"
                         <xsl:if test="$desc//pc:PC-CategorizedComment">,
                             <xsl:for-each select="$desc//pc:PC-CategorizedComment">
                                 <xsl:if test="pc:PC-CategorizedComment_title='Assay Type'">
@@ -141,7 +141,7 @@
     						"name": "<xsl:value-of select="pc:PC-AssayTargetInfo_name"/>"
     						</xsl:if>
     						<xsl:if test="pc:PC-AssayTargetInfo_mol-id">,
-    						"url": "http://www.ncbi.nlm.nih.gov/protein/<xsl:value-of select="pc:PC-AssayTargetInfo_mol-id"/>"
+    							"url": "https://www.ncbi.nlm.nih.gov/protein/<xsl:value-of select="normalize-space(pc:PC-AssayTargetInfo_mol-id)"/>"
     						</xsl:if>
     						<xsl:if test="pc:PC-AssayTargetInfo_molecule-type">,
     						"type": "<xsl:value-of select="pc:PC-AssayTargetInfo_molecule-type/@value"/>"
@@ -181,7 +181,7 @@
     						{
     						   "@id": "substance/<xsl:value-of select="position()"/>/",
     					       "@type": "sdo:substance",
-    					       "url": "http://pubchem.ncbi.nlm.nih.gov/substance/<xsl:value-of select="."/>"
+    					       "url": "https://pubchem.ncbi.nlm.nih.gov/substance/<xsl:value-of select="."/>"
     						}
     						<xsl:if test="position() != last()">,</xsl:if>
     					</xsl:for-each>
@@ -198,8 +198,8 @@
     				<xsl:variable name="dg" select="concat('datagroup/',position(),'/')"/>
     				"@id": "<xsl:value-of select="$dg"/>",
     				"@type": "sdo:datagroup",
-    				"scope": "substance/<xsl:value-of select="position()"/>/",
-    				"datapoint": [
+    				"scope#": "substance/<xsl:value-of select="position()"/>/",
+    				"datapoints": [
     				<xsl:if test="$data">
     				    <xsl:for-each select="$data/datum">
     				        <xsl:variable name="datum" select="."/>
@@ -208,8 +208,8 @@
     				        {
     						"@id": "<xsl:value-of select="$dp"/>",
     						"@type": "sdo:datapoint",
-    						"property": "<xsl:value-of select="$datum/tid[1]/text()"/>",
-    				        "outcome": "<xsl:value-of select="pc:PC-AssayResults_outcome/@value"/>",
+    						"quantity": "<xsl:value-of select="$datum/tid[1]/text()"/>",
+    				    	"outcome": "<xsl:value-of select="concat($res/pc:PC-AssayResults_outcome/@value,' ',$res/pc:PC-AssayResults_outcome)"/>",
     				        "value": {
     							"@id": "<xsl:value-of select="$dp"/>value/",
     							"@type": "sdo:value",
