@@ -161,7 +161,7 @@
 				"@id": "sdo:hasSystemFacet",
 				"@container": "@set"
 			},
-			"facet#": {
+			"facets#": {
 				"@id": "sdo:hasSystemFacet",
 				"@type": "@id",
 				"@container": "@set"
