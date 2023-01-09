@@ -29,6 +29,9 @@
         <Literal xml:lang="en">Example of an ontology to use as the basis for a system:facet in the scientific data model (SDM) framework.  This ontology should be developed by those in the community expert in chemical description (compounds manufacturered and sold or made in a laboratory) and familiar with the development of ontologies.  Alhtough this is being provided as an example for the SDM it can and should be used outside this application.  Note: this ontology is not a part of the SDM framework.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#compound"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:CHEBI_24835"/>
     </Declaration>
     <Declaration>
@@ -79,6 +82,14 @@
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#compound"/>
+        <Class IRI="#SUB_000007"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#compound"/>
+        <Class IRI="#SUB_000001"/>
+    </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:CHEBI_24835"/>
         <Class IRI="#SUB_000007"/>
