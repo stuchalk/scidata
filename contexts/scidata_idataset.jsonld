@@ -131,6 +131,10 @@
             "level#": {
                 "@id": "obo:MS_1003084",
                 "@type": "@id"
+            },
+            "scope#": {
+                "@id": "iad:hasObjectOfInterest",
+                "@type": "@id"
             }
         }
     ]
