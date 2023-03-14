@@ -1,0 +1,56 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "iad": "https://w3id.org/iadopt/ont/",
+        "dct": "http://purl.org/dc/terms/",
+        "name": {
+            "@id": "dct:title",
+            "@type": "string"
+        },
+        "url": {
+            "@id": "dct:identifier",
+            "@type": "AnyURI"
+        },
+        "updated": {
+            "@id": "dct:date",
+            "@type": "dateTime"
+        },
+        "source": {
+            "@id": "sdo:hasSource",
+            "@type": "string"
+        },
+        "source#": {
+            "@id": "sdo:hasSource",
+            "@type": "@id"
+        },
+        "scope": {
+            "@id": "sdo:hasScope",
+            "@type": "string"
+        },
+        "scope#": {
+            "@id": "sdo:hasScope",
+            "@type": "@id"
+        },
+        "matrix#": {
+            "@id": "iad:hasMatrix",
+            "@type": "@id"
+        },
+        "role": {
+            "@id": "sio:SIO_000016",
+            "@type": "string"
+        },
+        "role#": {
+            "@id": "sio:SIO_000016",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "obo:NCIT_C45561",
+            "@type": "string"
+        },
+        "label#": {
+            "@id": "obo:NCIT_C45561",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "@context": [
+        "https://stuchalk.github.io/scidata/contexts/scidata_value.jsonld",
+        {
+            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "dct": "http://purl.org/dc/terms/",
+            "uid": {
+                "@id": "dct:identifier",
+                "@type": "string"
+            },
+            "parameter": {
+                "@id": "sdo:parameter",
+                "@type": "@id"
+            },
+            "parameterArray": {
+                "@id": "sdo:parameterArray",
+                "@type": "@id"
+            },
+            "quantity": {
+                "@id": "sdo:quantity",
+                "@type": "string"
+            },
+            "quantity#": {
+                "@id": "sdo:quantity",
+                "@type": "@id"
+            },
+            "quantitykind": {
+                "@id": "sdo:quantityKind",
+                "@type": "string"
+            },
+            "quantitykind#": {
+                "@id": "sdo:quantityKind",
+                "@type": "@id"
+            },
+            "value": {
+                "@id": "sdo:hasValue",
+                "@type": "sdo:value"
+            },
+            "outcome": {
+                "@id": "obo:NCIT_C20200",
+                "@type": "string"
+            }
+        }
+    ]
+}
