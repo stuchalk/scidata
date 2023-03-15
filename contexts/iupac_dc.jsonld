@@ -5,6 +5,10 @@
         "dctype": {
             "@id": "SBO_0000282",
             "@type": "string"
+        },
+        "dctype#": {
+             "@id": "SBO_0000282",
+             "@type": "@id"
         }
     }
 }
