@@ -2,12 +2,17 @@
     "@context": {
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sbo": "http://biomodels.net/SBO/",
+        "sio": "http://semanticscience.org/resource/",
         "dctype": {
             "@id": "sbo:SBO_0000282",
             "@type": "string"
         },
         "dctype#": {
              "@id": "sbo:SBO_0000282",
+             "@type": "@id"
+        },
+        "temperature_unit#": {
+             "@id": "sio:SIO_000074",
              "@type": "@id"
         }
     }
