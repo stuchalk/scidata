@@ -59,6 +59,10 @@
                 "@id": "iad:property",
                 "@type": "string"
             },
+            "property#": {
+                "@id": "iad:property",
+                "@type": "@id"
+            },
             "quantitykind": {
                 "@id": "sdo:quantityKind",
                 "@type": "string"
@@ -69,6 +73,10 @@
             },
             "conditions#": {
                 "@id": "sdo:hasCondition",
+                "@type": "@id"
+            },
+            "constraints": {
+                "@id": "iad:hasConstraint",
                 "@type": "@id"
             },
             "constraints#": {
@@ -85,6 +93,14 @@
             },
             "settings#": {
                 "@id": "sdo:hasSetting",
+                "@type": "@id"
+            },
+            "matrix": {
+                "@id": "iad:hasMatrix",
+                "@type": "string"
+            },
+            "matrix#": {
+                "@id": "iad:hasMatrix",
                 "@type": "@id"
             },
             "data": {"@id": "sdo:hasDatum"},
@@ -133,6 +149,10 @@
                 "@type": "@id"
             },
             "scope#": {
+                "@id": "sdo:hasScope",
+                "@type": "@id"
+            },
+            "object#": {
                 "@id": "iad:hasObjectOfInterest",
                 "@type": "@id"
             }

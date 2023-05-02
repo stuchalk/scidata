@@ -1776,7 +1776,42 @@
     <DisjointClasses>
         <Class abbreviatedIRI="obo:NCIT_C158424"/>
         <Class abbreviatedIRI="obo:NCIT_C17771"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
         <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+        <Class IRI="#ITO_000215"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C158424"/>
+        <Class IRI="#ITO_0210"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+        <Class IRI="#ITO_000215"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C17771"/>
+        <Class IRI="#ITO_0210"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+        <Class IRI="#ITO_000215"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="obo:NCIT_C25709"/>
+        <Class IRI="#ITO_0210"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ITO_000215"/>
+        <Class IRI="#ITO_0210"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#ITO_0112"/>
