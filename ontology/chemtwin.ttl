@@ -4,9 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://stuchalk.github.io/scidata/ontology/chemtwin> .
+@base <https://stuchalk.github.io/scidata/ontology/chemtwin#> .
 
-<https://stuchalk.github.io/scidata/ontology/chemtwin> rdf:type owl:Ontology .
+<https://stuchalk.github.io/scidata/ontology/chemtwin#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
