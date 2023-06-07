@@ -253,7 +253,7 @@ cto:hydrogen rdf:type owl:Class ;
 
 
 ###  https://stuchalk.github.io/scidata/ontology/chemtwin#ionicBond
-:ionicBond rdf:type owl:Class ;
+cto:ionicBond rdf:type owl:Class ;
            owl:equivalentClass [ rdf:type owl:Restriction ;
                                  owl:onProperty cto:hasAtomicCharge ;
                                  owl:someValuesFrom xsd:int
