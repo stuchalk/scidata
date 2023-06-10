@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "nrel": "https://nrel.gov/example/turbine.owl#",
+        "sio": "http://semanticscience.org/ontology/sio.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "sch": "https://schema.org/",
+        "turbinetype": {
+            "@id": "nrel:turbine",
+            "@type": "string"
+        },
+        "ratedoutput": {
+            "@id": "obo:OBI_0000299",
+            "@type": "string"
+        },
+        "ratedoutput_unit": {
+            "@id": "sio:SIO_000074",
+            "@type": "string"
+        },
+        "rotordiameter": {
+            "@id": "obo:NCIT_C25285",
+            "@type": "string"
+        },
+        "rotordiameter_unit": {
+            "@id": "sio:SIO_000074",
+            "@type": "string"
+        },
+        "hubheight": {
+            "@id": "sch:height",
+            "@container": "@set"
+        },
+        "hubheight_unit": {
+            "@id": "sio:SIO_000074",
+            "@type": "string"
+        },
+        "shearcoef": {
+            "@id": "nrel:shearcoef",
+            "@type": "@id"
+        }
+    }
+}
