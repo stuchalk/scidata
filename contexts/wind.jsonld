@@ -1,0 +1,28 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "noaa": "https://noaa.gov/example/noaa.owl#",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "dct": "https://schema.org/",
+        "siteid": {
+            "@id": "dct:identifier",
+            "@type": "string"
+        },
+        "sitezone": {
+            "@id": "obo:NCIT_C80453",
+            "@type": "string"
+        },
+        "datazone": {
+            "@id": "obo:NCIT_C80453",
+            "@type": "string"
+        },
+        "latitude": {
+            "@id": "obo:NCIT_C68642",
+            "@type": "string"
+        },
+        "longitude": {
+            "@id": "obo:NCIT_C68643",
+            "@type": "string"
+        }
+    }
+}
