@@ -1,0 +1,1450 @@
+@prefix : <https://stuchalk.github.io/scidata/ontology/scidata.owl> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cite: <http://purl.org/spar/datacite/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboowl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix cheminf: <http://semanticscience.org/ontology/cheminf.owl> .
+@prefix bfo11snap: <http://www.ifomis.org/bfo/1.1/snap#> .
+@prefix bfo11span: <http://www.ifomis.org/bfo/1.1/span#> .
+@base <https://stuchalk.github.io/scidata/ontology/scidata> .
+
+<https://stuchalk.github.io/scidata/ontology/scidata> rdf:type owl:Ontology ;
+                                                       <http://purl.org/dc/elements/1.1/creator> "Stuart Chalk"@en ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2015-11-05"@en ;
+                                                       <http://purl.org/dc/elements/1.1/description> "The Scientific Data Model Ontology (SDMO) is an ontology that describes the framework of a generic data model for scientific data.  For more information go to https://stuchalk.github.io/scidata."@en ;
+                                                       <http://purl.org/dc/elements/1.1/format> "OWL-DL"@en ;
+                                                       <http://purl.org/dc/elements/1.1/license> "http://creativecommons.org/licenses/by/3.0/"@en ;
+                                                       <http://purl.org/dc/elements/1.1/source> "https://stuchalk.github.io/scidata"^^xsd:anyURI ;
+                                                       <http://purl.org/dc/elements/1.1/title> "Scientific Data Model Ontology" ;
+                                                       owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:isDefinedBy obo:iao ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+obo:IAO_0000117 rdf:type owl:AnnotationProperty ;
+                rdfs:label "term editor" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
+                rdfs:comment obo:iao ;
+                rdfs:label "definition source" .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty ;
+                                              <http://purl.org/dc/elements/1.1/description> """Examples of a Contributor include a person, an 
+            organisation, or a service.  Typically, the name of a 
+            Contributor should be used to indicate the entity."""@en-us ;
+                                              rdfs:comment """An entity responsible for making contributions to the
+            content of the resource."""@en-us ;
+                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                              rdfs:label "Contributor" ,
+                                                         "Contributor"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/coverage
+<http://purl.org/dc/elements/1.1/coverage> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.org/dc/elements/1.1/description> """Coverage will typically include spatial location (a place name
+            or geographic coordinates), temporal period (a period label,
+            date, or date range) or jurisdiction (such as a named
+            administrative entity).
+            Recommended best practice is to select a value from a
+            controlled vocabulary (for example, the Thesaurus of Geographic
+            Names [TGN]) and that, where appropriate, named places or time
+            periods be used in preference to numeric identifiers such as
+            sets of coordinates or date ranges."""@en-us ;
+                                           rdfs:comment "The extent or scope of the content of the resource."@en-us ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           rdfs:label "Coverage" ,
+                                                      "Coverage"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.org/dc/elements/1.1/description> """Examples of a Creator include a person, an organisation,
+            or a service.  Typically, the name of a Creator should 
+            be used to indicate the entity."""@en-us ;
+                                          rdfs:comment """An entity primarily responsible for making the content 
+            of the resource."""@en-us ;
+                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          rdfs:label "Creator" ,
+                                                     "Creator"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty ;
+                                       <http://purl.org/dc/elements/1.1/description> """Typically, Date will be associated with the creation or
+            availability of the resource.  Recommended best practice
+            for encoding the date value is defined in a profile of
+            ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format."""@en-us ;
+                                       rdfs:comment """A date associated with an event in the life cycle of the
+            resource."""@en-us ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                       rdfs:label "Date" ,
+                                                  "Date"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty ;
+                                              <http://purl.org/dc/elements/1.1/description> """Description may include but is not limited to: an abstract,
+            table of contents, reference to a graphical representation
+            of content or a free-text account of the content."""@en-us ;
+                                              rdfs:comment "An account of the content of the resource."@en-us ;
+                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                              rdfs:label "Description" ,
+                                                         "Description"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/format
+<http://purl.org/dc/elements/1.1/format> rdf:type owl:AnnotationProperty ;
+                                         <http://purl.org/dc/elements/1.1/description> """Typically, Format may include the media-type or dimensions of
+            the resource. Format may be used to determine the software,
+            hardware or other equipment needed to display or operate the
+            resource. Examples of dimensions include size and duration.
+            Recommended best practice is to select a value from a
+            controlled vocabulary (for example, the list of Internet Media
+            Types [MIME] defining computer media formats)."""@en-us ;
+                                         rdfs:comment "The physical or digital manifestation of the resource."@en-us ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         rdfs:label "Format" ,
+                                                    "Format"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.org/dc/elements/1.1/description> """Recommended best practice is to identify the resource by means
+            of a string or number conforming to a formal identification
+            system.
+            Example formal identification systems include the Uniform
+            Resource Identifier (URI) (including the Uniform Resource
+            Locator (URL)), the Digital Object Identifier (DOI) and the
+            International Standard Book Number (ISBN)."""@en-us ;
+                                             rdfs:comment "An unambiguous reference to the resource within a given context."@en-us ;
+                                             rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                             rdfs:label "Resource Identifier"@en ,
+                                                        "Resource Identifier"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.org/dc/elements/1.1/description> """Recommended best practice is to use RFC 3066 [RFC3066],
+            which, in conjunction with ISO 639 [ISO639], defines two-
+            and three-letter primary language tags with optional
+            subtags.  Examples include \"en\" or \"eng\" for English,
+            \"akk\" for Akkadian, and \"en-GB\" for English used in the
+            United Kingdom."""@en-us ;
+                                           rdfs:comment "A language of the intellectual content of the resource."@en-us ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           rdfs:label "Language" ,
+                                                      "Language"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty ;
+                                          rdfs:label "License" .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty ;
+                                            <http://purl.org/dc/elements/1.1/description> """Examples of a Publisher include a person, an organisation,
+            or a service.
+            Typically, the name of a Publisher should be used to
+            indicate the entity."""@en-us ;
+                                            rdfs:comment "An entity responsible for making the resource available"@en-us ;
+                                            rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                            rdfs:label "Publisher" ,
+                                                       "Publisher"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/relation
+<http://purl.org/dc/elements/1.1/relation> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.org/dc/elements/1.1/description> """
+            Recommended best practice is to reference the resource by means
+            of a string or number conforming to a formal identification
+            system.
+        """@en-us ;
+                                           rdfs:comment "A reference to a related resource."@en-us ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           rdfs:label "Relation" ,
+                                                      "Relation"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty ;
+                                         <http://purl.org/dc/elements/1.1/description> """
+            Typically, a Rights element will contain a rights 
+            management statement for the resource, or reference 
+            a service providing such information. Rights information 
+            often encompasses Intellectual Property Rights (IPR), 
+            Copyright, and various Property Rights. 
+            If the Rights element is absent, no assumptions can be made 
+            about the status of these and other rights with respect to 
+            the resource.
+        """@en-us ;
+                                         rdfs:comment "Information about rights held in and over the resource."@en-us ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         rdfs:label "Rights Management" ,
+                                                    "Rights Management"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty ;
+                                         rdfs:label "Source" .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.org/dc/elements/1.1/description> """Typically, a Subject will be expressed as keywords,
+            key phrases or classification codes that describe a topic
+            of the resource.  Recommended best practice is to select 
+            a value from a controlled vocabulary or formal 
+            classification scheme."""@en-us ;
+                                          rdfs:comment "The topic of the content of the resource."@en-us ;
+                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          rdfs:label "Subject and Keywords" ,
+                                                     "Subject and Keywords"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        <http://purl.org/dc/elements/1.1/description> """
+            Typically, a Title will be a name by which the resource is
+            formally known.
+        """@en-us ;
+                                        rdfs:comment "A name given to the resource."@en-us ;
+                                        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                        rdfs:label "Title" ,
+                                                   "Title"@en-us .
+
+
+###  http://purl.org/dc/elements/1.1/type
+<http://purl.org/dc/elements/1.1/type> rdf:type owl:AnnotationProperty ;
+                                       <http://purl.org/dc/elements/1.1/description> """Type includes terms describing general categories, functions,
+            genres, or aggregation levels for content. Recommended best
+            practice is to select a value from a controlled vocabulary
+            (for example, the DCMI Type Vocabulary [DCMITYPE]). To 
+            describe the physical or digital manifestation of the 
+            resource, use the Format element."""@en-us ;
+                                       rdfs:comment "The nature or genre of the content of the resource."@en-us ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                       rdfs:label "Resource Type" ,
+                                                  "Resource Type"@en-us .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboowl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                       rdfs:label "has Exact Synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboowl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has related synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboowl:id rdf:type owl:AnnotationProperty ;
+          rdfs:isDefinedBy <http://www.geneontology.org/> ;
+          rdfs:label "id" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#componentOf
+:componentOf rdf:type owl:ObjectProperty ;
+             rdfs:range :chemicalSystem .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasChemicalSystem
+:hasChemicalSystem rdf:type owl:ObjectProperty ;
+                   rdfs:domain :system ;
+                   rdfs:range :chemicalSystem .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasCondition
+:hasCondition rdf:type owl:ObjectProperty ;
+              rdfs:domain :system ;
+              rdfs:range :condition .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            rdfs:range dct:creator .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasDatagroup
+:hasDatagroup rdf:type owl:ObjectProperty ;
+              rdfs:domain :dataset ;
+              rdfs:range :dataGroup .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasDatapoint
+:hasDatapoint rdf:type owl:ObjectProperty ;
+              rdfs:domain :dataset ;
+              rdfs:range :dataPoint .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasDataseries
+:hasDataseries rdf:type owl:ObjectProperty ;
+               rdfs:domain :dataSeries ,
+                           :dataset .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasDataset
+:hasDataset rdf:type owl:ObjectProperty ;
+            rdfs:domain :scientificData ;
+            rdfs:range :dataset ;
+            owl:propertyDisjointWith :hasMethodology ,
+                                     :hasSystem .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasDatum
+:hasDatum rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :dataGroup
+                                      :dataset
+                                    )
+                      ] ;
+          rdfs:range :datum .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasEvaluation
+:hasEvaluation rdf:type owl:ObjectProperty .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasExperimentalData
+:hasExperimentalData rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isExperimentalDataOf .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasMethodology
+:hasMethodology rdf:type owl:ObjectProperty ;
+                rdfs:domain :scientificData ;
+                rdfs:range :methodology ;
+                owl:propertyDisjointWith :hasSystem .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasMethodologyAspect
+:hasMethodologyAspect rdf:type owl:ObjectProperty ;
+                      rdfs:domain :methodology ;
+                      rdfs:range :methodologyAspect .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasReport
+:hasReport rdf:type owl:ObjectProperty .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasRights
+:hasRights rdf:type owl:ObjectProperty ;
+           rdfs:domain :scientificData ;
+           rdfs:range dct:accessRights .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasScientificData
+:hasScientificData rdf:type owl:ObjectProperty ;
+                   rdfs:range :scientificData .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:range dct:source .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasSystem
+:hasSystem rdf:type owl:ObjectProperty ;
+           rdfs:domain :scientificData ;
+           rdfs:range :system .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasSystemFacet
+:hasSystemFacet rdf:type owl:ObjectProperty ;
+                rdfs:domain :system ;
+                rdfs:range :systemFacet .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#hasTOC
+:hasTOC rdf:type owl:ObjectProperty ;
+        rdfs:range dct:tableOfContents .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#isComponentNumber
+:isComponentNumber rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :constituent .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#isExperimentalDataOf
+:isExperimentalDataOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain :dataGroup ,
+                                  :dataPoint ,
+                                  :dataSeries ;
+                      rdfs:range <https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical> ,
+                                 :chemicalSystem .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHEBI_37577
+obo:CHEBI_37577 rdf:type owl:Class ;
+                owl:equivalentClass :compound ;
+                rdfs:subClassOf :equivalentThings ;
+                oboowl:id "NCIT_C43366" ;
+                rdfs:label "chemical compound" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+obo:IAO_0000030 rdf:type owl:Class ;
+                rdfs:subClassOf bfo11snap:GenericallyDependentContinuant ;
+                oboowl:id "OBI_0000142" ;
+                rdfs:label "Information content entity" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000129
+obo:IAO_0000129 rdf:type owl:Class ;
+                rdfs:subClassOf :metadata ;
+                obo:IAO_0000115 "A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name." ;
+                oboowl:id "IAO_0000129" ;
+                rdfs:label "version" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000302
+obo:IAO_0000302 rdf:type owl:Class ;
+                rdfs:subClassOf :metadata ;
+                obo:IAO_0000115 "General, descriptive information that characterises a chemical analysis" ;
+                oboowl:id "IAO_0000302" ;
+                rdfs:label "name" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C48910
+obo:NCIT_C48910 rdf:type owl:Class ;
+                rdfs:subClassOf :systemFacet ;
+                obo:IAO_0000115 "Representation of a human subject"@en ;
+                oboowl:id "NCIT_C48910"@en ;
+                rdfs:label "subject" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001508
+obo:OBI_0001508 rdf:type owl:Class ;
+                owl:equivalentClass :endtime ,
+                                    :starttime ;
+                rdfs:subClassOf :equivalentThings ;
+                rdfs:label "sampling time measurement datum" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0100026
+obo:OBI_0100026 rdf:type owl:Class ;
+                rdfs:subClassOf :systemFacet ;
+                obo:IAO_0000115 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." ;
+                oboowl:id "OBI_0100026" ;
+                rdfs:label "organism" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0400107
+obo:OBI_0400107 rdf:type owl:Class ;
+                rdfs:subClassOf :systemFacet ;
+                obo:IAO_0000115 "A solid state device used to sequentially execute instructions.  In scientific research such a computer may be used to perform calculations on chemical(s) represented as molecular systems in order to estimate physical properties of the chemical(s)." ;
+                oboowl:id "computer" ;
+                rdfs:label "computer" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001309
+obo:PATO_0001309 rdf:type owl:Class ;
+                 rdfs:subClassOf bfo11span:TemporalInterval ;
+                 obo:IAO_0000115 "The length of time over which the data was collected." ;
+                 oboowl:id "PATO_0001309" ;
+                 rdfs:label "duration" .
+
+
+###  http://purl.obolibrary.org/obo/sep_00056
+obo:sep_00056 rdf:type owl:Class ;
+              owl:equivalentClass :unitOfMeasurement ;
+              rdfs:subClassOf :equivalentThings ;
+              rdfs:label "sep_00056" ,
+                         "unit of measure" .
+
+
+###  http://purl.org/dc/terms/accessRights
+dct:accessRights rdf:type owl:Class ;
+                 rdfs:subClassOf :metadata ;
+                 obo:IAO_0000115 "Information about who can access the resource or an indication of its security status." ;
+                 oboowl:id "accessRights" ;
+                 rdfs:label "rights" .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dct:bibliographicCitation rdf:type owl:Class ;
+                          rdfs:subClassOf :metadata ;
+                          obo:IAO_0000115 "A bibliographic reference for a resource." ;
+                          oboowl:id "bibliographicCitation" ;
+                          rdfs:label "citation" .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:Class ;
+            owl:equivalentClass foaf:maker ;
+            rdfs:subClassOf foaf:Agent ;
+            <http://purl.org/dc/elements/1.1/description> "The person (one of the persons) that authored the scientific data" ;
+            oboowl:id "author" ;
+            rdfs:label "author" .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:Class ;
+                rdfs:subClassOf :metadata ;
+                obo:IAO_0000115 "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource." ;
+                oboowl:id "description" ;
+                rdfs:label "description" .
+
+
+###  http://purl.org/dc/terms/hasPart
+dct:hasPart rdf:type owl:Class ;
+            rdfs:subClassOf :metadata ;
+            obo:IAO_0000115 "A uri pointing to a section of the scientific data report" ;
+            oboowl:id "hasPart" ;
+            rdfs:label "section" .
+
+
+###  http://purl.org/dc/terms/identifier
+dct:identifier rdf:type owl:Class ;
+               owl:equivalentClass bibo:doi ,
+                                   :uid ;
+               rdfs:subClassOf :equivalentThings ;
+               obo:IAO_0000115 "An unambiguous reference to the resource within a given context." ;
+               oboowl:id "identifier" ;
+               rdfs:label "identifier" .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:Class ;
+            rdfs:subClassOf :metadata ;
+            obo:IAO_0000115 "A legal document giving official permission to do something with the resource." ;
+            oboowl:id "license" ;
+            rdfs:label "license" .
+
+
+###  http://purl.org/dc/terms/source
+dct:source rdf:type owl:Class ;
+           rdfs:subClassOf :metadata ;
+           <http://purl.org/dc/elements/1.1/description> """The present resource may be derived from the Source resource
+            in whole or in part.  Recommended best practice is to reference
+            the resource by means of a string or number conforming to a
+            formal identification system."""@en-us ;
+           rdfs:comment "A reference to a resource from which the present resource is derived." ;
+           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+           rdfs:label "source" .
+
+
+###  http://purl.org/dc/terms/subject
+dct:subject rdf:type owl:Class ;
+            rdfs:subClassOf :metadata ;
+            obo:IAO_0000115 "A word or phrase that indicates a subject that is pertinent to the scientific data" ;
+            oboowl:id "subject" ;
+            rdfs:label "keywords" .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+dct:tableOfContents rdf:type owl:Class ;
+                    rdfs:subClassOf :metadata ;
+                    obo:IAO_0000115 "A list of uris that point to the main parts of the scientific data report" ;
+                    oboowl:id "tableOfContents" ;
+                    rdfs:label "table of contents" .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:Class ;
+          rdfs:subClassOf :metadata ;
+          obo:IAO_0000115 "The title of a scientific data report" ;
+          oboowl:id "title" ;
+          rdfs:label "title" .
+
+
+###  http://purl.org/ontology/bibo/doi
+bibo:doi rdf:type owl:Class ;
+         rdfs:subClassOf :metadata ;
+         obo:IAO_0000115 "The digital object identifier - a unique identifer for digital assests.  See http://doi.og" ;
+         oboowl:id "doi" ;
+         rdfs:label "doi" .
+
+
+###  http://purl.org/spar/datacite/orcid
+cite:orcid rdf:type owl:Class ;
+           rdfs:subClassOf :metadata ;
+           obo:IAO_0000115 "The Open Researcher and Contributor Identifier" ;
+           oboowl:id "orcid" ;
+           rdfs:label "orcid" .
+
+
+###  http://semanticscience.org/ontology/sio.owlSIO_000999
+<http://semanticscience.org/ontology/sio.owlSIO_000999> rdf:type owl:Class ;
+                                                        rdfs:subClassOf bfo11snap:ProcessualEntity ;
+                                                        <http://purl.org/dc/elements/1.1/description> "A procedure is a process that attempts to achieve one or more objectives by following an established set of actions." ;
+                                                        oboowl:id "SIO_000999" ;
+                                                        rdfs:label "procedure" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#Continuant
+bfo11snap:Continuant rdf:type owl:Class ;
+                     owl:disjointWith bfo11snap:Occurrent ;
+                     rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                     rdfs:label "Continuant" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#DependentContinuant
+bfo11snap:DependentContinuant rdf:type owl:Class ;
+                              rdfs:subClassOf bfo11snap:Continuant ;
+                              rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                              rdfs:label "Dependent Continuant" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant
+bfo11snap:GenericallyDependentContinuant rdf:type owl:Class ;
+                                         rdfs:subClassOf bfo11snap:DependentContinuant ;
+                                         rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                                         rdfs:label "Generically dependent continuant" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+bfo11snap:IndependentContinuant rdf:type owl:Class ;
+                                rdfs:subClassOf bfo11snap:Continuant ;
+                                rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                                rdfs:label "Independent Continuant" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#Occurrent
+bfo11snap:Occurrent rdf:type owl:Class ;
+                    rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                    rdfs:label "Occurrent" .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#ProcessualEntity
+bfo11snap:ProcessualEntity rdf:type owl:Class ;
+                           rdfs:subClassOf bfo11snap:Occurrent ;
+                           rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> .
+
+
+###  http://www.ifomis.org/bfo/1.1/snap#SpatiotemporalRegion
+bfo11snap:SpatiotemporalRegion rdf:type owl:Class ;
+                               rdfs:subClassOf bfo11snap:Occurrent ;
+                               oboowl:id "SpatiotemporalRegion" ;
+                               rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                               rdfs:label "Spatiotemporal Region" .
+
+
+###  http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion
+bfo11span:ConnectedTemporalRegion rdf:type owl:Class ;
+                                  rdfs:subClassOf bfo11span:TemporalRegion ;
+                                  oboowl:id "ConnectedTemporalRegion" ;
+                                  rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                                  rdfs:label "Connected temporal region" .
+
+
+###  http://www.ifomis.org/bfo/1.1/span#TemporalInterval
+bfo11span:TemporalInterval rdf:type owl:Class ;
+                           rdfs:subClassOf bfo11span:ConnectedTemporalRegion ;
+                           oboowl:id "TemporalInterval" ;
+                           rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                           rdfs:label "Temporal interval" .
+
+
+###  http://www.ifomis.org/bfo/1.1/span#TemporalRegion
+bfo11span:TemporalRegion rdf:type owl:Class ;
+                         rdfs:subClassOf bfo11snap:Occurrent ;
+                         oboowl:id "TemporalRegion" ;
+                         rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> ;
+                         rdfs:label "Temporal Region" .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class ;
+           rdfs:subClassOf bfo11snap:IndependentContinuant ;
+           oboowl:id "Agent" ;
+           rdfs:label "Agent" .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf foaf:Agent ;
+                  oboowl:id "organization" ;
+                  rdfs:label "organization" .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:Class ;
+           rdfs:subClassOf :equivalentThings ;
+           oboowl:id "maker" ;
+           rdfs:label "maker" .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:Class ;
+          rdfs:subClassOf :metadata ;
+          obo:IAO_0000115 "The email address of the author" ;
+          oboowl:id "mbox" ;
+          rdfs:label "email" .
+
+
+###  http://xmlns.com/foaf/0.1/organization
+foaf:organization rdf:type owl:Class ;
+                  rdfs:subClassOf :metadata ;
+                  obo:IAO_0000115 "Information describing the entity that employs the author of this research data" ;
+                  oboowl:id "organization" ;
+                  rdfs:label "organization" .
+
+
+###  https://schema.org/URL
+<https://schema.org/URL> rdf:type owl:Class ;
+                         owl:equivalentClass :permalink ;
+                         rdfs:subClassOf :metadata ;
+                         obo:IAO_0000115 "Uniform resource locator - a http based link to a page of information" ;
+                         oboowl:id "url" ;
+                         rdfs:label "url" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical
+<https://stuchalk.github.io/scidata/ontology/chemical/chemical.owl#chemical> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :systemFacet ;
+                                                                             obo:IAO_0000115 "In this context a chemical is defined as a physical amount of a compound that has either been purchased from a vendor, or synthesized in a laboratory via a suitable chemical reaction.  A chemical may contain one or more compounds." ;
+                                                                             oboowl:hasExactSynonym "manufactured chemical" ;
+                                                                             oboowl:id "chemical" ;
+                                                                             rdfs:label "chemical" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/property.owl#property
+<https://stuchalk.github.io/scidata/ontology/property.owl#property> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :scientificData ;
+                                                                    obo:IAO_0000115 "Any property that can be characterized or measured" ;
+                                                                    oboowl:id "property" ;
+                                                                    rdfs:label "property" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#assay
+:assay rdf:type owl:Class ;
+       rdfs:subClassOf :methodologyAspect ;
+       obo:IAO_0000115 "A set of operations having the object of determining the value of a quantity. In analytical chemistry, this term is synonymous with measurement."@en ;
+       obo:IAO_0000119 "https://goldbook.iupac.org/terms/view/A00470"@en ;
+       oboowl:id "assay"@en ;
+       rdfs:label "assay"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#axisLabel
+:axisLabel rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "The title given to an axis on a graph" ;
+           oboowl:id "axisLabel" ;
+           rdfs:label "axis label" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#axisType
+:axisType rdf:type owl:Class ;
+          rdfs:subClassOf :dataset ;
+          obo:IAO_0000115 "Wether a dataseries in the independent or dependent axis of a chart" ;
+          oboowl:id "axisType" ;
+          rdfs:label "axis type" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#basisSet
+:basisSet rdf:type owl:Class ;
+          rdfs:subClassOf :methodologyAspect ;
+          obo:IAO_0000115 "A set of functions (called basis functions) which are combined in linear combinations (generally as part of a quantum chemical calculation) to create molecular orbitals." ;
+          obo:IAO_0000119 "https://en.wikipedia.org/wiki/Basis_set_%28chemistry%29" ;
+          oboowl:id "basisSet" ;
+          rdfs:label "basis set" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#calculation
+:calculation rdf:type owl:Class ;
+             rdfs:subClassOf :methodologyAspect ;
+             obo:IAO_0000115 "Computational chemistry calculation run to estimate one or properties of a molecular system" ;
+             oboowl:id "calculation" ;
+             rdfs:label "calculation" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#chemicalSystem
+:chemicalSystem rdf:type owl:Class ;
+                rdfs:subClassOf :systemFacet ;
+                obo:IAO_0000115 "A mixture of two or more chemical entities that can be treated as a distinct material that has intrinsic properties separate from the characteristics of the invidividual components that make up the mixture.  It is assumed that such as chemical system is not changing with time and therefore it implies no chemical reactions are taking place."@en ;
+                oboowl:id "chemical system"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#chemical_element
+:chemical_element rdf:type owl:Class ;
+                  owl:equivalentClass :element ;
+                  rdfs:subClassOf :equivalentThings ;
+                  oboowl:id "SIO_010037" ;
+                  rdfs:label "chemical element"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#compound
+:compound rdf:type owl:Class ;
+          rdfs:subClassOf :systemFacet ;
+          obo:IAO_0000115 "A chemical compound is a chemical substance formed by the covalent bonding of two or more atoms of two or more different elements, e.g. CO2, NO3-" ;
+          oboowl:id "compound" ;
+          rdfs:label "compound" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#condition
+:condition rdf:type owl:Class ;
+           rdfs:subClassOf :systemFacet ;
+           obo:IAO_0000115 "The value of a property that, in part, characterizes the nature of the material under study in a scientific study" ;
+           oboowl:id "condition" ;
+           rdfs:label "condition" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#constituent
+:constituent rdf:type owl:Class ;
+             rdfs:subClassOf :chemicalSystem ;
+             obo:IAO_0000115 "Chemical species present in a system; often called a component, although the term component has a more restricted meaning in physical chemistry."@en ;
+             obo:IAO_0000119 <https://doi.org/10.1351/goldbook.C01281> ;
+             oboowl:id "constituent" ;
+             rdfs:label "constituent" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#contraction
+:contraction rdf:type owl:Class ;
+             rdfs:subClassOf :basisSet ;
+             obo:IAO_0000119 "A linear combination of gaussian primitives to be used as basis function."@en ,
+                             "http://www.ccl.net/cca/documents/basis-sets/basis.html"@en ;
+             rdfs:label "contraction"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#contractionMatrix
+:contractionMatrix rdf:type owl:Class ;
+                   rdfs:subClassOf :basisSet ;
+                   rdfs:label "contraction matrix"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#conversionFactor
+:conversionFactor rdf:type owl:Class ;
+                  rdfs:subClassOf :unitOfMeasurement ;
+                  obo:IAO_0000115 "A numeric multiplier used to convert a value in one unit of measure into another of the same quanity.  Fo instance, the conversion factor for converting distance in miles to distances in meters is 1609.344." ;
+                  oboowl:id "conversionFactor" ;
+                  rdfs:label "conversion factor" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataAttribute
+:dataAttribute rdf:type owl:Class ;
+               rdfs:subClassOf :dataset ;
+               obo:IAO_0000115 "Metadata that describes summary data about a dataset, datagroup, or series.  This might include the number of points in an array, max and/or min values, or the number of dataseries in a datagroup." ;
+               oboowl:id "dataAttribute" ;
+               rdfs:label "data attribute" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataFormat
+:dataFormat rdf:type owl:Class ;
+            rdfs:subClassOf :scientificData ;
+            obo:IAO_0000115 "The format(s) of data that are present in the report. Examples include: datapoint, dataseries, datagroup" ;
+            oboowl:id "dataFormat" ;
+            rdfs:label "data format" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataGroup
+:dataGroup rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "A data group is a logical aggregation of data from a specific process, experiment, study etc.  There are no restrictions on the type of data that can be part of the group." ;
+           obo:IAO_0000117 "Person: Stuart Chalk" ;
+           oboowl:id "dataGroup" ;
+           rdfs:label "data group" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataName
+:dataName rdf:type owl:Class ;
+          rdfs:subClassOf :dataset ;
+          obo:IAO_0000115 "The name given to characterize a data group" ;
+          oboowl:id "dataName" ;
+          rdfs:label "data name" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataPoint
+:dataPoint rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           <http://purl.org/dc/elements/1.1/description> "An individual data point from a scientific study.  This is interpreted as the aggregation of a measured data value (datum) and the conditions under which the measurement was made." ;
+           oboowl:id "dataPoint" ;
+           rdfs:label "data point" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataScope
+:dataScope rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "The internally (context facet) or externally referenced (uri) scope that the dataset, datagroup, dataseries, or datapoint in the report applies to." ;
+           oboowl:id "dataScope" ;
+           rdfs:label "data scope" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataSeries
+:dataSeries rdf:type owl:Class ;
+            rdfs:subClassOf :dataset ;
+            <http://purl.org/dc/elements/1.1/description> "A set of data that is logical related to one another and for which presentation as an array is appropriate.  Examples are spectra, time series experiments, chromatograms, kinetics experiment data, etc." ;
+            oboowl:id "dataSeries" ;
+            rdfs:label "data series" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataSeriesType
+:dataSeriesType rdf:type owl:Class ;
+                rdfs:subClassOf :dataset ;
+                obo:IAO_0000115 "Textual description of the type of information represented in a dataseries.  This might be spectrum, chromatogram, etc" ;
+                oboowl:id "dataSeriesType" ;
+                rdfs:label "data series type" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataSource
+:dataSource rdf:type owl:Class ;
+            rdfs:subClassOf :dataset ;
+            obo:IAO_0000115 "The internally (methodology aspect) or externally referenced (uri) source of the dataset, datagroup, dataseries, or datapoint in the report." ;
+            oboowl:id "dataSource" ;
+            rdfs:label "data source" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataType
+:dataType rdf:type owl:Class ;
+          rdfs:subClassOf :scientificData ;
+          obo:IAO_0000115 "A broad classification of the type(s) of data that are included in the this report.  Examples would include: property value, assay result, spectrum, physical constant." ;
+          oboowl:id "dataType" ;
+          rdfs:label "data type" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dataset
+:dataset rdf:type owl:Class ;
+         rdfs:subClassOf obo:IAO_0000030 ;
+         <http://purl.org/dc/elements/1.1/description> "A collection of the data obtained in the course of the scientific study.  While it is common that a dataset contain data of only type, this definition is broader and does not put any conditions that restrict the data that can be part of a dataset." ;
+         oboowl:id "dataset" ;
+         rdfs:label "dataset" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#datum
+:datum rdf:type owl:Class ;
+       rdfs:subClassOf :dataset ;
+       <http://purl.org/dc/elements/1.1/description> "An individual measured value with a unit (if appropriate)" ;
+       oboowl:id "datum" ;
+       rdfs:label "datum" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#element
+:element rdf:type owl:Class ;
+         rdfs:subClassOf :systemFacet ;
+         obo:IAO_0000115 """1) A species of atoms; all atoms with the same number of protons in the atomic nucleus.
+2) A pure chemical substance composed of atoms with the same number of protons in the atomic nucleus. Sometimes this concept is called the elementary substance as distinct from the chemical element as defined under 1, but mostly the term chemical element is used for both concepts."""@en ;
+         obo:IAO_0000119 "https://doi.org/10.1351/goldbook.C01022"@en ;
+         oboowl:id "element"@en ;
+         rdfs:label "element"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#endtime
+:endtime rdf:type owl:Class ;
+         rdfs:subClassOf bfo11snap:Occurrent ;
+         <http://purl.org/dc/elements/1.1/description> "The time point when collection of data stops" ;
+         oboowl:id "endtime" ;
+         rdfs:label "end time" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#equivalentThings
+:equivalentThings rdf:type owl:Class ;
+                  obo:IAO_0000115 "Other ontological definitions of terms that are equivalent to terms in the ontology" ;
+                  obo:IAO_0000117 "Person: Stuart Chalk" ;
+                  oboowl:id "equivalentThings" ;
+                  rdfs:label "Equivalent things" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#error
+:error rdf:type owl:Class ;
+       rdfs:subClassOf :dataset ;
+       obo:IAO_0000115 "The amount of uncertainty in a numeric value" ;
+       oboowl:id "error" ;
+       rdfs:label "error" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#errorArray
+:errorArray rdf:type owl:Class ;
+            rdfs:subClassOf :dataset ;
+            obo:IAO_0000115 "An array of error values" ;
+            oboowl:id "errorArray" ;
+            rdfs:label "error array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#errorNote
+:errorNote rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "A contextual annotation"@en ;
+           rdfs:label "error note"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#errorType
+:errorType rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "The type (context) of an error value.  Errors can be relative or absolute, based off of calculations, or measured." ;
+           oboowl:id "errorType" ;
+           rdfs:label "error type" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#evaluation
+:evaluation rdf:type owl:Class ;
+            rdfs:subClassOf :methodology ;
+            obo:IAO_0000115 "The process by which the scientific data was arrived at.  Allowed values are: experimental, calculation, theoretical." ;
+            oboowl:id "evaluation" ;
+            rdfs:label "evaluation" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#exponent
+:exponent rdf:type owl:Class ;
+          rdfs:subClassOf :dataset ;
+          obo:IAO_0000115 "In mathematics, exponentiation is an operation involving two numbers, the base and the exponent or power. Exponentiation is written as bn, where b is the base and n is the power; this is pronounced as \"b (raised) to the (power of) n\"."@en ;
+          obo:IAO_0000119 "https://en.wikipedia.org/wiki/Exponentiation"@en ;
+          rdfs:label "exponent"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#material
+:material rdf:type owl:Class ;
+          rdfs:subClassOf :systemFacet ;
+          obo:IAO_0000115 "Material is define as a chemical substance that has been synthesized with a view to a particular property or set of properties.  Typically the material is process by a manufacturing process that affords one or more chemical reactions such that the structure/composition of the material must be subsequent determined.  This designation is not meant for simple mixtures of chemicals (see chemical system)." ;
+          oboowl:id "material" ;
+          rdfs:label "material" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#measurement
+:measurement rdf:type owl:Class ;
+             rdfs:subClassOf :methodologyAspect ;
+             obo:IAO_0000115 "The process used to measure a number or characteristic of an object or event." ;
+             obo:IAO_0000119 "https://en.wikipedia.org/wiki/Measurement" ;
+             oboowl:id "measurement" ;
+             rdfs:label "measurement" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#metadata
+:metadata rdf:type owl:Class ;
+          rdfs:subClassOf obo:IAO_0000030 ;
+          obo:IAO_0000115 "Metadata that generally characterizes/annotates the provenance, authority, and attribution of scientific data" ;
+          obo:IAO_0000117 "Person: Stuart Chalk" ;
+          obo:IAO_0000119 "https://stuchalk.github.io/scidata/"^^xsd:anyURI ;
+          oboowl:id "metadata" ;
+          rdfs:label "metadata" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#methodology
+:methodology rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000030 ;
+             <http://purl.org/dc/elements/1.1/description> "Information about the methods/resources/procedures employed in the study the scientific concept(s) of the experiment(s)" ;
+             oboowl:id "methodology" ;
+             rdfs:label "methodology" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#methodologyAspect
+:methodologyAspect rdf:type owl:Class ;
+                   rdfs:subClassOf :methodology ;
+                   obo:IAO_0000115 "The different facets of scientific research that characterize the methodology by which the data was collected. This might include: the measurement setup, resources used, and procedures followed for experimentation; the input, basisset, and software used for calculations. There are no constraints on the number or organization of metadata in aspects" ;
+                   oboowl:id "methodologyAspect" ;
+                   rdfs:label "aspect" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#molecularSystem
+:molecularSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :systemFacet ;
+                 obo:IAO_0000115 "A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described." ;
+                 oboowl:id "molecularSystem" ;
+                 rdfs:label "molecular system" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#number
+:number rdf:type owl:Class ;
+        rdfs:subClassOf :dataset ;
+        obo:IAO_0000115 "A numeric value without unit" ;
+        oboowl:id "number" ;
+        rdfs:label "number" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#numberArray
+:numberArray rdf:type owl:Class ;
+             rdfs:subClassOf :dataset ;
+             obo:IAO_0000115 "An array of numeric values without a unit" ;
+             oboowl:id "numberArray" ;
+             rdfs:label "number array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#numericDatatype
+:numericDatatype rdf:type owl:Class ;
+                 rdfs:subClassOf :dataset ;
+                 obo:IAO_0000115 "The formal type of a number value, usually one from a list such as integer, decimal, float, complex, or double" ;
+                 oboowl:id "numericDatatype" ;
+                 rdfs:label "numeric datatype" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#numericValue
+:numericValue rdf:type owl:Class ;
+              rdfs:subClassOf :dataset ;
+              obo:IAO_0000115 "A numeric number with a unit indicating the magnitude of some property" ;
+              oboowl:id "numericValue" ;
+              rdfs:label "numeric value" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#numericValueArray
+:numericValueArray rdf:type owl:Class ;
+                   rdfs:subClassOf :dataset ;
+                   obo:IAO_0000115 "An array of numeric numbers with a unit indicating the magnitude of some property" ;
+                   oboowl:id "numericValueArray" ;
+                   rdfs:label "numeric value array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#parameter
+:parameter rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "A characteristic, feature, or measurable factor that can help in defining a particular system." ;
+           obo:IAO_0000119 "https://en.wikipedia.org/wiki/Parameter" ;
+           oboowl:id "parameter" ;
+           rdfs:label "parameter" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#parameterArray
+:parameterArray rdf:type owl:Class ;
+                rdfs:subClassOf :dataset ;
+                obo:IAO_0000115 "An array of values for a characteristic, feature, or measurable factor that can help in defining a particular system." ;
+                obo:IAO_0000119 "https://en.wikipedia.org/wiki/Parameter" ;
+                oboowl:id "parameterArray" ;
+                rdfs:label "parameter array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#permalink
+:permalink rdf:type owl:Class ;
+           rdfs:subClassOf :metadata ;
+           obo:IAO_0000115 "A url that will always resolve to this resource" ;
+           oboowl:id "permalink" ;
+           rdfs:label "permalink" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#procedure
+:procedure rdf:type owl:Class ;
+           rdfs:subClassOf :methodologyAspect ;
+           obo:IAO_0000115 "A list steps describing how to perform as specific task or tasks" ;
+           oboowl:id "procedure" ;
+           rdfs:label "procedure" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#quantity
+:quantity rdf:type owl:Class ;
+          rdfs:subClassOf :unitOfMeasurement ;
+          obo:IAO_0000115 "A quantity is a measure of how much something there is, i.e. can be counted" ;
+          oboowl:id "quantity" ;
+          rdfs:label "quantity" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#quantityKind
+:quantityKind rdf:type owl:Class ;
+              rdfs:subClassOf :unitOfMeasurement ;
+              obo:IAO_0000115 """aspect common to mutually comparable quantities.
+
+NOTE 1 The division of 'quantity' according to 'kind of quantity' is to some extent arbitrary.
+
+EXAMPLE 1 The quantities diameter, circumference, and wavelength are generally considered to be quantities of the same kind, namely of the kind of quantity called length.
+
+EXAMPLE 2 The quantities heat, kinetic energy, and potential energy are generally considered to be quantities of the same kind, namely of the kind of quantity called energy.
+
+NOTE 2 Quantities of the same kind within a given system of quantities have the same quantity dimension. However, quantities of the same dimension are not necessarily of the same kind.
+
+EXAMPLE The quantities moment of force and energy are, by convention, not regarded as being of the same kind, although they have the same dimension. Similarly for heat capacity and entropy, as well as for number of entities, relative permeability, and mass fraction.
+
+NOTE 3 In English, the terms for quantities in the left half of the table in 1.1, Note 1, are often used for the corresponding 'kinds of quantity'. In French, the term “nature” is only used in expressions such as “grandeurs de même nature” (in English, “quantities of the same kind”)."""@en ;
+              obo:IAO_0000119 "International Vocabulary of Metrology - Online Edition, https://jcgm.bipm.org/vim/en/1.2.html"@en ;
+              oboowl:hasExactSynonym "kind of quantity"@en ;
+              rdfs:label "quanity kind"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#resource
+:resource rdf:type owl:Class ;
+          rdfs:subClassOf :methodologyAspect ;
+          obo:IAO_0000115 "A material thing that was used in the context of performing scientific research.  This could include instruments, apparati, equipment, glassware, etc." ;
+          oboowl:id "resource" ;
+          rdfs:label "resource" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#scidataFramework
+:scidataFramework rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000030 ;
+                  obo:IAO_0000115 "A datatype where the context of the file uses the SciData framework (https://stuchalk.github.io/scidata/) to annotate and organize data." ;
+                  rdfs:label "scidataFramework" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#scientificData
+:scientificData rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                obo:IAO_0000115 "Data collected during the course of a scientific experiment, calculation, study or theoretical analysis." ;
+                oboowl:id "scientificData" ;
+                rdfs:label "scientific data" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#scientificDiscipline
+:scientificDiscipline rdf:type owl:Class ;
+                      rdfs:subClassOf :system ;
+                      obo:IAO_0000115 "The scientific area of study that the data comes from" ;
+                      oboowl:id "scientificDiscipline" ;
+                      rdfs:label "scientific discipline" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#scientificSubdiscipline
+:scientificSubdiscipline rdf:type owl:Class ;
+                         rdfs:subClassOf :system ;
+                         obo:IAO_0000115 "The sub area of study that the data was collected in" ;
+                         oboowl:id "scientificSubdiscipline" ;
+                         rdfs:label "scientific subdiscipline" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#siPrefix
+:siPrefix rdf:type owl:Class ;
+          rdfs:subClassOf :unitOfMeasurement ;
+          obo:IAO_0000115 "A letter used to representing a multiplier (increment in powers of three) for numeric values to make it easier to write extremely large or small numbers.  For example the SI prefix 'm' stands for 'milli' and represents the factor '1 x 10-3'." ;
+          oboowl:id "siPrefix" ;
+          rdfs:label "SI prefix" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#siUnit
+:siUnit rdf:type owl:Class ;
+        rdfs:subClassOf :unitOfMeasurement ;
+        obo:IAO_0000115 "One of the seven base units in the International System of Units (SI)" ;
+        oboowl:id "siUnit" ;
+        rdfs:label "SI unit" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#siUnitEquivalent
+:siUnitEquivalent rdf:type owl:Class ;
+                  rdfs:subClassOf :unitOfMeasurement ;
+                  obo:IAO_0000115 "SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivlent SI unit of kg m2 s-2" ;
+                  oboowl:id "siUnitEquivalent" ;
+                  rdfs:label "SI unit equivalent" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#sigfigs
+:sigfigs rdf:type owl:Class ;
+         rdfs:subClassOf :dataset ;
+         obo:IAO_0000115 "The number (integer) of digits in a numeric value that are significant (known with certainty) plus one uncertain digit." ;
+         oboowl:id "sigfigs" ;
+         rdfs:label "significant figures" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#significand
+:significand rdf:type owl:Class ;
+             rdfs:subClassOf :dataset ;
+             obo:IAO_0000115 "The significand is part of a number in scientific notation or in floating-point representation, consisting of its significant digits. Depending on the interpretation of the exponent, the significand may represent an integer or a fraction."@en ;
+             obo:IAO_0000119 "https://en.wikipedia.org/wiki/Significand"@en ;
+             rdfs:label "significand"@en .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#software
+:software rdf:type owl:Class ;
+          rdfs:subClassOf :methodologyAspect ;
+          obo:IAO_0000115 "Software is a collection of data or computer instructions that tell the computer how to work."@en ;
+          obo:IAO_0000119 "https://en.wikipedia.org/wiki/Software"@en ;
+          oboowl:id "software" ;
+          rdfs:label "software" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#specimen
+:specimen rdf:type owl:Class ;
+          rdfs:subClassOf :systemFacet ;
+          obo:IAO_0000115 "A part of a thing, or of several things, taken to demonstrate or to determine the character of the whole, e.g. a substance, or portion of material obtained for use in testing, examination, or study; particularly, a preparation of tissue or bodily fluid taken for examination or diagnosis.  From NCI." ,
+                          "A specifically selected portion of a material taken from a dynamic system and assumed to be representative of the parent material at the time it is taken. Although the specimen may not be reproducible in time, e.g. it may be taken from a flowing stream or a portion of blood, no separable sampling error exists since this error is unavoidably included with the corresponding error of the estimate of the property, function or analyte being studied. A specimen may be considered as a special type of sample, taken primarily in time rather than in space. The term 'specimen' has been used both as a representative unit and as a nonrepresentative (often better than most) unit of a population, usually in clinical, biological and mineralogical collections. 'Collections' in this case is used as either a noun or verb. This usage is almost always self-evident, and thus would not be confused with a time-type sample. From the IUPAC Gold Book." ;
+          obo:IAO_0000119 obo:NCIT_C19157 ,
+                          <https://doi.org/10.1351/goldbook.S05809> ;
+          oboowl:id "specimen" ;
+          rdfs:label "specimen" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#starttime
+:starttime rdf:type owl:Class ;
+           rdfs:subClassOf bfo11snap:Occurrent ;
+           <http://purl.org/dc/elements/1.1/description> "The time point when either i) data is collected (ie. the end point is the same), or ii) the collection of data is started" ;
+           oboowl:id "starttime" ;
+           rdfs:label "start time" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#system
+:system rdf:type owl:Class ;
+        rdfs:subClassOf obo:IAO_0000030 ;
+        <http://purl.org/dc/elements/1.1/description> "Metadata describing the system(s) that the scientific study is is focused on.  Can be molecular or chemical systems, organisms, or materials and the conditions (properties) under which the study was conducted." ;
+        oboowl:id "system" ;
+        rdfs:label "system" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#systemFacet
+:systemFacet rdf:type owl:Class ;
+             rdfs:subClassOf :system ;
+             obo:IAO_0000115 "The different aspects of scientific research that characterize the context in which the data was collected. This might include: the substance (chemical system of two or more chemicals), material (a manufactured substance), chemical, compound, organism under study; the physical conditions under which the data was collected; the molecular system and computer used to run a calculation. There are no constraints on the number or organization of metadata in facets" ;
+             oboowl:id "contextFacet" ;
+             rdfs:label "system facet" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#target
+:target rdf:type owl:Class ;
+        rdfs:subClassOf :systemFacet ;
+        obo:IAO_0000115 "Any organism, organ, tissue, cell, or cell constituent that is subject to the action of an agent." ;
+        obo:IAO_0000119 <https://doi.org/10.1351/goldbook.TT06812> ;
+        oboowl:id "target" ;
+        rdfs:label "target" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#text
+:text rdf:type owl:Class ;
+      rdfs:subClassOf :dataset ;
+      obo:IAO_0000115 "The textual value of a parameter" ;
+      oboowl:id "text" ;
+      rdfs:label "text" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#textArray
+:textArray rdf:type owl:Class ;
+           rdfs:subClassOf :dataset ;
+           obo:IAO_0000115 "An array of textual values of a parameter" ;
+           oboowl:id "textArray" ;
+           rdfs:label "text array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#textString
+:textString rdf:type owl:Class ;
+            rdfs:subClassOf :dataset ;
+            obo:IAO_0000115 "A string of alphanumeric characters defining a textual based value for a parameter" ;
+            oboowl:id "textString" ;
+            rdfs:label "text string" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#textStringArray
+:textStringArray rdf:type owl:Class ;
+                 rdfs:subClassOf :dataset ;
+                 obo:IAO_0000115 "An array of strings of alphanumeric characters defining a textual based set of values for a parameter" ;
+                 oboowl:id "textStringArray" ;
+                 rdfs:label "text string array" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#textType
+:textType rdf:type owl:Class ;
+          rdfs:subClassOf :dataset ;
+          obo:IAO_0000115 "The type text in a string.  This can be plain text or a text-based encoding of information such as JSON, XML, CSV etc..." ;
+          oboowl:id "textType" ;
+          rdfs:label "text type" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#uid
+:uid rdf:type owl:Class ;
+     rdfs:subClassOf :metadata ;
+     obo:IAO_0000115 "A unique identifier for a scientific data report" ;
+     oboowl:id "identifier" ;
+     rdfs:label "uid" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitAbbreviation
+:unitAbbreviation rdf:type owl:Class ;
+                  rdfs:subClassOf :unitOfMeasurement ;
+                  obo:IAO_0000115 "In this context this is a representation of the abbreviation of a scientific unit" ;
+                  oboowl:id "unitAbbreviation" ;
+                  rdfs:label "unit abbreviation" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitOfMeasurement
+:unitOfMeasurement rdf:type owl:Class ;
+                   rdfs:subClassOf obo:IAO_0000030 ;
+                   obo:IAO_0000115 "A unit for representing the scale that a quantity is being reported in." ;
+                   oboowl:id "unitOfMeasurement" ;
+                   rdfs:label "unit of measurement" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitPower
+:unitPower rdf:type owl:Class ;
+           rdfs:subClassOf :unitOfMeasurement ;
+           obo:IAO_0000115 "The mathematical power of a unit used in presentation of a numeric value.  Are can be presente, for instance, in meters squared or m^2.  The power of the unit is 2." ;
+           oboowl:id "unitPower" ;
+           rdfs:label "unit power" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitReference
+:unitReference rdf:type owl:Class ;
+               rdfs:subClassOf :dataset ;
+               obo:IAO_0000115 "A URI pointing to the definition of a unit of measure" ;
+               oboowl:id "unitReference" ;
+               rdfs:label "unit reference" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitSymbol
+:unitSymbol rdf:type owl:Class ;
+            rdfs:subClassOf :unitOfMeasurement ;
+            obo:IAO_0000115 "Symbol commoly used to represent a scientific unit" ;
+            oboowl:id "unitSymbol" ;
+            rdfs:label "unit symbol" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#unitSystem
+:unitSystem rdf:type owl:Class ;
+            rdfs:subClassOf :unitOfMeasurement ;
+            obo:IAO_0000115 "A system of measurement is a collection of units of measurement and rules relating them to each other." ;
+            obo:IAO_0000119 "https://en.wikipedia.org/wiki/System_of_measurement" ;
+            oboowl:id "unitSystem" ;
+            rdfs:label "unit system" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance
+<https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :systemFacet ;
+                                                                                obo:IAO_0000115 "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. Physical properties such as density, refractive index, electric conductivity, melting point etc. characterize the chemical substance." ;
+                                                                                oboowl:hasExactSynonym "chemical substance" ;
+                                                                                oboowl:id "substance" ;
+                                                                                rdfs:comment "Also: A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc." ;
+                                                                                rdfs:isDefinedBy <https://doi.org/10.1351/goldbook.C01039> ;
+                                                                                rdfs:label "substance" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#dependent
+:dependent rdf:type owl:NamedIndividual ,
+                    :axisType ;
+           obo:IAO_0000115 "The axis where a dependent varibale is plotted." ;
+           rdfs:label "dependent" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#imperial
+:imperial rdf:type owl:NamedIndividual ;
+          obo:IAO_0000115 "A scale of units of measure used in the UK (British Imperial) and throughout the British Empire" ;
+          oboowl:id "imperial" ;
+          rdfs:label "imperial" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#independent
+:independent rdf:type owl:NamedIndividual ,
+                      :axisType ;
+             obo:IAO_0000115 "The axis where an independent variable is plotted." ;
+             rdfs:label "independent" .
+
+
+###  https://stuchalk.github.io/scidata/ontology/scidata#siderived
+:siderived rdf:type owl:NamedIndividual ;
+           oboowl:id "siderived" ;
+           rdfs:label "siderived" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+bfo11snap:ProcessualOccurant rdfs:label "Processual Entity" ;
+                             rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> .
+
+
+bfo11snap:spatiotemporal_region rdfs:label "Spatiotemporal Region" ;
+                                rdfs:isDefinedBy <http://www.ifomis.org/bfo/1.1> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
