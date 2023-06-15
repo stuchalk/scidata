@@ -1,7 +1,7 @@
 {
     "@context": [
         {
-            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "cto": "https://stuchalk.github.io/scidata/ontology/chemtwin.owl#",
             "atoms": {"@id": "cto:hasConstituentAtom"},
             "bonds": {"@id": "cto:hasConstituentBond"},
