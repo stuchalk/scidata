@@ -1,0 +1,87 @@
+{
+	"@context": {
+		"@vocab": "https://www.w3.org/2001/XMLSchema#",
+		"prov": "http://www.w3.org/ns/prov#",
+		"schema": "http://schema.org/",
+		"edam": "http://edamontology.org/",
+		"obo": "http://purl.obolibrary.org/obo/",
+		"dct": "http://purl.org/dc/terms/",
+		"sio": "http://semanticscience.org/ontology/sio.owl#",
+		"generatedAt": {
+			"@id": "prov:generatedAtTime",
+			"@type": "dateTime"
+		},
+		"version": {
+			"@id": "obo:IAO_0000129",
+			"@type": "string"
+		},
+		"pid": {
+			"@id": "dct:identifier",
+			"@type": "string"
+		},
+		"name": {
+			"@id": "obo:IAO_0000590",
+			"@type": "string"
+		},
+		"symbol": {
+			"@id": "obo:NCIT_C54191",
+			"@type": "string"
+		},
+		"value": {
+			"@id": "obo:NCIT_C25712",
+			"@type": "string"
+		},
+		"status": {
+			"@id": "obo:NCIT_C25688",
+			"@type": "string"
+		},
+		"validfrom": {
+			"@id": "sio:SIO_000031",
+			"@type": "string"
+		},
+		"validto": {
+			"@id": "sio:SIO_000032",
+			"@type": "string"
+		},
+		"sources": {
+			"@id": "dct:source",
+			"@container": "@set"
+		},
+		"url": {
+			"@id": "schema:url",
+			"@type": "anyURI"
+		},
+		"citation": {
+			"@id": "dct:bibliographicCitation",
+			"@type": "string"
+		},
+		"title": {
+			"@id": "dct:title",
+			"@type": "string"
+		},
+		"date": {
+			"@id": "dct:created",
+			"@type": "date"
+		},
+		"edition": {
+			"@id": "obo:NCIT_C62613",
+			"@type": "string"
+		},
+		"pages": {
+			"@id": "schema:numberOfPages",
+			"@type": "integer"
+		},
+		"holder": {
+			"@id": "dct:rightsHolder",
+			"@type": "string"
+		},
+		"doi": {
+			"@id": "edam:data_1188",
+			"@type": "string"
+		},
+		"license": {
+			"@id": "dct:license",
+			"@type": "anyURI"
+		}
+	}
+}
