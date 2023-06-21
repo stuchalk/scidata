@@ -7,6 +7,7 @@
 		"obo": "http://purl.obolibrary.org/obo/",
 		"dct": "http://purl.org/dc/terms/",
 		"sio": "http://semanticscience.org/ontology/sio.owl#",
+		"si": "https://stuchalk.github.io/scidata/ontology/si.ttl#",
 		"generatedAt": {
 			"@id": "prov:generatedAtTime",
 			"@type": "dateTime"
@@ -19,12 +20,20 @@
 			"@id": "dct:identifier",
 			"@type": "string"
 		},
+		"unittype": {
+			"@id": "dct:type",
+			"@type": "string"
+		},
 		"name": {
 			"@id": "obo:IAO_0000590",
 			"@type": "string"
 		},
 		"symbol": {
-			"@id": "obo:NCIT_C54191",
+			"@id": "si:hasSymbol",
+			"@type": "string"
+		},
+		"dimstr": {
+			"@id": "obo:NCIT_C25483",
 			"@type": "string"
 		},
 		"value": {
@@ -36,11 +45,11 @@
 			"@type": "string"
 		},
 		"validfrom": {
-			"@id": "sio:SIO_000031",
+			"@id": "si:hasStartValidity",
 			"@type": "string"
 		},
 		"validto": {
-			"@id": "sio:SIO_000032",
+			"@id": "si:hasEndValidity",
 			"@type": "string"
 		},
 		"sources": {
@@ -82,6 +91,22 @@
 		"license": {
 			"@id": "dct:license",
 			"@type": "anyURI"
+		},
+		"definition": {
+			"@id": "si:hasDefiningText",
+			"@type": "string"
+		},
+		"equation": {
+			"@id": "si:hasFormula",
+			"@type": "string"
+		},
+		"constant": {
+			"@id": "si:hasDefiningConstant",
+			"@type": "string"
+		},
+		"resolution": {
+			"@id": "si:hasDefiningResolution",
+			"@type": "string"
 		}
 	}
 }
