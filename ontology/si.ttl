@@ -1,0 +1,622 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix si: <http://si-digital-framework.org/SI#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://si-digital-framework.org/SI> a owl:Ontology ;
+    rdfs:comment "SI Reference Point"^^xsd:string ;
+    owl:versionInfo "2023-06-21"^^xsd:string .
+
+si:DefiningResolution a skos:Concept ;
+    owl:disjointWith si:MeasurementUnit,
+        si:SIPrefix ;
+    skos:prefLabel "Defining resolution"^^xsd:string .
+
+si:ampere owl:sameAs si:ampere2018 .
+
+si:ampereDefinitions a skos:Collection ;
+    skos:member si:ampere1948,
+        si:ampere2018 ;
+    skos:prefLabel "Definitions of the ampere"@en,
+        "Définitions de l'ampère"@fr .
+
+si:atto a si:SIPrefix ;
+    si:hasScalingFactor 1e-18 ;
+    si:hasSymbol "a"^^xsd:string ;
+    skos:prefLabel "atto"^^xsd:string .
+
+si:becquerel a si:SIUnitSpecialName ;
+    si:hasSymbol "Bq"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ARRN> ;
+    skos:prefLabel "becquerel"@en,
+        "becquerel"@fr .
+
+si:candela owl:sameAs si:candela2018 .
+
+si:candelaDefinitions a skos:Collection ;
+    skos:member si:candela1979,
+        si:candela2018 ;
+    skos:prefLabel "Definitions of the candela"@en,
+        "Définitions de la candela"@fr .
+
+si:centi a si:SIPrefix ;
+    si:hasScalingFactor 1e-02 ;
+    si:hasSymbol "c"^^xsd:string ;
+    skos:prefLabel "centi"^^xsd:string .
+
+si:coulomb a si:SIUnitSpecialName ;
+    si:hasSymbol "C"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELCH> ;
+    skos:prefLabel "coulomb"@en,
+        "coulomb"@fr .
+
+si:deca a si:SIPrefix ;
+    si:hasScalingFactor 1e+01 ;
+    si:hasSymbol "da"^^xsd:string ;
+    skos:prefLabel "deca"^^xsd:string .
+
+si:deci a si:SIPrefix ;
+    si:hasScalingFactor 1e-01 ;
+    si:hasSymbol "d"^^xsd:string ;
+    skos:prefLabel "deci"^^xsd:string .
+
+si:degreeCelsius a si:SIUnitSpecialName ;
+    si:hasSymbol "°C"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TEMC> ;
+    skos:prefLabel "degree celsius"@en,
+        "degré celsius"@fr .
+
+si:exa a si:SIPrefix ;
+    si:hasScalingFactor 1e+18 ;
+    si:hasSymbol "E"^^xsd:string ;
+    skos:prefLabel "exa"^^xsd:string .
+
+si:farad a si:SIUnitSpecialName ;
+    si:hasSymbol "F"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELCA> ;
+    skos:prefLabel "farad"@en,
+        "farad"@fr .
+
+si:femto a si:SIPrefix ;
+    si:hasScalingFactor 1e-15 ;
+    si:hasSymbol "f"^^xsd:string ;
+    skos:prefLabel "femto"^^xsd:string .
+
+si:giga a si:SIPrefix ;
+    si:hasScalingFactor 1e+09 ;
+    si:hasSymbol "G"^^xsd:string ;
+    skos:prefLabel "giga"^^xsd:string .
+
+si:gray a si:SIUnitSpecialName ;
+    si:hasSymbol "Gy"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ABDO> ;
+    skos:prefLabel "gray"@en,
+        "gray"@fr .
+
+si:hasDefiningConstant a owl:ObjectProperty ;
+    rdfs:label "hasDefiningConstant" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range <http://si-digital-framework.org/constants#Constant> .
+
+si:hasDefiningText a owl:DatatypeProperty ;
+    rdfs:label "hasDefiningText" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range rdfs:Literal .
+
+si:hasEndValidity a owl:DatatypeProperty ;
+    rdfs:label "hasEndValidity" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range xsd:date .
+
+si:hasFormula a owl:DatatypeProperty ;
+    rdfs:label "hasFormula" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range rdfs:Literal .
+
+si:hasScalingFactor a owl:DatatypeProperty ;
+    rdfs:label "hasScalingFactor" ;
+    rdfs:domain si:SIPrefix ;
+    rdfs:range xsd:double .
+
+si:hasStartValidity a owl:DatatypeProperty ;
+    rdfs:label "hasStartValidity" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range xsd:date .
+
+si:hasSymbol a owl:DatatypeProperty ;
+    rdfs:label "hasSymbol" ;
+    rdfs:range xsd:string .
+
+si:hecto a si:SIPrefix ;
+    si:hasScalingFactor 1e+02 ;
+    si:hasSymbol "h"^^xsd:string ;
+    skos:prefLabel "hecto"^^xsd:string .
+
+si:henry a si:SIUnitSpecialName ;
+    si:hasSymbol "H"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELIN> ;
+    skos:prefLabel "henry"@en,
+        "henry"@fr .
+
+si:hertz a si:SIUnitSpecialName ;
+    si:hasSymbol "Hz"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#FREQ> ;
+    skos:prefLabel "hertz"@en,
+        "hertz"@fr .
+
+si:isUnitOfQtyKind a owl:ObjectProperty ;
+    rdfs:label "isUnitOfQtyKind" ;
+    rdfs:domain si:MeasurementUnit ;
+    rdfs:range <http://si-digital-framework.org/quantities#QuantityKind> .
+
+si:joule a si:SIUnitSpecialName ;
+    si:hasSymbol "J"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ENGY> ;
+    skos:prefLabel "joule"@en,
+        "joule"@fr .
+
+si:katal a si:SIUnitSpecialName ;
+    si:hasSymbol "kat"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#CATA> ;
+    skos:prefLabel "katal"@en,
+        "katal"@fr .
+
+si:kelvin owl:sameAs si:kelvin2018 .
+
+si:kelvinDefinitions a skos:Collection ;
+    skos:member si:kelvin1967,
+        si:kelvin2018 ;
+    skos:prefLabel "Definitions of the kelvin"@en,
+        "Définitions du kelvin"@fr .
+
+si:kilo a si:SIPrefix ;
+    si:hasScalingFactor 1e+03 ;
+    si:hasSymbol "k"^^xsd:string ;
+    skos:prefLabel "kilo"^^xsd:string .
+
+si:kilogram owl:sameAs si:kilogram2018 .
+
+si:kilogramDefinitions a skos:Collection ;
+    skos:member si:kilogram1901,
+        si:kilogram2018 ;
+    skos:prefLabel "Definitions of the kilogram"@en,
+        "Définitions du kilogramme"@fr .
+
+si:lumen a si:SIUnitSpecialName ;
+    si:hasSymbol "lm"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LUFL> ;
+    skos:prefLabel "lumen"@en,
+        "lumen"@fr .
+
+si:lux a si:SIUnitSpecialName ;
+    si:hasSymbol "lx"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ILLU> ;
+    skos:prefLabel "lux"@en,
+        "lux"@fr .
+
+si:mega a si:SIPrefix ;
+    si:hasScalingFactor 1e+06 ;
+    si:hasSymbol "M"^^xsd:string ;
+    skos:prefLabel "mega"^^xsd:string .
+
+si:metre owl:sameAs si:metre2018 .
+
+si:metreDefinitions a skos:Collection ;
+    skos:member si:metre1889,
+        si:metre1927,
+        si:metre1960,
+        si:metre1983,
+        si:metre2018 ;
+    skos:prefLabel "Definitions of the metre"@en,
+        "Définitions du mètre"@fr .
+
+si:micro a si:SIPrefix ;
+    si:hasScalingFactor 1e-06 ;
+    si:hasSymbol "(µ)"^^xsd:string ;
+    skos:prefLabel "micro"^^xsd:string .
+
+si:milli a si:SIPrefix ;
+    si:hasScalingFactor 1e-03 ;
+    si:hasSymbol "m"^^xsd:string ;
+    skos:prefLabel "milli"^^xsd:string .
+
+si:mole owl:sameAs si:mole2018 .
+
+si:moleDefinitions a skos:Collection ;
+    skos:member si:mole1971,
+        si:mole2018 ;
+    skos:prefLabel "Definitions of the mole"@en,
+        "Définitions de la mole"@fr .
+
+si:nano a si:SIPrefix ;
+    si:hasScalingFactor 1e-09 ;
+    si:hasSymbol "n"^^xsd:string ;
+    skos:prefLabel "nano"^^xsd:string .
+
+si:newton a si:SIUnitSpecialName ;
+    si:hasSymbol "N"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#FORC> ;
+    skos:prefLabel "newton"@en,
+        "newton"@fr .
+
+si:ohm a si:SIUnitSpecialName ;
+    si:hasSymbol "\\(\\Omega\\)"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELRE> ;
+    skos:prefLabel "ohm"@en,
+        "ohm"@fr .
+
+si:pascal a si:SIUnitSpecialName ;
+    si:hasSymbol "Pa"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#PRES> ;
+    skos:prefLabel "pascal"@en,
+        "pascal"@fr .
+
+si:peta a si:SIPrefix ;
+    si:hasScalingFactor 1e+15 ;
+    si:hasSymbol "P"^^xsd:string ;
+    skos:prefLabel "peta"^^xsd:string .
+
+si:pici a si:SIPrefix ;
+    si:hasScalingFactor 1e-12 ;
+    si:hasSymbol "p"^^xsd:string ;
+    skos:prefLabel "pici"^^xsd:string .
+
+si:quecto a si:SIPrefix ;
+    si:hasScalingFactor 1e-30 ;
+    si:hasSymbol "q"^^xsd:string ;
+    skos:prefLabel "quecto"^^xsd:string .
+
+si:quetta a si:SIPrefix ;
+    si:hasScalingFactor 1e+30 ;
+    si:hasSymbol "Q"^^xsd:string ;
+    skos:prefLabel "quetta"^^xsd:string .
+
+si:radian a si:SIUnitSpecialName ;
+    si:hasSymbol "rad"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ANGP> ;
+    skos:prefLabel "radian"@en,
+        "radian"@fr .
+
+si:ronna a si:SIPrefix ;
+    si:hasScalingFactor 1e+27 ;
+    si:hasSymbol "R"^^xsd:string ;
+    skos:prefLabel "ronna"^^xsd:string .
+
+si:ronto a si:SIPrefix ;
+    si:hasScalingFactor 1e-27 ;
+    si:hasSymbol "r"^^xsd:string ;
+    skos:prefLabel "ronto"^^xsd:string .
+
+si:second owl:sameAs si:second2018 .
+
+si:secondDefinitions a skos:Collection ;
+    skos:member si:second1960,
+        si:second1967,
+        si:second2018 ;
+    skos:prefLabel "Definitions of the second"@en,
+        "Définitions de la seconde"@fr .
+
+si:siemens a si:SIUnitSpecialName ;
+    si:hasSymbol "S"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELCO> ;
+    skos:prefLabel "siemens"@en,
+        "siemens"@fr .
+
+si:sievert a si:SIUnitSpecialName ;
+    si:hasSymbol "Sv"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#DOEQ> ;
+    skos:prefLabel "sievert"@en,
+        "sievert"@fr .
+
+si:steradian a si:SIUnitSpecialName ;
+    si:hasSymbol "sr"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ANGS> ;
+    skos:prefLabel "steradian"@en,
+        "steradian"@fr .
+
+si:tera a si:SIPrefix ;
+    si:hasScalingFactor 1e+12 ;
+    si:hasSymbol "T"^^xsd:string ;
+    skos:prefLabel "tera"^^xsd:string .
+
+si:tesla a si:SIUnitSpecialName ;
+    si:hasSymbol "T"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#MGFD> ;
+    skos:prefLabel "tesla"@en,
+        "tesla"@fr .
+
+si:uetta a si:SIPrefix ;
+    si:hasScalingFactor 1e+21 ;
+    si:hasSymbol "Z"^^xsd:string ;
+    skos:prefLabel "uetta"^^xsd:string .
+
+si:volt a si:SIUnitSpecialName ;
+    si:hasSymbol "V"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELPD> ;
+    skos:prefLabel "volt"@en,
+        "volt"@fr .
+
+si:watt a si:SIUnitSpecialName ;
+    si:hasSymbol "W"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#POWR> ;
+    skos:prefLabel "watt"@en,
+        "watt"@fr .
+
+si:weber a si:SIUnitSpecialName ;
+    si:hasSymbol "Wb"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#MGFL> ;
+    skos:prefLabel "weber"@en,
+        "weber"@fr .
+
+si:yocto a si:SIPrefix ;
+    si:hasScalingFactor 1e-24 ;
+    si:hasSymbol "y"^^xsd:string ;
+    skos:prefLabel "yocto"^^xsd:string .
+
+si:yotta a si:SIPrefix ;
+    si:hasScalingFactor 1e+24 ;
+    si:hasSymbol "Y"^^xsd:string ;
+    skos:prefLabel "yotta"^^xsd:string .
+
+si:zepto a si:SIPrefix ;
+    si:hasScalingFactor 1e-21 ;
+    si:hasSymbol "z"^^xsd:string ;
+    skos:prefLabel "zepto"^^xsd:string .
+
+si:ampere1948 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM9-Res2> ;
+    si:hasDefiningText "The ampere is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 metre apart in vacuum, would produce between these conductors a force equal to \\(2 \\times 10^{−7}\\) newton per metre of length."@en,
+        "L’ampère est l’intensité d’un courant constant qui, maintenu dans deux conducteurs parallèles, rectilignes, de longueur infinie, de section circulaire négligeable et placés à une distance de 1 mètre l’un de l’autre dans le vide, produirait entre ces conducteurs une force égale à \\(2 \\times 10^{−7}\\) newton par mètre de longueur."@fr ;
+    si:hasEndValidity "2019-05-20"^^xsd:date ;
+    si:hasStartValidity "1948-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:ampere2018 ;
+    si:hasSymbol "A"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELCU> ;
+    skos:prefLabel "ampere1948"@en,
+        "ampère1948"@fr .
+
+si:candela1979 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM16-Res3> ;
+    si:hasDefiningText "The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency \\(540 \\times 10^{12}\\) hertz and that has a radiant intensity in that direction of 1/683 watt per steradian."@en,
+        "La candela est l’intensité lumineuse, dans une direction donnée, d’une source qui émet un rayonnement monochromatique de fréquence \\(540 \\times 10^{12}\\) hertz et dont l’intensité énergétique dans cette direction est 1/683 watt par stéradian."@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1979-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:candela2018 ;
+    si:hasSymbol "cd"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LUIN> ;
+    skos:prefLabel "candela1979"@en,
+        "candela1979"@fr .
+
+si:hasDefiningResolution a owl:ObjectProperty ;
+    rdfs:label "hasDefiningResolution" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range <http://si-digital-framework.org/CGPM#Resolution> ;
+    owl:inverseOf si:isDefiningResolutionOf .
+
+si:hasPreviousDefinition a owl:ObjectProperty ;
+    rdfs:label "hasPreviousDefinition" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range si:SIBaseUnit ;
+    owl:inverseOf si:hasSuccessorDefinition .
+
+si:hasSuccessorDefinition a owl:ObjectProperty ;
+    rdfs:label "hasSuccessorDefinition" ;
+    rdfs:domain si:SIBaseUnit ;
+    rdfs:range si:SIBaseUnit ;
+    owl:inverseOf si:hasPreviousDefinition .
+
+si:isDefiningResolutionOf a owl:ObjectProperty ;
+    rdfs:label "isDefiningResolutionOf" ;
+    rdfs:domain <http://si-digital-framework.org/CGPM#Resolution> ;
+    rdfs:range si:SIBaseUnit ;
+    owl:inverseOf si:hasDefiningResolution .
+
+si:kelvin1967 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM13-Res4> ;
+    si:hasDefiningText "metre2018"@en,
+        "metre1983"@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1967-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:kelvin2018 ;
+    si:hasSymbol "K"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TEMT> ;
+    skos:prefLabel "kelvin1967"@en,
+        "kelvin1967"@fr .
+
+si:kilogram1901 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM3-Res2> ;
+    si:hasDefiningText "The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram."@en,
+        "Le kilogramme est l’unité de masse ; il est égal à la masse du prototype international du kilogramme."@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1901-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:kilogram2018 ;
+    si:hasSymbol "kg"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#MASS> ;
+    skos:prefLabel "kilogram1901"@en,
+        "kilogramme1901"@fr .
+
+si:metre1889 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM1-Res1> ;
+    si:hasDefiningText "The CGPM sanctions the Prototype of the metre chosen by the CIPM. This prototype, at the temperature of melting ice, shall henceforth represent the metric unit of length."@en ;
+    si:hasEndValidity "1927-05-19"^^xsd:date ;
+    si:hasStartValidity "1889-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:metre1927 ;
+    si:hasSymbol "m"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LENG> ;
+    skos:prefLabel "metre1889"@en,
+        "mètre1889"@fr .
+
+si:mole1971 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM14-Res3> ;
+    si:hasDefiningText "1. The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is “mol”. 2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles."@en,
+        "1. La mole est la quantité de matière d’un système contenant autant d’entités élémentaires qu’il y a d’atomes dans 0,012 kilogramme de carbone 12 ; son symbole est « mol ». 2. Lorsqu’on emploie la mole, les entités élémentaires doivent être spécifiées et peuvent être des atomes, des molécules, des ions, des électrons, d’autres particules ou des groupements spécifiés de telles particules."@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1971-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:mole2018 ;
+    si:hasSymbol "mol"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#AMSU> ;
+    skos:prefLabel "mole1971"@en,
+        "mole1971"@fr .
+
+si:second1960 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM11-Res9> ;
+    si:hasDefiningText "La seconde est la fraction 1/31556925,9747 de l'année tropique pour 1900 janvier 0 à 12 heures de temps des éphémérides"@fr ;
+    si:hasEndValidity "1967-05-19"^^xsd:date ;
+    si:hasStartValidity "1960-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:second1967 ;
+    si:hasSymbol "s"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TIME> ;
+    skos:prefLabel "second1960"@en,
+        "seconde1960"@fr .
+
+si:metre1927 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM7-Res1> ;
+    si:hasDefiningText "The unit of length is the metre, defined by the distance, at 0°, between the axes of the two central lines marked on the bar of platinum-iridium kept at the Bureau International des Poids et Mesures and declared Prototype of the metre by the 1st Conférence Générale des Poids et Mesures, this bar being subject to standard atmospheric pressure and supported on two cylinders of at least one centimetre diameter, symmetrically placed in the same horizontal plane at a distance of 571 mm from each other."@en ;
+    si:hasEndValidity "1960-05-19"^^xsd:date ;
+    si:hasStartValidity "1927-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:metre1960 ;
+    si:hasSymbol "m"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LENG> ;
+    skos:prefLabel "metre1927"@en,
+        "mètre1927"@fr .
+
+si:metre1960 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM11-Res6> ;
+    si:hasDefiningText "The metre is the length equal to \\(1\\,650\\,763.73\\) wavelengths in vacuum of the radiation corresponding to the transition between the levels 2p10 and 5d5 of the krypton 86 atom."@en,
+        "Le mètre est la longueur egale à \\(1\\,650\\,763,73\\) longueurs d&apos;onde dans le vide de la radiation correspondant ala transition entre les niveaux 2p10 et 5d5 de l&apos;atome de krypton 86"@fr ;
+    si:hasEndValidity "1983-05-19"^^xsd:date ;
+    si:hasStartValidity "1960-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:metre1983 ;
+    si:hasSymbol "m"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LENG> ;
+    skos:prefLabel "metre1960"@en,
+        "mètre1960"@fr .
+
+si:metre1983 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM17-Res1> ;
+    si:hasDefiningText "The metre is the length of the path travelled by light in vacuum during a time interval of \\(1/299\\,792\\,458\\) of a second."@en,
+        "Le mètre est la longueur du trajet parcouru dans le vide par la lumière pendant une durée de \\(1/299\\,792\\,458\\) de seconde."@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1983-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:metre2018 ;
+    si:hasSymbol "m"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LENG> ;
+    skos:prefLabel "metre1983"@en,
+        "mètre1983"@fr .
+
+si:second1967 a si:SIBaseUnit ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM13-Res1> ;
+    si:hasDefiningText "The second is the duration of \\(9\\,192\\,631\\,770\\) periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom."@en,
+        "La seconde est la durée de \\(9\\,192\\,631\\,770\\) périodes de la radiation correspondant à la transition entre les deux niveaux hyperfins de l’état fondamental de l’atome de césium 133."@fr ;
+    si:hasEndValidity "2019-05-19"^^xsd:date ;
+    si:hasStartValidity "1967-05-20"^^xsd:date ;
+    si:hasSuccessorDefinition si:second2018 ;
+    si:hasSymbol "s"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TIME> ;
+    skos:prefLabel "second1967"@en,
+        "seconde1967"@fr .
+
+si:ampere2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#ElementaryCharge> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The ampere, symbol \\(\\textrm{A}\\), is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge, \\(e\\), to be \\(1.602\\,176\\,634 \\times 10^{−19}\\) when expressed in the unit \\(\\textrm{C}\\), which is equal to \\(\\textrm{A}\\, \\textrm{s}\\), where the second is defined in terms of \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@en,
+        "L’ampère, symbole \\(\\textrm{A}\\), est l’unité de courant électrique du SI. Il est défini en prenant la valeur numérique fixée de la charge élémentaire, \\(e\\), égale à \\(1,602\\,176\\,634 \\times 10^{−19}\\) lorsqu’elle est exprimée en \\(\\textrm{C}\\), unité égale à \\(\\textrm{A}\\, \\textrm{s}\\), la seconde étant définie en fonction de \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@fr ;
+    si:hasFormula "1\\: \\textrm{A} = \\left( \\frac{e}{1.602\\,176\\,634 \\times 10^{-19}}\\right) \\textrm{s}^{-1}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "A"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#ELCU> ;
+    skos:prefLabel "ampere2018"@en,
+        "ampère2018"@fr .
+
+si:candela2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#LuminousEfficacy> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The candela, symbol \\(\\textrm{cd}\\), is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency \\(540 \\times 10^{12}\\, \\textrm{Hz, }K_{\\textrm{cd}}\\), to be 683 when expressed in the unit \\(\\textrm{lm}\\, \\textrm{W}^{−1}\\), which is equal to \\(\\textrm{cd}\\, \\textrm{sr}\\,\\textrm{W}^{−1}\\), or \\(\\textrm{cd}\\, \\textrm{sr}\\, \\textrm{kg}^{−1}\\, \\textrm{m}^{−2}\\, \\textrm{s}^{3}\\), where the kilogram, metre and second are defined in terms of \\(h, c\\) and \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@en,
+        "La candela, symbole \\(\\textrm{cd}\\), est l’unité du SI d’intensité lumineuse dans une direction donnée. Elle est définie en prenant la valeur numérique fixée de l’efficacité lumineuse d’un rayonnement monochromatique de fréquence \\(540 \\times 10^{12}\\, \\textrm{Hz, }K_{\\textrm{cd}}\\), égale à 683 lorsqu’elle est exprimée en \\(\\textrm{lm}\\, \\textrm{W}^{−1}\\), unité égale à \\(\\textrm{cd}\\, \\textrm{sr}\\,\\textrm{W}^{−1}\\), ou \\(\\textrm{cd}\\, \\textrm{sr}\\, \\textrm{kg}^{−1}\\, \\textrm{m}^{−2}\\, \\textrm{s}^{3}\\), le kilogramme, le mètre et la seconde étant définis en fonction de \\(h, c\\) et \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@fr ;
+    si:hasFormula "1\\;\\textrm{cd}=\\left( \\frac{K_{\\textrm{cd}}}{683}\\right) \\textrm{kg}\\;\\textrm{m}^2\\;\\text{s}^{-3}\\;\\textrm{sr}^{-1}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "cd"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LUIN> ;
+    skos:prefLabel "candela2018"@en,
+        "candela2018"@fr .
+
+si:kelvin2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#BoltzmannConstant> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The kelvin, symbol \\(\\textrm{K}\\), is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant, \\(k\\), to be \\(1.380\\,649 \\times 10^{−23}\\) when expressed in the unit \\(\\textrm{J}\\, \\textrm{K}^{−1}\\), which is equal to \\(\\textrm{kg}\\, \\textrm{m}^{2}\\, \\textrm{s}^{−2}\\, \\textrm{K}^{−1}\\), where the kilogram, metre and second are defined in terms of \\(h, c\\) and \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@en,
+        "Le kelvin, symbole \\(\\textrm{K}\\), est l’unité de température thermodynamique du SI. Il est défini en prenant la valeur numérique fixée de la constante de Boltzmann, \\(k\\), égale à \\(1,380\\,649 \\times 10^{−23}\\) lorsqu’elle est exprimée en \\(\\textrm{J}\\, \\textrm{K}^{−1}\\), unité égale à \\(\\textrm{kg}\\, \\textrm{m}^{2}\\, \\textrm{s}^{−2}\\, \\textrm{K}^{−1}\\), le kilogramme, le mètre et la seconde étant définis en fonction de \\(h, c\\) et \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@fr ;
+    si:hasFormula "1\\;\\textrm{K} = \\left( \\frac{1.380\\,649 \\times 10^{-23}}{k} \\right) \\textrm{kg}\\:\\textrm{m}^2\\:\\textrm{s}^{-2}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "K"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TEMT> ;
+    skos:prefLabel "kelvin2018"@en,
+        "kelvin2018"@fr .
+
+si:kilogram2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#PlanckConstant> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The kilogram, symbol \\(\\textrm{kg}\\), is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant, \\(h\\), to be \\(6.626\\,070\\,15 \\times 10^{-34}\\) when expressed in the unit \\(\\textrm{J}\\, \\textrm{s}\\), which is equal to \\(\\text{kg}\\, \\textrm{m}^{2}\\, \\textrm{s}^{−1}\\), where the metre and the second are defined in terms of \\(c\\) and \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@en,
+        "Le kilogramme, symbole \\(\\textrm{kg}\\), est l’unité de masse du SI. Il est défini en prenant la valeur numérique fixée de la constante de Planck, \\(h\\), égale à \\(6,626\\,070\\,15 \\times 10^{-34}\\) lorsqu’elle est exprimée en \\(\\textrm{J}\\, \\textrm{s}\\), unité égale à \\(\\text{kg}\\, \\textrm{m}^{2}\\, \\textrm{s}^{−1}\\), le mètre et la seconde étant définis en fonction de \\(c\\) et \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@fr ;
+    si:hasFormula "1\\;\\textrm{kg} = \\left(\\frac{h}{6.626\\,070\\,15 \\times 10^{-34}}\\right)\\textrm{m}^2\\, \\textrm{s}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "kg"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#MASS> ;
+    skos:prefLabel "kilogram2018"@en,
+        "kilogramme2018"@fr .
+
+si:metre2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#SpeedOfLight> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The metre, symbol \\(\\textrm{m}\\), is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum, \\(c\\), to be 299 792 458 when expressed in the unit \\(\\textrm{m}\\, \\textrm{s}^{−1}\\), where the second is defined in terms of the caesium frequency \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@en,
+        "Le mètre, symbole \\(\\textrm{m}\\), est l’unité de longueur du SI. Il est défini en prenant la valeur numérique fixée de la vitesse de la lumière dans le vide, \\(c\\), égale à 299 792 458 lorsqu’elle est exprimée en \\(\\textrm{m}\\, \\textrm{s}^{−1}\\), la seconde étant définie en fonction de \\(\\Delta \\nu_{\\textrm{Cs}}\\)."@fr ;
+    si:hasFormula "1\\; \\textrm{m} = \\left(\\frac{c}{299\\,792\\,458}\\right)\\textrm{s}=\\frac{9\\,192\\,631\\,770}{299\\,792\\,458}\\frac{c}{\\Delta \\nu_{\\textrm{Cs}}}\\approx 30.663\\,319 \\frac{c}{\\Delta \\nu_{\\textrm{Cs}}}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "m"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#LENG> ;
+    skos:prefLabel "metre2018"@en,
+        "mètre2018"@fr .
+
+si:mole2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#AvogadroConstant> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The mole, symbol \\(\\textrm{mol}\\), is the SI unit of amount of substance. One mole contains exactly \\(6.022\\,140\\,76 \\times 10^{23}\\) elementary entities. This number is the fixed numerical value of the Avogadro constant, \\(N_{A}\\), when expressed in the unit \\(\\textrm{mol}^{−1}\\) and is called the Avogadro number. The amount of substance, symbol \\(n\\), of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en,
+        "La mole, symbole \\(\\textrm{mol}\\), est l’unité de quantité de matière du SI. Une mole contient lsement \\(6,022\\,140\\,76 \\times 10^{23}\\) entités élémentaires. Ce nombre, appelé «nombre d’Avogadro», correspond à la valeur numérique fixée de la constante d’Avogadro, \\(N_{A}\\), lorsqu’elle est exprimée en \\(\\textrm{mol}^{−1}\\). La quantité de matière, symbole \\(n\\), d’un système est une représentation du nombre d’entités élémentaires spécifiées. Une entité élémentaire peut être un atome, une molécule, un ion, un électron, ou toute autre particule ou groupement spécifié de particules."@fr ;
+    si:hasFormula "1\\; \\textrm{mol}=\\left( \\frac{6.022\\,140\\,76 \\times 10^{23}}{N_A} \\right)"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "mol"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#AMSU> ;
+    skos:prefLabel "mole2018"@en,
+        "mole2018"@fr .
+
+si:second2018 a si:SIBaseUnit ;
+    si:hasDefiningConstant <http://si-digital-framework.org/constants#HyperfineTransitionFrequencyOfCs-133> ;
+    si:hasDefiningResolution <http://si-digital-framework.org/CGPM#CGPM26-Res1> ;
+    si:hasDefiningText "The second, symbol \\(\\textrm{s}\\), is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency, \\(\\Delta \\nu_{\\textrm{Cs}}\\), the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9 192 631 770 when expressed in the unit \\(\\textrm{Hz}\\), which is equal to \\(\\textrm{s}^{−1}\\)."@en,
+        "La seconde, symbole \\(\\textrm{s}\\), est l’unité de temps du SI. Elle est définie en prenant la valeur numérique fixée de la fréquence du césium, \\(\\Delta \\nu_{\\textrm{Cs}}\\), la fréquence de la transition hyperfine de l’état fondamental de l’atome de césium 133 non perturbé, égale à 9 192 631 770 lorsqu’elle est exprimée en \\(\\textrm{Hz}\\), unité égale à \\(\\textrm{s}^{−1}\\)."@fr ;
+    si:hasFormula "1 \\, \\textrm{Hz} = \\frac{\\Delta \\nu_{\\textrm{Cs}}}{9\\,192\\,631\\,770} \\; \\; \\textrm{or}\\; \\;1\\,\\textrm{s} =  \\frac{9\\,192\\,631\\,770}{\\Delta \\nu_{\\textrm{Cs}}}"^^xsd:string ;
+    si:hasStartValidity "2019-05-20"^^xsd:date ;
+    si:hasSymbol "s"^^xsd:string ;
+    si:isUnitOfQtyKind <http://si-digital-framework.org/quantities#TIME> ;
+    skos:prefLabel "second2018"@en,
+        "seconde2018"@fr .
+
+si:MeasurementUnit a skos:Concept ;
+    rdfs:isDefinedBy "VIM3 1.9"^^xsd:string ;
+    owl:disjointWith si:SIPrefix ;
+    skos:prefLabel "measurement unit"@en,
+        "unité de mesure"@fr .
+
+si:SIUnitSpecialName rdfs:subClassOf si:MeasurementUnit ;
+    skos:prefLabel "SI unit with special name"@en,
+        "unité SI avec nom spécial"@fr .
+
+si:SIPrefix a skos:Concept ;
+    skos:prefLabel "SIPrefix"^^xsd:string .
+
+si:SIBaseUnit rdfs:isDefinedBy "VIM3 1.10"^^xsd:string ;
+    rdfs:subClassOf si:MeasurementUnit ;
+    owl:disjointWith si:SIUnitSpecialName ;
+    skos:prefLabel "base unit"@en,
+        "unité de base"@fr .
+
