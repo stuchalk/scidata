@@ -96,6 +96,10 @@
 			"@id": "si:hasDefiningText",
 			"@type": "string"
 		},
+		"publication": {
+			"@id": "si:hasDefiningPublication",
+			"@type": "string"
+		},
 		"equation": {
 			"@id": "si:hasFormula",
 			"@type": "string"
