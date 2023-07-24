@@ -1,7 +1,7 @@
 {
     "@context": [
         {
-            "@vocab": "https://www.w3.org/2001/XMLSchema#",
+            "@vocab": "http://www.w3.org/2001/XMLSchema#",
             "cif-": "http://emmo.info/emmo/cif-ddl#",
             "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
             "dct": "http://purl.org/dc/terms/",
