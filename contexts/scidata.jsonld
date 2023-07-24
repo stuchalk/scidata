@@ -10,7 +10,7 @@
 			"foaf": "http://xmlns.com/foaf/0.1/",
 			"bibo": "http://purl.obolibrary.org/obo/bibo/",
 			"schema": "https://schema.org/",
-			"xsd": "http://www.w3.org/2001/XMLSchema#",
+			"xsd": "https://www.w3.org/2001/XMLSchema#",
 			"qudt": "https://qudt.org/vocab/unit/",
 			"prov": "http://www.w3.org/ns/prov#",
 			"edam": "https://edamontology.org/EDAM.owl#",
