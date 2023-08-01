@@ -10,6 +10,10 @@
             "@id": "sio:SIO_000118",
             "@type": "string"
         },
+        "chemname": {
+            "@id": "sio:SIO_000118",
+            "@type": "string"
+        },
         "iupacname": {
             "@id": "cheminf:CHEMINF_000107",
             "@type": "string"
