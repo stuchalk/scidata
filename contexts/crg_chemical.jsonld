@@ -61,14 +61,6 @@
 			"@id": "sdo:isExperimentalDataOf",
 			"@type": "@id"
 		},
-		"substance": {
-			"@id": "sdo:isSampleOf",
-			"@type": "string"
-		},
-		"substance#": {
-			"@id": "sdo:isSampleOf",
-			"@type": "@id"
-		},
         "properties": {
             "@id": "sdo:property",
             "@container": "@set"

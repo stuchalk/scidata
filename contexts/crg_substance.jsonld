@@ -54,6 +54,14 @@
             "@id": "cheminf:CHEMINF_000446",
             "@type": "string"
         },
+        "substance": {
+            "@id": "sdo:isSampleOf",
+            "@type": "string"
+        },
+        "substance#": {
+            "@id": "sdo:isSampleOf",
+            "@type": "@id"
+        },
         "type": {
             "@id": "obo:NCIT_C25346",
             "@type": "string"
