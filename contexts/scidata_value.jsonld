@@ -101,6 +101,14 @@
                 "@type": "double",
                 "@container": "@set"
             },
+            "significand":{
+                "@id": "sdo:significand",
+                "@type": "string"
+            },
+            "exponent":{
+                "@id": "sdo:exponent",
+                "@type": "string"
+            },
             "unit": {
                 "@id": "sdo:unitOfMeasurement",
                 "@type": "string"
