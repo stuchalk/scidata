@@ -92,6 +92,14 @@
 				"@id": "sdo:unitOfMeasurement",
 				"@type": "@id"
 			},
+			"angle_beta_su": {
+				"@id": "cif-:_cell.angle_beta",
+				"@type": "float"
+			},
+			"angle_beta_su_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
+			},
 			"angle_dha": {
 				"@id": "cif-:_geom_hbond.angle_DHA",
 				"@type": "float"
