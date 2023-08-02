@@ -14,11 +14,11 @@
 			},
 			"abs_structure_flack": {
 				"@id": "cif-:_refine_ls.abs_structure_Flack",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"abs_structure_rogers": {
 				"@id": "cif-:_refine_ls.abs_structure_Rogers",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"absolute_configuration": {
 				"@id": "cif-:_chemical.absolute_configuration",
@@ -50,7 +50,7 @@
 			},
 			"ambient_pressure": {
 				"@id": "cif-:_diffrn.ambient_pressure",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ambient_pressure_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -58,7 +58,7 @@
 			},
 			"ambient_temperature": {
 				"@id": "cif-:_diffrn.ambient_temperature",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ambient_temperature_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -70,7 +70,7 @@
 			},
 			"angle": {
 				"@id": "cif-:_geom_torsion.angle",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"angle_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -78,7 +78,7 @@
 			},
 			"angle_alpha": {
 				"@id": "cif-:_cell.angle_alpha",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"angle_alpha_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -86,7 +86,7 @@
 			},
 			"angle_beta": {
 				"@id": "cif-:_cell.angle_beta",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"angle_beta_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -94,7 +94,7 @@
 			},
 			"angle_dha": {
 				"@id": "cif-:_geom_hbond.angle_DHA",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"angle_dha_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -102,7 +102,7 @@
 			},
 			"angle_gamma": {
 				"@id": "cif-:_cell.angle_gamma",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"angle_gamma_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -110,7 +110,7 @@
 			},
 			"area_resol_mean": {
 				"@id": "cif-:_diffrn_detector.area_resol_mean",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"area_resol_mean_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -150,15 +150,15 @@
 			},
 			"av_r_equivalents": {
 				"@id": "cif-:_diffrn_reflns.av_R_equivalents",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"av_suneti_over_neti": {
 				"@id": "cif-:_diffrn_reflns.av_sunetI_over_netI",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"b_iso_or_equiv": {
 				"@id": "cif-:_atom_site.B_iso_or_equiv",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"b_iso_or_equiv_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -170,7 +170,7 @@
 			},
 			"bond_distance": {
 				"@id": "cif-:_geom_bond.distance",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"bond_distance_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -214,7 +214,7 @@
 			},
 			"coefficient_mu": {
 				"@id": "cif-:_exptl_absorpt.coefficient_mu",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"coefficient_mu_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -238,7 +238,7 @@
 			},
 			"cont_distance": {
 				"@id": "cif-:_geom_contact.distance",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cont_distance_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -254,11 +254,11 @@
 			},
 			"correction_t_max": {
 				"@id": "cif-:_exptl_absorpt.correction_T_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"correction_t_min": {
 				"@id": "cif-:_exptl_absorpt.correction_T_min",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"correction_type": {
 				"@id": "cif-:_exptl_absorpt.correction_type",
@@ -274,39 +274,39 @@
 			},
 			"cromer_mann_a1": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_a1",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_a2": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_a2",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_a3": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_a3",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_a4": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_a4",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_b1": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_b1",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_b2": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_b2",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_b3": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_b3",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_b4": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_b4",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"cromer_mann_c": {
 				"@id": "cif-:_atom_type_scat.Cromer_Mann_c",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"crystal_system": {
 				"@id": "cif-:_space_group.crystal_system",
@@ -318,7 +318,7 @@
 			},
 			"current": {
 				"@id": "cif-:_diffrn_source.current",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"current_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -326,7 +326,7 @@
 			},
 			"d_res_high": {
 				"@id": "cif-:_refine_ls.d_res_high",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"d_res_high_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -334,7 +334,7 @@
 			},
 			"d_res_low": {
 				"@id": "cif-:_refine_ls.d_res_low",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"d_res_low_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -342,7 +342,7 @@
 			},
 			"d_resolution_high": {
 				"@id": "cif-:_reflns.d_resolution_high",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"d_resolution_high_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -350,7 +350,7 @@
 			},
 			"d_resolution_low": {
 				"@id": "cif-:_reflns.d_resolution_low",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"d_resolution_low_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -358,7 +358,7 @@
 			},
 			"d_spacing": {
 				"@id": "cif-:_refln.d_spacing",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"d_spacing_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -374,7 +374,7 @@
 			},
 			"decay_percent": {
 				"@id": "cif-:_diffrn_standards.decay_percent",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"defn": {
 				"@id": "cif-:_publ_manuscript_incl_extra.defn",
@@ -382,7 +382,7 @@
 			},
 			"density_diffrn": {
 				"@id": "cif-:_exptl_crystal.density_diffrn",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_diffrn_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -390,7 +390,7 @@
 			},
 			"density_max": {
 				"@id": "cif-:_refine_diff.density_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_max_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -398,7 +398,7 @@
 			},
 			"density_meas": {
 				"@id": "cif-:_exptl_crystal.density_meas",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_meas_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -406,7 +406,7 @@
 			},
 			"density_meas_temp": {
 				"@id": "cif-:_exptl_crystal.density_meas_temp",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_meas_temp_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -418,7 +418,7 @@
 			},
 			"density_min": {
 				"@id": "cif-:_refine_diff.density_min",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_min_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -426,7 +426,7 @@
 			},
 			"density_rms": {
 				"@id": "cif-:_refine_diff.density_RMS",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"density_rms_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -494,11 +494,11 @@
 			},
 			"dispersion_imag": {
 				"@id": "cif-:_atom_type_scat.dispersion_imag",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"dispersion_real": {
 				"@id": "cif-:_atom_type_scat.dispersion_real",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"dispersion_source": {
 				"@id": "cif-:_atom_type_scat.dispersion_source",
@@ -506,7 +506,7 @@
 			},
 			"distance_da": {
 				"@id": "cif-:_geom_hbond.distance_DA",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"distance_da_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -514,7 +514,7 @@
 			},
 			"distance_dh": {
 				"@id": "cif-:_geom_hbond.distance_DH",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"distance_dh_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -522,7 +522,7 @@
 			},
 			"distance_ha": {
 				"@id": "cif-:_geom_hbond.distance_HA",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"distance_ha_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -562,7 +562,7 @@
 			},
 			"extinction_coef": {
 				"@id": "cif-:_refine_ls.extinction_coef",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"extinction_expression": {
 				"@id": "cif-:_refine_ls.extinction_expression",
@@ -574,27 +574,27 @@
 			},
 			"f_000": {
 				"@id": "cif-:_exptl_crystal.F_000",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_calc": {
 				"@id": "cif-:_refln.F_calc",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_meas": {
 				"@id": "cif-:_refln.F_meas",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_meas_su": {
 				"@id": "cif-:_refln.F_meas_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_squared_calc": {
 				"@id": "cif-:_refln.F_squared_calc",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_squared_meas": {
 				"@id": "cif-:_refln.F_squared_meas",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"f_squared_meas_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -602,11 +602,11 @@
 			},
 			"f_squared_meas_su": {
 				"@id": "cif-:_refln.F_squared_meas_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"face_perp_dist": {
 				"@id": "cif-:_exptl_crystal_face.perp_dist",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"face_perp_dist_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -630,27 +630,27 @@
 			},
 			"fract_x": {
 				"@id": "cif-:_atom_site.fract_x",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"fract_y": {
 				"@id": "cif-:_atom_site.fract_y",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"fract_z": {
 				"@id": "cif-:_atom_site.fract_z",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"friedel_coverage": {
 				"@id": "cif-:_reflns.Friedel_coverage",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"friedel_fraction_full": {
 				"@id": "cif-:_reflns.Friedel_fraction_full",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"friedel_fraction_max": {
 				"@id": "cif-:_reflns.Friedel_fraction_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"from_coeditor": {
 				"@id": "cif-:_journal_date.from_coeditor",
@@ -662,7 +662,7 @@
 			},
 			"geom_ang_value": {
 				"@id": "cif-:_geom_angle.value",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"geom_ang_value_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -670,15 +670,15 @@
 			},
 			"goodness_of_fit_all": {
 				"@id": "cif-:_refine_ls.goodness_of_fit_all",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"goodness_of_fit_gt": {
 				"@id": "obo:STATO_0000191",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"goodness_of_fit_ref": {
 				"@id": "cif-:_refine_ls.goodness_of_fit_ref",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"group_code": {
 				"@id": "cif-:_reflns_scale.group_code",
@@ -726,15 +726,15 @@
 			},
 			"intensity_calc": {
 				"@id": "cif-:_refln.intensity_calc",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"intensity_meas": {
 				"@id": "cif-:_refln.intensity_meas",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"intensity_meas_su": {
 				"@id": "cif-:_refln.intensity_meas_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"interval_count": {
 				"@id": "cif-:_diffrn_standards.interval_count",
@@ -746,7 +746,7 @@
 			},
 			"interval_time": {
 				"@id": "cif-:_diffrn_standards.interval_time",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"interval_time_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -786,15 +786,15 @@
 			},
 			"laue_measured_fraction_full": {
 				"@id": "cif-:_diffrn_reflns.Laue_measured_fraction_full",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"laue_measured_fraction_max": {
 				"@id": "cif-:_diffrn_reflns.Laue_measured_fraction_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_a": {
 				"@id": "cif-:_cell.length_a",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_a_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -802,7 +802,7 @@
 			},
 			"length_a_su": {
 				"@id": "cif-:_cell.length_a_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_a_su_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -810,7 +810,7 @@
 			},
 			"length_b": {
 				"@id": "cif-:_cell.length_b",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_b_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -818,7 +818,7 @@
 			},
 			"length_b_su": {
 				"@id": "cif-:_cell.length_b_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_b_su_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -826,7 +826,7 @@
 			},
 			"length_c": {
 				"@id": "cif-:_cell.length_c",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_c_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -834,7 +834,7 @@
 			},
 			"length_c_su": {
 				"@id": "cif-:_cell.length_c_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"length_c_su_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -842,7 +842,7 @@
 			},
 			"length_neutron": {
 				"@id": "cif-:_atom_type_scat.length_neutron",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"limit_h_max": {
 				"@id": "obo:NCIT_C25390",
@@ -878,19 +878,19 @@
 			},
 			"meas_intensity": {
 				"@id": "cif-:_reflns_scale.meas_intensity",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"measured_fraction_theta_full": {
 				"@id": "cif-:_diffrn.measured_fraction_theta_full",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"measured_fraction_theta_max": {
 				"@id": "cif-:_diffrn.measured_fraction_theta_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"melting_point": {
 				"@id": "cif-:_chemical.melting_point",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"melting_point_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -898,7 +898,7 @@
 			},
 			"melting_point_gt": {
 				"@id": "cif-:_chemical.melting_point_gt",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"melting_point_gt_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -906,7 +906,7 @@
 			},
 			"melting_point_lt": {
 				"@id": "cif-:_chemical.melting_point_lt",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"melting_point_lt_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -982,7 +982,7 @@
 			},
 			"number_in_cell": {
 				"@id": "cif-:_atom_type.number_in_cell",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"number_parameters": {
 				"@id": "cif-:_refine_ls.number_parameters",
@@ -1002,7 +1002,7 @@
 			},
 			"occupancy": {
 				"@id": "cif-:_atom_site.occupancy",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"operation_xyz": {
 				"@id": "edm:operation_0004",
@@ -1030,7 +1030,7 @@
 			},
 			"phase_calc": {
 				"@id": "cif-:_refln.phase_calc",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"phase_calc_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1042,15 +1042,15 @@
 			},
 			"point_measured_fraction_full": {
 				"@id": "cif-:_diffrn_reflns.point_measured_fraction_full",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"point_measured_fraction_max": {
 				"@id": "cif-:_diffrn_reflns.point_measured_fraction_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"polarisn_norm": {
 				"@id": "cif-:_diffrn_radiation.polarisn_norm",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"polarisn_norm_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1058,11 +1058,11 @@
 			},
 			"polarisn_ratio": {
 				"@id": "cif-:_diffrn_radiation.polarisn_ratio",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"power": {
 				"@id": "cif-:_diffrn_source.power",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"power_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1074,7 +1074,7 @@
 			},
 			"pressure": {
 				"@id": "cif-:_cell_measurement.pressure",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"pressure_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1122,23 +1122,23 @@
 			},
 			"r_factor_all": {
 				"@id": "cif-:_refine_ls.R_factor_all",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"r_factor_gt": {
 				"@id": "obo:STATO_0000234",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"r_fsqd_factor": {
 				"@id": "cif-:_refine_ls.R_Fsqd_factor",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"r_i_factor": {
 				"@id": "cif-:_refine_ls.R_I_factor",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"rad_wave_value": {
 				"@id": "cif-:_diffrn_radiation_wavelength.value",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"rad_wave_value_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1150,7 +1150,7 @@
 			},
 			"radius_bond": {
 				"@id": "cif-:_atom_type.radius_bond",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"radius_bond_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1198,11 +1198,11 @@
 			},
 			"restrained_s_all": {
 				"@id": "cif-:_refine_ls.restrained_S_all",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"restrained_s_gt": {
 				"@id": "obo:STATO_0000034",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"scale_group_code": {
 				"@id": "cif-:_refln.scale_group_code",
@@ -1210,15 +1210,15 @@
 			},
 			"shift_over_su_max": {
 				"@id": "obo:NCIT_C71478",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"shift_over_su_mean": {
 				"@id": "obo:NCIT_C71478",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"sin_theta_over_lambda": {
 				"@id": "cif-:_refln.sin_theta_over_lambda",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"sin_theta_over_lambda_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1266,7 +1266,7 @@
 			},
 			"size_length": {
 				"@id": "cif-:_exptl_crystal.size_length",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"size_length_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1274,7 +1274,7 @@
 			},
 			"size_max": {
 				"@id": "cif-:_exptl_crystal.size_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"size_max_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1282,7 +1282,7 @@
 			},
 			"size_mid": {
 				"@id": "cif-:_exptl_crystal.size_mid",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"size_mid_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1290,7 +1290,7 @@
 			},
 			"size_min": {
 				"@id": "cif-:_exptl_crystal.size_min",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"size_min_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1298,7 +1298,7 @@
 			},
 			"size_rad": {
 				"@id": "cif-:_exptl_crystal.size_rad",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"size_rad_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1378,7 +1378,7 @@
 			},
 			"temperature": {
 				"@id": "cif-:_cell_measurement.temperature",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"temperature_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1390,7 +1390,7 @@
 			},
 			"theta_full": {
 				"@id": "cif-:_diffrn_reflns.theta_full",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"theta_full_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1398,11 +1398,11 @@
 			},
 			"theta_max": {
 				"@id": "obo:NCIT_C67505",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"theta_min": {
 				"@id": "obo:NCIT_C67505",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"threshold_expression": {
 				"@id": "obo:NCIT_C48228",
@@ -1422,11 +1422,11 @@
 			},
 			"transmission_factor_max": {
 				"@id": "cif-:_exptl.transmission_factor_max",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"transmission_factor_min": {
 				"@id": "cif-:_exptl.transmission_factor_min",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"type": {
 				"@id": "dct:type",
@@ -1438,7 +1438,7 @@
 			},
 			"u_11": {
 				"@id": "cif-:_atom_site_aniso.U_11",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_11_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1446,7 +1446,7 @@
 			},
 			"u_12": {
 				"@id": "cif-:_atom_site_aniso.U_12",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_12_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1454,7 +1454,7 @@
 			},
 			"u_13": {
 				"@id": "cif-:_atom_site_aniso.U_13",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_13_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1462,7 +1462,7 @@
 			},
 			"u_22": {
 				"@id": "cif-:_atom_site_aniso.U_22",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_22_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1470,7 +1470,7 @@
 			},
 			"u_23": {
 				"@id": "cif-:_atom_site_aniso.U_23",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_23_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1478,7 +1478,7 @@
 			},
 			"u_33": {
 				"@id": "cif-:_atom_site_aniso.U_33",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_33_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1486,7 +1486,7 @@
 			},
 			"u_iso_or_equiv": {
 				"@id": "cif-:_atom_site.U_iso_or_equiv",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"u_iso_or_equiv_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1494,39 +1494,39 @@
 			},
 			"ub_11": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_11",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_12": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_12",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_13": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_13",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_21": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_21",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_22": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_22",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_23": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_23",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_31": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_31",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_32": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_32",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"ub_33": {
 				"@id": "cif-:_diffrn_orient_matrix.UB_33",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"update_record": {
 				"@id": "cif-:_audit.update_record",
@@ -1538,7 +1538,7 @@
 			},
 			"voltage": {
 				"@id": "cif-:_diffrn_source.voltage",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"voltage_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1546,7 +1546,7 @@
 			},
 			"volume": {
 				"@id": "cif-:_cell.volume",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"volume_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1554,7 +1554,7 @@
 			},
 			"volume_su": {
 				"@id": "cif-:_cell.volume_su",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"volume_su_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1562,7 +1562,7 @@
 			},
 			"wavelength": {
 				"@id": "cif-:_cell_measurement.wavelength",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"wavelength_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1570,7 +1570,7 @@
 			},
 			"weight": {
 				"@id": "cif-:_chemical_formula.weight",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"weight_unit#": {
 				"@id": "sdo:unitOfMeasurement",
@@ -1586,19 +1586,19 @@
 			},
 			"wr_factor_all": {
 				"@id": "cif-:_refine_ls.wR_factor_all",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"wr_factor_gt": {
 				"@id": "obo:STATO_0000234",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"wr_factor_ref": {
 				"@id": "cif-:_refine_ls.wR_factor_ref",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"wt": {
 				"@id": "cif-:_diffrn_radiation_wavelength.wt",
-				"@type": "decimal"
+				"@type": "float"
 			},
 			"wyckoff_symbol": {
 				"@id": "cif-:_atom_site.Wyckoff_symbol",
