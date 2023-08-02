@@ -29,7 +29,7 @@
         },
         "constituents": {
             "@id": "igb:C01281",
-            "@type": {"@container": "@set"}
+            "@container": "@set"
         },
         "constituent": {
             "@id": "igb:C01281",
@@ -53,7 +53,7 @@
         },
         "properties": {
             "@id": "sdo:property",
-            "@type": {"@container": "@set"}
+            "@container": "@set"
         }
     }
 }
