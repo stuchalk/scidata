@@ -93,7 +93,7 @@
 				"@type": "@id"
 			},
 			"angle_beta_su": {
-				"@id": "cif-:_cell.angle_beta",
+				"@id": "cif-:_cell.angle_beta_su",
 				"@type": "float"
 			},
 			"angle_beta_su_unit#": {
