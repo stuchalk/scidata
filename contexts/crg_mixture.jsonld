@@ -28,8 +28,7 @@
             "@type": "@id"
         },
         "constituents": {
-            "@id": "igb:C01281",
-            "@container": "@set"
+            "@id": "igb:C01281"
         },
         "constituent": {
             "@id": "igb:C01281",
@@ -52,8 +51,8 @@
             "@type": "@id"
         },
         "properties": {
-            "@id": "sdo:property",
-            "@container": "@set"
+            "@id": "sdo:property"
+
         }
     }
 }
