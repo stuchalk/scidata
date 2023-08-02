@@ -1508,6 +1508,10 @@
 				"@id": "sch:value",
 				"@type": "decimal"
 			},
+			"vol": {
+				"@id": "obo:NCIT_C43320",
+				"@type": "string"
+			},
 			"voltage": {
 				"@id": "cif-:_diffrn_source.voltage",
 				"@type": "decimal"
@@ -1517,8 +1521,12 @@
 				"@type": "@id"
 			},
 			"volume": {
-				"@id": "obo:NCIT_C43320",
-				"@type": "integer"
+				"@id": "cif-:_cell.volume",
+				"@type": "decimal"
+			},
+			"volume_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
 			},
 			"volume_su": {
 				"@id": "cif-:_cell.volume_su",
