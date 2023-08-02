@@ -168,6 +168,14 @@
 				"@id": "cif-:_audit.block_DOI",
 				"@type": "string"
 			},
+			"bond_distance": {
+				"@id": "cif-:_geom_bond.distance",
+				"@type": "decimal"
+			},
+			"bond_distance_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
+			},
 			"calc_attached_atom": {
 				"@id": "cif-:_atom_site.calc_attached_atom",
 				"@type": "string"
@@ -227,6 +235,14 @@
 			"compound_source": {
 				"@id": "cif-:_chemical.compound_source",
 				"@type": "string"
+			},
+			"cont_distance": {
+				"@id": "cif-:_geom_contact.distance",
+				"@type": "decimal"
+			},
+			"cont_distance_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
 			},
 			"contact_letter": {
 				"@id": "cif-:_publ.contact_letter",
@@ -488,10 +504,6 @@
 				"@id": "cif-:_atom_type_scat.dispersion_source",
 				"@type": "string"
 			},
-			"distance": {
-				"@id": "sch:distance",
-				"@type": "decimal"
-			},
 			"distance_da": {
 				"@id": "cif-:_geom_hbond.distance_DA",
 				"@type": "decimal"
@@ -647,6 +659,14 @@
 			"general": {
 				"@id": "cif-:_exptl_crystal_appearance.general",
 				"@type": "string"
+			},
+			"geom_ang_value": {
+				"@id": "cif-:_geom_angle.value",
+				"@type": "decimal"
+			},
+			"geom_ang_value_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
 			},
 			"goodness_of_fit_all": {
 				"@id": "cif-:_refine_ls.goodness_of_fit_all",
@@ -1116,6 +1136,14 @@
 				"@id": "cif-:_refine_ls.R_I_factor",
 				"@type": "decimal"
 			},
+			"rad_wave_value": {
+				"@id": "cif-:_diffrn_radiation_wavelength.value",
+				"@type": "decimal"
+			},
+			"rad_wave_value_unit#": {
+				"@id": "sdo:unitOfMeasurement",
+				"@type": "@id"
+			},
 			"radiation": {
 				"@id": "cif-:_cell_measurement.radiation",
 				"@type": "string"
@@ -1503,10 +1531,6 @@
 			"update_record": {
 				"@id": "cif-:_audit.update_record",
 				"@type": "string"
-			},
-			"value": {
-				"@id": "sch:value",
-				"@type": "decimal"
 			},
 			"vol": {
 				"@id": "obo:NCIT_C43320",
