@@ -1,5 +1,6 @@
 {
     "@context": {
+        "@version": 1.1,
         "@vocab": "https://www.w3.org/2001/XMLSchema#",
         "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
         "mix": "https://stuchalk.github.io/scidata/ontology/mixture.owl#",
@@ -27,7 +28,8 @@
             "@type": "@id"
         },
         "constituents": {
-            "@id": "igb:C01281"
+            "@id": "igb:C01281",
+            "@container": "@set"
         },
         "constituent": {
             "@id": "igb:C01281",
@@ -43,15 +45,15 @@
         },
         "mixture": {
             "@id": "sdo:isExperimentalDataOf",
-            "@type": "@string"
+            "@type": "string"
         },
         "mixture#": {
             "@id": "sdo:isExperimentalDataOf",
             "@type": "@id"
         },
         "properties": {
-            "@id": "sdo:property"
-
+            "@id": "sdo:property",
+            "@container": "@set"
         }
     }
 }
