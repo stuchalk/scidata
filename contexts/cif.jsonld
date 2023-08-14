@@ -2,38 +2,38 @@
 	"@context": [
 		{
 			"@vocab": "http://www.w3.org/2001/XMLSchema#",
-			"cif-": "http://emmo.info/emmo/cif-ddl#",
+			"cifcore": "http://emmo.info/CIF-ontology/ontology/cif_core#",
 			"sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
 			"dct": "http://purl.org/dc/terms/",
 			"scm": "https://schema.org/",
 			"obo": "http://purl.obolibrary.org/obo/",
 			"edm": "http://edamontology.org/",
 			"abs_structure_details": {
-				"@id": "cif-:_refine_ls.abs_structure_details",
+				"@id": "cifcore:_refine_ls.abs_structure_details",
 				"@type": "string"
 			},
 			"abs_structure_flack": {
-				"@id": "cif-:_refine_ls.abs_structure_Flack",
+				"@id": "cifcore:_refine_ls.abs_structure_Flack",
 				"@type": "float"
 			},
 			"abs_structure_rogers": {
-				"@id": "cif-:_refine_ls.abs_structure_Rogers",
+				"@id": "cifcore:_refine_ls.abs_structure_Rogers",
 				"@type": "float"
 			},
 			"absolute_configuration": {
-				"@id": "cif-:_chemical.absolute_configuration",
+				"@id": "cifcore:_chemical.absolute_configuration",
 				"@type": "string"
 			},
 			"abstract": {
-				"@id": "cif-:_publ_section.abstract",
+				"@id": "cifcore:_publ_section.abstract",
 				"@type": "string"
 			},
 			"accepted": {
-				"@id": "cif-:_journal_date.accepted",
+				"@id": "cifcore:_journal_date.accepted",
 				"@type": "date"
 			},
 			"acknowledgements": {
-				"@id": "cif-:_publ_section.acknowledgements",
+				"@id": "cifcore:_publ_section.acknowledgements",
 				"@type": "string"
 			},
 			"address": {
@@ -41,15 +41,15 @@
 				"@type": "string"
 			},
 			"adp_type": {
-				"@id": "cif-:_atom_site.ADP_type",
+				"@id": "cifcore:_atom_site.ADP_type",
 				"@type": "string"
 			},
 			"ambient_environment": {
-				"@id": "cif-:_diffrn.ambient_environment",
+				"@id": "cifcore:_diffrn.ambient_environment",
 				"@type": "string"
 			},
 			"ambient_pressure": {
-				"@id": "cif-:_diffrn.ambient_pressure",
+				"@id": "cifcore:_diffrn.ambient_pressure",
 				"@type": "float"
 			},
 			"ambient_pressure_unit#": {
@@ -57,7 +57,7 @@
 				"@type": "@id"
 			},
 			"ambient_temperature": {
-				"@id": "cif-:_diffrn.ambient_temperature",
+				"@id": "cifcore:_diffrn.ambient_temperature",
 				"@type": "float"
 			},
 			"ambient_temperature_unit#": {
@@ -65,11 +65,11 @@
 				"@type": "@id"
 			},
 			"analytical": {
-				"@id": "cif-:_chemical_formula.analytical",
+				"@id": "cifcore:_chemical_formula.analytical",
 				"@type": "string"
 			},
 			"angle": {
-				"@id": "cif-:_geom_torsion.angle",
+				"@id": "cifcore:_geom_torsion.angle",
 				"@type": "float"
 			},
 			"angle_unit#": {
@@ -77,7 +77,7 @@
 				"@type": "@id"
 			},
 			"angle_alpha": {
-				"@id": "cif-:_cell.angle_alpha",
+				"@id": "cifcore:_cell.angle_alpha",
 				"@type": "float"
 			},
 			"angle_alpha_unit#": {
@@ -85,7 +85,7 @@
 				"@type": "@id"
 			},
 			"angle_beta": {
-				"@id": "cif-:_cell.angle_beta",
+				"@id": "cifcore:_cell.angle_beta",
 				"@type": "float"
 			},
 			"angle_beta_unit#": {
@@ -93,7 +93,7 @@
 				"@type": "@id"
 			},
 			"angle_beta_su": {
-				"@id": "cif-:_cell.angle_beta_su",
+				"@id": "cifcore:_cell.angle_beta_su",
 				"@type": "float"
 			},
 			"angle_beta_su_unit#": {
@@ -101,7 +101,7 @@
 				"@type": "@id"
 			},
 			"angle_dha": {
-				"@id": "cif-:_geom_hbond.angle_DHA",
+				"@id": "cifcore:_geom_hbond.angle_DHA",
 				"@type": "float"
 			},
 			"angle_dha_unit#": {
@@ -109,7 +109,7 @@
 				"@type": "@id"
 			},
 			"angle_gamma": {
-				"@id": "cif-:_cell.angle_gamma",
+				"@id": "cifcore:_cell.angle_gamma",
 				"@type": "float"
 			},
 			"angle_gamma_unit#": {
@@ -117,7 +117,7 @@
 				"@type": "@id"
 			},
 			"area_resol_mean": {
-				"@id": "cif-:_diffrn_detector.area_resol_mean",
+				"@id": "cifcore:_diffrn_detector.area_resol_mean",
 				"@type": "float"
 			},
 			"area_resol_mean_unit#": {
@@ -137,35 +137,35 @@
 				"@type": "string"
 			},
 			"atom_site_label_4": {
-				"@id": "cif-:_geom_torsion.atom_site_label_4",
+				"@id": "cifcore:_geom_torsion.atom_site_label_4",
 				"@type": "string"
 			},
 			"atom_site_label_a": {
-				"@id": "cif-:_geom_hbond.atom_site_label_A",
+				"@id": "cifcore:_geom_hbond.atom_site_label_A",
 				"@type": "string"
 			},
 			"atom_site_label_d": {
-				"@id": "cif-:_geom_hbond.atom_site_label_D",
+				"@id": "cifcore:_geom_hbond.atom_site_label_D",
 				"@type": "string"
 			},
 			"atom_site_label_h": {
-				"@id": "cif-:_geom_hbond.atom_site_label_H",
+				"@id": "cifcore:_geom_hbond.atom_site_label_H",
 				"@type": "string"
 			},
 			"attached_hydrogens": {
-				"@id": "cif-:_atom_site.attached_hydrogens",
+				"@id": "cifcore:_atom_site.attached_hydrogens",
 				"@type": "integer"
 			},
 			"av_r_equivalents": {
-				"@id": "cif-:_diffrn_reflns.av_R_equivalents",
+				"@id": "cifcore:_diffrn_reflns.av_R_equivalents",
 				"@type": "float"
 			},
 			"av_suneti_over_neti": {
-				"@id": "cif-:_diffrn_reflns.av_sunetI_over_netI",
+				"@id": "cifcore:_diffrn_reflns.av_sunetI_over_netI",
 				"@type": "float"
 			},
 			"b_iso_or_equiv": {
-				"@id": "cif-:_atom_site.B_iso_or_equiv",
+				"@id": "cifcore:_atom_site.B_iso_or_equiv",
 				"@type": "float"
 			},
 			"b_iso_or_equiv_unit#": {
@@ -173,11 +173,11 @@
 				"@type": "@id"
 			},
 			"block_doi": {
-				"@id": "cif-:_audit.block_DOI",
+				"@id": "cifcore:_audit.block_DOI",
 				"@type": "string"
 			},
 			"bond_distance": {
-				"@id": "cif-:_geom_bond.distance",
+				"@id": "cifcore:_geom_bond.distance",
 				"@type": "float"
 			},
 			"bond_distance_unit#": {
@@ -185,23 +185,23 @@
 				"@type": "@id"
 			},
 			"calc_attached_atom": {
-				"@id": "cif-:_atom_site.calc_attached_atom",
+				"@id": "cifcore:_atom_site.calc_attached_atom",
 				"@type": "string"
 			},
 			"calc_flag": {
-				"@id": "cif-:_atom_site.calc_flag",
+				"@id": "cifcore:_atom_site.calc_flag",
 				"@type": "string"
 			},
 			"category": {
-				"@id": "cif-:_publ_requested.category",
+				"@id": "cifcore:_publ_requested.category",
 				"@type": "string"
 			},
 			"cell_refinement": {
-				"@id": "cif-:_computing.cell_refinement",
+				"@id": "cifcore:_computing.cell_refinement",
 				"@type": "string"
 			},
 			"cell_setting": {
-				"@id": "cif-:_symmetry.cell_setting",
+				"@id": "cifcore:_symmetry.cell_setting",
 				"@type": "string"
 			},
 			"code": {
@@ -209,19 +209,19 @@
 				"@type": "string"
 			},
 			"coden_astm": {
-				"@id": "cif-:_journal.coden_ASTM",
+				"@id": "cifcore:_journal.coden_ASTM",
 				"@type": "string"
 			},
 			"coden_cambridge": {
-				"@id": "cif-:_journal.coden_Cambridge",
+				"@id": "cifcore:_journal.coden_Cambridge",
 				"@type": "string"
 			},
 			"coeditor_name": {
-				"@id": "cif-:_publ_requested.coeditor_name",
+				"@id": "cifcore:_publ_requested.coeditor_name",
 				"@type": "string"
 			},
 			"coefficient_mu": {
-				"@id": "cif-:_exptl_absorpt.coefficient_mu",
+				"@id": "cifcore:_exptl_absorpt.coefficient_mu",
 				"@type": "float"
 			},
 			"coefficient_mu_unit#": {
@@ -229,23 +229,23 @@
 				"@type": "@id"
 			},
 			"collimation": {
-				"@id": "cif-:_diffrn_radiation.collimation",
+				"@id": "cifcore:_diffrn_radiation.collimation",
 				"@type": "string"
 			},
 			"colour": {
-				"@id": "cif-:_exptl_crystal.colour",
+				"@id": "cifcore:_exptl_crystal.colour",
 				"@type": "string"
 			},
 			"comment": {
-				"@id": "cif-:_publ_section.comment",
+				"@id": "cifcore:_publ_section.comment",
 				"@type": "string"
 			},
 			"compound_source": {
-				"@id": "cif-:_chemical.compound_source",
+				"@id": "cifcore:_chemical.compound_source",
 				"@type": "string"
 			},
 			"cont_distance": {
-				"@id": "cif-:_geom_contact.distance",
+				"@id": "cifcore:_geom_contact.distance",
 				"@type": "float"
 			},
 			"cont_distance_unit#": {
@@ -253,79 +253,79 @@
 				"@type": "@id"
 			},
 			"contact_letter": {
-				"@id": "cif-:_publ.contact_letter",
+				"@id": "cifcore:_publ.contact_letter",
 				"@type": "string"
 			},
 			"contents": {
-				"@id": "cif-:_publ_body.contents",
+				"@id": "cifcore:_publ_body.contents",
 				"@type": "string"
 			},
 			"correction_t_max": {
-				"@id": "cif-:_exptl_absorpt.correction_T_max",
+				"@id": "cifcore:_exptl_absorpt.correction_T_max",
 				"@type": "float"
 			},
 			"correction_t_min": {
-				"@id": "cif-:_exptl_absorpt.correction_T_min",
+				"@id": "cifcore:_exptl_absorpt.correction_T_min",
 				"@type": "float"
 			},
 			"correction_type": {
-				"@id": "cif-:_exptl_absorpt.correction_type",
+				"@id": "cifcore:_exptl_absorpt.correction_type",
 				"@type": "string"
 			},
 			"creation_date": {
-				"@id": "cif-:_audit.creation_date",
+				"@id": "cifcore:_audit.creation_date",
 				"@type": "dateTime"
 			},
 			"creation_method": {
-				"@id": "cif-:_audit.creation_method",
+				"@id": "cifcore:_audit.creation_method",
 				"@type": "string"
 			},
 			"cromer_mann_a1": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_a1",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_a1",
 				"@type": "float"
 			},
 			"cromer_mann_a2": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_a2",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_a2",
 				"@type": "float"
 			},
 			"cromer_mann_a3": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_a3",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_a3",
 				"@type": "float"
 			},
 			"cromer_mann_a4": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_a4",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_a4",
 				"@type": "float"
 			},
 			"cromer_mann_b1": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_b1",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_b1",
 				"@type": "float"
 			},
 			"cromer_mann_b2": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_b2",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_b2",
 				"@type": "float"
 			},
 			"cromer_mann_b3": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_b3",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_b3",
 				"@type": "float"
 			},
 			"cromer_mann_b4": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_b4",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_b4",
 				"@type": "float"
 			},
 			"cromer_mann_c": {
-				"@id": "cif-:_atom_type_scat.Cromer_Mann_c",
+				"@id": "cifcore:_atom_type_scat.Cromer_Mann_c",
 				"@type": "float"
 			},
 			"crystal_system": {
-				"@id": "cif-:_space_group.crystal_system",
+				"@id": "cifcore:_space_group.crystal_system",
 				"@type": "string"
 			},
 			"csd": {
-				"@id": "cif-:_database_code.CSD",
+				"@id": "cifcore:_database_code.CSD",
 				"@type": "string"
 			},
 			"current": {
-				"@id": "cif-:_diffrn_source.current",
+				"@id": "cifcore:_diffrn_source.current",
 				"@type": "float"
 			},
 			"current_unit#": {
@@ -333,7 +333,7 @@
 				"@type": "@id"
 			},
 			"d_res_high": {
-				"@id": "cif-:_refine_ls.d_res_high",
+				"@id": "cifcore:_refine_ls.d_res_high",
 				"@type": "float"
 			},
 			"d_res_high_unit#": {
@@ -341,7 +341,7 @@
 				"@type": "@id"
 			},
 			"d_res_low": {
-				"@id": "cif-:_refine_ls.d_res_low",
+				"@id": "cifcore:_refine_ls.d_res_low",
 				"@type": "float"
 			},
 			"d_res_low_unit#": {
@@ -349,7 +349,7 @@
 				"@type": "@id"
 			},
 			"d_resolution_high": {
-				"@id": "cif-:_reflns.d_resolution_high",
+				"@id": "cifcore:_reflns.d_resolution_high",
 				"@type": "float"
 			},
 			"d_resolution_high_unit#": {
@@ -357,7 +357,7 @@
 				"@type": "@id"
 			},
 			"d_resolution_low": {
-				"@id": "cif-:_reflns.d_resolution_low",
+				"@id": "cifcore:_reflns.d_resolution_low",
 				"@type": "float"
 			},
 			"d_resolution_low_unit#": {
@@ -365,7 +365,7 @@
 				"@type": "@id"
 			},
 			"d_spacing": {
-				"@id": "cif-:_refln.d_spacing",
+				"@id": "cifcore:_refln.d_spacing",
 				"@type": "float"
 			},
 			"d_spacing_unit#": {
@@ -373,23 +373,23 @@
 				"@type": "@id"
 			},
 			"data_validation_number": {
-				"@id": "cif-:_journal.data_validation_number",
+				"@id": "cifcore:_journal.data_validation_number",
 				"@type": "string"
 			},
 			"database_id_csd": {
-				"@id": "cif-:_citation.database_id_CSD",
+				"@id": "cifcore:_citation.database_id_CSD",
 				"@type": "string"
 			},
 			"decay_percent": {
-				"@id": "cif-:_diffrn_standards.decay_percent",
+				"@id": "cifcore:_diffrn_standards.decay_percent",
 				"@type": "float"
 			},
 			"defn": {
-				"@id": "cif-:_publ_manuscript_incl_extra.defn",
+				"@id": "cifcore:_publ_manuscript_incl_extra.defn",
 				"@type": "string"
 			},
 			"density_diffrn": {
-				"@id": "cif-:_exptl_crystal.density_diffrn",
+				"@id": "cifcore:_exptl_crystal.density_diffrn",
 				"@type": "float"
 			},
 			"density_diffrn_unit#": {
@@ -397,7 +397,7 @@
 				"@type": "@id"
 			},
 			"density_max": {
-				"@id": "cif-:_refine_diff.density_max",
+				"@id": "cifcore:_refine_diff.density_max",
 				"@type": "float"
 			},
 			"density_max_unit#": {
@@ -405,7 +405,7 @@
 				"@type": "@id"
 			},
 			"density_meas": {
-				"@id": "cif-:_exptl_crystal.density_meas",
+				"@id": "cifcore:_exptl_crystal.density_meas",
 				"@type": "float"
 			},
 			"density_meas_unit#": {
@@ -413,7 +413,7 @@
 				"@type": "@id"
 			},
 			"density_meas_temp": {
-				"@id": "cif-:_exptl_crystal.density_meas_temp",
+				"@id": "cifcore:_exptl_crystal.density_meas_temp",
 				"@type": "float"
 			},
 			"density_meas_temp_unit#": {
@@ -421,11 +421,11 @@
 				"@type": "@id"
 			},
 			"density_method": {
-				"@id": "cif-:_exptl_crystal.density_method",
+				"@id": "cifcore:_exptl_crystal.density_method",
 				"@type": "string"
 			},
 			"density_min": {
-				"@id": "cif-:_refine_diff.density_min",
+				"@id": "cifcore:_refine_diff.density_min",
 				"@type": "float"
 			},
 			"density_min_unit#": {
@@ -433,7 +433,7 @@
 				"@type": "@id"
 			},
 			"density_rms": {
-				"@id": "cif-:_refine_diff.density_RMS",
+				"@id": "cifcore:_refine_diff.density_RMS",
 				"@type": "float"
 			},
 			"density_rms_unit#": {
@@ -441,15 +441,15 @@
 				"@type": "@id"
 			},
 			"depnum_ccdc_archive": {
-				"@id": "cif-:_database_code.depnum_CCDC_archive",
+				"@id": "cifcore:_database_code.depnum_CCDC_archive",
 				"@type": "string"
 			},
 			"depnum_ccdc_fiz": {
-				"@id": "cif-:_database_code.depnum_CCDC_fiz",
+				"@id": "cifcore:_database_code.depnum_CCDC_fiz",
 				"@type": "string"
 			},
 			"depnum_ccdc_journal": {
-				"@id": "cif-:_database_code.depnum_CCDC_journal",
+				"@id": "cifcore:_database_code.depnum_CCDC_journal",
 				"@type": "string"
 			},
 			"description": {
@@ -457,63 +457,63 @@
 				"@type": "string"
 			},
 			"details": {
-				"@id": "cif-:_diffrn_measurement.details",
+				"@id": "cifcore:_diffrn_measurement.details",
 				"@type": "string"
 			},
 			"device_class": {
-				"@id": "cif-:_diffrn_measurement.device_class",
+				"@id": "cifcore:_diffrn_measurement.device_class",
 				"@type": "string"
 			},
 			"device_make": {
-				"@id": "cif-:_diffrn_measurement.device_make",
+				"@id": "cifcore:_diffrn_measurement.device_make",
 				"@type": "string"
 			},
 			"dict_location": {
-				"@id": "cif-:_audit_conform.dict_location",
+				"@id": "cifcore:_audit_conform.dict_location",
 				"@type": "string"
 			},
 			"dict_name": {
-				"@id": "cif-:_audit_conform.dict_name",
+				"@id": "cifcore:_audit_conform.dict_name",
 				"@type": "string"
 			},
 			"dict_version": {
-				"@id": "cif-:_audit_conform.dict_version",
+				"@id": "cifcore:_audit_conform.dict_version",
 				"@type": "string"
 			},
 			"diffrn_collection": {
-				"@id": "cif-:_computing.diffrn_collection",
+				"@id": "cifcore:_computing.diffrn_collection",
 				"@type": "string"
 			},
 			"diffrn_reduction": {
-				"@id": "cif-:_computing.diffrn_reduction",
+				"@id": "cifcore:_computing.diffrn_reduction",
 				"@type": "string"
 			},
 			"discussion": {
-				"@id": "cif-:_publ_section.discussion",
+				"@id": "cifcore:_publ_section.discussion",
 				"@type": "string"
 			},
 			"disorder_assembly": {
-				"@id": "cif-:_atom_site.disorder_assembly",
+				"@id": "cifcore:_atom_site.disorder_assembly",
 				"@type": "string"
 			},
 			"disorder_group": {
-				"@id": "cif-:_atom_site.disorder_group",
+				"@id": "cifcore:_atom_site.disorder_group",
 				"@type": "string"
 			},
 			"dispersion_imag": {
-				"@id": "cif-:_atom_type_scat.dispersion_imag",
+				"@id": "cifcore:_atom_type_scat.dispersion_imag",
 				"@type": "float"
 			},
 			"dispersion_real": {
-				"@id": "cif-:_atom_type_scat.dispersion_real",
+				"@id": "cifcore:_atom_type_scat.dispersion_real",
 				"@type": "float"
 			},
 			"dispersion_source": {
-				"@id": "cif-:_atom_type_scat.dispersion_source",
+				"@id": "cifcore:_atom_type_scat.dispersion_source",
 				"@type": "string"
 			},
 			"distance_da": {
-				"@id": "cif-:_geom_hbond.distance_DA",
+				"@id": "cifcore:_geom_hbond.distance_DA",
 				"@type": "float"
 			},
 			"distance_da_unit#": {
@@ -521,7 +521,7 @@
 				"@type": "@id"
 			},
 			"distance_dh": {
-				"@id": "cif-:_geom_hbond.distance_DH",
+				"@id": "cifcore:_geom_hbond.distance_DH",
 				"@type": "float"
 			},
 			"distance_dh_unit#": {
@@ -529,7 +529,7 @@
 				"@type": "@id"
 			},
 			"distance_ha": {
-				"@id": "cif-:_geom_hbond.distance_HA",
+				"@id": "cifcore:_geom_hbond.distance_HA",
 				"@type": "float"
 			},
 			"distance_ha_unit#": {
@@ -537,15 +537,15 @@
 				"@type": "@id"
 			},
 			"doi": {
-				"@id": "cif-:_citation.DOI",
+				"@id": "cifcore:_citation.DOI",
 				"@type": "string"
 			},
 			"element": {
-				"@id": "cif-:_publ_body.element",
+				"@id": "cifcore:_publ_body.element",
 				"@type": "string"
 			},
 			"ell_special_details": {
-				"@id": "cif-:_cell.special_details",
+				"@id": "cifcore:_cell.special_details",
 				"@type": "string"
 			},
 			"email": {
@@ -553,55 +553,55 @@
 				"@type": "string"
 			},
 			"experimental": {
-				"@id": "cif-:_publ_section.experimental",
+				"@id": "cifcore:_publ_section.experimental",
 				"@type": "string"
 			},
 			"exptl_prep": {
-				"@id": "cif-:_publ_section.exptl_prep",
+				"@id": "cifcore:_publ_section.exptl_prep",
 				"@type": "string"
 			},
 			"exptl_refinement": {
-				"@id": "cif-:_publ_section.exptl_refinement",
+				"@id": "cifcore:_publ_section.exptl_refinement",
 				"@type": "string"
 			},
 			"exptl_solution": {
-				"@id": "cif-:_publ_section.exptl_solution",
+				"@id": "cifcore:_publ_section.exptl_solution",
 				"@type": "string"
 			},
 			"extinction_coef": {
-				"@id": "cif-:_refine_ls.extinction_coef",
+				"@id": "cifcore:_refine_ls.extinction_coef",
 				"@type": "float"
 			},
 			"extinction_expression": {
-				"@id": "cif-:_refine_ls.extinction_expression",
+				"@id": "cifcore:_refine_ls.extinction_expression",
 				"@type": "string"
 			},
 			"extinction_method": {
-				"@id": "cif-:_refine_ls.extinction_method",
+				"@id": "cifcore:_refine_ls.extinction_method",
 				"@type": "string"
 			},
 			"f_000": {
-				"@id": "cif-:_exptl_crystal.F_000",
+				"@id": "cifcore:_exptl_crystal.F_000",
 				"@type": "float"
 			},
 			"f_calc": {
-				"@id": "cif-:_refln.F_calc",
+				"@id": "cifcore:_refln.F_calc",
 				"@type": "float"
 			},
 			"f_meas": {
-				"@id": "cif-:_refln.F_meas",
+				"@id": "cifcore:_refln.F_meas",
 				"@type": "float"
 			},
 			"f_meas_su": {
-				"@id": "cif-:_refln.F_meas_su",
+				"@id": "cifcore:_refln.F_meas_su",
 				"@type": "float"
 			},
 			"f_squared_calc": {
-				"@id": "cif-:_refln.F_squared_calc",
+				"@id": "cifcore:_refln.F_squared_calc",
 				"@type": "float"
 			},
 			"f_squared_meas": {
-				"@id": "cif-:_refln.F_squared_meas",
+				"@id": "cifcore:_refln.F_squared_meas",
 				"@type": "float"
 			},
 			"f_squared_meas_unit#": {
@@ -609,11 +609,11 @@
 				"@type": "@id"
 			},
 			"f_squared_meas_su": {
-				"@id": "cif-:_refln.F_squared_meas_su",
+				"@id": "cifcore:_refln.F_squared_meas_su",
 				"@type": "float"
 			},
 			"face_perp_dist": {
-				"@id": "cif-:_exptl_crystal_face.perp_dist",
+				"@id": "cifcore:_exptl_crystal_face.perp_dist",
 				"@type": "float"
 			},
 			"face_perp_dist_unit#": {
@@ -621,55 +621,55 @@
 				"@type": "@id"
 			},
 			"fax": {
-				"@id": "cif-:_publ_contact_author.fax",
+				"@id": "cifcore:_publ_contact_author.fax",
 				"@type": "string"
 			},
 			"figure_captions": {
-				"@id": "cif-:_publ_section.figure_captions",
+				"@id": "cifcore:_publ_section.figure_captions",
 				"@type": "string"
 			},
 			"footnote": {
-				"@id": "cif-:_publ_author.footnote",
+				"@id": "cifcore:_publ_author.footnote",
 				"@type": "string"
 			},
 			"formula_units_z": {
-				"@id": "cif-:_cell.formula_units_Z",
+				"@id": "cifcore:_cell.formula_units_Z",
 				"@type": "integer"
 			},
 			"fract_x": {
-				"@id": "cif-:_atom_site.fract_x",
+				"@id": "cifcore:_atom_site.fract_x",
 				"@type": "float"
 			},
 			"fract_y": {
-				"@id": "cif-:_atom_site.fract_y",
+				"@id": "cifcore:_atom_site.fract_y",
 				"@type": "float"
 			},
 			"fract_z": {
-				"@id": "cif-:_atom_site.fract_z",
+				"@id": "cifcore:_atom_site.fract_z",
 				"@type": "float"
 			},
 			"friedel_coverage": {
-				"@id": "cif-:_reflns.Friedel_coverage",
+				"@id": "cifcore:_reflns.Friedel_coverage",
 				"@type": "float"
 			},
 			"friedel_fraction_full": {
-				"@id": "cif-:_reflns.Friedel_fraction_full",
+				"@id": "cifcore:_reflns.Friedel_fraction_full",
 				"@type": "float"
 			},
 			"friedel_fraction_max": {
-				"@id": "cif-:_reflns.Friedel_fraction_max",
+				"@id": "cifcore:_reflns.Friedel_fraction_max",
 				"@type": "float"
 			},
 			"from_coeditor": {
-				"@id": "cif-:_journal_date.from_coeditor",
+				"@id": "cifcore:_journal_date.from_coeditor",
 				"@type": "date"
 			},
 			"general": {
-				"@id": "cif-:_exptl_crystal_appearance.general",
+				"@id": "cifcore:_exptl_crystal_appearance.general",
 				"@type": "string"
 			},
 			"geom_ang_value": {
-				"@id": "cif-:_geom_angle.value",
+				"@id": "cifcore:_geom_angle.value",
 				"@type": "float"
 			},
 			"geom_ang_value_unit#": {
@@ -677,7 +677,7 @@
 				"@type": "@id"
 			},
 			"goodness_of_fit_all": {
-				"@id": "cif-:_refine_ls.goodness_of_fit_all",
+				"@id": "cifcore:_refine_ls.goodness_of_fit_all",
 				"@type": "float"
 			},
 			"goodness_of_fit_gt": {
@@ -685,19 +685,19 @@
 				"@type": "float"
 			},
 			"goodness_of_fit_ref": {
-				"@id": "cif-:_refine_ls.goodness_of_fit_ref",
+				"@id": "cifcore:_refine_ls.goodness_of_fit_ref",
 				"@type": "float"
 			},
 			"group_code": {
-				"@id": "cif-:_reflns_scale.group_code",
+				"@id": "cifcore:_reflns_scale.group_code",
 				"@type": "string"
 			},
 			"hue": {
-				"@id": "cif-:_exptl_crystal_appearance.hue",
+				"@id": "cifcore:_exptl_crystal_appearance.hue",
 				"@type": "string"
 			},
 			"hydrogen_treatment": {
-				"@id": "cif-:_refine_ls.hydrogen_treatment",
+				"@id": "cifcore:_refine_ls.hydrogen_treatment",
 				"@type": "string"
 			},
 			"id": {
@@ -705,11 +705,11 @@
 				"@type": "integer"
 			},
 			"id_orcid": {
-				"@id": "cif-:_publ_contact_author.id_ORCID",
+				"@id": "cifcore:_publ_contact_author.id_ORCID",
 				"@type": "string"
 			},
 			"include_status": {
-				"@id": "cif-:_refln.include_status",
+				"@id": "cifcore:_refln.include_status",
 				"@type": "string"
 			},
 			"index_h": {
@@ -725,27 +725,27 @@
 				"@type": "integer"
 			},
 			"info": {
-				"@id": "cif-:_publ_manuscript_incl_extra.info",
+				"@id": "cifcore:_publ_manuscript_incl_extra.info",
 				"@type": "string"
 			},
 			"intensity": {
-				"@id": "cif-:_exptl_crystal_appearance.intensity",
+				"@id": "cifcore:_exptl_crystal_appearance.intensity",
 				"@type": "string"
 			},
 			"intensity_calc": {
-				"@id": "cif-:_refln.intensity_calc",
+				"@id": "cifcore:_refln.intensity_calc",
 				"@type": "float"
 			},
 			"intensity_meas": {
-				"@id": "cif-:_refln.intensity_meas",
+				"@id": "cifcore:_refln.intensity_meas",
 				"@type": "float"
 			},
 			"intensity_meas_su": {
-				"@id": "cif-:_refln.intensity_meas_su",
+				"@id": "cifcore:_refln.intensity_meas_su",
 				"@type": "float"
 			},
 			"interval_count": {
-				"@id": "cif-:_diffrn_standards.interval_count",
+				"@id": "cifcore:_diffrn_standards.interval_count",
 				"@type": "integer"
 			},
 			"interval_count_unit#": {
@@ -753,7 +753,7 @@
 				"@type": "@id"
 			},
 			"interval_time": {
-				"@id": "cif-:_diffrn_standards.interval_time",
+				"@id": "cifcore:_diffrn_standards.interval_time",
 				"@type": "float"
 			},
 			"interval_time_unit#": {
@@ -761,11 +761,11 @@
 				"@type": "@id"
 			},
 			"introduction": {
-				"@id": "cif-:_publ_section.introduction",
+				"@id": "cifcore:_publ_section.introduction",
 				"@type": "string"
 			},
 			"issue": {
-				"@id": "cif-:_journal.issue",
+				"@id": "cifcore:_journal.issue",
 				"@type": "string"
 			},
 			"it_number": {
@@ -773,19 +773,19 @@
 				"@type": "integer"
 			},
 			"item": {
-				"@id": "cif-:_publ_manuscript_incl_extra.item",
+				"@id": "cifcore:_publ_manuscript_incl_extra.item",
 				"@type": "string"
 			},
 			"iupac": {
-				"@id": "cif-:_chemical_formula.IUPAC",
+				"@id": "cifcore:_chemical_formula.IUPAC",
 				"@type": "string"
 			},
 			"journal": {
-				"@id": "cif-:_publ_requested.journal",
+				"@id": "cifcore:_publ_requested.journal",
 				"@type": "string"
 			},
 			"keywords": {
-				"@id": "cif-:_publ_section.keywords",
+				"@id": "cifcore:_publ_section.keywords",
 				"@type": "string"
 			},
 			"label": {
@@ -793,15 +793,15 @@
 				"@type": "string"
 			},
 			"laue_measured_fraction_full": {
-				"@id": "cif-:_diffrn_reflns.Laue_measured_fraction_full",
+				"@id": "cifcore:_diffrn_reflns.Laue_measured_fraction_full",
 				"@type": "float"
 			},
 			"laue_measured_fraction_max": {
-				"@id": "cif-:_diffrn_reflns.Laue_measured_fraction_max",
+				"@id": "cifcore:_diffrn_reflns.Laue_measured_fraction_max",
 				"@type": "float"
 			},
 			"length_a": {
-				"@id": "cif-:_cell.length_a",
+				"@id": "cifcore:_cell.length_a",
 				"@type": "float"
 			},
 			"length_a_unit#": {
@@ -809,7 +809,7 @@
 				"@type": "@id"
 			},
 			"length_a_su": {
-				"@id": "cif-:_cell.length_a_su",
+				"@id": "cifcore:_cell.length_a_su",
 				"@type": "float"
 			},
 			"length_a_su_unit#": {
@@ -817,7 +817,7 @@
 				"@type": "@id"
 			},
 			"length_b": {
-				"@id": "cif-:_cell.length_b",
+				"@id": "cifcore:_cell.length_b",
 				"@type": "float"
 			},
 			"length_b_unit#": {
@@ -825,7 +825,7 @@
 				"@type": "@id"
 			},
 			"length_b_su": {
-				"@id": "cif-:_cell.length_b_su",
+				"@id": "cifcore:_cell.length_b_su",
 				"@type": "float"
 			},
 			"length_b_su_unit#": {
@@ -833,7 +833,7 @@
 				"@type": "@id"
 			},
 			"length_c": {
-				"@id": "cif-:_cell.length_c",
+				"@id": "cifcore:_cell.length_c",
 				"@type": "float"
 			},
 			"length_c_unit#": {
@@ -841,7 +841,7 @@
 				"@type": "@id"
 			},
 			"length_c_su": {
-				"@id": "cif-:_cell.length_c_su",
+				"@id": "cifcore:_cell.length_c_su",
 				"@type": "float"
 			},
 			"length_c_su_unit#": {
@@ -849,7 +849,7 @@
 				"@type": "@id"
 			},
 			"length_neutron": {
-				"@id": "cif-:_atom_type_scat.length_neutron",
+				"@id": "cifcore:_atom_type_scat.length_neutron",
 				"@type": "float"
 			},
 			"limit_h_max": {
@@ -881,23 +881,23 @@
 				"@type": "string"
 			},
 			"matrix_type": {
-				"@id": "cif-:_refine_ls.matrix_type",
+				"@id": "cifcore:_refine_ls.matrix_type",
 				"@type": "string"
 			},
 			"meas_intensity": {
-				"@id": "cif-:_reflns_scale.meas_intensity",
+				"@id": "cifcore:_reflns_scale.meas_intensity",
 				"@type": "float"
 			},
 			"measured_fraction_theta_full": {
-				"@id": "cif-:_diffrn.measured_fraction_theta_full",
+				"@id": "cifcore:_diffrn.measured_fraction_theta_full",
 				"@type": "float"
 			},
 			"measured_fraction_theta_max": {
-				"@id": "cif-:_diffrn.measured_fraction_theta_max",
+				"@id": "cifcore:_diffrn.measured_fraction_theta_max",
 				"@type": "float"
 			},
 			"melting_point": {
-				"@id": "cif-:_chemical.melting_point",
+				"@id": "cifcore:_chemical.melting_point",
 				"@type": "float"
 			},
 			"melting_point_unit#": {
@@ -905,7 +905,7 @@
 				"@type": "@id"
 			},
 			"melting_point_gt": {
-				"@id": "cif-:_chemical.melting_point_gt",
+				"@id": "cifcore:_chemical.melting_point_gt",
 				"@type": "float"
 			},
 			"melting_point_gt_unit#": {
@@ -913,7 +913,7 @@
 				"@type": "@id"
 			},
 			"melting_point_lt": {
-				"@id": "cif-:_chemical.melting_point_lt",
+				"@id": "cifcore:_chemical.melting_point_lt",
 				"@type": "float"
 			},
 			"melting_point_lt_unit#": {
@@ -921,19 +921,19 @@
 				"@type": "@id"
 			},
 			"method": {
-				"@id": "cif-:_diffrn_measurement.method",
+				"@id": "cifcore:_diffrn_measurement.method",
 				"@type": "string"
 			},
 			"moiety": {
-				"@id": "cif-:_chemical_formula.moiety",
+				"@id": "cifcore:_chemical_formula.moiety",
 				"@type": "string"
 			},
 			"molecular_graphics": {
-				"@id": "cif-:_computing.molecular_graphics",
+				"@id": "cifcore:_computing.molecular_graphics",
 				"@type": "string"
 			},
 			"monochromator": {
-				"@id": "cif-:_diffrn_radiation.monochromator",
+				"@id": "cifcore:_diffrn_radiation.monochromator",
 				"@type": "string"
 			},
 			"name": {
@@ -941,19 +941,19 @@
 				"@type": "string"
 			},
 			"name_common": {
-				"@id": "cif-:_chemical.name_common",
+				"@id": "cifcore:_chemical.name_common",
 				"@type": "string"
 			},
 			"name_full": {
-				"@id": "cif-:_journal.name_full",
+				"@id": "cifcore:_journal.name_full",
 				"@type": "string"
 			},
 			"name_h-m_alt": {
-				"@id": "cif-:_space_group.name_H-M_alt",
+				"@id": "cifcore:_space_group.name_H-M_alt",
 				"@type": "string"
 			},
 			"name_h-m_full": {
-				"@id": "cif-:_space_group.name_H-M_full",
+				"@id": "cifcore:_space_group.name_H-M_full",
 				"@type": "string"
 			},
 			"name_hall": {
@@ -961,15 +961,15 @@
 				"@type": "string"
 			},
 			"name_mineral": {
-				"@id": "cif-:_chemical.name_mineral",
+				"@id": "cifcore:_chemical.name_mineral",
 				"@type": "string"
 			},
 			"name_systematic": {
-				"@id": "cif-:_chemical.name_systematic",
+				"@id": "cifcore:_chemical.name_systematic",
 				"@type": "string"
 			},
 			"nbs": {
-				"@id": "cif-:_database_code.NBS",
+				"@id": "cifcore:_database_code.NBS",
 				"@type": "string"
 			},
 			"notes": {
@@ -981,7 +981,7 @@
 				"@type": "integer"
 			},
 			"number_constraints": {
-				"@id": "cif-:_refine_ls.number_constraints",
+				"@id": "cifcore:_refine_ls.number_constraints",
 				"@type": "integer"
 			},
 			"number_gt": {
@@ -989,27 +989,27 @@
 				"@type": "integer"
 			},
 			"number_in_cell": {
-				"@id": "cif-:_atom_type.number_in_cell",
+				"@id": "cifcore:_atom_type.number_in_cell",
 				"@type": "float"
 			},
 			"number_parameters": {
-				"@id": "cif-:_refine_ls.number_parameters",
+				"@id": "cifcore:_refine_ls.number_parameters",
 				"@type": "integer"
 			},
 			"number_reflns": {
-				"@id": "cif-:_refine_ls.number_reflns",
+				"@id": "cifcore:_refine_ls.number_reflns",
 				"@type": "integer"
 			},
 			"number_restraints": {
-				"@id": "cif-:_refine_ls.number_restraints",
+				"@id": "cifcore:_refine_ls.number_restraints",
 				"@type": "integer"
 			},
 			"number_total": {
-				"@id": "cif-:_reflns.number_total",
+				"@id": "cifcore:_reflns.number_total",
 				"@type": "integer"
 			},
 			"occupancy": {
-				"@id": "cif-:_atom_site.occupancy",
+				"@id": "cifcore:_atom_site.occupancy",
 				"@type": "float"
 			},
 			"operation_xyz": {
@@ -1017,27 +1017,27 @@
 				"@type": "string"
 			},
 			"oxidation_number": {
-				"@id": "cif-:_atom_type.oxidation_number",
+				"@id": "cifcore:_atom_type.oxidation_number",
 				"@type": "integer"
 			},
 			"page_first": {
-				"@id": "cif-:_journal.page_first",
+				"@id": "cifcore:_journal.page_first",
 				"@type": "string"
 			},
 			"page_last": {
-				"@id": "cif-:_journal.page_last",
+				"@id": "cifcore:_journal.page_last",
 				"@type": "string"
 			},
 			"paper_category": {
-				"@id": "cif-:_journal.paper_category",
+				"@id": "cifcore:_journal.paper_category",
 				"@type": "string"
 			},
 			"paper_doi": {
-				"@id": "cif-:_journal.paper_DOI",
+				"@id": "cifcore:_journal.paper_DOI",
 				"@type": "string"
 			},
 			"phase_calc": {
-				"@id": "cif-:_refln.phase_calc",
+				"@id": "cifcore:_refln.phase_calc",
 				"@type": "float"
 			},
 			"phase_calc_unit#": {
@@ -1049,15 +1049,15 @@
 				"@type": "string"
 			},
 			"point_measured_fraction_full": {
-				"@id": "cif-:_diffrn_reflns.point_measured_fraction_full",
+				"@id": "cifcore:_diffrn_reflns.point_measured_fraction_full",
 				"@type": "float"
 			},
 			"point_measured_fraction_max": {
-				"@id": "cif-:_diffrn_reflns.point_measured_fraction_max",
+				"@id": "cifcore:_diffrn_reflns.point_measured_fraction_max",
 				"@type": "float"
 			},
 			"polarisn_norm": {
-				"@id": "cif-:_diffrn_radiation.polarisn_norm",
+				"@id": "cifcore:_diffrn_radiation.polarisn_norm",
 				"@type": "float"
 			},
 			"polarisn_norm_unit#": {
@@ -1065,11 +1065,11 @@
 				"@type": "@id"
 			},
 			"polarisn_ratio": {
-				"@id": "cif-:_diffrn_radiation.polarisn_ratio",
+				"@id": "cifcore:_diffrn_radiation.polarisn_ratio",
 				"@type": "float"
 			},
 			"power": {
-				"@id": "cif-:_diffrn_source.power",
+				"@id": "cifcore:_diffrn_source.power",
 				"@type": "float"
 			},
 			"power_unit#": {
@@ -1077,11 +1077,11 @@
 				"@type": "@id"
 			},
 			"preparation": {
-				"@id": "cif-:_exptl_crystal.preparation",
+				"@id": "cifcore:_exptl_crystal.preparation",
 				"@type": "string"
 			},
 			"pressure": {
-				"@id": "cif-:_cell_measurement.pressure",
+				"@id": "cifcore:_cell_measurement.pressure",
 				"@type": "float"
 			},
 			"pressure_unit#": {
@@ -1089,35 +1089,35 @@
 				"@type": "@id"
 			},
 			"printers_final": {
-				"@id": "cif-:_journal_date.printers_final",
+				"@id": "cifcore:_journal_date.printers_final",
 				"@type": "date"
 			},
 			"printers_first": {
-				"@id": "cif-:_journal_date.printers_first",
+				"@id": "cifcore:_journal_date.printers_first",
 				"@type": "date"
 			},
 			"probe": {
-				"@id": "cif-:_diffrn_radiation.probe",
+				"@id": "cifcore:_diffrn_radiation.probe",
 				"@type": "string"
 			},
 			"process_details": {
-				"@id": "cif-:_exptl_absorpt.process_details",
+				"@id": "cifcore:_exptl_absorpt.process_details",
 				"@type": "string"
 			},
 			"proofs_in": {
-				"@id": "cif-:_journal_date.proofs_in",
+				"@id": "cifcore:_journal_date.proofs_in",
 				"@type": "date"
 			},
 			"proofs_out": {
-				"@id": "cif-:_journal_date.proofs_out",
+				"@id": "cifcore:_journal_date.proofs_out",
 				"@type": "date"
 			},
 			"properties_biological": {
-				"@id": "cif-:_chemical.properties_biological",
+				"@id": "cifcore:_chemical.properties_biological",
 				"@type": "string"
 			},
 			"properties_physical": {
-				"@id": "cif-:_chemical.properties_physical",
+				"@id": "cifcore:_chemical.properties_physical",
 				"@type": "string"
 			},
 			"publ_flag": {
@@ -1125,11 +1125,11 @@
 				"@type": "string"
 			},
 			"publication_material": {
-				"@id": "cif-:_computing.publication_material",
+				"@id": "cifcore:_computing.publication_material",
 				"@type": "string"
 			},
 			"r_factor_all": {
-				"@id": "cif-:_refine_ls.R_factor_all",
+				"@id": "cifcore:_refine_ls.R_factor_all",
 				"@type": "float"
 			},
 			"r_factor_gt": {
@@ -1137,15 +1137,15 @@
 				"@type": "float"
 			},
 			"r_fsqd_factor": {
-				"@id": "cif-:_refine_ls.R_Fsqd_factor",
+				"@id": "cifcore:_refine_ls.R_Fsqd_factor",
 				"@type": "float"
 			},
 			"r_i_factor": {
-				"@id": "cif-:_refine_ls.R_I_factor",
+				"@id": "cifcore:_refine_ls.R_I_factor",
 				"@type": "float"
 			},
 			"rad_wave_value": {
-				"@id": "cif-:_diffrn_radiation_wavelength.value",
+				"@id": "cifcore:_diffrn_radiation_wavelength.value",
 				"@type": "float"
 			},
 			"rad_wave_value_unit#": {
@@ -1153,11 +1153,11 @@
 				"@type": "@id"
 			},
 			"radiation": {
-				"@id": "cif-:_cell_measurement.radiation",
+				"@id": "cifcore:_cell_measurement.radiation",
 				"@type": "string"
 			},
 			"radius_bond": {
-				"@id": "cif-:_atom_type.radius_bond",
+				"@id": "cifcore:_atom_type.radius_bond",
 				"@type": "float"
 			},
 			"radius_bond_unit#": {
@@ -1165,47 +1165,47 @@
 				"@type": "@id"
 			},
 			"recd_electronic": {
-				"@id": "cif-:_journal_date.recd_electronic",
+				"@id": "cifcore:_journal_date.recd_electronic",
 				"@type": "date"
 			},
 			"recrystallization_method": {
-				"@id": "cif-:_exptl_crystal.recrystallization_method",
+				"@id": "cifcore:_exptl_crystal.recrystallization_method",
 				"@type": "string"
 			},
 			"reduction_process": {
-				"@id": "cif-:_diffrn_reflns.reduction_process",
+				"@id": "cifcore:_diffrn_reflns.reduction_process",
 				"@type": "string"
 			},
 			"references": {
-				"@id": "cif-:_publ_section.references",
+				"@id": "cifcore:_publ_section.references",
 				"@type": "string"
 			},
 			"refinement_flags": {
-				"@id": "cif-:_atom_site.refinement_flags",
+				"@id": "cifcore:_atom_site.refinement_flags",
 				"@type": "string"
 			},
 			"refinement_flags_adp": {
-				"@id": "cif-:_atom_site.refinement_flags_ADP",
+				"@id": "cifcore:_atom_site.refinement_flags_ADP",
 				"@type": "string"
 			},
 			"refinement_flags_occupancy": {
-				"@id": "cif-:_atom_site.refinement_flags_occupancy",
+				"@id": "cifcore:_atom_site.refinement_flags_occupancy",
 				"@type": "string"
 			},
 			"refinement_flags_posn": {
-				"@id": "cif-:_atom_site.refinement_flags_posn",
+				"@id": "cifcore:_atom_site.refinement_flags_posn",
 				"@type": "string"
 			},
 			"reflns_used": {
-				"@id": "cif-:_cell_measurement.reflns_used",
+				"@id": "cifcore:_cell_measurement.reflns_used",
 				"@type": "integer"
 			},
 			"related_literature": {
-				"@id": "cif-:_publ_section.related_literature",
+				"@id": "cifcore:_publ_section.related_literature",
 				"@type": "string"
 			},
 			"restrained_s_all": {
-				"@id": "cif-:_refine_ls.restrained_S_all",
+				"@id": "cifcore:_refine_ls.restrained_S_all",
 				"@type": "float"
 			},
 			"restrained_s_gt": {
@@ -1213,7 +1213,7 @@
 				"@type": "float"
 			},
 			"scale_group_code": {
-				"@id": "cif-:_refln.scale_group_code",
+				"@id": "cifcore:_refln.scale_group_code",
 				"@type": "string"
 			},
 			"shift_over_su_max": {
@@ -1225,7 +1225,7 @@
 				"@type": "float"
 			},
 			"sin_theta_over_lambda": {
-				"@id": "cif-:_refln.sin_theta_over_lambda",
+				"@id": "cifcore:_refln.sin_theta_over_lambda",
 				"@type": "float"
 			},
 			"sin_theta_over_lambda_unit#": {
@@ -1245,19 +1245,19 @@
 				"@type": "string"
 			},
 			"site_symmetry_4": {
-				"@id": "cif-:_geom_torsion.site_symmetry_4",
+				"@id": "cifcore:_geom_torsion.site_symmetry_4",
 				"@type": "string"
 			},
 			"site_symmetry_a": {
-				"@id": "cif-:_geom_hbond.site_symmetry_A",
+				"@id": "cifcore:_geom_hbond.site_symmetry_A",
 				"@type": "string"
 			},
 			"site_symmetry_d": {
-				"@id": "cif-:_geom_hbond.site_symmetry_D",
+				"@id": "cifcore:_geom_hbond.site_symmetry_D",
 				"@type": "string"
 			},
 			"site_symmetry_h": {
-				"@id": "cif-:_geom_hbond.site_symmetry_H",
+				"@id": "cifcore:_geom_hbond.site_symmetry_H",
 				"@type": "string"
 			},
 			"site_symmetry_multiplicity": {
@@ -1265,15 +1265,15 @@
 				"@type": "integer"
 			},
 			"site_symmetry_order": {
-				"@id": "cif-:_atom_site.site_symmetry_order",
+				"@id": "cifcore:_atom_site.site_symmetry_order",
 				"@type": "integer"
 			},
 			"size": {
-				"@id": "cif-:_diffrn_source.size",
+				"@id": "cifcore:_diffrn_source.size",
 				"@type": "string"
 			},
 			"size_length": {
-				"@id": "cif-:_exptl_crystal.size_length",
+				"@id": "cifcore:_exptl_crystal.size_length",
 				"@type": "float"
 			},
 			"size_length_unit#": {
@@ -1281,7 +1281,7 @@
 				"@type": "@id"
 			},
 			"size_max": {
-				"@id": "cif-:_exptl_crystal.size_max",
+				"@id": "cifcore:_exptl_crystal.size_max",
 				"@type": "float"
 			},
 			"size_max_unit#": {
@@ -1289,7 +1289,7 @@
 				"@type": "@id"
 			},
 			"size_mid": {
-				"@id": "cif-:_exptl_crystal.size_mid",
+				"@id": "cifcore:_exptl_crystal.size_mid",
 				"@type": "float"
 			},
 			"size_mid_unit#": {
@@ -1297,7 +1297,7 @@
 				"@type": "@id"
 			},
 			"size_min": {
-				"@id": "cif-:_exptl_crystal.size_min",
+				"@id": "cifcore:_exptl_crystal.size_min",
 				"@type": "float"
 			},
 			"size_min_unit#": {
@@ -1305,7 +1305,7 @@
 				"@type": "@id"
 			},
 			"size_rad": {
-				"@id": "cif-:_exptl_crystal.size_rad",
+				"@id": "cifcore:_exptl_crystal.size_rad",
 				"@type": "float"
 			},
 			"size_rad_unit#": {
@@ -1313,19 +1313,19 @@
 				"@type": "@id"
 			},
 			"solution_hydrogens": {
-				"@id": "cif-:_atom_sites.solution_hydrogens",
+				"@id": "cifcore:_atom_sites.solution_hydrogens",
 				"@type": "string"
 			},
 			"solution_primary": {
-				"@id": "cif-:_atom_sites.solution_primary",
+				"@id": "cifcore:_atom_sites.solution_primary",
 				"@type": "string"
 			},
 			"solution_secondary": {
-				"@id": "cif-:_atom_sites.solution_secondary",
+				"@id": "cifcore:_atom_sites.solution_secondary",
 				"@type": "string"
 			},
 			"source": {
-				"@id": "cif-:_atom_type_scat.source",
+				"@id": "cifcore:_atom_type_scat.source",
 				"@type": "string"
 			},
 			"special_details": {
@@ -1333,59 +1333,59 @@
 				"@type": "string"
 			},
 			"specimen_support": {
-				"@id": "cif-:_diffrn_measurement.specimen_support",
+				"@id": "cifcore:_diffrn_measurement.specimen_support",
 				"@type": "string"
 			},
 			"structural": {
-				"@id": "cif-:_chemical_formula.structural",
+				"@id": "cifcore:_chemical_formula.structural",
 				"@type": "string"
 			},
 			"structure_factor_coef": {
-				"@id": "cif-:_refine_ls.structure_factor_coef",
+				"@id": "cifcore:_refine_ls.structure_factor_coef",
 				"@type": "string"
 			},
 			"structure_refinement": {
-				"@id": "cif-:_computing.structure_refinement",
+				"@id": "cifcore:_computing.structure_refinement",
 				"@type": "string"
 			},
 			"structure_solution": {
-				"@id": "cif-:_computing.structure_solution",
+				"@id": "cifcore:_computing.structure_solution",
 				"@type": "string"
 			},
 			"subterm": {
-				"@id": "cif-:_journal_index.subterm",
+				"@id": "cifcore:_journal_index.subterm",
 				"@type": "string"
 			},
 			"sum": {
-				"@id": "cif-:_chemical_formula.sum",
+				"@id": "cifcore:_chemical_formula.sum",
 				"@type": "string"
 			},
 			"suppl_publ_number": {
-				"@id": "cif-:_journal.suppl_publ_number",
+				"@id": "cifcore:_journal.suppl_publ_number",
 				"@type": "string"
 			},
 			"suppl_publ_pages": {
-				"@id": "cif-:_journal.suppl_publ_pages",
+				"@id": "cifcore:_journal.suppl_publ_pages",
 				"@type": "integer"
 			},
 			"symbol": {
-				"@id": "cif-:_atom_type.symbol",
+				"@id": "cifcore:_atom_type.symbol",
 				"@type": "string"
 			},
 			"synopsis": {
-				"@id": "cif-:_publ_section.synopsis",
+				"@id": "cifcore:_publ_section.synopsis",
 				"@type": "string"
 			},
 			"table_legends": {
-				"@id": "cif-:_publ_section.table_legends",
+				"@id": "cifcore:_publ_section.table_legends",
 				"@type": "string"
 			},
 			"target": {
-				"@id": "cif-:_diffrn_source.target",
+				"@id": "cifcore:_diffrn_source.target",
 				"@type": "string"
 			},
 			"temperature": {
-				"@id": "cif-:_cell_measurement.temperature",
+				"@id": "cifcore:_cell_measurement.temperature",
 				"@type": "float"
 			},
 			"temperature_unit#": {
@@ -1393,11 +1393,11 @@
 				"@type": "@id"
 			},
 			"term": {
-				"@id": "cif-:_journal_index.term",
+				"@id": "cifcore:_journal_index.term",
 				"@type": "string"
 			},
 			"theta_full": {
-				"@id": "cif-:_diffrn_reflns.theta_full",
+				"@id": "cifcore:_diffrn_reflns.theta_full",
 				"@type": "float"
 			},
 			"theta_full_unit#": {
@@ -1421,19 +1421,19 @@
 				"@type": "string"
 			},
 			"title_footnote": {
-				"@id": "cif-:_publ_section.title_footnote",
+				"@id": "cifcore:_publ_section.title_footnote",
 				"@type": "string"
 			},
 			"to_coeditor": {
-				"@id": "cif-:_journal_date.to_coeditor",
+				"@id": "cifcore:_journal_date.to_coeditor",
 				"@type": "date"
 			},
 			"transmission_factor_max": {
-				"@id": "cif-:_exptl.transmission_factor_max",
+				"@id": "cifcore:_exptl.transmission_factor_max",
 				"@type": "float"
 			},
 			"transmission_factor_min": {
-				"@id": "cif-:_exptl.transmission_factor_min",
+				"@id": "cifcore:_exptl.transmission_factor_min",
 				"@type": "float"
 			},
 			"type": {
@@ -1445,7 +1445,7 @@
 				"@type": "string"
 			},
 			"u_11": {
-				"@id": "cif-:_atom_site_aniso.U_11",
+				"@id": "cifcore:_atom_site_aniso.U_11",
 				"@type": "float"
 			},
 			"u_11_unit#": {
@@ -1453,7 +1453,7 @@
 				"@type": "@id"
 			},
 			"u_12": {
-				"@id": "cif-:_atom_site_aniso.U_12",
+				"@id": "cifcore:_atom_site_aniso.U_12",
 				"@type": "float"
 			},
 			"u_12_unit#": {
@@ -1461,7 +1461,7 @@
 				"@type": "@id"
 			},
 			"u_13": {
-				"@id": "cif-:_atom_site_aniso.U_13",
+				"@id": "cifcore:_atom_site_aniso.U_13",
 				"@type": "float"
 			},
 			"u_13_unit#": {
@@ -1469,7 +1469,7 @@
 				"@type": "@id"
 			},
 			"u_22": {
-				"@id": "cif-:_atom_site_aniso.U_22",
+				"@id": "cifcore:_atom_site_aniso.U_22",
 				"@type": "float"
 			},
 			"u_22_unit#": {
@@ -1477,7 +1477,7 @@
 				"@type": "@id"
 			},
 			"u_23": {
-				"@id": "cif-:_atom_site_aniso.U_23",
+				"@id": "cifcore:_atom_site_aniso.U_23",
 				"@type": "float"
 			},
 			"u_23_unit#": {
@@ -1485,7 +1485,7 @@
 				"@type": "@id"
 			},
 			"u_33": {
-				"@id": "cif-:_atom_site_aniso.U_33",
+				"@id": "cifcore:_atom_site_aniso.U_33",
 				"@type": "float"
 			},
 			"u_33_unit#": {
@@ -1493,7 +1493,7 @@
 				"@type": "@id"
 			},
 			"u_iso_or_equiv": {
-				"@id": "cif-:_atom_site.U_iso_or_equiv",
+				"@id": "cifcore:_atom_site.U_iso_or_equiv",
 				"@type": "float"
 			},
 			"u_iso_or_equiv_unit#": {
@@ -1501,43 +1501,43 @@
 				"@type": "@id"
 			},
 			"ub_11": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_11",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_11",
 				"@type": "float"
 			},
 			"ub_12": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_12",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_12",
 				"@type": "float"
 			},
 			"ub_13": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_13",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_13",
 				"@type": "float"
 			},
 			"ub_21": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_21",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_21",
 				"@type": "float"
 			},
 			"ub_22": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_22",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_22",
 				"@type": "float"
 			},
 			"ub_23": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_23",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_23",
 				"@type": "float"
 			},
 			"ub_31": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_31",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_31",
 				"@type": "float"
 			},
 			"ub_32": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_32",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_32",
 				"@type": "float"
 			},
 			"ub_33": {
-				"@id": "cif-:_diffrn_orient_matrix.UB_33",
+				"@id": "cifcore:_diffrn_orient_matrix.UB_33",
 				"@type": "float"
 			},
 			"update_record": {
-				"@id": "cif-:_audit.update_record",
+				"@id": "cifcore:_audit.update_record",
 				"@type": "string"
 			},
 			"vol": {
@@ -1545,7 +1545,7 @@
 				"@type": "string"
 			},
 			"voltage": {
-				"@id": "cif-:_diffrn_source.voltage",
+				"@id": "cifcore:_diffrn_source.voltage",
 				"@type": "float"
 			},
 			"voltage_unit#": {
@@ -1553,7 +1553,7 @@
 				"@type": "@id"
 			},
 			"volume": {
-				"@id": "cif-:_cell.volume",
+				"@id": "cifcore:_cell.volume",
 				"@type": "float"
 			},
 			"volume_unit#": {
@@ -1561,7 +1561,7 @@
 				"@type": "@id"
 			},
 			"volume_su": {
-				"@id": "cif-:_cell.volume_su",
+				"@id": "cifcore:_cell.volume_su",
 				"@type": "float"
 			},
 			"volume_su_unit#": {
@@ -1569,7 +1569,7 @@
 				"@type": "@id"
 			},
 			"wavelength": {
-				"@id": "cif-:_cell_measurement.wavelength",
+				"@id": "cifcore:_cell_measurement.wavelength",
 				"@type": "float"
 			},
 			"wavelength_unit#": {
@@ -1577,7 +1577,7 @@
 				"@type": "@id"
 			},
 			"weight": {
-				"@id": "cif-:_chemical_formula.weight",
+				"@id": "cifcore:_chemical_formula.weight",
 				"@type": "float"
 			},
 			"weight_unit#": {
@@ -1585,15 +1585,15 @@
 				"@type": "@id"
 			},
 			"weighting_details": {
-				"@id": "cif-:_refine_ls.weighting_details",
+				"@id": "cifcore:_refine_ls.weighting_details",
 				"@type": "string"
 			},
 			"weighting_scheme": {
-				"@id": "cif-:_refine_ls.weighting_scheme",
+				"@id": "cifcore:_refine_ls.weighting_scheme",
 				"@type": "string"
 			},
 			"wr_factor_all": {
-				"@id": "cif-:_refine_ls.wR_factor_all",
+				"@id": "cifcore:_refine_ls.wR_factor_all",
 				"@type": "float"
 			},
 			"wr_factor_gt": {
@@ -1601,19 +1601,19 @@
 				"@type": "float"
 			},
 			"wr_factor_ref": {
-				"@id": "cif-:_refine_ls.wR_factor_ref",
+				"@id": "cifcore:_refine_ls.wR_factor_ref",
 				"@type": "float"
 			},
 			"wt": {
-				"@id": "cif-:_diffrn_radiation_wavelength.wt",
+				"@id": "cifcore:_diffrn_radiation_wavelength.wt",
 				"@type": "float"
 			},
 			"wyckoff_symbol": {
-				"@id": "cif-:_atom_site.Wyckoff_symbol",
+				"@id": "cifcore:_atom_site.Wyckoff_symbol",
 				"@type": "string"
 			},
 			"xray_symbol": {
-				"@id": "cif-:_diffrn_radiation.xray_symbol",
+				"@id": "cifcore:_diffrn_radiation.xray_symbol",
 				"@type": "string"
 			},
 			"year": {
