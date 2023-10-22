@@ -101,13 +101,11 @@
         },
 		"notetext_en": {
 			"@id": "si:hasNoteText",
-			"@type": "string",
-            "@language": "en"
+			"@language": "en"
 		},
         "notetext_fr": {
          	"@id": "si:hasNoteText",
-         	"@type": "string",
-            "@language": "fr"
+         	 "@language": "fr"
         }
 	}
 }
