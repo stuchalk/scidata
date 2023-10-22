@@ -31,6 +31,9 @@
             "@id": "skos:prefLabel",
             "@language": "fr"
         },
+        "definitions": {
+        	"@id": "si:hasDefinition"
+        },
         "definition_en": {
         	"@id": "si:hasDefiningText",
         	"@language": "en"
@@ -63,33 +66,33 @@
 			"@id": "si:isUnitOfQtyKind",
 			"@container": "@set"
 		},
-		"equation": {
-			"@id": "si:hasDefiningEquation",
-			"@type": "date"
-		},
 		"resolution_url": {
 			"@id": "schema:url",
-			"@type": "anyuri"
+			"@type": "anyURI"
 		},
 		"next_definition": {
 		    "@id": "si:hasNextDefinition",
-        	"@type": "anyuri"
+        	"@type": "anyURI"
 		},
 		"previous_definition": {
         	"@id": "si:hasPreviousDefinition",
-            "@type": "anyuri"
+            "@type": "anyURI"
+        },
+        "defining_equation": {
+        	"@id": "si:hasDefiningEquation",
+        	"@type": "date"
         },
         "defining_constant": {
 			"@id": "si:hasDefiningConstant",
-			"@type": "string"
+			"@type": "anyURI"
 		},
 		"defining_resolution_en": {
 			"@id": "si:hasDefiningResolution",
-			"@type": "anyuri"
+			"@type": "anyURI"
 		},
 		"defining_resolution_fr": {
         	"@id": "si:hasDefiningResolution",
-        	"@type": "anyuri"
+        	"@type": "anyURI"
         },
         "notes": {
 			"@id": "si:hasDefinitionNote"
