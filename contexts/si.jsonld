@@ -6,7 +6,7 @@
 		"edam": "http://edamontology.org/",
 		"obo": "http://purl.obolibrary.org/obo/",
 		"dct": "http://purl.org/dc/terms/",
-		"sio": "http://semanticscience.org/ontology/sio.owl#",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
 		"si": "http://si-digital-framework.org/SI/sio.owl",
 		"generatedAt": {
 			"@id": "prov:generatedAtTime",
@@ -16,28 +16,54 @@
 			"@id": "obo:IAO_0000129",
 			"@type": "string"
 		},
-		"name": {
+		"name_en": {
 			"@id": "dct:identifier",
-			"@type": "string"
+			"@type": "string",
+			"@language": "en"
 		},
-		"symbol": {
+		"name_fr": {
+        	"@id": "dct:identifier",
+        	"@type": "string",
+        	"@language": "fr"
+        },
+        "label_en": {
+            "@id": "skos:prefLabel",
+            "@type": "string",
+            "@language": "en"
+        },
+        "label_fr": {
+            "@id": "skos:prefLabel",
+            "@type": "string",
+            "@language": "fr"
+        },
+        "definition_en": {
+        	"@id": "si:hasDefiningText",
+        	"@type": "string",
+            "@language": "en"
+        },
+        "definition_fr": {
+             "@id": "si:hasDefiningText",
+             "@type": "string",
+             "@language": "fr"
+        },
+        "symbol": {
 			"@id": "si:hasSymbol",
 			"@type": "string"
 		},
-		"startvaliditydate": {
+		"quantity": {
+        	"@id": "si:isUnitOfQtyKind",
+        	"@type": "@id"
+        },
+        "valid_from": {
 			"@id": "si:hasStartValidity",
 			"@type": "string"
 		},
-		"endvaliditydate": {
+		"valid_till": {
 			"@id": "si:hasEndValidity",
 			"@type": "string"
 		},
 		"status": {
 			"@id": "si:hasStatus",
-			"@type": "string"
-		},
-		"definition": {
-			"@id": "si:hasDefiningText",
 			"@type": "string"
 		},
 		"quantity": {
@@ -52,26 +78,36 @@
 			"@id": "schema:url",
 			"@type": "anyuri"
 		},
-		"publication": {
-			"@id": "si:hasDefiningPublication",
-			"@type": "string"
-		},
-		"constant": {
+		"defining_constant": {
 			"@id": "si:hasDefiningConstant",
 			"@type": "string"
 		},
-		"resolution_defn": {
+		"defining_resolution_en": {
 			"@id": "si:hasDefiningResolution",
-			"@type": "string"
+			"@type": "anyuri",
+            "@language": "en"
 		},
-		"notes": {
-			"@id": "si:hasDefinitionNote",
-			"@type": "string"
+		"defining_resolution_fr": {
+        	"@id": "si:hasDefiningResolution",
+        	"@type": "anyuri",
+            "@language": "fr"
+        },
+        "notes": {
+			"@id": "si:hasDefinitionNote"
 		},
-		"notetext": {
+		"noteindex": {
+			"@id": "si:hasNoteIndex",
+			"@type": "integer"
+        },
+		"notetext_en": {
 			"@id": "si:hasNoteText",
-			"@type": "string"
-		}
-
+			"@type": "string",
+            "@language": "en"
+		},
+        "notetext_en": {
+         	"@id": "si:hasNoteText",
+         	"@type": "string",
+            "@language": "fr"
+        }
 	}
 }
