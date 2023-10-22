@@ -49,11 +49,11 @@
         },
         "valid_from": {
 			"@id": "si:hasStartValidity",
-			"@type": "string"
+			"@type": "date"
 		},
 		"valid_till": {
 			"@id": "si:hasEndValidity",
-			"@type": "string"
+			"@type": "date"
 		},
 		"status": {
 			"@id": "si:hasStatus",
