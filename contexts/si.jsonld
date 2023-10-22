@@ -104,7 +104,7 @@
 			"@type": "string",
             "@language": "en"
 		},
-        "notetext_en": {
+        "notetext_fr": {
          	"@id": "si:hasNoteText",
          	"@type": "string",
             "@language": "fr"
