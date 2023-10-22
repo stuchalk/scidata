@@ -80,7 +80,7 @@
         },
         "defining_equation": {
         	"@id": "si:hasDefiningEquation",
-        	"@type": "date"
+        	"@type": "string"
         },
         "defining_constant": {
 			"@id": "si:hasDefiningConstant",
