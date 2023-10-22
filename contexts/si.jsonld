@@ -3,7 +3,6 @@
 		"@vocab": "https://www.w3.org/2001/XMLSchema#",
 		"prov": "http://www.w3.org/ns/prov#",
 		"schema": "http://schema.org/",
-		"edam": "http://edamontology.org/",
 		"obo": "http://purl.obolibrary.org/obo/",
 		"dct": "http://purl.org/dc/terms/",
 		"skos": "http://www.w3.org/2004/02/skos/core#",
@@ -18,32 +17,26 @@
 		},
 		"name_en": {
 			"@id": "dct:identifier",
-			"@type": "string",
 			"@language": "en"
 		},
 		"name_fr": {
         	"@id": "dct:identifier",
-        	"@type": "string",
         	"@language": "fr"
         },
         "label_en": {
             "@id": "skos:prefLabel",
-            "@type": "string",
             "@language": "en"
         },
         "label_fr": {
             "@id": "skos:prefLabel",
-            "@type": "string",
             "@language": "fr"
         },
         "definition_en": {
         	"@id": "si:hasDefiningText",
-        	"@type": "string",
-            "@language": "en"
+        	"@language": "en"
         },
         "definition_fr": {
              "@id": "si:hasDefiningText",
-             "@type": "string",
              "@language": "fr"
         },
         "symbol": {
@@ -78,19 +71,25 @@
 			"@id": "schema:url",
 			"@type": "anyuri"
 		},
-		"defining_constant": {
+		"next_definition": {
+		    "@id": "si:hasNextDefinition",
+        	"@type": "anyuri"
+		},
+		"previous_definition": {
+        	"@id": "si:hasPreviousDefinition",
+            "@type": "anyuri"
+        },
+        "defining_constant": {
 			"@id": "si:hasDefiningConstant",
 			"@type": "string"
 		},
 		"defining_resolution_en": {
 			"@id": "si:hasDefiningResolution",
-			"@type": "anyuri",
-            "@language": "en"
+			"@type": "anyuri"
 		},
 		"defining_resolution_fr": {
         	"@id": "si:hasDefiningResolution",
-        	"@type": "anyuri",
-            "@language": "fr"
+        	"@type": "anyuri"
         },
         "notes": {
 			"@id": "si:hasDefinitionNote"
