@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "System Schema",
+    "description": "JSON schema for a system",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"discipline":    { "type": "string" },
+    	"discipline":    { "type": "string" },
+    	"facets": {
+    		"type": "array",
+    		"items": {
+    			"anyOf": [
+					{"$ref": "chemical.json"},
+					{"$ref": "computer.json"},
+					{"$ref": "molsystem.json"},
+					{"$ref": "substance.json"}
+				]
+    		}
+    	}
+    }
+}

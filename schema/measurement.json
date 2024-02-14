@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Measurement Schema",
+    "description": "JSON schema for a measurement",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+		"@type":    { "type": "string" },
+		"techniqueType#":    { "type": "string" },
+		"technique#":    { "type": "string" },
+		"instrumentType":    { "type": "string" },
+		"instrument":    { "type": "string" },
+		"settings": {
+			"type": "array",
+			"items": {"$ref": "parameter.json"}
+		}
+	}
+}

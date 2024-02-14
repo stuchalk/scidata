@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Methodology CC Schema",
+    "description": "JSON schema for a methodology",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"evaluation":    { "type": "string" },
+    	"aspects": {
+    		"type": "array",
+    		"items": {
+    			"anyOf": [
+    				{"$ref": "basisset.json"},
+    				{"$ref": "calculation.json"},
+    				{"$ref": "measurement.json"},
+    				{"$ref": "procedure.json"},
+    				{"$ref": "resource.json"},
+    				{"$ref": "software.json"}
+    			]
+    		}
+    	}
+    }
+}

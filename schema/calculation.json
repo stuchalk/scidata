@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Calculation Schema",
+    "description": "JSON schema for a calculation",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"approach":    { "type": "string" },
+    	"calcclass":    { "type": "string" },
+    	"calcType":    { "type": "string" },
+    	"submethod":    { "type": "string" },
+    	"calculations": {
+             "type": "array",
+             "items": {
+               "type": "object",
+               "properties": {
+               	"@id":    { "type": "string" },
+               	"class":    { "type": "string" },
+               	"calcType":    { "type": "string" },
+               	"referenceState":    { "type": "string" },
+               	"determinant":    { "type": "string" },
+               	"spin#":    { "type": "string" }
+               }
+             }
+    	}
+    }
+}

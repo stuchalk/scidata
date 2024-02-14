@@ -2,8 +2,8 @@
     "@context": [
         "https://stuchalk.github.io/scidata/contexts/crg_measurement.jsonld",
         {
-            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#"
-            "cao": "https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl#",
+            "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+            "cao": "https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl#"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/measurement"}
     ],
