@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Substance Schema",
+    "description": "JSON schema for a substance",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"name":    { "type": "string" },
+    	"iupacname":    { "type": "string" },
+    	"inchi":    { "type": "string" },
+    	"inchikey":    { "type": "string" },
+    	"smiles":    { "type": "string" },
+    	"formula":    { "type": "string" },
+    	"molweight":    { "type": "string" },
+    	"chebi":    { "type": "string" }
+    }
+}

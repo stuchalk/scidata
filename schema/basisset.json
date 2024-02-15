@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Basis Set Schema",
+    "description": "JSON schema for a basis set",
+    "type": "object",
+    "properties": {
+           "@id":    { "type": "string" },
+    	   "title": { "type": "string" },
+    	   "description": { "type": "string" },
+    	   "format": { "type": "string" },
+    	   "setType": { "type": "string" },
+    	   "harmonicType": { "type": "string" },
+    	   "contractionType": { "type": "string" },
+           "sets":   { 
+             "type": "array",
+             "items": {
+               "type": "object",
+               "properties": {
+                  "@id":    { "type": "string" },
+                  "symbol":    { "type": "string" },
+                  "contractions":   {
+                     "shell":    { "type": "string" },
+                     "matrix": {
+	                 	"type": "object",
+					 "properties": {
+                  		"@id":    { "type": "string" },
+                  		"datatype":    { "type": "string" },
+                  		"rows":    { "type": "number" },
+                  		"columns":    { "type": "number" },
+                  		"delimiter":    { "type": "string" },
+                  		"values":    { "type": "string" }
+                  	 }
+                  }
+               }
+             }
+           }
+        }
+	}
+}

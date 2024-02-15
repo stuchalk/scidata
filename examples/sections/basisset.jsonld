@@ -5,7 +5,7 @@
             "dct": "http://purl.org/dc/terms/",
             "gc": "http://purl.org/gc/",
             "obo": "http://purl.obolibrary.org/obo/",
-            "wd": "http://www.wikidata.org/entity/",
+            "wd": "http://www.wikidata.org/entity/"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/sections/basisset/"}
     ],

@@ -27,10 +27,28 @@ jobs:
         run: |
           python -m pip install check-jsonschema
 
-      - name: Run Unit schema validation
+      - name: Run JSON schema validation
         run: |
+          check-jsonschema -o json --schemafile schema/basisset.json examples/sections/basisset.jsonld
+          check-jsonschema -o json --schemafile schema/calculation.json examples/sections/calculation.jsonld
+          check-jsonschema -o json --schemafile schema/chemical.json examples/sections/chemical.jsonld
+          check-jsonschema -o json --schemafile schema/computer.json examples/sections/computer.jsonld
+          check-jsonschema -o json --schemafile schema/dataseries.json examples/sections/dataseries.jsonld
+          check-jsonschema -o json --schemafile schema/dataset.json examples/sections/dataset.jsonld
+          check-jsonschema -o json --schemafile schema/framework_outline.json examples/sections/framework_outline.jsonld
+          check-jsonschema -o json --schemafile schema/framework_plus.json examples/sections/framework_plus.jsonld
+          check-jsonschema -o json --schemafile schema/framework.json examples/sections/framework.jsonld
+          check-jsonschema -o json --schemafile schema/measurement.json examples/sections/measurement.jsonld
+          check-jsonschema -o json --schemafile schema/methodology.json examples/sections/methodology_cc.jsonld
+          check-jsonschema -o json --schemafile schema/methodology.json examples/sections/methodology_exp.jsonld
+          check-jsonschema -o json --schemafile schema/mixture.json examples/sections/mixture.jsonld
+          check-jsonschema -o json --schemafile schema/molsystem.json examples/sections/molsystem.jsonld
+          check-jsonschema -o json --schemafile schema/parameter.json examples/sections/parameter.jsonld
+          check-jsonschema -o json --schemafile schema/procedure.json examples/sections/procedure.jsonld
+          check-jsonschema -o json --schemafile schema/resource.json examples/sections/resource.jsonld
+          check-jsonschema -o json --schemafile schema/software.json examples/sections/software.jsonld
+          check-jsonschema -o json --schemafile schema/substance.json examples/sections/substance.jsonld
+          check-jsonschema -o json --schemafile schema/system.json examples/sections/system_cc.jsonld
+          check-jsonschema -o json --schemafile schema/system.json examples/sections/system_exp.jsonld
           check-jsonschema -o json --schemafile schema/unit.json examples/sections/unit.jsonld
-
-      - name: Run Value schema validation
-        run: |
           check-jsonschema -o json --schemafile schema/value.json examples/sections/value.jsonld

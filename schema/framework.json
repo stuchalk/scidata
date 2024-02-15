@@ -1,0 +1,166 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Framework Schema",
+    "description": "JSON schema for a framework",
+    "type": "object",
+    "properties": {
+		"@id":    { "type": "string" },
+		"generatedAt":    { "type": "string" },
+		"version":    { "type": "string" },
+		"@graph": {
+			"type": "object",
+			"properties": {
+				"@id":    { "type": "string" },
+				"type":    { "type": "string" },
+				"uid":    { "type": "string" },
+				"title":    { "type": "string" },
+				"authors": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"@id":    { "type": "string" },
+							"@type":    { "type": "string" },
+							"name":    { "type": "string" },
+							"organization":    { "type": "string" },
+							"email":    { "type": "string" },
+							"orcid":    { "type": "string" }
+						}
+					}
+				},
+				"description":    { "type": "string" },
+				"publisher":    { "type": "string" },
+				"keywords":    { "type": "string" },
+				"version":    { "type": "string" },
+				"date":    { "type": "string" },
+				"permalink":    { "type": "string" },
+				"related": {
+					"type": "array",
+					"items":    { "type": "string" }
+				},
+				"toc": {
+					"type": "array",
+					"items":    { "type": "string" }
+				},
+				"ids": {
+					"type": "array",
+					"items":    { "type": "string" }
+				},
+   				"scidata": {
+   					"type": "object",
+	   				"properties": {
+   						"@id":    { "type": "string" },
+   						"type": {
+   							"type": "array",
+   							"items":    { "type": "string" }
+   						},
+	   					"property": {
+   							"type": "array",
+   							"items":    { "type": "string" }
+   						},
+   						"kind": {
+   							"type": "array",
+   							"items":    { "type": "string" }
+	   					},
+   						"methodology": {
+   							"type": "object",
+   							"properties": {
+   								"@id":    { "type": "string" },
+   								"evaluation":    { "type": "string" },
+	   							"aspects": {
+   									"type": "array",
+   									"items":    { "type": "string" }
+   								}
+   							}
+   						},
+   						"system": {
+   							"type": "object",
+   							"properties": {
+	   							"@id":    { "type": "string" },
+   								"discipline":    { "type": "string" },
+   								"subdiscipline":    { "type": "string" },
+   								"facets": {
+   									"type": "array",
+   									"items":    { "type": "string" }
+   								}
+   							}
+	   					},
+   						"dataset": {
+   							"type": "object",
+   							"properties": {
+   								"@id":    { "type": "string" },
+   								"uid":    { "type": "string" },
+	   							"name":    { "type": "string" },
+   								"source":    { "type": "string" },
+   								"scope":    { "type": "string" },
+   								"attribute": {
+   									"type": "array",
+   									"items":    { "type": "string" }
+   								},
+   								"datapoint": {
+	   								"type": "array",
+   									"items":    { "type": "string" }
+   								},
+   								"dataseries": {
+   									"type": "array",
+   									"items":    {"$ref": "dataset.json"}
+   								},
+   								"datagroup": {
+   									"type": "array",
+	   								"items":    {
+	   									"type": "object",
+	   									"properties": {
+	   										"@id":    { "type": "string" },
+	   										"uid":    { "type": "string" },
+	   										"name":    { "type": "string" },
+	   										"source":    { "type": "string" },
+	   										"scope":    { "type": "string" },
+	   										"attribute": {
+	   											"type": "array",
+	   											"items": { "type": "string" }
+	   										},
+	   										"datagroup": {
+	   											"type": "array",
+	   											"items": { "type": "object" }
+	   										},
+	   										"datagroup": {
+	   											"type": "array",
+	   											"items": { "type": "object" }
+	   										},
+	   										"datagroup": {
+	   											"type": "array",
+	   											"items": { "type": "object" }
+	   										}
+	   									}
+	   								}
+   								}
+   							}
+   						}
+   					}
+   				},
+   				"sources": {
+    				"type": "array",
+    				"items": {
+    				"type": "object",
+    					"properties": {
+    						"@id":    { "type": "string" },
+    						"citation":    { "type": "string" },
+    						"url":    { "type": "string" }
+	    				}
+    				}
+    			},
+    			"rights": {
+    				"type": "array",
+    				"items": {
+    				"type": "object",
+    					"properties": {
+    						"@id":    { "type": "string" },
+    						"license":    { "type": "string" },
+    						"holder":    { "type": "string" }
+	    				}
+    				}
+    			}      			
+   			}
+   		}
+   	}
+}

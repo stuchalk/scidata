@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Mixture CC Schema",
+    "description": "JSON schema for a mixture",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"type":    { "type": "string" },
+    	"phase":    { "type": "string" },
+    	"constituents": {
+    		"type": "array",
+    		"items": {
+    			"type": "object",
+    			"properties": {
+    				"@id":    { "type": "string" },
+    				"@type":    { "type": "string" },
+    				"source#":    { "type": "string" },
+    				"grade":    { "type": "string" },
+    				"purity": {
+    					"type": "object",
+    					"properties": {
+    						"@id":    { "type": "string" },
+    						"@type":    { "type": "string" },
+    						"value": {
+    							"@id":    { "type": "string" },
+    							"@type":    { "type": "string" },
+    							"number":    { "type": "number" },
+    							"unit":    { "type": "string" }
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+}
