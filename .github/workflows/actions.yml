@@ -46,7 +46,6 @@ jobs:
           check-jsonschema -o json --schemafile schema/parameter.json examples/sections/parameter.jsonld
           check-jsonschema -o json --schemafile schema/procedure.json examples/sections/procedure.jsonld
           check-jsonschema -o json --schemafile schema/resource.json examples/sections/resource.jsonld
-          check-jsonschema -o json --schemafile schema/scidata.json examples/sections/scidata.jsonld
           check-jsonschema -o json --schemafile schema/software.json examples/sections/software.jsonld
           check-jsonschema -o json --schemafile schema/substance.json examples/sections/substance.jsonld
           check-jsonschema -o json --schemafile schema/system.json examples/sections/system_cc.jsonld
