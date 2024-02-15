@@ -14,7 +14,7 @@
 			"properties": {
 				"@id":    { "type": "string" },
 				"@type":    { "type": "string" },
-				"number":    { "type": "number" },
+				"number":    { "type": "string" },
 				"unit":    { "type": "string" }
 			}
 		}
