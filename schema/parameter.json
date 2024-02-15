@@ -14,7 +14,12 @@
 			"properties": {
 				"@id":    { "type": "string" },
 				"@type":    { "type": "string" },
-				"number":    { "type": "string" },
+				"number":    { 
+					"oneOf": [
+						{ "type": "number" },
+						{ "type": "string" }
+					]
+				},
 				"unit":    { "type": "string" }
 			}
 		}
