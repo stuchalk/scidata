@@ -16,11 +16,11 @@
 			"@type": "string"
 		},
 		"name_en": {
-			"@id": "dct:identifier",
+			"@id": "skos:prefLabel",
 			"@language": "en"
 		},
 		"name_fr": {
-        	"@id": "dct:identifier",
+        	"@id": "skos:prefLabel",
         	"@language": "fr"
         },
         "label_en": {
@@ -46,7 +46,7 @@
 			"@id": "si:hasSymbol",
 			"@type": "string"
 		},
-		"quantity": {
+		"quantitykind": {
         	"@id": "si:isUnitOfQtyKind",
         	"@type": "@id"
         },
@@ -107,7 +107,10 @@
 		},
         "notetext_fr": {
          	"@id": "si:hasNoteText",
-         	 "@language": "fr"
+         	"@language": "fr"
+        },
+        "units": {
+         	"@id": "si:MeasurementUnit"
         }
 	}
 }
