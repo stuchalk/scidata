@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Calculation Schema",
+    "description": "JSON schema for a calculation",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"architecture":    { "type": "string" },
+    	"cpu": {
+    		"type": "object",
+    		"properties": {
+    			"@id":    { "type": "string" },
+    			"opmodes":    { "type": "string" },
+    			"count":    { "type": "number" },
+    			"speed":    { "type": "string" },
+    			"vendorid":    { "type": "string" },
+    			"family":    { "type": "string" },
+    			"model":    { "type": "string" },
+    			"modelname":    { "type": "string" }
+    		}
+    	},
+   		"byteorder":    { "type": "string" },
+    	"threadspercore":    { "type": "number" },
+    	"corespersocket":    { "type": "number" },
+    	"sockets":    { "type": "number" },
+    	"cache": {
+    		"type": "object",
+    		"properties": {
+    			"@id":    { "type": "string" },
+    			"l1datacache":    { "type": "string" },
+    			"l1instcache":    { "type": "string" },
+    			"l2cache":    { "type": "string" },
+    			"l3cache":    { "type": "string" }
+    		}
+    	},
+    	"ram":    { "type": "string" }
+    }
+}

@@ -4,7 +4,7 @@
         {
             "afr": "http://purl.allotrope.org/ontologies/result#",
             "afre": "http://purl.allotrope.org/ontologies/realizable",
-            "repome": "https://w3id.org/reproduceme#",
+            "repome": "https://w3id.org/reproduceme#"
         },
         {"@base": "https://stuchalk.github.io/scidata/examples/procedure/"}
     ],

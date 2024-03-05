@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Procedure Schema",
+    "description": "JSON schema for a procedure",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"title":    { "type": "string" },
+    	"description":    { "type": "string" },
+    	"scope":    { "type": "string" },
+    	"activity":    { "type": "string" },
+    	"sequence": {
+    		"type": "object",
+    		"properties": {
+    			"@id":    { "type": "string" },
+    			"@type":    { "type": "string" },
+    			"title":    { "type": "string" },
+    			"steps": {
+    				"type": "array",
+    				"items": {
+    					"type": "object",
+    					"properties": {
+    						"@id":    { "type": "string" },
+    						"@type":    { "type": "string" },
+    						"step":    { "type": "number" },
+    						"text":    { "type": "string" }
+    					}
+    				}
+    			}
+    		}
+    	},
+    	"notes":    { "type": "string" }
+    }
+}

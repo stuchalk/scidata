@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Software Schema",
+    "description": "JSON schema for a piece of software",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"name":    { "type": "string" },
+    	"version":    { "type": "string" },
+    	"os":    { "type": "string" },
+    	"developer":    { "type": "string" },
+    	"input":    { "type": "string" },
+    	"output":    { "type": "string" }
+    }
+}

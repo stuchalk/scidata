@@ -2,55 +2,26 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Parameter Schema",
     "description": "JSON schema for a scientific parameter",
-    "required": ["parameter"],
+    "type": "object",
     "properties": {
-        "parameter": {
-            "type": "object",
-            "required": ["property"],
-            "oneOf": [
-                {
-                    "required": ["value"]
-                },
-                {
-                    "required": ["text"]
-                }
-            ],
-            "properties": {
-                "property": {
-                    "description": "The property that the parameter is about",
-                    "type": "object",
-                    "oneOf": [
-                        {
-                            "required": ["name"]
-                        },
-                        {
-                            "required": ["code"]
-                        }
-                    ],
-                    "properties": {
-                        "name": {
-                            "description": "The name of the measured property",
-                            "type": "string"
-                        },
-                        "code": {
-                            "description": "A unique code identifying a property in a system of properties",
-                            "type": "string"
-                        },
-                        "codeType": {
-                            "description": "The system of properties the property code comes from",
-                            "type": "string"
-                        }
-                    }
-                },
-                "value": {
-                    "description": "A numeric value with or without unit",
-                    "$ref": "https://stuchalk.github.io/scidata/schema/value.json#measuredValue"
-                },
-                "text": {
-                    "description": "A string value",
-                    "type": "string"
-                }
-            }
-        }
+		"@id":    { "type": "string" },
+		"@type":    { "type": "string" },
+		"scope":    { "type": "string" },
+		"quantitykind":    { "type": "string" },
+		"quantity":    { "type": "string" },
+		"value": {
+			"type": "object",
+			"properties": {
+				"@id":    { "type": "string" },
+				"@type":    { "type": "string" },
+				"number":    { 
+					"oneOf": [
+						{ "type": "number" },
+						{ "type": "string" }
+					]
+				},
+				"unit":    { "type": "string" }
+			}
+		}
     }
 }

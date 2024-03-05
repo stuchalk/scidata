@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Resource Schema",
+    "description": "JSON schema for a resource",
+    "type": "object",
+    "properties": {
+    	"@id":    { "type": "string" },
+    	"@type":    { "type": "string" },
+    	"type":    { "type": "string" },
+    	"name":    { "type": "string" },
+    	"vendor":    { "type": "string" },
+    	"catgnumber":    { "type": "string" }
+    }
+}
