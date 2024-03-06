@@ -32,7 +32,8 @@
             "@language": "fr"
         },
         "definitions": {
-        	"@id": "si:hasDefinition"
+        	"@id": "si:hasDefinition",
+            "@container": "@set"
         },
         "definition_en": {
         	"@id": "si:hasDefiningText",
@@ -64,7 +65,7 @@
 		},
 		"quantity": {
 			"@id": "si:isUnitOfQtyKind",
-			"@container": "@set"
+			"@container": ["@id", "@set"]
 		},
 		"resolution_url": {
 			"@id": "schema:url",
