@@ -130,6 +130,18 @@
             "@id": "edam:data_2646",
             "@type": "string"
         },
+        "chemblcmp": {
+            "@id": "obo:MI_0967",
+            "@type": "anyURI"
+        },
+        "chembldoc": {
+            "@id": "obo:MI_0685",
+            "@type": "anyURI"
+        },
+        "chembltrg": {
+            "@id": "obo:MI_1348",
+            "@type": "anyURI"
+        },
         "chirality": {
             "@id": "cheminf:CHEMINF_000245",
             "@type": "string"
@@ -146,9 +158,7 @@
             "@id": "obo:OMIT_0016926",
             "@type": "string"
         },
-        "component_domains": {
-            "@id": "sio:SIO_001379"
-        },
+        "component_domains": {"@id": "sio:SIO_001379"},
         "component_type": {
             "@id": "obo:NCIT_C45994",
             "@type": "string"
@@ -181,9 +191,7 @@
             "@id": "sio:SIO_000136",
             "@type": "string"
         },
-        "descriptors": {
-            "@id": "enm:ENM_8000019"
-        },
+        "descriptors": {"@id": "enm:ENM_8000019"},
         "domain_name": {
             "@id": "edam:data_2757",
             "@type": "string"
@@ -192,11 +200,12 @@
             "@id": "dct:type",
             "@type": "string"
         },
-        "domains": { "@id": "sio:SIO_001379" },
+        "domains": {"@id": "sio:SIO_001379"},
         "efo_id": {
             "@id": "edam:data_2338",
             "@type": "string"
         },
+        "endpoints": {"@id": "dcat:endpointURL"},
         "end_position": {
             "@id": "sio:SIO_000792",
             "@type": "integer"
@@ -229,9 +238,7 @@
             "@id": "cheminf:CHEMINF_000300",
             "@type": "string"
         },
-        "identifiers": {
-            "@id": "obo:NCIT_C25364"
-        },
+        "identifiers": {"@id": "obo:NCIT_C25364"},
         "inorganic_flag": {
             "@id": "obo:CHEBI_24835",
             "@type": "string"
@@ -392,7 +399,7 @@
             "@id": "sio:SIO_000122",
             "@type": "string"
         },
-        "target_components": { "@id": "sio:SIO_000313" },
+        "target_components": {"@id": "sio:SIO_000313"},
         "target_desc": {
             "@id": "cco:CO_000075",
             "@type": "string"

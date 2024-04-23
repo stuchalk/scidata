@@ -191,10 +191,6 @@
 				"@id": "dct:type",
 				"@type": "@id"
 			},
-            "endpoints": {
-                "@id": "dcat:endpointURL",
-                "@type": "anyURI"
-            },
 			"url": {
 				"@id": "schema:url",
 				"@type": "anyURI"
