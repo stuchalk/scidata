@@ -16,7 +16,8 @@
 			"edam": "https://edamontology.org/EDAM.owl#",
 			"enm": "http://enanomapper.github.io/ontologies/enanomapper.owl",
 			"w3id": "https://w3id.org/reproduceme#",
-			"generatedAt": {
+			"dcat": "http://www.w3.org/ns/dcat#",
+            "generatedAt": {
 				"@id": "prov:generatedAtTime",
 				"@type": "dateTime"
 			},
@@ -190,6 +191,10 @@
 				"@id": "dct:type",
 				"@type": "@id"
 			},
+            "endpoints": {
+                "@id": "dcat:endpointURL",
+                "@type": "anyURI"
+            },
 			"url": {
 				"@id": "schema:url",
 				"@type": "anyURI"
