@@ -580,7 +580,7 @@ dct:title rdf:type owl:Class ;
 ###  http://purl.org/ontology/bibo/doi
 bibo:doi rdf:type owl:Class ;
          rdfs:subClassOf :metadata ;
-         obo:IAO_0000115 "The digital object identifier - a unique identifer for digital assests.  See http://doi.og" ;
+         obo:IAO_0000115 "The digital object identifier - a unique identifier for digital assests.  See http://doi.og" ;
          oboowl:id "doi" ;
          rdfs:label "doi" .
 
@@ -756,7 +756,7 @@ foaf:organization rdf:type owl:Class ;
 ###  https://stuchalk.github.io/scidata/ontology/scidata#axisType
 :axisType rdf:type owl:Class ;
           rdfs:subClassOf :dataset ;
-          obo:IAO_0000115 "Wether a dataseries in the independent or dependent axis of a chart" ;
+          obo:IAO_0000115 "Whether a dataseries in the independent or dependent axis of a chart" ;
           oboowl:id "axisType" ;
           rdfs:label "axis type" .
 
@@ -835,7 +835,7 @@ foaf:organization rdf:type owl:Class ;
 ###  https://stuchalk.github.io/scidata/ontology/scidata#conversionFactor
 :conversionFactor rdf:type owl:Class ;
                   rdfs:subClassOf :unitOfMeasurement ;
-                  obo:IAO_0000115 "A numeric multiplier used to convert a value in one unit of measure into another of the same quanity.  Fo instance, the conversion factor for converting distance in miles to distances in meters is 1609.344." ;
+                  obo:IAO_0000115 "A numeric multiplier used to convert a value in one unit of measure into another of the same quantity.  For instance, the conversion factor for converting distance in miles to distances in meters is 1609.344." ;
                   oboowl:id "conversionFactor" ;
                   rdfs:label "conversion factor" .
 
@@ -1056,7 +1056,7 @@ foaf:organization rdf:type owl:Class ;
 ###  https://stuchalk.github.io/scidata/ontology/scidata#molecularSystem
 :molecularSystem rdf:type owl:Class ;
                  rdfs:subClassOf :systemFacet ;
-                 obo:IAO_0000115 "A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described." ;
+                 obo:IAO_0000115 "A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular coordinate system. Bonding between atoms may or may not be described." ;
                  oboowl:id "molecularSystem" ;
                  rdfs:label "molecular system" .
 
@@ -1161,7 +1161,7 @@ EXAMPLE The quantities moment of force and energy are, by convention, not regard
 NOTE 3 In English, the terms for quantities in the left half of the table in 1.1, Note 1, are often used for the corresponding 'kinds of quantity'. In French, the term “nature” is only used in expressions such as “grandeurs de même nature” (in English, “quantities of the same kind”)."""@en ;
               obo:IAO_0000119 "International Vocabulary of Metrology - Online Edition, https://jcgm.bipm.org/vim/en/1.2.html"@en ;
               oboowl:hasExactSynonym "kind of quantity"@en ;
-              rdfs:label "quanity kind"@en .
+              rdfs:label "quantity kind"@en .
 
 
 ###  https://stuchalk.github.io/scidata/ontology/scidata#resource
@@ -1222,7 +1222,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
 ###  https://stuchalk.github.io/scidata/ontology/scidata#siUnitEquivalent
 :siUnitEquivalent rdf:type owl:Class ;
                   rdfs:subClassOf :unitOfMeasurement ;
-                  obo:IAO_0000115 "SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivlent SI unit of kg m2 s-2" ;
+                  obo:IAO_0000115 "SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivalent SI unit of kg m2 s-2" ;
                   oboowl:id "siUnitEquivalent" ;
                   rdfs:label "SI unit equivalent" .
 
@@ -1399,7 +1399,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
                                                                                 obo:IAO_0000115 "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. Physical properties such as density, refractive index, electric conductivity, melting point etc. characterize the chemical substance." ;
                                                                                 oboowl:hasExactSynonym "chemical substance" ;
                                                                                 oboowl:id "substance" ;
-                                                                                rdfs:comment "Also: A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc." ;
+                                                                                rdfs:comment "Also: A two or more chemicals interactive with each other, either the same or different states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc." ;
                                                                                 rdfs:isDefinedBy <https://doi.org/10.1351/goldbook.C01039> ;
                                                                                 rdfs:label "substance" .
 
@@ -1411,7 +1411,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
 ###  https://stuchalk.github.io/scidata/ontology/scidata#dependent
 :dependent rdf:type owl:NamedIndividual ,
                     :axisType ;
-           obo:IAO_0000115 "The axis where a dependent varibale is plotted." ;
+           obo:IAO_0000115 "The axis where a dependent variable is plotted." ;
            rdfs:label "dependent" .
 
 

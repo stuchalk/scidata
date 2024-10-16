@@ -86,7 +86,7 @@
     				},
     				"atom": {
     					"type": "array",
-    					"itmes": {
+    					"items": {
     						"type": "object",
     						"properties": {
     							"@id":    { "type": "string" },

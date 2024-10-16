@@ -13,7 +13,7 @@
     "title": "pH meter calibration",
     "description": "The pH electrode was calibrated at pH 7, pH 4, and pH 10 prior to measurement. A portion of the solution was transferred to a beaker and the DI water washed electrode wash placed in the solution and allowed to equilibrate before the measurement was taken",
     "scope": "measurement/1/",
-    "activity": "standarization",
+    "activity": "standardization",
     "sequence": {
         "@id": "sequence/",
         "@type": "afr:AFR_0000945",

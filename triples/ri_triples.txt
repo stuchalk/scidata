@@ -10,7 +10,7 @@
 <https://stuchalk.github.io/chemical/1/> <https://www.w3.org/2001/XMLSchema#grade> "MilliQ Grade (18.2 MOhms)" <https://stuchalk.github.io/riExample> .
 <https://stuchalk.github.io/chemical/1/> <https://www.w3.org/2001/XMLSchema#properties> <https://stuchalk.github.io/substance/1/constituent/1/property/1/> <https://stuchalk.github.io/riExample> .
 <https://stuchalk.github.io/chemical/2/> <http://purl.obolibrary.org/obo/IAO_0000590> "Hydrochloric acid"^^<https://www.w3.org/2001/XMLSchema#string> <https://stuchalk.github.io/riExample> .
-<https://stuchalk.github.io/chemical/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#consituent> <https://stuchalk.github.io/riExample> .
+<https://stuchalk.github.io/chemical/2/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://stuchalk.github.io/scidata/ontology/scidata.owl#constituent> <https://stuchalk.github.io/riExample> .
 <https://stuchalk.github.io/chemical/2/> <http://semanticscience.org/ontology/sio.owl#SIO_000016> "chm:solute"^^<https://www.w3.org/2001/XMLSchema#string> <https://stuchalk.github.io/riExample> .
 <https://stuchalk.github.io/chemical/2/> <https://stuchalk.github.io/scidata/ontology/scidata.owl#hasSource> <https://stuchalk.github.io/compound/2/> <https://stuchalk.github.io/riExample> .
 <https://stuchalk.github.io/chemical/2/> <https://www.w3.org/2001/XMLSchema#grade> "ACS Certified grade" <https://stuchalk.github.io/riExample> .

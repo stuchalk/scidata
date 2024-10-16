@@ -657,7 +657,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrastructure category</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000091"/>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000003</oboowl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information describing the people who are responsible for the analysis and place(s) where it occured</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information describing the people who are responsible for the analysis and place(s) where it occurred</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
     
@@ -910,7 +910,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000021"/>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000037"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A string used to identifiy a sample</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A string used to identify a sample</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000022</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
@@ -1144,7 +1144,7 @@
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000041">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subsample identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000021"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A string used to identifiy a subsample</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A string used to identify a subsample</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000041</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
@@ -1392,7 +1392,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemometric datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000060</oboowl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric value from a chemometric test peformed on data from a chemical analysis</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric value from a chemometric test performed on data from a chemical analysis</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
     
@@ -1427,7 +1427,7 @@
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000063">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample spike recovery percentage</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000061"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of a sample spiked with a known amount of analyte.  The result is compared to the analysis portion of the same sample and the different is compared to the amount of analyte added.  If the difference in the results is equivalent ot the amount added then the recovery is deemed 100%.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of a sample spiked with a known amount of analyte.  The result is compared to the analysis portion of the same sample and the different is compared to the amount of analyte added.  If the difference in the results is equivalent to the amount added then the recovery is deemed 100%.</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000063</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
@@ -1936,7 +1936,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datum property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000102</oboowl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charateristics of a numeric value</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of a numeric value</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
     
@@ -2228,7 +2228,7 @@
     <!-- http://champ-project.org/images/ontology/cao.owl#CAO_000126 -->
 
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000126">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heterogenous mixture</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heterogeneous mixture</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000156"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material where two or more substances and mixed together but the composition is different in different parts of the material</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000126</oboowl:id>
@@ -2409,7 +2409,7 @@
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000071"/>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000140</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where a chemical entity acts as in interferring species in the detection of a chemical entity acting as an analyte</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where a chemical entity acts as in interfering species in the detection of a chemical entity acting as an analyte</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2601,7 +2601,7 @@
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000155</oboowl:id>
         <oboowl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method of standard addition</oboowl:hasExactSynonym>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process by which calibration is performed on a sample where the matrix components cause the signal from the analyte to be enchanced or deminished by the &apos;matrix effect&apos;.  The same small portion of a sample is added to all calibration solutions so that the matrix is matched, and the analyte concentration is determined by extrapolation of the regression line to  y=0.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process by which calibration is performed on a sample where the matrix components cause the signal from the analyte to be enhanced or deminished by the &apos;matrix effect&apos;.  The same small portion of a sample is added to all calibration solutions so that the matrix is matched, and the analyte concentration is determined by extrapolation of the regression line to  y=0.</obo:IAO_0000115>
         <oboowl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard additions calibration</oboowl:hasExactSynonym>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics and Chemometrics for Analytical Chemistry, 6th Ed. 2010 Miller and Miller ISBN 978-0273730422 p128</obo:IAO_0000119>
     </owl:Class>
@@ -2675,7 +2675,7 @@
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000161">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000102"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of the numeric value of a dataum</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of the numeric value of a datum</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000161</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
@@ -2989,7 +2989,7 @@
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000184">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replicate data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000070"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of data points that are nominally the same numeric value becuase they are equally valid estimates of a property of the same population, but due to random error will be scattered based on the distrubution model applicable in the context of process of measuring the data.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of data points that are nominally the same numeric value because they are equally valid estimates of a property of the same population, but due to random error will be scattered based on the distribution model applicable in the context of process of measuring the data.</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000184</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>
@@ -3131,7 +3131,7 @@
         <rdfs:subClassOf rdf:resource="http://champ-project.org/images/ontology/cao.owl#CAO_000107"/>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000195</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of applying ultrasonic fequencies of sound to a solution in order to aid the process of dissolution</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of applying ultrasonic frequencies of sound to a solution in order to aid the process of dissolution</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3182,7 +3182,7 @@
     <owl:Class rdf:about="http://champ-project.org/images/ontology/cao.owl#CAO_000199">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard method of analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A published standard method of chemical analysis that delineates sample processing, calibration, instrument setup, sample measurment, result calculation an method validation.  Published by an organizational entity of high repute.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A published standard method of chemical analysis that delineates sample processing, calibration, instrument setup, sample measurement, result calculation an method validation.  Published by an organizational entity of high repute.</obo:IAO_0000115>
         <oboowl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAO_000199</oboowl:id>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Stuart Chalk</obo:IAO_0000117>
     </owl:Class>

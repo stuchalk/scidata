@@ -2031,7 +2031,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>bibo:doi</AbbreviatedIRI>
-        <Literal>The digital object identifier - a unique identifer for digital assests.  See http://doi.og</Literal>
+        <Literal>The digital object identifier - a unique identifier for digital assests.  See http://doi.og</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2376,7 +2376,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#axisType</IRI>
-        <Literal>Wether a dataseries in the independent or dependent axis of a chart</Literal>
+        <Literal>Whether a dataseries in the independent or dependent axis of a chart</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2516,7 +2516,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#conversionFactor</IRI>
-        <Literal>A numeric multiplier used to convert a value in one unit of measure into another of the same quanity.  Fo instance, the conversion factor for converting distance in miles to distances in meters is 1609.344.</Literal>
+        <Literal>A numeric multiplier used to convert a value in one unit of measure into another of the same quantity.  For instance, the conversion factor for converting distance in miles to distances in meters is 1609.344.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -2716,7 +2716,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#dependent</IRI>
-        <Literal>The axis where a dependent varibale is plotted.</Literal>
+        <Literal>The axis where a dependent variable is plotted.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2967,7 +2967,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#molecularSystem</IRI>
-        <Literal>A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular co-ordinate system. Bonding between atoms may or may not be described.</Literal>
+        <Literal>A definition of an atom system used as a starting point for computational chemistry calculations.  Typically atoms are defined at positions in three-dimensional space based on a particular coordinate system. Bonding between atoms may or may not be described.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -3169,7 +3169,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#quantityKind</IRI>
-        <Literal xml:lang="en">quanity kind</Literal>
+        <Literal xml:lang="en">quantity kind</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -3274,7 +3274,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#siUnitEquivalent</IRI>
-        <Literal>SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivlent SI unit of kg m2 s-2</Literal>
+        <Literal>SI unit that a derived or non-SI unit is equivalent to, for example the Joule has an equivalent SI unit of kg m2 s-2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboowl:id"/>
@@ -3629,7 +3629,7 @@ NOTE 3 In English, the terms for quantities in the left half of the table in 1.1
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://stuchalk.github.io/scidata/ontology/substance/substance.owl#substance</IRI>
-        <Literal>Also: A two or more chemicals interactive with each other, either the same or differnt states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc.</Literal>
+        <Literal>Also: A two or more chemicals interactive with each other, either the same or different states, at equilibirum or non-equilibrium with each other.  This can be applied to all states and at all concentration levels.  Generally the scope of chemical system extends to situations where the composition of the material is known.  Complicated systems are better represented as materials. Examples include: gas mixtures, binary liquid mixtures, two immiscible liquids, gas/liquid equilibria, alloys, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>

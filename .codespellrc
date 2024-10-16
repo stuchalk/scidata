@@ -1,0 +1,7 @@
+[codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = .git*,.codespellrc,*.cif
+check-hidden = true
+# lines with known to be non-english characters, all uppercase
+ignore-regex = .*[úáüéè].*|\b[A-Z]+\b|\bvalue=".."
+ignore-words-list = afe

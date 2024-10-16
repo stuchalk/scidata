@@ -240,7 +240,7 @@ In ternary and higher-order systems, composition below or above which, on a tern
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SO_000007</IRI>
-        <Literal xml:lang="en">Activity Coefficent at Infinite Dilution</Literal>
+        <Literal xml:lang="en">Activity Coefficient at Infinite Dilution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -305,7 +305,7 @@ https://en.wikipedia.org/wiki/Henry&apos;s_law#Henry&apos;s_law_volatility_const
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SO_000011</IRI>
-        <Literal xml:lang="en">Thisis placeholder for IUPAC defintion</Literal>
+        <Literal xml:lang="en">This is a placeholder for IUPAC definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

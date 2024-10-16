@@ -159,8 +159,8 @@
                     },
                     {
                         "@id": "chemical/2/",
-                        "@type": "sdo:consituent",
-                        "sourcetype": "commerical",
+                        "@type": "sdo:constituent",
+                        "sourcetype": "commercial",
                         "name": "Hydrochloric acid",
                         "source#": "substance/2/",
                         "role#": "chm:solute",

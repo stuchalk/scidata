@@ -331,7 +331,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:NCIT_C70848</AbbreviatedIRI>
-        <Literal xml:lang="en">A distinctive alpha-numeric identification code assigned by the manufacturer or distributor to a specific quantity of manufactured material or product within a batch.</Literal>
+        <Literal xml:lang="en">A distinctive alphanumeric identification code assigned by the manufacturer or distributor to a specific quantity of manufactured material or product within a batch.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>

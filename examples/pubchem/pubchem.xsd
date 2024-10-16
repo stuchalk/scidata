@@ -4814,7 +4814,7 @@ $Revision: 639093 $
    measured end-points and parameters to be stored.  An Assay Description is not a database table.  You can
    define as many Result Definitions as needed and they need not be used by all Substances tested.
  Assay Descriptions can be modified on both description text and Result Definitions after initial submission
- as desired, and such udpates will be tracked in PubChem
+ as desired, and such updates will be tracked in PubChem
   </xs:documentation></xs:annotation>
   <xs:complexType>
     <xs:sequence>
@@ -5542,7 +5542,7 @@ $Revision: 639093 $
 </xs:element>
 
 <xs:element name="PC-IntegerMinMax">
-  <xs:annotation><xs:documentation>Mininum and Maximum Constraints on an Integer Value (used for validating incoming data)</xs:documentation></xs:annotation>
+  <xs:annotation><xs:documentation>Minimum and Maximum Constraints on an Integer Value (used for validating incoming data)</xs:documentation></xs:annotation>
   <xs:complexType>
     <xs:sequence>
       <xs:element name="PC-IntegerMinMax_min" type="xs:integer">
@@ -5556,7 +5556,7 @@ $Revision: 639093 $
 </xs:element>
 
 <xs:element name="PC-RealMinMax">
-  <xs:annotation><xs:documentation>Mininum and Maximum Constraints on a Real Value (used for validating incoming data)</xs:documentation></xs:annotation>
+  <xs:annotation><xs:documentation>Minimum and Maximum Constraints on a Real Value (used for validating incoming data)</xs:documentation></xs:annotation>
   <xs:complexType>
     <xs:sequence>
       <xs:element name="PC-RealMinMax_min" type="xs:double">
