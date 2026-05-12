@@ -1,0 +1,53 @@
+@prefix factors: <https://stuchalk.github.io/scidata/ontology/factors> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://stuchalk.github.io/scidata/ontology/factors> a owl:Ontology .
+
+factor:nano
+    a qudt:Factor ;
+    qudt:isSIPrefix true ;
+    qudt:isExact true ;
+    qudt:hasValue "1E-9"^^xsd:float .
+
+factor:foot2meter
+    a qudt:Factor ;
+    qudt:isPrefix false ;
+    qudt:isExact true ;
+    qudt:hasValue "0.3048"^^xsd:decimal .
+
+factor:pi
+    a qudt:Factor ;
+    qudt:isPrefix false ;
+    qudt:isExact false ;
+    qudt:hasUncertainty "1E-15"^^xsd:float ;
+    qudt:hasValue [
+                  a qudt:FactorProduct ;
+                  qudt:hasNumerator "245850922"^^xsd:integer ;
+                  qudt:hasDenominator "78256779"^^xsd:integer ;
+                  ] .
+
+factor:degreeToRadian
+    a qudt:Factor ;
+    qudt:isPrefix false ;
+    qudt:isExact false ;
+    qudt:hasUncertainty "1E-17"^^xsd:float ;
+    qudt:hasValue [
+                  a qudt:FactorProduct ;
+                  qudt:hasNumerator factor:pi ;
+                  qudt:hasDenominator "180"^^xsd:integer ;
+                  ] .
+
+conversion:log10
+    a qudt:ConversionObject ;
+    qudt:isPrefix false ;
+    qudt:isExact false ;
+    qudt:hasValue [
+                  a qudt:ConversionFunction ;
+                  qudt:hasSubtraction [ a qudt:Subtraction ;
+                                        qudt:logExponent factor:valueExponent ;
+                                        qudt:logMantissa factor:valueMantissa ;
+                                      ]
+                  ] .
