@@ -1,0 +1,98 @@
+{
+    "@context": {
+        "@vocab": "https://www.w3.org/2001/XMLSchema#",
+        "atc": "http://purl.bioontology.org/ontology/ATC/",
+        "hgnc": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:",
+        "lnc": "http://loinc.org/rdf/",
+        "mesh": "http://id.nlm.nih.gov/mesh/",
+        "ncit": "http://purl.obolibrary.org/obo/NCIT_",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "qudtq": "https://qudt.org/vocab/quantitykind",
+        "qudtu": "https://qudt.org/vocab/unit",
+        "sct": "http://snomed.info/id/",
+        "sdo": "https://stuchalk.github.io/scidata/ontology/scidata.owl#",
+        "sso": "http://semanticscience.org/resource/",
+        "w3i": "https://w3id.org/skgo/modsci#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "abbrev": {
+            "@id": "ncit:NCIT_C42610",
+            "@type": "string"
+        },
+        "category": {
+            "@id": "ncit:NCIT_C25372",
+            "@type": "string"
+        },
+        "dstoxid": {
+            "@id": "sso:CHEMINF_000568",
+            "@type": "string"
+        },
+        "analyte": {
+            "@id": "ncit:NCIT_C128639",
+            "@type": "string"
+        },
+        "test": {
+            "@id": "sct:15220000",
+            "@type": "string"
+        },
+        "specimen": {
+            "@id": "sct:123038009",
+            "@type": "string"
+        },
+        "valstr": {
+            "@id": "ncit:NCIT:C45253",
+            "@type": "string"
+        },
+        "diagnosis": {
+            "@id": "sct:439401001",
+            "@type": "string"
+        },
+        "evidence": {
+            "@id": "sct:18669006",
+            "@type": "string"
+        },
+        "finding": {
+            "@id": "sct:404684003",
+            "@type": "string"
+        },
+        "age": {
+            "@id": "sct:424144002",
+            "@type": "string"
+        },
+        "bmi": {
+            "@id": "sct:60621009",
+            "@type": "string"
+        },
+        "gender": {
+            "@id": "sct:263495000",
+            "@type": "string"
+        },
+        "iris": {
+            "@id": "sct:763325000",
+            "@type": "string"
+        },
+        "race": {
+            "@id": "sct:103579009",
+            "@type": "string"
+        },
+        "sspg": {
+            "@id": "sct:434911002",
+            "@type": "string"
+        },
+        "day": {
+            "@id": "sct:258703001",
+            "@type": "string"
+        },
+        "event": {
+            "@id": "sct:272379006",
+            "@type": "string"
+        },
+        "note": {
+            "@id": "sct:866144008",
+            "@type": "string"
+        },
+        "substudy": {
+            "@id": "sct:224699009",
+            "@type": "string"
+        }
+    }
+}
