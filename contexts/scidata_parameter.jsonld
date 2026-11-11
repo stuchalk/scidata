@@ -35,7 +35,7 @@
             },
             "value": {
                 "@id": "sdo:hasValue",
-                "@type": "sdo:value"
+                "@type": "float"
             },
             "outcome": {
                 "@id": "obo:NCIT_C20200",

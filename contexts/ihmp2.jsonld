@@ -38,6 +38,10 @@
             "@id": "sct:123038009",
             "@type": "string"
         },
+        "class": {
+            "@id": "sct:277046005",
+            "@type": "string"
+        },
         "valstr": {
             "@id": "ncit:NCIT:C45253",
             "@type": "string"
@@ -93,6 +97,10 @@
         "substudy": {
             "@id": "sct:224699009",
             "@type": "string"
+        },
+        "result": {
+             "@id": "sct:423100009",
+             "@type": "@id"
         }
     }
 }
